@@ -1,0 +1,197 @@
+[
+  {
+    "id": "lr3-01",
+    "title": "La Condition humaine",
+    "genre": "Extrait littéraire",
+    "level": 3,
+    "text": "À mesure que les siècles avancent et que l'homme accumule des savoirs toujours plus vastes, une question demeure étrangement persistante, résistant à tous les progrès et à tous les paradigmes successifs : quelle est la nature de la conscience ? Les philosophes grecs s'y confrontaient déjà avec une acuité remarquable. Aristote distinguait l'âme végétative, l'âme sensitive et l'âme intellective. Platon voyait dans la conscience le reflet d'un monde idéal dont notre réalité sensible ne serait que l'ombre projetée sur les parois d'une caverne. Bien plus tard, Descartes plaça la conscience au centre de sa philosophie avec son célèbre cogito ergo sum — je pense, donc je suis — faisant de l'acte de pensée la seule certitude à partir de laquelle reconstruire l'édifice entier de la connaissance. Aujourd'hui, les neuroscientifiques contemporains consacrent des recherches entières à cette même question, armés d'instruments que Descartes n'aurait pu imaginer : imagerie cérébrale fonctionnelle, électroencéphalographie, modèles computationnels du cerveau. Et pourtant, ils n'ont toujours pas de réponse définitive.\n\nCe qui est remarquable — et troublant pour qui s'y arrête — c'est que la conscience ne se laisse pas réduire à la somme des mécanismes qui l'engendrent. Vous pouvez décrire avec une précision absolue chaque synapse, chaque influx électrochimique d'un cerveau actif, cartographier les réseaux neuronaux qui s'activent lors d'une émotion ou d'un souvenir. Et pourtant quelque chose échappe obstinément à cette description : la sensation subjective d'exister. Ce que les philosophes de l'esprit, à la suite de David Chalmers, appellent le problème difficile de la conscience : pourquoi des processus physiques objectifs donnent-ils naissance à une expérience intérieure subjective ? Cette question n'est pas une simple curiosité académique ; elle touche au cœur de ce que nous sommes, de la façon dont nous nous rapportons à nous-mêmes et aux autres, et des limites de ce que la science peut réellement saisir de l'humain.\n\nCe concept possède une traduction plus précise dans le vocabulaire philosophique : les qualia. Ressentir la douleur est fondamentalement différent de la décrire. Percevoir la couleur rouge ne se confond pas avec la mesure de la longueur d'onde lumineuse correspondante, environ 700 nanomètres. Il y a entre ces deux descriptions un abîme que la physique seule ne comble pas. Je peux décrire avec exactitude la structure chimique d'une fraise, mais cela ne dit rien du goût sucré-acidulé que j'éprouve en la mangeant. C'est dans cet écart, peut-être irréductible, que réside l'un des mystères les plus fascinants de notre existence.\n\nIl est tentant de conclure que nous manquons simplement d'outils, et que la science finira par résoudre la question. Mais Thomas Nagel, dans son article What Is It Like to Be a Bat ?, soutient que le problème est d'une nature qualitativement différente. Même si nous connaissions dans le détail le système nerveux d'une chauve-souris, nous ne saurions pas ce que cela fait d'être une chauve-souris, de percevoir le monde par écholocation, de vivre dans cette subjectivité radicalement non humaine. La conscience ne se réduit pas à une description à la troisième personne ; elle est fondamentalement première personne.\n\nD'autres philosophes explorent des voies plus audacieuses, comme le panpsychisme — qui attribue une forme d'expérience à toute la matière — ou les théories de l'information intégrée développées par Giulio Tononi, qui cherchent à mesurer la conscience comme une propriété physique quantifiable. Ces hypothèses peuvent sembler spéculatives, mais elles témoignent de la vitalité d'un champ de recherche qui refuse de se refermer trop vite sur des réponses commodes. Elles nous rappellent aussi que certaines des idées les plus fructueuses de l'histoire des sciences ont d'abord été jugées fantaisistes avant de devenir fondatrices.\n\nCe n'est pas faiblesse que d'admettre l'étendue de notre ignorance sur ce sujet ; c'est une honnêteté intellectuelle rare et nécessaire. Les grandes questions ne s'éteignent pas avec le progrès ; parfois, elles s'approfondissent et révèlent de nouvelles dimensions insoupçonnées. Kant lui-même avait pressenti cette irréductibilité lorsqu'il distinguait le phénomène — ce que nous pouvons connaître — du noumène — ce qui demeure fondamentalement hors d'atteinte de notre entendement. La question de la conscience appartient peut-être à cette seconde catégorie, non par fatalisme, mais par humilité épistémique. Cela ne nous empêche pas d'avancer, d'affiner nos modèles, d'approcher la question par des voies toujours plus fines. Mais cela nous rappelle que l'édifice du savoir possède des fondations que nous ne voyons pas encore, et que les bâtisseurs les plus honnêtes sont ceux qui ne font pas semblant de les avoir trouvées. Et c'est précisément ce qui rend ces questions si précieuses : elles nous rappellent que l'interrogation honnête est peut-être la forme la plus haute de l'intelligence humaine.",
+    "qcm": [
+      {
+        "question": "Quel philosophe est mentionné dans le texte avec son cogito ?",
+        "options": ["Aristote", "Platon", "Descartes", "Kant"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que désigne le terme 'qualia' selon le texte ?",
+        "options": ["La mesure des ondes cérébrales", "La sensation subjective d'exister", "L'ensemble des neurones", "La longueur d'onde lumineuse"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle est la thèse principale de ce texte ?",
+        "options": ["La science a tout expliqué", "La conscience reste un mystère malgré les progrès", "Les philosophes grecs avaient tort", "Le cerveau est entièrement compris"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que signifie le mot 'panpsychisme' tel qu'il est utilisé dans le texte ?",
+        "options": ["Une théorie qui nie l'existence de la conscience", "Une doctrine qui attribue une forme d'expérience à toute la matière", "Une méthode de mesure du cerveau par imagerie", "Une branche de la psychologie comportementale"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Selon Thomas Nagel, pourquoi ne pourrions-nous jamais savoir ce que c'est qu'être une chauve-souris ?",
+        "options": ["Parce que les chauves-souris n'ont pas de cerveau développé", "Parce que nous n'avons pas encore les bons instruments scientifiques", "Parce que la conscience est fondamentalement vécue à la première personne et ne se réduit pas à une description objective", "Parce que l'écholocation est trop complexe à modéliser"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle distinction Kant établit-il, mentionnée en fin de texte ?",
+        "options": ["Entre l'âme végétative et l'âme intellective", "Entre la science et la philosophie", "Entre le phénomène (ce que nous pouvons connaître) et le noumène (hors d'atteinte de l'entendement)", "Entre la conscience et l'inconscient"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr3-02",
+    "title": "Le Dernier Voyage du Capitaine",
+    "genre": "Nouvelle littéraire",
+    "level": 3,
+    "text": "Le capitaine Aldric Morrow avait passé quarante-deux ans à traverser les mers du monde. Il connaissait le goût du sel sur ses lèvres avant même de savoir lire, la façon dont le vent change d'humeur à l'approche des tempêtes — cette légère hésitation dans la brise, ce silence que font les oiseaux — et la couleur particulière de l'horizon quelques minutes avant que le soleil ne le touche, ce rouge sombre qui n'appartient qu'à la haute mer ouverte. Il avait navigué sous des cieux australs, traversé l'Atlantique à contre-courant en plein hiver, longé les côtes islandaises par moins vingt degrés. Il avait appris à commander en observant d'abord, en parlant peu, en décidant vite quand il le fallait.\n\nCette dernière traversée, il la faisait seul, sans équipage, sur un sloop à coque bleue de dix mètres qu'il avait restauré de ses propres mains pendant trois ans dans un hangar de Brest. Non par bravade — il était passé depuis longtemps au-delà de ce besoin — mais par nécessité intérieure. Il sentait que certaines choses ne se comprennent qu'en silence absolu, loin de tout ce qui ressemble à une vie organisée, à des horaires et à des responsabilités. Il avait besoin de se retrouver face à quelque chose de plus grand que lui sans intermédiaire. Avant de partir, il avait laissé un mot bref à sa fille : « Je reviens dans six semaines. Ne t'inquiète pas. J'ai besoin d'aller voir. »\n\nLe premier soir en haute mer, alors que les lumières de la côte avaient disparu à l'horizon, il s'assit dans le cockpit avec son journal de bord. Le ciel était d'un noir profond, piqué de milliers d'étoiles que la pollution lumineuse efface depuis les villes. La Voie Lactée traversait le zénith d'un horizon à l'autre. Il resta un long moment sans écrire, à écouter le bruit de la coque sur l'eau et le souffle régulier du vent dans les voiles. Puis il nota : « L'océan ne vous regarde pas. C'est sa façon de vous respecter. » Il y avait dans cette phrase quelque chose qu'il n'aurait pu expliquer à quiconque, quelque chose sur la différence entre être seul et se sentir abandonné, entre le silence habité et le vide.\n\nLe deuxième jour, une tempête le surprit. Les nuages s'amoncelèrent à l'ouest avec la rapidité caractéristique des fronts atlantiques. Les vagues atteignirent quatre à cinq mètres, le vent soufflait à plus de cinquante nœuds. Le bateau plongeait dans les creux avec une violence qui claquait les dents. À trois heures du matin, le mât se brisa dans un craquement terrible. Le voilier, privé de voiles, se retrouva à la dérive.\n\nIl navigua sans mât pendant dix-huit heures. Il utilisa le moteur de secours, rationna son carburant avec précision, dormit par tranches de vingt minutes, une main sur la barre. Et pourtant, jamais il ne connut la peur au sens où il l'avait toujours compris — ce rétrécissement du jugement, cette projection vers des scénarios catastrophiques qui n'existaient pas encore. Il y avait une différence, comprit-il, entre être en danger et se sentir menacé. Le danger était réel, objectif, mesurable. La menace, elle, était une construction intérieure. En restant dans le présent de chaque geste et de chaque décision, le danger perdait son emprise. Il pensa à tous ceux qu'il avait commandés au fil des années, à la façon dont la panique se propage dans un équipage comme une flamme dans du papier sec, et il comprit que c'était précisément cela qu'il était venu apprendre : la différence entre calme et indifférence, entre maîtrise et résignation.\n\nQuand le vent tomba enfin le lendemain matin, il eut l'impression d'avoir appris quelque chose que quarante-deux années de navigation n'avaient jamais pu lui enseigner aussi clairement. Il rentra à Brest dix jours plus tard, remorqué les trente dernières miles par un chalutier breton dont l'équipage l'accueillit sans questions inutiles, avec ce respect silencieux que les gens de mer réservent à ceux qui ont connu la tempête. Sur le quai, sa fille l'attendait. Elle ne dit rien non plus. Elle remarqua simplement que quelque chose dans son regard avait changé, comme si une tension ancienne s'était déposée quelque part au fond de l'Atlantique, là où personne n'irait jamais la chercher. Il nota dans son journal, d'une écriture moins assurée qu'à l'ordinaire : « On ne comprend vraiment la mer qu'en se retrouvant seul à lui faire confiance. Et peut-être qu'on ne comprend vraiment qui l'on est qu'en faisant de même avec soi-même. »",
+    "qcm": [
+      {
+        "question": "Depuis combien d'années le capitaine naviguait-il ?",
+        "options": ["20 ans", "30 ans", "42 ans", "55 ans"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi le capitaine voyageait-il seul ?",
+        "options": ["Il ne trouvait pas d'équipage", "Par nécessité intérieure", "Son bateau était trop petit", "Il était puni"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Combien de temps le capitaine a-t-il navigué à la dérive après la tempête ?",
+        "options": ["6 heures", "10 heures", "18 heures", "24 heures"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle distinction le capitaine établit-il lors de la tempête ?",
+        "options": ["Entre la mer calme et la mer agitée", "Entre le danger réel et objectif, et la menace qui est une construction intérieure", "Entre naviguer seul et naviguer en équipage", "Entre la nuit et le jour en mer"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que signifie le mot 'bravade' dans le contexte du texte ?",
+        "options": ["Une grande habileté technique de navigation", "Un acte courageux accompli par peur du jugement des autres", "Une décision sage et réfléchie", "Un besoin de solitude profonde"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle leçon le capitaine tire-t-il de ce voyage, selon la dernière phrase de son journal ?",
+        "options": ["La mer est plus dangereuse que prévu", "On ne se comprend vraiment soi-même qu'en s'y faisant confiance, comme on le fait avec la mer", "Il ne faut jamais naviguer sans équipage", "La tempête était une erreur de jugement"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr3-03",
+    "title": "L'Intelligence artificielle, ami ou ennemi ?",
+    "genre": "Essai jeunesse",
+    "level": 3,
+    "text": "Rarement dans l'histoire de l'humanité une technologie n'a suscité autant d'espoirs et autant de craintes simultanément. L'intelligence artificielle est déjà présente dans nos quotidiens de façon souvent invisible : elle classe nos e-mails, recommande nos films, détecte des fraudes bancaires en temps réel, et assiste les médecins dans le diagnostic de certains cancers avec une précision parfois supérieure à celle des meilleurs spécialistes. Elle traduit des textes en quelques secondes, génère des images, compose de la musique, rédige des textes. La liste de ses applications s'allonge chaque trimestre. Dans les transports, des véhicules autonomes circulent déjà sur certaines routes, guidés par des algorithmes qui traitent en temps réel des milliers de paramètres simultanément. Dans le domaine de la recherche scientifique, des IA ont permis de modéliser des protéines en quelques heures, un travail qui aurait pris des décennies à des équipes humaines entières.\n\nMais l'IA soulève simultanément des questions d'une profondeur qui exigent que nous les prenions au sérieux. La première concerne le travail humain. Si une IA peut analyser une radiographie mieux qu'un radiologue, que devient la valeur du jugement clinique construit sur des années d'expérience ? La question se pose aussi pour le droit — des algorithmes influencent déjà des peines dans certains pays — les ressources humaines, le journalisme et l'enseignement. Des systèmes automatisés trient des CV et sélectionnent des candidats sans jamais les rencontrer. Peu d'activités comportant un jugement ou une interprétation sont réellement à l'abri. Cette transformation du monde du travail n'est pas inédite dans l'histoire : l'industrialisation du XIXe siècle a détruit des métiers artisanaux tout en en créant de nouveaux. Mais la vitesse à laquelle l'IA progresse est sans précédent, et les sociétés disposent de peu de temps pour s'adapter.\n\nCette question se double d'une problématique de responsabilité. Dans nos systèmes juridiques, la responsabilité suppose un sujet identifiable capable de répondre de ses actes. Or un algorithme n'en est pas un au sens légal. Si un système d'IA recommande un traitement erroné, si un véhicule autonome cause un accident, si un algorithme de tri refuse injustement une demande de prêt : qui assume ? Le fabricant du logiciel ? L'entreprise qui l'a déployé ? L'ingénieur concepteur ? L'utilisateur qui en a validé le résultat ? Le flou juridique actuel est immense, et les réponses législatives tardent à se préciser.\n\nLa deuxième grande question est celle des biais algorithmiques. Les systèmes d'IA apprennent à partir de données historiques produites par des sociétés humaines avec leurs propres inégalités et angles morts. Un algorithme de reconnaissance faciale entraîné sur des visages européens sera moins performant sur d'autres visages. Un système de notation de crédit reproduira les discriminations passées envers certaines catégories de population. Le biais n'est pas dans la machine : il est dans les données que les humains lui ont fournies. Corriger ce problème nécessite des audits réguliers et une diversité réelle dans les équipes qui conçoivent ces systèmes. Des chercheurs en éthique de l'IA plaident depuis plusieurs années pour que ces audits deviennent obligatoires avant tout déploiement public de tels systèmes.\n\nLa technologie elle-même est neutre : c'est son usage et les valeurs qui guident sa conception qui déterminent si elle sert ou nuit à l'humanité. La même architecture peut optimiser la distribution de médicaments dans des zones défavorisées ou cibler des publicités addictives sur des adolescents vulnérables. La question n'est donc pas de savoir si l'IA est bonne ou mauvaise dans l'absolu, mais qui décide de comment elle est développée, pour qui et dans quel but. Actuellement, la grande majorité des systèmes les plus puissants sont développés par un nombre très réduit d'entreprises privées dont les intérêts ne coïncident pas nécessairement avec le bien commun. Là réside le véritable enjeu politique et éthique de notre époque. La régulation de l'IA n'est pas une question technique réservée aux ingénieurs ; c'est une question démocratique qui engage la société entière. Des législations comme l'AI Act européen, adopté en 2024, tentent d'imposer des garde-fous proportionnels aux risques des systèmes déployés, en distinguant les applications à risque minimal, comme les filtres anti-spam, des systèmes à haut risque utilisés dans la justice, le recrutement ou la santé. C'est un premier pas, insuffisant selon de nombreux experts, mais qui marque une prise de conscience politique inédite. Former les citoyens à comprendre ces systèmes, à en questionner les usages et à exiger leur transparence est désormais aussi important que de savoir lire et écrire. L'IA sera ce que nous en ferons collectivement. Le choix appartient à chaque génération de citoyens éclairés.",
+    "qcm": [
+      {
+        "question": "Lequel de ces usages de l'IA N'est PAS mentionné dans le texte ?",
+        "options": ["Classer des e-mails", "Détecter des fraudes bancaires", "Conduire des voitures", "Aider à diagnostiquer des cancers"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Selon le texte, que soulève la question de la responsabilité des algorithmes ?",
+        "options": ["Qui est responsable quand ils se trompent", "Si l'IA doit être interdite", "Pourquoi les humains sont paresseux", "Comment programmer une IA"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quelle est la position de l'auteur sur la technologie elle-même ?",
+        "options": ["Elle est fondamentalement mauvaise", "Elle est fondamentalement bonne", "Elle est neutre", "Elle est incontrôlable"],
+        "correctIndex": 2
+      },
+      {
+        "question": "D'où viennent les biais algorithmiques selon le texte ?",
+        "options": ["Des erreurs de programmation volontaires des ingénieurs", "Des données historiques produites par des sociétés humaines avec leurs inégalités", "De la mauvaise qualité des ordinateurs utilisés", "Du manque de puissance de calcul des algorithmes"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle comparaison historique l'auteur utilise-t-il pour relativiser l'impact de l'IA sur le travail ?",
+        "options": ["La Révolution française et ses bouleversements politiques", "L'invention de l'imprimerie au XVe siècle", "L'industrialisation du XIXe siècle qui a détruit des métiers tout en en créant de nouveaux", "La Seconde Guerre mondiale et la reconstruction économique"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Selon le texte, pourquoi la régulation de l'IA est-elle une question démocratique et non seulement technique ?",
+        "options": ["Parce que les ingénieurs refusent d'assumer la responsabilité de leurs créations", "Parce que l'IA concerne l'ensemble de la société et que ses usages engagent des valeurs collectives", "Parce que les gouvernements comprennent mieux la technologie que les entreprises", "Parce que l'IA est trop complexe pour être comprise par les ingénieurs seuls"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr3-04",
+    "title": "La Mémoire des pierres",
+    "genre": "Récit historique",
+    "level": 3,
+    "text": "Les archéologues qui fouillent le site depuis maintenant sept saisons s'accordent à dire que ce lieu est exceptionnel, peut-être le plus important mis au jour dans la région depuis plusieurs décennies. Situé à flanc de colline dans un paysage de garrigues et de chênes verts, le site était connu des habitants du village voisin qui ramassaient des fragments de céramique après les labours. Mais personne n'avait encore pris la mesure de ce qui se cachait réellement sous la terre. C'est une étudiante en master d'archéologie qui, lors d'une prospection au magnétomètre en 2017, identifia les premières anomalies souterraines caractéristiques de structures bâties. Quelques mois plus tard, les premières tranchées confirmaient l'ampleur de la découverte.\n\nEnfouie sous trois mètres de sédiments accumulés au fil des siècles — couches de terre, de cendres, de limon et de déchets organiques progressivement compactés — une cité entière attend d'être révélée. Les premières fouilles ont mis au jour des céramiques datant du IIIe siècle avant notre ère, d'une qualité de décoration remarquable : motifs géométriques entrelacés et représentations animales témoignant d'un artisanat abouti. Des pièces de monnaie gravées d'effigies inconnues ont aussi été trouvées, soulevant de nouvelles hypothèses sur les échanges commerciaux de la région. Enfin, les fondations d'un grand édifice ont été dégagées dans la partie est du site. Son orientation et les fragments de colonnes à proximité suggèrent qu'il pourrait s'agir d'un temple dédié à une divinité dont nous aurions perdu le nom. Des analyses au carbone 14 effectuées sur des charbons de bois retrouvés dans les fondations permettront bientôt de confirmer ou d'affiner cette datation.\n\nMais ce qui trouble le plus les chercheurs, c'est l'absence totale de traces de violence ou d'incendie. Dans la majorité des sites archéologiques antiques, les couches d'abandon correspondent à des destructions : guerres, incendies, catastrophes. La couche finale s'achève dans un chaos figé — murs effondrés, objets brisés sur place, squelettes en position de fuite. Ici, rien de tel. Les populations ne sont pas mortes dans une catastrophe soudaine. Elles sont parties progressivement, laissant des objets du quotidien comme si elles avaient simplement décidé, un matin ordinaire, de ne plus revenir. Cette douceur de l'abandon est rare dans les archives de la terre, et elle soulève des questions que les outils habituels de l'archéologie peinent à trancher.\n\nLes hypothèses sont multiples. Une longue sécheresse, documentée dans d'autres régions méditerranéennes à la même époque, aurait pu forcer la migration. Les analyses polliniques des sédiments pourraient apporter des réponses dans les prochaines saisons. Un changement politique majeur, une épidémie réduisant lentement la population sur plusieurs générations, ou un simple déplacement des routes commerciales sont également envisagés. Aucune hypothèse ne fait encore consensus. Les archéobotanistes étudient en parallèle les graines et les pollens fossiles préservés dans les couches profondes, espérant reconstituer le paysage végétal et climatique de l'époque, tandis que les spécialistes des échanges antiques comparent les monnaies avec des collections issues d'autres sites régionaux. La discipline archéologique avance ainsi à petits pas, avec la conscience que chaque réponse ouvre plusieurs nouvelles questions. C'est précisément ce qui la rend si vivante : elle ne prétend jamais tout expliquer, mais elle approfondit sans cesse notre compréhension de la complexité humaine à travers les siècles. Les chercheurs espèrent que d'ici dix ans, une image cohérente des dernières décennies de vie sur ce site commencera enfin à se dessiner. Car comprendre comment une communauté finit par disparaître, c'est aussi mieux comprendre ce qui fait tenir ensemble une société, ce qui l'unit et ce qui, lorsqu'il vient à manquer, la condamne à se défaire silencieusement.\n\nL'histoire ne parle pas toujours par les grands bouleversements que les manuels scolaires privilégient. Parfois, elle murmure à travers des détails infimes que seule la patience des fouilles révèle. Une assiette laissée sur une table, un outil oublié dans un coin, une porte dont les gonds ont rouillé sans jamais servir une dernière fois. Ce silence matériel est lui-même un langage, et apprendre à le lire exige une humilité que les sciences humaines cultivent au mieux de leurs capacités. Ce que nous cherchons ici n'est pas un récit héroïque, mais la compréhension de pourquoi des gens ordinaires ont un jour décidé de ne pas rester. Il nous faut accepter que l'histoire soit aussi faite de ces silences, de ces absences, de ces départs sans tambour ni trompette. Les grandes civilisations ne s'éteignent pas toujours dans les flammes des conquêtes ; parfois, elles se dissolvent lentement, imperceptiblement, comme une voix qui baisse et finit par se taire. Et c'est peut-être dans cette discrétion que réside leur humanité la plus authentique, celle qui nous touche le plus profondément parce qu'elle nous ressemble.",
+    "qcm": [
+      {
+        "question": "Depuis combien de saisons les fouilles ont-elles lieu ?",
+        "options": ["3 saisons", "5 saisons", "7 saisons", "10 saisons"],
+        "correctIndex": 2
+      },
+      {
+        "question": "À quelle profondeur se trouve la cité ?",
+        "options": ["1 mètre", "2 mètres", "3 mètres", "5 mètres"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'est-ce qui trouble particulièrement les chercheurs ?",
+        "options": ["Le manque de monnaies", "L'absence de traces de violence ou d'incendie", "La présence de trop nombreuses céramiques", "La profondeur des fouilles"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment la première anomalie souterraine du site a-t-elle été découverte ?",
+        "options": ["Par un habitant du village qui creusait son jardin", "Grâce à une prospection au magnétomètre réalisée par une étudiante en master", "Lors de travaux routiers à flanc de colline", "Par des archéologues qui cherchaient un autre site"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Parmi les hypothèses évoquées pour expliquer l'abandon du site, laquelle N'est PAS mentionnée dans le texte ?",
+        "options": ["Une longue sécheresse", "Une invasion militaire étrangère", "Un déplacement des routes commerciales", "Une épidémie réduisant lentement la population"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle idée l'auteur défend-il dans le dernier paragraphe sur la façon dont l'histoire se manifeste ?",
+        "options": ["L'histoire ne peut être comprise qu'à travers les grandes batailles et conquêtes", "L'histoire murmure aussi à travers les détails infimes et les silences laissés par des gens ordinaires", "Les archéologues sont les seuls capables de comprendre le passé", "Les civilisations disparaissent toujours à cause de catastrophes violentes"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr3-05",
+    "title": "Le Paradoxe du choix",
+    "genre": "Article philosophique jeunesse",
+    "level": 3,
+    "text": "Une idée reçue très répandue dans nos sociétés contemporaines consiste à croire que plus on a de choix, plus on est libre et heureux. Cette conviction structure une large partie de nos marchés et de nos représentations culturelles de l'épanouissement individuel. Les supermarchés proposent des centaines de variétés de yaourts ; les plateformes de streaming diffusent des milliers de films ; les moteurs de recherche ouvrent sur une information quasi infinie. Le choix est partout, constant, illimité, présenté comme une conquête de la liberté. Les sociétés de consommation ont fait de la multiplication des options l'un de leurs arguments centraux, comme si davantage signifiait toujours mieux, comme si l'abondance était par nature synonyme de bonheur.\n\nPourtant, des études menées en psychologie comportementale depuis les années 1990 montrent que cette abondance peut produire l'effet inverse : la paralysie décisionnelle. Face à trop d'options, le cerveau humain éprouve un épuisement cognitif. On hésite, on reporte la décision, ou on la prend à la va-vite sans en être satisfait. On se retrouve à parcourir une plateforme de streaming pendant quarante-cinq minutes sans rien choisir, pour finalement revisionner une série qu'on connaît déjà par cœur. Le paradoxe est complet : l'abondance produit non pas la satisfaction, mais l'insatisfaction et parfois l'anxiété. Ce phénomène touche toutes les sphères de la vie contemporaine, des décisions anodines comme le choix d'un restaurant aux décisions majeures comme le choix d'une carrière ou d'un lieu de vie.\n\nL'expérience la plus emblématique est celle de la confiture, menée par les psychologues Iyengar et Lepper en 2000. Deux stands étaient installés dans un supermarché : l'un proposant vingt-quatre variétés, l'autre seulement six. Le grand stand attirait davantage de curieux. Mais le petit générait dix fois plus d'achats effectifs. Avoir trop de choix avait littéralement paralysé les consommateurs : ils regardaient, hésitaient, et repartaient les mains vides.\n\nCe phénomène a été systématisé par le psychologue Barry Schwartz dans The Paradox of Choice. Il observe qu'au-delà d'un certain seuil, le choix devient source d'anxiété plutôt que de liberté. Deux mécanismes sont principalement en cause. D'abord le coût d'opportunité : plus les alternatives sont nombreuses et attrayantes, plus le renoncement aux autres options est douloureux, et plus la satisfaction du choix final est diminuée par le regret de ce à quoi on a renoncé. Ensuite la responsabilité accrue : quand les choix sont illimités, un mauvais résultat ne peut être attribué qu'à soi-même, ce qui pèse considérablement sur le bien-être. On ne peut plus blâmer la situation ni le manque d'options ; on devient l'unique responsable de sa propre insatisfaction, ce qui aggrave encore la culpabilité.\n\nSchwartz distingue par ailleurs deux profils : les maximiseurs, qui cherchent systématiquement la meilleure option possible, et les satisfaisants, qui s'arrêtent dès qu'une option est suffisamment bonne. Les études montrent que les maximiseurs prennent objectivement de meilleures décisions mais en ressentent une satisfaction moindre. Ils ruminent davantage, regrettent plus souvent et présentent des niveaux de bien-être plus bas. L'optimisation permanente est épuisante et contre-productive du point de vue du bonheur vécu. Ce paradoxe est particulièrement visible chez les jeunes générations, exposées dès l'enfance à une offre numérique et culturelle quasi sans limites, et pour qui l'idée de renoncer à une option semble parfois insupportable. Des applications de rencontres avec des milliers de profils disponibles, des plateformes proposant des carrières à la demande, des réseaux sociaux affichant en permanence les vies apparemment parfaites des autres : tout concourt à nourrir le fantasme d'un choix toujours meilleur juste derrière le prochain clic, renforçant ainsi l'insatisfaction au lieu de la résoudre.\n\nLa solution qu'il propose n'est pas de supprimer les choix, mais d'apprendre à se satisfaire délibérément d'une option suffisamment bonne plutôt que de chercher obsessionnellement la perfection. C'est une discipline intérieure, un renoncement consenti à la chimère de l'option parfaite. Accepter l'imparfait, savoir quand s'arrêter de chercher : c'est peut-être une des formes les plus sophistiquées et les plus nécessaires de la sagesse moderne. Cette leçon dépasse largement le domaine de la consommation. Elle s'applique aux relations, aux orientations professionnelles, aux projets de vie. Dans une époque qui valorise la flexibilité permanente et qui présente tout engagement comme provisoire, la capacité à choisir et à s'y tenir — non par résignation mais par choix lucide — devient une forme de liberté plus profonde que la liberté de tout changer à tout moment. Paradoxalement, c'est en acceptant de se contraindre qu'on retrouve parfois l'espace intérieur pour se sentir pleinement libre. La liberté véritable n'est peut-être pas l'absence de limites, mais la capacité à en choisir soi-même les contours avec lucidité.",
+    "qcm": [
+      {
+        "question": "Quel est le phénomène décrit face à trop d'options ?",
+        "options": ["L'euphorie du choix", "La paralysie décisionnelle", "La sérénité", "L'indifférence"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel psychologue est mentionné dans le texte ?",
+        "options": ["Sigmund Freud", "Carl Jung", "Barry Schwartz", "Daniel Kahneman"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle solution Barry Schwartz propose-t-il ?",
+        "options": ["Réduire tous les choix", "Se satisfaire d'une option suffisamment bonne", "Toujours chercher la perfection", "Ignorer les choix difficiles"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans l'expérience de la confiture, quel stand générait dix fois plus d'achats effectifs ?",
+        "options": ["Celui qui proposait vingt-quatre variétés", "Celui qui proposait seulement six variétés", "Les deux stands avaient le même résultat", "Le stand qui proposait des dégustations gratuites"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle est la différence entre un 'maximiseur' et un 'satisfaisant' selon Schwartz ?",
+        "options": ["Le maximiseur est plus heureux car il prend de meilleures décisions", "Le satisfaisant s'arrête dès qu'une option est assez bonne, tandis que le maximiseur cherche toujours la meilleure option possible", "Le satisfaisant est incapable de prendre des décisions importantes", "Le maximiseur renonce plus facilement à ses choix"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Selon le texte, pourquoi le fait d'avoir trop de choix augmente-t-il la culpabilité en cas de mauvais résultat ?",
+        "options": ["Parce que les autres jugent sévèrement nos décisions", "Parce qu'on ne peut plus blâmer la situation et qu'on devient l'unique responsable de sa propre insatisfaction", "Parce que les options disponibles étaient toutes de mauvaise qualité", "Parce que les maximiseurs refusent d'assumer leurs erreurs"],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

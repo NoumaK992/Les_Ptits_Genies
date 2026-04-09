@@ -1,0 +1,121 @@
+[
+  {
+    "id": "pb-l1-001",
+    "title": "Le jardin partagé",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Ce matin, Léa arrive au jardin de l'école. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Elle prend un arrosoir bleu. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Les plants de tomates semblent heureux. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À la fin, toute la classe goûte une feuille de menthe." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Elle dit bonjour à ses camarades avec le sourire." },
+      { "letter": "B", "text": "Puis elle verse doucement l'eau au pied des salades." },
+      { "letter": "C", "text": "Le maître explique qu'il faut observer avant de couper." },
+      { "letter": "D", "text": "Ensuite, elle enlève trois mauvaises herbes près des carottes." },
+      { "letter": "E", "text": "Un papillon blanc se pose sur une fleur jaune." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l1-002",
+    "title": "La bibliothèque",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Après la cantine, la classe va à la bibliothèque. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Mila choisit un livre sur les volcans. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Avant de partir, elle range le livre à sa place." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "La bibliothécaire demande de parler doucement." },
+      { "letter": "B", "text": "Elle lit ensuite la première page en silence." },
+      { "letter": "C", "text": "Son voisin préfère un album d'animaux marins." },
+      { "letter": "D", "text": "Le couloir est décoré de dessins colorés." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l1-003",
+    "title": "Le match de cour",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Pendant la récréation, deux équipes jouent au ballon. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Inès garde le but avec attention. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Tout le monde applaudit à la fin de la partie." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le capitaine rappelle les règles avant de commencer." },
+      { "letter": "B", "text": "Noah fait une passe précise à son ami." },
+      { "letter": "C", "text": "La cloche sonne plus tôt que d'habitude." },
+      { "letter": "D", "text": "Un pigeon traverse la cour en courant." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l1-004",
+    "title": "Le petit déjeuner",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Le samedi matin, Yanis met la table dans la cuisine. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Sa sœur prépare des tartines. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Ensuite, ils mangent ensemble en discutant." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Il place trois bols et quatre cuillères." },
+      { "letter": "B", "text": "Leur père verse le jus d'orange dans une carafe." },
+      { "letter": "C", "text": "Le chat dort encore sur le canapé." },
+      { "letter": "D", "text": "Le soleil éclaire le balcon." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l1-005",
+    "title": "La sortie au parc",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "La classe part au parc avec deux accompagnateurs. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les élèves observent les canards sur l'étang. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Avant de rentrer, ils ramassent leurs papiers." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "La maîtresse compte les élèves avant de traverser." },
+      { "letter": "B", "text": "Puis ils dessinent un arbre dans leur carnet." },
+      { "letter": "C", "text": "Un coureur passe très vite sur l'allée." },
+      { "letter": "D", "text": "Le vent fait bouger les feuilles." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  }
+]

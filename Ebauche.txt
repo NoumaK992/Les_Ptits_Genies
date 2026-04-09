@@ -1,0 +1,38 @@
+Rédige moi un workflow complet pour créer dans l’app de bureau Verdent une application web compatible pc / tablette / mobile de soutien en langue française appelée « Les Ptits Génies ». 
+Pour l’instant, l’app comprendra trois exercices mais elle doit pouvoir être évolutive. 
+L’app n’est pas destinée pour l’instant à être commercialisée, mais elle pourrait l’être à l’avenir. Je vais juste la tester prochainement avec mes élèves. 
+Il faut que chaque élève puisse pouvoir s’inscrire avec un mot de passe et un identifiant mais sans adresse mail. Il faut aussi qu’à l’intérieur de son compte, l’app retienne sa progression et ses points d’une session à l’autre. 
+Il faut que ce soit une app ludique avec une forte gamification des exercices, mais également ultra efficace au niveau de l’apprentissage des élèves. 
+L’appli est destinée à des élèves allant du niveau 6e au niveau 3e : de 11 à 15 ans. 
+Trois exercices : 
+I. Premier exercice : 
+Expérience utilisateur : 
+Le joueur / élève clique sur commencer. Il arrive sur une page de présentation de l’exercice. Il clique sur continuer. On lui demande de choisir un thème : sciences, culture générale, arts, contes, littérature, photographie, histoire, géographie, emc, SVT, animaux, couleurs etc. 
+Il arrive devant une grille où on lui demande de chercher un mot (chien par exemple). Ce mot peut être présent 0 fois, une fois, ou plusieurs fois. L’utilisateur doit pouvoir cliquer sur n’importe quel mot mais son objectif est de cliquer sur toutes les occurrences du mot demandé. Dans la liste, on trouve des mots qui ressemblent à chiens, des distracteurs, mais ils existent dans la langue française. 
+Dès qu’il a fini de cliquer sur les mots, l’utilisateur clique sur suivant. L’app lui donne la correction. Puis on passe à une nouvelle grille avec un nouveau mot et ainsi de suite durant 6 grilles. Au bout des 6 grilles, l’app lui donne son score calculé sur une formule prenant en compte les erreurs commises et le temps. 
+Chaque erreur retire des points. Dès que la première grille s’affiche, un chronomètre est lancé. 
+Notes : 
+Une grille est composée de six lignes et dix colonnes. 
+Il faut qu’il y ait une forte rejouabilité possible. Donc il ne faut pas que l’utilisateur puisse risquer de retomber sur une grille déjà faite. 
+Les mots dans la grille doivent exister dans la langue française. 
+Il faut qu’il y ait une gradation de difficulté de la grille 1 à la grille 6 : on commence avec des mots à deux ou trois syllabes puis ça augmente. 
+II. Deuxième exercice : 
+Le joueur / élève clique sur commencer. Il arrive sur une page de présentation de l’exercice. Il clique sur continuer. On lui demande de choisir un niveau de difficulté : débutant, apprenti, intermédiaire, professionnel, expert. 
+Une fois qu’il a choisi, une liste de mots s’affiche : chaque mot sauf un est en doublon. Le but de l’exercice : cliquer sur le mot qui n’y ait qu’une seule fois. Par exemple : 
+Chien – lune – chien – chat – maison – maison – lune. 
+Dans cet exemple, pour remporter les points, l’élève doit cliquer sur « chat ». Une fois que c’est  fait, l’écran affiche une nouvelle liste. Au bout de 10 listes, l’élève obtient son score calculé là encore sur les erreurs et le temps car le chronomètre se déclenche dès que la liste s’affiche. 
+Plus on monte en niveau, plus la possibilité de gagner des points augmente. 
+Tous les mots proposés doivent exister. 
+Il faut une forte rejouabilité, cela signifie qu’il faut évacuer l’idée que l’élève puisse retomber sur une même liste. 
+
+III. Troisième exercice : 
+Le joueur / élève clique sur commencer. Il arrive sur une page de présentation de l’exercice. Il clique sur continuer. On lui demande de choisir un niveau de difficulté : Lecteur Débutant, Lecteur Intermédiaire, Lecteur Professionnel. 
+Puis, il arrive sur une sélection de textes dans des genres très différents : contes, sciences, géographie, histoire, fantasy, fantastique, biographie, SVT, mathématiques etc. 
+Au niveau débutant, les textes comprennent 200 mots environ. 
+Au niveau intermédiaire, les textes comprennent 350 mots environ. 
+Au niveau professionnel, les textes comprennent 500 mots environ. 
+Lorsqu’il a sélectionné le texte, il s’affiche de manière grisée et illisible avec un bouton lecture au centre. En haut du texte ou sur le côté, ou en bas, plusieurs icônes symbolisant des vitesses s’affichent : à pied, en roller, en trottinette, en vélo, en scooter, en voiture, en train, en avion, en fusée. Dès que le joueur appuie sur lecture, le texte s’affiche et un curseur avance progressivement, faisant disparaître chaque mot à une vitesse variable selon la vitesse sélectionnée par le joueur au départ. 
+Je ne sais pas vraiment comment « gamifier » cet exercice de manière faire gagner des points à l’élève. La lecture se passant à haute voix, cela me paraît difficile d’établir un calcul des points par l’appli car elle ne saura pas ce que l’élève a lu et quelles erreurs / oublis il a commis. Je suis preneur de tes réflexions sur ce sujet. 
+
+Frontend : 
+L’app doit avoir un design apaisant, calme, mais également jovial et dynamique. Un truc adapté à l’âge des élèves. Un truc qui donne envie d’y revenir. 

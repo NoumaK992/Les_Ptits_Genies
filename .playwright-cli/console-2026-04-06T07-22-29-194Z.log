@@ -1,0 +1,21 @@
+[      30ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:14337
+[     155ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5174/:0
+[   69137ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5174/@vite/client:968
+[  100342ms] TypeError: Cannot read properties of undefined (reading 'intruder')
+    at http://localhost:5174/src/pages/IntrusPage.tsx:93:33
+    at Array.map (<anonymous>)
+    at http://localhost:5174/src/pages/IntrusPage.tsx:92:32
+    at basicStateReducer (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:4390:42)
+    at rerenderReducer (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:4499:17)
+    at Object.useState (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:13429:13)
+    at exports.useState (http://localhost:5174/node_modules/.vite/deps/react.js?v=47fe9067:748:31)
+    at IntrusPage (http://localhost:5174/src/pages/IntrusPage.tsx:51:38)
+    at Object.react_stack_bottom_frame (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:12868:12)
+    at renderWithHooksAgain (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:4268:16)
+[  100341ms] [WARNING] %s
+
+%s
+ An error occurred in the <IntrusPage> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=47fe9067:5257
+[  102146ms] DexieError
+[  102147ms] DexieError

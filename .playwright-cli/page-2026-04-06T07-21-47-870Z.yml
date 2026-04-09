@@ -1,0 +1,47 @@
+- generic [ref=e35]:
+  - complementary [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]: 🧠
+      - heading "Les Ptits Génies" [level=1] [ref=e39]:
+        - text: Les Ptits
+        - text: Génies
+    - generic [ref=e40]:
+      - paragraph [ref=e41]: testuser1
+      - paragraph [ref=e42]: 0 pts ⭐
+    - navigation [ref=e43]:
+      - link "🏠 Accueil" [ref=e44] [cursor=pointer]:
+        - /url: /accueil
+        - generic [ref=e45]: 🏠
+        - generic [ref=e46]: Accueil
+      - link "📚 Exercices" [ref=e47] [cursor=pointer]:
+        - /url: /exercices
+        - generic [ref=e48]: 📚
+        - generic [ref=e49]: Exercices
+      - link "📊 Progrès" [ref=e50] [cursor=pointer]:
+        - /url: /tableau-de-bord
+        - generic [ref=e51]: 📊
+        - generic [ref=e52]: Progrès
+    - button "Se déconnecter" [ref=e53] [cursor=pointer]
+  - main [ref=e54]:
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - paragraph [ref=e126]: Liste 1 / 10
+          - paragraph [ref=e127]: Trouve l'intrus !
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - paragraph [ref=e130]: Score
+            - paragraph [ref=e131]: "0"
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - generic [ref=e136]: 45s
+      - generic [ref=e147]:
+        - button "kiwi" [ref=e149] [cursor=pointer]
+        - button "kiwi" [ref=e151] [cursor=pointer]
+        - button "gel" [ref=e153] [cursor=pointer]
+        - button "raisin" [ref=e155] [cursor=pointer]
+        - button "melon" [ref=e157] [cursor=pointer]
+        - button "cerise" [ref=e159] [cursor=pointer]
+        - button "melon" [ref=e161] [cursor=pointer]
+        - button "cerise" [ref=e163] [cursor=pointer]
+        - button "raisin" [ref=e165] [cursor=pointer]

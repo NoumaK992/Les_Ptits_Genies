@@ -1,0 +1,19 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]: 🧠
+    - heading "Les Ptits Génies" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Apprendre, c'est super !
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - button "🔑 Connexion" [ref=e10] [cursor=pointer]
+      - button "✨ Inscription" [ref=e11] [cursor=pointer]
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Nom d'utilisateur
+        - 'textbox "ex: SuperGenie42" [ref=e15]'
+        - paragraph [ref=e16]: 3 à 20 caractères (lettres, chiffres, tirets)
+      - generic [ref=e17]:
+        - generic [ref=e18]: Mot de passe
+        - textbox "••••••••" [ref=e19]
+      - button "C'est parti ! 🚀" [ref=e20] [cursor=pointer]
+  - paragraph [ref=e21]: Aucun email requis. Tes données restent sur ton appareil. 🔒

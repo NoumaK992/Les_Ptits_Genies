@@ -1,0 +1,157 @@
+[
+  {
+    "id": "pb-l3-001",
+    "title": "Chronique d'une ville portuaire",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Au début du printemps, la ville portuaire se transforme à mesure que les quais retrouvent leur agitation. Les commerçants installent leurs étals avant l'aube, et les premiers ferries dessinent déjà des lignes blanches sur la mer calme. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Dans cette organisation discrète, chacun connaît son rôle : les dockers préparent les chargements, les mécaniciens vérifient les moteurs, et les capitaines ajustent leur départ en fonction de la marée annoncée. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Pourtant, cette activité ne se limite pas au transport : elle soutient aussi la vie culturelle de la ville, car les cafés du front de mer accueillent des musiciens, des lecteurs et des voyageurs de passage. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le soir, lorsque les grues se figent dans la lumière orange, on comprend que le port n'est pas seulement un lieu de travail, mais un espace où se croisent des histoires, des métiers et des accents venus de loin. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " C'est cette continuité entre effort collectif, mémoire locale et ouverture au monde qui donne à la ville son identité singulière." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "À ce moment précis, les habitants pressés traversent la place du marché en suivant des trajets presque chorégraphiés, comme s'ils répondaient à une routine silencieuse et parfaitement répétée." },
+      { "letter": "B", "text": "Les écoles du quartier organisent parfois des visites, afin que les élèves observent concrètement comment une chaîne logistique dépend de gestes simples, mais rigoureux et coordonnés." },
+      { "letter": "C", "text": "Les visiteurs imaginent souvent que le port fonctionne dans l'improvisation, alors qu'il repose au contraire sur une précision quotidienne, partagée par des équipes qui ne travaillent pas aux mêmes horaires." },
+      { "letter": "D", "text": "Ce brassage favorise des rencontres inattendues, et plusieurs associations locales s'appuient sur cette diversité pour proposer des ateliers de langues, de cuisine et de récits de voyage." },
+      { "letter": "E", "text": "Même les jours de vent fort, cette solidarité demeure visible, car les décisions se prennent vite, sans bruit inutile, avec une attention constante à la sécurité des personnes et des marchandises." },
+      { "letter": "F", "text": "Le dimanche, certains habitants préfèrent rejoindre les collines pour marcher loin du bruit." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "C" },
+      { "number": 3, "answerLetter": "D" },
+      { "number": 4, "answerLetter": "E" }
+    ]
+  },
+  {
+    "id": "pb-l3-002",
+    "title": "Laboratoire et responsabilité",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Dans un laboratoire universitaire, la qualité d'une expérience dépend autant de la méthode scientifique que de la discipline collective de l'équipe. Chaque protocole est relu, chaque instrument est calibré et chaque observation est consignée avec précision. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Cette rigueur évite non seulement les erreurs techniques, mais aussi les interprétations hâtives qui peuvent orienter un projet dans une mauvaise direction. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Au fil des semaines, les doctorants apprennent ainsi que la recherche progresse rarement en ligne droite : elle avance par hypothèses, ajustements et validations successives. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Lorsqu'un résultat inattendu apparaît, il est d'abord discuté collectivement avant d'être présenté, afin de distinguer ce qui relève d'un phénomène réel de ce qui peut provenir d'un biais de mesure. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Cette exigence de transparence constitue l'un des fondements de la confiance accordée à la science." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Dans ce cadre, la traçabilité des données joue un rôle essentiel, car elle permet de vérifier chaque étape et de reproduire les analyses dans des conditions comparables." },
+      { "letter": "B", "text": "C'est pourquoi les équipes privilégient des comptes rendus détaillés, même lorsque les essais ne confirment pas l'hypothèse initiale, puisque ces résultats négatifs restent informatifs." },
+      { "letter": "C", "text": "Cette progression méthodique favorise une culture de l'humilité intellectuelle, où l'on accepte de corriger ses modèles plutôt que de forcer des conclusions fragiles." },
+      { "letter": "D", "text": "En parallèle, la publication des méthodes et des limites permet à d'autres laboratoires d'évaluer la robustesse des travaux et d'enrichir le débat scientifique." },
+      { "letter": "E", "text": "La cafétéria du campus propose désormais des menus locaux deux fois par semaine." },
+      { "letter": "F", "text": "Le parking voisin sera rénové durant les vacances d'été." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-003",
+    "title": "Rénover un quartier ancien",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "La rénovation d'un quartier ancien ne consiste pas à remplacer l'existant par du neuf : elle implique de concilier patrimoine, usages actuels et besoins futurs. Les urbanistes commencent généralement par une phase d'écoute, durant laquelle habitants, commerçants et associations exposent leurs priorités. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " À partir de ces retours, les équipes techniques définissent plusieurs scénarios, en tenant compte des mobilités, de la qualité des espaces publics et de la performance énergétique des bâtiments. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " La difficulté tient au fait que chaque décision peut produire des effets en chaîne : modifier une circulation change l'activité commerciale, végétaliser une place transforme les usages, et rénover des façades peut influencer la valeur immobilière. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Pour éviter les ruptures, les collectivités privilégient souvent des travaux progressifs, évalués étape par étape, afin d'ajuster le projet sans perdre sa cohérence d'ensemble. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Lorsqu'elle est menée avec cette attention, la transformation urbaine améliore durablement la qualité de vie sans effacer l'identité du lieu." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Cette concertation initiale permet d'identifier des attentes parfois contradictoires, mais elle évite qu'un projet techniquement solide soit socialement rejeté dès sa mise en œuvre." },
+      { "letter": "B", "text": "Les arbitrages ne reposent donc pas uniquement sur des critères budgétaires : ils intègrent aussi la capacité du quartier à rester accessible, habitable et attractif pour des publics variés." },
+      { "letter": "C", "text": "C'est pourquoi les études d'impact et les simulations d'usage occupent une place centrale, car elles rendent visibles des conséquences qui ne sont pas toujours intuitives." },
+      { "letter": "D", "text": "Cette méthode incrémentale favorise l'appropriation par les riverains, qui constatent des améliorations concrètes tout en conservant la possibilité de faire remonter des ajustements." },
+      { "letter": "E", "text": "Le musée municipal inaugure aussi une nouvelle exposition d'archéologie." },
+      { "letter": "F", "text": "Le club de football local change de maillot cette saison." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-004",
+    "title": "Apprendre à argumenter",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Argumenter, ce n'est pas seulement défendre une opinion : c'est construire un raisonnement lisible, fondé sur des faits, des exemples et des liens logiques explicites. Dans les classes, cet apprentissage demande du temps, car il suppose de distinguer l'intuition personnelle de la preuve partageable. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les élèves doivent ensuite apprendre à hiérarchiser leurs idées, en séparant ce qui est central de ce qui n'est qu'illustratif. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Cette structuration facilite le dialogue, puisque l'interlocuteur peut identifier précisément les points d'accord, les désaccords réels et les questions encore ouvertes. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Dans un débat de qualité, la réfutation n'est pas une attaque personnelle : elle consiste à examiner la solidité d'un argument, ses limites et ses implications. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " En maîtrisant ces gestes intellectuels, les apprenants gagnent en clarté, en confiance et en esprit critique." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Un premier travail consiste donc à formuler une thèse précise, puis à vérifier que chaque argument mobilisé contribue réellement à la défendre, sans détour inutile." },
+      { "letter": "B", "text": "Sans cette organisation, même des idées pertinentes peuvent perdre de leur force, parce qu'elles se dispersent et deviennent difficiles à suivre pour le lecteur ou l'auditoire." },
+      { "letter": "C", "text": "Elle permet également de corriger des malentendus fréquents, notamment lorsque deux personnes emploient les mêmes mots avec des définitions différentes." },
+      { "letter": "D", "text": "Cette exigence de méthode renforce le respect mutuel, car elle replace la discussion sur le terrain des raisons plutôt que sur celui des jugements hâtifs." },
+      { "letter": "E", "text": "Le concours d'éloquence de la région aura lieu au mois de mai." },
+      { "letter": "F", "text": "La bibliothèque municipale vient d'étendre ses horaires du samedi." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-005",
+    "title": "Écosystèmes côtiers",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Les écosystèmes côtiers figurent parmi les milieux les plus productifs de la planète, mais aussi parmi les plus sensibles aux activités humaines. Entre terre et mer, ils subissent simultanément la pression de l'urbanisation, du tourisme, des pollutions diffuses et de l'élévation du niveau marin. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les scientifiques observent par exemple que certaines zones humides jouent un rôle d'amortisseur en cas de tempête, tout en servant de nurserie pour de nombreuses espèces marines. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Protéger ces milieux suppose donc de dépasser une logique de court terme : il faut articuler les politiques d'aménagement, la prévention des risques et la préservation de la biodiversité. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Cette approche intégrée demande une coopération durable entre chercheurs, collectivités, acteurs économiques et habitants, car chacun détient une part des solutions et des contraintes. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " À long terme, la résilience des littoraux dépendra de cette capacité à anticiper, à adapter les usages et à restaurer les fonctions écologiques essentielles." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Cette superposition de facteurs fragilise les équilibres écologiques, et elle réduit la capacité naturelle des littoraux à absorber les chocs climatiques." },
+      { "letter": "B", "text": "Lorsque ces habitats se dégradent, la perte n'est pas seulement écologique : elle est aussi sociale et économique, car les services rendus par ces milieux deviennent plus coûteux à compenser." },
+      { "letter": "C", "text": "Autrement dit, la protection ne peut pas être pensée comme une contrainte isolée, mais comme une condition de viabilité pour les territoires côtiers et leurs activités." },
+      { "letter": "D", "text": "Des dispositifs de suivi partagés, associant mesures scientifiques et observations locales, permettent justement d'ajuster les actions de manière plus réactive et plus pertinente." },
+      { "letter": "E", "text": "Le festival nautique attire chaque année des milliers de visiteurs." },
+      { "letter": "F", "text": "Un nouveau parking a été construit près de la plage centrale." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  }
+]

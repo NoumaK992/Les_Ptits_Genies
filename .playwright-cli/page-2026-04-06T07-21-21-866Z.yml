@@ -1,0 +1,52 @@
+- generic [ref=e35]:
+  - complementary [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]: 🧠
+      - heading "Les Ptits Génies" [level=1] [ref=e39]:
+        - text: Les Ptits
+        - text: Génies
+    - generic [ref=e40]:
+      - paragraph [ref=e41]: testuser1
+      - paragraph [ref=e42]: 0 pts ⭐
+    - navigation [ref=e43]:
+      - link "🏠 Accueil" [ref=e44] [cursor=pointer]:
+        - /url: /accueil
+        - generic [ref=e45]: 🏠
+        - generic [ref=e46]: Accueil
+      - link "📚 Exercices" [ref=e47] [cursor=pointer]:
+        - /url: /exercices
+        - generic [ref=e48]: 📚
+        - generic [ref=e49]: Exercices
+      - link "📊 Progrès" [ref=e50] [cursor=pointer]:
+        - /url: /tableau-de-bord
+        - generic [ref=e51]: 📊
+        - generic [ref=e52]: Progrès
+    - button "Se déconnecter" [ref=e53] [cursor=pointer]
+  - main [ref=e54]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "Bonjour, testuser1 ! 👋" [level=2] [ref=e58]
+        - paragraph [ref=e59]: Quel exercice veux-tu faire aujourd'hui ?
+      - generic [ref=e60]:
+        - button "🔍 Recherche de mots 6 grilles par session — trouve toutes les occurrences ! Jouer →" [ref=e61] [cursor=pointer]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: 🔍
+            - generic [ref=e65]:
+              - heading "Recherche de mots" [level=3] [ref=e66]
+              - paragraph [ref=e67]: 6 grilles par session — trouve toutes les occurrences !
+          - generic [ref=e69]: Jouer →
+        - button "🕵️ L'Intrus Trouve le mot unique parmi les doublons — 10 listes ! Jouer →" [ref=e70] [cursor=pointer]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: 🕵️
+            - generic [ref=e74]:
+              - heading "L'Intrus" [level=3] [ref=e75]
+              - paragraph [ref=e76]: Trouve le mot unique parmi les doublons — 10 listes !
+          - generic [ref=e78]: Jouer →
+        - button "⚡ Lecture rapide Lis vite, comprends mieux — 3 niveaux de textes ! Jouer →" [ref=e79] [cursor=pointer]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: ⚡
+            - generic [ref=e83]:
+              - heading "Lecture rapide" [level=3] [ref=e84]
+              - paragraph [ref=e85]: Lis vite, comprends mieux — 3 niveaux de textes !
+          - generic [ref=e87]: Jouer →
+      - generic [ref=e88]: 💡 Chaque exercice complété te rend plus intelligent(e) !

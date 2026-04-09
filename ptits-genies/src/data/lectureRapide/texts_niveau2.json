@@ -1,0 +1,197 @@
+[
+  {
+    "id": "lr2-01",
+    "title": "L'Expédition en forêt",
+    "genre": "Récit d'aventure",
+    "level": 2,
+    "text": "C'était la première randonnée de la classe de cinquième dans la forêt de Meudon, et l'excitation était palpable depuis le matin. Le professeur de sciences naturelles, Monsieur Durval, avait distribué des carnets de notes et des loupes à chaque élève avant de quitter l'école. Il avait aussi remis un petit livret d'identification des plantes et des insectes les plus courants, en les encourageant à cocher chaque espèce observée. La consigne était claire : observer, noter, poser des questions, et ne rien cueillir ni déranger.\n\nDès l'entrée dans le sous-bois, l'atmosphère changea radicalement. Le bruit de la ville disparut, remplacé par le chant mélodieux des oiseaux et le craquement des feuilles mortes sous leurs pas. La lumière, filtrée par la canopée, se posait en taches dorées sur la mousse et le sol terreux. Plusieurs élèves s'arrêtèrent net pour regarder autour d'eux, comme si ce monde avait brusquement changé de couleur. L'un d'eux murmura qu'on aurait dit une autre planète, et personne ne rit.\n\nSara, passionnée de botanique depuis l'âge de huit ans, s'arrêtait toutes les cinq minutes pour examiner une mousse, un champignon ou une fougère. Elle notait avec soin la forme des feuilles, la texture des écorces, l'odeur particulière de certains champignons. Monsieur Durval s'arrêtait souvent à ses côtés pour valider ses observations ou lui apporter des précisions supplémentaires. Son ami Lucas préférait observer les insectes avec sa loupe. Il en avait déjà dessiné trois espèces dans son carnet : un carabe doré aux reflets métalliques, une coccinelle à sept points, et ce qu'il pensait être un perce-oreille. Il prenait soin de noter la taille approximative de chaque insecte et la plante sur laquelle il l'avait trouvé.\n\nÀ mi-chemin, le groupe s'installa près d'un ruisseau pour déjeuner sur l'herbe. L'eau était si claire qu'on voyait les petits cailloux au fond et quelques têtards qui se faufilaient entre les pierres. Les élèves mangèrent dans un silence inhabituel, presque intimidés par la beauté tranquille du lieu. Quelques oiseaux s'approchèrent timidement pour ramasser les miettes laissées sur l'herbe.\n\nMonsieur Durval profita de ce moment pour expliquer que la forêt produisait de l'oxygène et abritait des milliers d'espèces animales et végétales interdépendantes. Il évoqua la chaîne alimentaire et l'impact des activités humaines sur ces écosystèmes fragiles : déforestation, pesticides, pollution des sols et des cours d'eau. Il montra comment reconnaître un sol forestier sain à la couleur et à l'odeur de l'humus, et expliqua le rôle discret mais essentiel des vers de terre et des champignons dans la décomposition des matières organiques. Des questions fusèrent de toute part. Il répondit à chacune avec patience, reconnaissant aussi honnêtement ce qu'il ne savait pas.\n\nEn rentrant, Sara avait rempli la moitié de son carnet. Elle avait identifié neuf espèces végétales et quatre insectes. Elle décida ce soir-là de lire davantage sur la biologie végétale et de chercher un club de botanique près de chez elle. Lucas, quant à lui, avait décidé d'apporter sa loupe binoculaire la prochaine fois. Monsieur Durval, en fermant la porte du car, sourit discrètement. C'était exactement l'effet qu'il espérait produire.",
+    "qcm": [
+      {
+        "question": "Quelle matière enseigne Monsieur Durval ?",
+        "options": ["Histoire", "Mathématiques", "Sciences naturelles", "Géographie"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'est-ce que Lucas préférait observer ?",
+        "options": ["Les plantes", "Les oiseaux", "Les insectes", "Les rochers"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Où le groupe a-t-il déjeuné ?",
+        "options": ["Dans une clairière", "Près d'un ruisseau", "Au sommet d'une colline", "Dans une cabane"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans le texte, la « canopée » désigne quel élément de la forêt ?",
+        "options": ["Le sol recouvert de mousse", "L'ensemble des feuillages qui forment le toit de la forêt", "Le ruisseau qui traverse le sous-bois", "Le sentier principal de la randonnée"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel rôle les vers de terre et les champignons jouent-ils dans la forêt selon Monsieur Durval ?",
+        "options": ["Ils produisent de l'oxygène pour les animaux", "Ils attirent les oiseaux vers le sol", "Ils décomposent les matières organiques", "Ils filtrent l'eau des ruisseaux"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi Monsieur Durval sourit-il discrètement en fermant la porte du car ?",
+        "options": ["Il était soulagé que personne ne soit blessé pendant la randonnée", "La sortie avait produit l'effet qu'il espérait : éveiller la curiosité des élèves", "Il était content d'avoir fini sa journée de travail", "Il venait de recevoir un message agréable sur son téléphone"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-02",
+    "title": "La Nuit des étoiles",
+    "genre": "Article jeunesse",
+    "level": 2,
+    "text": "Chaque année, au mois d'août, des millions de personnes lèvent les yeux vers le ciel nocturne pour observer l'un des spectacles les plus fascinants que la nature offre gratuitement : les étoiles filantes. Ce phénomène, connu sous le nom des Perséides, est l'un des plus spectaculaires et des plus réguliers de l'année astronomique. Mais derrière la magie apparente de ces traînées lumineuses se cache une réalité scientifique tout aussi remarquable.\n\nContrairement à ce que leur nom indique, les étoiles filantes ne sont pas des étoiles. Ce sont des fragments de poussière et de roches, parfois de la taille d'un grain de sable, laissés dans l'espace par des comètes lors de leurs passages autour du Soleil. Les comètes sont des corps célestes composés de glace et de roche. Chaque fois qu'elles s'approchent du Soleil, leur surface se vaporise sous l'effet de la chaleur et dégage une traînée de débris qui se disperse sur leur orbite, formant un nuage invisible dans l'espace. La comète Swift-Tuttle, qui passe près de la Terre tous les cent trente ans environ, est à l'origine des Perséides que nous observons chaque été. Son orbite laisse derrière elle un couloir de poussières et de cailloux que notre planète traverse toujours au même moment de l'année, avec une remarquable régularité astronomique.\n\nQuand la Terre traverse l'un de ces nuages, les particules pénètrent dans notre atmosphère à une vitesse vertigineuse, parfois supérieure à 200 000 kilomètres par heure. La friction avec l'air les chauffe si intensément qu'elles deviennent incandescentes, produisant la traînée lumineuse que nous observons depuis le sol. Le tout ne dure qu'une fraction de seconde, mais l'impression reste gravée dans la mémoire.\n\nLa plupart de ces fragments mesurent moins d'un centimètre. Les plus gros peuvent traverser l'atmosphère sans se désintégrer et atteindre le sol : on les appelle alors des météorites. Mais les Perséides sont généralement trop petites pour survivre à la traversée : elles se consument entièrement bien avant d'atteindre la surface terrestre.\n\nLe pic des Perséides a lieu chaque année entre le 11 et le 13 août. Par nuit claire et sans Lune, il est possible d'observer jusqu'à cent météores par heure, soit presque deux par minute. C'est un spectacle accessible à tous, sans télescope ni équipement particulier. Le simple fait de sortir dans un jardin ou sur un balcon éloigné des grandes artères lumineuses peut déjà suffire à profiter du spectacle.\n\nSi vous souhaitez les observer, quelques précautions simples maximisent le plaisir. Éloignez-vous des lumières de la ville, qui masquent les étoiles les plus faibles. Choisissez un endroit dégagé pour avoir le champ de vision le plus large possible. Allongez-vous dans l'herbe après minuit, qui est généralement le meilleur moment. Laissez vos yeux s'adapter à l'obscurité pendant une vingtaine de minutes sans regarder votre téléphone : la pupille se dilate progressivement et vous permettra de voir des traînées beaucoup plus fines. La patience est toujours récompensée. Et si une nuit ne suffit pas, revenez : les Perséides durent plusieurs jours, offrant de multiples occasions d'admirer ce spectacle céleste unique.",
+    "qcm": [
+      {
+        "question": "Qu'est-ce qu'une étoile filante en réalité ?",
+        "options": ["Une vraie étoile qui tombe", "Des fragments de poussière et de roches", "Un satellite artificiel", "Un météorite géant"],
+        "correctIndex": 1
+      },
+      {
+        "question": "À quelle vitesse ces particules pénètrent-elles dans l'atmosphère ?",
+        "options": ["50 000 km/h", "100 000 km/h", "Plus de 200 000 km/h", "500 000 km/h"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Combien de temps faut-il laisser ses yeux s'adapter à l'obscurité ?",
+        "options": ["5 minutes", "10 minutes", "20 minutes", "1 heure"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi les Perséides ont-elles lieu chaque année à la même période ?",
+        "options": ["Parce que la comète Swift-Tuttle passe près de la Terre chaque été", "Parce que la Terre traverse toujours le même couloir de débris laissé par la comète Swift-Tuttle", "Parce que le Soleil attire les poussières de l'espace en août", "Parce que la Lune disparaît chaque année entre le 11 et le 13 août"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans le texte, que signifie le mot « incandescentes » appliqué aux particules ?",
+        "options": ["Elles deviennent invisibles à l'œil nu", "Elles explosent en plusieurs morceaux", "Elles chauffent au point d'émettre de la lumière", "Elles ralentissent brusquement dans l'atmosphère"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Selon le texte, quel est le meilleur moment de la nuit pour observer les Perséides ?",
+        "options": ["Dès le coucher du soleil", "Avant minuit", "Après minuit", "Au lever du soleil"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr2-03",
+    "title": "Le Mystère du musée",
+    "genre": "Nouvelle policière",
+    "level": 2,
+    "text": "C'était un lundi matin ordinaire pour Madame Fontaine, conservatrice du musée des Beaux-Arts depuis dix-sept ans. Elle aimait arriver avant l'ouverture pour faire le tour des salles dans le silence, apprécier les œuvres sans visiteurs, commencer la journée dans la tranquillité. Ce matin-là, après la salle flamande et la salle des impressionnistes, elle entra dans la grande salle centrale. Elle s'arrêta net. Là où aurait dû se trouver le tableau de Vermeer, il n'y avait plus rien. À sa place, au mur, ne restait qu'un rectangle plus clair dans la peinture vieillie. Elle alerta immédiatement la sécurité.\n\nL'inspecteur Marek arriva une heure plus tard, accompagné de deux techniciens de la police scientifique équipés de leurs mallettes et de leurs lumières à ultraviolets. Il était connu pour sa méthode rigoureuse et son sens de l'observation. Méthodique et silencieux, il fit le tour de la salle sans rien toucher pendant plusieurs minutes, les mains dans le dos, les yeux balayant les murs, le sol et le plafond. Il prit note de l'absence de traces d'effraction sur les vitres et de l'état intact des serrures, ce qui confirmait que le voleur connaissait les lieux de l'intérieur.\n\nIl demanda ensuite à voir les caméras de surveillance. Les images montraient tout jusqu'à 1h58 du matin, puis un écran noir : elles avaient été coupées entre 2h00 et 4h00. Quelqu'un connaissait parfaitement le système et savait exactement où couper le signal pour éviter de déclencher les alarmes. Ce détail réduisait considérablement le nombre de suspects. Seules quatre personnes avaient accès au tableau de commande électrique situé dans le sous-sol du bâtiment.\n\nL'inspecteur interrogea les gardiens de nuit, un par un. La plupart répondirent posément. Mais l'un d'eux, un certain Bernard, semblait différent. Ses réponses étaient courtes, comme préparées à l'avance. Son regard fuyait vers la fenêtre à chaque question embarrassante. Ses mains sur la table étaient légèrement crispées. Il affirmait n'avoir rien entendu d'inhabituel, mais sa voix manquait de la conviction naturelle des innocents.\n\nEn sortant de la salle, l'inspecteur remarqua des éclaboussures de peinture blanche sur les chaussures de Bernard. La même peinture que les ouvriers avaient appliquée deux jours auparavant dans les couloirs du sous-sol, là où se trouvait le système de surveillance. Cela plaçait Bernard au mauvais endroit au mauvais moment, sans aucune explication légitime. L'inspecteur ne dit rien mais ajouta mentalement ce détail à la liste croissante des éléments à charge.\n\nUne perquisition révéla le tableau soigneusement roulé dans un tube de carton, glissé derrière son manteau dans son casier. Bernard nia d'abord, puis se tut. L'enquête révéla qu'il avait été approché deux mois plus tôt par un intermédiaire agissant pour un collectionneur privé. Il avait cédé pour rembourser des dettes accumulées. Le tableau fut restitué au musée sans dommages. L'affaire fit la une des journaux pendant deux jours. L'événement relança un débat national sur la sécurité des musées français et les ressources insuffisantes consacrées à la protection du patrimoine culturel. Madame Fontaine, quant à elle, demanda aussitôt l'installation d'un nouveau système de surveillance renforcé.",
+    "qcm": [
+      {
+        "question": "Quel tableau avait disparu ?",
+        "options": ["Un Picasso", "Un Monet", "Un Vermeer", "Un Renoir"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pendant combien de temps les caméras avaient-elles été coupées ?",
+        "options": ["1 heure", "2 heures", "4 heures", "6 heures"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'est-ce qui a permis d'identifier le coupable ?",
+        "options": ["Une empreinte digitale", "Un témoin", "De la peinture blanche sur ses chaussures", "Un ticket de transport"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle preuve a convaincu l'inspecteur que le voleur connaissait le musée de l'intérieur ?",
+        "options": ["Les caméras avaient filmé son visage avant d'être coupées", "Il n'y avait aucune trace d'effraction sur les vitres ni les serrures", "Un gardien avait reconnu le voleur", "Le tableau avait été remplacé par une copie parfaite"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pour quelle raison Bernard a-t-il volé le tableau ?",
+        "options": ["Il voulait le revendre à un musée étranger", "Il souhaitait garder l'œuvre pour sa collection personnelle", "Il avait été payé par un intermédiaire pour rembourser ses dettes", "Il voulait se venger de Madame Fontaine"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Où le tableau volé a-t-il finalement été retrouvé ?",
+        "options": ["Dans le coffre d'une voiture garée devant le musée", "Dans l'appartement de Bernard", "Roulé dans un tube de carton dans le casier de Bernard", "Caché derrière un autre tableau dans la réserve"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr2-04",
+    "title": "Les Abeilles disparaissent",
+    "genre": "Article scientifique jeunesse",
+    "level": 2,
+    "text": "Depuis une vingtaine d'années, les scientifiques observent avec inquiétude la disparition progressive des abeilles dans de nombreuses régions du monde. Ce phénomène, connu sous le nom de syndrome d'effondrement des colonies, est extrêmement préoccupant. Pourquoi ? Parce que les abeilles jouent un rôle fondamental dans notre écosystème. Elles pollinisent environ 80 % des plantes à fleurs sur Terre. Sans elles, la production agricole mondiale s'effondrerait en quelques décennies.\n\nEn butinant de fleur en fleur pour récolter du nectar, les abeilles transportent involontairement des grains de pollen, permettant la fécondation des plantes. Les fraises, les pommes, les amandes, le café et des centaines d'autres aliments que nous consommons chaque jour dépendent directement de ce service. Certaines cultures, comme les amandiers de Californie, en dépendent à presque 100 %. Des exploitants agricoles américains doivent même louer des colonies d'abeilles chaque printemps pour assurer la pollinisation de leurs vergers, tant les populations sauvages locales se sont effondrées. Sans pollinisateurs, ces cultures disparaîtraient, avec des conséquences alimentaires dévastatrices à l'échelle mondiale. On estime que la valeur économique mondiale de la pollinisation par les insectes dépasse plusieurs centaines de milliards d'euros chaque année.\n\nLes causes de cette disparition sont multiples et souvent interconnectées. L'utilisation massive de pesticides, notamment les néonicotinoïdes, perturbe le système nerveux des abeilles et leur sens de l'orientation, les empêchant de retrouver leur ruche. La destruction progressive des prairies fleuries et des haies naturelles prive les colonies de la diversité alimentaire dont elles ont besoin pour rester en bonne santé. Les parasites comme le varroa, un acarien qui affaiblit les colonies en se nourrissant de leur sang, constituent une menace supplémentaire difficile à endiguer. Enfin, le changement climatique perturbe les cycles de floraison, créant des décalages entre l'ouverture des fleurs et l'activité des abeilles. Ces facteurs se combinent et se renforcent mutuellement, rendant les colonies encore plus vulnérables face à chaque nouvelle pression environnementale.\n\nDes solutions existent pourtant, à toutes les échelles. Plusieurs pays européens ont interdit les néonicotinoïdes avec des résultats encourageants. Des pratiques agroécologiques permettent de réduire les pesticides tout en maintenant des rendements acceptables. À l'échelle individuelle, planter des fleurs riches en nectar, laisser pousser les pissenlits et les trèfles dans les jardins et sur les terrasses, ou installer des hôtels à insectes dans sa cour sont des gestes concrets et accessibles à chacun. En ville, des ruches sur les toits d'immeubles donnent parfois de meilleurs résultats qu'en zone rurale intensive. Chacun peut contribuer à sauver les abeilles, et ainsi préserver la biodiversité et notre alimentation. Informer son entourage, choisir des produits issus de l'agriculture biologique, soutenir les apiculteurs locaux : autant de gestes simples qui, multipliés à grande échelle, peuvent inverser une tendance alarmante. La survie des abeilles est aussi la nôtre. Si les tendances actuelles ne s'inversent pas, certains scientifiques estiment que plusieurs régions agricoles pourraient connaître des pénuries alimentaires graves d'ici la fin du siècle. La question de la survie des abeilles n'est donc pas anecdotique : elle touche directement à la sécurité alimentaire de l'humanité entière, et mérite d'être traitée comme la priorité environnementale qu'elle est.",
+    "qcm": [
+      {
+        "question": "Quel pourcentage de plantes à fleurs les abeilles pollinisent-elles ?",
+        "options": ["50%", "60%", "70%", "80%"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel est le nom du parasite mentionné dans le texte ?",
+        "options": ["Le frelon", "Le varroa", "L'acarien", "Le scarabée"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Depuis combien de temps observe-t-on ce phénomène ?",
+        "options": ["5 ans", "10 ans", "20 ans", "50 ans"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment les néonicotinoïdes nuisent-ils aux abeilles selon le texte ?",
+        "options": ["Ils détruisent directement leurs ruches", "Ils perturbent leur système nerveux et leur sens de l'orientation", "Ils empoisonnent le nectar des fleurs qu'elles butinent", "Ils favorisent la reproduction du varroa dans les colonies"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment les abeilles pollinisent-elles les plantes ?",
+        "options": ["En déposant volontairement du pollen sur les pistils des fleurs", "En transportant involontairement des grains de pollen de fleur en fleur", "En produisant un liquide sucré qui aide les fleurs à se reproduire", "En attirant d'autres insectes vers les fleurs grâce à leurs signaux chimiques"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Lequel de ces gestes est présenté dans le texte comme une action individuelle pour aider les abeilles ?",
+        "options": ["Interdire les pesticides dans toute l'Europe", "Louer des colonies d'abeilles pour ses vergers", "Planter des fleurs riches en nectar dans son jardin", "Créer des laboratoires de recherche sur les pollinisateurs"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr2-05",
+    "title": "La Révolution numérique",
+    "genre": "Article jeunesse",
+    "level": 2,
+    "text": "En moins de trente ans, le numérique a totalement transformé notre façon de vivre, de travailler et de communiquer. L'invention d'Internet dans les années 1990, puis l'essor des smartphones au début des années 2000, ont marqué des tournants historiques majeurs. Aujourd'hui, plus de la moitié de la population mondiale est connectée à Internet, un chiffre impensable il y a vingt-cinq ans. Le numérique est devenu une infrastructure aussi fondamentale que l'eau ou l'électricité, au point que de nombreux États reconnaissent désormais l'accès à Internet comme un droit fondamental.\n\nCette révolution a créé de nouveaux métiers qui n'existaient pas il y a vingt ans : développeur web, créateur de contenu, data analyst, expert en cybersécurité, community manager. Elle a aussi transformé des professions existantes. Les journalistes utilisent les réseaux sociaux comme sources et comme canaux de diffusion. Les médecins pratiquent des consultations à distance. Les enseignants proposent des cours en ligne et des exercices interactifs. Les architectes conçoivent leurs projets grâce à des logiciels de modélisation en trois dimensions. Peu de métiers sont restés totalement imperméables à cette vague. Dans les usines, des robots programmables réalisent des tâches autrefois confiées à des opérateurs humains, et dans les commerces, les caisses automatiques ont progressivement remplacé une partie du personnel traditionnel.\n\nMais cette révolution soulève aussi des questions importantes. La première concerne la protection des données personnelles. Chaque clic, chaque recherche, chaque achat en ligne génère des données collectées et souvent revendues à des entreprises publicitaires sans que l'utilisateur en soit vraiment conscient. Le RGPD, adopté en Europe en 2018, tente d'y répondre, mais reste difficile à appliquer à l'échelle mondiale face aux géants technologiques.\n\nLa deuxième question est celle des fausses informations. Internet a permis à chacun de publier du contenu sans vérification préalable, facilitant la propagation de rumeurs et de théories du complot. Distinguer un fait d'une opinion, vérifier une source, recouper les informations : ce sont des compétences citoyennes devenues absolument essentielles. Des associations et des médias spécialisés dans la vérification des faits travaillent chaque jour à démanteler les mensonges qui circulent rapidement en ligne.\n\nLa troisième question est celle des inégalités numériques. L'accès à Internet reste très inégal selon les pays, les régions et les catégories sociales. Ces inégalités risquent de creuser davantage les écarts entre ceux qui maîtrisent les outils numériques et ceux qui en sont exclus. Ces défis sont politiques, sociaux et éthiques. Y répondre exige une réflexion collective à laquelle chaque citoyen est appelé à participer. Former les générations futures à un usage éclairé et critique du numérique est devenu l'un des enjeux éducatifs les plus urgents de notre époque. Ce n'est pas la technologie qui façonnera notre avenir, mais les choix que nous ferons collectivement pour la gouverner. Apprendre à naviguer dans cet environnement complexe, à en tirer le meilleur tout en résistant à ses dérives, est une compétence que l'école, la famille et la société dans son ensemble ont la responsabilité de cultiver et de transmettre à chaque nouvelle génération qui grandira dans ce monde connecté.",
+    "qcm": [
+      {
+        "question": "Quand Internet a-t-il été inventé selon le texte ?",
+        "options": ["Dans les années 1980", "Dans les années 1990", "Dans les années 2000", "Dans les années 2010"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle proportion de la population mondiale est connectée à Internet ?",
+        "options": ["Un quart", "Un tiers", "La moitié", "Les deux tiers"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Lequel de ces métiers N'est PAS mentionné dans le texte ?",
+        "options": ["Développeur web", "Data analyst", "Architecte", "Créateur de contenu"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel problème le RGPD cherche-t-il à résoudre selon le texte ?",
+        "options": ["La propagation des fausses informations sur Internet", "La collecte et la revente des données personnelles des utilisateurs", "Les inégalités d'accès à Internet entre les pays", "La dépendance des jeunes aux réseaux sociaux"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Selon le texte, quelle compétence est devenue « absolument essentielle » face aux fausses informations ?",
+        "options": ["Savoir programmer un site web", "Distinguer un fait d'une opinion et vérifier les sources", "Utiliser les réseaux sociaux pour s'informer", "Maîtriser les outils de cybersécurité"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Laquelle de ces trois questions soulevées par la révolution numérique N'est PAS mentionnée dans le texte ?",
+        "options": ["La protection des données personnelles", "La dépendance aux écrans chez les adolescents", "Les fausses informations", "Les inégalités numériques"],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

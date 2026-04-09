@@ -1,0 +1,61 @@
+- generic [ref=e22]:
+  - complementary [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]: 🧠
+      - heading "Les Ptits Génies" [level=1] [ref=e26]:
+        - text: Les Ptits
+        - text: Génies
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: testuser1
+      - paragraph [ref=e29]: 0 pts ⭐
+    - navigation [ref=e30]:
+      - link "🏠 Accueil" [ref=e31] [cursor=pointer]:
+        - /url: /accueil
+        - generic [ref=e32]: 🏠
+        - generic [ref=e33]: Accueil
+      - link "📚 Exercices" [ref=e34] [cursor=pointer]:
+        - /url: /exercices
+        - generic [ref=e35]: 📚
+        - generic [ref=e36]: Exercices
+      - link "📊 Progrès" [ref=e37] [cursor=pointer]:
+        - /url: /tableau-de-bord
+        - generic [ref=e38]: 📊
+        - generic [ref=e39]: Progrès
+    - button "Se déconnecter" [ref=e40] [cursor=pointer]
+  - main [ref=e41]:
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]: 🕵️
+        - heading "L'Intrus" [level=2] [ref=e80]
+        - paragraph [ref=e81]: Choisis ton niveau de difficulté
+      - generic [ref=e82]:
+        - button "⭐ Débutant Mots simples — 9 mots par liste →" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: ⭐
+          - generic [ref=e85]:
+            - paragraph [ref=e86]: Débutant
+            - paragraph [ref=e87]: Mots simples — 9 mots par liste
+          - generic [ref=e88]: →
+        - button "⭐⭐ Intermédiaire Mots plus longs — 17 à 19 mots par liste →" [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]: ⭐⭐
+          - generic [ref=e91]:
+            - paragraph [ref=e92]: Intermédiaire
+            - paragraph [ref=e93]: Mots plus longs — 17 à 19 mots par liste
+          - generic [ref=e94]: →
+        - button "⭐⭐⭐ Avancé Vocabulaire soutenu — 23 à 25 mots par liste →" [ref=e95] [cursor=pointer]:
+          - generic [ref=e96]: ⭐⭐⭐
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: Avancé
+            - paragraph [ref=e99]: Vocabulaire soutenu — 23 à 25 mots par liste
+          - generic [ref=e100]: →
+        - button "⭐⭐⭐⭐ Expert Mots complexes et proches — 29 à 31 mots →" [ref=e101] [cursor=pointer]:
+          - generic [ref=e102]: ⭐⭐⭐⭐
+          - generic [ref=e103]:
+            - paragraph [ref=e104]: Expert
+            - paragraph [ref=e105]: Mots complexes et proches — 29 à 31 mots
+          - generic [ref=e106]: →
+        - button "⭐⭐⭐⭐⭐ Génie Mots en -tion très similaires — 35 mots par liste →" [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: ⭐⭐⭐⭐⭐
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: Génie
+            - paragraph [ref=e111]: Mots en -tion très similaires — 35 mots par liste
+          - generic [ref=e112]: →

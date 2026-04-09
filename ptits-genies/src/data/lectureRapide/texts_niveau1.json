@@ -1,0 +1,197 @@
+[
+  {
+    "id": "lr1-01",
+    "title": "Le Renard et le Corbeau",
+    "genre": "Fable",
+    "level": 1,
+    "text": "Maître Corbeau, sur un arbre perché, tenait en son bec un fromage bien rond et bien odorant, qu'il avait trouvé le matin même au pied d'une ferme. Maître Renard, attiré par l'odeur alléchante, s'approcha doucement, posa ses pattes avant sur le tronc de l'arbre et leva la tête vers lui. Il lui tint alors à peu près ce langage : Hé bonjour, Monsieur du Corbeau ! Que vous êtes joli ! Que vous me semblez beau ! Vos plumes sont d'un noir brillant, votre silhouette est élégante, et votre port est celui d'un vrai roi des forêts. Sans mentir, si votre ramage se rapporte à votre plumage, vous êtes sans aucun doute le Phénix des hôtes de ces bois. À ces mots flatteurs, le Corbeau ne se sentit plus de joie. Il était si fier d'être aussi admiré par quelqu'un d'aussi rusé que le Renard ! Pour montrer sa belle voix et prouver qu'il était vraiment magnifique en tout point, il ouvrit un large bec, laissa échapper un grand cri rauque, et laissa tomber sa proie. Le Renard s'en saisit d'un bond vif et précis, et dit en souriant : Mon bon Monsieur, apprenez que tout flatteur vit aux dépens de celui qui l'écoute. Cette leçon vaut bien un fromage, sans doute. Le Corbeau, honteux et confus, resta un long moment immobile sur sa branche, regardant le Renard s'éloigner tranquillement avec le fromage. Il jura, mais un peu tard, qu'on ne l'y prendrait plus jamais.",
+    "qcm": [
+      {
+        "question": "Que tenait le Corbeau dans son bec ?",
+        "options": ["Un os", "Un fromage", "Une pomme", "Un morceau de pain"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi le Corbeau a-t-il ouvert le bec ?",
+        "options": ["Pour manger", "Pour appeler au secours", "Pour montrer sa belle voix", "Pour répondre à une question"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle est la morale de cette fable ?",
+        "options": ["Il ne faut pas voler", "Tout flatteur vit aux dépens de celui qui l'écoute", "Les renards sont méchants", "Il faut partager sa nourriture"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que signifie le mot « alléchante » dans le texte ?",
+        "options": ["Désagréable et repoussante", "Attirante et appétissante", "Très forte et piquante", "Légère et imperceptible"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi le Renard fait-il des compliments au Corbeau ?",
+        "options": ["Parce qu'il est sincèrement admiratif", "Pour l'obliger à s'envoler", "Pour le distraire et lui voler sa nourriture", "Pour se faire un ami"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que promet le Corbeau à la fin de la fable ?",
+        "options": ["De se venger du Renard", "De ne plus jamais se laisser flatter de la sorte", "De ne plus jamais manger de fromage", "De quitter la forêt définitivement"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr1-02",
+    "title": "Une journée à la mer",
+    "genre": "Récit",
+    "level": 1,
+    "text": "Ce matin-là, Théo se réveilla très tôt, bien avant que le réveil ne sonne. Le soleil commençait tout juste à pointer à l'horizon, colorant le ciel en rose et en orange vif. Sa famille partait à la plage pour la première fois de l'été, et il ne tenait plus en place depuis la veille au soir. Il enfila rapidement son maillot de bain bleu, attrapa sa grande serviette rouge à rayures et dévala l'escalier en courant, manquant de trébucher sur la dernière marche dans sa précipitation. Sa mère l'attendait tranquillement dans la cuisine avec des croissants encore chauds de la boulangerie et un grand bol de jus d'orange fraîchement pressé. Après un bon petit-déjeuner, toute la famille chargea la voiture de parasols, de glacières, de bouées colorées et de jouets de plage, puis prit la route. Ils roulèrent pendant une heure, et Théo regarda défiler les champs dorés et les petits villages endormis par la fenêtre. À leur arrivée enfin sur le parking du bord de mer, l'odeur iodée de l'air marin chatouilla immédiatement ses narines. Il retira ses sandales et courut pieds nus sur le sable chaud qui brûlait agréablement la plante des pieds. L'eau était fraîche mais si transparente et bleue qu'on voyait le fond. Il plongea sans hésiter, les vagues l'emportaient doucement. Sa petite sœur Emma construisait un immense château de sable décoré de coquillages près du bord. Leur père lisait tranquillement sous le parasol rayé. Cette journée resterait gravée dans la mémoire de Théo pour toujours.",
+    "qcm": [
+      {
+        "question": "À quelle heure de la journée se passe cette histoire ?",
+        "options": ["Le soir", "À midi", "Le matin", "La nuit"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'est-ce que la petite sœur Emma construisait ?",
+        "options": ["Un tunnel", "Une cabane", "Un château de sable", "Un bateau"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Combien de temps ont-ils roulé pour aller à la plage ?",
+        "options": ["30 minutes", "2 heures", "1 heure", "3 heures"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que signifie « l'odeur iodée » de l'air marin ?",
+        "options": ["Une odeur de poisson pourri", "Une odeur caractéristique de la mer, salée et fraîche", "Une odeur de produits chimiques", "Une odeur de fleurs sauvages"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment sait-on que Théo était très impatient d'aller à la plage ?",
+        "options": ["Il avait préparé ses affaires une semaine avant", "Il s'était réveillé bien avant le réveil et ne tenait plus en place", "Il avait refusé de manger le petit-déjeuner", "Il avait demandé à ses parents d'y aller en courant"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que faisait le père de Théo une fois arrivé à la plage ?",
+        "options": ["Il jouait avec Emma dans le sable", "Il nageait avec Théo dans les vagues", "Il lisait tranquillement sous le parasol", "Il préparait le déjeuner dans la glacière"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr1-03",
+    "title": "Le Petit Robot",
+    "genre": "Conte moderne",
+    "level": 1,
+    "text": "Dans un atelier rempli de rouages, de fils colorés et de petits outils brillants soigneusement rangés sur des étagères en bois, vivait un petit robot nommé Pixel. Il était petit, à peine plus grand qu'un chat bien nourri, et ses yeux ronds brillaient comme deux étoiles bleues dans la pénombre de l'atelier. Pixel adorait réparer les jouets cassés que les enfants du quartier lui apportaient presque chaque jour. Il travaillait avec une concentration absolue, penché sur chaque objet avec soin, comme s'il s'agissait d'un trésor précieux impossible à remplacer. Un mardi pluvieux, alors que la pluie tambourinait fort sur le toit de zinc de l'atelier, une fillette nommée Lucie arriva en pleurant, les joues toutes rouges. Elle serrait dans ses bras son ours en peluche préféré, dont un bras avait été entièrement arraché lors d'une dispute avec son frère. Elle avait cet ours depuis toute petite, un cadeau de sa grand-mère, et ne pouvait vraiment pas imaginer dormir sans lui. Pixel prit l'ours délicatement entre ses petites pinces métalliques et l'examina avec attention sous sa lampe. Puis il se mit au travail sans une seconde d'hésitation. Ses doigts agiles recousaient avec une précision remarquable, point après point, sans jamais trembler. Quinze minutes plus tard, l'ours était comme neuf, son bras solidement rattaché. Les yeux de Lucie s'illuminèrent d'un seul coup comme deux petites étoiles. Elle serra l'ours contre elle très fort et dit merci au petit robot d'une voix toute douce. Pixel cligna ses yeux bleus de bonheur pur. Réparer les choses rendait les gens heureux, et cela le rendait heureux aussi.",
+    "qcm": [
+      {
+        "question": "Comment s'appelle le petit robot ?",
+        "options": ["Bolty", "Pixel", "Robo", "Sparky"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel problème avait l'ours en peluche de Lucie ?",
+        "options": ["Il avait perdu un œil", "Il était déchiré", "Un bras était arraché", "Il était tout mouillé"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Combien de temps Pixel a-t-il mis pour réparer l'ours ?",
+        "options": ["5 minutes", "30 minutes", "1 heure", "15 minutes"],
+        "correctIndex": 3
+      },
+      {
+        "question": "D'où venait l'ours en peluche de Lucie ?",
+        "options": ["Elle l'avait acheté elle-même au marché", "C'était un cadeau de sa grand-mère", "Son frère le lui avait offert pour son anniversaire", "Elle l'avait trouvé dans la rue"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi Lucie pleurait-elle en arrivant chez Pixel ?",
+        "options": ["Elle s'était perdue dans la rue sous la pluie", "Son frère lui avait arraché le bras de son ours lors d'une dispute", "Pixel avait refusé de la recevoir", "Elle avait oublié son ours quelque part"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que ressent Pixel lorsqu'il répare des objets pour les enfants ?",
+        "options": ["De la fatigue, car c'est un travail difficile", "De l'ennui, car il répète toujours les mêmes gestes", "Du bonheur, car cela rend les gens heureux", "De la fierté, car il veut montrer ses talents"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr1-04",
+    "title": "La Tortue et le Lièvre",
+    "genre": "Fable",
+    "level": 1,
+    "text": "Un lièvre rapide comme le vent se moquait un jour de la lenteur d'une tortue qui avançait péniblement sur le chemin poussiéreux. Il ricanait, imitait sa démarche maladroite et lente devant tous les animaux du bois qui regardaient la scène. La tortue, sans se mettre en colère ni hausser le ton, lui répondit avec calme et une grande dignité : Je suis peut-être lente, c'est vrai, mais je parie que je peux t'arriver avant toi au bout du champ, là-bas, près du grand chêne. Le lièvre accepta le défi en éclatant d'un grand rire sonore. Comment une tortue aussi lente pourrait-elle le battre, lui qui était le plus rapide de tous les animaux de la forêt ? Il bondit en avant à toute vitesse dès le signal donné, ses longues pattes dévorant le chemin. Mais il arriva si vite à mi-parcours qu'il décida de faire une petite sieste à l'ombre d'un grand arbre aux branches larges. Après tout, il avait largement le temps d'attendre. Le soleil était doux et agréable, l'herbe était moelleuse et fraîche, et ses paupières se fermèrent toutes seules en quelques secondes. La tortue, elle, avança sans jamais s'arrêter, posant une patte après l'autre, régulièrement, obstinément, sans se décourager ni regarder en arrière. Quand le lièvre se réveilla en sursaut, il aperçut avec horreur la tortue qui approchait tranquillement de la ligne d'arrivée. Il bondit aussitôt de toutes ses forces, courant si vite que la poussière s'élevait derrière lui. Mais il était trop tard. La tortue franchit la ligne en premier sous les applaudissements joyeux de tous les animaux. Lenteur et constance ont raison de vitesse et d'imprudence.",
+    "qcm": [
+      {
+        "question": "Pourquoi le lièvre s'est-il arrêté de courir ?",
+        "options": ["Il était fatigué", "Il a fait une sieste", "Il s'est perdu", "Il a changé d'avis"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle était l'attitude de la tortue pendant la course ?",
+        "options": ["Elle courait très vite", "Elle s'arrêtait souvent", "Elle avançait sans s'arrêter", "Elle demanda de l'aide"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qui a gagné la course ?",
+        "options": ["Le lièvre", "Ils sont arrivés ensemble", "La tortue", "Personne"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que signifie le mot « obstinément » pour décrire la marche de la tortue ?",
+        "options": ["En se dépêchant de plus en plus", "Avec une grande détermination, sans abandonner", "En regardant souvent derrière elle", "En cherchant de l'aide auprès des autres animaux"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi le lièvre pensait-il ne pas pouvoir perdre la course ?",
+        "options": ["Il avait déjà battu la tortue de nombreuses fois", "Il était réputé comme l'animal le plus rapide de la forêt", "La tortue lui avait dit qu'elle abandonnerait", "Les autres animaux lui avaient promis qu'il gagnerait"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle leçon cette fable enseigne-t-elle sur le comportement du lièvre ?",
+        "options": ["La vitesse seule ne suffit pas ; la confiance excessive mène à l'échec", "Il ne faut jamais accepter un défi venant d'un adversaire plus faible", "Se moquer des autres est toujours puni immédiatement", "La paresse est une qualité chez ceux qui sont naturellement rapides"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr1-05",
+    "title": "La Bibliothèque magique",
+    "genre": "Conte",
+    "level": 1,
+    "text": "Au fond de la vieille rue pavée et tortueuse, coincée entre une boulangerie qui sentait bon le pain chaud et un horloger au tic-tac régulier, se trouvait une bibliothèque que très peu de gens connaissaient. La porte en bois sombre grinçait à chaque ouverture comme pour annoncer les visiteurs, et une odeur douce et enveloppante de vieux papier, de bois ciré et de poussière ancienne accueillait chacun avec une bienveillance silencieuse. La bibliothécaire, une dame aux longs cheveux argentés toujours relevés en chignon et aux lunettes rondes cerclées d'or, s'appelait Madame Étoile. Elle disait toujours, en souriant doucement, que chaque livre était un monde entier qui attendait d'être découvert par le bon lecteur au bon moment. Un après-midi nuageux d'automne, Amir poussa timidement la lourde porte. Il cherchait un livre de géographie pour ses devoirs du lendemain matin sur les pays du Moyen-Orient. Madame Étoile l'observa un instant par-dessus ses lunettes, hocha lentement la tête, puis disparut silencieusement entre les rayons sombres et chargés de volumes. Elle revint avec un vieux livre à la couverture dorée, légèrement abîmée sur les coins et les bords. En l'ouvrant sur la première page, Amir sentit aussitôt un vent chaud et parfumé sur son visage, comme si une fenêtre venait de s'ouvrir grand sur un pays lointain et ensoleillé. Les pages semblaient s'animer lentement sous ses yeux ébahis. Il voyait des déserts orangés à perte de vue, des marchés colorés et bruyants remplis d'épices, des montagnes enneigées qui touchaient les nuages. Il resta assis là pendant deux heures entières sans s'en rendre compte. En refermant doucement le livre, il sut qu'il reviendrait dès le lendemain après l'école.",
+    "qcm": [
+      {
+        "question": "Comment s'appelle la bibliothécaire ?",
+        "options": ["Madame Soleil", "Madame Étoile", "Madame Lune", "Madame Rose"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi Amir était-il entré dans la bibliothèque ?",
+        "options": ["Pour lire un roman", "Pour se réchauffer", "Pour un livre de géographie", "Pour rencontrer des amis"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Combien de temps Amir a-t-il passé avec le livre ?",
+        "options": ["30 minutes", "1 heure", "3 heures", "2 heures"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que signifie le mot « ébahis » pour décrire les yeux d'Amir ?",
+        "options": ["Fatigués et endormis", "Remplis d'ennui et d'indifférence", "Grands ouverts de surprise et d'émerveillement", "Fermés à moitié par la concentration"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quels commerces encadraient la bibliothèque dans la rue ?",
+        "options": ["Une librairie et un café", "Une boulangerie et un horloger", "Une épicerie et un coiffeur", "Une pharmacie et un fleuriste"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi peut-on dire que le livre choisi par Madame Étoile était « magique » ?",
+        "options": ["Il changeait de couleur selon les pages", "Il transportait Amir dans un monde imaginaire à travers ses images et ses descriptions", "Il parlait tout seul à voix haute", "Il était impossible à fermer une fois ouvert"],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

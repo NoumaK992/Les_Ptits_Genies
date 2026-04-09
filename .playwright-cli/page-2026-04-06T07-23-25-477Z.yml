@@ -1,0 +1,69 @@
+- generic [ref=e22]:
+  - complementary [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]: 🧠
+      - heading "Les Ptits Génies" [level=1] [ref=e26]:
+        - text: Les Ptits
+        - text: Génies
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: testuser1
+      - paragraph [ref=e29]: 0 pts ⭐
+    - navigation [ref=e30]:
+      - link "🏠 Accueil" [ref=e31] [cursor=pointer]:
+        - /url: /accueil
+        - generic [ref=e32]: 🏠
+        - generic [ref=e33]: Accueil
+      - link "📚 Exercices" [ref=e34] [cursor=pointer]:
+        - /url: /exercices
+        - generic [ref=e35]: 📚
+        - generic [ref=e36]: Exercices
+      - link "📊 Progrès" [ref=e37] [cursor=pointer]:
+        - /url: /tableau-de-bord
+        - generic [ref=e38]: 📊
+        - generic [ref=e39]: Progrès
+    - button "Se déconnecter" [ref=e40] [cursor=pointer]
+  - main [ref=e41]:
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - paragraph [ref=e113]: Liste 1 / 10
+          - paragraph [ref=e114]: Trouve l'intrus !
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - paragraph [ref=e117]: Score
+            - paragraph [ref=e118]: "0"
+          - generic [ref=e119]:
+            - img [ref=e120]
+            - generic [ref=e123]: 45s
+      - generic [ref=e134]:
+        - button "simulation" [ref=e136] [cursor=pointer]
+        - button "spéculation" [ref=e138] [cursor=pointer]
+        - button "dissimulation" [ref=e140] [cursor=pointer]
+        - button "articulation" [ref=e142] [cursor=pointer]
+        - button "modulation" [ref=e144] [cursor=pointer]
+        - button "désarticulation" [ref=e146] [cursor=pointer]
+        - button "formulation" [ref=e148] [cursor=pointer]
+        - button "reformulation" [ref=e150] [cursor=pointer]
+        - button "manipulation" [ref=e152] [cursor=pointer]
+        - button "accumulation" [ref=e154] [cursor=pointer]
+        - button "capitulation" [ref=e156] [cursor=pointer]
+        - button "inoculation" [ref=e158] [cursor=pointer]
+        - button "récapitulation" [ref=e160] [cursor=pointer]
+        - button "démodulation" [ref=e162] [cursor=pointer]
+        - button "accumulation" [ref=e164] [cursor=pointer]
+        - button "désarticulation" [ref=e166] [cursor=pointer]
+        - button "simulation" [ref=e168] [cursor=pointer]
+        - button "reformulation" [ref=e170] [cursor=pointer]
+        - button "inoculation" [ref=e172] [cursor=pointer]
+        - button "dissimulation" [ref=e174] [cursor=pointer]
+        - button "articulation" [ref=e176] [cursor=pointer]
+        - button "spéculation" [ref=e178] [cursor=pointer]
+        - button "circulation" [ref=e180] [cursor=pointer]
+        - button "émulation" [ref=e182] [cursor=pointer]
+        - button "manipulation" [ref=e184] [cursor=pointer]
+        - button "démodulation" [ref=e186] [cursor=pointer]
+        - button "modulation" [ref=e188] [cursor=pointer]
+        - button "circulation" [ref=e190] [cursor=pointer]
+        - button "émulation" [ref=e192] [cursor=pointer]
+        - button "capitulation" [ref=e194] [cursor=pointer]
+        - button "formulation" [ref=e196] [cursor=pointer]

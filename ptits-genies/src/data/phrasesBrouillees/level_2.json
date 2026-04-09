@@ -1,0 +1,141 @@
+[
+  {
+    "id": "pb-l2-001",
+    "title": "Le club de sciences",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Le mercredi après-midi, le club de sciences se réunit dans la salle polyvalente. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Nora distribue ensuite des lunettes de protection à chaque élève. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Quand le mélange commence à mousser, tout le monde recule d'un pas. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À la fin de l'atelier, ils comparent leurs observations pour comprendre ce qui a changé. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Le professeur note les meilleures hypothèses dans le cahier commun." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le professeur rappelle d'abord les consignes de sécurité avec un exemple concret." },
+      { "letter": "B", "text": "Puis Samir mesure exactement dix millilitres de vinaigre dans une éprouvette." },
+      { "letter": "C", "text": "Emma propose alors d'ajouter une pincée de bicarbonate pour tester la réaction." },
+      { "letter": "D", "text": "La mousse déborde rapidement, mais elle retombe dès que le gaz s'échappe." },
+      { "letter": "E", "text": "Avant de ranger, chacun écrit une conclusion courte et vérifie son vocabulaire scientifique." },
+      { "letter": "F", "text": "Pendant ce temps, la sonnerie annonce la fin de la récréation." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "D" },
+      { "number": 4, "answerLetter": "E" }
+    ]
+  },
+  {
+    "id": "pb-l2-002",
+    "title": "Une répétition musicale",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Vendredi, l'orchestre du collège répète dans l'auditorium avant le spectacle. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le chef demande ensuite aux percussions de jouer seules. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Les violons reprennent alors avec davantage d'assurance. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " En fin de séance, chacun range son pupitre et note les passages à retravailler." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Les flûtes commencent par accorder leurs instruments pour éviter les décalages." },
+      { "letter": "B", "text": "Ce passage sert à stabiliser le tempo avant de réunir toutes les sections." },
+      { "letter": "C", "text": "Le chef corrige plusieurs nuances pour que la mélodie reste lisible." },
+      { "letter": "D", "text": "Un surveillant vérifie la fermeture des portes du hall." },
+      { "letter": "E", "text": "La météo prévoit de la pluie pour le week-end." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l2-003",
+    "title": "La ferme pédagogique",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "La classe de sixième visite une ferme pédagogique située près de la rivière. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Dans l'étable, l'éleveuse explique comment nourrir les veaux. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Plus loin, les élèves découvrent le potager et les serres. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Avant de repartir, tout le groupe compare ses notes pour préparer un exposé." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le guide présente d'abord les règles d'hygiène à respecter avant d'entrer." },
+      { "letter": "B", "text": "Il insiste sur les horaires réguliers, indispensables à la santé des animaux." },
+      { "letter": "C", "text": "Un animateur montre comment le compost enrichit la terre sans engrais chimiques." },
+      { "letter": "D", "text": "Un tracteur rouge stationne derrière le hangar." },
+      { "letter": "E", "text": "Les élèves aperçoivent une piste cyclable au loin." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l2-004",
+    "title": "Préparer un débat",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Pour le cours d'éducation civique, la classe prépare un débat sur l'usage des écrans. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les élèves se répartissent ensuite en deux groupes d'arguments. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Pendant l'échange, chacun doit écouter sans couper la parole. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le professeur conclut en rappelant les points d'accord et de désaccord." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "La professeure demande d'abord de définir précisément le sujet du débat." },
+      { "letter": "B", "text": "Chaque groupe prépare des exemples concrets pour appuyer son point de vue." },
+      { "letter": "C", "text": "Un rapporteur note les idées principales afin de synthétiser la discussion." },
+      { "letter": "D", "text": "La cantine propose un menu végétarien ce jour-là." },
+      { "letter": "E", "text": "La salle informatique reste fermée l'après-midi." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l2-005",
+    "title": "Le tournoi d'échecs",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Le foyer du collège organise un tournoi d'échecs pendant la pause de midi. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les premières parties commencent dans un silence attentif. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " En demi-finale, Lina surprend son adversaire avec une combinaison rapide. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le vainqueur remercie ensuite les organisateurs avant de poser pour la photo." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Un arbitre rappelle les règles et le temps limité pour chaque joueur." },
+      { "letter": "B", "text": "Plusieurs élèves observent les échiquiers pour apprendre de nouvelles ouvertures." },
+      { "letter": "C", "text": "Le public applaudit quand la partie se termine par un mat élégant." },
+      { "letter": "D", "text": "Le gymnase accueille aussi un entraînement de handball." },
+      { "letter": "E", "text": "Une affiche annonce la sortie théâtre de la semaine suivante." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  }
+]
