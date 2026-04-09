@@ -36,15 +36,7 @@ export const authService = {
       return { success: false, error: 'unknown' }
     }
 
-    // Créer le profil dans la table profiles
-    const { error: profileError } = await supabase
-      .from('profiles')
-      .insert({ id: data.user.id, username: cleanUsername })
-
-    if (profileError) {
-      return { success: false, error: 'unknown' }
-    }
-
+    // Le profil est créé automatiquement par le trigger SQL on_auth_user_created
     return { success: true, user: { id: data.user.id, username: cleanUsername } }
   },
 
