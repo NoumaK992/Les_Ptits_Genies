@@ -13,9 +13,10 @@ const SIDEBAR_BG = 'linear-gradient(175deg, #130d2e 0%, #2d1960 55%, #130d2e 100
 export default function AppShell() {
   const { currentUser, logout } = useAuthStore()
   const location = useLocation()
+  const isHome = location.pathname === '/accueil'
 
   return (
-    <div className="min-h-screen bg-bg flex flex-col md:flex-row">
+    <div className={`min-h-screen flex flex-col md:flex-row ${isHome ? 'bg-[#1a1a2e]' : 'bg-bg'}`}>
 
       {/* ── Sidebar (tablet/desktop) ── */}
       <aside
@@ -141,7 +142,11 @@ export default function AppShell() {
       </main>
 
       {/* ── Bottom nav (mobile) ── */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 z-10 shadow-lg">
+      <nav className={`md:hidden fixed bottom-0 left-0 right-0 z-10 shadow-lg border-t transition-colors ${
+        isHome
+          ? 'bg-[#12122a] border-purple-900/30'
+          : 'bg-white border-gray-100'
+      }`}>
         <div className="flex">
           {navItems.map((item) => (
             <NavLink
@@ -149,7 +154,9 @@ export default function AppShell() {
               to={item.to}
               className={({ isActive }) =>
                 `flex-1 flex flex-col items-center py-2 gap-0.5 transition-colors relative ${
-                  isActive ? 'text-primary' : 'text-gray-400'
+                  isActive
+                    ? isHome ? 'text-[#a78bfa]' : 'text-primary'
+                    : isHome ? 'text-white/30' : 'text-gray-400'
                 }`
               }
             >
