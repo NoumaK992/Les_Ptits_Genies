@@ -231,7 +231,7 @@ export default function DashboardPage() {
                         className="h-full rounded-full"
                         initial={{ width: 0 }}
                         animate={{ width: `${Math.min(100, (p.avgScore / Math.max(p.bestScore, 1)) * 100)}%` }}
-                        transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                         style={{ background: EXERCISE_GRADIENTS[p.exerciseType] ?? 'linear-gradient(135deg, #7C6FF7, #4a3fcc)' }}
                       />
                     </div>
