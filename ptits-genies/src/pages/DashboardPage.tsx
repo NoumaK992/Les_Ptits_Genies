@@ -6,7 +6,8 @@ import {
 } from 'recharts'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
-import type { Session, Badge } from '@/types'
+import { BADGES, BADGE_CATEGORIES } from '@/data/badges'
+import { calcStreak } from '@/utils/streak'
 
 const EXERCISE_LABELS: Record<string, string> = {
   'word-search': '🔍 Recherche',
@@ -38,43 +39,6 @@ const EXERCISE_GRADIENTS: Record<string, string> = {
   'ami-ennemi': 'linear-gradient(135deg, #a3e635, #16a34a)',
 }
 
-const BADGES: Badge[] = [
-  { id: 'first', label: 'Premier pas', emoji: '👣', condition: (s) => s.length >= 1 },
-  { id: 'ten', label: '10 sessions', emoji: '🔟', condition: (s) => s.length >= 10 },
-  { id: 'pts100', label: '100 pts', emoji: '💯', condition: (_, pts) => pts >= 100 },
-  { id: 'pts500', label: '500 pts', emoji: '⭐', condition: (_, pts) => pts >= 500 },
-  { id: 'pts1000', label: '1000 pts', emoji: '🌟', condition: (_, pts) => pts >= 1000 },
-  { id: 'pts5000', label: '5000 pts', emoji: '🏆', condition: (_, pts) => pts >= 5000 },
-  { id: 'allExercises', label: 'Explorateur', emoji: '🗺️', condition: (s) => {
-    const types = new Set(s.map((x) => x.exerciseType))
-    return types.size >= 3
-  }},
-  { id: 'streak3', label: 'Régularité', emoji: '🔥', condition: (s) => {
-    if (s.length < 3) return false
-    const dates = [...new Set(s.map((x) => x.playedAt.slice(0, 10)))].sort()
-    for (let i = 0; i < dates.length - 2; i++) {
-      const d0 = new Date(dates[i]), d1 = new Date(dates[i+1]), d2 = new Date(dates[i+2])
-      const diff1 = (d1.getTime() - d0.getTime()) / 86400000
-      const diff2 = (d2.getTime() - d1.getTime()) / 86400000
-      if (diff1 === 1 && diff2 === 1) return true
-    }
-    return false
-  }},
-]
-
-function calcStreak(sessions: Session[]): number {
-  if (!sessions.length) return 0
-  const dates = [...new Set(sessions.map((s) => s.playedAt.slice(0, 10)))].sort().reverse()
-  const today = new Date().toISOString().slice(0, 10)
-  if (dates[0] !== today && dates[0] !== new Date(Date.now() - 86400000).toISOString().slice(0, 10)) return 0
-  let streak = 1
-  for (let i = 0; i < dates.length - 1; i++) {
-    const d0 = new Date(dates[i]), d1 = new Date(dates[i + 1])
-    if ((d0.getTime() - d1.getTime()) / 86400000 === 1) streak++
-    else break
-  }
-  return streak
-}
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short' })
@@ -85,7 +49,7 @@ const item = { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }
 
 export default function DashboardPage() {
   const { currentUser } = useAuthStore()
-  const { sessions, progress, loadProgress } = useProgressStore()
+  const { sessions, progress, loadProgress, syncBadges } = useProgressStore()
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
@@ -94,15 +58,22 @@ export default function DashboardPage() {
     }
   }, [currentUser?.id])
 
+  const totalPoints = currentUser?.totalPoints ?? 0
+  const streak = calcStreak(sessions)
+  const badgeCtx = { sessions, totalPoints, progress, streak }
+  const earnedBadgeIds = new Set(BADGES.filter((b) => b.condition(badgeCtx)).map((b) => b.id))
+
+  useEffect(() => {
+    if (currentUser && loaded && earnedBadgeIds.size > 0) {
+      syncBadges(currentUser.id, [...earnedBadgeIds])
+    }
+  }, [[...earnedBadgeIds].sort().join(','), loaded])
+
   if (!loaded) {
     return (
       <div className="flex items-center justify-center min-h-64 text-4xl animate-pulse">⏳</div>
     )
   }
-
-  const totalPoints = currentUser?.totalPoints ?? 0
-  const streak = calcStreak(sessions)
-  const earnedBadges = BADGES.filter((b) => b.condition(sessions, totalPoints))
 
   const lineData = [...sessions]
     .reverse()
@@ -273,30 +244,52 @@ export default function DashboardPage() {
 
         {/* Badges */}
         <motion.div variants={item} className="bg-white rounded-3xl p-5 shadow-card">
-          <h3 className="font-fredoka font-semibold text-ink text-lg mb-4">🎖️ Mes badges</h3>
-          <div className="flex flex-wrap gap-3">
-            {BADGES.map((badge) => {
-              const earned = earnedBadges.some((b) => b.id === badge.id)
+          <h3 className="font-fredoka font-semibold text-ink text-lg mb-1">🎖️ Mes badges</h3>
+          <p className="text-xs text-gray-400 font-semibold mb-4">
+            {earnedBadgeIds.size} / {BADGES.length} obtenus
+          </p>
+          <div className="space-y-5">
+            {BADGE_CATEGORIES.map((cat) => {
+              const catBadges = BADGES.filter((b) => b.category === cat.id)
               return (
-                <motion.div
-                  key={badge.id}
-                  whileHover={earned ? { scale: 1.08 } : {}}
-                  className="flex flex-col items-center gap-1.5 px-3 py-3 rounded-2xl transition-all"
-                  style={earned ? {
-                    background: 'linear-gradient(135deg, rgba(255,209,102,0.15), rgba(255,209,102,0.08))',
-                    border: '2px solid rgba(255,209,102,0.5)',
-                    boxShadow: '0 4px 12px rgba(255, 209, 102, 0.20)',
-                  } : {
-                    background: '#f9f9f9',
-                    border: '2px solid #f0f0f0',
-                    opacity: 0.4,
-                  }}
-                >
-                  <span className="text-2xl">{badge.emoji}</span>
-                  <span className="text-xs font-black text-ink text-center leading-tight" style={{ maxWidth: '5rem' }}>
-                    {badge.label}
-                  </span>
-                </motion.div>
+                <div key={cat.id}>
+                  <p className="text-xs font-black text-gray-400 uppercase tracking-wider mb-2">{cat.label}</p>
+                  <div className="flex flex-wrap gap-3">
+                    {catBadges.map((badge) => {
+                      const earned = earnedBadgeIds.has(badge.id)
+                      return (
+                        <motion.div
+                          key={badge.id}
+                          whileHover={earned ? { scale: 1.08 } : { scale: 1.03 }}
+                          className="flex flex-col items-center gap-1 px-3 py-3 rounded-2xl transition-all"
+                          style={earned ? {
+                            background: 'linear-gradient(135deg, rgba(255,209,102,0.15), rgba(255,209,102,0.08))',
+                            border: '2px solid rgba(255,209,102,0.5)',
+                            boxShadow: '0 4px 12px rgba(255, 209, 102, 0.20)',
+                          } : {
+                            background: '#f9f9f9',
+                            border: '2px dashed #e5e7eb',
+                          }}
+                        >
+                          <span className="text-2xl" style={earned ? {} : { filter: 'grayscale(1)', opacity: 0.4 }}>
+                            {badge.emoji}
+                          </span>
+                          <span
+                            className="text-xs font-black text-center leading-tight"
+                            style={{ maxWidth: '5.5rem', color: earned ? '#1E293B' : '#9ca3af' }}
+                          >
+                            {badge.label}
+                          </span>
+                          {!earned && (
+                            <span className="text-[10px] text-gray-400 text-center leading-tight font-semibold" style={{ maxWidth: '5.5rem' }}>
+                              {badge.description}
+                            </span>
+                          )}
+                        </motion.div>
+                      )
+                    })}
+                  </div>
+                </div>
               )
             })}
           </div>

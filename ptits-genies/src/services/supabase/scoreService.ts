@@ -14,7 +14,7 @@ export const scoreService = {
     })
   },
 
-  async getHistory(userId: string, limit = 20): Promise<Session[]> {
+  async getHistory(userId: string, limit = 200): Promise<Session[]> {
     const { data } = await supabase
       .from('sessions')
       .select('*')

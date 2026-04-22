@@ -221,11 +221,19 @@ export interface CoupDoeilSessionDetails {
 }
 
 // ─── Dashboard / Badges ──────────────────────────────────────────────
+export interface BadgeContext {
+  sessions: Session[]
+  totalPoints: number
+  progress: Progress[]
+  streak: number
+}
+
 export interface Badge {
   id: string
   label: string
   emoji: string
-  condition: (sessions: Session[], totalPoints: number) => boolean
+  description: string
+  condition: (ctx: BadgeContext) => boolean
 }
 
 // ─── Collection de mots ───────────────────────────────────────────────
