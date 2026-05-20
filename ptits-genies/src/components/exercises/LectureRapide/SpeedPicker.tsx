@@ -2,11 +2,11 @@ import { motion } from 'framer-motion'
 import type { SpeedOption } from '@/types'
 
 const speedOptions: SpeedOption[] = [
-  { id: 'tortue', label: 'Tout doux', emoji: '🐢', wpm: 100, multiplier: 1 },
-  { id: 'marche', label: 'Mon rythme', emoji: '🚶', wpm: 180, multiplier: 1.5 },
+  { id: 'tortue', label: 'Tout doux', emoji: '🐢', wpm: 70, multiplier: 1 },
+  { id: 'marche', label: 'Mon rythme', emoji: '🚶', wpm: 160, multiplier: 1.5 },
   { id: 'velo', label: 'Je pédale', emoji: '🚴', wpm: 280, multiplier: 2 },
-  { id: 'voiture', label: 'Vite vite !', emoji: '🚗', wpm: 420, multiplier: 2.5 },
-  { id: 'fusee', label: 'Mode génie', emoji: '🚀', wpm: 600, multiplier: 3 },
+  { id: 'voiture', label: 'Vite vite !', emoji: '🚗', wpm: 450, multiplier: 2.5 },
+  { id: 'fusee', label: 'Mode génie', emoji: '🚀', wpm: 680, multiplier: 3 },
 ]
 
 interface Props {

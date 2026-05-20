@@ -23,11 +23,11 @@ export function TextMask({ text, wpm, onComplete }: Props) {
   }, [])
 
   return (
-    <div className="leading-relaxed text-base md:text-lg text-ink font-medium select-none">
+    <div className="leading-relaxed text-2xl md:text-3xl text-ink font-medium select-none">
       {words.map((word, i) => (
         <span
           key={i}
-          className={`transition-opacity duration-200 ${i <= maskedUpTo ? 'opacity-0' : 'opacity-100'}`}
+          className={`transition-opacity duration-150 ${i <= maskedUpTo ? 'opacity-0' : 'opacity-100'}`}
         >
           {word}{' '}
         </span>

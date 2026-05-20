@@ -8,23 +8,33 @@ export interface TextCursorOptions {
 export function startTextCursor(options: TextCursorOptions): () => void {
   const { words, wpm, onWordMasked, onComplete } = options
   const msPerWord = (60 / wpm) * 1000
-  let wordIndex = 0
-  let lastTime: number | null = null
+  const startTime = performance.now()
+  let lastFrameTime = startTime
+  let lastEmittedIndex = -1
   let rafId: number
-  let accumulated = 0
+  let cancelled = false
+  let pausedOffset = 0
 
   function loop(timestamp: number) {
-    if (lastTime === null) lastTime = timestamp
-    accumulated += timestamp - lastTime
-    lastTime = timestamp
+    if (cancelled) return
 
-    while (accumulated >= msPerWord && wordIndex < words.length) {
-      accumulated -= msPerWord
-      onWordMasked(wordIndex)
-      wordIndex++
+    const delta = timestamp - lastFrameTime
+    if (delta > 500) {
+      pausedOffset += delta
+    }
+    lastFrameTime = timestamp
+
+    const elapsed = timestamp - startTime - pausedOffset
+    // Word N stays visible during the window [N*msPerWord, (N+1)*msPerWord].
+    // So the last index that should already be masked at `elapsed` is floor(elapsed/msPerWord) - 1.
+    const targetIndex = Math.min(Math.floor(elapsed / msPerWord) - 1, words.length - 1)
+
+    while (lastEmittedIndex < targetIndex) {
+      lastEmittedIndex++
+      onWordMasked(lastEmittedIndex)
     }
 
-    if (wordIndex >= words.length) {
+    if (lastEmittedIndex >= words.length - 1) {
       onComplete()
       return
     }
@@ -33,5 +43,8 @@ export function startTextCursor(options: TextCursorOptions): () => void {
   }
 
   rafId = requestAnimationFrame(loop)
-  return () => cancelAnimationFrame(rafId)
+  return () => {
+    cancelled = true
+    cancelAnimationFrame(rafId)
+  }
 }
