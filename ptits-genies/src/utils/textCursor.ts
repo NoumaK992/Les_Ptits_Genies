@@ -5,7 +5,13 @@ export interface TextCursorOptions {
   onComplete: () => void
 }
 
-export function startTextCursor(options: TextCursorOptions): () => void {
+export interface TextCursorHandle {
+  stop: () => void
+  /** Current masked index at call time (-1 if no word masked yet). */
+  getCurrentIndex: () => number
+}
+
+export function startTextCursor(options: TextCursorOptions): TextCursorHandle {
   const { words, wpm, onWordMasked, onComplete } = options
   const msPerWord = (60 / wpm) * 1000
   const startTime = performance.now()
@@ -43,8 +49,11 @@ export function startTextCursor(options: TextCursorOptions): () => void {
   }
 
   rafId = requestAnimationFrame(loop)
-  return () => {
-    cancelled = true
-    cancelAnimationFrame(rafId)
+  return {
+    stop: () => {
+      cancelled = true
+      cancelAnimationFrame(rafId)
+    },
+    getCurrentIndex: () => lastEmittedIndex,
   }
 }

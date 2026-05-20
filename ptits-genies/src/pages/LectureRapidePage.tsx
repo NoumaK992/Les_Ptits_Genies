@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
-import { calcLectureScore } from '@/utils/scoring'
+import { calcLectureScore, calcLectureBonus } from '@/utils/scoring'
 import { SpeedPicker, speedOptions } from '@/components/exercises/LectureRapide/SpeedPicker'
 import { TextMask } from '@/components/exercises/LectureRapide/TextMask'
 import { QCMBlock } from '@/components/exercises/LectureRapide/QCMBlock'
@@ -47,8 +47,16 @@ export default function LectureRapidePage() {
   const [selectedSpeed, setSelectedSpeed] = useState<SpeedOption>(speedOptions[1])
   const [currentText, setCurrentText] = useState<LectureText | null>(null)
   const [score, setScore] = useState(0)
+  const [qcmScore, setQcmScore] = useState(0)
+  const [bonusPoints, setBonusPoints] = useState(0)
+  const [cursorIndex, setCursorIndex] = useState(-1)
+  const [wordsAheadAtSubmit, setWordsAheadAtSubmit] = useState(0)
   const [selectedQuestions, setSelectedQuestions] = useState<QCMQuestion[]>([])
   const [sessionStart] = useState(Date.now())
+
+  const totalWords = currentText ? currentText.text.split(/\s+/).length : 0
+  const liveWordsAhead = Math.max(0, totalWords - 1 - cursorIndex)
+  const livePotentialBonus = Math.round(liveWordsAhead * 5 * selectedSpeed.multiplier)
 
   function pickRandomText(level: 1 | 2 | 3): LectureText {
     const pool = allTexts[level - 1]
@@ -62,12 +70,17 @@ export default function LectureRapidePage() {
 
   function goToQCM() {
     if (!currentText) return
+    setWordsAheadAtSubmit(liveWordsAhead)
     setSelectedQuestions(pickQuestions(currentText))
     setPhase('qcm')
   }
 
   async function handleQCMSubmit(correctCount: number) {
-    const finalScore = calcLectureScore(correctCount, selectedSpeed.multiplier, selectedLevel)
+    const qcm = calcLectureScore(correctCount, selectedSpeed.multiplier, selectedLevel)
+    const bonus = calcLectureBonus(wordsAheadAtSubmit, selectedSpeed.multiplier, correctCount, 3)
+    const finalScore = qcm + bonus
+    setQcmScore(qcm)
+    setBonusPoints(bonus)
     setScore(finalScore)
     if (!currentUser || !currentText) return
     const duration = Math.round((Date.now() - sessionStart) / 1000)
@@ -219,7 +232,11 @@ export default function LectureRapidePage() {
         </div>
 
         <button
-          onClick={() => setPhase('reading')}
+          onClick={() => {
+            setCursorIndex(-1)
+            setWordsAheadAtSubmit(0)
+            setPhase('reading')
+          }}
           className="w-full text-ink font-black py-4 rounded-2xl text-lg active:scale-95 transition-all"
           style={{ background: EX.gradient, boxShadow: EX.shadow }}
         >
@@ -238,7 +255,7 @@ export default function LectureRapidePage() {
   // ── Reading ─────────────────────────────────────────────────────────────
   if (phase === 'reading' && currentText) {
     return (
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto pb-28">
         <div className="bg-white rounded-2xl p-4 shadow-card mb-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div
@@ -262,12 +279,38 @@ export default function LectureRapidePage() {
         </div>
 
         <div className="bg-white rounded-3xl p-6 shadow-card mb-4 min-h-48">
-          <TextMask text={currentText.text} wpm={selectedSpeed.wpm} onComplete={goToQCM} />
+          <TextMask
+            text={currentText.text}
+            wpm={selectedSpeed.wpm}
+            onComplete={goToQCM}
+            onIndexChange={setCursorIndex}
+          />
         </div>
 
         <p className="text-center text-sm text-gray-400 font-semibold animate-pulse">
           📖 Lis avant que les mots disparaissent…
         </p>
+
+        <div className="fixed bottom-4 inset-x-4 z-30 flex justify-center pointer-events-none">
+          <motion.button
+            initial={{ y: 24, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, type: 'spring', bounce: 0.4 }}
+            whileTap={{ scale: 0.96 }}
+            onClick={goToQCM}
+            className="pointer-events-auto flex items-center gap-3 px-5 py-3.5 rounded-2xl font-black text-ink text-base shadow-lg active:scale-95 transition-all max-w-md w-full sm:w-auto justify-center"
+            style={{ background: EX.gradient, boxShadow: EX.shadow }}
+          >
+            <span>J'ai fini ! ✋</span>
+            {livePotentialBonus > 0 && (
+              <span
+                className="text-sm font-black px-2.5 py-1 rounded-xl bg-white/80 text-amber-900"
+              >
+                +{livePotentialBonus} pts
+              </span>
+            )}
+          </motion.button>
+        </div>
       </div>
     )
   }
@@ -321,6 +364,18 @@ export default function LectureRapidePage() {
             </p>
             <p className="text-gray-400 font-semibold mt-1">points gagnés</p>
           </div>
+          {bonusPoints > 0 && (
+            <div className="border-t pt-4 space-y-1.5">
+              <div className="flex justify-between text-sm font-bold text-gray-600">
+                <span>Compréhension (QCM)</span>
+                <span>+{qcmScore} pts</span>
+              </div>
+              <div className="flex justify-between text-sm font-bold text-amber-700">
+                <span>⚡ Bonus de vitesse ({wordsAheadAtSubmit} mot{wordsAheadAtSubmit > 1 ? 's' : ''} d'avance)</span>
+                <span>+{bonusPoints} pts</span>
+              </div>
+            </div>
+          )}
           <div className="border-t pt-4 flex justify-center gap-4 text-sm font-semibold text-gray-500">
             <span>Vitesse : {selectedSpeed.emoji} ×{selectedSpeed.multiplier}</span>
           </div>

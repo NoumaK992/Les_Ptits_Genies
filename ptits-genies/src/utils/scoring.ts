@@ -48,6 +48,21 @@ export function calcLectureScore(correctAnswers: number, multiplier: number, lev
   return Math.round(correctAnswers * 100 * multiplier * level)
 }
 
+/**
+ * Bonus accordé quand l'élève termine sa lecture avant le curseur.
+ * Anti-triche : pondéré par le ratio QCM (cliquer trop tôt = rater le QCM = bonus nul).
+ */
+export function calcLectureBonus(
+  wordsAhead: number,
+  multiplier: number,
+  correctAnswers: number,
+  totalQuestions: number,
+): number {
+  if (wordsAhead <= 0 || totalQuestions <= 0) return 0
+  const ratio = Math.max(0, Math.min(1, correctAnswers / totalQuestions))
+  return Math.round(wordsAhead * 5 * multiplier * ratio)
+}
+
 // ─── Coup d'œil ──────────────────────────────────────────────────────
 export function calcCoupDoeilScore(params: {
   correctCategorizations: number

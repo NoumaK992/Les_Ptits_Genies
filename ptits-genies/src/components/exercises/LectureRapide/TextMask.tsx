@@ -1,25 +1,30 @@
 import { useState, useEffect, useRef } from 'react'
 import { startTextCursor } from '@/utils/textCursor'
+import type { TextCursorHandle } from '@/utils/textCursor'
 
 interface Props {
   text: string
   wpm: number
   onComplete: () => void
+  onIndexChange?: (currentMaskedIndex: number) => void
 }
 
-export function TextMask({ text, wpm, onComplete }: Props) {
+export function TextMask({ text, wpm, onComplete, onIndexChange }: Props) {
   const words = text.split(/\s+/)
   const [maskedUpTo, setMaskedUpTo] = useState(-1)
-  const stopRef = useRef<(() => void) | null>(null)
+  const handleRef = useRef<TextCursorHandle | null>(null)
 
   useEffect(() => {
-    stopRef.current = startTextCursor({
+    handleRef.current = startTextCursor({
       words,
       wpm,
-      onWordMasked: (i) => setMaskedUpTo(i),
+      onWordMasked: (i) => {
+        setMaskedUpTo(i)
+        onIndexChange?.(i)
+      },
       onComplete,
     })
-    return () => stopRef.current?.()
+    return () => handleRef.current?.stop()
   }, [])
 
   return (
