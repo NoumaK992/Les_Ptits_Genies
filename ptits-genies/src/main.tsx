@@ -23,7 +23,16 @@ const AmiEnnemiPage = React.lazy(() => import('@/pages/AmiEnnemiPage'))
 
 export default function App() {
   const { hydrate } = useAuthStore()
-  React.useEffect(() => { hydrate() }, [])
+  const [hydrated, setHydrated] = React.useState(false)
+  React.useEffect(() => {
+    hydrate().finally(() => setHydrated(true))
+  }, [])
+
+  if (!hydrated) {
+    return (
+      <div className="flex items-center justify-center min-h-screen text-2xl">⏳</div>
+    )
+  }
 
   return (
     <BrowserRouter>
