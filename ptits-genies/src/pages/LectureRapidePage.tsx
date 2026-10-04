@@ -101,15 +101,17 @@ export default function LectureRapidePage() {
     setScore(finalScore)
     if (!currentUser || !currentText) return
     const duration = Math.round((Date.now() - sessionStart) / 1000)
+    const reussite = tauxReussite(correctCount, 3)
     await saveSession({
       id: `${Date.now()}-lr`, userId: currentUser.id, exerciseType: 'lecture-rapide',
       score: finalScore, duration, playedAt: new Date().toISOString(),
       details: {
         type: 'lecture-rapide', level: selectedLevel,
         speedMultiplier: selectedSpeed.multiplier, qcmScore: correctCount, textId: currentText.id,
+        reussite,
       },
     })
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(correctCount, 3))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     await refreshPoints()
     setPhase('result')
   }
@@ -220,11 +222,13 @@ export default function LectureRapidePage() {
     )
   }
 
-  // En parcours : sortie vers le parcours (et étiquette du boss) pendant la lecture et le QCM.
+  // En parcours : sortie vers le parcours (et étiquette du boss ou de la lecture de fin de niveau)
+  // pendant la lecture et le QCM.
   const enteteParcours = modeParcours && (
     <div className="mb-4 flex flex-wrap items-center gap-3">
       <Link to="/parcours" className={cn(classesBouton('discret'), 'px-2')}>← Retour au parcours</Link>
       {modeParcours.etape === 'boss' && <Etiquette couleur="rose-pale">👾 Boss du niveau</Etiquette>}
+      {modeParcours.etape === 'lecture' && <Etiquette couleur="bleu">⚡ Lecture de fin de niveau</Etiquette>}
     </div>
   )
 

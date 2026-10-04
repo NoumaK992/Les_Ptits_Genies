@@ -1,36 +1,56 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import {
-  JEUX_ROTATION, jeuDuNiveau, tourDuNiveau, difficulte, seuilBoss, lireCode,
-  appliquerResultat, tauxReussite, lienPartie, parametresLecture, niveauAmiEnnemi, partieValide,
+  JEUX_ROTATION, PARTIES_PAR_JEU, jeuDuNiveau, jeuDeLEtape, tourDuNiveau, difficulte, seuilBoss, lireCode,
+  appliquerResultat, tauxReussite, lienPartie, parametresLecture, niveauAmiEnnemi, partieValide, estVerrouille,
   type EtatParcours,
 } from './regles.ts'
 
-const etat = (e: Partial<EtatParcours> = {}): EtatParcours =>
-  ({ groupe: 'B', place: 1, niveau: 1, etape: 'jeu', echecsBoss: 0, ...e })
+const AUJ = '2026-10-05'
+const etat = (e: Partial<EtatParcours> = {}): EtatParcours => ({
+  groupe: 'B', place: 1, niveau: 1, etape: 'jeu', echecsBoss: 0,
+  partiesFaites: 0, niveauValideLe: null, bossApresEchec: 0, ...e,
+})
 
-test('carré latin : sur 8 niveaux consécutifs, chaque place fait chaque emplacement une fois', () => {
+test('Lecture rapide ne fait plus partie de la rotation', () => {
+  assert.ok(!JEUX_ROTATION.includes('lecture-rapide'))
+  assert.equal(JEUX_ROTATION.length, 6)
+})
+
+test('chaque élève fait chaque jeu une fois avant d en refaire un', () => {
+  const n = JEUX_ROTATION.length
   for (let place = 1; place <= 8; place++) {
-    for (const debut of [1, 9]) {
-      const emplacements = new Set<number>()
-      for (let niveau = debut; niveau < debut + 8; niveau++) emplacements.add(((place - 1) + (niveau - 1)) % 8)
-      assert.equal(emplacements.size, 8)
+    for (const debut of [1, 7, 13]) {
+      const jeux = new Set(Array.from({ length: n }, (_, i) => jeuDuNiveau(place, debut + i)))
+      assert.equal(jeux.size, n)
     }
   }
 })
 
-test('à un niveau donné, les 8 places jouent les 8 emplacements', () => {
+test('à un niveau donné, les 6 premières places jouent 6 jeux différents', () => {
   for (let niveau = 1; niveau <= 20; niveau++) {
-    const jeux = Array.from({ length: 8 }, (_, i) => jeuDuNiveau(i + 1, niveau))
-    assert.deepEqual([...jeux].sort(), [...JEUX_ROTATION].sort())
+    const jeux = new Set(Array.from({ length: 6 }, (_, i) => jeuDuNiveau(i + 1, niveau)))
+    assert.equal(jeux.size, 6)
   }
 })
 
-test('rotation : décalage d un emplacement par niveau', () => {
+test('rotation : décalage d un jeu par niveau', () => {
   assert.equal(jeuDuNiveau(1, 1), JEUX_ROTATION[0])
   assert.equal(jeuDuNiveau(2, 1), JEUX_ROTATION[1])
   assert.equal(jeuDuNiveau(1, 2), JEUX_ROTATION[1])
-  assert.equal(jeuDuNiveau(8, 2), JEUX_ROTATION[0])
+  assert.equal(jeuDuNiveau(7, 1), JEUX_ROTATION[0])
+})
+
+test('jeu de l étape : la lecture de fin de niveau est toujours Lecture rapide', () => {
+  assert.equal(jeuDeLEtape(etat({ etape: 'jeu' })), jeuDuNiveau(1, 1))
+  assert.equal(jeuDeLEtape(etat({ etape: 'boss' })), jeuDuNiveau(1, 1))
+  assert.equal(jeuDeLEtape(etat({ etape: 'lecture' })), 'lecture-rapide')
+})
+
+test('parties d entraînement : Phrases brouillées 8, Mots cachés 1', () => {
+  assert.equal(PARTIES_PAR_JEU['phrases-brouillees'], 8)
+  assert.equal(PARTIES_PAR_JEU['word-search'], 1)
+  assert.equal(PARTIES_PAR_JEU.intrus, 2)
 })
 
 test('tours', () => {
@@ -39,9 +59,10 @@ test('tours', () => {
   assert.equal(tourDuNiveau(17), 3); assert.equal(tourDuNiveau(20), 3)
 })
 
-test('difficulté : tour, +1 pour le boss, plafonnée', () => {
+test('difficulté : tour, +1 pour le boss, tour pour la lecture, plafonnée', () => {
   assert.equal(difficulte('intrus', 1, 'jeu'), 1)
   assert.equal(difficulte('intrus', 1, 'boss'), 2)
+  assert.equal(difficulte('lecture-rapide', 9, 'lecture'), 2)
   assert.equal(difficulte('intrus', 20, 'boss'), 4)
   assert.equal(difficulte('collection', 20, 'boss'), 3)
   assert.equal(difficulte('word-search', 20, 'boss'), 1)
@@ -58,36 +79,66 @@ test('lecture des codes', () => {
   for (const mauvais of ['', 'B', '5', 'B9', 'B0', 'BB5', 'B55', '5B', 'é5']) assert.equal(lireCode(mauvais), null, mauvais)
 })
 
-test('jeu terminé → boss, quel que soit le score', () => {
-  const r = appliquerResultat(etat(), 0)
-  assert.equal(r.evenement, 'jeu-termine')
-  assert.deepEqual(r.etat, etat({ etape: 'boss' }))
+test('entraînement : une partie terminée compte, sans passer au boss avant la dernière', () => {
+  const e = etat({ place: 4 }) // place 4, niveau 1 → Phrases brouillées (8 parties)
+  assert.equal(jeuDuNiveau(4, 1), 'phrases-brouillees')
+  const r = appliquerResultat(e, 0, AUJ)
+  assert.equal(r.evenement, 'partie-terminee')
+  assert.deepEqual(r.etat, etat({ place: 4, partiesFaites: 1 }))
 })
 
-test('boss battu au seuil → niveau suivant, échecs remis à 0', () => {
-  const r = appliquerResultat(etat({ etape: 'boss', echecsBoss: 1 }), 0.5)
+test('entraînement : la dernière partie ouvre le boss, quel que soit le score', () => {
+  const r = appliquerResultat(etat({ place: 4, partiesFaites: 7 }), 0, AUJ)
+  assert.equal(r.evenement, 'jeu-termine')
+  assert.deepEqual(r.etat, etat({ place: 4, etape: 'boss', partiesFaites: 0 }))
+})
+
+test('boss battu au seuil → lecture de fin de niveau', () => {
+  const r = appliquerResultat(etat({ etape: 'boss' }), 0.6, AUJ)
   assert.equal(r.evenement, 'boss-battu')
-  assert.deepEqual(r.etat, etat({ niveau: 2, etape: 'jeu', echecsBoss: 0 }))
+  assert.deepEqual(r.etat, etat({ etape: 'lecture' }))
 })
 
 test('3 sur 5 suffit au premier essai (arrondi des flottants)', () => {
-  assert.equal(appliquerResultat(etat({ etape: 'boss' }), 3 / 5).evenement, 'boss-battu')
+  assert.equal(appliquerResultat(etat({ etape: 'boss' }), 3 / 5, AUJ).evenement, 'boss-battu')
+})
+
+test('boss battu après un échec : compté pour la persévérance', () => {
+  const r = appliquerResultat(etat({ etape: 'boss', echecsBoss: 2, bossApresEchec: 1 }), 0.4, AUJ)
+  assert.equal(r.evenement, 'boss-battu')
+  assert.deepEqual(r.etat, etat({ etape: 'lecture', echecsBoss: 0, bossApresEchec: 2 }))
 })
 
 test('boss raté → reste au boss, échecs + 1', () => {
-  const r = appliquerResultat(etat({ etape: 'boss' }), 0.59)
+  const r = appliquerResultat(etat({ etape: 'boss' }), 0.59, AUJ)
   assert.equal(r.evenement, 'boss-rate')
   assert.deepEqual(r.etat, etat({ etape: 'boss', echecsBoss: 1 }))
 })
 
-test('boss du niveau 20 battu → parcours terminé', () => {
-  const r = appliquerResultat(etat({ niveau: 20, etape: 'boss' }), 1)
+test('lecture faite → niveau suivant, daté du jour', () => {
+  const r = appliquerResultat(etat({ etape: 'lecture' }), 0, AUJ)
+  assert.equal(r.evenement, 'niveau-termine')
+  assert.deepEqual(r.etat, etat({ niveau: 2, niveauValideLe: AUJ }))
+})
+
+test('lecture du niveau 20 → parcours terminé', () => {
+  const r = appliquerResultat(etat({ niveau: 20, etape: 'lecture' }), 1, AUJ)
   assert.equal(r.evenement, 'parcours-termine')
   assert.equal(r.etat.niveau, 21)
 })
 
 test('appliquer un résultat sur un parcours terminé est refusé', () => {
-  assert.throws(() => appliquerResultat(etat({ niveau: 21 }), 1))
+  assert.throws(() => appliquerResultat(etat({ niveau: 21 }), 1, AUJ))
+})
+
+test('un niveau par jour : verrouillé le jour même, ouvert le lendemain', () => {
+  const e = etat({ niveau: 2, niveauValideLe: AUJ })
+  assert.equal(estVerrouille(e, AUJ), true)
+  assert.equal(estVerrouille(e, '2026-10-06'), false)
+  assert.equal(estVerrouille(etat({ niveau: 2, niveauValideLe: null }), AUJ), false)
+  // Une fois l'entraînement commencé (autre onglet resté ouvert la veille…), on ne bloque pas en plein niveau.
+  assert.equal(estVerrouille(etat({ niveau: 2, niveauValideLe: AUJ, partiesFaites: 1 }), AUJ), false)
+  assert.equal(estVerrouille(etat({ niveau: 21, niveauValideLe: AUJ }), AUJ), false)
 })
 
 test('taux de réussite borné, 1 si rien à trouver', () => {
@@ -96,9 +147,21 @@ test('taux de réussite borné, 1 si rien à trouver', () => {
   assert.equal(tauxReussite(5, 4), 1)
 })
 
-test('lien de partie', () => {
-  assert.equal(lienPartie(etat({ place: 2 })), '/exercices/intrus?parcours=jeu&d=1&n=1')
-  assert.equal(lienPartie(etat({ place: 2, etape: 'boss' })), '/exercices/intrus?parcours=boss&d=2&n=1')
+test('lien de partie : jeu, boss et lecture portent le niveau', () => {
+  assert.equal(lienPartie(etat({ place: 1 })), '/exercices/intrus?parcours=jeu&d=1&n=1')
+  assert.equal(lienPartie(etat({ place: 1, etape: 'boss' })), '/exercices/intrus?parcours=boss&d=2&n=1')
+  assert.equal(lienPartie(etat({ place: 1, etape: 'lecture', niveau: 9 })), '/exercices/lecture-rapide?parcours=lecture&d=2&n=9')
+})
+
+test('une partie ne compte que si étape, niveau et jeu correspondent à l état en base', () => {
+  const e = etat({ place: 2, niveau: 3, etape: 'boss' })
+  const jeu = jeuDuNiveau(2, 3)
+  assert.equal(partieValide(e, { etape: 'boss', niveau: 3, jeu }), true)
+  assert.equal(partieValide(e, { etape: 'jeu', niveau: 3, jeu }), false)
+  assert.equal(partieValide(e, { etape: 'boss', niveau: 2, jeu }), false)
+  assert.equal(partieValide(e, { etape: 'boss', niveau: 3, jeu: jeuDuNiveau(2, 2) }), false)
+  assert.equal(partieValide(etat({ niveau: 3, etape: 'lecture' }), { etape: 'lecture', niveau: 3, jeu: 'lecture-rapide' }), true)
+  assert.equal(partieValide(etat({ niveau: 21 }), { etape: 'jeu', niveau: 21, jeu }), false)
 })
 
 test('paramètres Lecture rapide et Ami/Ennemi', () => {
@@ -106,18 +169,4 @@ test('paramètres Lecture rapide et Ami/Ennemi', () => {
   assert.deepEqual(parametresLecture(4), { niveau: 2, vitesse: 3 })
   assert.equal(niveauAmiEnnemi(1), 'debutant')
   assert.equal(niveauAmiEnnemi(3), 'professionnel')
-})
-
-test("le lien de partie porte le niveau", () => {
-  assert.equal(lienPartie(etat({ place: 2, niveau: 3 })), "/exercices/recherche-mots?parcours=jeu&d=1&n=3")
-})
-
-test("une partie ne compte que si étape, niveau et jeu correspondent à l état en base", () => {
-  const e = etat({ place: 2, niveau: 3, etape: "boss" })
-  const jeu = jeuDuNiveau(2, 3)
-  assert.equal(partieValide(e, { etape: "boss", niveau: 3, jeu }), true)
-  assert.equal(partieValide(e, { etape: "jeu", niveau: 3, jeu }), false)
-  assert.equal(partieValide(e, { etape: "boss", niveau: 2, jeu }), false)
-  assert.equal(partieValide(e, { etape: "boss", niveau: 3, jeu: jeuDuNiveau(2, 2) }), false)
-  assert.equal(partieValide(etat({ niveau: 21 }), { etape: "jeu", niveau: 21, jeu }), false)
 })

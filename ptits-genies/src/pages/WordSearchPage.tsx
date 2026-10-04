@@ -158,6 +158,7 @@ export default function WordSearchPage() {
     const totalCorrect = results.reduce((s, r) => s + r.correctSelections, 0)
     const totalMissed = results.reduce((s, r) => s + r.missedTargets, 0)
     const totalWrong = results.reduce((s, r) => s + r.wrongSelections, 0)
+    const reussite = tauxReussite(totalCorrect, totalCorrect + totalMissed + totalWrong)
     await saveSession({
       id: `${Date.now()}-ws`, userId: currentUser.id, exerciseType: 'word-search',
       score: finalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(),
@@ -165,10 +166,11 @@ export default function WordSearchPage() {
         type: 'word-search', theme: themeId, gridsCompleted: 6,
         totalCorrectSelections: totalCorrect, totalMissedTargets: totalMissed,
         totalWrongSelections: totalWrong, totalElapsedSeconds: stopwatch.seconds,
+        reussite,
       },
     })
     if (modeParcours) {
-      await terminerPartie(currentUser.id, modeParcours, tauxReussite(totalCorrect, totalCorrect + totalMissed + totalWrong))
+      await terminerPartie(currentUser.id, modeParcours, reussite)
     }
     await refreshPoints()
     setTotalScore((prev) => prev + timeBonus)

@@ -9,7 +9,7 @@ import { Bouton } from '@/components/ui/Bouton'
 import { Carte, classesCarte } from '@/components/ui/Carte'
 import { Etiquette } from '@/components/ui/Etiquette'
 import { useParcoursStore } from '@/store/parcoursStore'
-import { NOMS_JEUX, estTermine, jeuDuNiveau } from '@/parcours/regles'
+import { NOMS_JEUX, dateDuJour, estTermine, estVerrouille, jeuDuNiveau } from '@/parcours/regles'
 
 const ALL_EXERCISES: {
   type: ExerciseType
@@ -110,9 +110,13 @@ export default function HomePage() {
                 <>
                   <p className="mt-3 font-titre text-2xl text-encre">Niveau {etatParcours.niveau}</p>
                   <p className="text-lg text-encre-doux">
-                    {etatParcours.etape === 'boss'
-                      ? `Boss du niveau ${etatParcours.niveau} 👾`
-                      : `Aujourd'hui : ${NOMS_JEUX[jeuDuNiveau(etatParcours.place, etatParcours.niveau)]}`}
+                    {estVerrouille(etatParcours, dateDuJour())
+                      ? `🔒 S'ouvre à ta prochaine séance`
+                      : etatParcours.etape === 'boss'
+                        ? `Boss du niveau ${etatParcours.niveau} 👾`
+                        : etatParcours.etape === 'lecture'
+                          ? '⚡ Lecture de fin de niveau'
+                          : `Aujourd'hui : ${NOMS_JEUX[jeuDuNiveau(etatParcours.place, etatParcours.niveau)]}`}
                   </p>
                 </>
               ) : etatParcours ? (

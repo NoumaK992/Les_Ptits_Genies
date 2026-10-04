@@ -53,12 +53,51 @@ function isValidExercise(exercise: PhrasesBrouilleesExercise): boolean {
   return segmentGapCount === exercise.gaps.length
 }
 
-// Mode parcours : niveau imposé par la difficulté, texte tiré au hasard parmi les textes jouables.
+// Mode parcours (boss) : niveau imposé par la difficulté, texte tiré au hasard parmi les textes jouables.
 function tirerPartieParcours(d: number): { level: PhrasesBrouilleesLevel; exercise: PhrasesBrouilleesExercise } {
   const level = Math.min(Math.max(d, 1), 3) as PhrasesBrouilleesLevel
   const valides = LEVELS[level].filter(isValidExercise)
   const pool = valides.length > 0 ? valides : LEVELS[level]
   return { level, exercise: pool[Math.floor(Math.random() * pool.length)] }
+}
+
+// Générateur pseudo-aléatoire à graine (mulberry32) : même graine → même suite de nombres.
+function mulberry32(graine: number): () => number {
+  let a = graine >>> 0
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0
+    let t = a
+    t = Math.imul(t ^ (t >>> 15), t | 1)
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+// Mélange de Fisher-Yates piloté par la graine : l'ordre est toujours le même pour une graine donnée.
+function melangeDeterministe<T>(liste: readonly T[], graine: number): T[] {
+  const alea = mulberry32(graine)
+  const copie = [...liste]
+  for (let i = copie.length - 1; i > 0; i--) {
+    const j = Math.floor(alea() * (i + 1))
+    ;[copie[i], copie[j]] = [copie[j], copie[i]]
+  }
+  return copie
+}
+
+// Entraînement du parcours (8 parties) : aucun texte ne revient dans un même entraînement.
+// Ordre fixe pour un élève et un niveau : d'abord les textes du niveau de difficulté d,
+// puis ceux des autres niveaux (les plus proches de d d'abord) ; la partie n prend le n-ième texte.
+function tirerEntrainementParcours(
+  d: number, graine: number, partiesFaites: number,
+): { level: PhrasesBrouilleesLevel; exercise: PhrasesBrouilleesExercise } {
+  const cible = Math.min(Math.max(d, 1), 3)
+  const ordreNiveaux = ([1, 2, 3] as PhrasesBrouilleesLevel[])
+    .sort((a, b) => Math.abs(a - cible) - Math.abs(b - cible) || a - b)
+  const suite = ordreNiveaux.flatMap((level) =>
+    melangeDeterministe(LEVELS[level].filter(isValidExercise), graine).map((exercise) => ({ level, exercise })),
+  )
+  if (suite.length === 0) return tirerPartieParcours(d)
+  return suite[Math.max(partiesFaites, 0) % suite.length]
 }
 
 function displaySegment(
@@ -108,11 +147,17 @@ export default function PhrasesBrouilleesPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const modeParcours = useModeParcours()
-  const { terminerPartie } = useParcoursStore()
+  const { terminerPartie, etat } = useParcoursStore()
 
   // Tirage fait une seule fois au montage (initialiseur paresseux) : l'écran de jeu s'affiche
   // dès le premier rendu, sans passer par les écrans de choix ni changer de texte en StrictMode.
-  const [depart] = useState(() => (modeParcours ? tirerPartieParcours(modeParcours.difficulte) : null))
+  // Entraînement : texte déterminé par la partie en cours (pas de répétition) ; boss : texte au hasard.
+  const [depart] = useState(() => {
+    if (!modeParcours) return null
+    if (modeParcours.etape !== 'jeu') return tirerPartieParcours(modeParcours.difficulte)
+    const graine = modeParcours.niveau * 8 + (etat?.place ?? 0)
+    return tirerEntrainementParcours(modeParcours.difficulte, graine, etat?.partiesFaites ?? 0)
+  })
 
   const [phase, setPhase] = useState<Phase>(depart ? 'playing' : 'level-select')
   const [selectedLevel, setSelectedLevel] = useState<PhrasesBrouilleesLevel>(depart?.level ?? 1)
@@ -195,6 +240,7 @@ export default function PhrasesBrouilleesPage() {
     setValidated(true)
     setResult({ ...scoreData, stars, correctAnswers, wrongAnswers })
 
+    const reussite = tauxReussite(correctAnswers, exercise.gaps.length)
     await saveSession({
       id: `${Date.now()}-pb`, userId: currentUser.id, exerciseType: 'phrases-brouillees',
       score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(),
@@ -203,10 +249,11 @@ export default function PhrasesBrouilleesPage() {
         totalGaps: exercise.gaps.length, correctAnswers, wrongAnswers,
         accuracyScore: scoreData.accuracyScore, timeBonus: scoreData.timeBonus,
         perfectBonus: scoreData.perfectBonus, stars, totalElapsedSeconds: stopwatch.seconds,
+        reussite,
       },
     })
     if (modeParcours) {
-      await terminerPartie(currentUser.id, modeParcours, tauxReussite(correctAnswers, exercise.gaps.length))
+      await terminerPartie(currentUser.id, modeParcours, reussite)
     }
     setPlayedByLevel((prev) => {
       const existing = prev[selectedLevel]

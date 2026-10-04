@@ -175,6 +175,7 @@ export default function IntrusPage() {
     const finalScore = totalScore + (lastScore ?? 0)
     const finalCorrect = bonnes ?? correctCount
     const duration = Math.round((Date.now() - sessionStart) / 1000)
+    const reussite = tauxReussite(finalCorrect, LISTS_PER_SESSION)
     await saveSession({
       id: `${Date.now()}-intrus`,
       userId: currentUser.id,
@@ -187,10 +188,11 @@ export default function IntrusPage() {
         level: selectedLevel,
         correctAnswers: finalCorrect,
         totalLists: LISTS_PER_SESSION,
+        reussite,
       },
     })
     await refreshPoints()
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(finalCorrect, LISTS_PER_SESSION))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     setPhase('session-result')
   }
 

@@ -6,12 +6,14 @@ import {
 } from 'recharts'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
 import { BADGES, BADGE_CATEGORIES } from '@/data/badges'
 import { calcStreak } from '@/utils/streak'
 import { couleurs } from '@/theme/couleurs'
 import { classesCarte } from '@/components/ui/Carte'
 import { Etiquette } from '@/components/ui/Etiquette'
 import { cn } from '@/lib/cn'
+import type { BadgeContext } from '@/types'
 
 const EXERCISE_LABELS: Record<string, string> = {
   'word-search': '🔍 Recherche',
@@ -89,9 +91,23 @@ export default function DashboardPage() {
     }
   }, [currentUser?.id])
 
+  // État du parcours (succès « Parcours ») : chargé s'il manque ou s'il appartient à un autre compte.
+  const parcoursUserId = useParcoursStore((s) => s.userId)
+  const parcoursEtat = useParcoursStore((s) => s.etat)
+  const parcoursCharge = useParcoursStore((s) => s.charge)
+  const chargerParcours = useParcoursStore((s) => s.charger)
+
+  useEffect(() => {
+    if (currentUser && (!parcoursCharge || parcoursUserId !== currentUser.id)) {
+      chargerParcours(currentUser.id)
+    }
+  }, [currentUser?.id])
+
+  const parcours = currentUser && parcoursUserId === currentUser.id ? parcoursEtat : null
+
   const totalPoints = currentUser?.totalPoints ?? 0
   const streak = calcStreak(sessions)
-  const badgeCtx = { sessions, totalPoints, progress, streak }
+  const badgeCtx: BadgeContext = { sessions, totalPoints, progress, streak, parcours }
   const earnedBadgeIds = new Set(BADGES.filter((b) => b.condition(badgeCtx)).map((b) => b.id))
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 # Moteur de parcours (sous-projet B)
 
 Date : 2026-10-04
-Statut : design validé en conversation par Manu ; spec et plan validés par avance.
+Statut : design validé en conversation par Manu ; spec et plan validés par avance. **Révisée le 2026-10-04 (voir « Révision 1 » en fin de document, qui prime sur les sections précédentes).**
 
 ## Contexte
 
@@ -131,3 +131,49 @@ Chrono de 15 min imposé, classement (D), écran enseignant et gestion des group
 - `node --test src/parcours` : rotation (carré latin sur 8 niveaux et 8 places), tours, difficulté plafonnée, seuils 60/50/40, transitions jeu → boss → niveau suivant, échec, niveau 20 → terminé, lecture des codes valides et invalides.
 - `npm run build` sans erreur ; `node scripts/verifier-style.mjs` OK.
 - Playwright (Supabase simulé avec une table `parcours` en mémoire) : code → jeu → boss raté → seuil adouci affiché → boss réussi → niveau 2 avec le jeu suivant de la rotation ; une partie abandonnée ne change rien ; affichage ordinateur 1280 px.
+
+---
+
+## Révision 1 (2026-10-04, après test de Manu)
+
+Constat de Manu : « 1 jeu et place au boss ? À ce train-là, mes élèves finissent le parcours en 15 minutes. » Une partie dure 2 à 10 min ; rien n'empêchait d'enchaîner les niveaux. Décisions de Manu :
+
+### R1. Un niveau = entraînement (plusieurs parties) → boss → lecture
+
+Trois étapes par niveau : `jeu` (entraînement), `boss`, `lecture`.
+
+- **Entraînement** : N parties enchaînées du jeu du niveau, à la même difficulté (`tour`). Chaque partie terminée compte, quel que soit le score. Après la N-ième, étape `boss`.
+
+| Jeu | Parties d'entraînement |
+|---|---|
+| L'Intrus | 2 |
+| Coup d'œil | 2 |
+| Mots cachés | 1 |
+| Phrases brouillées | 8 (textes tirés d'abord dans le niveau de difficulté, puis dans les autres niveaux, sans répétition) |
+| Collection | 4 |
+| Ami et Ennemi | 4 |
+
+- **Boss** : inchangé (une partie, difficulté `tour + 1`, seuils 60/50/40 %, +100 points).
+- **Lecture** : après le boss battu, une Lecture rapide de fin de niveau, pour tous. Elle ne bloque pas : terminée = niveau validé. Difficulté = `tour` (voir `parametresLecture`). Choix fait par l'assistant parmi les options laissées ouvertes par Manu (« fin de chaque niveau ») : après le boss plutôt qu'à sa place.
+- Les bonus et événements : `partie-terminee` (entraînement non fini), `jeu-termine` (entraînement fini → boss), `boss-battu` (→ lecture), `boss-rate`, `niveau-termine` (lecture faite → niveau suivant), `parcours-termine`.
+
+### R2. Lecture rapide sort de la rotation
+
+Rotation sur les jeux d'entraînement disponibles (6 aujourd'hui) : `jeu = JEUX_ROTATION[((place - 1) + (niveau - 1)) mod 6]`. Chaque élève fait les 6 jeux une fois avant d'en refaire un ; à un niveau donné, deux paires d'élèves partagent un jeu. Le sous-projet C devra ajouter **2 jeux** pour revenir à un carré latin à 8.
+
+### R3. Un niveau par jour
+
+Quand la lecture de fin de niveau est faite, la date du jour (locale, `AAAA-MM-JJ`) est enregistrée (`niveau_valide_le`). Tant que cette date est celle du jour, le niveau suivant est verrouillé : « Bravo ! Le niveau N s'ouvrira à ta prochaine séance 🔒 ». Le jeu libre reste accessible. Un boss raté peut être retenté le jour même.
+
+### R4. Consignes à l'entrée des jeux du parcours
+
+Écran « Comment jouer ? » (sur la page parcours, avant de lancer le jeu) : nom du jeu, 3 consignes courtes, en boss « Il te faut X % de bonnes réponses », bouton « 🔊 Écouter » (synthèse vocale du navigateur, `speechSynthesis`, voix française), bouton « J'ai compris, c'est parti ! ». Affiché avant la 1re partie de l'entraînement, avant chaque essai de boss et avant la lecture ; lien « 📖 Revoir les consignes » sinon. Textes dans un seul fichier `src/parcours/consignes.ts`.
+
+### R5. Succès
+
+- Correction : « Tous les exercices » = 7 jeux ; nouveau « Spécialiste » Ami et Ennemi (10 parties) ; « Sans faute ! » = une partie à 100 % de réussite (chaque jeu enregistre désormais son taux de réussite dans les détails de la partie, champ `reussite`).
+- Nouvelle catégorie « 🗺️ Parcours » : 👾 Chasseur de boss (1er boss), 🥉 Premier tour (niveau 8 validé), 🥈 Deuxième tour (niveau 16), 🏆 Légende (parcours fini), 💪 Persévérant (1 boss battu après au moins un échec), 🔥 Increvable (3 boss battus après au moins un échec).
+
+### R6. Données
+
+Table `parcours` : `etape` accepte `lecture` ; nouvelles colonnes `parties_faites smallint not null default 0 check (>= 0)`, `niveau_valide_le date null`, `boss_apres_echec smallint not null default 0 check (>= 0)`. L'écriture conditionnelle compare aussi `parties_faites`.

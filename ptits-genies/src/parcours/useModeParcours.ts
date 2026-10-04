@@ -8,7 +8,7 @@ export interface ModeParcours extends PartieParcours {
   idPartie: string
 }
 
-// Lit `?parcours=jeu|boss&d=N&n=NIVEAU` : présent quand le jeu est lancé depuis « Mon parcours ».
+// Lit `?parcours=jeu|boss|lecture&d=N&n=NIVEAU` : présent quand le jeu est lancé depuis « Mon parcours ».
 // Absent (null) en jeu libre : le jeu garde alors son fonctionnement habituel.
 export function useModeParcours(): ModeParcours | null {
   const [params] = useSearchParams()
@@ -18,7 +18,7 @@ export function useModeParcours(): ModeParcours | null {
   const difficulte = Number(params.get('d'))
   const niveau = Number(params.get('n'))
   const jeu = (Object.keys(ROUTES_JEUX) as JeuParcours[]).find((j) => ROUTES_JEUX[j] === pathname)
-  if ((etape !== 'jeu' && etape !== 'boss') || !jeu) return null
+  if ((etape !== 'jeu' && etape !== 'boss' && etape !== 'lecture') || !jeu) return null
   if (!Number.isInteger(difficulte) || difficulte < 1 || !Number.isInteger(niveau) || niveau < 1) return null
   return { etape, difficulte, niveau, jeu, idPartie }
 }

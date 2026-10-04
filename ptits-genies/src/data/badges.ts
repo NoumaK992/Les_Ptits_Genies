@@ -1,4 +1,5 @@
-import type { Badge } from '@/types'
+import type { Badge, BadgeContext } from '@/types'
+import { NIVEAU_TERMINE } from '@/parcours/regles'
 
 export const BADGE_CATEGORIES = [
   { id: 'decouverte', label: '🗺️ Découverte' },
@@ -6,6 +7,7 @@ export const BADGE_CATEGORIES = [
   { id: 'assiduite',  label: '🔥 Assiduité' },
   { id: 'volume',     label: '📚 Progression' },
   { id: 'specialisation', label: '🎯 Spécialisation' },
+  { id: 'parcours',   label: '🗺️ Parcours' },
 ] as const
 
 export type BadgeCategory = (typeof BADGE_CATEGORIES)[number]['id']
@@ -36,9 +38,9 @@ export const BADGES: BadgeWithCategory[] = [
     id: 'allExercises',
     label: 'Globe-trotteur',
     emoji: '🌍',
-    description: 'Essaie les 6 exercices',
+    description: 'Essaie les 7 exercices',
     category: 'decouverte',
-    condition: (ctx) => ctx.progress.length >= 6,
+    condition: (ctx) => ctx.progress.length >= 7,
   },
 
   // ─── Points ───────────────────────────────────────────────────────
@@ -86,9 +88,10 @@ export const BADGES: BadgeWithCategory[] = [
     id: 'perfect',
     label: 'Sans faute !',
     emoji: '💎',
-    description: 'Obtiens un score parfait (≥ 100 pts) dans une session',
+    description: 'Réussis une partie à 100 %',
     category: 'points',
-    condition: (ctx) => ctx.sessions.some((s) => s.score >= 100),
+    // Les parties anciennes n'ont pas de taux de réussite : elles ne comptent pas.
+    condition: (ctx) => ctx.sessions.some((s) => (s.details?.reussite ?? 0) >= 0.999),
   },
 
   // ─── Assiduité ────────────────────────────────────────────────────
@@ -200,4 +203,71 @@ export const BADGES: BadgeWithCategory[] = [
     category: 'specialisation',
     condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'collection')?.totalSessions ?? 0) >= 10,
   },
+  {
+    id: 'spec-ami-ennemi',
+    label: 'Stratège',
+    emoji: '🎯',
+    description: "10 sessions d'Ami et Ennemi",
+    category: 'specialisation',
+    condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'ami-ennemi')?.totalSessions ?? 0) >= 10,
+  },
+
+  // ─── Parcours ─────────────────────────────────────────────────────
+  {
+    id: 'parcours-chasseur-de-boss',
+    label: 'Chasseur de boss',
+    emoji: '👾',
+    description: 'Bats ton premier boss',
+    category: 'parcours',
+    // Boss du niveau 1 battu : l'élève est passé à la lecture, ou au niveau suivant.
+    condition: (ctx) => {
+      const p = parcoursDe(ctx)
+      return !!p && (p.niveau >= 2 || (p.niveau === 1 && p.etape === 'lecture'))
+    },
+  },
+  {
+    id: 'parcours-premier-tour',
+    label: 'Premier tour',
+    emoji: '🥉',
+    description: 'Valide le niveau 8',
+    category: 'parcours',
+    condition: (ctx) => (parcoursDe(ctx)?.niveau ?? 0) >= 9,
+  },
+  {
+    id: 'parcours-deuxieme-tour',
+    label: 'Deuxième tour',
+    emoji: '🥈',
+    description: 'Valide le niveau 16',
+    category: 'parcours',
+    condition: (ctx) => (parcoursDe(ctx)?.niveau ?? 0) >= 17,
+  },
+  {
+    id: 'parcours-legende',
+    label: 'Maître du parcours',
+    emoji: '🏆',
+    description: 'Termine tout le parcours',
+    category: 'parcours',
+    condition: (ctx) => (parcoursDe(ctx)?.niveau ?? 0) >= NIVEAU_TERMINE,
+  },
+  {
+    id: 'parcours-perseverant',
+    label: 'Persévérant',
+    emoji: '💪',
+    description: 'Bats un boss après avoir échoué',
+    category: 'parcours',
+    condition: (ctx) => (parcoursDe(ctx)?.bossApresEchec ?? 0) >= 1,
+  },
+  {
+    id: 'parcours-increvable',
+    label: 'Increvable',
+    emoji: '🔥',
+    description: 'Bats 3 boss après avoir échoué',
+    category: 'parcours',
+    condition: (ctx) => (parcoursDe(ctx)?.bossApresEchec ?? 0) >= 3,
+  },
 ]
+
+/** État du parcours, ou null si l'élève n'en a pas (ou s'il n'est pas encore chargé). */
+function parcoursDe(ctx: BadgeContext) {
+  return ctx.parcours ?? null
+}

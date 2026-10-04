@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import {
-  appliquerResultat, lireCode, partieValide, BONUS_BOSS,
+  appliquerResultat, dateDuJour, lireCode, partieValide, BONUS_BOSS,
   type EtatParcours, type EvenementParcours,
 } from '@/parcours/regles'
 import type { ModeParcours } from '@/parcours/useModeParcours'
@@ -82,7 +82,7 @@ export const useParcoursStore = create<ParcoursState>((set, get) => ({
 
     set({ enCours: true, partiesTraitees: [...get().partiesTraitees, partie.idPartie] })
     try {
-      const r = appliquerResultat(etat, reussite)
+      const r = appliquerResultat(etat, reussite, dateDuJour())
       let ecrit: boolean
       try {
         ecrit = await parcoursService.enregistrer(userId, etat, r.etat)
@@ -96,7 +96,7 @@ export const useParcoursStore = create<ParcoursState>((set, get) => ({
         set({ erreur: ERREUR_AUTRE_ECRAN })
         return
       }
-      if (r.evenement === 'boss-battu' || r.evenement === 'parcours-termine') {
+      if (r.evenement === 'boss-battu') {
         try {
           await userService.updatePoints(userId, BONUS_BOSS)
           await useAuthStore.getState().refreshPoints()

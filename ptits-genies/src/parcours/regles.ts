@@ -1,11 +1,14 @@
 // Règles du parcours (sous-projet B) : fonctions pures, sans React ni Supabase.
-// Testées par `npm test` (node --test). Voir docs/superpowers/specs/2026-10-04-parcours-design.md.
+// Testées par `npm test` (node --test). Voir docs/superpowers/specs/2026-10-04-parcours-design.md
+// (la « Révision 1 » prime : entraînement en plusieurs parties, boss, lecture de fin de niveau).
 
 export type JeuParcours =
   | 'lecture-rapide' | 'intrus' | 'coup-doeil' | 'word-search'
   | 'phrases-brouillees' | 'collection' | 'ami-ennemi'
-export type EtapeParcours = 'jeu' | 'boss'
-export type EvenementParcours = 'jeu-termine' | 'boss-battu' | 'boss-rate' | 'parcours-termine'
+/** jeu = entraînement (plusieurs parties), boss, lecture = Lecture rapide de fin de niveau. */
+export type EtapeParcours = 'jeu' | 'boss' | 'lecture'
+export type EvenementParcours =
+  | 'partie-terminee' | 'jeu-termine' | 'boss-battu' | 'boss-rate' | 'niveau-termine' | 'parcours-termine'
 
 export interface EtatParcours {
   groupe: string
@@ -13,17 +16,34 @@ export interface EtatParcours {
   niveau: number
   etape: EtapeParcours
   echecsBoss: number
+  /** Parties d'entraînement déjà faites dans le niveau en cours. */
+  partiesFaites: number
+  /** Date locale (AAAA-MM-JJ) du dernier niveau validé : un seul niveau par jour. */
+  niveauValideLe: string | null
+  /** Boss battus après au moins un échec (succès « Persévérant »). */
+  bossApresEchec: number
 }
 
 export const NB_NIVEAUX = 20
 export const NIVEAU_TERMINE = NB_NIVEAUX + 1
 export const BONUS_BOSS = 100
 
-// L'emplacement 8 reprend Lecture rapide en attendant le 8e jeu (sous-projet C).
+// Jeux d'entraînement en rotation. Lecture rapide n'y est plus : elle clôt chaque niveau.
+// Le sous-projet C ajoutera 2 jeux pour revenir à 8 (un jeu différent par élève du groupe).
 export const JEUX_ROTATION: readonly JeuParcours[] = [
-  'lecture-rapide', 'intrus', 'coup-doeil', 'word-search',
-  'phrases-brouillees', 'collection', 'ami-ennemi', 'lecture-rapide',
+  'intrus', 'coup-doeil', 'word-search', 'phrases-brouillees', 'collection', 'ami-ennemi',
 ]
+
+// Nombre de parties de l'entraînement, calibré pour environ 10-15 minutes.
+export const PARTIES_PAR_JEU: Record<JeuParcours, number> = {
+  intrus: 2,
+  'coup-doeil': 2,
+  'word-search': 1,
+  'phrases-brouillees': 8,
+  collection: 4,
+  'ami-ennemi': 4,
+  'lecture-rapide': 1,
+}
 
 export const DIFFICULTE_MAX: Record<JeuParcours, number> = {
   'lecture-rapide': 4, intrus: 4, 'coup-doeil': 4, 'word-search': 1,
@@ -54,6 +74,11 @@ export function jeuDuNiveau(place: number, niveau: number): JeuParcours {
   return JEUX_ROTATION[((place - 1) + (niveau - 1)) % JEUX_ROTATION.length]
 }
 
+/** Jeu à lancer pour l'étape en cours : celui du niveau, ou Lecture rapide pour la lecture de fin de niveau. */
+export function jeuDeLEtape(etat: EtatParcours): JeuParcours {
+  return etat.etape === 'lecture' ? 'lecture-rapide' : jeuDuNiveau(etat.place, etat.niveau)
+}
+
 export function tourDuNiveau(niveau: number): 1 | 2 | 3 {
   return niveau <= 8 ? 1 : niveau <= 16 ? 2 : 3
 }
@@ -75,23 +100,54 @@ export function estTermine(etat: EtatParcours): boolean {
   return etat.niveau >= NIVEAU_TERMINE
 }
 
+/**
+ * Un niveau par jour : le niveau validé aujourd'hui ferme le suivant jusqu'au lendemain.
+ * On ne verrouille qu'un niveau pas encore commencé (pas de blocage en plein milieu).
+ */
+export function estVerrouille(etat: EtatParcours, aujourdhui: string): boolean {
+  return !estTermine(etat)
+    && etat.etape === 'jeu'
+    && etat.partiesFaites === 0
+    && etat.niveauValideLe === aujourdhui
+}
+
 export function appliquerResultat(
   etat: EtatParcours,
   reussite: number,
+  aujourdhui: string,
 ): { etat: EtatParcours; evenement: EvenementParcours } {
   if (estTermine(etat)) throw new Error('Parcours déjà terminé')
+
   if (etat.etape === 'jeu') {
-    return { etat: { ...etat, etape: 'boss', echecsBoss: 0 }, evenement: 'jeu-termine' }
-  }
-  // Petite tolérance : 3/5 doit valoir 60 % malgré les arrondis des flottants.
-  if (reussite + 1e-9 >= seuilBoss(etat.echecsBoss)) {
-    const niveau = etat.niveau + 1
-    return {
-      etat: { ...etat, niveau, etape: 'jeu', echecsBoss: 0 },
-      evenement: niveau >= NIVEAU_TERMINE ? 'parcours-termine' : 'boss-battu',
+    const parties = etat.partiesFaites + 1
+    if (parties < PARTIES_PAR_JEU[jeuDuNiveau(etat.place, etat.niveau)]) {
+      return { etat: { ...etat, partiesFaites: parties }, evenement: 'partie-terminee' }
     }
+    return { etat: { ...etat, etape: 'boss', partiesFaites: 0, echecsBoss: 0 }, evenement: 'jeu-termine' }
   }
-  return { etat: { ...etat, echecsBoss: etat.echecsBoss + 1 }, evenement: 'boss-rate' }
+
+  if (etat.etape === 'boss') {
+    // Petite tolérance : 3/5 doit valoir 60 % malgré les arrondis des flottants.
+    if (reussite + 1e-9 >= seuilBoss(etat.echecsBoss)) {
+      return {
+        etat: {
+          ...etat,
+          etape: 'lecture',
+          echecsBoss: 0,
+          bossApresEchec: etat.bossApresEchec + (etat.echecsBoss > 0 ? 1 : 0),
+        },
+        evenement: 'boss-battu',
+      }
+    }
+    return { etat: { ...etat, echecsBoss: etat.echecsBoss + 1 }, evenement: 'boss-rate' }
+  }
+
+  // Lecture de fin de niveau : elle ne bloque pas, le niveau est validé.
+  const niveau = etat.niveau + 1
+  return {
+    etat: { ...etat, niveau, etape: 'jeu', partiesFaites: 0, echecsBoss: 0, niveauValideLe: aujourdhui },
+    evenement: niveau >= NIVEAU_TERMINE ? 'parcours-termine' : 'niveau-termine',
+  }
 }
 
 export function tauxReussite(bons: number, total: number): number {
@@ -102,7 +158,7 @@ export function tauxReussite(bons: number, total: number): number {
 // Le niveau voyage dans l'adresse : une page de jeu retrouvée avec « Précédent »
 // ou l'historique ne doit pas pouvoir valider l'étape d'un autre niveau.
 export function lienPartie(etat: EtatParcours): string {
-  const jeu = jeuDuNiveau(etat.place, etat.niveau)
+  const jeu = jeuDeLEtape(etat)
   return `${ROUTES_JEUX[jeu]}?parcours=${etat.etape}&d=${difficulte(jeu, etat.niveau, etat.etape)}&n=${etat.niveau}`
 }
 
@@ -118,7 +174,13 @@ export function partieValide(etat: EtatParcours, partie: PartieParcours): boolea
   return !estTermine(etat)
     && etat.etape === partie.etape
     && etat.niveau === partie.niveau
-    && jeuDuNiveau(etat.place, etat.niveau) === partie.jeu
+    && jeuDeLEtape(etat) === partie.jeu
+}
+
+/** Date locale du jour au format AAAA-MM-JJ (le verrou « un niveau par jour » suit l'heure de l'ordinateur). */
+export function dateDuJour(maintenant: Date = new Date()): string {
+  const deux = (n: number) => String(n).padStart(2, '0')
+  return `${maintenant.getFullYear()}-${deux(maintenant.getMonth() + 1)}-${deux(maintenant.getDate())}`
 }
 
 // Lecture rapide : difficulté → longueur du texte et index de vitesse (SpeedPicker : 45, 70, 100, 140, 200 mpm).

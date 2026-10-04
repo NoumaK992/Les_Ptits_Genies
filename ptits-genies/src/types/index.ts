@@ -1,3 +1,5 @@
+import type { EtatParcours } from '@/parcours/regles'
+
 // ─── User & Auth ────────────────────────────────────────────────────
 export interface User {
   id: string
@@ -27,7 +29,7 @@ export interface Session {
   details: SessionDetails
 }
 
-export type SessionDetails =
+export type SessionDetails = (
   | WordSearchSessionDetails
   | IntrusSessionDetails
   | LectureRapideSessionDetails
@@ -35,6 +37,10 @@ export type SessionDetails =
   | PhrasesBrouilleesSessionDetails
   | CollectionSessionDetails
   | AmiEnnemiSessionDetails
+) & {
+  /** Taux de bonnes réponses de la partie, entre 0 et 1 (succès « Sans faute ! »). Absent des parties anciennes. */
+  reussite?: number
+}
 
 export interface WordSearchSessionDetails {
   type: 'word-search'
@@ -227,6 +233,8 @@ export interface BadgeContext {
   totalPoints: number
   progress: Progress[]
   streak: number
+  /** État du parcours de l'élève (null s'il n'a pas encore saisi de code). */
+  parcours?: EtatParcours | null
 }
 
 export interface Badge {

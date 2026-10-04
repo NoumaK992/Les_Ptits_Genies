@@ -98,13 +98,14 @@ export default function CoupDOeilPage() {
     setSeriesScore(score)
     setTimeBonus(bonus)
     setStats({ correct, wrong, missed, falseAlarms, perfect: isPerfect })
+    const reussite = tauxReussite(correct, totalTargets)
     await saveSession({
       id: `${Date.now()}-cd`, userId: currentUser.id, exerciseType: 'coup-doeil',
       score: score + bonus, duration: stopwatch.seconds, playedAt: new Date().toISOString(),
-      details: { type: 'coup-doeil', seriesId, correctCategorizations: correct, wrongCategorizations: wrong, missedTargets: missed, falseAlarms, totalElapsedSeconds: stopwatch.seconds },
+      details: { type: 'coup-doeil', seriesId, correctCategorizations: correct, wrongCategorizations: wrong, missedTargets: missed, falseAlarms, totalElapsedSeconds: stopwatch.seconds, reussite },
     })
     await refreshPoints()
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(correct, totalTargets))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     setPhase('correction')
   }
 
