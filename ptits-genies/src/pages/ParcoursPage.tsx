@@ -17,7 +17,7 @@ const BANNIERES = {
   'boss-rate': 'Le boss a résisté ! Il sera plus faible au prochain essai.',
 } as const
 
-const CASE = 'flex flex-1 flex-col items-center justify-center gap-1 rounded-2xl border-2 border-encre p-4 text-center'
+const CASE = 'flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-2xl border-2 border-encre p-3 text-center sm:p-4'
 
 export default function ParcoursPage() {
   const { currentUser } = useAuthStore()
@@ -79,7 +79,10 @@ export default function ParcoursPage() {
         <Etiquette>Bravo</Etiquette>
         <h1 className="mt-4 font-titre text-4xl text-encre">Parcours terminé 🏆</h1>
         <p className="mt-3 text-lg text-encre-doux">Tu as vaincu les {NB_NIVEAUX} boss. Tu peux continuer à t'entraîner librement.</p>
-        <Link to="/exercices" className={cn(classesBouton('principal', 'grand'), 'mt-6')}>Les exercices</Link>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Link to="/exercices" className={classesBouton('principal', 'grand')}>Les exercices</Link>
+          <Link to="/accueil" className={classesBouton('secondaire', 'grand')}>Accueil</Link>
+        </div>
       </Carte>
     )
   }
@@ -118,8 +121,8 @@ export default function ParcoursPage() {
         <div className="mt-6 flex items-stretch gap-3">
           <div className={cn(CASE, surBoss ? 'bg-juste' : 'bg-jaune shadow-dur')}>
             <span className="text-3xl" aria-hidden="true">🎮</span>
-            <span className="font-titre text-lg text-encre">{NOMS_JEUX[jeu]}</span>
-            {surBoss && <span className="font-semibold text-encre">✓ Fait</span>}
+            <span className="break-words font-titre text-base text-encre sm:text-lg">{NOMS_JEUX[jeu]}</span>
+            {surBoss &&<span className="font-semibold text-encre">✓ Fait</span>}
           </div>
           <span className="self-center font-titre text-2xl text-encre" aria-hidden="true">→</span>
           <div className={cn(CASE, surBoss ? 'bg-jaune shadow-dur' : 'bg-papier')}>
@@ -136,7 +139,9 @@ export default function ParcoursPage() {
         )}
 
         <div className="mt-6 flex justify-center">
-          <Bouton taille="grand" onClick={jouer}>{surBoss ? 'Affronter le boss ▶' : 'Jouer ▶'}</Bouton>
+          <Bouton taille="grand" onClick={jouer}>
+            {!surBoss ? 'Jouer ▶' : etat.echecsBoss > 0 ? 'Retenter le boss ▶' : 'Affronter le boss ▶'}
+          </Bouton>
         </div>
       </Carte>
 

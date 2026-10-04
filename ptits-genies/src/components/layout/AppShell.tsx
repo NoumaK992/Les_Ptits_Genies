@@ -1,5 +1,6 @@
 import { Outlet, NavLink, Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 import { useAuthStore } from '@/store/authStore'
 import { Bouton } from '@/components/ui/Bouton'
 import { Decor } from '@/components/ui/Decor'
@@ -13,6 +14,11 @@ const navItems = [
 export default function AppShell() {
   const { currentUser, logout } = useAuthStore()
   const location = useLocation()
+
+  // Chaque nouvel écran s'ouvre en haut de page (sinon le titre restait caché sous la barre du haut).
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   return (
     <div className="relative isolate flex min-h-screen flex-col bg-sable">

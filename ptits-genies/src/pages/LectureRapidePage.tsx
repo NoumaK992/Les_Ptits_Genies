@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import { cn } from '@/lib/cn'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
@@ -218,11 +220,19 @@ export default function LectureRapidePage() {
     )
   }
 
+  // En parcours : sortie vers le parcours (et étiquette du boss) pendant la lecture et le QCM.
+  const enteteParcours = modeParcours && (
+    <div className="mb-4 flex flex-wrap items-center gap-3">
+      <Link to="/parcours" className={cn(classesBouton('discret'), 'px-2')}>← Retour au parcours</Link>
+      {modeParcours.etape === 'boss' && <Etiquette couleur="rose-pale">👾 Boss du niveau</Etiquette>}
+    </div>
+  )
+
   // ── Reading ─────────────────────────────────────────────────────────────
   if (phase === 'reading' && currentText) {
     return (
       <div className="max-w-2xl mx-auto">
-        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>}
+        {enteteParcours}
         <Carte className="p-4 mb-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-xl border-2 border-encre bg-jaune flex items-center justify-center text-xl shrink-0">
@@ -277,7 +287,7 @@ export default function LectureRapidePage() {
   if (phase === 'qcm' && currentText) {
     return (
       <div className="max-w-2xl mx-auto">
-        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>}
+        {enteteParcours}
         <Carte className="p-4 mb-4 flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl border-2 border-encre bg-rose-pale flex items-center justify-center text-xl shrink-0">
             🧠
