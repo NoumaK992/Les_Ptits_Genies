@@ -26,8 +26,10 @@ export default function ParcoursPage() {
   const [code, setCode] = useState('')
   const [envoi, setEnvoi] = useState(false)
 
+  // Ne recharge pas un état déjà en mémoire : cela effacerait le message d'erreur
+  // d'un enregistrement raté juste avant (retour depuis un jeu).
   useEffect(() => {
-    if (currentUser) charger(currentUser.id)
+    if (currentUser && (!charge || userId !== currentUser.id)) charger(currentUser.id)
   }, [currentUser?.id])
 
   if (!currentUser) return null

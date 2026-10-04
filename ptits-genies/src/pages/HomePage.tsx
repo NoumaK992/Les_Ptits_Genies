@@ -53,7 +53,8 @@ export default function HomePage() {
   useEffect(() => {
     if (currentUser) {
       loadProgress(currentUser.id)
-      parcours.charger(currentUser.id)
+      // Comme sur la page parcours : ne pas recharger un état déjà en mémoire (message d'erreur conservé).
+      if (!parcours.charge || parcours.userId !== currentUser.id) parcours.charger(currentUser.id)
     }
   }, [currentUser?.id])
 
