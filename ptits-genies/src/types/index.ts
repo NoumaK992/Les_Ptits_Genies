@@ -15,7 +15,7 @@ export interface AuthUser {
 }
 
 // ─── Sessions & Progress ────────────────────────────────────────────
-export type ExerciseType = 'word-search' | 'intrus' | 'lecture-rapide' | 'coup-doeil' | 'phrases-brouillees' | 'collection'
+export type ExerciseType = 'word-search' | 'intrus' | 'lecture-rapide' | 'coup-doeil' | 'phrases-brouillees' | 'collection' | 'ami-ennemi'
 
 export interface Session {
   id: string
