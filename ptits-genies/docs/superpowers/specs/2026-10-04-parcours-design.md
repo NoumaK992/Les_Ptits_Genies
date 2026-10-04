@@ -177,3 +177,35 @@ Quand la lecture de fin de niveau est faite, la date du jour (locale, `AAAA-MM-J
 ### R6. Données
 
 Table `parcours` : `etape` accepte `lecture` ; nouvelles colonnes `parties_faites smallint not null default 0 check (>= 0)`, `niveau_valide_le date null`, `boss_apres_echec smallint not null default 0 check (>= 0)`. L'écriture conditionnelle compare aussi `parties_faites`.
+
+---
+
+## Révision 2 (2026-10-04, après 2e test de Manu ; Manu valide tout par avance et s'absente)
+
+Constats de Manu : (1) les mêmes listes reviennent (Ami et Ennemi) : il faut « augmenter drastiquement » les exercices de chaque type, Lecture rapide compris ; (2) une étape dure 5-10 min : une séance = **deux étapes**, puis entraînement libre ; l'entraînement libre doit rapporter **beaucoup moins** de points qu'une étape du parcours, et on ne doit pas pouvoir farmer le même exercice ; (3) avec deux étapes par séance il faut **plus de jeux** : recherche internationale des exercices de fluence / pour élèves dys, adaptés à l'app.
+
+### R2-1. Une séance (= un « niveau ») = étape A + étape B + lecture
+
+- Chaque niveau contient deux **manches** (`manche` 0 puis 1), chacune = entraînement (N parties) → boss, sur deux jeux différents ; puis la lecture de fin de niveau ; puis le verrou du jour.
+- Rotation : l'étape globale k = (niveau − 1) × 2 + manche ; jeu = `JEUX_ROTATION[((place − 1) + k) mod N]`. Avec N ≥ 8 jeux, les 8 élèves d'un groupe jouent 8 jeux différents à chaque étape ; chaque élève fait tous les jeux avant d'en refaire un.
+- Entraînement raccourci pour tenir ~5 min par jeu (le boss en ajoute 2 à 5) : nombre de parties fixé par jeu dans `PARTIES_PAR_JEU`.
+- Bonus boss : 100 points (inchangé ; à revoir avec Manu).
+- Base : colonne `manche smallint not null default 0 check (manche in (0, 1))`, comparée dans l'écriture conditionnelle.
+
+### R2-2. Jamais deux fois le même exercice
+
+- Chaque élément de contenu (liste, texte, série, thème…) a un identifiant stable.
+- Table `items_vus (user_id, jeu, item_id, vu_le)`, clé (user_id, jeu, item_id), RLS « ses propres lignes » (select, insert, update).
+- Choix des éléments d'une partie : d'abord des éléments jamais vus (au hasard), puis, si la réserve est épuisée, les moins récemment vus. Fonction pure testée. Les éléments vus sont chargés une fois par connexion dans un store et marqués à la fin de chaque partie.
+- Réserves visées (au minimum) : Ami et Ennemi 150 listes ; L'Intrus 60 listes par niveau ; Collection 80 par niveau ; Phrases brouillées 20 textes par niveau ; Lecture rapide 20 textes par niveau (6 questions chacun) ; Coup d'œil 24 séries ; Mots cachés 24 thèmes ; chaque nouveau jeu au moins 120 éléments.
+
+### R2-3. Points de l'entraînement libre
+
+- Une partie de parcours rapporte son score complet.
+- Une partie libre rapporte : 1re partie libre du jour pour ce jeu 20 % du score, 2e 10 %, à partir de la 3e 0 point. Le score brut reste enregistré pour les statistiques ; les points gagnés sont enregistrés dans les détails (`pointsGagnes`, `mode`).
+- L'écran de fin d'une partie libre l'indique (« Entraînement libre : +X points. Le parcours rapporte bien plus ! »). La page des exercices le rappelle.
+
+### R2-4. Nouveaux jeux
+
+- Recherche d'exercices de fluence et de remédiation dys (France, monde francophone, anglophone, autres) ; sélection d'au moins 4 nouveaux jeux jouables en autonomie à la souris, sans micro, adaptés aux 11-14 ans, chacun avec consignes, niveaux de difficulté, taux de réussite, intégration parcours (rotation, boss) et jeu libre.
+- Rotation cible : 6 jeux actuels + ≥ 4 nouveaux = ≥ 10 jeux.

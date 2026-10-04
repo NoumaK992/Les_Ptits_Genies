@@ -10,9 +10,10 @@ interface LigneParcours {
   parties_faites: number
   niveau_valide_le: string | null
   boss_apres_echec: number
+  manche: 0 | 1
 }
 
-const COLONNES = 'groupe, place, niveau, etape, echecs_boss, parties_faites, niveau_valide_le, boss_apres_echec'
+const COLONNES = 'groupe, place, niveau, etape, echecs_boss, parties_faites, niveau_valide_le, boss_apres_echec, manche'
 
 const versEtat = (l: LigneParcours): EtatParcours => ({
   groupe: l.groupe,
@@ -23,6 +24,7 @@ const versEtat = (l: LigneParcours): EtatParcours => ({
   partiesFaites: l.parties_faites,
   niveauValideLe: l.niveau_valide_le,
   bossApresEchec: l.boss_apres_echec,
+  manche: l.manche === 1 ? 1 : 0,
 })
 
 export const parcoursService = {
@@ -52,9 +54,11 @@ export const parcoursService = {
         parties_faites: nouveau.partiesFaites,
         niveau_valide_le: nouveau.niveauValideLe,
         boss_apres_echec: nouveau.bossApresEchec,
+        manche: nouveau.manche,
         updated_at: new Date().toISOString(),
       })
       .eq('user_id', userId)
+      .eq('manche', ancien.manche)
       .eq('niveau', ancien.niveau)
       .eq('etape', ancien.etape)
       .eq('echecs_boss', ancien.echecsBoss)

@@ -14,6 +14,22 @@ export const scoreService = {
     })
   },
 
+  /** Parties libres déjà jouées aujourd'hui (heure locale) à ce jeu : sert à rendre les points dégressifs. */
+  async compterPartiesLibresDuJour(userId: string, exerciseType: ExerciseType): Promise<number> {
+    const debutJournee = new Date()
+    debutJournee.setHours(0, 0, 0, 0)
+    const { count, error } = await supabase
+      .from('sessions')
+      .select('id', { count: 'exact', head: true })
+      .eq('user_id', userId)
+      .eq('exercise_type', exerciseType)
+      .eq('details->>mode', 'libre')
+      .gte('played_at', debutJournee.toISOString())
+    // En cas de doute (erreur réseau), on considère la réserve de points épuisée : pas de points gratuits.
+    if (error) return 99
+    return count ?? 0
+  },
+
   async getHistory(userId: string, limit = 200): Promise<Session[]> {
     const { data } = await supabase
       .from('sessions')

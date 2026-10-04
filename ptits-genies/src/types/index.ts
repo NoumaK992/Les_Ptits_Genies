@@ -40,6 +40,10 @@ export type SessionDetails = (
 ) & {
   /** Taux de bonnes réponses de la partie, entre 0 et 1 (succès « Sans faute ! »). Absent des parties anciennes. */
   reussite?: number
+  /** Partie lancée depuis le parcours ou en entraînement libre (points réduits). */
+  mode?: 'parcours' | 'libre'
+  /** Points réellement ajoutés au total de l'élève pour cette partie. */
+  pointsGagnes?: number
 }
 
 export interface WordSearchSessionDetails {

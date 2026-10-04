@@ -2,6 +2,7 @@ import { Outlet, NavLink, Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { useAuthStore } from '@/store/authStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { Bouton } from '@/components/ui/Bouton'
 import { Decor } from '@/components/ui/Decor'
 
@@ -14,6 +15,12 @@ const navItems = [
 export default function AppShell() {
   const { currentUser, logout } = useAuthStore()
   const location = useLocation()
+
+  // Exercices déjà vus : chargés une fois par connexion pour que les jeux évitent les répétitions.
+  const chargerItemsVus = useItemsVusStore((s) => s.charger)
+  useEffect(() => {
+    if (currentUser) chargerItemsVus(currentUser.id)
+  }, [currentUser?.id])
 
   // Chaque nouvel écran s'ouvre en haut de page (sinon le titre restait caché sous la barre du haut).
   useEffect(() => {

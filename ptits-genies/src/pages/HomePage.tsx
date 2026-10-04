@@ -116,7 +116,7 @@ export default function HomePage() {
                         ? `Boss du niveau ${etatParcours.niveau} 👾`
                         : etatParcours.etape === 'lecture'
                           ? '⚡ Lecture de fin de niveau'
-                          : `Aujourd'hui : ${NOMS_JEUX[jeuDuNiveau(etatParcours.place, etatParcours.niveau)]}`}
+                          : `Aujourd'hui : ${NOMS_JEUX[jeuDuNiveau(etatParcours.place, etatParcours.niveau, etatParcours.manche)]}`}
                   </p>
                 </>
               ) : etatParcours ? (

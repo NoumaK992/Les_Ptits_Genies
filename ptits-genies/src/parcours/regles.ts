@@ -22,6 +22,8 @@ export interface EtatParcours {
   niveauValideLe: string | null
   /** Boss battus après au moins un échec (succès « Persévérant »). */
   bossApresEchec: number
+  /** Une séance = deux jeux : manche 0 (1er jeu) puis manche 1 (2e jeu), avant la lecture. */
+  manche: 0 | 1
 }
 
 export const NB_NIVEAUX = 20
@@ -34,14 +36,14 @@ export const JEUX_ROTATION: readonly JeuParcours[] = [
   'intrus', 'coup-doeil', 'word-search', 'phrases-brouillees', 'collection', 'ami-ennemi',
 ]
 
-// Nombre de parties de l'entraînement, calibré pour environ 10-15 minutes.
+// Nombre de parties de l'entraînement, calibré pour environ 5 minutes (deux jeux par séance).
 export const PARTIES_PAR_JEU: Record<JeuParcours, number> = {
-  intrus: 2,
-  'coup-doeil': 2,
+  intrus: 1,
+  'coup-doeil': 1,
   'word-search': 1,
-  'phrases-brouillees': 8,
-  collection: 4,
-  'ami-ennemi': 4,
+  'phrases-brouillees': 3,
+  collection: 2,
+  'ami-ennemi': 2,
   'lecture-rapide': 1,
 }
 
@@ -70,13 +72,16 @@ export const NOMS_JEUX: Record<JeuParcours, string> = {
   'ami-ennemi': '🎯 Ami et Ennemi',
 }
 
-export function jeuDuNiveau(place: number, niveau: number): JeuParcours {
-  return JEUX_ROTATION[((place - 1) + (niveau - 1)) % JEUX_ROTATION.length]
+// Étape globale k = (niveau − 1) × 2 + manche : chaque élève parcourt tous les jeux avant d'en refaire un,
+// et à une étape donnée les places jouent des jeux différents.
+export function jeuDuNiveau(place: number, niveau: number, manche: 0 | 1 = 0): JeuParcours {
+  const k = (niveau - 1) * 2 + manche
+  return JEUX_ROTATION[((place - 1) + k) % JEUX_ROTATION.length]
 }
 
-/** Jeu à lancer pour l'étape en cours : celui du niveau, ou Lecture rapide pour la lecture de fin de niveau. */
+/** Jeu à lancer pour l'étape en cours : celui de la manche, ou Lecture rapide pour la lecture de fin de niveau. */
 export function jeuDeLEtape(etat: EtatParcours): JeuParcours {
-  return etat.etape === 'lecture' ? 'lecture-rapide' : jeuDuNiveau(etat.place, etat.niveau)
+  return etat.etape === 'lecture' ? 'lecture-rapide' : jeuDuNiveau(etat.place, etat.niveau, etat.manche)
 }
 
 export function tourDuNiveau(niveau: number): 1 | 2 | 3 {
@@ -107,6 +112,7 @@ export function estTermine(etat: EtatParcours): boolean {
 export function estVerrouille(etat: EtatParcours, aujourdhui: string): boolean {
   return !estTermine(etat)
     && etat.etape === 'jeu'
+    && etat.manche === 0
     && etat.partiesFaites === 0
     && etat.niveauValideLe === aujourdhui
 }
@@ -120,7 +126,7 @@ export function appliquerResultat(
 
   if (etat.etape === 'jeu') {
     const parties = etat.partiesFaites + 1
-    if (parties < PARTIES_PAR_JEU[jeuDuNiveau(etat.place, etat.niveau)]) {
+    if (parties < PARTIES_PAR_JEU[jeuDuNiveau(etat.place, etat.niveau, etat.manche)]) {
       return { etat: { ...etat, partiesFaites: parties }, evenement: 'partie-terminee' }
     }
     return { etat: { ...etat, etape: 'boss', partiesFaites: 0, echecsBoss: 0 }, evenement: 'jeu-termine' }
@@ -129,13 +135,12 @@ export function appliquerResultat(
   if (etat.etape === 'boss') {
     // Petite tolérance : 3/5 doit valoir 60 % malgré les arrondis des flottants.
     if (reussite + 1e-9 >= seuilBoss(etat.echecsBoss)) {
+      const commun = { ...etat, echecsBoss: 0, bossApresEchec: etat.bossApresEchec + (etat.echecsBoss > 0 ? 1 : 0) }
+      // 1re manche : on passe au 2e jeu de la séance ; 2e manche : lecture de fin de niveau.
       return {
-        etat: {
-          ...etat,
-          etape: 'lecture',
-          echecsBoss: 0,
-          bossApresEchec: etat.bossApresEchec + (etat.echecsBoss > 0 ? 1 : 0),
-        },
+        etat: etat.manche === 0
+          ? { ...commun, manche: 1, etape: 'jeu', partiesFaites: 0 }
+          : { ...commun, etape: 'lecture' },
         evenement: 'boss-battu',
       }
     }
@@ -145,7 +150,7 @@ export function appliquerResultat(
   // Lecture de fin de niveau : elle ne bloque pas, le niveau est validé.
   const niveau = etat.niveau + 1
   return {
-    etat: { ...etat, niveau, etape: 'jeu', partiesFaites: 0, echecsBoss: 0, niveauValideLe: aujourdhui },
+    etat: { ...etat, niveau, manche: 0, etape: 'jeu', partiesFaites: 0, echecsBoss: 0, niveauValideLe: aujourdhui },
     evenement: niveau >= NIVEAU_TERMINE ? 'parcours-termine' : 'niveau-termine',
   }
 }
@@ -196,4 +201,15 @@ export function parametresLecture(d: number): { niveau: 1 | 2; vitesse: number }
 
 export function niveauAmiEnnemi(d: number): 'debutant' | 'intermediaire' | 'professionnel' {
   return (['debutant', 'intermediaire', 'professionnel'] as const)[Math.min(Math.max(d, 1), 3) - 1]
+}
+
+/**
+ * Points d'une partie d'entraînement libre : bien moins qu'en parcours, et dégressifs
+ * pour qu'on ne puisse pas « farmer » le même jeu (1re partie libre du jour 20 %, 2e 10 %, ensuite 0).
+ */
+export const TAUX_LIBRE = [0.2, 0.1] as const
+
+export function pointsLibres(score: number, partiesLibresDejaFaitesAujourdhui: number): number {
+  const taux = TAUX_LIBRE[partiesLibresDejaFaitesAujourdhui] ?? 0
+  return Math.max(0, Math.round(score * taux))
 }

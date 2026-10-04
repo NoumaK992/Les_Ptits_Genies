@@ -16,11 +16,13 @@ import { cn } from '@/lib/cn'
 const CASE = 'flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-2xl border-2 border-encre p-3 text-center sm:p-4'
 
 function banniere(evenement: EvenementParcours | null, etat: EtatParcours): string | null {
-  const total = PARTIES_PAR_JEU[jeuDuNiveau(etat.place, etat.niveau)]
+  const total = PARTIES_PAR_JEU[jeuDuNiveau(etat.place, etat.niveau, etat.manche)]
   switch (evenement) {
     case 'partie-terminee': return `Partie ${etat.partiesFaites} / ${total} terminée ! Continue 💪`
     case 'jeu-termine': return 'Entraînement terminé ! Place au boss 👾'
-    case 'boss-battu': return 'Boss vaincu ! +100 points 🎉 Dernière étape : la lecture.'
+    case 'boss-battu': return etat.etape === 'lecture'
+      ? 'Boss vaincu ! +100 points 🎉 Dernière étape : la lecture.'
+      : 'Boss vaincu ! +100 points 🎉 Place au 2e jeu de la séance.'
     case 'boss-rate': return 'Le boss a résisté ! Il sera plus faible au prochain essai.'
     case 'niveau-termine': return `Niveau ${etat.niveau - 1} validé ! 🎉`
     default: return null
@@ -226,7 +228,7 @@ export default function ParcoursPage() {
     )
   }
 
-  const jeu = jeuDuNiveau(etat.place, etat.niveau)
+  const jeu = jeuDuNiveau(etat.place, etat.niveau, etat.manche)
   const total = PARTIES_PAR_JEU[jeu]
   const tour = tourDuNiveau(etat.niveau)
   const etape = etat.etape
@@ -251,15 +253,24 @@ export default function ParcoursPage() {
         ? etat.echecsBoss > 0 ? 'Retenter le boss ▶' : 'Affronter le boss ▶'
         : 'Lecture de fin de niveau ▶'
 
-  const statutCase = (laquelle: 'jeu' | 'boss' | 'lecture') => {
-    const ordre = { jeu: 0, boss: 1, lecture: 2 }
-    if (ordre[laquelle] < ordre[etape]) return 'fait'
-    return laquelle === etape ? 'en cours' : 'à venir'
-  }
-  const fondCase = (laquelle: 'jeu' | 'boss' | 'lecture') => {
+  // Trois cases : 1er jeu de la séance, 2e jeu, lecture de fin de niveau.
+  type Case = 'jeuA' | 'jeuB' | 'lecture'
+  const caseEnCours: Case = etape === 'lecture' ? 'lecture' : etat.manche === 0 ? 'jeuA' : 'jeuB'
+  const ordre: Record<Case, number> = { jeuA: 0, jeuB: 1, lecture: 2 }
+  const statutCase = (laquelle: Case) =>
+    ordre[laquelle] < ordre[caseEnCours] ? 'fait' : laquelle === caseEnCours ? 'en cours' : 'à venir'
+  const fondCase = (laquelle: Case) => {
     const s = statutCase(laquelle)
     return s === 'fait' ? 'bg-juste' : s === 'en cours' ? 'bg-jaune shadow-dur' : 'bg-papier'
   }
+  const sousTitreJeu = (laquelle: Case) => {
+    const s = statutCase(laquelle)
+    if (s === 'fait') return '✓ Fait'
+    if (s === 'à venir') return 'Entraînement + boss'
+    return etape === 'boss' ? '👾 Boss' : `Entraînement ${etat.partiesFaites} / ${total}`
+  }
+  const jeuA = jeuDuNiveau(etat.place, etat.niveau, 0)
+  const jeuB = jeuDuNiveau(etat.place, etat.niveau, 1)
 
   return (
     <div className="mx-auto max-w-2xl space-y-5">
@@ -269,17 +280,16 @@ export default function ParcoursPage() {
       <Carte className="p-6 md:p-8">
         <Etiquette>Niveau {etat.niveau} · Tour {tour}</Etiquette>
         <div className="mt-6 flex flex-col items-stretch gap-2 sm:flex-row sm:gap-3">
-          <div className={cn(CASE, fondCase('jeu'))}>
-            <span className="break-words font-titre text-base text-encre sm:text-lg">{NOMS_JEUX[jeu]}</span>
-            <span className="text-sm font-semibold text-encre">
-              {statutCase('jeu') === 'fait' ? '✓ Fait' : `Entraînement ${etat.partiesFaites} / ${total}`}
-            </span>
+          <div className={cn(CASE, fondCase('jeuA'))}>
+            <span className="text-sm font-semibold uppercase tracking-wide text-encre">Jeu 1</span>
+            <span className="break-words font-titre text-base text-encre sm:text-lg">{NOMS_JEUX[jeuA]}</span>
+            <span className="text-sm font-semibold text-encre">{sousTitreJeu('jeuA')}</span>
           </div>
           <span className="self-center font-titre text-xl text-encre" aria-hidden="true"><span className="sm:hidden">↓</span><span className="hidden sm:inline">→</span></span>
-          <div className={cn(CASE, fondCase('boss'))}>
-            <span className="text-3xl" aria-hidden="true">👾</span>
-            <span className="font-titre text-base text-encre sm:text-lg">Boss</span>
-            <span className="text-sm text-encre">{statutCase('boss') === 'fait' ? '✓ Vaincu' : 'en plus dur'}</span>
+          <div className={cn(CASE, fondCase('jeuB'))}>
+            <span className="text-sm font-semibold uppercase tracking-wide text-encre">Jeu 2</span>
+            <span className="break-words font-titre text-base text-encre sm:text-lg">{NOMS_JEUX[jeuB]}</span>
+            <span className="text-sm font-semibold text-encre">{sousTitreJeu('jeuB')}</span>
           </div>
           <span className="self-center font-titre text-xl text-encre" aria-hidden="true"><span className="sm:hidden">↓</span><span className="hidden sm:inline">→</span></span>
           <div className={cn(CASE, fondCase('lecture'))}>
