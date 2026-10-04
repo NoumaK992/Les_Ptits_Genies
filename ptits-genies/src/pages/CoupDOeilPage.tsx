@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { useModeParcours } from '@/parcours/useModeParcours'
+import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcCoupDoeilScore, calcCoupDoeilTimeBonus } from '@/utils/scoring'
 import { SERIES_LIST, getSeriesById } from '@/data/coupDoeil/series'
@@ -12,6 +15,7 @@ import { Bouton } from '@/components/ui/Bouton'
 import { Carte, classesCarte } from '@/components/ui/Carte'
 import { EnTete } from '@/components/ui/EnTete'
 import { EcranFin } from '@/components/ui/EcranFin'
+import { Etiquette } from '@/components/ui/Etiquette'
 import type { CoupDoeilThemeKey } from '@/types'
 
 // ── Exercise identity ──────────────────────────────────────────────────────
@@ -28,15 +32,31 @@ export default function CoupDOeilPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const stopwatch = useStopwatch()
+  const { terminerPartie } = useParcoursStore()
+  const modeParcours = useModeParcours()
+  // En parcours, la série est imposée (bornée aux séries existantes).
+  const serieParcours = modeParcours ? Math.min(Math.max(modeParcours.difficulte, 1), SERIES_LIST.length) : null
 
-  const [phase, setPhase] = useState<Phase>('intro')
-  const [seriesId, setSeriesId] = useState<number>(1)
+  // En parcours, ni intro ni choix de série : on démarre directement en partie.
+  const [phase, setPhase] = useState<Phase>(serieParcours ? 'playing' : 'intro')
+  const [seriesId, setSeriesId] = useState<number>(serieParcours ?? 1)
   const [assignments, setAssignments] = useState<Record<string, CoupDoeilThemeKey>>({})
   const [seriesScore, setSeriesScore] = useState(0)
   const [timeBonus, setTimeBonus] = useState(0)
   const [stats, setStats] = useState({ correct: 0, wrong: 0, missed: 0, falseAlarms: 0, perfect: false })
 
   const series = getSeriesById(seriesId)
+  // Évite un double démarrage (StrictMode) et une double validation (double clic).
+  const demarreRef = useRef(false)
+  const valideRef = useRef(false)
+
+  useEffect(() => {
+    if (serieParcours && !demarreRef.current) {
+      demarreRef.current = true
+      handleSeriesSelect(serieParcours)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   function handleSeriesSelect(id: number) {
     setSeriesId(id)
@@ -45,6 +65,7 @@ export default function CoupDOeilPage() {
     setTimeBonus(0)
     setStats({ correct: 0, wrong: 0, missed: 0, falseAlarms: 0, perfect: false })
     stopwatch.reset()
+    valideRef.current = false
     setPhase('playing')
     setTimeout(() => stopwatch.start(), 50)
   }
@@ -59,7 +80,8 @@ export default function CoupDOeilPage() {
   }
 
   async function handleValidate() {
-    if (!series || !currentUser) return
+    if (!series || !currentUser || valideRef.current) return
+    valideRef.current = true
     stopwatch.pause()
     const allWords = series.columns.flat()
     const targets = allWords.filter((w) => w.theme !== null)
@@ -82,6 +104,7 @@ export default function CoupDOeilPage() {
       details: { type: 'coup-doeil', seriesId, correctCategorizations: correct, wrongCategorizations: wrong, missedTargets: missed, falseAlarms, totalElapsedSeconds: stopwatch.seconds },
     })
     await refreshPoints()
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correct, totalTargets))
     setPhase('correction')
   }
 
@@ -191,7 +214,10 @@ export default function CoupDOeilPage() {
               ⏱️ {stopwatch.formatted}
             </span>
           }
+          retourVers={modeParcours ? '/parcours' : undefined}
         />
+
+        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="self-start">👾 Boss du niveau</Etiquette>}
 
         <ThemeHeader themes={series.themes} />
 
@@ -210,7 +236,7 @@ export default function CoupDOeilPage() {
   if (phase === 'correction' && series) {
     return (
       <div className="max-w-2xl mx-auto">
-        <EnTete titre={`Correction : ${series.label}`} />
+        <EnTete titre={`Correction : ${series.label}`} retourVers={modeParcours ? '/parcours' : undefined} />
         <ThemeHeader themes={series.themes} />
         <CorrectionView
           series={series}
@@ -233,6 +259,7 @@ export default function CoupDOeilPage() {
         detail="points au total"
         onRejouer={() => setPhase('series-select')}
         retourVers="/accueil"
+        parcours={!!modeParcours}
       >
         <div className="space-y-4">
           <div className="border-t-2 border-encre/20 pt-3 space-y-1 text-base text-encre-doux font-semibold text-center">

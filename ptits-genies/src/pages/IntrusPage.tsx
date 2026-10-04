@@ -1,11 +1,15 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { EnTete } from '@/components/ui/EnTete'
 import { EcranFin } from '@/components/ui/EcranFin'
 import { Carte, classesCarte } from '@/components/ui/Carte'
+import { Etiquette } from '@/components/ui/Etiquette'
 import { couleurs } from '@/theme/couleurs'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { useModeParcours } from '@/parcours/useModeParcours'
+import { tauxReussite } from '@/parcours/regles'
 import { useTimer } from '@/hooks/useTimer'
 import { calcIntrusScore } from '@/utils/scoring'
 import { IntrusWordChip } from '@/components/exercises/Intrus/IntrusWordChip'
@@ -44,9 +48,14 @@ type Phase = 'level-select' | 'intro' | 'playing' | 'list-result' | 'session-res
 export default function IntrusPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
+  const { terminerPartie } = useParcoursStore()
+  const modeParcours = useModeParcours()
+  // En parcours, le niveau est imposé (borné aux niveaux existants).
+  const niveauParcours = modeParcours ? Math.min(Math.max(modeParcours.difficulte, 1), allLevels.length) : null
 
-  const [phase, setPhase] = useState<Phase>('level-select')
-  const [selectedLevel, setSelectedLevel] = useState(1)
+  // En parcours, pas d'écran de choix : on démarre directement en partie.
+  const [phase, setPhase] = useState<Phase>(niveauParcours ? 'playing' : 'level-select')
+  const [selectedLevel, setSelectedLevel] = useState(niveauParcours ?? 1)
   const [sessionLists, setSessionLists] = useState<IntrusList[]>([])
   const [listIndex, setListIndex] = useState(0)
   const [words, setWords] = useState<string[]>([])
@@ -56,6 +65,9 @@ export default function IntrusPage() {
   const [totalScore, setTotalScore] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
   const [sessionStart] = useState(Date.now())
+  // Garde contre une double réponse sur la même liste (fin de chrono + clic, ou StrictMode).
+  const answeredRef = useRef(false)
+  const demarreRef = useRef(false)
 
   const levelData = allLevels[selectedLevel - 1]
   const currentList = sessionLists[listIndex]
@@ -65,6 +77,15 @@ export default function IntrusPage() {
   }, [answered, listIndex])
 
   const timer = useTimer(levelData?.timeLimit ?? 30, handleTimerExpire)
+
+  // Démarrage direct en parcours (le ref évite un double démarrage sous StrictMode).
+  useEffect(() => {
+    if (niveauParcours && !demarreRef.current) {
+      demarreRef.current = true
+      startSession(niveauParcours)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   function startSession(level: number) {
     const lvl = allLevels[level - 1]
@@ -77,6 +98,8 @@ export default function IntrusPage() {
     setSelectedLevel(level)
     loadList(lists[0])
     setPhase('playing')
+    // Le chrono repart de la durée du niveau choisi (et non du reste de la partie précédente).
+    timer.reset(lvl.timeLimit)
     setTimeout(() => timer.start(), 50)
   }
 
@@ -86,10 +109,12 @@ export default function IntrusPage() {
     setChipStates(ws.map(() => 'idle'))
     setAnswered(false)
     setLastCorrect(false)
+    answeredRef.current = false
   }
 
   function revealAnswer(correct: boolean) {
-    if (answered) return
+    if (answered || answeredRef.current) return
+    answeredRef.current = true
     setAnswered(true)
     setLastCorrect(correct)
     timer.pause()
@@ -106,7 +131,9 @@ export default function IntrusPage() {
       })
     )
 
-    setTimeout(() => nextList(score), 1800)
+    // correctCount de cette closure n'inclut pas encore la liste en cours : on transmet le total à jour.
+    const bonnes = correctCount + (correct ? 1 : 0)
+    setTimeout(() => nextList(score, bonnes), 1800)
   }
 
   function handleChipClick(index: number) {
@@ -131,9 +158,9 @@ export default function IntrusPage() {
     }
   }
 
-  function nextList(score?: number) {
+  function nextList(score?: number, bonnes?: number) {
     if (listIndex >= sessionLists.length - 1) {
-      finishSession(score)
+      finishSession(score, bonnes)
       return
     }
     const next = listIndex + 1
@@ -143,9 +170,10 @@ export default function IntrusPage() {
     setTimeout(() => timer.start(), 50)
   }
 
-  async function finishSession(lastScore?: number) {
+  async function finishSession(lastScore?: number, bonnes?: number) {
     if (!currentUser) return
     const finalScore = totalScore + (lastScore ?? 0)
+    const finalCorrect = bonnes ?? correctCount
     const duration = Math.round((Date.now() - sessionStart) / 1000)
     await saveSession({
       id: `${Date.now()}-intrus`,
@@ -157,11 +185,12 @@ export default function IntrusPage() {
       details: {
         type: 'intrus',
         level: selectedLevel,
-        correctAnswers: correctCount,
+        correctAnswers: finalCorrect,
         totalLists: LISTS_PER_SESSION,
       },
     })
     await refreshPoints()
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(finalCorrect, LISTS_PER_SESSION))
     setPhase('session-result')
   }
 
@@ -209,6 +238,7 @@ export default function IntrusPage() {
           detail="points gagnés"
           onRejouer={() => setPhase('level-select')}
           retourVers="/accueil"
+          parcours={!!modeParcours}
         >
           <p className="rounded-xl border-2 border-encre bg-sable p-4 text-center text-lg font-bold text-encre">
             {correctCount} / {LISTS_PER_SESSION} bonnes réponses
@@ -226,11 +256,15 @@ export default function IntrusPage() {
         ? couleurs.jaune
         : couleurs.faux
 
+  // Parcours : la partie se prépare au premier effet, rien à afficher d'ici là.
+  if (sessionLists.length === 0) return null
+
   // Playing
   return (
     <div className="mx-auto max-w-2xl">
       <EnTete
         titre="Trouve l'intrus !"
+        retourVers={modeParcours ? '/parcours' : undefined}
         droite={
           <>
             <span className={pastille}>Score : {totalScore}</span>
@@ -252,6 +286,8 @@ export default function IntrusPage() {
           </>
         }
       />
+
+      {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>}
 
       <p className="mb-2 text-base font-semibold text-encre-doux">Liste {listIndex + 1} / {LISTS_PER_SESSION}</p>
 

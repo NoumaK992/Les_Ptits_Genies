@@ -1,7 +1,10 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { useModeParcours } from '@/parcours/useModeParcours'
+import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcCollectionScore, calcCollectionStars } from '@/utils/scoring'
 import { classesBouton } from '@/components/ui/Bouton'
@@ -9,6 +12,7 @@ import { BoutonMot, type EtatMot } from '@/components/ui/BoutonMot'
 import { Carte, classesCarte } from '@/components/ui/Carte'
 import { EnTete } from '@/components/ui/EnTete'
 import { EcranFin } from '@/components/ui/EcranFin'
+import { Etiquette } from '@/components/ui/Etiquette'
 import type { CollectionItem, CollectionLevel, CollectionSessionDetails } from '@/types'
 
 import level1Data from '@/data/collection/level_1.json'
@@ -52,9 +56,14 @@ export default function CollectionPage() {
   const stopwatch = useStopwatch()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
+  const { terminerPartie } = useParcoursStore()
+  const modeParcours = useModeParcours()
+  // En parcours, le niveau est imposé (borné à 1-3).
+  const niveauParcours = modeParcours ? (Math.min(Math.max(modeParcours.difficulte, 1), 3) as CollectionLevel) : null
 
-  const [phase, setPhase] = useState<Phase>('level-select')
-  const [selectedLevel, setSelectedLevel] = useState<CollectionLevel>(1)
+  // En parcours, pas d'écran de choix : on démarre directement en partie.
+  const [phase, setPhase] = useState<Phase>(niveauParcours ? 'playing' : 'level-select')
+  const [selectedLevel, setSelectedLevel] = useState<CollectionLevel>(niveauParcours ?? 1)
   const [queue, setQueue] = useState<CollectionItem[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [choices, setChoices] = useState<string[]>([])
@@ -67,6 +76,18 @@ export default function CollectionPage() {
   const currentItem = queue[currentIndex] ?? null
   const totalItems = queue.length
   const progress = totalItems === 0 ? 0 : Math.round((currentIndex / totalItems) * 100)
+
+  // Évite un double démarrage (StrictMode) et un double enregistrement (double clic sur « Résultats »).
+  const demarreRef = useRef(false)
+  const finiRef = useRef(false)
+
+  useEffect(() => {
+    if (niveauParcours && !demarreRef.current) {
+      demarreRef.current = true
+      startGame(niveauParcours)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const shuffledWords = useMemo(() => {
     if (!currentItem) return []
@@ -84,6 +105,7 @@ export default function CollectionPage() {
     setWrongCount(0)
     setSelectedChoice(null)
     setIsCorrect(null)
+    finiRef.current = false
     stopwatch.reset()
     stopwatch.start()
     setPhase('playing')
@@ -119,13 +141,15 @@ export default function CollectionPage() {
   }
 
   async function finishGame(correct: number, wrong: number) {
-    if (!currentUser) return
+    if (!currentUser || finiRef.current) return
+    finiRef.current = true
     const scoreData = calcCollectionScore({ correctAnswers: correct, wrongAnswers: wrong, totalItems, elapsedSeconds: stopwatch.seconds, level: selectedLevel })
     const stars = calcCollectionStars(scoreData.totalScore, selectedLevel)
     setResult({ ...scoreData, stars })
     const details: CollectionSessionDetails = { type: 'collection', level: selectedLevel, totalItems, correctAnswers: correct, wrongAnswers: wrong, accuracyScore: scoreData.accuracyScore, timeBonus: scoreData.timeBonus, levelMultiplierBonus: scoreData.levelMultiplierBonus, stars, totalElapsedSeconds: stopwatch.seconds }
     await saveSession({ id: `${Date.now()}-col`, userId: currentUser.id, exerciseType: 'collection', score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(), details })
     await refreshPoints()
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correct, totalItems))
     setPhase('result')
   }
 
@@ -187,6 +211,7 @@ export default function CollectionPage() {
         detail={`points · ${meta.label} ${meta.emoji}`}
         onRejouer={() => startGame(selectedLevel)}
         retourVers="/accueil"
+        parcours={!!modeParcours}
       >
         <div className="grid grid-cols-2 gap-2 text-center">
           <div className="rounded-xl border-2 border-encre bg-sable p-3">
@@ -232,7 +257,9 @@ export default function CollectionPage() {
             </span>
           </>
         }
+        retourVers={modeParcours ? '/parcours' : undefined}
       />
+      {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale">👾 Boss du niveau</Etiquette>}
       <p className="text-base font-bold text-encre-doux">
         Niveau {LEVEL_META[selectedLevel].label} · Série {currentIndex + 1} / {totalItems}
       </p>
