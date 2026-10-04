@@ -26,3 +26,6 @@ dist-ssr
 # Variables d'environnement
 .env
 .env.local
+
+# Compagnon visuel du brainstorming
+.superpowers/
