@@ -1,7 +1,10 @@
-import { useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { useModeParcours } from '@/parcours/useModeParcours'
+import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcWordSearchGridScore, calcWordSearchTimeBonus } from '@/utils/scoring'
 import { generateSession } from '@/utils/gridGenerator'
@@ -26,14 +29,27 @@ const EX = {
 type Phase = 'intro' | 'presentation' | 'theme-select' | 'playing' | 'correction' | 'session-result'
 type CellState = 'default' | 'selected' | 'correct' | 'wrong' | 'missed'
 
+// Mode parcours : thème tiré au hasard, grilles générées comme dans handleThemeSelect.
+function tirerPartieParcours(): { themeId: string; grids: GeneratedGrid[] } | null {
+  const id = THEME_LIST[Math.floor(Math.random() * THEME_LIST.length)]?.id
+  const theme = id ? getThemeById(id) : undefined
+  return id && theme ? { themeId: id, grids: generateSession(theme) } : null
+}
+
 export default function WordSearchPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const stopwatch = useStopwatch()
+  const modeParcours = useModeParcours()
+  const { terminerPartie } = useParcoursStore()
 
-  const [phase, setPhase] = useState<Phase>('intro')
-  const [themeId, setThemeId] = useState('')
-  const [grids, setGrids] = useState<GeneratedGrid[]>([])
+  // Tirage fait une seule fois au montage (initialiseur paresseux) : la grille s'affiche dès le
+  // premier rendu, sans intro ni présentation, et le thème ne change pas si StrictMode rejoue le rendu.
+  const [depart] = useState(() => (modeParcours ? tirerPartieParcours() : null))
+
+  const [phase, setPhase] = useState<Phase>(depart ? 'playing' : 'intro')
+  const [themeId, setThemeId] = useState(depart?.themeId ?? '')
+  const [grids, setGrids] = useState<GeneratedGrid[]>(depart?.grids ?? [])
   const [gridIndex, setGridIndex] = useState(0)
   const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set())
   const [usedNoWord, setUsedNoWord] = useState(false)
@@ -51,6 +67,15 @@ export default function WordSearchPage() {
       }
     }
   }
+
+  // Mode parcours : la partie est déjà en place, on lance le chrono comme handleThemeSelect.
+  // Le minuteur est annulé au démontage, donc un effet rejoué par StrictMode ne démarre qu'une fois.
+  useEffect(() => {
+    if (!depart) return
+    const t = setTimeout(() => stopwatch.start(), 50)
+    return () => clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   function handleThemeSelect(id: string) {
     const theme = getThemeById(id)
@@ -137,6 +162,9 @@ export default function WordSearchPage() {
         totalWrongSelections: totalWrong, totalElapsedSeconds: stopwatch.seconds,
       },
     })
+    if (modeParcours) {
+      await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(totalCorrect, totalCorrect + totalMissed + totalWrong))
+    }
     await refreshPoints()
     setTotalScore((prev) => prev + timeBonus)
     setPhase('session-result')
@@ -232,6 +260,7 @@ export default function WordSearchPage() {
         detail="points au total"
         onRejouer={() => setPhase('intro')}
         retourVers="/accueil"
+        parcours={!!modeParcours}
       >
         <div className="space-y-1 border-t-2 border-encre/20 pt-4 text-center text-base text-encre">
           <p>Grilles : {gridTotal} pts</p>
@@ -256,7 +285,9 @@ export default function WordSearchPage() {
               <StopwatchDisplay formatted={stopwatch.formatted} seconds={stopwatch.seconds} />
             </>
           }
+          retourVers={modeParcours ? '/parcours' : undefined}
         />
+        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>}
 
         {/* Mot cible */}
         <Carte className="mb-4 flex flex-wrap items-center gap-3 p-4">

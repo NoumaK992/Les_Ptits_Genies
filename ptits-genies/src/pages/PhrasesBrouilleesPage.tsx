@@ -1,7 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { useModeParcours } from '@/parcours/useModeParcours'
+import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcPhrasesBrouilleesScore, calcPhrasesBrouilleesStars } from '@/utils/scoring'
 import type { PhrasesBrouilleesExercise, PhrasesBrouilleesLevel, PhrasesSegment } from '@/types'
@@ -50,6 +53,14 @@ function isValidExercise(exercise: PhrasesBrouilleesExercise): boolean {
   return segmentGapCount === exercise.gaps.length
 }
 
+// Mode parcours : niveau imposé par la difficulté, texte tiré au hasard parmi les textes jouables.
+function tirerPartieParcours(d: number): { level: PhrasesBrouilleesLevel; exercise: PhrasesBrouilleesExercise } {
+  const level = Math.min(Math.max(d, 1), 3) as PhrasesBrouilleesLevel
+  const valides = LEVELS[level].filter(isValidExercise)
+  const pool = valides.length > 0 ? valides : LEVELS[level]
+  return { level, exercise: pool[Math.floor(Math.random() * pool.length)] }
+}
+
 function displaySegment(
   segment: PhrasesSegment,
   assignments: Record<number, string>,
@@ -96,14 +107,20 @@ export default function PhrasesBrouilleesPage() {
   const stopwatch = useStopwatch()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
+  const modeParcours = useModeParcours()
+  const { terminerPartie } = useParcoursStore()
 
-  const [phase, setPhase] = useState<Phase>('level-select')
-  const [selectedLevel, setSelectedLevel] = useState<PhrasesBrouilleesLevel>(1)
+  // Tirage fait une seule fois au montage (initialiseur paresseux) : l'écran de jeu s'affiche
+  // dès le premier rendu, sans passer par les écrans de choix ni changer de texte en StrictMode.
+  const [depart] = useState(() => (modeParcours ? tirerPartieParcours(modeParcours.difficulte) : null))
+
+  const [phase, setPhase] = useState<Phase>(depart ? 'playing' : 'level-select')
+  const [selectedLevel, setSelectedLevel] = useState<PhrasesBrouilleesLevel>(depart?.level ?? 1)
   const [availableExercises, setAvailableExercises] = useState<PhrasesBrouilleesExercise[]>([])
   const [playedByLevel, setPlayedByLevel] = useState<Record<PhrasesBrouilleesLevel, string[]>>({ 1: [], 2: [], 3: [] })
-  const [exercise, setExercise] = useState<PhrasesBrouilleesExercise | null>(null)
+  const [exercise, setExercise] = useState<PhrasesBrouilleesExercise | null>(depart?.exercise ?? null)
   const [assignments, setAssignments] = useState<Record<number, string>>({})
-  const [hasStartedTimer, setHasStartedTimer] = useState(false)
+  const [hasStartedTimer, setHasStartedTimer] = useState(depart !== null)
   const [validated, setValidated] = useState(false)
   const [correctness, setCorrectness] = useState<Record<number, boolean>>({})
   const [result, setResult] = useState({
@@ -115,6 +132,13 @@ export default function PhrasesBrouilleesPage() {
   const filledGaps = useMemo(() => Object.keys(assignments).length, [assignments])
   const usedLetters = useMemo(() => new Set(Object.values(assignments)), [assignments])
   const canValidate = totalGaps > 0 && filledGaps === totalGaps && !validated
+
+  // Mode parcours : la partie est déjà en place, on lance seulement le chrono
+  // (comme startExercise). start() est idempotent : sans risque si l'effet est rejoué.
+  useEffect(() => {
+    if (depart) stopwatch.start()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   function pickLevel(level: PhrasesBrouilleesLevel) {
     const pool = LEVELS[level].filter(isValidExercise)
@@ -181,6 +205,9 @@ export default function PhrasesBrouilleesPage() {
         perfectBonus: scoreData.perfectBonus, stars, totalElapsedSeconds: stopwatch.seconds,
       },
     })
+    if (modeParcours) {
+      await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correctAnswers, exercise.gaps.length))
+    }
     setPlayedByLevel((prev) => {
       const existing = prev[selectedLevel]
       if (existing.includes(exercise.id)) return prev
@@ -282,7 +309,9 @@ export default function PhrasesBrouilleesPage() {
               <span className={`${PASTILLE} tabular-nums`}>⏱ {stopwatch.formatted}</span>
             </>
           }
+          retourVers={modeParcours ? '/parcours' : undefined}
         />
+        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale">👾 Boss du niveau</Etiquette>}
 
         {/* Progress bar */}
         <div className="h-4 overflow-hidden rounded-full border-2 border-encre bg-encre/10">
@@ -373,6 +402,7 @@ export default function PhrasesBrouilleesPage() {
         detail="points"
         onRejouer={() => startExercise(selectedLevel, exercise)}
         retourVers="/exercices"
+        parcours={!!modeParcours}
       >
         <div className="grid grid-cols-2 gap-2">
           {[

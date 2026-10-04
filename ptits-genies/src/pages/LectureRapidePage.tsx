@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { useModeParcours } from '@/parcours/useModeParcours'
+import { parametresLecture, tauxReussite } from '@/parcours/regles'
 import { calcLectureScore, calcLectureBonus } from '@/utils/scoring'
 import { SpeedPicker, speedOptions } from '@/components/exercises/LectureRapide/SpeedPicker'
 import { TextMask } from '@/components/exercises/LectureRapide/TextMask'
@@ -10,6 +13,7 @@ import { Bouton, classesBouton } from '@/components/ui/Bouton'
 import { Carte, classesCarte } from '@/components/ui/Carte'
 import { EnTete } from '@/components/ui/EnTete'
 import { EcranFin } from '@/components/ui/EcranFin'
+import { Etiquette } from '@/components/ui/Etiquette'
 import type { LectureText, SpeedOption, QCMQuestion } from '@/types'
 
 import texts1 from '@/data/lectureRapide/texts_niveau1.json'
@@ -36,14 +40,32 @@ const LEVEL_META = [
   { fond: 'bg-rose-pale', emoji: '🏅', label: 'Professionnel', words: '~750 mots' },
 ]
 
+function pickRandomText(level: 1 | 2 | 3): LectureText {
+  const pool = allTexts[level - 1]
+  return pool[Math.floor(Math.random() * pool.length)]
+}
+
+// Mode parcours : longueur, vitesse et texte fixés d'avance, la lecture démarre tout de suite.
+function tirerPartieParcours(d: number): { level: 1 | 2; speed: SpeedOption; text: LectureText } {
+  const { niveau, vitesse } = parametresLecture(d)
+  return { level: niveau, speed: speedOptions[vitesse], text: pickRandomText(niveau) }
+}
+
 export default function LectureRapidePage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
+  const modeParcours = useModeParcours()
+  const { terminerPartie } = useParcoursStore()
 
-  const [phase, setPhase] = useState<Phase>('level-select')
-  const [selectedLevel, setSelectedLevel] = useState<1 | 2 | 3>(1)
-  const [selectedSpeed, setSelectedSpeed] = useState<SpeedOption>(speedOptions[1])
-  const [currentText, setCurrentText] = useState<LectureText | null>(null)
+  // Tirage fait une seule fois au montage (initialiseur paresseux) : la lecture s'affiche dès le
+  // premier rendu, sans écran de choix, et le texte ne change pas si StrictMode rejoue le rendu.
+  // cursorIndex (-1) et wordsAheadAtSubmit (0) partent déjà des valeurs du bouton « Commencer la lecture ».
+  const [depart] = useState(() => (modeParcours ? tirerPartieParcours(modeParcours.difficulte) : null))
+
+  const [phase, setPhase] = useState<Phase>(depart ? 'reading' : 'level-select')
+  const [selectedLevel, setSelectedLevel] = useState<1 | 2 | 3>(depart?.level ?? 1)
+  const [selectedSpeed, setSelectedSpeed] = useState<SpeedOption>(depart?.speed ?? speedOptions[1])
+  const [currentText, setCurrentText] = useState<LectureText | null>(depart?.text ?? null)
   const [score, setScore] = useState(0)
   const [qcmScore, setQcmScore] = useState(0)
   const [bonusPoints, setBonusPoints] = useState(0)
@@ -55,11 +77,6 @@ export default function LectureRapidePage() {
   const totalWords = currentText ? currentText.text.split(/\s+/).length : 0
   const liveWordsAhead = Math.max(0, totalWords - 1 - cursorIndex)
   const livePotentialBonus = Math.round(liveWordsAhead * 5 * selectedSpeed.multiplier)
-
-  function pickRandomText(level: 1 | 2 | 3): LectureText {
-    const pool = allTexts[level - 1]
-    return pool[Math.floor(Math.random() * pool.length)]
-  }
 
   function pickQuestions(text: LectureText): QCMQuestion[] {
     const shuffled = [...text.qcm].sort(() => Math.random() - 0.5)
@@ -90,6 +107,7 @@ export default function LectureRapidePage() {
         speedMultiplier: selectedSpeed.multiplier, qcmScore: correctCount, textId: currentText.id,
       },
     })
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correctCount, 3))
     await refreshPoints()
     setPhase('result')
   }
@@ -204,6 +222,7 @@ export default function LectureRapidePage() {
   if (phase === 'reading' && currentText) {
     return (
       <div className="max-w-2xl mx-auto">
+        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>}
         <Carte className="p-4 mb-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-xl border-2 border-encre bg-jaune flex items-center justify-center text-xl shrink-0">
@@ -258,6 +277,7 @@ export default function LectureRapidePage() {
   if (phase === 'qcm' && currentText) {
     return (
       <div className="max-w-2xl mx-auto">
+        {modeParcours?.etape === 'boss' && <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>}
         <Carte className="p-4 mb-4 flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl border-2 border-encre bg-rose-pale flex items-center justify-center text-xl shrink-0">
             🧠
@@ -281,6 +301,7 @@ export default function LectureRapidePage() {
         detail="points gagnés"
         onRejouer={() => setPhase('level-select')}
         retourVers="/accueil"
+        parcours={!!modeParcours}
       >
         <div className="space-y-2 border-t-2 border-encre/20 pt-4 text-base font-bold text-encre">
           {bonusPoints > 0 && (
