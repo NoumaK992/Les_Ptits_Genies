@@ -193,5 +193,665 @@
         "correctIndex": 1
       }
     ]
+  },
+  {
+    "id": "lr1-06",
+    "title": "Le premier jour au collège",
+    "genre": "Récit",
+    "level": 1,
+    "text": "Ce matin-là, Yanis s'est réveillé avant même que son réveil sonne. C'était son premier jour au collège, et il avait mal au ventre depuis la veille. Il a mis son nouveau sweat bleu, a vérifié trois fois son sac, puis il est parti avec son voisin Malik. Devant le grand portail, des centaines d'élèves parlaient fort. Les plus grands semblaient immenses. Yanis avait l'impression d'être une fourmi au milieu d'un troupeau d'éléphants. Dans la cour, un surveillant a appelé les élèves de sixième. Yanis a cherché son nom sur la liste. Il était en sixième B, mais Malik était en sixième D. Son cœur s'est serré. Il allait devoir se débrouiller seul. Le professeur principal, monsieur Garcia, enseignait les mathématiques. Il avait une grosse voix, mais un sourire rassurant. Il a distribué les emplois du temps et a expliqué comment lire le plan du collège. Ensuite, toute la classe a fait le tour des bâtiments : le CDI, la cantine, le gymnase et la salle de sciences avec son squelette en plastique. À midi, Yanis s'est retrouvé seul avec son plateau. Il ne savait pas où s'asseoir. Soudain, une fille de sa classe lui a fait signe. Elle s'appelait Inès et elle non plus ne connaissait personne. Ils ont parlé de jeux vidéo et de leurs anciennes écoles. Ils ont découvert qu'ils habitaient dans la même rue. Le soir, quand sa mère lui a demandé comment s'était passée sa journée, Yanis a répondu en souriant : « Plutôt bien. Demain, je mange avec Inès. »",
+    "qcm": [
+      {
+        "question": "Pourquoi Yanis a-t-il mal au ventre au début du texte ?",
+        "options": ["Il a trop mangé la veille au soir", "Il est inquiet pour son premier jour au collège", "Il est tombé malade pendant la nuit", "Il a couru pour ne pas rater le bus"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans quelle classe se trouve Yanis ?",
+        "options": ["En sixième A", "En sixième D", "En sixième B", "En cinquième B"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle matière enseigne monsieur Garcia ?",
+        "options": ["Le français", "L'histoire-géographie", "Les sciences", "Les mathématiques"],
+        "correctIndex": 3
+      },
+      {
+        "question": "À quoi Yanis se compare-t-il devant le portail ?",
+        "options": ["À une fourmi au milieu d'un troupeau d'éléphants", "À un poisson hors de l'eau", "À un oiseau tombé du nid", "À un lion dans une cage"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi le cœur de Yanis se serre-t-il en lisant la liste ?",
+        "options": ["Son nom n'est pas sur la liste", "Son ami Malik n'est pas dans sa classe", "Il est dans la classe la plus difficile", "Il a le professeur le plus sévère"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'ont découvert Yanis et Inès en parlant à la cantine ?",
+        "options": ["Ils sont nés le même jour", "Ils viennent de la même école", "Ils habitent dans la même rue", "Ils ont le même professeur de musique"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment Yanis se sent-il à la fin de la journée ?",
+        "options": ["Inquiet, il veut changer de collège", "En colère contre son ami Malik", "Triste, il ne veut plus y retourner", "Rassuré, car il s'est fait une amie"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr1-07",
+    "title": "Le peuple des abeilles",
+    "genre": "Documentaire",
+    "level": 1,
+    "text": "Les abeilles sont de petits insectes, mais elles jouent un rôle immense dans la nature. Elles vivent en groupe dans une ruche qui peut compter jusqu'à cinquante mille individus. Chaque abeille a un travail précis. Au centre de la ruche se trouve la reine. C'est la seule femelle qui pond des œufs. Au printemps, elle peut en pondre plus de mille par jour. Les ouvrières, elles, s'occupent de tout le reste. Elles nettoient la ruche, nourrissent les larves, construisent les alvéoles en cire et protègent l'entrée contre les intrus. Les plus âgées sortent pour butiner. Elles vont de fleur en fleur pour récolter le nectar, un liquide sucré, et le pollen, une fine poussière jaune. De retour à la ruche, elles transforment le nectar en miel. Ce miel servira de nourriture pendant l'hiver, quand il n'y a plus de fleurs. Les mâles s'appellent les faux bourdons. Ils ne travaillent pas et ne possèdent pas de dard. Leur rôle principal est de féconder une jeune reine. Quand une abeille découvre un champ de fleurs, elle prévient les autres d'une drôle de façon : elle danse ! Ses mouvements indiquent la direction et la distance de la nourriture. En butinant, les abeilles transportent aussi le pollen d'une fleur à l'autre. Grâce à elles, beaucoup de plantes peuvent produire des fruits et des graines. Sans les abeilles, nous aurions beaucoup moins de pommes, de cerises ou de fraises. Aujourd'hui, elles sont menacées par certains pesticides et par la disparition des fleurs sauvages. En protégeant les abeilles, nous protégeons aussi notre alimentation.",
+    "qcm": [
+      {
+        "question": "Combien d'abeilles une ruche peut-elle compter ?",
+        "options": ["Jusqu'à cinquante mille", "Jusqu'à cinq cents", "Jusqu'à cinq mille", "Jusqu'à cinq millions"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quel est le rôle de la reine ?",
+        "options": ["Butiner les fleurs", "Pondre des œufs", "Défendre l'entrée de la ruche", "Fabriquer la cire"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment s'appellent les abeilles mâles ?",
+        "options": ["Les ouvrières", "Les frelons", "Les faux bourdons", "Les larves"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment une abeille prévient-elle les autres qu'elle a trouvé des fleurs ?",
+        "options": ["Elle bourdonne très fort", "Elle rapporte une fleur à la ruche", "Elle laisse une trace de miel", "Elle danse"],
+        "correctIndex": 3
+      },
+      {
+        "question": "À quoi sert le miel pour les abeilles ?",
+        "options": ["À nourrir la ruche pendant l'hiver", "À construire les alvéoles", "À soigner la reine quand elle est malade", "À attirer les fleurs vers la ruche"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi les abeilles sont-elles importantes pour nos fruits ?",
+        "options": ["Elles mangent les insectes qui abîment les fruits", "Elles transportent le pollen d'une fleur à l'autre", "Elles chassent les oiseaux des vergers", "Elles rendent les fruits plus sucrés avec leur miel"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'est-ce qui menace les abeilles aujourd'hui ?",
+        "options": ["Le froid de l'hiver et la neige", "Les faux bourdons qui les attaquent", "Certains pesticides et la disparition des fleurs sauvages", "Les apiculteurs qui prennent tout leur miel"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr1-08",
+    "title": "Lettre de la colonie",
+    "genre": "Lettre",
+    "level": 1,
+    "text": "Chers Papa et Maman, je vous écris depuis la colonie, au bord d'un grand lac entouré de montagnes. Nous sommes arrivés lundi soir après six heures de car. J'ai été malade pendant le trajet, mais maintenant je vais très bien, ne vous inquiétez pas. Je dors dans un chalet en bois avec cinq autres garçons. Mon lit est en haut d'un lit superposé, et j'adore ça. Notre animateur s'appelle Bastien. Il joue de la guitare tous les soirs autour du feu et il connaît des histoires qui font un peu peur. Mardi, nous avons fait du canoë sur le lac. Au début, Théo et moi tournions en rond, et tout le monde riait. Puis nous avons compris qu'il fallait ramer en même temps. À la fin, nous sommes arrivés deuxièmes à la course ! Mercredi, il a plu toute la journée. Nous sommes restés à l'intérieur pour fabriquer des cerfs-volants. Le mien est rouge et jaune, avec une longue queue. Hier, nous avons enfin pu le faire voler sur la colline. Il est monté très haut, plus haut que celui de Bastien ! La nourriture est bonne, sauf les épinards du jeudi. Je mange beaucoup de pain pour compenser. Maman, j'ai perdu ma casquette verte dans la forêt, je suis désolé. Je l'ai cherchée partout. Vous me manquez un peu, surtout le soir, et le chien aussi. Dites à Léa que je lui rapporte un cadeau, mais c'est une surprise. On rentre samedi vers dix-huit heures. Je vous fais de gros bisous. Votre fils, Nathan.",
+    "qcm": [
+      {
+        "question": "Qui a écrit cette lettre ?",
+        "options": ["Théo", "Bastien", "Léa", "Nathan"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Comment Nathan est-il allé jusqu'à la colonie ?",
+        "options": ["En car", "En train", "En voiture", "En avion"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi Théo et Nathan tournaient-ils en rond en canoë ?",
+        "options": ["Il y avait trop de vent sur le lac", "Ils ne ramaient pas en même temps", "Leur canoë avait un trou", "Ils avaient perdu une rame"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'ont fait les enfants le jour de pluie ?",
+        "options": ["Ils ont regardé un film", "Ils ont joué aux cartes", "Ils ont fabriqué des cerfs-volants", "Ils ont préparé un gâteau"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'a perdu Nathan dans la forêt ?",
+        "options": ["Son cerf-volant", "Sa lampe de poche", "Son pull rouge", "Sa casquette verte"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Qui est Bastien ?",
+        "options": ["L'animateur de la colonie", "Un garçon du chalet", "Le grand frère de Nathan", "Le cuisinier de la colonie"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quand Nathan rentre-t-il chez lui ?",
+        "options": ["Vendredi soir après le dîner", "Samedi vers dix-huit heures", "Dimanche à midi", "Lundi matin"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr1-09",
+    "title": "Biscuit prend le bus",
+    "genre": "Fait insolite",
+    "level": 1,
+    "text": "Dans une petite ville au bord de la mer, les habitants ont un passager très spécial dans leur bus. Il s'appelle Biscuit. C'est un gros chien noir et blanc, aux oreilles tombantes. Chaque matin, vers huit heures, Biscuit attend sagement à l'arrêt, au coin de sa rue. Quand le bus numéro 4 arrive, il monte tout seul, sans personne pour le tenir en laisse. Il s'installe toujours au même endroit, près de la fenêtre, et regarde défiler les maisons. Au bout de quatre arrêts, il descend devant la plage. Là, il court après les mouettes, renifle les algues et salue les pêcheurs, qui lui donnent parfois un morceau de poisson. Vers midi, il reprend le bus dans l'autre sens et rentre chez lui pour faire la sieste. Sa propriétaire, une dame nommée Rose, a découvert ce petit manège par hasard. Un jour, une amie l'a appelée : « Ton chien est dans le bus, assis à côté de moi ! » Rose n'y croyait pas. Le lendemain, elle a suivi Biscuit en voiture et elle a tout vu de ses propres yeux. Au début, elle avait peur qu'il se perde. Mais le chauffeur l'a rassurée. Biscuit connaît le trajet par cœur et ne fait jamais de bêtises. Les passagers l'adorent. Certains enfants partent même plus tôt à l'école pour voyager avec lui. Pour éviter tout problème, Rose a accroché à son collier une petite médaille avec son numéro de téléphone. La compagnie de bus a même offert à Biscuit une carte de transport à son nom, avec sa photo dessus !",
+    "qcm": [
+      {
+        "question": "Comment s'appelle le chien ?",
+        "options": ["Rose", "Cookie", "Biscuit", "Médor"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Où Biscuit descend-il du bus ?",
+        "options": ["Devant l'école", "Devant le marché", "Devant la boulangerie", "Devant la plage"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que font parfois les pêcheurs quand ils voient Biscuit ?",
+        "options": ["Ils lui donnent un morceau de poisson", "Ils le ramènent chez lui", "Ils l'emmènent sur leur bateau", "Ils le chassent de la plage"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment Rose a-t-elle découvert les voyages de son chien ?",
+        "options": ["Le chauffeur lui a écrit une lettre", "Une amie l'a appelée depuis le bus", "Elle l'a vu à la télévision", "Un voisin lui a montré une photo"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi certains enfants partent-ils plus tôt à l'école ?",
+        "options": ["Pour éviter les embouteillages", "Pour arriver les premiers en classe", "Pour voyager avec Biscuit", "Pour aller jouer sur la plage"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'a fait Rose pour éviter les problèmes ?",
+        "options": ["Elle a enfermé Biscuit dans le jardin", "Elle a acheté une laisse plus longue", "Elle accompagne Biscuit tous les matins", "Elle a mis une médaille avec son numéro sur le collier"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel cadeau la compagnie de bus a-t-elle fait à Biscuit ?",
+        "options": ["Une carte de transport à son nom", "Un siège réservé avec un coussin", "Une casquette de chauffeur", "Un panier pour dormir dans le bus"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr1-10",
+    "title": "Sami, as du basket fauteuil",
+    "genre": "Portrait",
+    "level": 1,
+    "text": "Sami a treize ans et il est en quatrième. Comme beaucoup d'élèves de son âge, il aime les jeux vidéo, les blagues de son grand frère et les frites de la cantine. Mais Sami a une particularité : il se déplace en fauteuil roulant depuis un accident de vélo, quand il avait sept ans. Ses jambes ne peuvent plus le porter. Pendant longtemps, Sami a cru que le sport, c'était fini pour lui. Il regardait les autres courir dans la cour et il se sentait mis à l'écart. Un jour, son professeur d'EPS lui a parlé d'un club de basket fauteuil, à vingt minutes de chez lui. Sami a hésité. Il avait peur d'être ridicule. Finalement, il est allé à un entraînement, juste pour voir. Ce jour-là, tout a changé. Les joueurs filaient sur le terrain à toute vitesse, se bousculaient, tiraient au panier et riaient fort. Certains joueurs n'étaient pas handicapés, mais ils jouaient eux aussi en fauteuil, avec les mêmes règles. Sami a tout de suite adoré. Aujourd'hui, il s'entraîne deux fois par semaine, le mercredi et le samedi. Ses épaules sont de plus en plus musclées et son adresse est impressionnante. L'an dernier, son équipe a gagné le tournoi régional. Sami a marqué le panier de la victoire à la dernière seconde ! Son rêve est de participer un jour aux Jeux paralympiques. En attendant, il a proposé à son collège d'organiser une journée de découverte du basket fauteuil. Tous les élèves de sa classe ont essayé. Ils ont vite compris que ce sport demande beaucoup de force et d'équilibre.",
+    "qcm": [
+      {
+        "question": "Pourquoi Sami se déplace-t-il en fauteuil roulant ?",
+        "options": ["À cause d'une chute à ski", "À cause d'un accident de vélo", "À cause d'une maladie", "Depuis sa naissance"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qui a parlé du club de basket fauteuil à Sami ?",
+        "options": ["Son grand frère", "Son médecin", "Son professeur d'EPS", "Un ami de sa classe"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi Sami a-t-il hésité avant d'aller au club ?",
+        "options": ["Le club était trop loin de chez lui", "L'inscription coûtait trop cher", "Ses parents ne voulaient pas", "Il avait peur d'être ridicule"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quels jours Sami s'entraîne-t-il ?",
+        "options": ["Le mercredi et le samedi", "Le lundi et le jeudi", "Le mardi et le vendredi", "Tous les soirs de la semaine"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quel est le rêve de Sami ?",
+        "options": ["Devenir professeur d'EPS", "Participer aux Jeux paralympiques", "Entraîner une équipe de football", "Jouer dans un club professionnel en Amérique"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'a proposé Sami à son collège ?",
+        "options": ["La création d'un club de basket", "Un tournoi entre toutes les classes", "Une journée de découverte du basket fauteuil", "Un article dans le journal du collège"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'ont compris les élèves de sa classe en essayant ?",
+        "options": ["Ce sport est très facile", "Ce sport est trop dangereux", "Ce sport est moins fatigant que le basket classique", "Ce sport demande beaucoup de force et d'équilibre"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr1-11",
+    "title": "L'arrêt de la dernière minute",
+    "genre": "Récit sportif",
+    "level": 1,
+    "text": "Le score était de un partout et il ne restait que cinq minutes de jeu. Sur le terrain du stade municipal, les filles du club des Hirondelles disputaient la finale du tournoi départemental contre l'équipe de Saint-Martin, invaincue depuis le début de la saison. Dans les tribunes, les parents criaient, agitaient des drapeaux et tapaient des pieds. Clara, la gardienne des Hirondelles, avait les mains qui tremblaient. En première mi-temps, elle avait laissé passer un ballon facile, et Saint-Martin avait ouvert le score. Depuis, elle s'en voulait terriblement. Heureusement, sa coéquipière Awa avait égalisé d'une superbe tête juste avant la pause. Soudain, l'attaquante adverse s'échappa sur le côté droit. Elle dribbla une défenseuse, puis une deuxième. Elle se retrouva seule face à Clara. Le stade entier retint son souffle. Clara se souvint du conseil de son entraîneur : « Reste debout le plus longtemps possible. Ne plonge pas trop tôt. » Elle attendit, attendit encore. L'attaquante frappa en force vers le coin gauche. Clara plongea au dernier moment et détourna le ballon du bout des doigts. Il heurta le poteau et sortit du terrain. Les supporters des Hirondelles explosèrent de joie. Sur le corner qui suivit, Clara attrapa le ballon et le relança loin devant, vers Awa. Celle-ci partit en courant, traversa tout le terrain et marqua le deuxième but à la dernière minute. Au coup de sifflet final, toutes les joueuses se jetèrent sur Clara. Awa lui dit en riant : « Sans ton arrêt, je n'aurais jamais marqué ! » Clara, elle, avait complètement oublié son erreur du début.",
+    "qcm": [
+      {
+        "question": "À quel poste joue Clara ?",
+        "options": ["Gardienne de but", "Attaquante", "Défenseuse", "Entraîneuse"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Contre quelle équipe jouent les Hirondelles ?",
+        "options": ["Saint-Pierre", "Saint-Martin", "Les Mouettes", "Sainte-Marie"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qui a marqué le premier but des Hirondelles ?",
+        "options": ["Clara", "L'entraîneur", "Awa", "Une défenseuse"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi Clara s'en voulait-elle au début du texte ?",
+        "options": ["Elle était arrivée en retard au match", "Elle avait reçu un carton jaune", "Elle avait blessé une adversaire", "Elle avait laissé passer un ballon facile"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel conseil l'entraîneur avait-il donné à Clara ?",
+        "options": ["Rester debout le plus longtemps possible", "Plonger le plus tôt possible", "Sortir de son but pour aller au contact", "Crier fort pour impressionner l'attaquante"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que devient le tir de l'attaquante adverse ?",
+        "options": ["Il entre dans le but", "Clara le détourne et il heurte le poteau", "Il passe au-dessus de la barre", "Clara l'attrape et le garde dans ses mains"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel est le score à la fin du match ?",
+        "options": ["Un partout", "Deux à un pour Saint-Martin", "Deux à un pour les Hirondelles", "Trois à un pour les Hirondelles"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr1-12",
+    "title": "Les secrets des volcans",
+    "genre": "Sciences",
+    "level": 1,
+    "text": "Un volcan est une ouverture dans la croûte de la Terre par laquelle sort de la roche fondue. Sous nos pieds, à plusieurs dizaines de kilomètres de profondeur, il fait si chaud que certaines roches fondent. Elles forment alors une matière épaisse et brûlante qu'on appelle le magma. Comme il est plus léger que les roches qui l'entourent, le magma remonte lentement vers la surface. Il s'accumule dans une sorte de grande poche, la chambre magmatique. Quand la pression devient trop forte, le magma jaillit par la cheminée du volcan : c'est l'éruption. Une fois à l'air libre, le magma change de nom : on l'appelle la lave. Elle peut dépasser mille degrés ! Il existe deux grandes sortes d'éruptions. Certains volcans laissent couler des rivières de lave rouge qui descendent lentement leurs pentes. On les appelle des volcans effusifs, ou volcans rouges. D'autres explosent violemment et projettent des nuages de cendres et des blocs de roche. Ce sont des volcans explosifs, ou volcans gris. Ils sont beaucoup plus dangereux. Aujourd'hui, les scientifiques qui étudient les volcans, les volcanologues, surveillent les plus actifs jour et nuit. Leurs appareils mesurent les petits tremblements du sol, la chaleur et les gaz qui s'échappent. Ces signes permettent parfois de prévoir une éruption et d'évacuer les habitants à temps. Les volcans ont aussi des avantages. Leurs cendres rendent la terre très fertile, et beaucoup d'agriculteurs cultivent leurs champs sur leurs pentes. En France, on trouve des volcans endormis en Auvergne et un volcan très actif sur l'île de La Réunion : le Piton de la Fournaise.",
+    "qcm": [
+      {
+        "question": "Comment appelle-t-on la roche fondue qui se trouve sous la terre ?",
+        "options": ["La lave", "La cendre", "Le cratère", "Le magma"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Comment appelle-t-on le magma une fois qu'il est sorti du volcan ?",
+        "options": ["La lave", "La chambre magmatique", "La cheminée", "La pierre ponce"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que font les volcans gris ?",
+        "options": ["Ils laissent couler des rivières de lave rouge", "Ils explosent et projettent des cendres et des roches", "Ils dorment depuis des milliers d'années", "Ils crachent de l'eau chaude"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment s'appellent les scientifiques qui étudient les volcans ?",
+        "options": ["Les météorologues", "Les astronomes", "Les volcanologues", "Les archéologues"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que mesurent les appareils placés sur les volcans ?",
+        "options": ["Le vent et la pluie", "La hauteur et la largeur du volcan", "Le nombre de visiteurs", "Les tremblements du sol, la chaleur et les gaz"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi beaucoup d'agriculteurs cultivent-ils sur les pentes des volcans ?",
+        "options": ["Les cendres rendent la terre très fertile", "Il y fait toujours plus chaud qu'ailleurs", "Il y pleut beaucoup plus souvent", "Les terrains y sont gratuits"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Où se trouve le Piton de la Fournaise ?",
+        "options": ["En Auvergne", "Sur l'île de La Réunion", "En Corse", "En Bretagne"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr1-13",
+    "title": "La vie de la meute",
+    "genre": "Nature",
+    "level": 1,
+    "text": "Le loup est un animal qui vit en famille. Ce groupe s'appelle une meute. Elle compte en général entre quatre et huit loups. À sa tête, on trouve un couple : le mâle et la femelle qui donnent naissance aux louveteaux. Les autres membres de la meute sont souvent leurs enfants des années précédentes. Au printemps, la louve met au monde quatre à six petits dans une tanière, un abri creusé sous la terre ou caché entre des rochers. À la naissance, les louveteaux sont aveugles et sourds. Ils ouvrent les yeux au bout de deux semaines environ. Toute la meute veille sur eux. Quand les adultes reviennent de la chasse, ils rapportent de la viande dans leur estomac et la recrachent pour nourrir les petits. Les loups chassent ensemble. Seuls, ils ne pourraient pas attraper de grandes proies comme les cerfs ou les sangliers. En groupe, ils encerclent l'animal, le fatiguent, puis l'attaquent. Un loup peut parcourir plus de cinquante kilomètres en une seule nuit pour trouver de la nourriture. Pour communiquer, les loups utilisent leur corps et leur voix. Une queue haute montre qu'un loup est sûr de lui. Une queue basse montre qu'il se soumet. Le célèbre hurlement sert à rassembler la meute ou à dire aux autres meutes : « Attention, ce territoire est à nous ! » Le loup avait presque disparu de France. Il est revenu naturellement depuis l'Italie au début des années 1990. Aujourd'hui, il est protégé, mais sa présence pose des problèmes aux éleveurs de moutons. Ils doivent protéger leurs troupeaux avec des chiens et des clôtures.",
+    "qcm": [
+      {
+        "question": "Comment s'appelle le groupe dans lequel vivent les loups ?",
+        "options": ["Une harde", "Un troupeau", "Une meute", "Une colonie"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Où naissent les louveteaux ?",
+        "options": ["Dans un nid d'herbes sèches", "Au milieu d'un champ", "Dans le creux d'un arbre", "Dans une tanière"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Au bout de combien de temps les louveteaux ouvrent-ils les yeux ?",
+        "options": ["Environ deux semaines", "Dès leur naissance", "Environ deux mois", "Environ un an"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi les loups chassent-ils en groupe ?",
+        "options": ["Pour s'amuser entre eux", "Pour attraper de grandes proies comme les cerfs", "Parce qu'ils ont peur de la nuit", "Pour apprendre à hurler ensemble"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que montre une queue basse chez un loup ?",
+        "options": ["Qu'il est sûr de lui", "Qu'il a faim", "Qu'il se soumet", "Qu'il va attaquer"],
+        "correctIndex": 2
+      },
+      {
+        "question": "À quoi sert le hurlement des loups ?",
+        "options": ["À appeler les louveteaux pour manger", "À effrayer les humains", "À annoncer l'arrivée de l'hiver", "À rassembler la meute ou à défendre son territoire"],
+        "correctIndex": 3
+      },
+      {
+        "question": "D'où le loup est-il revenu en France ?",
+        "options": ["Depuis l'Italie", "Depuis l'Espagne", "Depuis l'Allemagne", "Depuis la Belgique"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr1-14",
+    "title": "La vie au château fort",
+    "genre": "Histoire",
+    "level": 1,
+    "text": "Au Moyen Âge, il y a environ huit cents ans, les seigneurs vivaient dans des châteaux forts. Ces grandes constructions de pierre servaient avant tout à se protéger des ennemis. Pour les rendre difficiles à attaquer, on les bâtissait souvent en haut d'une colline ou au bord d'une falaise. Tout autour, de hautes murailles appelées remparts encerclaient le château. Devant elles, un large fossé, parfois rempli d'eau, empêchait les ennemis d'approcher. Pour entrer, il fallait traverser un pont-levis, un pont que l'on pouvait relever avec des chaînes en cas de danger. Au centre se dressait la plus haute tour : le donjon. C'est là que vivait le seigneur avec sa famille. C'était aussi le dernier refuge si les ennemis réussissaient à franchir les murailles. La vie au château était beaucoup moins confortable qu'on l'imagine. Les pièces étaient sombres, car les fenêtres étaient étroites. En hiver, il y faisait froid malgré les grandes cheminées. Les murs étaient parfois couverts de tapisseries pour garder un peu de chaleur. Le château ressemblait à un petit village. On y trouvait des soldats, des serviteurs, des cuisiniers, un forgeron et même des animaux. Il y avait un puits pour avoir de l'eau et des réserves de nourriture pour tenir plusieurs mois en cas de siège. Un siège, c'est quand une armée entoure un château et attend que ses habitants se rendent, affamés. Les jours de fête, le seigneur donnait de grands banquets avec des musiciens et des jongleurs. Il organisait aussi des tournois, où les chevaliers s'affrontaient à cheval avec de longues lances.",
+    "qcm": [
+      {
+        "question": "À quoi servaient avant tout les châteaux forts ?",
+        "options": ["À montrer la richesse du roi", "À se protéger des ennemis", "À stocker le blé des paysans", "À accueillir les voyageurs"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment s'appelle la plus haute tour du château ?",
+        "options": ["Le rempart", "Le pont-levis", "Le donjon", "Le puits"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'est-ce qu'un pont-levis ?",
+        "options": ["Un pont fait de cordes et de planches", "Un pont réservé aux chevaliers", "Un pont qui passe sous les remparts", "Un pont que l'on peut relever avec des chaînes"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi les pièces du château étaient-elles sombres ?",
+        "options": ["Les fenêtres étaient étroites", "Les bougies étaient interdites", "Les murs étaient peints en noir", "Le château était construit sous la terre"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi couvrait-on parfois les murs de tapisseries ?",
+        "options": ["Pour cacher des passages secrets", "Pour garder un peu de chaleur", "Pour se protéger des flèches", "Pour remplacer les fenêtres"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'est-ce qu'un siège, dans ce texte ?",
+        "options": ["Le fauteuil du seigneur dans la grande salle", "Une fête organisée par le seigneur", "Une armée entoure le château et attend que les habitants se rendent", "Un combat entre deux chevaliers à cheval"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi y avait-il un puits et des réserves de nourriture ?",
+        "options": ["Pour les vendre au marché", "Pour préparer les tournois", "Pour nourrir les chevaux des visiteurs", "Pour tenir plusieurs mois en cas de siège"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr1-15",
+    "title": "Perdus dans le brouillard",
+    "genre": "Récit d'aventure",
+    "level": 1,
+    "text": "Ce samedi-là, Emma et son grand-père Jules étaient partis tôt pour grimper jusqu'au lac des Aigles, à deux heures de marche du village. Le ciel était parfaitement bleu. Jules avait tout de même glissé dans son sac une boussole, une lampe de poche et deux couvertures de survie. « En montagne, le temps change vite », répétait-il toujours. Ils arrivèrent au lac vers onze heures. L'eau était si claire qu'on voyait les poissons nager. Ils pique-niquèrent sur un rocher plat, puis Emma voulut faire le tour du lac pour photographier des marmottes. Ils marchèrent longtemps. Quand ils voulurent repartir, un épais brouillard blanc monta soudain de la vallée. En quelques minutes, Emma ne voyait même plus ses propres chaussures. Le sentier avait disparu. Emma sentit la panique monter. « On est perdus, Papi ! » Jules posa la main sur son épaule. « Non. On ne bouge plus, et on réfléchit. » Il sortit sa boussole. Le matin, il avait remarqué que le village se trouvait plein sud. Il expliqua à Emma comment tenir la boussole bien à plat et suivre l'aiguille. Ils avancèrent lentement, l'un derrière l'autre, en vérifiant chaque pas. Au bout d'une heure, ils entendirent un bruit familier : les cloches des vaches de monsieur Favre. Le village n'était plus très loin ! Peu après, le brouillard se déchira et ils aperçurent les toits rouges en contrebas. Ce soir-là, devant un chocolat chaud, Emma déclara qu'elle voulait apprendre à se servir d'une boussole. Jules sourit et promit de lui en offrir une pour son anniversaire.",
+    "qcm": [
+      {
+        "question": "Où Emma et son grand-père allaient-ils ?",
+        "options": ["Au lac des Aigles", "Au sommet de la montagne", "Au refuge des marmottes", "À la cascade du village"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi Jules avait-il emporté une boussole par beau temps ?",
+        "options": ["Parce qu'il avait prévu de dormir dehors", "Parce qu'en montagne, le temps change vite", "Parce qu'Emma avait peur de se perdre", "Parce qu'il ne connaissait pas le chemin"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi Emma voulait-elle faire le tour du lac ?",
+        "options": ["Pour pêcher des poissons", "Pour se baigner", "Pour photographier des marmottes", "Pour trouver un meilleur endroit pour pique-niquer"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment Jules réagit-il quand Emma panique ?",
+        "options": ["Il se met à crier pour appeler à l'aide", "Il court pour retrouver le sentier", "Il décide de dormir près du lac", "Il garde son calme et réfléchit"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans quelle direction se trouvait le village ?",
+        "options": ["Plein sud", "Plein nord", "Plein est", "Plein ouest"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quel bruit leur a montré que le village était proche ?",
+        "options": ["Les cloches de l'église", "Les cloches des vaches", "Les aboiements d'un chien", "Le moteur d'un tracteur"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que promet Jules à Emma à la fin ?",
+        "options": ["De retourner au lac la semaine suivante", "De lui acheter un appareil photo", "De lui offrir une boussole pour son anniversaire", "De ne plus jamais l'emmener en montagne"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr1-16",
+    "title": "Les dauphins, champions des mers",
+    "genre": "Documentaire",
+    "level": 1,
+    "text": "Le dauphin vit dans la mer, pourtant il fait partie des mammifères, comme le chien, le cheval ou l'être humain. Cela veut dire que la femelle donne naissance à un petit vivant et qu'elle le nourrit avec son lait. Comme tous les mammifères, le dauphin respire de l'air. Il doit donc remonter régulièrement à la surface. Il respire par un trou situé sur le dessus de sa tête : l'évent. Quand il plonge, l'évent se ferme pour empêcher l'eau d'entrer. Mais comment fait-il pour dormir sans se noyer ? Le dauphin a une solution étonnante : il ne dort qu'avec une moitié de son cerveau à la fois. L'autre moitié reste éveillée pour surveiller les dangers et penser à respirer. Les dauphins vivent en groupes. Ils chassent ensemble des poissons et des calmars. Pour trouver leurs proies, même dans l'eau trouble, ils utilisent l'écholocation. Ils émettent de petits clics. Ces sons rebondissent sur les objets et reviennent vers eux, comme un écho. Le dauphin sait alors où se trouve sa proie, quelle est sa taille et à quelle distance elle nage. Les dauphins communiquent aussi par des sifflements. Chaque dauphin possède son propre sifflement, un peu comme un prénom. Les scientifiques pensent qu'ils s'appellent entre eux de cette façon. Très joueurs, les dauphins sautent hors de l'eau, surfent sur les vagues et s'amusent avec des algues. Malheureusement, beaucoup d'entre eux meurent chaque année, pris par erreur dans les filets des pêcheurs. Des associations travaillent avec les pêcheurs pour trouver des solutions et mieux les protéger.",
+    "qcm": [
+      {
+        "question": "À quelle famille d'animaux appartient le dauphin ?",
+        "options": ["Aux poissons", "Aux reptiles", "Aux oiseaux marins", "Aux mammifères"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Comment s'appelle le trou qui permet au dauphin de respirer ?",
+        "options": ["L'évent", "La branchie", "La nageoire", "Le bec"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment le dauphin fait-il pour dormir sans se noyer ?",
+        "options": ["Il dort posé au fond de la mer", "Il dort avec une moitié de son cerveau à la fois", "Il dort sur la plage", "Il ne dort jamais"],
+        "correctIndex": 1
+      },
+      {
+        "question": "À quoi sert l'écholocation ?",
+        "options": ["À respirer sous l'eau plus longtemps", "À nager plus vite que les requins", "À trouver ses proies grâce à de petits clics", "À dormir sans danger"],
+        "correctIndex": 2
+      },
+      {
+        "question": "À quoi le texte compare-t-il le sifflement propre à chaque dauphin ?",
+        "options": ["À une chanson", "À un cri d'alarme", "À un éclat de rire", "À un prénom"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que se passe-t-il quand le dauphin plonge ?",
+        "options": ["Son évent se ferme pour empêcher l'eau d'entrer", "Il respire par la bouche", "Il ferme les yeux pour se protéger", "Il arrête de nager"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quelle menace tue beaucoup de dauphins chaque année ?",
+        "options": ["Les attaques de requins", "Les filets des pêcheurs", "Le froid de l'eau", "Le manque de poissons"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr1-17",
+    "title": "Le bruit du grenier",
+    "genre": "Récit mystère",
+    "level": 1,
+    "text": "Depuis trois nuits, Hugo n'arrivait plus à dormir. Chaque soir, vers minuit, un bruit étrange venait du grenier, juste au-dessus de sa chambre. On aurait dit des pas légers, puis un grattement, puis plus rien. La première nuit, Hugo avait réveillé ses parents. Son père était monté avec une lampe, mais il n'avait rien trouvé. « C'est le vent dans la charpente », avait-il dit en bâillant. Hugo n'y croyait pas du tout. Le vent ne marche pas sur la pointe des pieds. Le quatrième soir, il décida de mener l'enquête avec sa petite sœur Zoé. Ils préparèrent leur matériel : une lampe torche, un carnet et un paquet de biscuits pour rester éveillés. À minuit pile, les bruits recommencèrent. Hugo et Zoé montèrent l'escalier en bois sur la pointe des pieds. La porte du grenier grinça. Le faisceau de la lampe éclaira de vieux cartons, une malle poussiéreuse et un mannequin de couture qui les fit sursauter. Soudain, quelque chose bougea derrière la malle. Zoé attrapa le bras de son frère. Deux petits yeux brillants les fixaient dans le noir. Hugo approcha la lampe tout doucement. Derrière la malle se cachait un loir, une petite boule de poils gris avec une longue queue touffue. Il grignotait tranquillement une vieille pomme oubliée dans un carton. Le lendemain, la famille appela un spécialiste de la protection des animaux. Il attrapa le loir sans lui faire de mal et le relâcha dans la forêt voisine. Depuis, Hugo dort comme un bébé. Zoé, elle, a décidé qu'elle serait détective plus tard.",
+    "qcm": [
+      {
+        "question": "D'où venait le bruit étrange ?",
+        "options": ["De la cave", "Du garage", "Du grenier", "Du jardin"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Selon le père d'Hugo, qu'est-ce qui faisait ce bruit ?",
+        "options": ["Un voleur caché", "Le chat des voisins", "La pluie sur le toit", "Le vent dans la charpente"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Avec qui Hugo mène-t-il l'enquête ?",
+        "options": ["Avec sa petite sœur Zoé", "Avec son père", "Avec son meilleur ami", "Avec sa mère"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Qu'est-ce qui fait sursauter les enfants en entrant dans le grenier ?",
+        "options": ["Une chauve-souris", "Un mannequin de couture", "Un vieux miroir", "Une grosse araignée"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel animal faisait du bruit dans le grenier ?",
+        "options": ["Un rat", "Un hibou", "Un loir", "Un écureuil"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que mangeait l'animal ?",
+        "options": ["Les biscuits des enfants", "Des noisettes", "Un morceau de pain", "Une vieille pomme"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Qu'est devenu l'animal à la fin ?",
+        "options": ["Il a été relâché dans la forêt voisine", "Hugo l'a adopté", "Il est resté dans le grenier", "Il a été emmené dans un zoo"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr1-18",
+    "title": "L'exposé de Maëlle",
+    "genre": "Vie au collège",
+    "level": 1,
+    "text": "Mardi prochain, Maëlle devait présenter un exposé devant toute la classe. Le sujet, elle l'avait choisi elle-même : les tortues marines. Elle adorait ces animaux depuis un voyage en Guadeloupe chez sa tante. Le sujet lui plaisait beaucoup. Par contre, parler devant vingt-six élèves la terrifiait. Rien que d'y penser, ses mains devenaient moites. Maëlle est dyslexique. Lire à voix haute lui demande beaucoup d'efforts, et elle a souvent peur que les autres se moquent quand elle bute sur un mot. Sa professeure de SVT, madame Benali, lui a donné une idée. « Tu n'es pas obligée de lire un texte. Prépare plutôt des images et quelques mots-clés. Ensuite, raconte ce que tu sais, comme si tu parlais à une amie. » Pendant une semaine, Maëlle a travaillé dur. Elle a fabriqué un grand panneau avec des photos, une carte des océans et le dessin d'une tortue luth, la plus grande des tortues marines. Chaque soir, elle s'entraînait devant son miroir, puis devant sa grand-mère, qui applaudissait à chaque fois. Le jour de l'exposé, Maëlle avait le cœur qui battait fort. Elle a pris une grande respiration et elle a commencé. Au début, sa voix tremblait. Puis elle a parlé des bébés tortues qui courent vers la mer dès leur naissance, et elle a oublié sa peur. Les élèves posaient des questions. Elle connaissait toutes les réponses ! À la fin, toute la classe l'a applaudie. Madame Benali lui a donné dix-huit sur vingt. Maëlle était surtout fière d'avoir osé.",
+    "qcm": [
+      {
+        "question": "Quel est le sujet de l'exposé de Maëlle ?",
+        "options": ["Les dauphins", "Les tortues marines", "Les requins", "Les baleines"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'est-ce qui fait peur à Maëlle ?",
+        "options": ["Ne pas connaître son sujet", "Avoir une mauvaise note", "Parler devant toute la classe", "Oublier son panneau à la maison"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel conseil madame Benali donne-t-elle à Maëlle ?",
+        "options": ["Lire son texte très lentement", "Apprendre tout son exposé par cœur", "Faire son exposé avec une camarade", "Préparer des images et des mots-clés, puis raconter"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Devant qui Maëlle s'entraînait-elle le soir ?",
+        "options": ["Devant son miroir puis devant sa grand-mère", "Devant sa tante", "Devant ses camarades de classe", "Devant son grand frère"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quelle matière enseigne madame Benali ?",
+        "options": ["Le français", "Les SVT", "L'histoire-géographie", "L'anglais"],
+        "correctIndex": 1
+      },
+      {
+        "question": "À quel moment Maëlle a-t-elle oublié sa peur ?",
+        "options": ["Quand la classe l'a applaudie", "Quand elle a reçu sa note", "Quand elle a parlé des bébés tortues", "Quand sa grand-mère est entrée dans la classe"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle note Maëlle a-t-elle obtenue ?",
+        "options": ["Vingt sur vingt", "Quinze sur vingt", "Douze sur vingt", "Dix-huit sur vingt"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr1-19",
+    "title": "La bouteille à la mer",
+    "genre": "Fait insolite",
+    "level": 1,
+    "text": "Un matin de juillet, Tom, douze ans, se promenait sur une plage de Bretagne avec son père. Ils ramassaient des coquillages quand Tom remarqua un objet brillant coincé entre deux rochers. C'était une vieille bouteille en verre vert, fermée avec de la cire. À l'intérieur, on voyait un papier roulé et attaché par un ruban. Tom eut du mal à retirer le bouchon. Il dut gratter la cire avec un petit caillou pointu. Enfin, il réussit à sortir le papier. L'encre était un peu effacée, mais on pouvait encore lire le message. Il avait été écrit par une fillette nommée Sophie, qui habitait au Canada. « Bonjour ! J'ai dix ans. J'ai lancé cette bouteille depuis le bateau de mon oncle, pendant les vacances. Si tu la trouves, écris-moi, s'il te plaît ! » En bas de la feuille, il y avait une adresse et une date. Tom poussa un cri de surprise : le message avait été écrit vingt-deux ans plus tôt ! La bouteille avait traversé tout l'océan Atlantique, poussée par les courants et les vents. Tom décida d'écrire une lettre à l'adresse indiquée. Il n'avait pas beaucoup d'espoir. Pourtant, trois semaines plus tard, il reçut une réponse. Sophie avait maintenant trente-deux ans et elle était devenue professeure de géographie ! Ses parents habitaient toujours à la même adresse et lui avaient transmis la lettre. Elle était si émue qu'elle avait pleuré en la lisant. Depuis, Tom et Sophie s'écrivent régulièrement. Elle a même promis de venir en Bretagne pour voir l'endroit où sa bouteille a terminé son long voyage.",
+    "qcm": [
+      {
+        "question": "Où Tom a-t-il trouvé la bouteille ?",
+        "options": ["Coincée entre deux rochers sur une plage", "Dans le filet d'un pêcheur", "Enterrée dans le sable", "Dans le port, près des bateaux"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment la bouteille était-elle fermée ?",
+        "options": ["Avec un bouchon en liège", "Avec de la cire", "Avec une capsule en métal", "Avec un morceau de tissu"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans quel pays habitait Sophie quand elle a écrit le message ?",
+        "options": ["En Espagne", "En Angleterre", "Au Canada", "Au Brésil"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Combien de temps s'était-il passé depuis l'écriture du message ?",
+        "options": ["Deux ans", "Dix ans", "Trente-deux ans", "Vingt-deux ans"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel métier exerce Sophie aujourd'hui ?",
+        "options": ["Professeure de géographie", "Capitaine de bateau", "Journaliste", "Photographe"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment Sophie a-t-elle reçu la lettre de Tom ?",
+        "options": ["La poste l'a cherchée pendant des mois", "Ses parents, restés à la même adresse, la lui ont transmise", "Tom l'a retrouvée sur internet", "Son oncle l'a trouvée sur son bateau"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que promet Sophie à Tom ?",
+        "options": ["De lancer une nouvelle bouteille", "D'inviter Tom au Canada", "De venir en Bretagne voir l'endroit de la découverte", "D'écrire un livre sur leur histoire"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr1-20",
+    "title": "La vie dans l'espace",
+    "genre": "Sciences",
+    "level": 1,
+    "text": "À environ quatre cents kilomètres au-dessus de nos têtes, la Station spatiale internationale tourne autour de la Terre. Elle va très vite : elle fait un tour complet de notre planète en une heure et demie environ. Les astronautes qui vivent à bord voient donc seize levers de soleil chaque jour ! Dans la station, tout flotte. Les astronautes ne marchent pas : ils se déplacent en se poussant avec les mains contre les murs. Cette situation s'appelle l'impesanteur. Elle rend la vie de tous les jours très différente. Pour dormir, chaque astronaute s'installe dans un sac de couchage accroché au mur. Sinon, il flotterait dans toute la station pendant son sommeil. Pour manger, il faut faire attention aux miettes : elles pourraient flotter partout et abîmer les appareils. C'est pourquoi le pain est souvent remplacé par des galettes souples. Les boissons se boivent avec une paille, dans des sachets fermés. Se laver est aussi compliqué. Il n'y a pas de douche. Les astronautes utilisent des serviettes humides et un shampoing spécial qui ne se rince pas. Même aller aux toilettes demande un équipement particulier, qui aspire tout comme un aspirateur. En impesanteur, les muscles et les os s'affaiblissent, car ils n'ont plus besoin de porter le poids du corps. Pour rester en forme, les astronautes font environ deux heures de sport chaque jour, sur un vélo ou sur un tapis de course où ils sont attachés avec des sangles. Le reste du temps, ils réalisent des expériences scientifiques. Ils étudient par exemple comment les plantes poussent dans l'espace ou comment le corps humain réagit.",
+    "qcm": [
+      {
+        "question": "Combien de temps faut-il à la station pour faire le tour de la Terre ?",
+        "options": ["Environ une journée", "Environ une semaine", "Environ dix minutes", "Environ une heure et demie"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Combien de levers de soleil les astronautes voient-ils chaque jour ?",
+        "options": ["Seize", "Un seul", "Deux", "Cent"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment les astronautes dorment-ils ?",
+        "options": ["Dans un lit avec des draps", "Dans un sac de couchage accroché au mur", "Dans un hamac", "En flottant librement dans la station"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi le pain est-il souvent remplacé par des galettes souples ?",
+        "options": ["Le pain est trop lourd à transporter", "Le pain moisit très vite dans l'espace", "Les miettes pourraient flotter et abîmer les appareils", "Les astronautes n'aiment pas le pain"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment les astronautes se lavent-ils ?",
+        "options": ["Sous une petite douche", "Dans une baignoire fermée", "Ils ne se lavent jamais", "Avec des serviettes humides et un shampoing sans rinçage"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi les astronautes font-ils du sport chaque jour ?",
+        "options": ["Leurs muscles et leurs os s'affaiblissent", "Ils s'ennuient dans la station", "Ils ont froid dans l'espace", "Ils doivent faire tourner la station"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Combien de temps de sport font-ils environ chaque jour ?",
+        "options": ["Dix minutes", "Deux heures", "Une demi-heure", "Six heures"],
+        "correctIndex": 1
+      }
+    ]
   }
 ]
