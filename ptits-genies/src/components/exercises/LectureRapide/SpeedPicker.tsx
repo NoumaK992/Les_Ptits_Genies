@@ -19,22 +19,23 @@ export { speedOptions }
 export function SpeedPicker({ selected, onChange }: Props) {
   return (
     <div>
-      <p className="font-bold text-sm text-gray-500 mb-3 text-center">Choisis ta vitesse de lecture</p>
+      <p className="font-bold text-base text-encre-doux mb-3 text-center">Choisis ta vitesse de lecture</p>
       <div className="flex gap-2 flex-wrap justify-center">
         {speedOptions.map((opt) => (
           <motion.button
             key={opt.id}
             whileTap={{ scale: 0.9 }}
             onClick={() => onChange(opt)}
-            className={`flex flex-col items-center px-4 py-3 rounded-2xl border-2 transition-all min-w-[70px] ${
+            aria-pressed={selected === opt.id}
+            className={`flex flex-col items-center px-4 py-3 rounded-2xl border-2 border-encre transition-all min-w-[70px] ${
               selected === opt.id
-                ? 'border-primary bg-primary/10 shadow-md'
-                : 'border-gray-200 bg-white hover:border-gray-300'
+                ? 'bg-jaune shadow-dur-sm'
+                : 'bg-papier hover:bg-jaune/40'
             }`}
           >
             <span className="text-2xl mb-1">{opt.emoji}</span>
-            <span className="text-xs font-bold text-ink">{opt.label}</span>
-            <span className={`text-xs font-black mt-0.5 ${selected === opt.id ? 'text-primary' : 'text-gray-400'}`}>
+            <span className="text-base font-bold text-encre">{opt.label}</span>
+            <span className={`text-base font-black mt-0.5 ${selected === opt.id ? 'text-encre' : 'text-encre-doux'}`}>
               ×{opt.multiplier}
             </span>
           </motion.button>

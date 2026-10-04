@@ -28,7 +28,7 @@ export function TextMask({ text, wpm, onComplete, onIndexChange }: Props) {
   }, [])
 
   return (
-    <div className="leading-relaxed text-2xl md:text-3xl text-ink font-medium select-none">
+    <div className="leading-relaxed text-2xl md:text-3xl text-encre font-medium select-none">
       {words.map((word, i) => (
         <span
           key={i}

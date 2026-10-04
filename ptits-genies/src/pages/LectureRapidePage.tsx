@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
@@ -7,6 +6,10 @@ import { calcLectureScore, calcLectureBonus } from '@/utils/scoring'
 import { SpeedPicker, speedOptions } from '@/components/exercises/LectureRapide/SpeedPicker'
 import { TextMask } from '@/components/exercises/LectureRapide/TextMask'
 import { QCMBlock } from '@/components/exercises/LectureRapide/QCMBlock'
+import { Bouton, classesBouton } from '@/components/ui/Bouton'
+import { Carte, classesCarte } from '@/components/ui/Carte'
+import { EnTete } from '@/components/ui/EnTete'
+import { EcranFin } from '@/components/ui/EcranFin'
 import type { LectureText, SpeedOption, QCMQuestion } from '@/types'
 
 import texts1 from '@/data/lectureRapide/texts_niveau1.json'
@@ -15,10 +18,6 @@ import texts3 from '@/data/lectureRapide/texts_niveau3.json'
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
-  gradient: 'linear-gradient(135deg, #FFD166 0%, #f59e0b 100%)',
-  shadow: '0 8px 28px rgba(255, 209, 102, 0.45)',
-  color: '#b45309',
-  bgLight: 'rgba(255, 209, 102, 0.12)',
   emoji: '⚡',
   title: 'Lecture rapide',
 }
@@ -32,13 +31,12 @@ const allTexts = [
 type Phase = 'level-select' | 'text-select' | 'speed-select' | 'reading' | 'qcm' | 'result'
 
 const LEVEL_META = [
-  { gradient: 'linear-gradient(135deg, #06D6A0, #059669)', emoji: '🌱', label: 'Débutant', words: '~250 mots' },
-  { gradient: 'linear-gradient(135deg, #FFD166, #f59e0b)', emoji: '🚀', label: 'Intermédiaire', words: '~500 mots' },
-  { gradient: 'linear-gradient(135deg, #EF476F, #be123c)', emoji: '🏅', label: 'Professionnel', words: '~750 mots' },
+  { fond: 'bg-juste', emoji: '🌱', label: 'Débutant', words: '~250 mots' },
+  { fond: 'bg-jaune', emoji: '🚀', label: 'Intermédiaire', words: '~500 mots' },
+  { fond: 'bg-rose-pale', emoji: '🏅', label: 'Professionnel', words: '~750 mots' },
 ]
 
 export default function LectureRapidePage() {
-  const navigate = useNavigate()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
 
@@ -100,18 +98,8 @@ export default function LectureRapidePage() {
   if (phase === 'level-select') {
     return (
       <div className="max-w-lg mx-auto">
-        <div className="text-center mb-8">
-          <motion.div
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-24 h-24 mx-auto rounded-3xl flex items-center justify-center text-5xl mb-5"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            {EX.emoji}
-          </motion.div>
-          <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">{EX.title}</h2>
-          <p className="text-gray-500 font-semibold">Choisis la longueur du texte</p>
-        </div>
+        <EnTete titre={`${EX.title} ${EX.emoji}`} />
+        <p className="text-encre-doux font-semibold text-lg mb-6">Choisis la longueur du texte</p>
 
         <div className="space-y-3">
           {([1, 2, 3] as const).map((lvl) => {
@@ -123,29 +111,24 @@ export default function LectureRapidePage() {
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ scale: 1.02, y: -2 }}
                 onClick={() => { setSelectedLevel(lvl); setPhase('text-select') }}
-                className="w-full text-left bg-white rounded-2xl overflow-hidden transition-all"
-                style={{ boxShadow: '0 4px 16px rgba(45,45,58,0.10)' }}
+                className={`w-full text-left overflow-hidden transition-all hover:shadow-dur-lg ${classesCarte}`}
               >
                 <div className="flex items-center gap-4 p-5">
                   <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
-                    style={{ background: meta.gradient }}
+                    className={`w-12 h-12 rounded-xl border-2 border-encre flex items-center justify-center text-2xl shrink-0 ${meta.fond}`}
                   >
                     {meta.emoji}
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <p className="font-black text-ink">Niveau {lvl} — {meta.label}</p>
-                      <span
-                        className="text-xs font-black px-2 py-0.5 rounded-full"
-                        style={{ background: EX.bgLight, color: EX.color }}
-                      >
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 mb-0.5">
+                      <p className="font-black text-encre">Niveau {lvl} · {meta.label}</p>
+                      <span className="text-sm font-black px-2 py-0.5 rounded-full border-2 border-encre bg-jaune text-encre">
                         {meta.words}
                       </span>
                     </div>
-                    <p className="text-sm text-gray-400 font-semibold">{genres}</p>
+                    <p className="text-base text-encre-doux font-semibold">{genres}</p>
                   </div>
-                  <span className="font-black text-gray-300 text-lg">→</span>
+                  <span aria-hidden="true" className="font-black text-encre text-lg">→</span>
                 </div>
               </motion.button>
             )
@@ -161,24 +144,8 @@ export default function LectureRapidePage() {
     const meta = LEVEL_META[selectedLevel - 1]
     return (
       <div className="max-w-lg mx-auto">
-        <div className="flex items-center gap-4 mb-6">
-          <div
-            className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-            style={{ background: EX.gradient }}
-          >
-            {EX.emoji}
-          </div>
-          <div className="flex-1">
-            <h2 className="text-xl font-fredoka font-semibold text-ink">Choisis ton texte</h2>
-            <p className="text-gray-500 text-sm font-semibold">Niveau {selectedLevel} — {meta.label}</p>
-          </div>
-          <button
-            onClick={() => setPhase('level-select')}
-            className="text-sm px-3 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 font-bold text-gray-600"
-          >
-            ← Retour
-          </button>
-        </div>
+        <EnTete titre="Choisis ton texte" onRetour={() => setPhase('level-select')} />
+        <p className="text-encre-doux text-lg font-semibold mb-6">Niveau {selectedLevel} · {meta.label} {meta.emoji}</p>
 
         <div className="space-y-3">
           {texts.map((t) => (
@@ -186,14 +153,14 @@ export default function LectureRapidePage() {
               key={t.id}
               whileTap={{ scale: 0.97 }}
               onClick={() => { setCurrentText(t); setPhase('speed-select') }}
-              className="w-full text-left bg-white rounded-2xl p-5 shadow-card hover:shadow-card-hover transition-all"
+              className={`w-full text-left p-5 transition-all hover:shadow-dur-lg ${classesCarte}`}
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="flex-1 min-w-0">
-                  <p className="font-black text-ink truncate">{t.title}</p>
-                  <p className="text-gray-400 text-sm font-semibold mt-0.5">{t.genre}</p>
+                  <p className="font-black text-encre truncate">{t.title}</p>
+                  <p className="text-encre-doux text-base font-semibold mt-0.5">{t.genre}</p>
                 </div>
-                <span className="font-black text-gray-300 text-lg shrink-0">→</span>
+                <span aria-hidden="true" className="font-black text-encre text-lg shrink-0">→</span>
               </div>
             </motion.button>
           ))}
@@ -206,48 +173,29 @@ export default function LectureRapidePage() {
   if (phase === 'speed-select') {
     return (
       <div className="max-w-lg mx-auto">
-        <div className="flex items-center gap-4 mb-6">
-          <div
-            className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-            style={{ background: EX.gradient }}
-          >
-            {EX.emoji}
-          </div>
-          <div>
-            <h2 className="text-xl font-fredoka font-semibold text-ink">Choisis ta vitesse</h2>
-            <p className="text-gray-500 text-sm font-semibold">Plus tu lis vite, plus tu gagnes !</p>
-          </div>
-        </div>
+        <EnTete titre="Choisis ta vitesse" onRetour={() => setPhase('text-select')} />
+        <p className="text-encre-doux text-lg font-semibold mb-6">Plus tu lis vite, plus tu gagnes !</p>
 
-        <div className="bg-white rounded-3xl p-6 shadow-card mb-5">
+        <Carte className="p-6 mb-5">
           <SpeedPicker selected={selectedSpeed.id} onChange={setSelectedSpeed} />
-        </div>
+        </Carte>
 
-        <div
-          className="rounded-2xl p-4 mb-5 text-sm font-semibold text-ink flex items-start gap-2"
-          style={{ background: EX.bgLight, border: `1.5px solid rgba(255,209,102,0.30)` }}
-        >
+        <div className="rounded-2xl border-2 border-encre bg-bleu p-4 mb-5 text-base font-semibold text-encre flex items-start gap-2">
           <span className="text-lg shrink-0">ℹ️</span>
           <span>Les mots du texte vont disparaître progressivement. Lis-les avant qu'ils s'effacent !</span>
         </div>
 
-        <button
+        <Bouton
+          taille="grand"
           onClick={() => {
             setCursorIndex(-1)
             setWordsAheadAtSubmit(0)
             setPhase('reading')
           }}
-          className="w-full text-ink font-black py-4 rounded-2xl text-lg active:scale-95 transition-all"
-          style={{ background: EX.gradient, boxShadow: EX.shadow }}
+          className="w-full"
         >
           Commencer la lecture ! 📖
-        </button>
-        <button
-          onClick={() => setPhase('text-select')}
-          className="w-full mt-3 text-gray-400 font-semibold py-2 hover:text-gray-600 transition-colors"
-        >
-          ← Retour
-        </button>
+        </Bouton>
       </div>
     )
   }
@@ -256,38 +204,32 @@ export default function LectureRapidePage() {
   if (phase === 'reading' && currentText) {
     return (
       <div className="max-w-2xl mx-auto pb-28">
-        <div className="bg-white rounded-2xl p-4 shadow-card mb-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-              style={{ background: EX.gradient }}
-            >
+        <Carte className="p-4 mb-4 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-10 h-10 rounded-xl border-2 border-encre bg-jaune flex items-center justify-center text-xl shrink-0">
               {EX.emoji}
             </div>
-            <div>
-              <p className="font-black text-ink text-sm truncate max-w-40">{currentText.title}</p>
-              <p className="text-xs text-gray-400 font-semibold">{currentText.genre}</p>
+            <div className="min-w-0">
+              <p className="font-black text-encre text-base truncate max-w-40">{currentText.title}</p>
+              <p className="text-base text-encre-doux font-semibold">{currentText.genre}</p>
             </div>
           </div>
-          <div
-            className="px-3 py-1.5 rounded-xl text-center"
-            style={{ background: EX.bgLight }}
-          >
-            <p className="text-xs font-semibold" style={{ color: EX.color }}>Vitesse</p>
-            <p className="font-black text-sm" style={{ color: EX.color }}>{selectedSpeed.emoji} ×{selectedSpeed.multiplier}</p>
+          <div className="px-3 py-1.5 rounded-xl border-2 border-encre bg-jaune text-center shrink-0">
+            <p className="text-sm font-semibold text-encre">Vitesse</p>
+            <p className="font-black text-base text-encre">{selectedSpeed.emoji} ×{selectedSpeed.multiplier}</p>
           </div>
-        </div>
+        </Carte>
 
-        <div className="bg-white rounded-3xl p-6 shadow-card mb-4 min-h-48">
+        <Carte className="p-6 mb-4 min-h-48">
           <TextMask
             text={currentText.text}
             wpm={selectedSpeed.wpm}
             onComplete={goToQCM}
             onIndexChange={setCursorIndex}
           />
-        </div>
+        </Carte>
 
-        <p className="text-center text-sm text-gray-400 font-semibold animate-pulse">
+        <p className="text-center text-base text-encre-doux font-semibold animate-pulse">
           📖 Lis avant que les mots disparaissent…
         </p>
 
@@ -298,14 +240,11 @@ export default function LectureRapidePage() {
             transition={{ delay: 0.3, type: 'spring', bounce: 0.4 }}
             whileTap={{ scale: 0.96 }}
             onClick={goToQCM}
-            className="pointer-events-auto flex items-center gap-3 px-5 py-3.5 rounded-2xl font-black text-ink text-base shadow-lg active:scale-95 transition-all max-w-md w-full sm:w-auto justify-center"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
+            className={`${classesBouton('principal', 'grand')} pointer-events-auto gap-3 max-w-md w-full sm:w-auto`}
           >
             <span>J'ai fini ! ✋</span>
             {livePotentialBonus > 0 && (
-              <span
-                className="text-sm font-black px-2.5 py-1 rounded-xl bg-white/80 text-amber-900"
-              >
+              <span className="text-base font-black px-2.5 py-1 rounded-full border-2 border-encre bg-papier text-encre">
                 +{livePotentialBonus} pts
               </span>
             )}
@@ -319,18 +258,15 @@ export default function LectureRapidePage() {
   if (phase === 'qcm' && currentText) {
     return (
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-2xl p-4 shadow-card mb-4 flex items-center gap-3">
-          <div
-            className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-            style={{ background: EX.gradient }}
-          >
+        <Carte className="p-4 mb-4 flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl border-2 border-encre bg-rose-pale flex items-center justify-center text-xl shrink-0">
             🧠
           </div>
           <div>
-            <p className="font-black text-ink text-sm">Questions de compréhension</p>
-            <p className="text-xs text-gray-400 font-semibold">Tu as bien lu ? Prouve-le !</p>
+            <p className="font-black text-encre text-base">Questions de compréhension</p>
+            <p className="text-base text-encre-doux font-semibold">Tu as bien lu ? Prouve-le !</p>
           </div>
-        </div>
+        </Carte>
         <QCMBlock questions={selectedQuestions} onSubmit={handleQCMSubmit} />
       </div>
     )
@@ -339,64 +275,29 @@ export default function LectureRapidePage() {
   // ── Result ──────────────────────────────────────────────────────────────
   if (phase === 'result') {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-md mx-auto text-center py-12"
+      <EcranFin
+        titre="Lecture terminée ! 🎓"
+        score={score}
+        detail="points gagnés"
+        onRejouer={() => setPhase('level-select')}
+        retourVers="/accueil"
       >
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', bounce: 0.6, delay: 0.1 }}
-          className="text-7xl mb-4"
-        >
-          🎓
-        </motion.div>
-        <h2 className="text-3xl font-fredoka font-semibold text-ink mb-6">Lecture terminée !</h2>
-
-        <div className="bg-white rounded-3xl p-8 shadow-card mb-6 space-y-4">
-          <div>
-            <p
-              className="text-6xl font-fredoka font-bold score-reveal"
-              style={{ background: EX.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
-            >
-              {score}
-            </p>
-            <p className="text-gray-400 font-semibold mt-1">points gagnés</p>
-          </div>
+        <div className="space-y-2 border-t-2 border-encre/20 pt-4 text-base font-bold text-encre">
           {bonusPoints > 0 && (
-            <div className="border-t pt-4 space-y-1.5">
-              <div className="flex justify-between text-sm font-bold text-gray-600">
+            <>
+              <div className="flex justify-between gap-3">
                 <span>Compréhension (QCM)</span>
-                <span>+{qcmScore} pts</span>
+                <span className="shrink-0">+{qcmScore} pts</span>
               </div>
-              <div className="flex justify-between text-sm font-bold text-amber-700">
+              <div className="flex justify-between gap-3">
                 <span>⚡ Bonus de vitesse ({wordsAheadAtSubmit} mot{wordsAheadAtSubmit > 1 ? 's' : ''} d'avance)</span>
-                <span>+{bonusPoints} pts</span>
+                <span className="shrink-0">+{bonusPoints} pts</span>
               </div>
-            </div>
+            </>
           )}
-          <div className="border-t pt-4 flex justify-center gap-4 text-sm font-semibold text-gray-500">
-            <span>Vitesse : {selectedSpeed.emoji} ×{selectedSpeed.multiplier}</span>
-          </div>
+          <p className="text-center text-encre-doux">Vitesse : {selectedSpeed.emoji} ×{selectedSpeed.multiplier}</p>
         </div>
-
-        <div className="flex gap-3">
-          <button
-            onClick={() => navigate('/accueil')}
-            className="flex-1 bg-gray-100 text-ink font-bold py-3 rounded-2xl hover:bg-gray-200 transition-colors"
-          >
-            Accueil
-          </button>
-          <button
-            onClick={() => setPhase('level-select')}
-            className="flex-1 text-ink font-bold py-3 rounded-2xl active:scale-95 transition-all"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            Rejouer
-          </button>
-        </div>
-      </motion.div>
+      </EcranFin>
     )
   }
 
