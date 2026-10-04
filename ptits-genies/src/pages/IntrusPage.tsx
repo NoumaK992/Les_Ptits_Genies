@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { useModeParcours } from '@/parcours/useModeParcours'
 import { tauxReussite } from '@/parcours/regles'
 import { useTimer } from '@/hooks/useTimer'
@@ -89,7 +90,8 @@ export default function IntrusPage() {
 
   function startSession(level: number) {
     const lvl = allLevels[level - 1]
-    const lists = shuffle(lvl.lists).slice(0, LISTS_PER_SESSION)
+    // Listes jamais vues d'abord (puis les moins récemment vues si le niveau est épuisé).
+    const lists = useItemsVusStore.getState().choisir('intrus', lvl.lists, LISTS_PER_SESSION)
     setSessionLists(lists)
     setListIndex(0)
     setTotalScore(0)
@@ -190,7 +192,8 @@ export default function IntrusPage() {
         totalLists: LISTS_PER_SESSION,
         reussite,
       },
-    })
+    }, { parcours: !!modeParcours })
+    void useItemsVusStore.getState().marquer(currentUser.id, 'intrus', sessionLists.map((l) => l.id))
     await refreshPoints()
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     setPhase('session-result')

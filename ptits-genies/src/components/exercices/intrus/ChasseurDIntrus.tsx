@@ -12,6 +12,7 @@ import { cn } from '@/lib/cn';
 import { useAuthStore } from '@/store/authStore';
 import { useProgressStore } from '@/store/progressStore';
 import { useParcoursStore } from '@/store/parcoursStore';
+import { useItemsVusStore } from '@/store/itemsVusStore';
 import { useModeParcours } from '@/parcours/useModeParcours';
 import { niveauAmiEnnemi, tauxReussite } from '@/parcours/regles';
 import type { AmiEnnemiSessionDetails } from '@/types';
@@ -46,8 +47,9 @@ const NIVEAU_META = {
 
 const PASTILLE = 'rounded-full border-2 border-encre bg-papier px-3 py-1 font-bold text-encre';
 
+// Listes jamais vues d'abord, puis les moins récemment vues si le niveau est épuisé.
 const tirerSeries = (nv: Niveau): IntrusData[] =>
-  shuffleArray(LISTES_INTRUS.filter((l) => l.niveau === nv)).slice(0, NB_SERIES);
+  useItemsVusStore.getState().choisir('ami-ennemi', LISTES_INTRUS.filter((l) => l.niveau === nv), NB_SERIES);
 
 // Mots et options mélangés d'une série (sans toucher à l'état).
 const preparerSerie = (serie: IntrusData) => ({
@@ -137,13 +139,14 @@ export const ChasseurDIntrus: React.FC = () => {
     partieEnregistree.current = true;
     const enregistrer = async () => {
       if (currentUser) {
+        void useItemsVusStore.getState().marquer(currentUser.id, 'ami-ennemi', series.map((s) => s.id));
         const duree = debutPartie.current > 0 ? Math.round((Date.now() - debutPartie.current) / 1000) : 0;
         const details: AmiEnnemiSessionDetails = {
           type: 'ami-ennemi', niveau, manches: series.length, manchesReussies, erreurs: erreursTotales,
         };
         const reussite = tauxReussite(manchesReussies, series.length);
         try {
-          await saveSession({ id: `${Date.now()}-ami`, userId: currentUser.id, exerciseType: 'ami-ennemi', score, duration: duree, playedAt: new Date().toISOString(), details: { ...details, reussite } });
+          await saveSession({ id: `${Date.now()}-ami`, userId: currentUser.id, exerciseType: 'ami-ennemi', score, duration: duree, playedAt: new Date().toISOString(), details: { ...details, reussite } }, { parcours: !!modeParcours });
           await refreshPoints();
         } catch {
           // Échec réseau : le bilan s'affiche quand même.

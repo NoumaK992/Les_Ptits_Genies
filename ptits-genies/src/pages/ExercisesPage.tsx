@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { classesCarte } from '@/components/ui/Carte'
+import { Carte, classesCarte } from '@/components/ui/Carte'
 
 const exercises = [
   {
@@ -106,6 +106,15 @@ export default function ExercisesPage() {
       >
         📚 Tous les exercices
       </motion.h2>
+
+      {/* Rappel des règles de points de l'entraînement libre (le parcours rapporte bien plus). */}
+      <Carte className="mb-6 flex items-start gap-3 bg-jaune p-4">
+        <span aria-hidden="true" className="shrink-0 text-2xl">🎯</span>
+        <p className="text-base font-semibold leading-relaxed text-encre">
+          <span className="font-titre">Entraînement libre</span> : tu gagnes des points, mais beaucoup moins qu'en parcours.
+          Le même jeu ne rapporte plus rien après 2 parties dans la journée.
+        </p>
+      </Carte>
 
       <motion.div
         variants={container}

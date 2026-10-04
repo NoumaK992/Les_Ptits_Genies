@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { useModeParcours } from '@/parcours/useModeParcours'
 import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
@@ -95,9 +96,8 @@ export default function CollectionPage() {
   }, [currentItem])
 
   function startGame(level: CollectionLevel) {
-    const pool = shuffleArray(LEVELS[level])
-    const count = LEVEL_META[level].seriesCount
-    const selected = pool.slice(0, count)
+    // Séries jamais vues d'abord, puis les moins récemment vues si le niveau est épuisé.
+    const selected = useItemsVusStore.getState().choisir('collection', LEVELS[level], LEVEL_META[level].seriesCount)
     setSelectedLevel(level)
     setQueue(selected)
     setCurrentIndex(0)
@@ -148,7 +148,8 @@ export default function CollectionPage() {
     setResult({ ...scoreData, stars })
     const details: CollectionSessionDetails = { type: 'collection', level: selectedLevel, totalItems, correctAnswers: correct, wrongAnswers: wrong, accuracyScore: scoreData.accuracyScore, timeBonus: scoreData.timeBonus, levelMultiplierBonus: scoreData.levelMultiplierBonus, stars, totalElapsedSeconds: stopwatch.seconds }
     const reussite = tauxReussite(correct, totalItems)
-    await saveSession({ id: `${Date.now()}-col`, userId: currentUser.id, exerciseType: 'collection', score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(), details: { ...details, reussite } })
+    await saveSession({ id: `${Date.now()}-col`, userId: currentUser.id, exerciseType: 'collection', score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(), details: { ...details, reussite } }, { parcours: !!modeParcours })
+    void useItemsVusStore.getState().marquer(currentUser.id, 'collection', queue.map((item) => item.id))
     await refreshPoints()
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     setPhase('result')

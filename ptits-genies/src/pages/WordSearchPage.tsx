@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { useModeParcours } from '@/parcours/useModeParcours'
 import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
@@ -29,9 +30,14 @@ const EX = {
 type Phase = 'intro' | 'presentation' | 'theme-select' | 'playing' | 'correction' | 'session-result'
 type CellState = 'default' | 'selected' | 'correct' | 'wrong' | 'missed'
 
-// Mode parcours : thème tiré au hasard, grilles générées comme dans handleThemeSelect.
+/** Un thème jamais fait d'abord, sinon le moins récemment fait (identifiant : l'id du thème). */
+function choisirTheme(): string | undefined {
+  return useItemsVusStore.getState().choisir('word-search', THEME_LIST, 1)[0]?.id
+}
+
+// Mode parcours : thème choisi par choisirTheme, grilles générées comme dans handleThemeSelect.
 function tirerPartieParcours(): { themeId: string; grids: GeneratedGrid[] } | null {
-  const id = THEME_LIST[Math.floor(Math.random() * THEME_LIST.length)]?.id
+  const id = choisirTheme()
   const theme = id ? getThemeById(id) : undefined
   return id && theme ? { themeId: id, grids: generateSession(theme) } : null
 }
@@ -168,7 +174,8 @@ export default function WordSearchPage() {
         totalWrongSelections: totalWrong, totalElapsedSeconds: stopwatch.seconds,
         reussite,
       },
-    })
+    }, { parcours: !!modeParcours })
+    void useItemsVusStore.getState().marquer(currentUser.id, 'word-search', [themeId])
     if (modeParcours) {
       await terminerPartie(currentUser.id, modeParcours, reussite)
     }
@@ -237,7 +244,18 @@ export default function WordSearchPage() {
 
   // ─── Theme Select ──────────────────────────────────────────────────────
   if (phase === 'theme-select') {
-    return <ThemeSelector themes={THEME_LIST} onSelect={handleThemeSelect} />
+    const vus = useItemsVusStore.getState().vusDe('word-search')
+    return (
+      <ThemeSelector
+        themes={THEME_LIST}
+        dejaFaits={new Set(Object.keys(vus))}
+        onSelect={handleThemeSelect}
+        onSurprise={() => {
+          const id = choisirTheme()
+          if (id) handleThemeSelect(id)
+        }}
+      />
+    )
   }
 
   // ─── Correction ────────────────────────────────────────────────────────

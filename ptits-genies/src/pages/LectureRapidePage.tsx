@@ -5,6 +5,7 @@ import { cn } from '@/lib/cn'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { useModeParcours } from '@/parcours/useModeParcours'
 import { parametresLecture, tauxReussite } from '@/parcours/regles'
 import { calcLectureScore, calcLectureBonus } from '@/utils/scoring'
@@ -42,9 +43,9 @@ const LEVEL_META = [
   { fond: 'bg-rose-pale', emoji: '🏅', label: 'Professionnel', words: '~750 mots' },
 ]
 
+// Un texte du niveau jamais lu d'abord, sinon celui lu il y a le plus longtemps.
 function pickRandomText(level: 1 | 2 | 3): LectureText {
-  const pool = allTexts[level - 1]
-  return pool[Math.floor(Math.random() * pool.length)]
+  return useItemsVusStore.getState().choisir('lecture-rapide', allTexts[level - 1], 1)[0]
 }
 
 // Mode parcours : longueur, vitesse et texte fixés d'avance, la lecture démarre tout de suite.
@@ -58,6 +59,8 @@ export default function LectureRapidePage() {
   const { saveSession } = useProgressStore()
   const modeParcours = useModeParcours()
   const { terminerPartie } = useParcoursStore()
+  // Textes déjà lus (toutes séances confondues) : badge « Déjà lu » dans la liste.
+  const textesLus = useItemsVusStore((s) => s.vus['lecture-rapide'])
 
   // Tirage fait une seule fois au montage (initialiseur paresseux) : la lecture s'affiche dès le
   // premier rendu, sans écran de choix, et le texte ne change pas si StrictMode rejoue le rendu.
@@ -110,7 +113,8 @@ export default function LectureRapidePage() {
         speedMultiplier: selectedSpeed.multiplier, qcmScore: correctCount, textId: currentText.id,
         reussite,
       },
-    })
+    }, { parcours: !!modeParcours })
+    void useItemsVusStore.getState().marquer(currentUser.id, 'lecture-rapide', [currentText.id])
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     await refreshPoints()
     setPhase('result')
@@ -167,7 +171,14 @@ export default function LectureRapidePage() {
     return (
       <div className="max-w-lg mx-auto">
         <EnTete titre="Choisis ton texte" onRetour={() => setPhase('level-select')} />
-        <p className="text-encre-doux text-lg font-semibold mb-6">Niveau {selectedLevel} · {meta.label} {meta.emoji}</p>
+        <p className="text-encre-doux text-lg font-semibold mb-4">Niveau {selectedLevel} · {meta.label} {meta.emoji}</p>
+        <button
+          type="button"
+          onClick={() => { setCurrentText(pickRandomText(selectedLevel)); setPhase('speed-select') }}
+          className={`${classesBouton('secondaire', 'normal')} mb-4`}
+        >
+          🎲 Un texte que je n'ai pas encore lu
+        </button>
 
         <div className="space-y-3">
           {texts.map((t) => (
@@ -180,7 +191,10 @@ export default function LectureRapidePage() {
               <div className="flex items-center justify-between gap-3">
                 <div className="flex-1 min-w-0">
                   <p className="font-black text-encre truncate">{t.title}</p>
-                  <p className="text-encre-doux text-base font-semibold mt-0.5">{t.genre}</p>
+                  <p className="text-encre-doux text-base font-semibold mt-0.5">
+                    {t.genre}
+                    {textesLus && t.id in textesLus && <span className="ml-2 text-sm">· ✓ déjà lu</span>}
+                  </p>
                 </div>
                 <span aria-hidden="true" className="font-black text-encre text-lg shrink-0">→</span>
               </div>

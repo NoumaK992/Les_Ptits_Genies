@@ -3,11 +3,12 @@ import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { useModeParcours } from '@/parcours/useModeParcours'
 import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcCoupDoeilScore, calcCoupDoeilTimeBonus } from '@/utils/scoring'
-import { getSeriesById, tirerSerie } from '@/data/coupDoeil/series'
+import { getSeriesById, seriesDeDifficulte } from '@/data/coupDoeil/series'
 import { ThemeHeader } from '@/components/exercises/CoupDoeil/ThemeHeader'
 import { ColumnDisplay } from '@/components/exercises/CoupDoeil/ColumnDisplay'
 import { CorrectionView } from '@/components/exercises/CoupDoeil/CorrectionView'
@@ -36,6 +37,13 @@ const NIVEAUX = [
   { difficulte: 4, titre: 'Niveau 4', detail: 'De longues expressions' },
 ]
 
+/** Une série de la difficulté demandée (bornée entre 1 et 4) : jamais vue d'abord, sinon la moins récemment vue. */
+function choisirSerie(d: number): number {
+  const niveau = Math.min(Math.max(Math.round(d), 1), 4)
+  const pool = seriesDeDifficulte(niveau).map((s) => ({ id: String(s.id), num: s.id }))
+  return useItemsVusStore.getState().choisir('coup-doeil', pool, 1)[0].num
+}
+
 export default function CoupDOeilPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
@@ -43,7 +51,7 @@ export default function CoupDOeilPage() {
   const { terminerPartie } = useParcoursStore()
   const modeParcours = useModeParcours()
   // En parcours, une série de la difficulté demandée est tirée une seule fois au montage.
-  const [serieParcours] = useState<number | null>(() => (modeParcours ? tirerSerie(modeParcours.difficulte).id : null))
+  const [serieParcours] = useState<number | null>(() => (modeParcours ? choisirSerie(modeParcours.difficulte) : null))
 
   // En parcours, ni intro ni choix de série : on démarre directement en partie.
   const [phase, setPhase] = useState<Phase>(serieParcours ? 'playing' : 'intro')
@@ -111,7 +119,8 @@ export default function CoupDOeilPage() {
       id: `${Date.now()}-cd`, userId: currentUser.id, exerciseType: 'coup-doeil',
       score: score + bonus, duration: stopwatch.seconds, playedAt: new Date().toISOString(),
       details: { type: 'coup-doeil', seriesId, correctCategorizations: correct, wrongCategorizations: wrong, missedTargets: missed, falseAlarms, totalElapsedSeconds: stopwatch.seconds, reussite },
-    })
+    }, { parcours: !!modeParcours })
+    void useItemsVusStore.getState().marquer(currentUser.id, 'coup-doeil', [String(seriesId)])
     await refreshPoints()
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     setPhase('correction')
@@ -184,7 +193,7 @@ export default function CoupDOeilPage() {
               type="button"
               whileTap={{ scale: 0.97 }}
               whileHover={{ scale: 1.02, y: -2 }}
-              onClick={() => handleSeriesSelect(tirerSerie(n.difficulte).id)}
+              onClick={() => handleSeriesSelect(choisirSerie(n.difficulte))}
               className={`${classesCarte} w-full text-left p-5 hover:shadow-dur-lg transition-shadow focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
             >
               <div className="flex items-center justify-between gap-2 mb-2">

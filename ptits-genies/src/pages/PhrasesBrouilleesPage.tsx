@@ -3,8 +3,10 @@ import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useParcoursStore } from '@/store/parcoursStore'
+import { useItemsVusStore } from '@/store/itemsVusStore'
 import { useModeParcours } from '@/parcours/useModeParcours'
 import { tauxReussite } from '@/parcours/regles'
+import { melangerPropositions } from '@/parcours/melangePropositions'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcPhrasesBrouilleesScore, calcPhrasesBrouilleesStars } from '@/utils/scoring'
 import type { PhrasesBrouilleesExercise, PhrasesBrouilleesLevel, PhrasesSegment } from '@/types'
@@ -53,51 +55,28 @@ function isValidExercise(exercise: PhrasesBrouilleesExercise): boolean {
   return segmentGapCount === exercise.gaps.length
 }
 
-// Mode parcours (boss) : niveau imposé par la difficulté, texte tiré au hasard parmi les textes jouables.
-function tirerPartieParcours(d: number): { level: PhrasesBrouilleesLevel; exercise: PhrasesBrouilleesExercise } {
-  const level = Math.min(Math.max(d, 1), 3) as PhrasesBrouilleesLevel
+const JEU = 'phrases-brouillees'
+
+// Textes jouables d'un niveau (tous, si aucun ne passe la vérification).
+function textesDuNiveau(level: PhrasesBrouilleesLevel): PhrasesBrouilleesExercise[] {
   const valides = LEVELS[level].filter(isValidExercise)
-  const pool = valides.length > 0 ? valides : LEVELS[level]
-  return { level, exercise: pool[Math.floor(Math.random() * pool.length)] }
+  return valides.length > 0 ? valides : LEVELS[level]
 }
 
-// Générateur pseudo-aléatoire à graine (mulberry32) : même graine → même suite de nombres.
-function mulberry32(graine: number): () => number {
-  let a = graine >>> 0
-  return () => {
-    a = (a + 0x6d2b79f5) >>> 0
-    let t = a
-    t = Math.imul(t ^ (t >>> 15), t | 1)
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
-  }
-}
-
-// Mélange de Fisher-Yates piloté par la graine : l'ordre est toujours le même pour une graine donnée.
-function melangeDeterministe<T>(liste: readonly T[], graine: number): T[] {
-  const alea = mulberry32(graine)
-  const copie = [...liste]
-  for (let i = copie.length - 1; i > 0; i--) {
-    const j = Math.floor(alea() * (i + 1))
-    ;[copie[i], copie[j]] = [copie[j], copie[i]]
-  }
-  return copie
-}
-
-// Entraînement du parcours (8 parties) : aucun texte ne revient dans un même entraînement.
-// Ordre fixe pour un élève et un niveau : d'abord les textes du niveau de difficulté d,
-// puis ceux des autres niveaux (les plus proches de d d'abord) ; la partie n prend le n-ième texte.
-function tirerEntrainementParcours(
-  d: number, graine: number, partiesFaites: number,
-): { level: PhrasesBrouilleesLevel; exercise: PhrasesBrouilleesExercise } {
-  const cible = Math.min(Math.max(d, 1), 3)
+// Texte d'une partie de parcours (entraînement ou boss) : d'abord un texte jamais vu du niveau d ;
+// si tous ont été vus, un texte jamais vu des niveaux voisins (les plus proches d'abord) ;
+// si tout a été vu, le texte du niveau d vu il y a le plus longtemps.
+function choisirTexte(d: number): { level: PhrasesBrouilleesLevel; exercise: PhrasesBrouilleesExercise } {
+  const cible = Math.min(Math.max(d, 1), 3) as PhrasesBrouilleesLevel
+  const { choisir, vusDe } = useItemsVusStore.getState()
+  const vus = vusDe(JEU)
   const ordreNiveaux = ([1, 2, 3] as PhrasesBrouilleesLevel[])
     .sort((a, b) => Math.abs(a - cible) - Math.abs(b - cible) || a - b)
-  const suite = ordreNiveaux.flatMap((level) =>
-    melangeDeterministe(LEVELS[level].filter(isValidExercise), graine).map((exercise) => ({ level, exercise })),
-  )
-  if (suite.length === 0) return tirerPartieParcours(d)
-  return suite[Math.max(partiesFaites, 0) % suite.length]
+  for (const level of ordreNiveaux) {
+    const [exercise] = choisir(JEU, textesDuNiveau(level), 1)
+    if (exercise && !(exercise.id in vus)) return { level, exercise }
+  }
+  return { level: cible, exercise: choisir(JEU, textesDuNiveau(cible), 1)[0] }
 }
 
 function displaySegment(
@@ -147,22 +126,22 @@ export default function PhrasesBrouilleesPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const modeParcours = useModeParcours()
-  const { terminerPartie, etat } = useParcoursStore()
+  const { terminerPartie } = useParcoursStore()
+  // Textes déjà faits par l'élève (toutes séances confondues) : badges « Déjà joué / Nouveau ».
+  const textesVus = useItemsVusStore((s) => s.vus[JEU])
 
   // Tirage fait une seule fois au montage (initialiseur paresseux) : l'écran de jeu s'affiche
   // dès le premier rendu, sans passer par les écrans de choix ni changer de texte en StrictMode.
-  // Entraînement : texte déterminé par la partie en cours (pas de répétition) ; boss : texte au hasard.
+  // Le texte n'a jamais été vu si possible ; ses propositions sont mélangées une fois pour la partie.
   const [depart] = useState(() => {
     if (!modeParcours) return null
-    if (modeParcours.etape !== 'jeu') return tirerPartieParcours(modeParcours.difficulte)
-    const graine = modeParcours.niveau * 8 + (etat?.place ?? 0)
-    return tirerEntrainementParcours(modeParcours.difficulte, graine, etat?.partiesFaites ?? 0)
+    const { level, exercise } = choisirTexte(modeParcours.difficulte)
+    return { level, exercise: melangerPropositions(exercise) }
   })
 
   const [phase, setPhase] = useState<Phase>(depart ? 'playing' : 'level-select')
   const [selectedLevel, setSelectedLevel] = useState<PhrasesBrouilleesLevel>(depart?.level ?? 1)
   const [availableExercises, setAvailableExercises] = useState<PhrasesBrouilleesExercise[]>([])
-  const [playedByLevel, setPlayedByLevel] = useState<Record<PhrasesBrouilleesLevel, string[]>>({ 1: [], 2: [], 3: [] })
   const [exercise, setExercise] = useState<PhrasesBrouilleesExercise | null>(depart?.exercise ?? null)
   const [assignments, setAssignments] = useState<Record<number, string>>({})
   const [hasStartedTimer, setHasStartedTimer] = useState(depart !== null)
@@ -186,7 +165,7 @@ export default function PhrasesBrouilleesPage() {
   }, [])
 
   function pickLevel(level: PhrasesBrouilleesLevel) {
-    const pool = LEVELS[level].filter(isValidExercise)
+    const pool = textesDuNiveau(level)
     setSelectedLevel(level)
     setAvailableExercises(pool)
     setPhase('text-select')
@@ -194,7 +173,8 @@ export default function PhrasesBrouilleesPage() {
 
   function startExercise(level: PhrasesBrouilleesLevel, chosen: PhrasesBrouilleesExercise) {
     setSelectedLevel(level)
-    setExercise(chosen)
+    // Propositions mélangées (et lettres renommées) une fois par partie : l'ordre ne trahit plus la solution.
+    setExercise(melangerPropositions(chosen))
     setAssignments({})
     setHasStartedTimer(false)
     setValidated(false)
@@ -251,15 +231,11 @@ export default function PhrasesBrouilleesPage() {
         perfectBonus: scoreData.perfectBonus, stars, totalElapsedSeconds: stopwatch.seconds,
         reussite,
       },
-    })
+    }, { parcours: !!modeParcours })
+    void useItemsVusStore.getState().marquer(currentUser.id, JEU, [exercise.id])
     if (modeParcours) {
       await terminerPartie(currentUser.id, modeParcours, reussite)
     }
-    setPlayedByLevel((prev) => {
-      const existing = prev[selectedLevel]
-      if (existing.includes(exercise.id)) return prev
-      return { ...prev, [selectedLevel]: [...existing, exercise.id] }
-    })
     await refreshPoints()
     setPhase('result')
   }
@@ -308,10 +284,18 @@ export default function PhrasesBrouilleesPage() {
         <p className="mb-4 text-base font-semibold text-encre-doux">
           {LEVEL_META[selectedLevel].label} — {availableExercises.length} textes disponibles
         </p>
+        <button
+          type="button"
+          onClick={() => startExercise(selectedLevel, useItemsVusStore.getState().choisir(JEU, availableExercises, 1)[0])}
+          disabled={availableExercises.length === 0}
+          className={`${classesBouton('secondaire', 'normal')} mb-4`}
+        >
+          🎲 Un texte que je n'ai pas encore fait
+        </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {availableExercises.map((item, index) => {
-            const isPlayed = playedByLevel[selectedLevel].includes(item.id)
+            const isPlayed = !!textesVus && item.id in textesVus
             return (
               <motion.button
                 key={item.id}
