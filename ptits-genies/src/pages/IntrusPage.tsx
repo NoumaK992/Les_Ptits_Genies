@@ -1,5 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { EnTete } from '@/components/ui/EnTete'
+import { EcranFin } from '@/components/ui/EcranFin'
+import { Carte, classesCarte } from '@/components/ui/Carte'
+import { couleurs } from '@/theme/couleurs'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
@@ -39,7 +42,6 @@ type ChipState = 'idle' | 'correct' | 'wrong' | 'revealed'
 type Phase = 'level-select' | 'intro' | 'playing' | 'list-result' | 'session-result'
 
 export default function IntrusPage() {
-  const navigate = useNavigate()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
 
@@ -166,13 +168,10 @@ export default function IntrusPage() {
   // Level select
   if (phase === 'level-select') {
     return (
-      <div className="max-w-lg mx-auto">
-        <div className="text-center mb-8">
-          <div className="text-6xl mb-3">🕵️</div>
-          <h2 className="text-3xl font-black text-ink">L'Intrus</h2>
-          <p className="text-gray-500 font-semibold mt-2">Choisis ton niveau de difficulté</p>
-        </div>
-        <div className="space-y-3">
+      <div className="mx-auto max-w-lg">
+        <EnTete titre="🕵️ L'Intrus" />
+        <p className="mb-6 text-lg font-semibold text-encre-doux">Choisis ton niveau de difficulté</p>
+        <div className="space-y-4">
           {[
             { level: 1, label: 'Débutant', emoji: '⭐', desc: 'Mots simples — 9 mots par liste' },
             { level: 2, label: 'Intermédiaire', emoji: '⭐⭐', desc: 'Mots plus longs — 17 à 19 mots par liste' },
@@ -182,16 +181,17 @@ export default function IntrusPage() {
           ].map((l) => (
             <motion.button
               key={l.level}
+              type="button"
               whileTap={{ scale: 0.97 }}
               onClick={() => startSession(l.level)}
-              className="w-full text-left bg-white rounded-2xl p-4 shadow hover:shadow-md transition-shadow flex items-center gap-4"
+              className={`${classesCarte} flex min-h-12 w-full items-center gap-4 p-4 text-left transition-[transform,box-shadow,background-color] hover:-translate-x-px hover:-translate-y-px hover:bg-jaune/40 hover:shadow-dur-lg focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
             >
-              <span className="text-2xl">{l.emoji}</span>
-              <div>
-                <p className="font-black text-ink">{l.label}</p>
-                <p className="text-gray-500 text-sm font-semibold">{l.desc}</p>
+              <span className="shrink-0 text-xl">{l.emoji}</span>
+              <div className="min-w-0">
+                <p className="font-titre text-lg text-encre">{l.label}</p>
+                <p className="text-base font-semibold text-encre-doux">{l.desc}</p>
               </div>
-              <span className="ml-auto text-primary font-bold">→</span>
+              <span aria-hidden="true" className="ml-auto font-titre text-xl text-encre">→</span>
             </motion.button>
           ))}
         </div>
@@ -202,85 +202,87 @@ export default function IntrusPage() {
   // Session result
   if (phase === 'session-result') {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-md mx-auto text-center py-12"
-      >
-        <div className="text-6xl mb-4">🏆</div>
-        <h2 className="text-3xl font-black text-ink mb-6">Bravo !</h2>
-        <div className="bg-white rounded-3xl p-8 shadow-xl mb-6 space-y-4">
-          <div>
-            <p className="text-5xl font-black text-primary">{totalScore}</p>
-            <p className="text-gray-500 font-semibold">points gagnés</p>
-          </div>
-          <div className="border-t pt-4">
-            <p className="text-lg font-black text-ink">{correctCount} / {LISTS_PER_SESSION} bonnes réponses</p>
-          </div>
-        </div>
-        <div className="flex gap-3">
-          <button onClick={() => navigate('/accueil')} className="flex-1 bg-gray-100 text-ink font-bold py-3 rounded-2xl">Accueil</button>
-          <button onClick={() => setPhase('level-select')} className="flex-1 bg-secondary text-white font-bold py-3 rounded-2xl">Rejouer</button>
-        </div>
-      </motion.div>
+      <div className="py-6">
+        <EcranFin
+          titre="🏆 Bravo !"
+          score={totalScore}
+          detail="points gagnés"
+          onRejouer={() => setPhase('level-select')}
+          retourVers="/accueil"
+        >
+          <p className="rounded-xl border-2 border-encre bg-sable p-4 text-center text-lg font-bold text-encre">
+            {correctCount} / {LISTS_PER_SESSION} bonnes réponses
+          </p>
+        </EcranFin>
+      </div>
     )
   }
 
+  const pastille = 'rounded-full border-2 border-encre bg-papier px-3 py-1 font-bold text-encre'
+  const couleurChrono =
+    timer.seconds > levelData.timeLimit * 0.5
+      ? couleurs.juste
+      : timer.seconds > levelData.timeLimit * 0.25
+        ? couleurs.jaune
+        : couleurs.faux
+
   // Playing
   return (
-    <div className="max-w-2xl mx-auto">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <div>
-          <p className="text-sm text-gray-400 font-semibold">Liste {listIndex + 1} / {LISTS_PER_SESSION}</p>
-          <p className="font-black text-lg text-ink">Trouve <span className="text-secondary">l'intrus</span> !</p>
-        </div>
-        <div className="flex items-center gap-3">
-          <div className="text-right">
-            <p className="text-xs text-gray-400">Score</p>
-            <p className="font-black text-secondary">{totalScore}</p>
-          </div>
-          <div className="relative w-14 h-14 flex items-center justify-center">
-            <svg className="absolute inset-0 -rotate-90" width="56" height="56">
-              <circle cx="28" cy="28" r="20" fill="none" stroke="#e5e7eb" strokeWidth="4" />
-              <circle
-                cx="28" cy="28" r="20" fill="none"
-                stroke={timer.seconds > levelData.timeLimit * 0.5 ? '#06D6A0' : timer.seconds > levelData.timeLimit * 0.25 ? '#FFD166' : '#EF476F'}
-                strokeWidth="4"
-                strokeDasharray={2 * Math.PI * 20}
-                strokeDashoffset={2 * Math.PI * 20 * (1 - timer.seconds / levelData.timeLimit)}
-                strokeLinecap="round"
-                style={{ transition: 'stroke-dashoffset 1s linear, stroke 0.3s' }}
-              />
-            </svg>
-            <span className="font-black text-xs text-ink z-10">{timer.seconds}s</span>
-          </div>
-        </div>
-      </div>
+    <div className="mx-auto max-w-2xl">
+      <EnTete
+        titre="Trouve l'intrus !"
+        droite={
+          <>
+            <span className={pastille}>Score : {totalScore}</span>
+            <div className="relative flex h-14 w-14 items-center justify-center rounded-full border-2 border-encre bg-papier">
+              <svg className="absolute inset-0 -rotate-90" width="52" height="52" viewBox="0 0 56 56" aria-hidden="true">
+                <circle cx="28" cy="28" r="20" fill="none" stroke={couleurs.encre} strokeOpacity={0.15} strokeWidth="4" />
+                <circle
+                  cx="28" cy="28" r="20" fill="none"
+                  stroke={couleurChrono}
+                  strokeWidth="4"
+                  strokeDasharray={2 * Math.PI * 20}
+                  strokeDashoffset={2 * Math.PI * 20 * (1 - timer.seconds / levelData.timeLimit)}
+                  strokeLinecap="round"
+                  style={{ transition: 'stroke-dashoffset 1s linear, stroke 0.3s' }}
+                />
+              </svg>
+              <span className="z-10 text-sm font-bold text-encre">{timer.seconds}s</span>
+            </div>
+          </>
+        }
+      />
+
+      <p className="mb-2 text-base font-semibold text-encre-doux">Liste {listIndex + 1} / {LISTS_PER_SESSION}</p>
 
       {/* Progress */}
-      <div className="flex gap-1 mb-6">
+      <div className="mb-6 flex gap-1">
         {sessionLists.map((_, i) => (
-          <div key={i} className={`flex-1 h-2 rounded-full transition-colors ${i < listIndex ? 'bg-success' : i === listIndex ? 'bg-secondary' : 'bg-gray-200'}`} />
+          <div
+            key={i}
+            className={`h-3 flex-1 rounded-full border-2 border-encre transition-colors ${i < listIndex ? 'bg-juste' : i === listIndex ? 'bg-jaune' : 'bg-papier'}`}
+          />
         ))}
       </div>
 
       {/* Words grid */}
-      <div className="flex flex-wrap gap-3 justify-center min-h-32 mb-6">
-        <AnimatePresence>
-          {words.map((word, i) => (
-            <motion.div key={`${listIndex}-${i}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
-              <IntrusWordChip
-                word={word}
-                onClick={() => handleChipClick(i)}
-                state={chipStates[i]}
-                disabled={answered}
-                size={words.length > 20 ? 'sm' : 'md'}
-              />
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </div>
+      <Carte className="mb-6 p-4 md:p-6">
+        <div className="flex min-h-32 flex-wrap justify-center gap-3">
+          <AnimatePresence>
+            {words.map((word, i) => (
+              <motion.div key={`${listIndex}-${i}`} className="max-w-full" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
+                <IntrusWordChip
+                  word={word}
+                  onClick={() => handleChipClick(i)}
+                  state={chipStates[i]}
+                  disabled={answered}
+                  size={words.length > 20 ? 'sm' : 'md'}
+                />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+      </Carte>
 
       {/* Feedback */}
       <AnimatePresence>
@@ -289,9 +291,11 @@ export default function IntrusPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className={`text-center py-3 rounded-2xl font-black text-lg ${lastCorrect ? 'bg-success/20 text-success' : 'bg-error/20 text-error'}`}
+            role="status"
+            className={`rounded-2xl border-2 border-encre px-4 py-3 text-center text-lg font-bold text-encre shadow-dur-sm ${lastCorrect ? 'bg-juste' : 'bg-faux'}`}
           >
-            {lastCorrect ? '✅ Bravo ! L\'intrus était bien ' : '❌ L\'intrus était : '}<span className="font-black">{currentList?.intruder}</span>
+            <span aria-hidden="true" className="mr-2 font-titre">{lastCorrect ? '✓' : '✗'}</span>
+            {lastCorrect ? 'Bravo ! L\'intrus était bien ' : 'L\'intrus était : '}<span className="font-titre">{currentList?.intruder}</span>
           </motion.div>
         )}
       </AnimatePresence>

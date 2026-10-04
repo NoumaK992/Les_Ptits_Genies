@@ -1,11 +1,15 @@
 import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcPhrasesBrouilleesScore, calcPhrasesBrouilleesStars } from '@/utils/scoring'
 import type { PhrasesBrouilleesExercise, PhrasesBrouilleesLevel, PhrasesSegment } from '@/types'
+import { EnTete } from '@/components/ui/EnTete'
+import { EcranFin } from '@/components/ui/EcranFin'
+import { Carte, classesCarte } from '@/components/ui/Carte'
+import { classesBouton } from '@/components/ui/Bouton'
+import { Etiquette } from '@/components/ui/Etiquette'
 
 import level1Data from '@/data/phrasesBrouillees/level_1.json'
 import level2Data from '@/data/phrasesBrouillees/level_2.json'
@@ -13,10 +17,6 @@ import level3Data from '@/data/phrasesBrouillees/level_3.json'
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
-  gradient: 'linear-gradient(135deg, #38BDF8 0%, #2563eb 100%)',
-  shadow: '0 8px 28px rgba(56, 189, 248, 0.40)',
-  color: '#2563eb',
-  bgLight: 'rgba(56, 189, 248, 0.10)',
   emoji: '🧩',
   title: 'Phrases brouillées',
 }
@@ -30,15 +30,13 @@ const LEVELS: LevelMap = {
   3: level3Data as PhrasesBrouilleesExercise[],
 }
 
-const LEVEL_META: Record<PhrasesBrouilleesLevel, { label: string; emoji: string; desc: string; gradient: string }> = {
-  1: { label: 'Débutant', emoji: '🌱', desc: 'Textes courts et phrases manquantes courtes', gradient: 'linear-gradient(135deg, #06D6A0, #059669)' },
-  2: { label: 'Intermédiaire', emoji: '🚀', desc: 'Textes de longueur moyenne et enchaînements plus fins', gradient: 'linear-gradient(135deg, #FFD166, #f59e0b)' },
-  3: { label: 'Professionnel', emoji: '🏅', desc: 'Textes longs et phrases quasi complètes', gradient: 'linear-gradient(135deg, #EF476F, #be123c)' },
+const LEVEL_META: Record<PhrasesBrouilleesLevel, { label: string; emoji: string; desc: string; fond: string }> = {
+  1: { label: 'Débutant', emoji: '🌱', desc: 'Textes courts et phrases manquantes courtes', fond: 'bg-bleu' },
+  2: { label: 'Intermédiaire', emoji: '🚀', desc: 'Textes de longueur moyenne et enchaînements plus fins', fond: 'bg-jaune' },
+  3: { label: 'Professionnel', emoji: '🏅', desc: 'Textes longs et phrases quasi complètes', fond: 'bg-rose-pale' },
 }
 
-function getStarsDisplay(stars: 0 | 1 | 2 | 3): string {
-  return '★'.repeat(stars) + '☆'.repeat(3 - stars)
-}
+const PASTILLE = 'rounded-full border-2 border-encre bg-papier px-3 py-1 font-bold text-encre'
 
 function isValidExercise(exercise: PhrasesBrouilleesExercise): boolean {
   const letters = new Set(exercise.choices.map((c) => c.letter))
@@ -63,13 +61,13 @@ function displaySegment(
 
   const letter = assignments[segment.number]
   const isCorrect = correctness[segment.number]
-  const baseClass = 'inline-flex items-center justify-center min-w-14 h-10 px-3 rounded-xl border-2 mx-1 align-middle font-black text-sm transition-colors'
+  const baseClass = 'inline-flex items-center justify-center gap-1 min-w-14 min-h-10 px-3 rounded-xl border-2 border-encre mx-1 align-middle font-bold text-base text-encre transition-colors'
 
   const stateClass = !validated
-    ? 'border-primary/40 bg-primary/10 text-primary'
+    ? letter ? 'bg-jaune shadow-dur-sm' : 'bg-sable border-dashed'
     : isCorrect
-      ? 'border-success bg-success/20 text-success'
-      : 'border-error bg-error/20 text-error'
+      ? 'bg-juste'
+      : 'bg-faux'
 
   return (
     <span
@@ -83,12 +81,18 @@ function displaySegment(
       aria-label={`Trou numéro ${segment.number}`}
     >
       {letter ? `${segment.number}:${letter}` : `#${segment.number}`}
+      {validated && (
+        <>
+          <span aria-hidden="true" className="font-titre">{isCorrect ? '✓' : '✗'}</span>
+          <span className="sr-only">({isCorrect ? 'bonne réponse' : 'mauvaise réponse'})</span>
+        </>
+      )}
     </span>
   )
 }
 
+
 export default function PhrasesBrouilleesPage() {
-  const navigate = useNavigate()
   const stopwatch = useStopwatch()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
@@ -186,48 +190,34 @@ export default function PhrasesBrouilleesPage() {
     setPhase('result')
   }
 
+
   // ── Level select ────────────────────────────────────────────────────────
   if (phase === 'level-select') {
     return (
       <div className="max-w-xl mx-auto">
-        <div className="text-center mb-8">
-          <motion.div
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-24 h-24 mx-auto rounded-3xl flex items-center justify-center text-5xl mb-5"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            {EX.emoji}
-          </motion.div>
-          <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">{EX.title}</h2>
-          <p className="text-gray-500 font-semibold">Glisse les phrases vers les trous numérotés</p>
-        </div>
+        <EnTete titre={`${EX.emoji} ${EX.title}`} />
+        <p className="mb-6 text-lg font-semibold text-encre-doux">Glisse les phrases vers les trous numérotés</p>
 
-        <div className="space-y-3">
+        <div className="space-y-4">
           {(Object.keys(LEVEL_META) as unknown as PhrasesBrouilleesLevel[]).map((level) => {
             const meta = LEVEL_META[level]
             return (
               <motion.button
                 key={level}
+                type="button"
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ scale: 1.02, y: -2 }}
                 onClick={() => pickLevel(level)}
-                className="w-full text-left bg-white rounded-2xl overflow-hidden transition-all"
-                style={{ boxShadow: '0 4px 16px rgba(45,45,58,0.10)' }}
+                className={`${classesCarte} flex w-full items-center gap-4 p-5 text-left transition-[box-shadow,background-color] hover:bg-jaune/40 hover:shadow-dur-lg focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
               >
-                <div className="flex items-center gap-4 p-5">
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
-                    style={{ background: meta.gradient }}
-                  >
-                    {meta.emoji}
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-black text-ink">{meta.label}</p>
-                    <p className="text-sm text-gray-400 font-semibold">{meta.desc}</p>
-                  </div>
-                  <span className="font-black text-gray-300 text-lg">→</span>
+                <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-encre text-2xl ${meta.fond}`}>
+                  {meta.emoji}
                 </div>
+                <div className="min-w-0 flex-1">
+                  <p className="font-titre text-lg text-encre">{meta.label}</p>
+                  <p className="text-base font-semibold text-encre-doux">{meta.desc}</p>
+                </div>
+                <span aria-hidden="true" className="font-titre text-xl text-encre">→</span>
               </motion.button>
             )
           })}
@@ -239,53 +229,33 @@ export default function PhrasesBrouilleesPage() {
   // ── Text select ─────────────────────────────────────────────────────────
   if (phase === 'text-select') {
     return (
-      <div className="max-w-3xl mx-auto space-y-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-              style={{ background: EX.gradient }}
-            >
-              {EX.emoji}
-            </div>
-            <div>
-              <h2 className="text-xl font-fredoka font-semibold text-ink">Choisis un texte</h2>
-              <p className="text-gray-500 text-sm font-semibold">
-                {LEVEL_META[selectedLevel].label} — {availableExercises.length} textes disponibles
-              </p>
-            </div>
-          </div>
-          <button
-            onClick={() => setPhase('level-select')}
-            className="text-sm px-3 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 font-bold text-gray-600"
-          >
-            ← Retour
-          </button>
-        </div>
+      <div className="max-w-3xl mx-auto">
+        <EnTete titre={`${EX.emoji} Choisis un texte`} onRetour={() => setPhase('level-select')} />
+        <p className="mb-4 text-base font-semibold text-encre-doux">
+          {LEVEL_META[selectedLevel].label} — {availableExercises.length} textes disponibles
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {availableExercises.map((item, index) => {
             const isPlayed = playedByLevel[selectedLevel].includes(item.id)
             return (
               <motion.button
                 key={item.id}
+                type="button"
                 whileTap={{ scale: 0.98 }}
                 onClick={() => startExercise(selectedLevel, item)}
-                className="text-left bg-white rounded-2xl p-4 shadow-card hover:shadow-card-hover transition-all"
+                className={`${classesCarte} p-4 text-left transition-[box-shadow,background-color] hover:bg-jaune/40 hover:shadow-dur-lg focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
               >
-                <div className="flex items-center justify-between gap-2 mb-1">
-                  <p
-                    className="text-xs font-black"
-                    style={{ color: EX.color }}
-                  >
+                <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+                  <p className="text-base font-bold text-encre-doux">
                     Texte {index + 1}
                   </p>
-                  <span className={`text-[10px] px-2 py-1 rounded-full font-black ${isPlayed ? 'bg-gray-100 text-gray-500' : 'bg-success/15 text-success'}`}>
+                  <span className={`rounded-full border-2 border-encre px-2 py-0.5 text-base font-bold text-encre ${isPlayed ? 'bg-sable' : 'bg-jaune'}`}>
                     {isPlayed ? 'Déjà joué' : 'Nouveau'}
                   </span>
                 </div>
-                <p className="font-black text-ink mb-1">{item.title}</p>
-                <p className="text-xs text-gray-500 font-semibold">
+                <p className="mb-1 font-titre text-lg text-encre">{item.title}</p>
+                <p className="text-base font-semibold text-encre-doux">
                   {item.gaps.length} trou{item.gaps.length > 1 ? 's' : ''}
                 </p>
               </motion.button>
@@ -304,48 +274,32 @@ export default function PhrasesBrouilleesPage() {
 
     return (
       <div className="max-w-4xl mx-auto space-y-5">
-        {/* Game header */}
-        <div className="bg-white rounded-2xl p-4 shadow-card flex flex-wrap items-center gap-3 justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-              style={{ background: EX.gradient }}
-            >
-              {EX.emoji}
-            </div>
-            <div>
-              <p className="text-xs text-gray-400 font-semibold">Niveau {LEVEL_META[selectedLevel].label}</p>
-              <p className="font-black text-sm text-ink">{exercise.title}</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="px-3 py-1.5 rounded-xl text-center" style={{ background: EX.bgLight }}>
-              <p className="text-xs font-semibold" style={{ color: 'rgba(37,99,235,0.7)' }}>Trous</p>
-              <p className="font-black text-sm" style={{ color: EX.color }}>{filledGaps}/{totalGaps}</p>
-            </div>
-            <div className="px-3 py-1.5 rounded-xl text-center" style={{ background: 'rgba(255,123,84,0.10)' }}>
-              <p className="text-xs font-semibold text-gray-400">Temps</p>
-              <p className="font-black text-sm tabular-nums text-secondary">{stopwatch.formatted}</p>
-            </div>
-          </div>
-        </div>
+        <EnTete
+          titre={`${EX.emoji} ${EX.title}`}
+          droite={
+            <>
+              <span className={PASTILLE}>Trous : {filledGaps}/{totalGaps}</span>
+              <span className={`${PASTILLE} tabular-nums`}>⏱ {stopwatch.formatted}</span>
+            </>
+          }
+        />
 
         {/* Progress bar */}
-        <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+        <div className="h-4 overflow-hidden rounded-full border-2 border-encre bg-encre/10">
           <motion.div
-            className="h-full rounded-full"
+            className="h-full bg-bleu"
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.4 }}
-            style={{ background: EX.gradient }}
           />
         </div>
 
         {/* Text card */}
-        <div className="bg-white rounded-3xl p-5 shadow-card">
-          <h3 className="font-black text-xl text-ink mb-1">{exercise.title}</h3>
-          {exercise.source && <p className="text-sm text-gray-400 mb-4">{exercise.source}</p>}
+        <Carte className="p-4 md:p-6">
+          <p className="mb-1 text-base font-semibold text-encre-doux">Niveau {LEVEL_META[selectedLevel].label}</p>
+          <h3 className="mb-1 font-titre text-xl text-encre">{exercise.title}</h3>
+          {exercise.source && <p className="mb-4 text-base text-encre-doux">{exercise.source}</p>}
 
-          <p className="leading-9 text-ink font-semibold">
+          <p className="break-words text-lg font-semibold leading-10 text-encre">
             {exercise.segments.map((segment, index) => (
               <span key={segment.type === 'text' ? `t-${index}` : `g-${segment.number}`}>
                 {displaySegment(segment, assignments, false, correctness, handleDropGap)}
@@ -357,18 +311,19 @@ export default function PhrasesBrouilleesPage() {
             {exercise.gaps.map((g) => (
               <button
                 key={g.number}
+                type="button"
                 onClick={() => handleRemoveGap(g.number)}
-                className="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 font-bold text-gray-600"
+                className="min-h-12 rounded-full border-2 border-encre bg-papier px-4 text-base font-bold text-encre transition-colors hover:bg-rose-pale focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu"
               >
                 Vider #{g.number}
               </button>
             ))}
           </div>
-        </div>
+        </Carte>
 
         {/* Choice cards */}
-        <div className="bg-white rounded-3xl p-5 shadow-card">
-          <h4 className="font-fredoka font-semibold text-ink text-lg mb-4">Phrases à placer</h4>
+        <Carte className="p-4 md:p-6">
+          <h4 className="mb-4 font-titre text-lg text-encre">Phrases à placer</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {exercise.choices.map((choice) => {
               const isUsed = usedLetters.has(choice.letter)
@@ -381,32 +336,26 @@ export default function PhrasesBrouilleesPage() {
                     e.dataTransfer.setData('text/plain', choice.letter)
                     e.dataTransfer.effectAllowed = 'move'
                   }}
-                  className={`cursor-grab active:cursor-grabbing border-2 rounded-2xl p-3 transition-all ${
-                    isUsed ? 'border-gray-200 bg-gray-100/80 opacity-50' : 'border-gray-100 hover:border-primary/40 bg-gray-50 hover:bg-white'
+                  className={`cursor-grab rounded-xl border-2 border-encre p-3 transition-colors active:cursor-grabbing ${
+                    isUsed ? 'bg-sable opacity-50' : 'bg-papier shadow-dur-sm hover:bg-jaune/40'
                   }`}
                 >
-                  <p
-                    className="font-black mb-1 text-sm"
-                    style={{ color: isUsed ? '#9ca3af' : EX.color }}
-                  >
+                  <p className="mb-1 font-titre text-base text-encre">
                     {choice.letter}
                   </p>
-                  <p className="text-sm font-semibold leading-6 text-ink">{choice.text}</p>
+                  <p className="break-words text-base font-semibold leading-7 text-encre">{choice.text}</p>
                 </div>
               )
             })}
           </div>
-        </div>
+        </Carte>
 
         <motion.button
+          type="button"
           whileTap={{ scale: canValidate ? 0.97 : 1 }}
           disabled={!canValidate}
           onClick={handleValidate}
-          className="w-full font-black py-4 rounded-2xl transition-all text-lg"
-          style={canValidate
-            ? { background: EX.gradient, color: 'white', boxShadow: EX.shadow }
-            : { background: '#e5e7eb', color: '#9ca3af', cursor: 'not-allowed' }
-          }
+          className={`${classesBouton('principal', 'grand')} w-full`}
         >
           Vérifier mes réponses ✓
         </motion.button>
@@ -416,62 +365,41 @@ export default function PhrasesBrouilleesPage() {
 
   // ── Result ──────────────────────────────────────────────────────────────
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      className="max-w-lg mx-auto text-center py-8"
-    >
-      <motion.div
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: 'spring', bounce: 0.6, delay: 0.1 }}
-        className="text-7xl mb-4"
+    <div className="py-6">
+      <EcranFin
+        titre="🎉 Résultat"
+        etoiles={result.stars}
+        score={result.totalScore}
+        detail="points"
+        onRejouer={() => startExercise(selectedLevel, exercise)}
+        retourVers="/exercices"
       >
-        🎉
-      </motion.div>
-      <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">Résultat</h2>
-      <p className="text-2xl text-yellow-500 font-black mb-6">{getStarsDisplay(result.stars)}</p>
-
-      <div className="bg-white rounded-3xl p-6 shadow-card space-y-4 mb-6">
-        <div>
-          <p
-            className="text-6xl font-fredoka font-bold score-reveal"
-            style={{ background: EX.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
-          >
-            {result.totalScore}
-          </p>
-          <p className="text-gray-400 font-semibold mt-1">points</p>
-        </div>
-        <div className="grid grid-cols-2 gap-2 text-sm">
+        <div className="grid grid-cols-2 gap-2">
           {[
-            { label: 'Bonnes réponses', value: `${result.correctAnswers}/${totalGaps}`, color: 'text-success' },
-            { label: 'Durée', value: stopwatch.formatted, color: 'text-secondary' },
-            { label: 'Précision', value: String(result.accuracyScore), color: 'text-ink' },
-            { label: 'Bonus temps', value: `+${result.timeBonus}`, color: 'text-ink' },
+            { label: 'Bonnes réponses', value: `✓ ${result.correctAnswers}/${totalGaps}`, color: 'text-juste-fonce' },
+            { label: 'Durée', value: stopwatch.formatted, color: 'text-encre' },
+            { label: 'Précision', value: String(result.accuracyScore), color: 'text-encre' },
+            { label: 'Bonus temps', value: `+${result.timeBonus}`, color: 'text-encre' },
           ].map(({ label, value, color }) => (
-            <div key={label} className="bg-gray-50 rounded-xl p-3">
-              <p className={`font-black text-lg ${color}`}>{value}</p>
-              <p className="text-gray-400 font-semibold text-xs">{label}</p>
+            <div key={label} className="rounded-xl border-2 border-encre bg-sable p-3 text-center">
+              <p className={`font-titre text-lg ${color}`}>{value}</p>
+              <p className="text-base font-semibold text-encre-doux">{label}</p>
             </div>
           ))}
         </div>
-      </div>
 
-      <div className="flex gap-3">
-        <button
-          onClick={() => startExercise(selectedLevel, exercise)}
-          className="flex-1 text-white font-bold py-3 rounded-2xl active:scale-95 transition-all"
-          style={{ background: EX.gradient, boxShadow: EX.shadow }}
-        >
-          Rejouer
-        </button>
-        <button
-          onClick={() => navigate('/exercices')}
-          className="flex-1 bg-gray-100 text-ink font-bold py-3 rounded-2xl hover:bg-gray-200 transition-colors"
-        >
-          Exercices
-        </button>
-      </div>
-    </motion.div>
+        {/* Correction : le texte avec les trous corrigés (✓ / ✗) */}
+        <div className="mt-6">
+          <Etiquette couleur="bleu">Correction</Etiquette>
+          <p className="mt-4 break-words text-base font-semibold leading-10 text-encre">
+            {exercise.segments.map((segment, index) => (
+              <span key={segment.type === 'text' ? `t-${index}` : `g-${segment.number}`}>
+                {displaySegment(segment, assignments, true, correctness, handleDropGap)}
+              </span>
+            ))}
+          </p>
+        </div>
+      </EcranFin>
+    </div>
   )
 }

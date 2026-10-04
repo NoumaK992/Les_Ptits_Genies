@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LISTES_INTRUS, IntrusData } from './data';
-import { useNavigate } from 'react-router-dom';
+import { EnTete } from '@/components/ui/EnTete';
+import { EcranFin } from '@/components/ui/EcranFin';
+import { Carte, classesCarte } from '@/components/ui/Carte';
+import { Bouton } from '@/components/ui/Bouton';
+import { BoutonMot } from '@/components/ui/BoutonMot';
+import { couleurs } from '@/theme/couleurs';
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
-  gradient: 'linear-gradient(135deg, #FF7B54 0%, #e8404a 100%)',
-  shadow: '0 8px 28px rgba(255, 123, 84, 0.40)',
-  color: '#FF7B54',
-  bgLight: 'rgba(255, 123, 84, 0.10)',
   emoji: '🕵️',
   title: "Chasseur d'Intrus",
 }
@@ -26,13 +27,14 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 };
 
 const NIVEAU_META = {
-  debutant: { label: 'Débutant', emoji: '🟢', time: 30, multiplier: '×1', gradient: 'linear-gradient(135deg, #06D6A0, #059669)' },
-  intermediaire: { label: 'Intermédiaire', emoji: '🟡', time: 15, multiplier: '×1.5', gradient: 'linear-gradient(135deg, #FFD166, #f59e0b)' },
-  professionnel: { label: 'Professionnel', emoji: '🔴', time: 8, multiplier: '×2', gradient: 'linear-gradient(135deg, #EF476F, #be123c)' },
+  debutant: { label: 'Débutant', emoji: '🟢', time: 30, multiplier: '×1', fond: 'bg-bleu' },
+  intermediaire: { label: 'Intermédiaire', emoji: '🟡', time: 15, multiplier: '×1.5', fond: 'bg-jaune' },
+  professionnel: { label: 'Professionnel', emoji: '🔴', time: 8, multiplier: '×2', fond: 'bg-rose-pale' },
 }
 
+const PASTILLE = 'rounded-full border-2 border-encre bg-papier px-3 py-1 font-bold text-encre';
+
 export const ChasseurDIntrus: React.FC = () => {
-  const navigate = useNavigate();
   const [phase, setPhase] = useState<Phase>('selection_niveau');
   const [niveau, setNiveau] = useState<Niveau>('debutant');
   const [series, setSeries] = useState<IntrusData[]>([]);
@@ -131,60 +133,42 @@ export const ChasseurDIntrus: React.FC = () => {
     }
   };
 
+
   // ── Level select ────────────────────────────────────────────────────────
   if (phase === 'selection_niveau') {
     return (
       <div className="max-w-lg mx-auto">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <motion.div
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-24 h-24 mx-auto rounded-3xl flex items-center justify-center text-5xl mb-5"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            {EX.emoji}
-          </motion.div>
-          <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">{EX.title}</h2>
-          <p className="text-gray-500 font-semibold">Trouve l'intrus parmi les mots et découvre leur point commun !</p>
-        </div>
+        <EnTete titre={`${EX.emoji} ${EX.title}`} />
+        <p className="mb-6 text-lg font-semibold text-encre-doux">Trouve l'intrus parmi les mots et découvre leur point commun !</p>
 
         {/* Level cards */}
-        <div className="space-y-3">
+        <div className="space-y-4">
           {(['debutant', 'intermediaire', 'professionnel'] as Niveau[]).map((nv) => {
             const meta = NIVEAU_META[nv];
             return (
               <motion.button
                 key={nv}
+                type="button"
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ scale: 1.02, y: -2 }}
                 onClick={() => startPartie(nv)}
-                className="w-full text-left rounded-2xl overflow-hidden transition-all"
-                style={{ boxShadow: '0 4px 16px rgba(45,45,58,0.10)' }}
+                className={`${classesCarte} flex w-full items-center gap-4 p-5 text-left transition-[box-shadow,background-color] hover:bg-jaune/40 hover:shadow-dur-lg focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
               >
-                <div className="flex items-center gap-4 p-5 bg-white" style={{ borderLeft: `5px solid` }}>
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
-                    style={{ background: meta.gradient }}
-                  >
-                    {meta.emoji}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <p className="font-black text-ink">{meta.label}</p>
-                      <span
-                        className="text-xs font-black px-2 py-0.5 rounded-full"
-                        style={{ background: EX.bgLight, color: EX.color }}
-                      >
-                        {meta.multiplier}
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-400 font-semibold">
-                      Chrono : {meta.time}s
-                    </p>
-                  </div>
-                  <span className="font-black text-gray-300 text-lg">→</span>
+                <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-encre text-2xl ${meta.fond}`}>
+                  {meta.emoji}
                 </div>
+                <div className="min-w-0 flex-1">
+                  <div className="mb-0.5 flex flex-wrap items-center gap-2">
+                    <p className="font-titre text-lg text-encre">{meta.label}</p>
+                    <span className="rounded-full border-2 border-encre bg-sable px-2 py-0.5 text-sm font-bold text-encre">
+                      {meta.multiplier}
+                    </span>
+                  </div>
+                  <p className="text-base font-semibold text-encre-doux">
+                    Chrono : {meta.time}s
+                  </p>
+                </div>
+                <span aria-hidden="true" className="font-titre text-xl text-encre">→</span>
               </motion.button>
             );
           })}
@@ -196,60 +180,31 @@ export const ChasseurDIntrus: React.FC = () => {
   // ── Bilan ───────────────────────────────────────────────────────────────
   if (phase === 'bilan') {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-md mx-auto text-center py-12"
-      >
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', bounce: 0.6, delay: 0.1 }}
-          className="text-7xl mb-4"
+      <div className="py-6">
+        <EcranFin
+          titre="🎉 Partie terminée !"
+          score={score}
+          detail="points"
+          onRejouer={() => setPhase('selection_niveau')}
+          retourVers="/accueil"
         >
-          🎉
-        </motion.div>
-        <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">Partie terminée !</h2>
-        <p className="text-gray-500 font-semibold mb-6">
-          Niveau : <span className="font-black capitalize">{NIVEAU_META[niveau].label}</span> {NIVEAU_META[niveau].emoji}
-        </p>
-        <div className="bg-white rounded-3xl p-8 shadow-card mb-6 space-y-4">
-          <div>
-            <p
-              className="text-6xl font-fredoka font-bold score-reveal"
-              style={{ background: EX.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
-            >
-              {score}
-            </p>
-            <p className="text-gray-400 font-semibold mt-1">points</p>
-          </div>
-          <div className="border-t pt-3 grid grid-cols-2 gap-3">
-            <div className="bg-gray-50 rounded-xl p-3">
-              <p className="text-2xl font-black text-ink">{5 - erreursTotales < 0 ? 0 : 5}</p>
-              <p className="text-xs text-gray-400 font-semibold">Séries</p>
+          <p className="mb-4 text-center text-lg font-semibold text-encre-doux">
+            Niveau : <span className="font-bold text-encre">{NIVEAU_META[niveau].label}</span> {NIVEAU_META[niveau].emoji}
+          </p>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="rounded-xl border-2 border-encre bg-sable p-3 text-center">
+              <p className="font-titre text-2xl text-encre">{5 - erreursTotales < 0 ? 0 : 5}</p>
+              <p className="text-base font-semibold text-encre-doux">Séries</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-3">
-              <p className="text-2xl font-black text-error">{erreursTotales}</p>
-              <p className="text-xs text-gray-400 font-semibold">Erreurs</p>
+            <div className="rounded-xl border-2 border-encre bg-sable p-3 text-center">
+              <p className="font-titre text-2xl text-faux-fonce">
+                <span aria-hidden="true">✗ </span>{erreursTotales}
+              </p>
+              <p className="text-base font-semibold text-encre-doux">Erreurs</p>
             </div>
           </div>
-        </div>
-        <div className="flex gap-3">
-          <button
-            onClick={() => navigate('/accueil')}
-            className="flex-1 bg-gray-100 text-ink font-bold py-3 rounded-2xl hover:bg-gray-200 transition-colors"
-          >
-            Accueil
-          </button>
-          <button
-            onClick={() => setPhase('selection_niveau')}
-            className="flex-1 text-white font-bold py-3 rounded-2xl active:scale-95 transition-all"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            Rejouer
-          </button>
-        </div>
-      </motion.div>
+        </EcranFin>
+      </div>
     );
   }
 
@@ -257,43 +212,31 @@ export const ChasseurDIntrus: React.FC = () => {
   const isQCM = phase === 'jeu_qcm';
   const initialTimeNiveau = niveau === 'debutant' ? 30 : niveau === 'intermediaire' ? 15 : 8;
   const timerPercent = (timeLeft / initialTimeNiveau) * 100;
-  const timerColor = timeLeft < 5 ? '#EF476F' : timeLeft < (initialTimeNiveau * 0.4) ? '#FFD166' : '#06D6A0';
+  const timerColor = timeLeft < 5 ? couleurs.faux : timeLeft < (initialTimeNiveau * 0.4) ? couleurs.jaune : couleurs.juste;
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* Game header */}
-      <div className="bg-white rounded-2xl p-4 shadow-card mb-4">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-              style={{ background: EX.gradient }}
-            >
-              {EX.emoji}
-            </div>
-            <div>
-              <p className="text-xs text-gray-400 font-semibold">Série {currentSerieIndex + 1} / {series.length}</p>
-              <p className="font-black text-sm text-ink" style={{ color: EX.color }}>
-                {NIVEAU_META[niveau].label} {NIVEAU_META[niveau].emoji}
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="px-3 py-1.5 rounded-xl text-center" style={{ background: EX.bgLight }}>
-              <p className="text-xs font-semibold" style={{ color: 'rgba(255,123,84,0.7)' }}>Score</p>
-              <p className="font-black text-sm" style={{ color: EX.color }}>{score}</p>
-            </div>
-            <div className="px-3 py-1.5 rounded-xl text-center" style={{
-              background: timeLeft < 5 ? 'rgba(239,71,111,0.12)' : 'rgba(45,45,58,0.06)'
-            }}>
-              <p className="text-xs font-semibold text-gray-400">Temps</p>
-              <p className="font-black text-lg tabular-nums" style={{ color: timerColor }}>{timeLeft}s</p>
-            </div>
-          </div>
+      <EnTete
+        titre={`${EX.emoji} ${EX.title}`}
+        droite={
+          <>
+            <span className={PASTILLE}>Score : {score}</span>
+            <span className={`${PASTILLE} tabular-nums ${timeLeft < 5 ? 'bg-faux' : ''}`}>⏱ {timeLeft}s</span>
+          </>
+        }
+      />
+
+      {/* Infos de série + barre du chrono */}
+      <Carte className="mb-4 p-4">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <p className="text-base font-semibold text-encre-doux">Série {currentSerieIndex + 1} / {series.length}</p>
+          <p className="text-base font-bold text-encre">
+            {NIVEAU_META[niveau].label} {NIVEAU_META[niveau].emoji}
+          </p>
         </div>
 
         {/* Timer bar */}
-        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+        <div className="h-3 overflow-hidden rounded-full border-2 border-encre bg-encre/10">
           <motion.div
             className="h-full rounded-full transition-colors duration-300"
             animate={{ width: `${timerPercent}%` }}
@@ -301,30 +244,25 @@ export const ChasseurDIntrus: React.FC = () => {
             style={{ background: timerColor }}
           />
         </div>
-      </div>
+      </Carte>
 
       {/* Progress dots */}
       <div className="flex gap-1.5 mb-4">
         {Array.from({ length: series.length }, (_, i) => (
           <div
             key={i}
-            className="flex-1 h-2.5 rounded-full transition-all duration-500"
-            style={{
-              background: i < currentSerieIndex ? '#06D6A0' : i === currentSerieIndex ? EX.gradient : '#e5e7eb',
-            }}
+            className={`h-3 flex-1 rounded-full border-2 border-encre transition-all duration-500 ${
+              i < currentSerieIndex ? 'bg-juste' : i === currentSerieIndex ? 'bg-jaune' : 'bg-papier'
+            }`}
           />
         ))}
       </div>
 
       {/* Step 1: Find the intrus */}
-      <div className="bg-white rounded-3xl p-6 shadow-card mb-4">
-        <h3
-          className="text-lg font-fredoka font-semibold mb-4 flex items-center gap-2"
-          style={{ color: isQCM ? '#9ca3af' : EX.color }}
-        >
+      <Carte className="mb-4 p-4 md:p-6">
+        <h3 className={`mb-4 flex items-center gap-2 font-titre text-lg ${isQCM ? 'text-encre-doux' : 'text-encre'}`}>
           <span
-            className="w-7 h-7 rounded-full text-sm flex items-center justify-center text-white"
-            style={{ background: isQCM ? '#d1d5db' : EX.gradient }}
+            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-encre text-base text-encre ${isQCM ? 'bg-sable' : 'bg-jaune'}`}
           >
             1
           </span>
@@ -334,33 +272,20 @@ export const ChasseurDIntrus: React.FC = () => {
         <div className="flex flex-wrap gap-3 justify-center">
           {motsMelanges.map((mot) => {
             const isIntrus = mot === series[currentSerieIndex]?.intrus;
-            const isSelected = mot === motSelectionne;
-            let style: React.CSSProperties = {};
-            let className = 'px-5 py-2.5 rounded-2xl text-base font-bold transition-all duration-200 ';
-
-            if (isQCM) {
-              if (isIntrus) {
-                className += 'line-through ';
-                style = { background: 'rgba(239,71,111,0.12)', border: '2px solid #EF476F', color: '#EF476F' };
-              } else {
-                style = { background: 'rgba(6,214,160,0.08)', border: '2px solid rgba(6,214,160,0.3)', color: '#059669' };
-              }
-            } else {
-              style = { background: '#f9f9ff', border: '2px solid #e5e7eb', color: '#2D2D3A' };
-              className += 'hover:border-primary hover:bg-primary/5 cursor-pointer ';
-            }
+            // Pendant le QCM : l'intrus trouvé reste surligné en jaune et barré ;
+            // les autres mots restent à l'état normal (texte adouci).
+            const barre = isQCM && mot === motSelectionne;
 
             return (
-              <motion.button
+              <BoutonMot
                 key={mot}
-                whileTap={!isQCM ? { scale: 0.95 } : {}}
+                etat={barre ? 'selectionne' : 'normal'}
                 onClick={() => handleClicMot(mot)}
                 disabled={isQCM}
-                className={className}
-                style={style}
+                className={`max-w-full break-words ${barre ? 'line-through decoration-2' : ''} ${isQCM && !isIntrus ? 'text-encre-doux' : ''} ${isQCM ? '' : 'cursor-pointer'}`}
               >
                 {mot}
-              </motion.button>
+              </BoutonMot>
             );
           })}
         </div>
@@ -371,26 +296,25 @@ export const ChasseurDIntrus: React.FC = () => {
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              className="mt-4 text-sm font-bold text-error text-center"
+              role="status"
+              className="mt-4 text-center text-base font-bold text-faux-fonce"
             >
-              ⚠️ {erreurIntrus}
+              <span aria-hidden="true" className="font-titre">✗ </span>{erreurIntrus}
             </motion.div>
           )}
         </AnimatePresence>
 
         {mancheEchouee && (
           <div className="mt-5 text-center">
-            <p className="text-error font-bold mb-3">Manche échouée !</p>
-            <button
-              onClick={passerALaSuite}
-              className="text-white font-black px-6 py-2.5 rounded-2xl active:scale-95 transition-all"
-              style={{ background: EX.gradient, boxShadow: EX.shadow }}
-            >
+            <p className="mb-3 text-base font-bold text-faux-fonce">
+              <span aria-hidden="true" className="font-titre">✗ </span>Manche échouée !
+            </p>
+            <Bouton onClick={passerALaSuite}>
               Passer à la suite →
-            </button>
+            </Bouton>
           </div>
         )}
-      </div>
+      </Carte>
 
       {/* Step 2: QCM */}
       <AnimatePresence>
@@ -398,16 +322,10 @@ export const ChasseurDIntrus: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white rounded-3xl p-6 shadow-card"
+            className={`${classesCarte} p-4 md:p-6`}
           >
-            <h3
-              className="text-lg font-fredoka font-semibold mb-4 flex items-center gap-2"
-              style={{ color: EX.color }}
-            >
-              <span
-                className="w-7 h-7 rounded-full text-sm flex items-center justify-center text-white"
-                style={{ background: EX.gradient }}
-              >
+            <h3 className="mb-4 flex items-center gap-2 font-titre text-lg text-encre">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-encre bg-jaune text-base text-encre">
                 2
               </span>
               Quel est le point commun des autres mots ?
@@ -415,15 +333,13 @@ export const ChasseurDIntrus: React.FC = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {optionsQCM.map((opt) => (
-                <motion.button
+                <BoutonMot
                   key={opt}
-                  whileTap={{ scale: 0.97 }}
                   onClick={() => handleClicQCM(opt)}
-                  className="p-4 rounded-2xl text-ink font-bold text-left transition-all border-2 border-gray-100 hover:border-primary hover:bg-primary/5"
-                  style={{ background: '#f9f9ff' }}
+                  className="w-full justify-start p-4 text-left text-base font-bold"
                 >
                   {opt}
-                </motion.button>
+                </BoutonMot>
               ))}
             </div>
 
@@ -433,9 +349,10 @@ export const ChasseurDIntrus: React.FC = () => {
                   initial={{ opacity: 0, y: -8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
-                  className="mt-4 text-sm font-bold text-error text-center"
+                  role="status"
+                  className="mt-4 text-center text-base font-bold text-faux-fonce"
                 >
-                  ⚠️ {erreurQCM}
+                  <span aria-hidden="true" className="font-titre">✗ </span>{erreurQCM}
                 </motion.div>
               )}
             </AnimatePresence>
