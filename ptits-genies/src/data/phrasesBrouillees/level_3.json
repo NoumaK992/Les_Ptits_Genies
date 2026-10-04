@@ -153,5 +153,470 @@
       { "number": 3, "answerLetter": "C" },
       { "number": 4, "answerLetter": "D" }
     ]
+  },
+  {
+    "id": "pb-l3-006",
+    "title": "La découverte de Lascaux",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "En septembre 1940, quatre adolescents se promenaient sur une colline boisée, près de Montignac, en Dordogne. Ils avaient entendu parler d'un trou mystérieux, apparu quelques années plus tôt au pied d'un arbre déraciné. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Au bout de ce passage, ils débouchèrent dans une vaste salle dont les parois semblaient couvertes de taches colorées. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Conscients de l'importance de leur trouvaille, les garçons prévinrent leur ancien instituteur, qui alerta à son tour des spécialistes de la préhistoire. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Ouverte au public après la guerre, la grotte attira des foules si nombreuses que leur respiration finit par abîmer les peintures. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Ainsi, ces quatre promeneurs curieux ont permis de révéler au monde l'un des plus beaux témoignages laissés par nos lointains ancêtres." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Ces derniers confirmèrent que les peintures dataient de plusieurs milliers d'années et que la grotte constituait un trésor exceptionnel de l'art préhistorique." },
+      { "letter": "B", "text": "Les adolescents gardèrent leur découverte secrète pendant plus de trente ans, sans jamais en parler à quiconque, pas même à leurs parents." },
+      { "letter": "C", "text": "Armés d'une lampe rudimentaire, ils décidèrent d'agrandir l'ouverture, puis se glissèrent l'un après l'autre dans un étroit boyau qui descendait vers l'obscurité." },
+      { "letter": "D", "text": "Pour les protéger, les autorités décidèrent de la fermer en 1963 et firent réaliser plus tard une copie fidèle, que l'on peut visiter aujourd'hui." },
+      { "letter": "E", "text": "La salle était entièrement vide, et ses murs de pierre grise ne portaient aucune trace de dessin ni de gravure." },
+      { "letter": "F", "text": "En levant leur lampe, ils comprirent qu'il s'agissait de chevaux, de taureaux et de cerfs, peints avec une précision et une vivacité extraordinaires." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "A" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-007",
+    "title": "Préparer un marathon",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Courir un marathon, soit un peu plus de quarante-deux kilomètres, demande une longue préparation, même pour un sportif habitué à l'effort. La plupart des entraîneurs recommandent un programme de plusieurs mois, organisé en étapes progressives. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Une fois cette base acquise, le coureur allonge peu à peu la distance de sa sortie hebdomadaire la plus longue. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " L'alimentation joue également un rôle décisif, car un muscle privé de carburant s'épuise bien avant la ligne d'arrivée. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Enfin, les deux dernières semaines sont consacrées à une diminution volontaire de l'entraînement. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Le marathon récompense donc moins le talent pur que la patience, la régularité et l'écoute de son propre corps." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Pour progresser plus vite, la plupart des spécialistes conseillent de courir la distance complète chaque jour, dès la toute première semaine d'entraînement." },
+      { "letter": "B", "text": "Cette sortie, parcourue à une allure tranquille, lui apprend à gérer ses réserves d'énergie et à rester concentré pendant plusieurs heures d'affilée." },
+      { "letter": "C", "text": "Ce repos relatif permet aux muscles de récupérer complètement, si bien que le coureur se présente au départ reposé, confiant et prêt à donner le meilleur de lui-même." },
+      { "letter": "D", "text": "Au début, il s'agit surtout d'habituer le corps à courir régulièrement, en alternant des sorties lentes et des jours de repos destinés à éviter les blessures." },
+      { "letter": "E", "text": "La veille de la course, mieux vaut goûter un plat épicé que l'on ne connaît pas encore, afin de se donner du courage." },
+      { "letter": "F", "text": "C'est pourquoi les marathoniens testent à l'entraînement les boissons et les aliments qu'ils consommeront le jour de la course, afin d'éviter toute mauvaise surprise." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "F" },
+      { "number": 4, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l3-008",
+    "title": "Le cycle de l'eau",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "L'eau présente sur Terre circule sans cesse entre les océans, l'atmosphère et les continents. Ce voyage permanent, appelé cycle de l'eau, est entretenu par l'énergie du Soleil. Il comprend plusieurs étapes, qui s'enchaînent toujours dans le même ordre. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " En s'élevant, cette vapeur rencontre des couches d'air de plus en plus froides. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Lorsque ces gouttelettes deviennent trop lourdes, elles retombent sous forme de pluie, de neige ou de grêle. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Tôt ou tard, l'eau finit par regagner l'océan, où le cycle peut recommencer. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Cette ressource circule donc depuis toujours, mais sa qualité dépend en grande partie de la manière dont les humains la protègent." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Elle se transforme alors en minuscules gouttelettes qui, en se rassemblant par milliards, forment les nuages que nous observons dans le ciel." },
+      { "letter": "B", "text": "La pluie tombe uniquement au-dessus des océans, si bien que les continents ne reçoivent jamais la moindre goutte d'eau venue du ciel." },
+      { "letter": "C", "text": "Comme ce mouvement ne s'arrête jamais, l'eau que nous buvons aujourd'hui a peut-être déjà traversé des nuages, des glaciers ou des rivières il y a des millions d'années." },
+      { "letter": "D", "text": "En montant, la vapeur se réchauffe de plus en plus et finit par devenir un gaz brûlant qui ne retombe jamais sur le sol." },
+      { "letter": "E", "text": "Sous l'effet de la chaleur, une partie de l'eau des mers, des lacs et des rivières s'évapore et monte dans l'air sous forme de vapeur invisible." },
+      { "letter": "F", "text": "Une partie de cette eau ruisselle à la surface du sol et rejoint les cours d'eau, tandis qu'une autre s'infiltre lentement dans la terre pour alimenter les nappes souterraines." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "E" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "F" },
+      { "number": 4, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l3-009",
+    "title": "Lettre de Québec",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Chère Camille, je profite de ce dimanche pluvieux pour répondre enfin à ta dernière lettre, qui m'a beaucoup amusé. Tu me demandais comment se déroule l'hiver ici, à Québec, et je t'avoue que la réponse risque de te surprendre. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Malgré ce froid, la vie continue normalement, car les habitants y sont parfaitement préparés. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Le week-end dernier, mon père m'a emmené pêcher sur un lac complètement gelé. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Tu vois que l'hiver québécois a aussi ses plaisirs, même pour un pêcheur aussi malchanceux que moi. Et je ne te parle même pas des batailles de boules de neige à la récréation, qui durent souvent jusqu'à la sonnerie ! " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " J'attends ta réponse avec impatience. Amitiés, Félix" }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Chaque matin, des chasse-neige dégagent les rues avant l'aube, et personne ne sortirait sans bottes fourrées, bonnet épais et grosses mitaines." },
+      { "letter": "B", "text": "Raconte-moi à ton tour comment se passe l'hiver en Bretagne, et dis-moi surtout s'il vous arrive, de temps en temps, de voir tomber quelques flocons." },
+      { "letter": "C", "text": "Ce jour-là, nous avons rapporté tant de poissons que nous en avons offert à tous les voisins de la rue." },
+      { "letter": "D", "text": "Depuis le début du mois de décembre, la température ne dépasse presque jamais zéro degré, et la neige recouvre les trottoirs jusqu'au printemps." },
+      { "letter": "E", "text": "Nous avons percé un trou dans la glace, puis nous avons attendu des heures dans une petite cabane chauffée, sans attraper autre chose qu'un minuscule poisson." },
+      { "letter": "F", "text": "Ici, l'hiver est si doux que nous passons nos journées en short sur la plage, sous un soleil brûlant." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "E" },
+      { "number": 4, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l3-010",
+    "title": "L'imprimerie de Gutenberg",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Au Moyen Âge, en Europe, les livres étaient rares et extrêmement coûteux. Chaque exemplaire devait être recopié à la main, souvent par des moines, ce qui pouvait demander plusieurs mois de travail. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Vers 1450, à Mayence, en Allemagne, un orfèvre nommé Johannes Gutenberg mit au point une méthode qui allait bouleverser cette situation. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Une fois la page composée, on l'encrait et on la pressait sur une feuille grâce à une presse inspirée de celles qui servaient à écraser le raisin. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Grâce à cette invention, les livres devinrent beaucoup moins chers et circulèrent bien plus largement dans toute l'Europe. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " C'est pourquoi on considère souvent l'imprimerie comme l'une des inventions qui ont le plus transformé l'histoire de l'humanité." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Gutenberg imprimait ses livres à l'aide d'un ordinateur relié à une grande imprimante électrique, qu'il avait conçue dans son atelier." },
+      { "letter": "B", "text": "Ensuite, il suffisait de démonter les lettres pour les réutiliser dans une nouvelle page, ce qui faisait gagner un temps considérable aux imprimeurs." },
+      { "letter": "C", "text": "Par conséquent, seuls les monastères, les universités et quelques familles très riches avaient les moyens de posséder une véritable bibliothèque." },
+      { "letter": "D", "text": "Malgré cette invention, les livres restèrent aussi rares qu'avant, et personne ne voulut jamais utiliser la nouvelle méthode." },
+      { "letter": "E", "text": "Cette diffusion rapide des textes favorisa le partage des connaissances et contribua, peu à peu, à rendre la lecture accessible à un public de plus en plus large." },
+      { "letter": "F", "text": "Son idée consistait à fabriquer en métal des caractères mobiles, c'est-à-dire de petites lettres séparées que l'on pouvait assembler pour former des mots, puis des pages entières." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "B" },
+      { "number": 4, "answerLetter": "E" }
+    ]
+  },
+  {
+    "id": "pb-l3-011",
+    "title": "Le déménagement",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Le jour où ses parents lui annoncèrent qu'ils allaient quitter Lyon pour s'installer à Brest, Yasmine eut l'impression que le sol se dérobait sous ses pieds. Elle allait devoir laisser derrière elle son collège, son club de handball et surtout Clara, sa meilleure amie depuis l'école maternelle. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Ce fut finalement Clara qui trouva les mots justes, un soir où elles se promenaient le long des quais. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Un peu rassurée, Yasmine accepta de préparer ses cartons, même si chaque objet emballé lui rappelait un souvenir. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À Brest, les premières semaines furent difficiles, car Yasmine ne connaissait personne et le vent soufflait presque sans arrêt. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Ce soir-là, en racontant sa journée à Clara au téléphone, Yasmine s'aperçut avec étonnement qu'elle avait souri pendant tout l'appel." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Elle lui fit remarquer qu'elles pourraient s'appeler chaque soir et qu'elle viendrait lui rendre visite dès les prochaines vacances d'été." },
+      { "letter": "B", "text": "Ravie à l'idée de partir, Yasmine commença aussitôt à faire ses valises en chantant, sans même penser à prévenir Clara." },
+      { "letter": "C", "text": "Pourtant, lors de son premier entraînement de handball, une joueuse de son âge vint spontanément lui proposer de rentrer à pied avec son groupe d'amies." },
+      { "letter": "D", "text": "Pendant plusieurs jours, elle refusa d'en parler et s'enferma dans sa chambre, persuadée que personne ne comprenait ce qu'elle ressentait." },
+      { "letter": "E", "text": "Dès son arrivée à Brest, Yasmine se fit tant d'amis qu'elle oublia complètement d'appeler Clara." },
+      { "letter": "F", "text": "Le jour du départ, les deux amies se serrèrent longuement dans les bras, en se promettant de ne jamais laisser passer une semaine sans nouvelles." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "F" },
+      { "number": 4, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l3-012",
+    "title": "Les abeilles en danger",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Les abeilles jouent un rôle essentiel dans la nature, bien au-delà de la production de miel. En butinant les fleurs pour se nourrir, elles transportent sans le savoir le pollen d'une plante à l'autre. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les spécialistes estiment qu'une grande partie des cultures destinées à notre alimentation dépend, au moins en partie, de ces insectes pollinisateurs. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Or, depuis plusieurs décennies, les populations d'abeilles diminuent de manière inquiétante dans de nombreuses régions du monde. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Face à cette menace, chacun peut agir à son échelle, même en ville et sans posséder de grand jardin. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Protéger les abeilles revient finalement à protéger une partie de notre propre alimentation." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Les chercheurs attribuent ce déclin à plusieurs causes combinées, notamment certains pesticides, la disparition des haies fleuries et la propagation de parasites." },
+      { "letter": "B", "text": "Ce transport, appelé pollinisation, permet aux plantes de produire des fruits et des graines, et donc de se reproduire." },
+      { "letter": "C", "text": "Heureusement, le nombre d'abeilles augmente chaque année partout dans le monde, si bien que les scientifiques ne s'inquiètent plus du tout." },
+      { "letter": "D", "text": "Semer des fleurs sauvages sur un balcon, éviter les produits chimiques au jardin ou installer un hôtel à insectes offre par exemple un refuge précieux aux pollinisateurs." },
+      { "letter": "E", "text": "Les abeilles évitent soigneusement les fleurs et se nourrissent uniquement des feuilles des arbres fruitiers." },
+      { "letter": "F", "text": "Sans eux, les étals des marchés seraient beaucoup moins variés, car de nombreux fruits et légumes, comme les pommes, les courgettes ou les fraises, deviendraient rares." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "A" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-013",
+    "title": "L'énigme du gâteau disparu",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Mercredi après-midi, au centre de loisirs, le gâteau préparé pour l'anniversaire de Mme Dupuis avait disparu de la cuisine. Il ne restait sur la table qu'une assiette vide et quelques miettes de chocolat. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Trois noms figuraient sur sa liste : Kevin, qui était venu chercher de l'eau, Lina, qui avait rapporté des ciseaux, et Maxence, qui affirmait n'avoir rien vu. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Elle suivit ces indices jusqu'au fond du jardin, où se trouvait la cabane à outils, dont la porte était entrouverte. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Pris sur le fait, les trois garçons expliquèrent qu'ils voulaient seulement décorer le gâteau en secret pour faire une surprise à Mme Dupuis. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Quelques heures plus tard, Mme Dupuis souffla ses bougies, sans se douter de l'enquête qui avait agité le centre de loisirs." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Salomé referma son carnet en souriant et promit de garder le secret jusqu'au goûter, à condition de pouvoir les aider à terminer la décoration." },
+      { "letter": "B", "text": "Comme la porte du jardin était fermée à clé depuis le matin, Salomé en conclut que personne n'était sorti de la cuisine par là." },
+      { "letter": "C", "text": "En observant le sol de plus près, Salomé remarqua une traînée de miettes qui partait de la table et se dirigeait tout droit vers la porte du jardin." },
+      { "letter": "D", "text": "Bien décidée à résoudre ce mystère, Salomé sortit son carnet et commença par noter qui était entré dans la cuisine depuis le déjeuner." },
+      { "letter": "E", "text": "Salomé décida de ne pas s'occuper de cette histoire et partit jouer au ballon avec ses amis." },
+      { "letter": "F", "text": "À l'intérieur, elle découvrit Maxence et deux camarades penchés sur le gâteau, qu'ils couvraient de crème et de petits bonbons colorés." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "C" },
+      { "number": 3, "answerLetter": "F" },
+      { "number": 4, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l3-014",
+    "title": "Une nuit en refuge",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "À la fin du mois de juillet, Mathis et son oncle entreprirent l'ascension d'un sommet des Alpes, qu'ils comptaient atteindre en deux jours. Le premier jour, ils marchèrent pendant six heures avant d'atteindre un refuge perché à plus de deux mille mètres d'altitude. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le soir, une vingtaine de marcheurs se retrouvèrent autour de longues tables pour partager une soupe brûlante. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Obéissant à ce conseil, Mathis et son oncle se levèrent à quatre heures du matin et quittèrent le refuge à la lueur de leurs lampes frontales. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Ils ne s'attardèrent pourtant pas, car de gros nuages sombres commençaient déjà à s'accumuler à l'horizon. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Mathis comprit alors que l'écoute des conseils du gardien était aussi importante que la force des jambes." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le refuge étant fermé pour l'été, ils durent dormir sous une tente plantée au bord du chemin, loin des autres randonneurs." },
+      { "letter": "B", "text": "Ils atteignirent le sommet au lever du soleil et contemplèrent un instant les vallées encore plongées dans la brume, loin au-dessous d'eux." },
+      { "letter": "C", "text": "Épuisé mais heureux, Mathis déposa son sac à l'entrée, retira ses chaussures de marche et enfila les chaussons mis à disposition des randonneurs." },
+      { "letter": "D", "text": "Vers midi, alors qu'ils venaient tout juste de rejoindre la vallée, les premiers coups de tonnerre retentirent au-dessus des montagnes." },
+      { "letter": "E", "text": "Ignorant les recommandations, ils décidèrent de dormir jusqu'à midi pour profiter pleinement de leur nuit au refuge." },
+      { "letter": "F", "text": "Le gardien du refuge en profita pour annoncer qu'un orage était prévu pour le lendemain après-midi et conseilla à chacun de partir très tôt." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "B" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-015",
+    "title": "Faire son pain",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Faire son propre pain demande peu d'ingrédients, mais beaucoup de patience. Il faut simplement de la farine, de l'eau tiède, un peu de sel et de la levure de boulanger. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Lorsque la pâte devient trop épaisse pour la cuillère, on la pose sur le plan de travail fariné. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Vient ensuite l'étape la plus surprenante : le repos, pendant lequel il suffit d'attendre sans toucher à rien. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " On façonne ensuite la boule de pâte en forme de pain, on trace quelques entailles sur le dessus avec une lame, puis on l'enfourne dans un four bien chaud. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Il reste alors à patienter encore un peu, car un pain trop chaud se coupe mal et perd une partie de sa saveur." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Couverte d'un torchon et placée dans un endroit chaud, la pâte double de volume en une heure environ, car la levure produit un gaz qui la fait gonfler." },
+      { "letter": "B", "text": "Pour gagner du temps, on peut placer la pâte au congélateur, où elle gonflera deux fois plus vite qu'à température ambiante." },
+      { "letter": "C", "text": "Dans un grand saladier, on commence par délayer la levure dans l'eau tiède, puis on ajoute peu à peu la farine et le sel en mélangeant avec une cuillère en bois." },
+      { "letter": "D", "text": "Il faut alors la pétrir pendant une dizaine de minutes, en l'étirant et en la repliant sur elle-même jusqu'à ce qu'elle devienne lisse et élastique." },
+      { "letter": "E", "text": "Au bout de trente-cinq minutes, le pain est doré, et il sonne creux lorsqu'on tapote le dessous de sa croûte avec le doigt." },
+      { "letter": "F", "text": "Il est préférable de servir le pain dès sa sortie du four, car il n'est jamais aussi bon que lorsqu'il est brûlant." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "D" },
+      { "number": 3, "answerLetter": "A" },
+      { "number": 4, "answerLetter": "E" }
+    ]
+  },
+  {
+    "id": "pb-l3-016",
+    "title": "La Station spatiale internationale",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "À environ quatre cents kilomètres au-dessus de nos têtes, la Station spatiale internationale tourne autour de la Terre à près de vingt-huit mille kilomètres à l'heure. À cette vitesse, elle accomplit un tour complet de la planète en une heure et demie environ. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Dans la station, tout flotte, car les occupants sont en impesanteur : ni les objets ni les personnes ne restent posés au sol. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Cette absence de pesanteur a aussi des conséquences sur la santé, car les muscles et les os, qui ne supportent plus le poids du corps, s'affaiblissent rapidement. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Enfin, l'eau étant précieuse et coûteuse à acheminer depuis la Terre, rien n'est gaspillé à bord. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " La station constitue ainsi un laboratoire unique, où l'on apprend à vivre loin de la Terre en préparant les futurs voyages vers la Lune ou vers Mars." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Pour cette raison, les astronautes dorment dans des sacs de couchage attachés aux parois, afin de ne pas dériver d'un module à l'autre pendant leur sommeil." },
+      { "letter": "B", "text": "Comme la station reste immobile au-dessus de Paris, les astronautes peuvent observer la tour Eiffel à toute heure du jour et de la nuit." },
+      { "letter": "C", "text": "Des machines récupèrent et purifient presque toute l'eau utilisée, y compris la sueur et l'humidité de l'air, pour la rendre de nouveau potable." },
+      { "letter": "D", "text": "Chaque jour, les membres de l'équipage consacrent donc environ deux heures à des exercices physiques sur des appareils spécialement conçus pour l'espace." },
+      { "letter": "E", "text": "Puisque leurs muscles se renforcent naturellement dans l'espace, les astronautes n'ont besoin d'aucun entraînement sportif pendant leur mission." },
+      { "letter": "F", "text": "Les astronautes qui vivent à son bord voient donc le Soleil se lever et se coucher seize fois par jour, ce qui complique beaucoup la régulation de leur sommeil." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "F" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "D" },
+      { "number": 4, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l3-017",
+    "title": "Le dauphin échoué",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Un matin d'octobre, des promeneurs ont aperçu un jeune dauphin échoué sur une plage de Vendée, à quelques mètres de l'eau. L'animal respirait encore, mais il semblait trop affaibli pour regagner seul la mer. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " En attendant son arrivée, les promeneurs présents sur la plage ont suivi les consignes données au téléphone. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Les secouristes, arrivés comme prévu, ont examiné l'animal avec soin et constaté qu'il ne présentait aucune blessure grave. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Après quelques secondes d'hésitation, le dauphin s'est éloigné vers le large sous les applaudissements des curieux rassemblés sur la plage. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Grâce à cette réaction rapide et à ce travail d'équipe, l'histoire s'est bien terminée." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Malheureusement, les secouristes ne sont jamais venus, et la plage est restée déserte pendant toute la journée." },
+      { "letter": "B", "text": "L'un des promeneurs a aussitôt appelé une association spécialisée dans le secours des mammifères marins, qui a promis d'envoyer une équipe dans l'heure." },
+      { "letter": "C", "text": "Ils ont alors attendu que la marée monte, puis l'ont transporté sur un brancard spécial jusqu'à une zone suffisamment profonde." },
+      { "letter": "D", "text": "Sans attendre personne, les promeneurs ont tiré l'animal par la queue pour le ramener le plus vite possible dans les vagues." },
+      { "letter": "E", "text": "Les secouristes ont toutefois rappelé que, face à un animal échoué, il ne faut jamais tenter de le remettre à l'eau seul, mais toujours prévenir des spécialistes." },
+      { "letter": "F", "text": "Ils ont maintenu la peau du dauphin humide en l'arrosant régulièrement avec de l'eau de mer, tout en veillant à ne jamais couvrir son évent, l'orifice par lequel il respire." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "C" },
+      { "number": 4, "answerLetter": "E" }
+    ]
+  },
+  {
+    "id": "pb-l3-018",
+    "title": "Les oiseaux migrateurs",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Chaque automne, des millions d'oiseaux quittent l'Europe pour passer l'hiver dans des régions plus chaudes, parfois situées à des milliers de kilomètres. Les hirondelles, par exemple, traversent la Méditerranée et le Sahara pour rejoindre l'Afrique. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Pour supporter un tel effort, les oiseaux migrateurs se préparent pendant plusieurs semaines avant le départ. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Ainsi chargés de provisions, ils peuvent parcourir des centaines de kilomètres sans se poser. Les scientifiques se demandent depuis longtemps comment ces voyageurs parviennent à s'orienter sans jamais avoir étudié de carte. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Malgré ces capacités étonnantes, le voyage reste dangereux, car les tempêtes, le manque d'eau et la fatigue font de nombreuses victimes. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Le retour des hirondelles annonce ainsi, depuis toujours, la fin de l'hiver dans nos villages." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "On sait aujourd'hui qu'ils utilisent plusieurs repères à la fois, comme la position du Soleil, celle des étoiles et le champ magnétique de la Terre." },
+      { "letter": "B", "text": "Avant de partir, les oiseaux migrateurs cessent complètement de manger afin d'être plus légers pendant le voyage." },
+      { "letter": "C", "text": "Ce long voyage s'explique avant tout par la nourriture : en hiver, les insectes dont elles se nourrissent deviennent introuvables dans nos campagnes." },
+      { "letter": "D", "text": "Les survivants retrouvent pourtant au printemps la région où ils sont nés, et certains reviennent même nicher sous le même toit d'une année sur l'autre." },
+      { "letter": "E", "text": "Ils mangent davantage que d'habitude et accumulent des réserves de graisse, qui leur serviront de carburant pendant les longues heures de vol." },
+      { "letter": "F", "text": "Les hirondelles restent en Europe tout l'hiver, car elles trouvent sans peine des insectes dans la neige." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "E" },
+      { "number": 3, "answerLetter": "A" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l3-019",
+    "title": "Journal d'un stage",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Lundi 12 décembre. Ce matin, j'ai commencé mon stage d'observation de troisième dans la boulangerie de M. Lefèvre, au coin de ma rue. Mon réveil a sonné à cinq heures, et j'ai bien cru que je n'arriverais jamais à me lever. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " M. Lefèvre m'a d'abord montré comment il prépare les croissants, en repliant plusieurs fois une pâte remplie de beurre. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Vers sept heures, sa femme a ouvert la boutique, et les premiers clients sont arrivés, encore tout endormis. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " L'après-midi, j'ai compris que ce métier exige une organisation rigoureuse, car la préparation du lendemain commence bien avant la fermeture. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Si le réveil n'était pas aussi matinal, je crois que je pourrais devenir boulangère." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Comme la boulangerie était fermée ce jour-là, j'ai passé la matinée à regarder la télévision chez moi." },
+      { "letter": "B", "text": "En entrant dans le fournil, j'ai pourtant oublié ma fatigue, car une délicieuse odeur de pain chaud et de beurre fondu flottait dans toute la pièce." },
+      { "letter": "C", "text": "Je suis rentrée chez moi épuisée, mais j'ai déjà hâte d'être à demain pour essayer de façonner moi-même mes premières baguettes." },
+      { "letter": "D", "text": "Il m'a expliqué que ce geste, répété avec patience, crée les fines couches qui rendent les croissants si légers et si feuilletés." },
+      { "letter": "E", "text": "Il m'a assuré que les croissants se préparent en quelques secondes, sans aucun beurre, avec un simple mélange de farine et d'eau." },
+      { "letter": "F", "text": "Elle m'a laissée rendre la monnaie à une vieille dame, et j'étais tellement concentrée que j'ai compté les pièces trois fois avant de les lui donner." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "D" },
+      { "number": 3, "answerLetter": "F" },
+      { "number": 4, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l3-020",
+    "title": "Le compost du collège",
+    "source": "Création interne",
+    "level": 3,
+    "segments": [
+      { "type": "text", "value": "Au début de l'année, les élèves de l'écocomité ont constaté qu'une grande quantité de nourriture finissait chaque jour à la poubelle de la cantine. Épluchures, restes de pain et trognons de pomme représentaient plusieurs kilos de déchets par repas. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le projet accepté, il a fallu apprendre à composter correctement, car tous les déchets ne conviennent pas. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Chaque semaine, une équipe différente se charge de mélanger le contenu du composteur avec une fourche, afin que l'air circule bien. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Au bout de neuf mois, les élèves ont obtenu un terreau sombre et friable, qui sentait la terre de forêt. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Le projet a si bien fonctionné que deux autres collèges de la ville ont demandé à visiter le composteur pour s'en inspirer." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Les épluchures de fruits et de légumes, le marc de café et les feuilles mortes sont les bienvenus, tandis que la viande, le poisson et les produits laitiers doivent être évités." },
+      { "letter": "B", "text": "Afin que le compost reste propre, il est indispensable de ne jamais le remuer et de le fermer hermétiquement pour empêcher l'air d'entrer." },
+      { "letter": "C", "text": "Ils l'ont utilisé pour nourrir les plantations du potager scolaire, dont les tomates et les courgettes ont poussé avec une vigueur remarquable." },
+      { "letter": "D", "text": "Pour réduire ce gaspillage, ils ont proposé à la direction d'installer un composteur dans un coin du jardin, à l'abri du soleil et du vent." },
+      { "letter": "E", "text": "Cet apport d'oxygène permet aux vers, aux champignons et aux bactéries de décomposer les déchets plus rapidement, sans produire de mauvaises odeurs." },
+      { "letter": "F", "text": "Pour accélérer le processus, les élèves ont décidé d'y jeter également les emballages en plastique et les canettes de la cafétéria." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "E" },
+      { "number": 4, "answerLetter": "C" }
+    ]
   }
 ]

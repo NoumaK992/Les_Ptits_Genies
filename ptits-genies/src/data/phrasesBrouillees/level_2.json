@@ -137,5 +137,422 @@
       { "number": 2, "answerLetter": "B" },
       { "number": 3, "answerLetter": "C" }
     ]
+  },
+  {
+    "id": "pb-l2-006",
+    "title": "Le hérisson du jardin",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Hier soir, la famille Martin a entendu un bruit étrange près de la haie. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " C'était un jeune hérisson, coincé dans un vieux filet de foot. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Une fois libéré, l'animal est resté immobile quelques minutes. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Depuis, les enfants laissent une coupelle d'eau près de la haie chaque soir." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Puis il s'est enfoncé tranquillement dans les buissons, sans se retourner." },
+      { "letter": "B", "text": "Le bruit venait en réalité de la télévision des voisins." },
+      { "letter": "C", "text": "Le père a pris une lampe de poche pour aller voir ce qui se passait." },
+      { "letter": "D", "text": "Le hérisson avait mangé toutes les fraises du potager à midi." },
+      { "letter": "E", "text": "Avec des ciseaux, la mère a coupé les mailles une à une, très prudemment." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "E" },
+      { "number": 3, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l2-007",
+    "title": "Une lettre de Lisbonne",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Chère Inès, me voici à Lisbonne depuis trois jours avec ma famille. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le premier jour, nous avons pris un vieux tramway jaune qui grimpe dans les rues étroites. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Hier, au contraire, nous sommes restés près du fleuve pour visiter une tour ancienne. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Je te rapporterai une surprise. Bises, Clément" }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Du haut de cette tour, on voyait les bateaux passer lentement." },
+      { "letter": "B", "text": "Je suis triste, car nous partons pour Lisbonne seulement l'an prochain." },
+      { "letter": "C", "text": "La ville est construite sur des collines, alors on marche beaucoup." },
+      { "letter": "D", "text": "Il était si penché dans les montées que j'avais peur de tomber en arrière." },
+      { "letter": "E", "text": "Ici, il n'y a ni tramway ni fleuve, seulement des montagnes enneigées." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "D" },
+      { "number": 3, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l2-008",
+    "title": "Les pyramides d'Égypte",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Les pyramides d'Égypte ont été construites il y a plus de quatre mille ans. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Pour les bâtir, des milliers d'ouvriers travaillaient pendant de longues années. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Une fois sur place, ces pierres étaient hissées grâce à des rampes de terre. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À l'intérieur, des couloirs menaient à la chambre funéraire. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Aujourd'hui encore, ces monuments attirent des visiteurs du monde entier." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Au sommet, les derniers blocs étaient posés avec une grande précision." },
+      { "letter": "B", "text": "Les ouvriers ne travaillaient qu'une seule journée pour chaque pyramide." },
+      { "letter": "C", "text": "Elles servaient de tombeaux aux pharaons, les rois de l'Égypte ancienne." },
+      { "letter": "D", "text": "C'est là que reposait le pharaon, entouré d'objets précieux." },
+      { "letter": "E", "text": "Ils taillaient d'énormes blocs de pierre, puis les transportaient sur le Nil." },
+      { "letter": "F", "text": "Les pyramides ont été construites l'an dernier par des machines modernes." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "E" },
+      { "number": 3, "answerLetter": "A" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l2-009",
+    "title": "La salade de fruits",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Pour préparer une salade de fruits, commence par laver soigneusement tous les fruits. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Coupe ensuite les pommes et les poires en petits cubes. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Mélange le tout dans un saladier avec le jus d'un citron. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Sers ta salade bien fraîche, avec une feuille de menthe." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Découpe aussi les bananes et les kiwis en fines rondelles." },
+      { "letter": "B", "text": "Fais cuire les fruits pendant une heure dans une casserole." },
+      { "letter": "C", "text": "Le citron empêche les fruits de noircir et leur donne un goût acidulé." },
+      { "letter": "D", "text": "Épluche les bananes et les kiwis, car leur peau ne se mange pas." },
+      { "letter": "E", "text": "Ajoute trois cuillères de sel pour relever le goût." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l2-010",
+    "title": "Le cross du collège",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Ce vendredi, tous les élèves de cinquième participaient au cross du collège. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Au coup de sifflet, Bilal est parti beaucoup trop vite. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Il a donc ralenti et laissé passer plusieurs coureurs. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Finalement, il a franchi la ligne à la douzième place, épuisé mais heureux." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Dans la dernière côte, il a pourtant retrouvé son souffle et doublé trois élèves." },
+      { "letter": "B", "text": "Bilal a gagné la course avec une minute d'avance sur tout le monde." },
+      { "letter": "C", "text": "Avant le départ, le professeur a conseillé de garder des forces pour la fin." },
+      { "letter": "D", "text": "Le cross a été annulé à cause de la tempête." },
+      { "letter": "E", "text": "Au bout de cinq cents mètres, il avait déjà un point de côté." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "E" },
+      { "number": 3, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l2-011",
+    "title": "Pourquoi les feuilles tombent",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "En automne, beaucoup d'arbres perdent leurs feuilles. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Or, en hiver, le sol est souvent gelé et l'eau devient difficile à puiser. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Avant de tomber, les feuilles changent de couleur. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Une fois au sol, elles se décomposent lentement. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Au printemps, de nouvelles feuilles pousseront sur les branches." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le vert disparaît et laisse voir le jaune, l'orange ou le rouge." },
+      { "letter": "B", "text": "En hiver, les arbres boivent davantage d'eau qu'en été." },
+      { "letter": "C", "text": "Les feuilles laissent échapper beaucoup d'eau par de minuscules trous." },
+      { "letter": "D", "text": "Elles deviennent alors un engrais naturel qui nourrit le sol." },
+      { "letter": "E", "text": "Les sapins, eux, perdent toutes leurs aiguilles dès le mois de septembre." },
+      { "letter": "F", "text": "En perdant ses feuilles, l'arbre économise donc son eau." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "A" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l2-012",
+    "title": "Le panier oublié",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Mardi matin, un chauffeur de bus a découvert un panier sur un siège du fond. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " À l'intérieur, il y avait un chaton endormi sur une couverture. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Le soir même, une jeune femme s'est présentée à l'agence, très inquiète. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le chaton a retrouvé sa maîtresse, et le chauffeur a reçu une boîte de chocolats." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le panier était rempli de pommes et de poires bien mûres." },
+      { "letter": "B", "text": "Elle avait oublié le panier en descendant précipitamment du bus." },
+      { "letter": "C", "text": "Intrigué, il a soulevé le couvercle avec précaution." },
+      { "letter": "D", "text": "Le chauffeur l'a confié à l'agence, où on l'a installé au chaud." },
+      { "letter": "E", "text": "Personne n'est jamais venu réclamer l'animal." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "D" },
+      { "number": 3, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l2-013",
+    "title": "Le message urgent",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Le jeune écuyer Gaspard devait porter un message urgent au château voisin. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Au bout de deux heures, il arriva devant une rivière dont le pont s'était effondré. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Le courant était fort, mais le gué n'était pas profond. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le soir même, le seigneur lisait le message et félicitait le courageux messager." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Gaspard guida son cheval pas à pas jusqu'à l'autre rive." },
+      { "letter": "B", "text": "Le pont, tout neuf, permettait de traverser sans difficulté." },
+      { "letter": "C", "text": "Il longea la rive et découvrit un gué, où l'eau coulait sur des cailloux." },
+      { "letter": "D", "text": "Gaspard décida de rester au château pour se reposer." },
+      { "letter": "E", "text": "Il partit à l'aube, monté sur son cheval gris." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "E" },
+      { "number": 2, "answerLetter": "C" },
+      { "number": 3, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l2-014",
+    "title": "Un potager sur le balcon",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Au printemps, Chloé a décidé de créer un petit potager sur son balcon. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Elle y a semé des radis, du basilic et des tomates cerises. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Malheureusement, en juillet, un violent orage a cassé plusieurs tiges de tomates. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À la fin de l'été, elle a quand même récolté de quoi préparer trois belles salades." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Elle n'a jamais arrosé ses plantes, qui sont toutes mortes en mai." },
+      { "letter": "B", "text": "Chaque soir, elle arrosait ses plantations avec de l'eau de pluie." },
+      { "letter": "C", "text": "Chloé les a attachées à des bâtons pour les aider à se redresser." },
+      { "letter": "D", "text": "Les radis ont poussé en plein hiver, sous la neige." },
+      { "letter": "E", "text": "Elle a d'abord acheté trois grands bacs et un sac de terreau." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "E" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l2-015",
+    "title": "L'expérience du glaçon",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Jules pose deux glaçons identiques dans deux assiettes. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Sur le second, il ne met rien. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Au bout de dix minutes, il compare les deux glaçons. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Il comprend alors pourquoi on sale les routes en hiver." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Celui qui est couvert de sel a beaucoup plus fondu que l'autre." },
+      { "letter": "B", "text": "Jules met les deux assiettes au congélateur pour la nuit." },
+      { "letter": "C", "text": "Sur le premier, il verse une petite cuillère de sel." },
+      { "letter": "D", "text": "Le glaçon salé est resté intact, sans une seule goutte d'eau." },
+      { "letter": "E", "text": "Puis il lance un chronomètre pour mesurer le temps." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "E" },
+      { "number": 3, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l2-016",
+    "title": "Le spectacle de fin d'année",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Depuis janvier, la classe de Mme Roux préparait une pièce de théâtre pour la fin de l'année. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le grand soir, la salle était pleine de parents. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Au milieu de la pièce, Théo a oublié une réplique. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À la fin, les comédiens ont salué sous les applaudissements. " },
+      { "type": "gap", "number": 4 },
+      { "type": "text", "value": " Théo a promis qu'il connaîtrait son texte par cœur l'an prochain." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Théo a récité tout son rôle sans la moindre hésitation." },
+      { "letter": "B", "text": "Heureusement, sa camarade Anaïs lui a soufflé la phrase à voix basse." },
+      { "letter": "C", "text": "Chaque vendredi, les élèves répétaient leurs scènes dans le gymnase." },
+      { "letter": "D", "text": "Plus tard, Théo a remercié Anaïs de l'avoir aidé au bon moment." },
+      { "letter": "E", "text": "Le spectacle s'est déroulé devant une salle complètement vide." },
+      { "letter": "F", "text": "Derrière le rideau, les acteurs avaient le trac et chuchotaient nerveusement." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "F" },
+      { "number": 3, "answerLetter": "B" },
+      { "number": 4, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l2-017",
+    "title": "Le manchot empereur",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Le manchot empereur vit en Antarctique, l'endroit le plus froid de la planète. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Après la ponte, la femelle confie son œuf au mâle et part chercher de la nourriture en mer. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Pendant deux mois, il ne mange rien et se serre contre les autres pour résister au vent. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le petit est alors nourri par ses deux parents." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "La femelle reste avec l'œuf tandis que le mâle part pêcher." },
+      { "letter": "B", "text": "Celui-ci garde l'œuf au chaud sur ses pattes, sous un repli de peau." },
+      { "letter": "C", "text": "Les manchots empereurs construisent leurs nids dans les arbres." },
+      { "letter": "D", "text": "Quand la femelle revient enfin, le poussin vient souvent d'éclore." },
+      { "letter": "E", "text": "Ces oiseaux se reproduisent en plein hiver, sur la banquise." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "E" },
+      { "number": 2, "answerLetter": "B" },
+      { "number": 3, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l2-018",
+    "title": "La panne d'électricité",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Samedi soir, toutes les lumières de l'immeuble se sont éteintes d'un coup. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Grâce à sa lueur, Maya a trouvé des bougies dans le placard de la cuisine. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Toute la famille s'est installée autour de la table pour jouer aux cartes. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Finalement, ils ont presque regretté que la panne ne dure pas plus longtemps." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Vers vingt-deux heures, le courant est revenu au milieu d'une partie." },
+      { "letter": "B", "text": "Pendant ce temps, la télévision diffusait un film passionnant." },
+      { "letter": "C", "text": "Son frère les a allumées et posées sur des soucoupes." },
+      { "letter": "D", "text": "Maya a aussitôt allumé la lampe de poche de son téléphone." },
+      { "letter": "E", "text": "Maya a lu un livre tranquillement sous la grande lampe du salon." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "C" },
+      { "number": 3, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l2-019",
+    "title": "Marie Curie",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "Marie Curie est née en Pologne en 1867. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " À Paris, elle étudie la physique et les mathématiques à la Sorbonne. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Ensemble, ils découvrent deux nouveaux éléments, le polonium et le radium. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Elle reste aujourd'hui l'une des scientifiques les plus célèbres au monde." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Elle y rencontre Pierre Curie, un chercheur qui partage sa passion." },
+      { "letter": "B", "text": "À vingt-quatre ans, elle part s'installer en France pour faire des études." },
+      { "letter": "C", "text": "Marie Curie n'a jamais quitté son village natal." },
+      { "letter": "D", "text": "Ces travaux lui valent deux prix Nobel, en physique puis en chimie." },
+      { "letter": "E", "text": "Elle abandonne les sciences pour devenir chanteuse d'opéra." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l2-020",
+    "title": "Le message dans la bouteille",
+    "source": "Création interne",
+    "level": 2,
+    "segments": [
+      { "type": "text", "value": "En se promenant sur la plage, Lucas a remarqué une bouteille coincée entre deux rochers. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " À l'intérieur, un papier roulé était fermé par un ruban rouge. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Le message, écrit en anglais, venait d'une élève irlandaise. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Depuis, les deux enfants s'écrivent chaque mois." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Il s'est approché et l'a dégagée avec précaution." },
+      { "letter": "B", "text": "La bouteille était vide et complètement cassée." },
+      { "letter": "C", "text": "Lucas a rejeté la bouteille à la mer sans l'ouvrir." },
+      { "letter": "D", "text": "Il a eu du mal à le sortir, car le goulot était étroit." },
+      { "letter": "E", "text": "Elle avait noté son adresse et demandait qu'on lui réponde." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "D" },
+      { "number": 3, "answerLetter": "E" }
+    ]
   }
 ]

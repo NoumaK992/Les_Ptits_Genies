@@ -117,5 +117,366 @@
       { "number": 1, "answerLetter": "A" },
       { "number": 2, "answerLetter": "B" }
     ]
+  },
+  {
+    "id": "pb-l1-006",
+    "title": "Le gâteau au yaourt",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Aujourd'hui, Sami fait un gâteau avec sa grand-mère. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Il verse le yaourt dans un grand saladier. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Sa grand-mère met le moule au four. Une heure plus tard, la cuisine sent bon." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Puis il ajoute le sucre, la farine et les œufs." },
+      { "letter": "B", "text": "Le gâteau est déjà froid et coupé en parts." },
+      { "letter": "C", "text": "D'abord, il se lave les mains avec du savon." },
+      { "letter": "D", "text": "Sami déteste faire la cuisine." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l1-007",
+    "title": "Le chat perdu",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Ce soir, Tom ne trouve plus son chat Pilou. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Il cherche sous le lit et dans le jardin. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Tom le prend dans ses bras, tout content." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Pilou mange tranquillement devant Tom." },
+      { "letter": "B", "text": "Il l'appelle plusieurs fois, mais rien ne bouge." },
+      { "letter": "C", "text": "Tom part à l'école avec son sac." },
+      { "letter": "D", "text": "Enfin, il entend un petit miaou dans le garage." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l1-008",
+    "title": "À la piscine",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Le jeudi, la classe de Jade va à la piscine. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Ensuite, les élèves prennent une douche. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Le maître-nageur leur montre comment flotter sur le dos. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " À la fin, Jade est fatiguée mais très fière." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Puis ils entrent dans l'eau doucement, par l'escalier." },
+      { "letter": "B", "text": "La piscine est fermée pour travaux aujourd'hui." },
+      { "letter": "C", "text": "Jade essaie trois fois et réussit à flotter seule." },
+      { "letter": "D", "text": "Dans le vestiaire, chacun met son maillot de bain." },
+      { "letter": "E", "text": "Jade oublie son maillot et reste sur le banc." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l1-009",
+    "title": "Une lettre de la colonie",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Chère Mamie, je suis bien arrivée en colonie. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Hier, nous avons fait du canoë sur le lac. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Je t'embrasse très fort. Zoé" }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le lac est loin, nous n'y allons jamais." },
+      { "letter": "B", "text": "Je suis tombée dans l'eau, mais j'ai bien ri !" },
+      { "letter": "C", "text": "Je pars en colonie demain matin." },
+      { "letter": "D", "text": "Le voyage en car a duré quatre heures." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l1-010",
+    "title": "Le volcan",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Un volcan est une montagne un peu spéciale. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Quand il se réveille, la lave sort par le cratère. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " En refroidissant, elle devient une roche dure et noire." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Cette lave coule lentement sur les pentes." },
+      { "letter": "B", "text": "La lave est froide comme de la glace." },
+      { "letter": "C", "text": "Un volcan endormi crache de la lave tous les jours." },
+      { "letter": "D", "text": "Sous lui, il y a de la roche fondue très chaude." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l1-011",
+    "title": "Au marché",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Le dimanche, Papa et Lina vont au marché. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le marchand pèse deux kilos de pommes. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Sur le chemin du retour, Lina croque déjà une pomme." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Lina choisit les plus belles pommes rouges." },
+      { "letter": "B", "text": "Le marché est vide, il n'y a aucun stand." },
+      { "letter": "C", "text": "Papa le paie avec un billet de dix euros." },
+      { "letter": "D", "text": "Lina reste à la maison pour faire ses devoirs." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "A" },
+      { "number": 2, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l1-012",
+    "title": "Le lapin de la classe",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Dans la classe, il y a un lapin qui s'appelle Caramel. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Cette semaine, c'est Malik qui s'occupe de lui. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Ensuite, il change la paille de la cage. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Caramel remue alors son petit nez." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Il lui donne d'abord une carotte et de l'eau fraîche." },
+      { "letter": "B", "text": "Caramel est un poisson rouge très calme." },
+      { "letter": "C", "text": "Enfin, il le caresse doucement derrière les oreilles." },
+      { "letter": "D", "text": "Malik a peur des lapins et ne veut pas le toucher." },
+      { "letter": "E", "text": "Chaque semaine, un élève différent le nourrit." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "E" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l1-013",
+    "title": "L'entrée en sixième",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Lundi, Adam entre en sixième. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Dans la cour, il retrouve son ami Hugo. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Le soir, Adam raconte tout à sa mère." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Hugo est malade et reste chez lui." },
+      { "letter": "B", "text": "Ensemble, ils cherchent leur nom sur la liste des classes." },
+      { "letter": "C", "text": "Il a un peu peur, car le collège est très grand." },
+      { "letter": "D", "text": "Adam est en vacances à la mer." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l1-014",
+    "title": "L'orage",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Cet après-midi, le ciel devient tout noir. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Puis la pluie tombe très fort sur le toit. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Une heure après, le soleil revient et un arc-en-ciel apparaît." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Nina regarde les gouttes couler sur la vitre." },
+      { "letter": "B", "text": "Il fait très chaud et le ciel est tout bleu." },
+      { "letter": "C", "text": "Il neige depuis ce matin sur la ville." },
+      { "letter": "D", "text": "Au loin, on entend le tonnerre qui approche." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "D" },
+      { "number": 2, "answerLetter": "A" }
+    ]
+  },
+  {
+    "id": "pb-l1-015",
+    "title": "Le match de basket",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Samedi, l'équipe de Kenza joue un match de basket. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " À une minute de la fin, son équipe perd de deux points. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Grâce à ce panier, l'équipe gagne le match !" }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le match est annulé à cause de la pluie." },
+      { "letter": "B", "text": "Au début, les adversaires marquent beaucoup de paniers." },
+      { "letter": "C", "text": "Kenza regarde le match à la télévision." },
+      { "letter": "D", "text": "Dans la dernière seconde, Kenza marque de très loin." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l1-016",
+    "title": "Chez la dentiste",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Aujourd'hui, Elio a rendez-vous chez la dentiste. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " La dentiste regarde ses dents avec un petit miroir. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Elio repart avec une nouvelle brosse à dents." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Elio oublie son rendez-vous et reste au lit." },
+      { "letter": "B", "text": "La dentiste n'a pas de fauteuil dans son cabinet." },
+      { "letter": "C", "text": "Il s'assoit sur un grand fauteuil blanc." },
+      { "letter": "D", "text": "Elle dit qu'il n'a aucune carie." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l1-017",
+    "title": "Le bonhomme de neige",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Ce matin, la neige recouvre tout le jardin. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Ils roulent une grosse boule pour faire le ventre. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Ensuite, ils posent une petite boule pour la tête. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le bonhomme de neige a l'air de sourire." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Il fait si chaud que la neige fond tout de suite." },
+      { "letter": "B", "text": "Léon et sa sœur mettent vite leurs gants et leurs bonnets." },
+      { "letter": "C", "text": "Léon reste au lit, car il déteste le froid." },
+      { "letter": "D", "text": "Enfin, ils ajoutent une carotte pour le nez." },
+      { "letter": "E", "text": "Elle est si lourde qu'ils doivent pousser à deux." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "E" },
+      { "number": 3, "answerLetter": "D" }
+    ]
+  },
+  {
+    "id": "pb-l1-018",
+    "title": "Les fourmis",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Les fourmis vivent en groupe dans une fourmilière. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Les ouvrières, elles, travaillent sans arrêt. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Ainsi, toute la colonie a de quoi manger." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Chaque fourmi vit seule dans son trou." },
+      { "letter": "B", "text": "Elles ramènent des graines et des miettes." },
+      { "letter": "C", "text": "La reine reste à l'abri et pond des œufs." },
+      { "letter": "D", "text": "Les fourmis ne mangent jamais rien." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "B" }
+    ]
+  },
+  {
+    "id": "pb-l1-019",
+    "title": "Le voyage en train",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Pendant les vacances, Maé prend le train avec son oncle. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Le train part à l'heure. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " À l'arrivée, sa cousine l'attend sur le quai." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Le train est déjà arrivé à la gare." },
+      { "letter": "B", "text": "Ils cherchent leurs places dans le wagon numéro six." },
+      { "letter": "C", "text": "Par la fenêtre, Maé voit défiler des champs et des vaches." },
+      { "letter": "D", "text": "Maé rate le train et rentre chez elle." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "B" },
+      { "number": 2, "answerLetter": "C" }
+    ]
+  },
+  {
+    "id": "pb-l1-020",
+    "title": "La cabane",
+    "source": "Création interne",
+    "level": 1,
+    "segments": [
+      { "type": "text", "value": "Mercredi, Rayan et Lou construisent une cabane dans le bois. " },
+      { "type": "gap", "number": 1 },
+      { "type": "text", "value": " Ils posent ensuite de longues branches contre un arbre. " },
+      { "type": "gap", "number": 2 },
+      { "type": "text", "value": " Pour finir, ils couvrent le toit avec des feuilles. " },
+      { "type": "gap", "number": 3 },
+      { "type": "text", "value": " Le soir, ils montrent leur cabane à leurs parents." }
+    ],
+    "choices": [
+      { "letter": "A", "text": "Lou attache les branches avec une corde." },
+      { "letter": "B", "text": "Ils restent à la maison devant un écran." },
+      { "letter": "C", "text": "D'abord, ils ramassent du bois mort." },
+      { "letter": "D", "text": "Le bois est tout plat, il n'y a aucun arbre." },
+      { "letter": "E", "text": "Il commence à pleuvoir, mais ils restent au sec." }
+    ],
+    "gaps": [
+      { "number": 1, "answerLetter": "C" },
+      { "number": 2, "answerLetter": "A" },
+      { "number": 3, "answerLetter": "E" }
+    ]
   }
 ]
