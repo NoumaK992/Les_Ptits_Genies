@@ -7,8 +7,8 @@ import { useModeParcours } from '@/parcours/useModeParcours'
 import { tauxReussite } from '@/parcours/regles'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcCoupDoeilScore, calcCoupDoeilTimeBonus } from '@/utils/scoring'
-import { SERIES_LIST, getSeriesById } from '@/data/coupDoeil/series'
-import { ThemeHeader, FOND_THEME } from '@/components/exercises/CoupDoeil/ThemeHeader'
+import { getSeriesById, tirerSerie } from '@/data/coupDoeil/series'
+import { ThemeHeader } from '@/components/exercises/CoupDoeil/ThemeHeader'
 import { ColumnDisplay } from '@/components/exercises/CoupDoeil/ColumnDisplay'
 import { CorrectionView } from '@/components/exercises/CoupDoeil/CorrectionView'
 import { Bouton } from '@/components/ui/Bouton'
@@ -28,14 +28,22 @@ type Phase = 'intro' | 'series-select' | 'playing' | 'correction' | 'session-res
 
 const DIFFICULTY_STARS = ['★', '★★', '★★★', '★★★★']
 
+// Les 4 niveaux proposés en jeu libre : une série de ce niveau est tirée au hasard.
+const NIVEAUX = [
+  { difficulte: 1, titre: 'Niveau 1', detail: 'Des mots courts' },
+  { difficulte: 2, titre: 'Niveau 2', detail: 'Des groupes de mots courants' },
+  { difficulte: 3, titre: 'Niveau 3', detail: 'Des groupes de mots plus longs, avec des pièges' },
+  { difficulte: 4, titre: 'Niveau 4', detail: 'De longues expressions' },
+]
+
 export default function CoupDOeilPage() {
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const stopwatch = useStopwatch()
   const { terminerPartie } = useParcoursStore()
   const modeParcours = useModeParcours()
-  // En parcours, la série est imposée (bornée aux séries existantes).
-  const serieParcours = modeParcours ? Math.min(Math.max(modeParcours.difficulte, 1), SERIES_LIST.length) : null
+  // En parcours, une série de la difficulté demandée est tirée une seule fois au montage.
+  const [serieParcours] = useState<number | null>(() => (modeParcours ? tirerSerie(modeParcours.difficulte).id : null))
 
   // En parcours, ni intro ni choix de série : on démarre directement en partie.
   const [phase, setPhase] = useState<Phase>(serieParcours ? 'playing' : 'intro')
@@ -167,34 +175,25 @@ export default function CoupDOeilPage() {
   if (phase === 'series-select') {
     return (
       <div className="max-w-lg mx-auto">
-        <EnTete titre={`${EX.emoji} Choisis ta série`} />
+        <EnTete titre={`${EX.emoji} Choisis ton niveau`} />
 
         <div className="space-y-3">
-          {SERIES_LIST.map((s, i) => (
+          {NIVEAUX.map((n, i) => (
             <motion.button
-              key={s.id}
+              key={n.difficulte}
               type="button"
               whileTap={{ scale: 0.97 }}
               whileHover={{ scale: 1.02, y: -2 }}
-              onClick={() => handleSeriesSelect(s.id)}
+              onClick={() => handleSeriesSelect(tirerSerie(n.difficulte).id)}
               className={`${classesCarte} w-full text-left p-5 hover:shadow-dur-lg transition-shadow focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
             >
-              <div className="flex items-center justify-between gap-2 mb-3">
-                <span className="font-black text-lg text-encre">{s.label}</span>
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="font-black text-lg text-encre">{n.titre}</span>
                 <span className="text-base font-bold text-encre" aria-label={`Difficulté ${i + 1} sur 4`}>
                   {DIFFICULTY_STARS[i]}
                 </span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {(['a', 'b', 'c'] as CoupDoeilThemeKey[]).map((k) => (
-                  <span
-                    key={k}
-                    className={`rounded-lg border-2 border-encre px-2 py-0.5 text-base font-semibold text-encre ${FOND_THEME[k]}`}
-                  >
-                    {k}) {s.themes[k]}
-                  </span>
-                ))}
-              </div>
+              <p className="text-base font-semibold text-encre-doux">{n.detail}</p>
             </motion.button>
           ))}
         </div>
