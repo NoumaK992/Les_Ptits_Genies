@@ -20,6 +20,7 @@ const CoupDOeilPage = React.lazy(() => import('@/pages/CoupDOeilPage'))
 const PhrasesBrouilleesPage = React.lazy(() => import('@/pages/PhrasesBrouilleesPage'))
 const CollectionPage = React.lazy(() => import('@/pages/CollectionPage'))
 const AmiEnnemiPage = React.lazy(() => import('@/pages/AmiEnnemiPage'))
+const ParcoursPage = React.lazy(() => import('@/pages/ParcoursPage'))
 
 export default function App() {
   const { hydrate } = useAuthStore()
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="/exercices/collection-mots" element={<CollectionPage />} />
             <Route path="/exercices/ami-et-ennemi" element={<AmiEnnemiPage />} />
             <Route path="/tableau-de-bord" element={<DashboardPage />} />
+            <Route path="/parcours" element={<ParcoursPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

@@ -8,6 +8,8 @@ import type { ExerciseType } from '@/types'
 import { Bouton } from '@/components/ui/Bouton'
 import { Carte, classesCarte } from '@/components/ui/Carte'
 import { Etiquette } from '@/components/ui/Etiquette'
+import { useParcoursStore } from '@/store/parcoursStore'
+import { NOMS_JEUX, estTermine, jeuDuNiveau } from '@/parcours/regles'
 
 const ALL_EXERCISES: {
   type: ExerciseType
@@ -21,6 +23,7 @@ const ALL_EXERCISES: {
   { type: 'coup-doeil', emoji: '👁️', title: "D'un coup d'œil", to: '/exercices/coup-doeil' },
   { type: 'phrases-brouillees', emoji: '🧩', title: 'Phrases brouillées', to: '/exercices/phrases-brouillees' },
   { type: 'collection', emoji: '🗂️', title: 'Collection de mots', to: '/exercices/collection-mots' },
+  { type: 'ami-ennemi', emoji: '🎯', title: 'Ami et Ennemi', to: '/exercices/ami-et-ennemi' },
 ]
 
 function getRelativeDate(dateStr: string): string {
@@ -45,10 +48,16 @@ export default function HomePage() {
   const { currentUser } = useAuthStore()
   const { progress, sessions, loadProgress } = useProgressStore()
   const navigate = useNavigate()
+  const parcours = useParcoursStore()
 
   useEffect(() => {
-    if (currentUser) loadProgress(currentUser.id)
+    if (currentUser) {
+      loadProgress(currentUser.id)
+      parcours.charger(currentUser.id)
+    }
   }, [currentUser?.id])
+
+  const etatParcours = parcours.userId === currentUser?.id ? parcours.etat : null
 
   const streak = calcStreak(sessions)
 
@@ -91,6 +100,32 @@ export default function HomePage() {
           </span>
         </motion.div>
 
+        {/* Mon parcours : le point d'entrée principal des séances */}
+        <motion.div variants={item}>
+          <Carte className="flex flex-wrap items-center justify-between gap-4 p-5 sm:p-6">
+            <div className="min-w-0">
+              <Etiquette couleur="bleu">🗺️ Mon parcours</Etiquette>
+              {etatParcours && !estTermine(etatParcours) ? (
+                <>
+                  <p className="mt-3 font-titre text-2xl text-encre">Niveau {etatParcours.niveau}</p>
+                  <p className="text-lg text-encre-doux">
+                    {etatParcours.etape === 'boss'
+                      ? `Boss du niveau ${etatParcours.niveau} 👾`
+                      : `Aujourd'hui : ${NOMS_JEUX[jeuDuNiveau(etatParcours.place, etatParcours.niveau)]}`}
+                  </p>
+                </>
+              ) : etatParcours ? (
+                <p className="mt-3 font-titre text-2xl text-encre">Parcours terminé 🏆</p>
+              ) : (
+                <p className="mt-3 font-titre text-2xl text-encre">Commence ton parcours</p>
+              )}
+            </div>
+            <Bouton taille="grand" onClick={() => navigate('/parcours')}>
+              {etatParcours ? 'Continuer ▶' : 'Commencer ▶'}
+            </Bouton>
+          </Carte>
+        </motion.div>
+
         {/* Ligne de stats */}
         <motion.div variants={item} className="grid grid-cols-3 gap-2 sm:gap-3">
           <div className="rounded-2xl border-2 border-encre bg-jaune p-2 text-center shadow-dur-sm sm:p-4">
@@ -113,7 +148,7 @@ export default function HomePage() {
 
           <div className="rounded-2xl border-2 border-encre bg-bleu p-2 text-center shadow-dur-sm sm:p-4">
             <div className="font-titre text-2xl text-encre">
-              {progress.length}/6
+              {progress.length}/{ALL_EXERCISES.length}
             </div>
             <div className="mt-0.5 break-words text-base font-semibold text-encre">
               📚 exercices
