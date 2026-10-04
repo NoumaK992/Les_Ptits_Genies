@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import type { CoupDoeilSeries, CoupDoeilThemeKey } from '@/types'
+import { Bouton } from '@/components/ui/Bouton'
+import { Carte, classesCarte } from '@/components/ui/Carte'
 import { ColumnDisplay } from './ColumnDisplay'
 
 interface Props {
@@ -16,6 +18,8 @@ interface Props {
   onContinue: () => void
 }
 
+const PASTILLE = 'flex items-center gap-1.5 rounded-xl border-2 border-encre px-3 py-2 text-encre shadow-dur-sm'
+
 export function CorrectionView({ series, assignments, seriesScore, stats, onContinue }: Props) {
   return (
     <motion.div
@@ -25,25 +29,25 @@ export function CorrectionView({ series, assignments, seriesScore, stats, onCont
     >
       {/* Stats bar */}
       <div className="flex gap-3 flex-wrap">
-        <div className="flex items-center gap-1.5 bg-green-100 border-2 border-green-300 rounded-xl px-3 py-2">
+        <div className={`${PASTILLE} bg-juste`}>
           <span className="text-lg">✅</span>
-          <span className="font-black text-green-700">{stats.correct}</span>
-          <span className="text-xs font-semibold text-green-600">correct{stats.correct > 1 ? 's' : ''}</span>
+          <span className="font-black">{stats.correct}</span>
+          <span className="text-base font-semibold">correct{stats.correct > 1 ? 's' : ''}</span>
         </div>
-        <div className="flex items-center gap-1.5 bg-orange-100 border-2 border-orange-300 rounded-xl px-3 py-2">
+        <div className={`${PASTILLE} bg-rose-pale`}>
           <span className="text-lg">⚠️</span>
-          <span className="font-black text-orange-700">{stats.missed}</span>
-          <span className="text-xs font-semibold text-orange-600">manqué{stats.missed > 1 ? 's' : ''}</span>
+          <span className="font-black">{stats.missed}</span>
+          <span className="text-base font-semibold">manqué{stats.missed > 1 ? 's' : ''}</span>
         </div>
-        <div className="flex items-center gap-1.5 bg-red-100 border-2 border-red-300 rounded-xl px-3 py-2">
+        <div className={`${PASTILLE} bg-faux`}>
           <span className="text-lg">❌</span>
-          <span className="font-black text-red-700">{stats.wrong + stats.falseAlarms}</span>
-          <span className="text-xs font-semibold text-red-600">erreur{stats.wrong + stats.falseAlarms > 1 ? 's' : ''}</span>
+          <span className="font-black">{stats.wrong + stats.falseAlarms}</span>
+          <span className="text-base font-semibold">erreur{stats.wrong + stats.falseAlarms > 1 ? 's' : ''}</span>
         </div>
         {stats.perfect && (
-          <div className="flex items-center gap-1.5 bg-yellow-100 border-2 border-yellow-400 rounded-xl px-3 py-2">
+          <div className={`${PASTILLE} bg-jaune`}>
             <span className="text-lg">⭐</span>
-            <span className="font-black text-yellow-700">Parfait ! +60</span>
+            <span className="font-black">Parfait ! +60</span>
           </div>
         )}
       </div>
@@ -53,31 +57,27 @@ export function CorrectionView({ series, assignments, seriesScore, stats, onCont
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-        className="bg-white rounded-2xl shadow p-4 flex items-center justify-between"
+        className={`${classesCarte} p-4 flex flex-wrap items-center justify-between gap-2`}
       >
-        <span className="font-black text-ink text-lg">Score de la série</span>
-        <span className="font-black text-2xl text-primary">{seriesScore} pts</span>
+        <span className="font-black text-encre text-lg">Score de la série</span>
+        <span className="font-titre text-2xl text-encre">{seriesScore} pts</span>
       </motion.div>
 
       {/* Corrected columns */}
-      <div className="bg-white rounded-2xl shadow p-4">
-        <h4 className="font-black text-ink mb-3 text-sm">Correction :</h4>
+      <Carte className="p-4">
+        <h4 className="font-black text-encre mb-3 text-base">Correction :</h4>
         <ColumnDisplay
           columns={series.columns}
           assignments={assignments}
           onAssign={() => {}}
           mode="correction"
         />
-      </div>
+      </Carte>
 
       {/* Continue */}
-      <motion.button
-        whileTap={{ scale: 0.97 }}
-        onClick={onContinue}
-        className="w-full bg-primary text-white font-black py-4 rounded-2xl shadow-lg hover:bg-primary/90 transition-colors"
-      >
+      <Bouton taille="grand" onClick={onContinue} className="w-full">
         Voir mes résultats
-      </motion.button>
+      </Bouton>
     </motion.div>
   )
 }

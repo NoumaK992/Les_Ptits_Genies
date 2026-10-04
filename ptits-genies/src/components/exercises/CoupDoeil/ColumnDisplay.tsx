@@ -15,7 +15,7 @@ export function ColumnDisplay({ columns, assignments, onAssign, mode }: Props) {
         <div key={colIdx} className="flex-1 relative min-w-0">
           {/* Vertical guide line */}
           <div
-            className="absolute top-0 bottom-0 bg-gray-400 pointer-events-none"
+            className="absolute top-0 bottom-0 bg-encre/30 pointer-events-none"
             style={{ left: '50%', width: '1px', transform: 'translateX(-50%)', zIndex: 0 }}
           />
           {/* Words */}

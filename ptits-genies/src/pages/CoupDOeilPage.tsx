@@ -1,23 +1,21 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { useStopwatch } from '@/hooks/useStopwatch'
 import { calcCoupDoeilScore, calcCoupDoeilTimeBonus } from '@/utils/scoring'
 import { SERIES_LIST, getSeriesById } from '@/data/coupDoeil/series'
-import { ThemeHeader } from '@/components/exercises/CoupDoeil/ThemeHeader'
+import { ThemeHeader, FOND_THEME } from '@/components/exercises/CoupDoeil/ThemeHeader'
 import { ColumnDisplay } from '@/components/exercises/CoupDoeil/ColumnDisplay'
 import { CorrectionView } from '@/components/exercises/CoupDoeil/CorrectionView'
-import { StopwatchDisplay } from '@/components/exercises/WordSearch/TimerCircle'
+import { Bouton } from '@/components/ui/Bouton'
+import { Carte, classesCarte } from '@/components/ui/Carte'
+import { EnTete } from '@/components/ui/EnTete'
+import { EcranFin } from '@/components/ui/EcranFin'
 import type { CoupDoeilThemeKey } from '@/types'
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
-  gradient: 'linear-gradient(135deg, #06D6A0 0%, #059669 100%)',
-  shadow: '0 8px 28px rgba(6, 214, 160, 0.40)',
-  color: '#059669',
-  bgLight: 'rgba(6, 214, 160, 0.10)',
   emoji: '👁️',
   title: "D'un seul coup d'œil",
 }
@@ -27,7 +25,6 @@ type Phase = 'intro' | 'series-select' | 'playing' | 'correction' | 'session-res
 const DIFFICULTY_STARS = ['★', '★★', '★★★', '★★★★']
 
 export default function CoupDOeilPage() {
-  const navigate = useNavigate()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const stopwatch = useStopwatch()
@@ -101,25 +98,25 @@ export default function CoupDOeilPage() {
   // ── Intro ─────────────────────────────────────────────────────────────
   if (phase === 'intro') {
     return (
-      <div className="max-w-lg mx-auto text-center py-10">
+      <div className="max-w-lg mx-auto">
+        <EnTete titre={EX.title} />
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: 'spring', bounce: 0.5 }}
+          className="text-center"
         >
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-24 h-24 mx-auto rounded-3xl flex items-center justify-center text-5xl mb-6"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
+            className="w-24 h-24 mx-auto rounded-2xl border-2 border-encre bg-bleu shadow-dur flex items-center justify-center text-5xl mb-4"
           >
             {EX.emoji}
           </motion.div>
-          <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">{EX.title}</h2>
-          <p className="text-gray-500 font-semibold mb-8">Exploite ton champ de vision !</p>
+          <p className="text-lg text-encre-doux font-semibold mb-6">Exploite ton champ de vision !</p>
         </motion.div>
 
-        <div className="bg-white rounded-3xl p-6 shadow-card mb-6 text-left space-y-4">
+        <Carte className="p-6 mb-6 text-left space-y-4">
           {[
             { icon: '👀', text: 'Lis chaque colonne du regard, de haut en bas, le long du trait central.' },
             { icon: '🏷️', text: 'Clique sur un mot pour lui attribuer la catégorie a, b ou c.' },
@@ -128,18 +125,16 @@ export default function CoupDOeilPage() {
           ].map(({ icon, text }) => (
             <div key={icon} className="flex items-start gap-3">
               <span className="text-xl shrink-0">{icon}</span>
-              <span className="text-sm font-semibold text-ink">{text}</span>
+              <span className="text-base font-semibold text-encre">{text}</span>
             </div>
           ))}
-        </div>
+        </Carte>
 
-        <button
-          onClick={() => setPhase('series-select')}
-          className="text-white font-black px-10 py-4 rounded-2xl text-xl active:scale-95 transition-all"
-          style={{ background: EX.gradient, boxShadow: EX.shadow }}
-        >
-          C'est parti !
-        </button>
+        <div className="text-center">
+          <Bouton taille="grand" onClick={() => setPhase('series-select')}>
+            C'est parti !
+          </Bouton>
+        </div>
       </div>
     )
   }
@@ -148,38 +143,33 @@ export default function CoupDOeilPage() {
   if (phase === 'series-select') {
     return (
       <div className="max-w-lg mx-auto">
-        <div className="flex items-center gap-4 mb-6">
-          <div
-            className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-            style={{ background: EX.gradient }}
-          >
-            {EX.emoji}
-          </div>
-          <h2 className="text-xl font-fredoka font-semibold text-ink">Choisis ta série</h2>
-        </div>
+        <EnTete titre={`${EX.emoji} Choisis ta série`} />
 
         <div className="space-y-3">
           {SERIES_LIST.map((s, i) => (
             <motion.button
               key={s.id}
+              type="button"
               whileTap={{ scale: 0.97 }}
               whileHover={{ scale: 1.02, y: -2 }}
               onClick={() => handleSeriesSelect(s.id)}
-              className="w-full text-left bg-white rounded-2xl p-5 shadow-card hover:shadow-card-hover transition-all"
+              className={`${classesCarte} w-full text-left p-5 hover:shadow-dur-lg transition-shadow focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
             >
-              <div className="flex items-center justify-between mb-2">
-                <span className="font-black text-ink">{s.label}</span>
-                <span className="text-yellow-500 text-sm font-bold">{DIFFICULTY_STARS[i]}</span>
+              <div className="flex items-center justify-between gap-2 mb-3">
+                <span className="font-black text-lg text-encre">{s.label}</span>
+                <span className="text-base font-bold text-encre" aria-label={`Difficulté ${i + 1} sur 4`}>
+                  {DIFFICULTY_STARS[i]}
+                </span>
               </div>
-              <div className="flex flex-wrap gap-x-4 gap-y-1">
-                {(['a', 'b', 'c'] as CoupDoeilThemeKey[]).map((k) => {
-                  const colors: Record<CoupDoeilThemeKey, string> = { a: EX.color, b: '#2563eb', c: '#f59e0b' }
-                  return (
-                    <span key={k} className="text-xs font-semibold" style={{ color: colors[k] }}>
-                      {k}) {s.themes[k]}
-                    </span>
-                  )
-                })}
+              <div className="flex flex-wrap gap-2">
+                {(['a', 'b', 'c'] as CoupDoeilThemeKey[]).map((k) => (
+                  <span
+                    key={k}
+                    className={`rounded-lg border-2 border-encre px-2 py-0.5 text-base font-semibold text-encre ${FOND_THEME[k]}`}
+                  >
+                    {k}) {s.themes[k]}
+                  </span>
+                ))}
               </div>
             </motion.button>
           ))}
@@ -190,39 +180,28 @@ export default function CoupDOeilPage() {
 
   // ── Playing ─────────────────────────────────────────────────────────────
   if (phase === 'playing' && series) {
+    // Pastille du chrono : le fond reprend les anciens seuils de couleur (4 min, 5 min).
+    const fondChrono = stopwatch.seconds < 240 ? 'bg-papier' : stopwatch.seconds < 300 ? 'bg-jaune' : 'bg-faux'
     return (
       <div className="max-w-2xl mx-auto flex flex-col gap-4">
-        {/* Game header */}
-        <div className="bg-white rounded-2xl p-4 shadow-card flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-              style={{ background: EX.gradient }}
-            >
-              {EX.emoji}
-            </div>
-            <div>
-              <p className="text-xs text-gray-400 font-semibold">Série</p>
-              <p className="font-black text-ink text-sm">{series.label}</p>
-            </div>
-          </div>
-          <StopwatchDisplay formatted={stopwatch.formatted} seconds={stopwatch.seconds} />
-        </div>
+        <EnTete
+          titre={`${EX.emoji} ${series.label}`}
+          droite={
+            <span className={`rounded-full border-2 border-encre px-3 py-1 font-bold text-encre tabular-nums ${fondChrono}`}>
+              ⏱️ {stopwatch.formatted}
+            </span>
+          }
+        />
 
         <ThemeHeader themes={series.themes} />
 
-        <div className="bg-white rounded-3xl shadow-card p-4">
+        <Carte className="p-4">
           <ColumnDisplay columns={series.columns} assignments={assignments} onAssign={handleAssign} mode="playing" />
-        </div>
+        </Carte>
 
-        <motion.button
-          whileTap={{ scale: 0.97 }}
-          onClick={handleValidate}
-          className="w-full text-white font-black py-4 rounded-2xl active:scale-95 transition-all"
-          style={{ background: EX.gradient, boxShadow: EX.shadow }}
-        >
+        <Bouton taille="grand" onClick={handleValidate} className="w-full">
           Valider mes réponses ✓
-        </motion.button>
+        </Bouton>
       </div>
     )
   }
@@ -231,10 +210,8 @@ export default function CoupDOeilPage() {
   if (phase === 'correction' && series) {
     return (
       <div className="max-w-2xl mx-auto">
-        <div className="mb-4">
-          <h2 className="font-fredoka font-semibold text-ink text-xl">Correction — {series.label}</h2>
-          <ThemeHeader themes={series.themes} />
-        </div>
+        <EnTete titre={`Correction : ${series.label}`} />
+        <ThemeHeader themes={series.themes} />
         <CorrectionView
           series={series}
           assignments={assignments}
@@ -250,68 +227,37 @@ export default function CoupDOeilPage() {
   if (phase === 'session-result') {
     const total = seriesScore + timeBonus
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-md mx-auto text-center py-12"
+      <EcranFin
+        titre={`🎉 ${feedbackMessage()}`}
+        score={total}
+        detail="points au total"
+        onRejouer={() => setPhase('series-select')}
+        retourVers="/accueil"
       >
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', bounce: 0.6, delay: 0.1 }}
-          className="text-7xl mb-4"
-        >
-          🎉
-        </motion.div>
-        <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">{feedbackMessage()}</h2>
-
-        <div className="bg-white rounded-3xl p-8 shadow-card mb-6 space-y-4">
-          <div>
-            <p
-              className="text-6xl font-fredoka font-bold score-reveal"
-              style={{ background: EX.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
-            >
-              {total}
-            </p>
-            <p className="text-gray-400 font-semibold mt-1">points au total</p>
-          </div>
-
-          <div className="border-t pt-3 space-y-1 text-sm text-gray-500 font-semibold">
+        <div className="space-y-4">
+          <div className="border-t-2 border-encre/20 pt-3 space-y-1 text-base text-encre-doux font-semibold text-center">
             <p>Score de précision : {seriesScore} pts</p>
-            <p>Bonus de vitesse : <span className="text-success font-black">+{timeBonus} pts</span></p>
+            <p>Bonus de vitesse : <span className="text-juste-fonce font-black">+{timeBonus} pts</span></p>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 text-sm">
+          <div className="grid grid-cols-2 gap-2 text-center">
             {[
-              { label: 'Corrects', value: stats.correct, color: 'text-success' },
-              { label: 'Manqués', value: stats.missed, color: 'text-orange-500' },
-              { label: 'Erreurs', value: stats.wrong + stats.falseAlarms, color: 'text-error' },
-              { label: 'Temps', value: stopwatch.formatted, color: 'text-gray-600' },
-            ].map(({ label, value, color }) => (
-              <div key={label} className="bg-gray-50 rounded-xl p-3">
-                <div className={`font-black text-lg ${color}`}>{value}</div>
-                <div className="text-xs text-gray-400 font-semibold">{label}</div>
+              { label: 'Corrects', value: stats.correct, icone: '✓', couleur: 'text-juste-fonce' },
+              { label: 'Manqués', value: stats.missed, icone: '◌', couleur: 'text-encre' },
+              { label: 'Erreurs', value: stats.wrong + stats.falseAlarms, icone: '✗', couleur: 'text-faux-fonce' },
+              { label: 'Temps', value: stopwatch.formatted, icone: '⏱️', couleur: 'text-encre' },
+            ].map(({ label, value, icone, couleur }) => (
+              <div key={label} className="rounded-xl border-2 border-encre bg-sable p-3">
+                <div className={`font-black text-lg ${couleur}`}>
+                  <span className="mr-1">{icone}</span>
+                  {value}
+                </div>
+                <div className="text-base text-encre-doux font-semibold">{label}</div>
               </div>
             ))}
           </div>
         </div>
-
-        <div className="flex gap-3">
-          <button
-            onClick={() => navigate('/accueil')}
-            className="flex-1 bg-gray-100 text-ink font-bold py-3 rounded-2xl hover:bg-gray-200 transition-colors"
-          >
-            Accueil
-          </button>
-          <button
-            onClick={() => setPhase('series-select')}
-            className="flex-1 text-white font-bold py-3 rounded-2xl active:scale-95 transition-all"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            Rejouer
-          </button>
-        </div>
-      </motion.div>
+      </EcranFin>
     )
   }
 
