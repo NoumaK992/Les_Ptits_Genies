@@ -205,9 +205,9 @@ export default function IntrusPage() {
         <div className="space-y-4">
           {[
             { level: 1, label: 'Débutant', emoji: '⭐', desc: 'Mots simples — 9 mots par liste' },
-            { level: 2, label: 'Intermédiaire', emoji: '⭐⭐', desc: 'Mots plus longs — 17 à 19 mots par liste' },
-            { level: 3, label: 'Avancé', emoji: '⭐⭐⭐', desc: 'Vocabulaire soutenu — 23 à 25 mots par liste' },
-            { level: 4, label: 'Expert', emoji: '⭐⭐⭐⭐', desc: 'Mots complexes et proches — 29 à 31 mots' },
+            { level: 2, label: 'Intermédiaire', emoji: '⭐⭐', desc: 'Mots plus longs — 17 mots par liste' },
+            { level: 3, label: 'Avancé', emoji: '⭐⭐⭐', desc: 'Vocabulaire soutenu — 25 mots par liste' },
+            { level: 4, label: 'Expert', emoji: '⭐⭐⭐⭐', desc: 'Mots complexes et proches — 31 mots par liste' },
             { level: 5, label: 'Génie', emoji: '⭐⭐⭐⭐⭐', desc: 'Mots en -tion très similaires — 35 mots par liste' },
           ].map((l) => (
             <motion.button
