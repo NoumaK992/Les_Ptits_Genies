@@ -12,8 +12,8 @@ export default defineConfig({
         name: 'Les Ptits Génies',
         short_name: 'PtitsGénies',
         description: 'Application de soutien scolaire pour les 11-15 ans',
-        theme_color: '#7C6FF7',
-        background_color: '#F8F7FF',
+        theme_color: '#EFE6D2',
+        background_color: '#EFE6D2',
         display: 'standalone',
         start_url: '/',
         icons: [

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@400;500;600;700;800;900&display=swap');
+/* Polices chargées dans index.html (Lexend, Archivo Black) */
 
 @tailwind base;
 @tailwind components;
@@ -41,22 +41,6 @@ body {
 ::selection {
   background-color: theme('colors.jaune');
   color: theme('colors.encre');
-}
-
-/* Glass card utility */
-.glass {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.20);
-}
-
-/* Gradient text utility */
-.gradient-text-primary {
-  background: linear-gradient(135deg, #7C6FF7, #4a3fcc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* Score reveal animation */

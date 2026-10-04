@@ -7,17 +7,8 @@ export default {
     extend: {
       colors: {
         ...couleurs,
-        primary: '#7C6FF7',
-        secondary: '#FF7B54',
-        accent: '#FFD166',
-        bg: '#F8F7FF',
-        success: '#06D6A0',
-        error: '#EF476F',
-        ink: '#2D2D3A',
       },
       fontFamily: {
-        nunito: ['Nunito', 'sans-serif'],
-        fredoka: ['Fredoka', 'sans-serif'],
         texte: ['Lexend', 'sans-serif'],
         titre: ['"Archivo Black"', 'sans-serif'],
       },
@@ -31,12 +22,6 @@ export default {
         'dur-sm': `2px 2px 0 0 ${couleurs.encre}`,
         dur: `4px 4px 0 0 ${couleurs.encre}`,
         'dur-lg': `6px 6px 0 0 ${couleurs.encre}`,
-        'card': '0 4px 20px rgba(45, 45, 58, 0.08)',
-        'card-hover': '0 8px 40px rgba(45, 45, 58, 0.16)',
-        'glow': '0 4px 24px rgba(124, 111, 247, 0.40)',
-        'glow-sm': '0 2px 12px rgba(124, 111, 247, 0.30)',
-        'glow-orange': '0 4px 24px rgba(255, 123, 84, 0.40)',
-        'glow-success': '0 4px 24px rgba(6, 214, 160, 0.40)',
       },
       keyframes: {
         secousse: {
