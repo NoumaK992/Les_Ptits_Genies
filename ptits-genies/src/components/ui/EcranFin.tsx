@@ -12,10 +12,12 @@ interface EcranFinProps {
   etoiles?: 0 | 1 | 2 | 3
   onRejouer?: () => void
   retourVers?: string
+  /** Partie lancée depuis « Mon parcours » : un seul bouton pour y revenir. */
+  parcours?: boolean
   children?: ReactNode
 }
 
-export function EcranFin({ titre, score, detail, etoiles, onRejouer, retourVers = '/exercices', children }: EcranFinProps) {
+export function EcranFin({ titre, score, detail, etoiles, onRejouer, retourVers = '/exercices', parcours, children }: EcranFinProps) {
   return (
     <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="mx-auto w-full max-w-xl">
       <Carte className="p-6 text-center md:p-8">
@@ -32,8 +34,14 @@ export function EcranFin({ titre, score, detail, etoiles, onRejouer, retourVers 
         {detail && <p className="mt-2 text-encre-doux">{detail}</p>}
         {children && <div className="mt-6 text-left">{children}</div>}
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          {onRejouer && <Bouton onClick={onRejouer}>Rejouer</Bouton>}
-          <Link to={retourVers} className={classesBouton('secondaire')}>Retour</Link>
+          {parcours ? (
+            <Link to="/parcours" className={classesBouton('principal', 'grand')}>Continuer mon parcours →</Link>
+          ) : (
+            <>
+              {onRejouer && <Bouton onClick={onRejouer}>Rejouer</Bouton>}
+              <Link to={retourVers} className={classesBouton('secondaire')}>Retour</Link>
+            </>
+          )}
         </div>
       </Carte>
     </motion.div>
