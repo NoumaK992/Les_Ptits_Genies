@@ -23,6 +23,11 @@ const EXERCISE_LABELS: Record<string, string> = {
   'ami-ennemi': '🎯 Ami & Ennemi',
 }
 
+// Emoji d'un exercice : premier mot de son libellé (une seule source de vérité).
+function emojiDe(type: string): string {
+  return EXERCISE_LABELS[type]?.split(' ')[0] ?? '🎮'
+}
+
 // Teinte de chaque exercice : même couleur dans les graphiques (valeur brute)
 // et dans les pastilles / barres (classe Tailwind).
 type Teinte = 'jaune' | 'rose' | 'bleu' | 'juste' | 'rose-pale' | 'encre-doux'
@@ -218,12 +223,7 @@ export default function DashboardPage() {
               {progress.map((p) => (
                 <div key={p.exerciseType} className="flex items-center gap-4">
                   <div className={cn(PASTILLE, 'h-9 w-9', FONDS_TEINTES[teinteDe(p.exerciseType)])}>
-                    {p.exerciseType === 'word-search' ? '🔍' :
-                      p.exerciseType === 'intrus' ? '🕵️' :
-                      p.exerciseType === 'lecture-rapide' ? '⚡' :
-                      p.exerciseType === 'coup-doeil' ? '👁️' :
-                      p.exerciseType === 'phrases-brouillees' ? '🧩' :
-                      p.exerciseType === 'collection' ? '🗂️' : '🎯'}
+                    {emojiDe(p.exerciseType)}
                   </div>
                   <div className="min-w-0 flex-1 space-y-1">
                     <div className="flex flex-wrap justify-between gap-x-2 text-sm font-semibold text-encre-doux">
@@ -302,11 +302,7 @@ export default function DashboardPage() {
               {sessions.slice(0, 10).map((s) => (
                 <div key={s.id} className="flex items-center gap-3 border-b-2 border-encre/20 py-2.5 last:border-0">
                   <div className={cn(PASTILLE, 'h-9 w-9', FONDS_TEINTES[teinteDe(s.exerciseType)])}>
-                    {s.exerciseType === 'word-search' ? '🔍' :
-                      s.exerciseType === 'intrus' ? '🕵️' :
-                      s.exerciseType === 'coup-doeil' ? '👁️' :
-                      s.exerciseType === 'phrases-brouillees' ? '🧩' :
-                      s.exerciseType === 'collection' ? '🗂️' : '⚡'}
+                    {emojiDe(s.exerciseType)}
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-bold text-encre">{EXERCISE_LABELS[s.exerciseType]}</p>

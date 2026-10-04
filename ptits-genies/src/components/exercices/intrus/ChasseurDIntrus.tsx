@@ -1,13 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LISTES_INTRUS, IntrusData } from './data';
 import { EnTete } from '@/components/ui/EnTete';
 import { EcranFin } from '@/components/ui/EcranFin';
 import { Carte, classesCarte } from '@/components/ui/Carte';
 import { Bouton } from '@/components/ui/Bouton';
+import { Etiquette } from '@/components/ui/Etiquette';
 import { BoutonMot } from '@/components/ui/BoutonMot';
 import { couleurs } from '@/theme/couleurs';
 import { cn } from '@/lib/cn';
+import { useAuthStore } from '@/store/authStore';
+import { useProgressStore } from '@/store/progressStore';
+import { useParcoursStore } from '@/store/parcoursStore';
+import { useModeParcours } from '@/parcours/useModeParcours';
+import { niveauAmiEnnemi, tauxReussite } from '@/parcours/regles';
+import type { AmiEnnemiSessionDetails } from '@/types';
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
@@ -16,7 +23,11 @@ const EX = {
 }
 
 type Niveau = 'debutant' | 'intermediaire' | 'professionnel';
-type Phase = 'selection_niveau' | 'jeu_intrus' | 'jeu_qcm' | 'bilan';
+// `enregistrement` : partie finie, sauvegarde en cours (puis `bilan`).
+type Phase = 'selection_niveau' | 'jeu_intrus' | 'jeu_qcm' | 'enregistrement' | 'bilan';
+
+const NB_SERIES = 5;
+const DUREE_NIVEAU: Record<Niveau, number> = { debutant: 30, intermediaire: 15, professionnel: 8 };
 
 const shuffleArray = <T,>(array: T[]): T[] => {
   const newArray = [...array];
@@ -35,61 +46,123 @@ const NIVEAU_META = {
 
 const PASTILLE = 'rounded-full border-2 border-encre bg-papier px-3 py-1 font-bold text-encre';
 
+const tirerSeries = (nv: Niveau): IntrusData[] =>
+  shuffleArray(LISTES_INTRUS.filter((l) => l.niveau === nv)).slice(0, NB_SERIES);
+
+// Mots et options mélangés d'une série (sans toucher à l'état).
+const preparerSerie = (serie: IntrusData) => ({
+  mots: shuffleArray(serie.mots),
+  options: shuffleArray([serie.point_commun, ...serie.distracteurs_qcm].slice(0, 4)),
+});
+
 export const ChasseurDIntrus: React.FC = () => {
-  const [phase, setPhase] = useState<Phase>('selection_niveau');
-  const [niveau, setNiveau] = useState<Niveau>('debutant');
-  const [series, setSeries] = useState<IntrusData[]>([]);
+  const modeParcours = useModeParcours();
+  const { currentUser, refreshPoints } = useAuthStore();
+  const { saveSession } = useProgressStore();
+  const { terminerPartie } = useParcoursStore();
+
+  // En mode parcours, la partie est tirée dès le premier rendu : l'écran de
+  // choix du niveau ne s'affiche jamais, même un instant (StrictMode compris).
+  const [depart] = useState(() => {
+    if (!modeParcours) return null;
+    const nv = niveauAmiEnnemi(modeParcours.difficulte);
+    const tirees = tirerSeries(nv);
+    return { niveau: nv, series: tirees, ...preparerSerie(tirees[0]) };
+  });
+
+  const [phase, setPhase] = useState<Phase>(depart ? 'jeu_intrus' : 'selection_niveau');
+  const [niveau, setNiveau] = useState<Niveau>(depart?.niveau ?? 'debutant');
+  const [series, setSeries] = useState<IntrusData[]>(depart?.series ?? []);
   const [currentSerieIndex, setCurrentSerieIndex] = useState(0);
-  const [motsMelanges, setMotsMelanges] = useState<string[]>([]);
+  const [motsMelanges, setMotsMelanges] = useState<string[]>(depart?.mots ?? []);
   const [motSelectionne, setMotSelectionne] = useState<string | null>(null);
   const [erreurIntrus, setErreurIntrus] = useState<string | null>(null);
-  const [optionsQCM, setOptionsQCM] = useState<string[]>([]);
+  const [optionsQCM, setOptionsQCM] = useState<string[]>(depart?.options ?? []);
   const [erreurQCM, setErreurQCM] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [erreursTotales, setErreursTotales] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30);
+  const [manchesReussies, setManchesReussies] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(depart ? DUREE_NIVEAU[depart.niveau] : 30);
   const [mancheEchouee, setMancheEchouee] = useState(false);
+  // Manche gagnée : bloque les clics et le chrono pendant la petite pause avant la suivante.
+  const [mancheGagnee, setMancheGagnee] = useState(false);
+
+  // Début réel de la partie (durée enregistrée) et garde « une seule sauvegarde par partie ».
+  const debutPartie = useRef(0);
+  const partieEnregistree = useRef(false);
+
+  useEffect(() => {
+    if (depart && debutPartie.current === 0) debutPartie.current = Date.now();
+  }, [depart]);
 
   const startPartie = (selectedNiveau: Niveau) => {
     setNiveau(selectedNiveau);
-    const listesNiveau = LISTES_INTRUS.filter((l) => l.niveau === selectedNiveau);
-    const selectedSeries = shuffleArray(listesNiveau).slice(0, 5);
+    const selectedSeries = tirerSeries(selectedNiveau);
     setSeries(selectedSeries);
     setCurrentSerieIndex(0);
     setScore(0);
     setErreursTotales(0);
+    setManchesReussies(0);
+    debutPartie.current = Date.now();
+    partieEnregistree.current = false;
     loadSerie(selectedSeries[0], selectedNiveau);
   };
 
   const loadSerie = (serie: IntrusData, currentNiveau: Niveau) => {
-    setMotsMelanges(shuffleArray(serie.mots));
+    const { mots, options } = preparerSerie(serie);
+    setMotsMelanges(mots);
     setMotSelectionne(null);
     setErreurIntrus(null);
     setErreurQCM(null);
     setMancheEchouee(false);
-    const allOptions = [serie.point_commun, ...serie.distracteurs_qcm];
-    setOptionsQCM(shuffleArray(allOptions.slice(0, 4)));
-    const initialTime = currentNiveau === 'debutant' ? 30 : currentNiveau === 'intermediaire' ? 15 : 8;
-    setTimeLeft(initialTime);
+    setMancheGagnee(false);
+    setOptionsQCM(options);
+    setTimeLeft(DUREE_NIVEAU[currentNiveau]);
     setPhase('jeu_intrus');
   };
 
   useEffect(() => {
-    if ((phase === 'jeu_intrus' || phase === 'jeu_qcm') && timeLeft > 0 && !mancheEchouee) {
+    if ((phase === 'jeu_intrus' || phase === 'jeu_qcm') && timeLeft > 0 && !mancheEchouee && !mancheGagnee) {
       const timer = setTimeout(() => setTimeLeft((prev) => prev - 1), 1000);
       return () => clearTimeout(timer);
-    } else if (timeLeft === 0 && (phase === 'jeu_intrus' || phase === 'jeu_qcm') && !mancheEchouee) {
+    } else if (timeLeft === 0 && (phase === 'jeu_intrus' || phase === 'jeu_qcm') && !mancheEchouee && !mancheGagnee) {
       handleErreur('Temps écoulé !');
       setMancheEchouee(true);
     }
-  }, [timeLeft, phase, mancheEchouee]);
+  }, [timeLeft, phase, mancheEchouee, mancheGagnee]);
+
+  // Fin de partie : enregistrement (une seule fois), puis parcours, puis bilan.
+  useEffect(() => {
+    if (phase !== 'enregistrement' || partieEnregistree.current) return;
+    partieEnregistree.current = true;
+    const enregistrer = async () => {
+      if (currentUser) {
+        const duree = debutPartie.current > 0 ? Math.round((Date.now() - debutPartie.current) / 1000) : 0;
+        const details: AmiEnnemiSessionDetails = {
+          type: 'ami-ennemi', niveau, manches: series.length, manchesReussies, erreurs: erreursTotales,
+        };
+        try {
+          await saveSession({ id: `${Date.now()}-ami`, userId: currentUser.id, exerciseType: 'ami-ennemi', score, duration: duree, playedAt: new Date().toISOString(), details });
+          await refreshPoints();
+        } catch {
+          // Échec réseau : le bilan s'affiche quand même.
+        }
+        if (modeParcours) {
+          await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(manchesReussies, series.length));
+        }
+      }
+      setPhase('bilan');
+    };
+    void enregistrer();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase]);
 
   const passerALaSuite = () => {
     if (currentSerieIndex < series.length - 1) {
       setCurrentSerieIndex((prev) => prev + 1);
       loadSerie(series[currentSerieIndex + 1], niveau);
     } else {
-      setPhase('bilan');
+      setPhase('enregistrement');
     }
   };
 
@@ -100,7 +173,7 @@ export const ChasseurDIntrus: React.FC = () => {
   };
 
   const handleClicMot = (mot: string) => {
-    if (phase !== 'jeu_intrus' || mancheEchouee) return;
+    if (phase !== 'jeu_intrus' || mancheEchouee || mancheGagnee) return;
     const currentSerie = series[currentSerieIndex];
     if (mot === currentSerie.intrus) {
       setMotSelectionne(mot);
@@ -114,9 +187,11 @@ export const ChasseurDIntrus: React.FC = () => {
   };
 
   const handleClicQCM = (option: string) => {
-    if (phase !== 'jeu_qcm' || mancheEchouee) return;
+    if (phase !== 'jeu_qcm' || mancheEchouee || mancheGagnee) return;
     const currentSerie = series[currentSerieIndex];
     if (option === currentSerie.point_commun) {
+      setMancheGagnee(true);
+      setManchesReussies((prev) => prev + 1);
       let pointsGagnes = 100;
       if (timeLeft > 0) pointsGagnes += timeLeft * 10;
       const multiplicateur = niveau === 'debutant' ? 1 : niveau === 'intermediaire' ? 1.5 : 2;
@@ -124,7 +199,7 @@ export const ChasseurDIntrus: React.FC = () => {
       if (currentSerieIndex < series.length - 1) {
         setTimeout(passerALaSuite, 1200);
       } else {
-        setPhase('bilan');
+        setPhase('enregistrement');
       }
     } else {
       setErreurQCM('Faux ! Ce n\'est pas le bon point commun.');
@@ -178,6 +253,15 @@ export const ChasseurDIntrus: React.FC = () => {
     );
   }
 
+  // ── Enregistrement de la partie ─────────────────────────────────────────
+  if (phase === 'enregistrement') {
+    return (
+      <div className="py-16 text-center text-4xl" role="status" aria-label="Enregistrement de la partie">
+        <span aria-hidden="true">⏳</span>
+      </div>
+    );
+  }
+
   // ── Bilan ───────────────────────────────────────────────────────────────
   if (phase === 'bilan') {
     return (
@@ -188,14 +272,15 @@ export const ChasseurDIntrus: React.FC = () => {
           detail="points"
           onRejouer={() => setPhase('selection_niveau')}
           retourVers="/accueil"
+          parcours={!!modeParcours}
         >
           <p className="mb-4 text-center text-lg font-semibold text-encre-doux">
             Niveau : <span className="font-bold text-encre">{NIVEAU_META[niveau].label}</span> {NIVEAU_META[niveau].emoji}
           </p>
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-xl border-2 border-encre bg-sable p-3 text-center">
-              <p className="font-titre text-2xl text-encre">{5 - erreursTotales < 0 ? 0 : 5}</p>
-              <p className="text-base font-semibold text-encre-doux">Séries</p>
+              <p className="font-titre text-2xl text-encre">{manchesReussies} / {series.length}</p>
+              <p className="text-base font-semibold text-encre-doux">Séries réussies</p>
             </div>
             <div className="rounded-xl border-2 border-encre bg-sable p-3 text-center">
               <p className="font-titre text-2xl text-faux-fonce">
@@ -211,7 +296,7 @@ export const ChasseurDIntrus: React.FC = () => {
 
   // ── Game screen ─────────────────────────────────────────────────────────
   const isQCM = phase === 'jeu_qcm';
-  const initialTimeNiveau = niveau === 'debutant' ? 30 : niveau === 'intermediaire' ? 15 : 8;
+  const initialTimeNiveau = DUREE_NIVEAU[niveau];
   const timerPercent = (timeLeft / initialTimeNiveau) * 100;
   const timerColor = timeLeft < 5 ? couleurs.faux : timeLeft < (initialTimeNiveau * 0.4) ? couleurs.jaune : couleurs.juste;
 
@@ -219,6 +304,7 @@ export const ChasseurDIntrus: React.FC = () => {
     <div className="max-w-2xl mx-auto">
       <EnTete
         titre={`${EX.emoji} ${EX.title}`}
+        retourVers={modeParcours ? '/parcours' : undefined}
         droite={
           <>
             <span className={PASTILLE}>Score : {score}</span>
@@ -226,6 +312,10 @@ export const ChasseurDIntrus: React.FC = () => {
           </>
         }
       />
+
+      {modeParcours?.etape === 'boss' && (
+        <Etiquette couleur="rose-pale" className="mb-4">👾 Boss du niveau</Etiquette>
+      )}
 
       {/* Infos de série + barre du chrono */}
       <Carte className="mb-4 p-4">

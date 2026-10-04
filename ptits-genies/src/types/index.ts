@@ -34,6 +34,7 @@ export type SessionDetails =
   | CoupDoeilSessionDetails
   | PhrasesBrouilleesSessionDetails
   | CollectionSessionDetails
+  | AmiEnnemiSessionDetails
 
 export interface WordSearchSessionDetails {
   type: 'word-search'
@@ -257,4 +258,14 @@ export interface CollectionSessionDetails {
   levelMultiplierBonus: number
   stars: 0 | 1 | 2 | 3
   totalElapsedSeconds: number
+}
+
+export interface AmiEnnemiSessionDetails {
+  type: 'ami-ennemi'
+  niveau: 'debutant' | 'intermediaire' | 'professionnel'
+  /** Nombre de manches (séries) de la partie. */
+  manches: number
+  /** Manches menées au bout sans échec (intrus puis point commun). */
+  manchesReussies: number
+  erreurs: number
 }
