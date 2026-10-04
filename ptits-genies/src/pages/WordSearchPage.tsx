@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
@@ -12,12 +11,14 @@ import { StopwatchDisplay } from '@/components/exercises/WordSearch/TimerCircle'
 import { CorrectionOverlay } from '@/components/exercises/WordSearch/CorrectionOverlay'
 import { THEME_LIST, getThemeById } from '@/data/wordSearch/themes'
 import type { GeneratedGrid, GridResult } from '@/types'
+import { Bouton } from '@/components/ui/Bouton'
+import { Carte } from '@/components/ui/Carte'
+import { EnTete } from '@/components/ui/EnTete'
+import { EcranFin } from '@/components/ui/EcranFin'
+import { Etiquette } from '@/components/ui/Etiquette'
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
-  gradient: 'linear-gradient(135deg, #7C6FF7 0%, #4a3fcc 100%)',
-  shadow: '0 8px 28px rgba(124, 111, 247, 0.40)',
-  color: '#7C6FF7',
   emoji: '🔍',
   title: 'Recherche de mots',
 }
@@ -26,7 +27,6 @@ type Phase = 'intro' | 'presentation' | 'theme-select' | 'playing' | 'correction
 type CellState = 'default' | 'selected' | 'correct' | 'wrong' | 'missed'
 
 export default function WordSearchPage() {
-  const navigate = useNavigate()
   const { currentUser, refreshPoints } = useAuthStore()
   const { saveSession } = useProgressStore()
   const stopwatch = useStopwatch()
@@ -145,27 +145,26 @@ export default function WordSearchPage() {
   // ─── Intro ─────────────────────────────────────────────────────────────
   if (phase === 'intro') {
     return (
-      <div className="max-w-lg mx-auto text-center py-10">
+      <div>
+        <EnTete titre={EX.title} />
         <motion.div initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring', bounce: 0.5 }}>
-          <motion.div
-            animate={{ y: [0, -8, 0] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-24 h-24 mx-auto rounded-3xl flex items-center justify-center text-5xl mb-6"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            {EX.emoji}
-          </motion.div>
-          <h2 className="text-3xl font-fredoka font-semibold text-ink mb-2">{EX.title}</h2>
-          <p className="text-gray-500 font-semibold mb-8">
-            Trouve toutes les occurrences d'un mot dans la grille !
-          </p>
-          <button
-            onClick={() => setPhase('presentation')}
-            className="text-white font-black px-10 py-4 rounded-2xl text-xl active:scale-95 transition-all"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            Commencer
-          </button>
+          <Carte className="mx-auto max-w-lg p-6 text-center md:p-8">
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+              className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-2xl border-2 border-encre bg-bleu text-5xl shadow-dur"
+              aria-hidden="true"
+            >
+              {EX.emoji}
+            </motion.div>
+            <h2 className="mb-3 font-titre text-3xl text-encre">{EX.title}</h2>
+            <p className="mb-8 text-base text-encre-doux md:text-lg">
+              Trouve toutes les occurrences d'un mot dans la grille !
+            </p>
+            <Bouton taille="grand" onClick={() => setPhase('presentation')}>
+              Commencer
+            </Bouton>
+          </Carte>
         </motion.div>
       </div>
     )
@@ -174,9 +173,9 @@ export default function WordSearchPage() {
   // ─── Presentation ──────────────────────────────────────────────────────
   if (phase === 'presentation') {
     return (
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-lg mx-auto py-8">
-        <h2 className="text-2xl font-fredoka font-semibold text-ink mb-6 text-center">Comment jouer ?</h2>
-        <div className="bg-white rounded-3xl p-6 mb-6 space-y-4 shadow-card">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-lg py-4">
+        <h2 className="mb-6 text-center font-titre text-2xl text-encre md:text-3xl">Comment jouer ?</h2>
+        <Carte className="mb-6 space-y-4 p-6">
           {[
             { icon: '🎯', text: "Un mot cible t'est donné. Clique sur toutes ses occurrences dans la grille." },
             { icon: '🔢', text: 'Le mot peut apparaître 0, 1 ou plusieurs fois.' },
@@ -186,20 +185,16 @@ export default function WordSearchPage() {
             { icon: '❌', text: 'Attention : chaque erreur retire des points.' },
             { icon: '📈', text: 'La difficulté augmente de la grille 1 à la grille 6.' },
           ].map(({ icon, text }) => (
-            <div key={icon} className="flex gap-3 items-start">
-              <span className="text-xl shrink-0">{icon}</span>
-              <span className="font-semibold text-ink text-sm">{text}</span>
+            <div key={icon} className="flex items-start gap-3">
+              <span className="shrink-0 text-xl" aria-hidden="true">{icon}</span>
+              <span className="text-base text-encre">{text}</span>
             </div>
           ))}
-        </div>
+        </Carte>
         <div className="text-center">
-          <button
-            onClick={() => setPhase('theme-select')}
-            className="text-white font-black px-10 py-4 rounded-2xl text-lg active:scale-95 transition-all"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
+          <Bouton taille="grand" onClick={() => setPhase('theme-select')}>
             Continuer →
-          </button>
+          </Bouton>
         </div>
       </motion.div>
     )
@@ -231,117 +226,73 @@ export default function WordSearchPage() {
     const timeBonus = calcWordSearchTimeBonus(stopwatch.seconds)
     const gridTotal = results.reduce((s, r) => s + r.gridScore, 0)
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-md mx-auto text-center py-12"
+      <EcranFin
+        titre="Session terminée ! 🏆"
+        score={totalScore}
+        detail="points au total"
+        onRejouer={() => setPhase('intro')}
+        retourVers="/accueil"
       >
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', bounce: 0.6, delay: 0.1 }}
-          className="text-7xl mb-4"
-        >
-          🏆
-        </motion.div>
-        <h2 className="text-3xl font-fredoka font-semibold text-ink mb-6">Session terminée !</h2>
-        <div className="bg-white rounded-3xl p-8 shadow-card mb-6 space-y-4">
-          <div>
-            <p
-              className="text-6xl font-fredoka font-bold score-reveal"
-              style={{ background: EX.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
-            >
-              {totalScore}
-            </p>
-            <p className="text-gray-400 font-semibold mt-1">points au total</p>
-          </div>
-          <div className="border-t pt-3 space-y-1 text-sm text-gray-500 font-semibold">
-            <p>Grilles : {gridTotal} pts</p>
-            <p>Bonus temps ({stopwatch.formatted}) : <span className="text-success font-black">+{timeBonus} pts</span></p>
-          </div>
+        <div className="space-y-1 border-t-2 border-encre/20 pt-4 text-center text-base text-encre">
+          <p>Grilles : {gridTotal} pts</p>
+          <p>Bonus temps ({stopwatch.formatted}) : <span className="font-bold text-juste-fonce">+{timeBonus} pts</span></p>
         </div>
-        <div className="flex gap-3">
-          <button
-            onClick={() => navigate('/accueil')}
-            className="flex-1 bg-gray-100 text-ink font-bold py-3 rounded-2xl hover:bg-gray-200 transition-colors"
-          >
-            Accueil
-          </button>
-          <button
-            onClick={() => setPhase('intro')}
-            className="flex-1 text-white font-bold py-3 rounded-2xl transition-all active:scale-95"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
-            Rejouer
-          </button>
-        </div>
-      </motion.div>
+      </EcranFin>
     )
   }
 
   // ─── Playing ───────────────────────────────────────────────────────────
   if (phase === 'playing' && currentGrid) {
     return (
-      <div className="max-w-3xl mx-auto">
+      <div className="mx-auto max-w-3xl">
         {/* Game header */}
-        <div className="bg-white rounded-2xl p-4 shadow-card mb-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-              style={{ background: EX.gradient }}
-            >
-              {EX.emoji}
-            </div>
-            <div>
-              <p className="text-xs text-gray-400 font-semibold">Grille {gridIndex + 1} / 6</p>
-              <p className="font-black text-sm text-ink">
-                Mot : <span style={{ color: EX.color }}>{currentGrid.targetWord}</span>
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div
-              className="px-3 py-1.5 rounded-xl text-center"
-              style={{ background: 'rgba(124,111,247,0.10)' }}
-            >
-              <p className="text-xs font-semibold" style={{ color: 'rgba(124,111,247,0.7)' }}>Score</p>
-              <p className="font-black text-sm" style={{ color: EX.color }}>{totalScore}</p>
-            </div>
-            <StopwatchDisplay formatted={stopwatch.formatted} seconds={stopwatch.seconds} />
-          </div>
-        </div>
+        <EnTete
+          titre={EX.title}
+          droite={
+            <>
+              <span className="rounded-full border-2 border-encre bg-papier px-3 py-1 text-base font-bold text-encre">
+                {totalScore} pts
+              </span>
+              <StopwatchDisplay formatted={stopwatch.formatted} seconds={stopwatch.seconds} />
+            </>
+          }
+        />
+
+        {/* Mot cible */}
+        <Carte className="mb-4 flex flex-wrap items-center gap-3 p-4">
+          <Etiquette couleur="bleu">Grille {gridIndex + 1} / 6</Etiquette>
+          <p className="text-lg font-bold text-encre">
+            Mot : <span className="rounded-md border-2 border-encre bg-jaune px-2 py-0.5 font-titre">{currentGrid.targetWord}</span>
+          </p>
+        </Carte>
 
         {/* Progress bar */}
-        <div className="flex gap-1.5 mb-4">
+        <div className="mb-4 flex gap-1.5" aria-label={`Grille ${gridIndex + 1} sur 6`}>
           {Array.from({ length: 6 }, (_, i) => (
             <div
               key={i}
-              className="flex-1 h-2.5 rounded-full transition-all duration-500"
-              style={{
-                background: i < gridIndex ? '#06D6A0' : i === gridIndex ? EX.gradient : '#e5e7eb',
-              }}
+              className={`h-3 flex-1 rounded-full border-2 border-encre transition-colors duration-500 ${
+                i < gridIndex ? 'bg-juste' : i === gridIndex ? 'bg-jaune' : 'bg-encre/10'
+              }`}
             />
           ))}
         </div>
 
         {/* Hint */}
-        <div className="bg-white rounded-2xl p-3 mb-4 flex items-center gap-3 shadow-card">
-          <span className="text-lg">ℹ️</span>
-          <p className="text-sm font-semibold text-gray-600">
-            Clique sur toutes les occurrences de "<span className="font-black" style={{ color: EX.color }}>{currentGrid.targetWord}</span>", puis clique sur "Suivant".
+        <Carte className="mb-4 flex flex-wrap items-center gap-3 p-3">
+          <span className="text-lg" aria-hidden="true">ℹ️</span>
+          <p className="min-w-0 flex-1 text-base text-encre">
+            Clique sur toutes les occurrences de « <span className="font-bold">{currentGrid.targetWord}</span> », puis clique sur « Suivant ».
           </p>
           {selectedKeys.size > 0 && (
-            <span
-              className="ml-auto font-black text-xs px-2 py-1 rounded-full whitespace-nowrap"
-              style={{ background: 'rgba(124,111,247,0.12)', color: EX.color }}
-            >
+            <span className="whitespace-nowrap rounded-full border-2 border-encre bg-jaune px-3 py-1 text-base font-bold text-encre">
               {selectedKeys.size} sélectionné{selectedKeys.size > 1 ? 's' : ''}
             </span>
           )}
-        </div>
+        </Carte>
 
         {/* Grid */}
-        <div className="flex justify-center mb-4">
+        <div className="mb-4 flex justify-center">
           <WordSearchGrid
             cells={currentGrid.cells}
             cellStates={cellStates}
@@ -350,20 +301,13 @@ export default function WordSearchPage() {
         </div>
 
         {/* Action buttons */}
-        <div className="flex justify-center gap-3">
-          <button
-            onClick={handleNoWord}
-            className="bg-white border-2 border-gray-200 hover:border-error text-gray-500 hover:text-error font-bold px-5 py-3 rounded-2xl transition-colors shadow-card text-sm"
-          >
+        <div className="flex flex-wrap justify-center gap-3">
+          <Bouton variante="secondaire" onClick={handleNoWord}>
             🚫 Il n'y a pas le mot
-          </button>
-          <button
-            onClick={() => submitGrid(usedNoWord)}
-            className="text-white font-black px-8 py-3 rounded-2xl active:scale-95 transition-all text-sm"
-            style={{ background: EX.gradient, boxShadow: EX.shadow }}
-          >
+          </Bouton>
+          <Bouton onClick={() => submitGrid(usedNoWord)}>
             Suivant →
-          </button>
+          </Bouton>
         </div>
       </div>
     )

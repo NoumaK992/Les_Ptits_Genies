@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 import type { GeneratedGrid } from '@/types'
 import { WordSearchGrid, cellKey } from './WordSearchGrid'
+import { Bouton } from '@/components/ui/Bouton'
+import { Carte } from '@/components/ui/Carte'
+import { Etiquette } from '@/components/ui/Etiquette'
 
 type CellState = 'default' | 'selected' | 'correct' | 'wrong' | 'missed'
 
@@ -49,60 +52,55 @@ export function CorrectionOverlay({ grid, selectedKeys, gridIndex, gridScore, to
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="max-w-2xl mx-auto"
+      className="mx-auto max-w-2xl"
     >
-      <div className="text-center mb-4">
-        <h3 className="text-xl font-black text-ink">
-          Correction — Grille {gridIndex + 1}/6
-        </h3>
-        <p className="font-black text-xl text-ink mt-1">
-          Mot : <span className="text-primary">{grid.targetWord}</span>
-          <span className="text-gray-400 text-sm ml-2">({grid.targetCount} occurrence{grid.targetCount !== 1 ? 's' : ''})</span>
+      <Carte className="mb-4 p-4 text-center md:p-5">
+        <Etiquette>Correction · Grille {gridIndex + 1}/6</Etiquette>
+        <p className="mt-3 text-xl font-bold text-encre">
+          Mot : <span className="font-titre">{grid.targetWord}</span>
+          <span className="ml-2 text-base font-semibold text-encre-doux">({grid.targetCount} occurrence{grid.targetCount !== 1 ? 's' : ''})</span>
         </p>
-      </div>
+      </Carte>
 
       {/* Stats */}
-      <div className="flex justify-center gap-4 mb-4">
-        <div className="bg-success/10 text-success font-black px-4 py-2 rounded-xl text-sm">
-          ✅ {correctSelections} correcte{correctSelections !== 1 ? 's' : ''}
+      <div className="mb-4 flex flex-wrap justify-center gap-2">
+        <div className="rounded-full border-2 border-encre bg-juste px-4 py-1.5 text-base font-bold text-encre">
+          ✓ {correctSelections} correcte{correctSelections !== 1 ? 's' : ''}
         </div>
         {missedTargets > 0 && (
-          <div className="bg-accent/20 text-orange-700 font-black px-4 py-2 rounded-xl text-sm">
-            ⚠️ {missedTargets} manquée{missedTargets !== 1 ? 's' : ''}
+          <div className="rounded-full border-2 border-dashed border-encre bg-rose-pale px-4 py-1.5 text-base font-bold text-encre">
+            ! {missedTargets} manquée{missedTargets !== 1 ? 's' : ''}
           </div>
         )}
         {wrongSelections > 0 && (
-          <div className="bg-error/10 text-error font-black px-4 py-2 rounded-xl text-sm">
-            ❌ {wrongSelections} erreur{wrongSelections !== 1 ? 's' : ''}
+          <div className="rounded-full border-2 border-encre bg-faux px-4 py-1.5 text-base font-bold text-encre">
+            ✗ {wrongSelections} erreur{wrongSelections !== 1 ? 's' : ''}
           </div>
         )}
       </div>
 
       {/* Grid in correction mode */}
-      <div className="flex justify-center mb-4">
+      <div className="mb-4 flex justify-center">
         <WordSearchGrid cells={grid.cells} cellStates={cellStates} disabled />
       </div>
 
       {/* Score */}
-      <div className="bg-white rounded-2xl p-4 shadow text-center mb-4">
-        <p className="text-3xl font-black text-primary">+{gridScore} pts</p>
-        <p className="text-gray-500 text-sm font-semibold">Total : {totalScore} pts</p>
-      </div>
+      <Carte className="mb-4 p-4 text-center">
+        <p className="font-titre text-3xl text-encre">+{gridScore} pts</p>
+        <p className="mt-1 text-base text-encre-doux">Total : {totalScore} pts</p>
+      </Carte>
 
       {/* Special messages */}
       {grid.targetCount === 0 && (
-        <div className="bg-primary/10 rounded-2xl p-3 text-center font-bold text-primary text-sm mb-4">
-          Il n'y avait effectivement pas le mot dans cette grille !
+        <div className="mb-4 rounded-2xl border-2 border-encre bg-bleu p-3 text-center text-base font-bold text-encre">
+          ℹ️ Il n'y avait effectivement pas le mot dans cette grille !
         </div>
       )}
 
       <div className="flex justify-center">
-        <button
-          onClick={onContinue}
-          className="bg-primary text-white font-black px-10 py-4 rounded-2xl text-lg shadow-lg active:scale-95 transition-transform"
-        >
+        <Bouton taille="grand" onClick={onContinue}>
           {isLast ? 'Voir le résultat final 🏆' : 'Continuer →'}
-        </button>
+        </Bouton>
       </div>
     </motion.div>
   )

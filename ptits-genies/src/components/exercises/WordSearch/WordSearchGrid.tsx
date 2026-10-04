@@ -15,11 +15,18 @@ function cellKey(r: number, c: number): string {
 }
 
 const stateStyles: Record<CellState, string> = {
-  default: 'bg-white text-ink hover:bg-primary/10 cursor-pointer border-gray-200',
-  selected: 'bg-primary/20 text-primary border-primary/40 cursor-pointer font-black',
-  correct: 'bg-success/20 text-success border-success/40 font-black',
-  wrong: 'bg-error/20 text-error border-error/40 font-black line-through',
-  missed: 'bg-accent/30 text-orange-700 border-accent font-black animate-pulse',
+  default: 'bg-papier border-encre/30 hover:bg-jaune/40 cursor-pointer',
+  selected: 'bg-jaune border-encre font-bold cursor-pointer',
+  correct: 'bg-juste border-encre font-bold',
+  wrong: 'bg-faux border-encre font-bold line-through',
+  missed: 'bg-rose-pale border-encre border-dashed font-bold',
+}
+
+// Repère visuel en plus de la couleur (correction uniquement)
+const stateIcons: Partial<Record<CellState, { signe: string; lu: string }>> = {
+  correct: { signe: '✓', lu: 'bien trouvé' },
+  wrong: { signe: '✗', lu: 'erreur' },
+  missed: { signe: '!', lu: 'manqué' },
 }
 
 // Determine optimal column count based on longest word
@@ -28,14 +35,14 @@ function getColsConfig(cells: string[][]): { colsClass: string; textClass: strin
 
   if (maxLen <= 8) {
     // Short words (CHAT, LOUP, RENARD, MOUTON...)
-    return { colsClass: 'grid-cols-6', textClass: 'text-xs sm:text-sm' }
+    return { colsClass: 'grid-cols-6', textClass: 'text-sm sm:text-base' }
   }
   if (maxLen <= 12) {
     // Medium words (CROCODILE, PERROQUET, SAUTERELLE...)
-    return { colsClass: 'grid-cols-5', textClass: 'text-[0.65rem] sm:text-xs md:text-sm' }
+    return { colsClass: 'grid-cols-5', textClass: 'text-xs sm:text-sm md:text-base' }
   }
   // Long words (PHOTOSYNTHESE, ELECTROMAGNETISME, BIOLUMINESCENCE...)
-  return { colsClass: 'grid-cols-4', textClass: 'text-[0.55rem] sm:text-xs md:text-sm' }
+  return { colsClass: 'grid-cols-4', textClass: 'text-xs sm:text-sm md:text-base' }
 }
 
 export function WordSearchGrid({ cells, cellStates, onCellClick, disabled }: Props) {
@@ -43,21 +50,35 @@ export function WordSearchGrid({ cells, cellStates, onCellClick, disabled }: Pro
 
   return (
     <div className="w-full">
-      <div className="bg-gray-50 rounded-2xl p-1.5 sm:p-2 shadow-inner">
+      <div className="rounded-2xl border-2 border-encre bg-sable p-1 sm:p-2">
         <div className={`grid ${colsClass} gap-1`}>
           {cells.map((row, r) =>
             row.map((word, c) => {
               const key = cellKey(r, c)
               const state = cellStates.get(key) ?? 'default'
               const clickable = !disabled && (state === 'default' || state === 'selected')
+              const icone = stateIcons[state]
               return (
                 <motion.button
                   key={key}
+                  type="button"
                   whileTap={clickable ? { scale: 0.92 } : {}}
                   onClick={clickable ? () => onCellClick?.(r, c) : undefined}
-                  className={`w-full py-1.5 sm:py-2 px-1 rounded-lg border ${textClass} font-semibold transition-colors select-none text-center break-all ${stateStyles[state]} ${clickable ? '' : 'cursor-default'}`}
+                  aria-pressed={clickable ? state === 'selected' : undefined}
+                  className={`relative w-full min-w-0 rounded-lg border px-0.5 py-2 sm:px-1 sm:py-2.5 ${textClass} font-texte font-semibold text-encre transition-colors select-none text-center break-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-1 focus-visible:outline-bleu ${stateStyles[state]} ${clickable ? '' : 'cursor-default'}`}
                 >
                   {word}
+                  {icone && (
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="absolute -right-1 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full border border-encre bg-papier font-titre text-[0.625rem] leading-none text-encre"
+                      >
+                        {icone.signe}
+                      </span>
+                      <span className="sr-only">({icone.lu})</span>
+                    </>
+                  )}
                 </motion.button>
               )
             })

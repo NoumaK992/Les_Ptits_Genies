@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import type { WordSearchTheme } from '@/types'
+import { classesCarte } from '@/components/ui/Carte'
 
 interface Props {
   themes: WordSearchTheme[]
@@ -11,28 +12,29 @@ const item = { hidden: { opacity: 0, scale: 0.9 }, show: { opacity: 1, scale: 1 
 
 export function ThemeSelector({ themes, onSelect }: Props) {
   return (
-    <div className="max-w-lg mx-auto">
-      <div className="text-center mb-6">
-        <h3 className="text-xl font-black text-ink">Choisis un thème</h3>
-        <p className="text-gray-500 text-sm font-semibold mt-1">Les mots seront en lien avec le thème choisi</p>
+    <div className="mx-auto max-w-2xl">
+      <div className="mb-6 text-center">
+        <h2 className="font-titre text-2xl text-encre md:text-3xl">Choisis un thème</h2>
+        <p className="mt-2 text-base text-encre-doux">Les mots seront en lien avec le thème choisi</p>
       </div>
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-2 md:grid-cols-4 gap-3"
+        className="grid grid-cols-2 gap-3 md:grid-cols-4"
       >
         {themes.map((t) => (
           <motion.button
             key={t.id}
+            type="button"
             variants={item}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => onSelect(t.id)}
-            className="bg-white rounded-2xl p-4 shadow hover:shadow-md transition-shadow flex flex-col items-center gap-2 border-2 border-transparent hover:border-primary/30"
+            className={`${classesCarte} flex min-h-28 flex-col items-center justify-center gap-2 p-4 transition-colors hover:bg-jaune focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
           >
-            <span className="text-3xl">{t.emoji}</span>
-            <span className="font-bold text-sm text-ink text-center">{t.label}</span>
+            <span className="text-3xl" aria-hidden="true">{t.emoji}</span>
+            <span className="text-center text-base font-bold text-encre">{t.label}</span>
           </motion.button>
         ))}
       </motion.div>
