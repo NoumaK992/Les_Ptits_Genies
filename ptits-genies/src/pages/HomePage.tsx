@@ -5,6 +5,9 @@ import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
 import { calcStreak } from '@/utils/streak'
 import type { ExerciseType } from '@/types'
+import { Bouton } from '@/components/ui/Bouton'
+import { Carte, classesCarte } from '@/components/ui/Carte'
+import { Etiquette } from '@/components/ui/Etiquette'
 
 const ALL_EXERCISES: {
   type: ExerciseType
@@ -75,62 +78,44 @@ export default function HomePage() {
   })
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <motion.div variants={container} initial="hidden" animate="show" className="space-y-4">
+    <div className="mx-auto max-w-2xl text-encre">
+      <motion.div variants={container} initial="hidden" animate="show" className="space-y-5">
 
         {/* Barre supérieure */}
-        <motion.div variants={item} className="flex justify-between items-center">
-          <span className="text-white font-bold text-lg">
+        <motion.div variants={item} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+          <span className="font-titre text-xl text-encre sm:text-2xl">
             Salut, {currentUser?.username} 👋
           </span>
-          <span className="text-sm capitalize" style={{ color: 'rgba(255,255,255,0.35)' }}>
+          <span className="text-base capitalize text-encre-doux">
             {today}
           </span>
         </motion.div>
 
         {/* Ligne de stats */}
-        <motion.div variants={item} className="grid grid-cols-3 gap-3">
-          <div
-            className="rounded-2xl p-4 text-center"
-            style={{
-              background: 'rgba(124,111,247,0.15)',
-              border: '1px solid rgba(124,111,247,0.30)',
-            }}
-          >
-            <div className="text-xl font-black" style={{ color: '#a78bfa' }}>
+        <motion.div variants={item} className="grid grid-cols-3 gap-2 sm:gap-3">
+          <div className="rounded-2xl border-2 border-encre bg-jaune p-2 text-center shadow-dur-sm sm:p-4">
+            <div className="font-titre text-2xl text-encre">
               {currentUser?.totalPoints ?? 0}
             </div>
-            <div className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.40)' }}>
+            <div className="mt-0.5 break-words text-base font-semibold text-encre">
               ⭐ points
             </div>
           </div>
 
-          <div
-            className="rounded-2xl p-4 text-center"
-            style={{
-              background: 'rgba(255,211,102,0.15)',
-              border: '1px solid rgba(255,211,102,0.30)',
-            }}
-          >
-            <div className="text-xl font-black" style={{ color: '#FFD166' }}>
+          <div className="rounded-2xl border-2 border-encre bg-rose-pale p-2 text-center shadow-dur-sm sm:p-4">
+            <div className="font-titre text-2xl text-encre">
               {streak}
             </div>
-            <div className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.40)' }}>
+            <div className="mt-0.5 break-words text-base font-semibold text-encre">
               🔥 jours
             </div>
           </div>
 
-          <div
-            className="rounded-2xl p-4 text-center"
-            style={{
-              background: 'rgba(6,214,160,0.15)',
-              border: '1px solid rgba(6,214,160,0.30)',
-            }}
-          >
-            <div className="text-xl font-black" style={{ color: '#06D6A0' }}>
+          <div className="rounded-2xl border-2 border-encre bg-bleu p-2 text-center shadow-dur-sm sm:p-4">
+            <div className="font-titre text-2xl text-encre">
               {progress.length}/6
             </div>
-            <div className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.40)' }}>
+            <div className="mt-0.5 break-words text-base font-semibold text-encre">
               📚 exercices
             </div>
           </div>
@@ -141,75 +126,53 @@ export default function HomePage() {
           variants={item}
           whileHover={{ scale: 1.01 }}
           whileTap={{ scale: 0.98 }}
-          className="rounded-2xl p-5 cursor-pointer"
-          style={{
-            background: 'rgba(124,111,247,0.10)',
-            border: '1px solid rgba(124,111,247,0.50)',
-          }}
+          className={`${classesCarte} cursor-pointer p-5`}
           onClick={() => navigate(challenge.to)}
         >
-          <p
-            className="text-xs font-black uppercase tracking-widest mb-2"
-            style={{ color: '#a78bfa' }}
-          >
-            ✦ Défi du jour
-          </p>
-          <h2 className="text-white font-black text-xl mb-1">
+          <Etiquette>✦ Défi du jour</Etiquette>
+          <h2 className="mb-1 mt-4 font-titre text-2xl leading-tight text-encre">
             {challenge.emoji} {challenge.title}
           </h2>
-          <p className="text-sm mb-4" style={{ color: 'rgba(255,255,255,0.45)' }}>
+          <p className="mb-4 text-base text-encre-doux">
             {challengeMsg}
           </p>
-          <button
-            className="w-full py-2.5 rounded-xl text-white font-black text-sm"
-            style={{ background: 'linear-gradient(135deg, #7C6FF7, #4a3fcc)' }}
-          >
+          <Bouton className="w-full">
             ▶ Jouer
-          </button>
+          </Bouton>
         </motion.div>
 
         {/* Bas de page : dernière session + voir tous les exercices */}
         <motion.div variants={item} className="flex gap-3">
           {lastSession && lastExercise ? (
-            <div
-              className="flex-1 rounded-xl p-3"
-              style={{ background: 'rgba(255,255,255,0.05)' }}
-            >
-              <p className="text-xs mb-1" style={{ color: 'rgba(255,255,255,0.30)' }}>
+            <Carte className="flex-1 p-3 shadow-dur-sm">
+              <p className="mb-1 text-base font-bold text-encre-doux">
                 Récent
               </p>
-              <p className="text-white text-sm font-semibold">
+              <p className="text-base font-semibold text-encre">
                 {lastExercise.emoji} {lastExercise.title}
               </p>
-              <p className="text-xs mt-0.5 font-black" style={{ color: '#FFD166' }}>
+              <p className="mt-0.5 text-base font-bold text-juste-fonce">
                 +{lastSession.score} pts
               </p>
-              <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.25)' }}>
+              <p className="mt-0.5 text-base text-encre-doux">
                 {getRelativeDate(lastSession.playedAt)}
               </p>
-            </div>
+            </Carte>
           ) : (
-            <div
-              className="flex-1 rounded-xl p-3"
-              style={{ background: 'rgba(255,255,255,0.04)' }}
-            >
-              <p className="text-xs" style={{ color: 'rgba(255,255,255,0.25)' }}>
+            <Carte className="flex-1 p-3 shadow-dur-sm">
+              <p className="text-base text-encre-doux">
                 Aucune session encore — c'est parti ! 🌱
               </p>
-            </div>
+            </Carte>
           )}
 
-          <button
+          <Bouton
+            variante="secondaire"
             onClick={() => navigate('/exercices')}
-            className="flex-1 rounded-xl p-3 text-sm font-black transition-all hover:scale-[1.02]"
-            style={{
-              background: 'rgba(124,111,247,0.15)',
-              border: '1px solid rgba(124,111,247,0.30)',
-              color: '#a78bfa',
-            }}
+            className="h-auto flex-1 flex-col p-3 text-center"
           >
-            📚 Voir tous<br />les exercices →
-          </button>
+            <span>📚 Voir tous<br />les exercices →</span>
+          </Bouton>
         </motion.div>
 
       </motion.div>
