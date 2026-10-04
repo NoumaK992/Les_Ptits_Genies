@@ -113,7 +113,7 @@ export default function LectureRapidePage() {
         speedMultiplier: selectedSpeed.multiplier, qcmScore: correctCount, textId: currentText.id,
         reussite,
       },
-    }, { parcours: !!modeParcours })
+    }, { parcours: modeParcours })
     void useItemsVusStore.getState().marquer(currentUser.id, 'lecture-rapide', [currentText.id])
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
     await refreshPoints()

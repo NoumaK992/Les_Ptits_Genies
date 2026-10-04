@@ -192,7 +192,7 @@ export default function IntrusPage() {
         totalLists: LISTS_PER_SESSION,
         reussite,
       },
-    }, { parcours: !!modeParcours })
+    }, { parcours: modeParcours })
     void useItemsVusStore.getState().marquer(currentUser.id, 'intrus', sessionLists.map((l) => l.id))
     await refreshPoints()
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)

@@ -231,7 +231,7 @@ export default function PhrasesBrouilleesPage() {
         perfectBonus: scoreData.perfectBonus, stars, totalElapsedSeconds: stopwatch.seconds,
         reussite,
       },
-    }, { parcours: !!modeParcours })
+    }, { parcours: modeParcours })
     void useItemsVusStore.getState().marquer(currentUser.id, JEU, [exercise.id])
     if (modeParcours) {
       await terminerPartie(currentUser.id, modeParcours, reussite)

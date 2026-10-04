@@ -229,3 +229,12 @@ export function pointsLibres(score: number, partiesLibresDejaFaitesAujourdhui: n
   const taux = TAUX_LIBRE[partiesLibresDejaFaitesAujourdhui] ?? 0
   return Math.max(0, Math.round(score * taux))
 }
+
+/**
+ * Une partie lancée depuis une adresse de parcours ne rapporte le plein tarif que si elle est
+ * exactement l'étape attendue (même niveau, même étape, même jeu) et que le niveau n'est pas
+ * verrouillé : une page retrouvée avec « Précédent » est payée au tarif du jeu libre.
+ */
+export function pleinTarif(etat: EtatParcours | null, partie: PartieParcours, aujourdhui: string): boolean {
+  return !!etat && partieValide(etat, partie) && !estVerrouille(etat, aujourdhui)
+}

@@ -3,7 +3,19 @@ import type { Session, Progress } from '@/types'
 import { scoreService } from '@/services/supabase/scoreService'
 import { userService } from '@/services/supabase/userService'
 import { badgeService } from '@/services/supabase/badgeService'
-import { pointsLibres } from '@/parcours/regles'
+import { dateDuJour, pleinTarif, pointsLibres } from '@/parcours/regles'
+import type { ModeParcours } from '@/parcours/useModeParcours'
+import { useParcoursStore } from './parcoursStore'
+
+// Une adresse de parcours ne suffit pas (bouton « Précédent ») : la partie doit être l'étape
+// attendue par l'état du parcours en base, et ne pas avoir déjà été comptée.
+async function meriteLePleinTarif(userId: string, partie: ModeParcours | null): Promise<boolean> {
+  if (!partie) return false
+  const store = useParcoursStore.getState()
+  if (store.userId !== userId || !store.etat) await store.charger(userId)
+  const { etat, partiesTraitees } = useParcoursStore.getState()
+  return !partiesTraitees.includes(partie.idPartie) && pleinTarif(etat, partie, dateDuJour())
+}
 
 interface ProgressState {
   sessions: Session[]
@@ -12,8 +24,11 @@ interface ProgressState {
   /** Dernière partie enregistrée : l'écran de fin affiche les points réellement gagnés. */
   dernierePartie: { parcours: boolean; pointsGagnes: number; score: number } | null
   loadProgress: (userId: string) => Promise<void>
-  /** Enregistre la partie et renvoie les points réellement gagnés. `parcours: true` pour une partie lancée depuis le parcours. */
-  saveSession: (session: Session, options?: { parcours?: boolean }) => Promise<number>
+  /**
+   * Enregistre la partie et renvoie les points réellement gagnés. Passer `parcours: modeParcours`
+   * pour une partie lancée depuis le parcours : le plein tarif n'est accordé que si c'est l'étape attendue.
+   */
+  saveSession: (session: Session, options?: { parcours?: ModeParcours | null }) => Promise<number>
   syncBadges: (userId: string, earnedIds: string[]) => Promise<string[]>
 }
 
@@ -35,7 +50,9 @@ export const useProgressStore = create<ProgressState>((set) => ({
   // Une partie de parcours rapporte tout son score ; une partie libre en rapporte beaucoup moins
   // (dégressif par jeu et par jour, voir pointsLibres). Le score brut reste enregistré pour les statistiques.
   saveSession: async (session, options) => {
-    const parcours = options?.parcours === true
+    // Effacé d'abord : si l'enregistrement échoue, l'écran de fin n'affiche pas les points d'une autre partie.
+    set({ dernierePartie: null })
+    const parcours = await meriteLePleinTarif(session.userId, options?.parcours ?? null)
     let pointsGagnes = session.score
     if (!parcours) {
       const dejaFaites = await scoreService.compterPartiesLibresDuJour(session.userId, session.exerciseType)

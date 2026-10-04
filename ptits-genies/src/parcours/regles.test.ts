@@ -2,7 +2,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import {
   JEUX_ROTATION, PARTIES_PAR_JEU, jeuDuNiveau, jeuDeLEtape, tourDuNiveau, difficulte, seuilBoss, lireCode,
-  appliquerResultat, tauxReussite, lienPartie, parametresLecture, niveauAmiEnnemi, partieValide, estVerrouille, pointsLibres,
+  appliquerResultat, tauxReussite, lienPartie, parametresLecture, niveauAmiEnnemi, partieValide, estVerrouille, pointsLibres, pleinTarif,
   type EtatParcours,
 } from './regles.ts'
 
@@ -190,4 +190,16 @@ test("entraînement libre : 20 % puis 10 % puis plus rien pour le même jeu dans
   assert.equal(pointsLibres(500, 9), 0)
   assert.equal(pointsLibres(333, 0), 67)
   assert.equal(pointsLibres(-10, 0), 0)
+})
+
+test("plein tarif : seulement pour la partie attendue par le parcours, une seule fois, hors verrou", () => {
+  const e = etat({ place: 1, niveau: 3, etape: "jeu" })
+  const partie = { etape: "jeu" as const, niveau: 3, jeu: jeuDuNiveau(1, 3) }
+  assert.equal(pleinTarif(e, partie, AUJ), true)
+  // Page retrouvée avec « Précédent » : autre niveau, autre étape ou autre jeu → tarif libre
+  assert.equal(pleinTarif(e, { ...partie, niveau: 2 }, AUJ), false)
+  assert.equal(pleinTarif(e, { ...partie, etape: "lecture", jeu: "lecture-rapide" }, AUJ), false)
+  assert.equal(pleinTarif(null, partie, AUJ), false)
+  // Niveau verrouillé (déjà validé aujourd'hui) → tarif libre
+  assert.equal(pleinTarif(etat({ place: 1, niveau: 3, niveauValideLe: AUJ }), partie, AUJ), false)
 })

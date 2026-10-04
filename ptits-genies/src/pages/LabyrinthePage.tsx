@@ -183,7 +183,7 @@ export default function LabyrinthePage() {
             },
           },
         },
-        { parcours: !!modeParcours },
+        { parcours: modeParcours },
       )
       await refreshPoints()
       if (modeParcours) await terminerPartie(currentUser.id, modeParcours, taux)

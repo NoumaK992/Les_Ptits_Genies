@@ -156,7 +156,7 @@ export default function VraiOuAbsurdePage() {
               ratees: rates.map((ph) => ph.id),
             },
           },
-        }, { parcours: !!modeParcours })
+        }, { parcours: modeParcours })
         await refreshPoints()
         if (modeParcours) await terminerPartie(currentUser.id, modeParcours, taux)
       }

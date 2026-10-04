@@ -171,7 +171,7 @@ export default function CoupeMotsPage() {
           },
         },
       },
-      { parcours: !!modeParcours },
+      { parcours: modeParcours },
     )
     await marquer(currentUser.id, JEU, ids)
     await refreshPoints()

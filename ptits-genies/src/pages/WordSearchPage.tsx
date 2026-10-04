@@ -174,7 +174,7 @@ export default function WordSearchPage() {
         totalWrongSelections: totalWrong, totalElapsedSeconds: stopwatch.seconds,
         reussite,
       },
-    }, { parcours: !!modeParcours })
+    }, { parcours: modeParcours })
     void useItemsVusStore.getState().marquer(currentUser.id, 'word-search', [themeId])
     if (modeParcours) {
       await terminerPartie(currentUser.id, modeParcours, reussite)

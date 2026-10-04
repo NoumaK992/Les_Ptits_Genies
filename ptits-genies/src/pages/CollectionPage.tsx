@@ -148,7 +148,7 @@ export default function CollectionPage() {
     setResult({ ...scoreData, stars })
     const details: CollectionSessionDetails = { type: 'collection', level: selectedLevel, totalItems, correctAnswers: correct, wrongAnswers: wrong, accuracyScore: scoreData.accuracyScore, timeBonus: scoreData.timeBonus, levelMultiplierBonus: scoreData.levelMultiplierBonus, stars, totalElapsedSeconds: stopwatch.seconds }
     const reussite = tauxReussite(correct, totalItems)
-    await saveSession({ id: `${Date.now()}-col`, userId: currentUser.id, exerciseType: 'collection', score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(), details: { ...details, reussite } }, { parcours: !!modeParcours })
+    await saveSession({ id: `${Date.now()}-col`, userId: currentUser.id, exerciseType: 'collection', score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(), details: { ...details, reussite } }, { parcours: modeParcours })
     void useItemsVusStore.getState().marquer(currentUser.id, 'collection', queue.map((item) => item.id))
     await refreshPoints()
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)

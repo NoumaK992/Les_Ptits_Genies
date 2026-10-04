@@ -190,7 +190,7 @@ export default function ForgeronPage() {
           },
         },
       },
-      { parcours: !!modeParcours },
+      { parcours: modeParcours },
     )
     await marquer(currentUser.id, JEU, items)
     await refreshPoints()

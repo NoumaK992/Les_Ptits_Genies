@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import {
-  appliquerResultat, dateDuJour, lireCode, partieValide, BONUS_BOSS,
+  appliquerResultat, dateDuJour, lireCode, pleinTarif, BONUS_BOSS,
   type EtatParcours, type EvenementParcours,
 } from '@/parcours/regles'
 import type { ModeParcours } from '@/parcours/useModeParcours'
@@ -78,7 +78,7 @@ export const useParcoursStore = create<ParcoursState>((set, get) => ({
     if (get().userId !== userId || !get().etat) await get().charger(userId)
     const { etat, enCours } = get()
     // Rien à faire : pas de parcours, parcours fini, partie d'un autre niveau / jeu / étape, ou appel en cours.
-    if (!etat || !partieValide(etat, partie) || enCours) return
+    if (!etat || !pleinTarif(etat, partie, dateDuJour()) || enCours) return
 
     set({ enCours: true, partiesTraitees: [...get().partiesTraitees, partie.idPartie] })
     try {

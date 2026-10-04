@@ -146,7 +146,7 @@ export const ChasseurDIntrus: React.FC = () => {
         };
         const reussite = tauxReussite(manchesReussies, series.length);
         try {
-          await saveSession({ id: `${Date.now()}-ami`, userId: currentUser.id, exerciseType: 'ami-ennemi', score, duration: duree, playedAt: new Date().toISOString(), details: { ...details, reussite } }, { parcours: !!modeParcours });
+          await saveSession({ id: `${Date.now()}-ami`, userId: currentUser.id, exerciseType: 'ami-ennemi', score, duration: duree, playedAt: new Date().toISOString(), details: { ...details, reussite } }, { parcours: modeParcours });
           await refreshPoints();
         } catch {
           // Échec réseau : le bilan s'affiche quand même.

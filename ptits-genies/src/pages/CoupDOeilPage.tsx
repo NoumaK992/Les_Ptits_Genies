@@ -119,7 +119,7 @@ export default function CoupDOeilPage() {
       id: `${Date.now()}-cd`, userId: currentUser.id, exerciseType: 'coup-doeil',
       score: score + bonus, duration: stopwatch.seconds, playedAt: new Date().toISOString(),
       details: { type: 'coup-doeil', seriesId, correctCategorizations: correct, wrongCategorizations: wrong, missedTargets: missed, falseAlarms, totalElapsedSeconds: stopwatch.seconds, reussite },
-    }, { parcours: !!modeParcours })
+    }, { parcours: modeParcours })
     void useItemsVusStore.getState().marquer(currentUser.id, 'coup-doeil', [String(seriesId)])
     await refreshPoints()
     if (modeParcours) await terminerPartie(currentUser.id, modeParcours, reussite)
