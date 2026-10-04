@@ -193,5 +193,590 @@
         "correctIndex": 1
       }
     ]
+  },
+  {
+    "id": "lr3-06",
+    "title": "La Gardienne du phare",
+    "genre": "Nouvelle littéraire",
+    "level": 3,
+    "text": "Depuis la mort de son père, Anne Le Bihan était seule à veiller sur le phare de Kerbrat, une tour de granit plantée sur un rocher à deux milles de la côte bretonne. On était en novembre 1923, et l'administration avait promis d'envoyer un second gardien avant l'hiver. Il n'était jamais venu. Chaque soir, à la tombée du jour, Anne gravissait les cent douze marches de l'escalier en colimaçon, remontait le mécanisme d'horlogerie qui faisait tourner l'optique, allumait la lampe à pétrole et nettoyait les lentilles avec un soin presque religieux. Son père lui avait répété mille fois qu'une seule nuit d'obscurité pouvait coûter la vie à tout un équipage.\n\nCe soir-là, le ciel avait pris une teinte de plomb dès le milieu de l'après-midi. Le baromètre chutait à une vitesse qu'Anne n'avait jamais observée. Les goélands, d'ordinaire si bavards, s'étaient tus et volaient bas vers la terre. Elle connaissait ces signes : une tempête de grande ampleur approchait. Elle vérifia les réserves de pétrole, rentra les seaux qui traînaient sur la plate-forme et ferma solidement les volets de la petite cuisine. Puis elle s'installa dans la salle de veille, juste sous la lanterne, avec une couverture sur les épaules et le registre de service ouvert sur les genoux.\n\nVers minuit, le vent atteignit une violence inouïe. Les vagues frappaient le pied de la tour avec un bruit sourd, comme les coups d'un poing gigantesque, et des paquets d'écume montaient jusqu'aux vitres de la lanterne, à plus de trente mètres de hauteur. La tour tout entière vibrait. Anne avait peur, mais elle refusait de se l'avouer. Elle se répétait à voix basse les gestes à accomplir, comme on récite une prière, et la régularité de cette liste la rassurait.\n\nSoudain, un grincement métallique la fit sursauter. L'optique ralentissait. Le mécanisme, qui devait faire tourner les lentilles à vitesse constante pour que chaque phare garde sa signature lumineuse, s'enrayait. Or un phare qui ne tourne plus devient une simple lumière fixe, et un marin perdu dans la tempête risque de le confondre avec un autre feu de la côte. Anne ouvrit le carter et découvrit qu'un engrenage avait sauté de son axe. Impossible de le réparer avant le matin : il lui aurait fallu des outils qu'elle ne possédait pas.\n\nElle prit alors une décision que son père aurait sans doute jugée folle. Elle saisit la manivelle de secours et se mit à tourner l'optique à la main. Il fallait respecter un rythme précis : un éclat toutes les cinq secondes, ni plus ni moins. Elle compta à voix haute, sans relâche, pendant que la tempête hurlait autour d'elle. Au bout d'une heure, ses bras brûlaient. Au bout de trois heures, elle ne sentait plus ses épaules. Pour tenir, elle chantait les vieilles complaintes que sa mère lui fredonnait autrefois, en calquant les syllabes sur la cadence des éclats.\n\nPeu avant l'aube, à travers la pluie, elle aperçut une forme sombre qui luttait contre les vagues : un chalutier, ballotté comme un bouchon, qui manœuvrait pour contourner les écueils de la Pointe Noire. Il passa si près des rochers qu'Anne retint son souffle. Puis il obliqua vers le large, retrouva le chenal et disparut en direction du port. Alors seulement, elle se laissa tomber sur le plancher, les mains en sang, et pleura sans savoir si c'était d'épuisement ou de soulagement.\n\nTrois jours plus tard, quand la mer se fut calmée, une barque accosta au pied du phare. Un homme au visage tanné en descendit, le patron du chalutier. Il tenait un panier de pain frais et une bouteille de cidre. Il expliqua qu'il avait reconnu Kerbrat à son éclat de cinq secondes et que, sans ce repère, il aurait pris le phare pour celui de l'île voisine et se serait jeté sur les récifs avec ses six hommes. Anne ne répondit presque rien. Elle se contenta de lui serrer la main et de lui montrer, en souriant, ses paumes couvertes de pansements.\n\nLe mois suivant, l'administration nomma enfin un second gardien. Dans son rapport, l'inspecteur nota que le mécanisme avait été réparé et que le service n'avait subi aucune interruption. Il ne mentionna pas la nuit de la tempête. Mais sur la dernière page du registre de service, d'une écriture tremblante, Anne avait simplement inscrit : « Nuit du 14 au 15 novembre. Rotation assurée à la main. Feu jamais éteint. »",
+    "qcm": [
+      {
+        "question": "Pourquoi Anne est-elle seule à garder le phare ?",
+        "options": ["Elle a choisi de vivre loin de tout le monde", "Son père est mort et le second gardien promis n'est jamais arrivé", "Les autres gardiens ont fui à l'approche de la tempête", "L'administration a fermé le phare pour l'hiver"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi est-il grave que l'optique cesse de tourner ?",
+        "options": ["Parce qu'un feu fixe peut être confondu avec un autre feu de la côte", "Parce que la tour risque de s'effondrer", "Parce que la lampe risque d'exploser", "Parce que les goélands seraient attirés par la lumière"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment Anne parvient-elle à tenir le rythme pendant des heures ?",
+        "options": ["Elle répare l'engrenage avec un outil de secours", "Elle utilise une horloge à sonnerie", "Elle se fait aider par un marin", "Elle chante d'anciennes complaintes en suivant la cadence des éclats"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie l'expression « ballotté comme un bouchon » ?",
+        "options": ["Le bateau est solidement ancré", "Le bateau avance très vite et en ligne droite", "Le bateau est secoué dans tous les sens par les vagues", "Le bateau commence à couler"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que peut-on déduire de l'attitude d'Anne face au patron du chalutier ?",
+        "options": ["Elle est fâchée qu'il ait pris des risques", "Elle est discrète et ne cherche pas à se vanter de son exploit", "Elle ne le reconnaît pas", "Elle attend une récompense en argent"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi l'auteur termine-t-il sur la phrase écrite dans le registre ?",
+        "options": ["Pour souligner, par des mots sobres, l'héroïsme qu'Anne n'a pas mis en avant", "Pour critiquer le travail de l'inspecteur", "Pour montrer qu'Anne a oublié ce qui s'est passé", "Pour annoncer qu'Anne va quitter le phare"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr3-07",
+    "title": "Le Grand Chantier de la nuit",
+    "genre": "Article scientifique",
+    "level": 3,
+    "text": "Nous passons environ un tiers de notre vie à dormir. Pour un adolescent de quatorze ans, cela représente déjà près de cinq années entières passées les yeux fermés. Pendant longtemps, on a considéré le sommeil comme une simple pause, une sorte de mise en veille durant laquelle le corps et l'esprit se reposeraient passivement. Les recherches menées depuis le milieu du vingtième siècle ont profondément bouleversé cette vision. Le cerveau endormi ne chôme pas : il travaille, trie, répare et range, à tel point que certains chercheurs le comparent à un chantier nocturne.\n\nLe sommeil n'est pas un état uniforme. Il se compose de cycles d'environ quatre-vingt-dix minutes qui se répètent quatre à six fois par nuit. Chaque cycle comprend d'abord une phase de sommeil léger, puis une phase de sommeil profond, pendant laquelle l'activité électrique du cerveau ralentit et prend la forme de grandes ondes régulières. Vient enfin le sommeil paradoxal, découvert dans les années 1950. On l'a nommé ainsi parce qu'il présente une contradiction surprenante : le cerveau y est presque aussi actif qu'à l'état de veille, alors que les muscles du corps sont complètement relâchés. C'est principalement durant cette phase que surviennent les rêves les plus vifs.\n\nÀ quoi sert ce ballet nocturne ? D'abord à la mémoire. Des expériences ont montré que les élèves qui dorment après avoir appris une leçon la retiennent nettement mieux que ceux qui restent éveillés. Pendant le sommeil profond, le cerveau rejoue en accéléré les informations accumulées dans la journée et transfère les plus importantes vers des zones de stockage durable. Il fonctionne un peu comme un archiviste qui, le soir venu, classerait les documents entassés sur son bureau et jetterait ceux qui ne servent à rien. Le sommeil paradoxal, lui, semble jouer un rôle dans l'apprentissage des gestes et dans la régulation des émotions.\n\nLe sommeil sert aussi au nettoyage. En 2013, une équipe de chercheurs américains a observé chez la souris un phénomène étonnant : pendant le sommeil, l'espace entre les cellules du cerveau s'agrandit, ce qui permet au liquide qui baigne le cerveau de circuler plus librement et d'évacuer les déchets produits par l'activité de la journée. Certains de ces déchets, s'ils s'accumulent, pourraient favoriser des maladies du cerveau à long terme. Dormir reviendrait donc, littéralement, à faire le ménage.\n\nEnfin, le sommeil participe à la croissance. C'est principalement durant le sommeil profond que l'organisme libère l'hormone de croissance, indispensable au développement des os et des muscles chez les jeunes. Voilà pourquoi les médecins insistent tant sur la quantité de sommeil nécessaire à l'adolescence : entre huit et dix heures par nuit selon les recommandations les plus courantes.\n\nOr la plupart des adolescents dorment beaucoup moins. Plusieurs raisons l'expliquent. À la puberté, l'horloge biologique se décale naturellement : la mélatonine, l'hormone qui annonce au corps que la nuit est venue, est sécrétée plus tard dans la soirée. Un adolescent ne se sent donc vraiment fatigué que vers vingt-trois heures, alors que ses cours commencent souvent à huit heures. À ce décalage s'ajoutent les écrans. Leur lumière, riche en lumière bleue, freine la production de mélatonine et trompe le cerveau, qui croit qu'il fait encore jour. Enfin, les contenus eux-mêmes, vidéos, jeux ou messages, maintiennent l'esprit en alerte au moment où il devrait ralentir.\n\nLes conséquences d'un manque de sommeil chronique sont bien documentées : difficultés de concentration, irritabilité, baisse des résultats scolaires, mais aussi risques accrus d'accidents et de prise de poids. Un cerveau privé de sommeil réagit plus fortement aux émotions négatives, ce qui rend les petites contrariétés plus difficiles à surmonter. Des expériences ont même montré qu'après une nuit blanche, les capacités de réaction d'une personne ressemblent à celles d'une personne qui aurait bu de l'alcool. Le plus inquiétant est que l'on perçoit mal sa propre fatigue : un adolescent qui dort six heures par nuit pendant des semaines finit par croire que son état de légère somnolence est normal.\n\nLes spécialistes proposent quelques règles simples. Se coucher et se lever à des heures régulières, y compris le week-end, aide l'horloge biologique à se stabiliser. Éteindre les écrans une heure avant de dormir laisse au cerveau le temps de produire sa mélatonine. S'exposer à la lumière du jour le matin, au contraire, aide le corps à se réveiller. Ces conseils paraissent modestes, mais ils sont redoutablement efficaces.\n\nLe sommeil n'a rien d'une perte de temps. Il constitue l'un des investissements les plus rentables qu'un être humain puisse faire pour sa santé et pour son intelligence. Dormir, c'est laisser travailler, en silence, les ouvriers les plus discrets et les plus indispensables de notre organisme.",
+    "qcm": [
+      {
+        "question": "Combien de temps dure environ un cycle de sommeil ?",
+        "options": ["Trente minutes", "Huit heures", "Trois heures", "Quatre-vingt-dix minutes"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi le sommeil paradoxal porte-t-il ce nom ?",
+        "options": ["Parce qu'on y fait uniquement des cauchemars", "Parce qu'il a été découvert par hasard", "Parce que le cerveau y est très actif alors que les muscles sont relâchés", "Parce qu'il n'existe que chez les adolescents"],
+        "correctIndex": 2
+      },
+      {
+        "question": "À quoi l'auteur compare-t-il le cerveau qui trie les souvenirs pendant la nuit ?",
+        "options": ["À un ouvrier qui construit un mur", "À un archiviste qui range son bureau", "À un ordinateur en panne", "À un gardien de nuit"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Selon le texte, pourquoi un adolescent a-t-il du mal à s'endormir tôt ?",
+        "options": ["Parce que la mélatonine est sécrétée plus tard dans la soirée à la puberté", "Parce qu'il mange trop le soir", "Parce qu'il n'a pas besoin de dormir autant qu'un adulte", "Parce que ses cycles de sommeil sont plus longs"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans le texte, que signifie l'adjectif « chronique » dans l'expression « manque de sommeil chronique » ?",
+        "options": ["Qui se produit une seule fois", "Qui est très grave", "Qui concerne uniquement la nuit", "Qui dure ou se répète sur une longue période"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quelle est l'intention principale de l'auteur dans cet article ?",
+        "options": ["Raconter l'histoire de la découverte des rêves", "Interdire les écrans aux adolescents", "Convaincre que le sommeil est une activité utile et donner des conseils pour mieux dormir", "Démontrer que les adolescents sont paresseux"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr3-08",
+    "title": "Le Déchiffreur d'Égypte",
+    "genre": "Biographie",
+    "level": 3,
+    "text": "En 1799, des soldats de l'armée de Bonaparte, occupés à consolider un fort près de la ville de Rosette, dans le delta du Nil, mirent au jour un bloc de pierre sombre couvert d'inscriptions. L'officier qui dirigeait les travaux comprit aussitôt l'importance de la découverte : le même texte y était gravé trois fois, en hiéroglyphes, en démotique, une écriture égyptienne plus tardive, et en grec ancien. Or le grec, on savait le lire. La pierre de Rosette offrait donc, en théorie, une clé pour percer le mystère des hiéroglyphes, que plus personne ne comprenait depuis près de quinze siècles. Encore fallait-il trouver quelqu'un capable de s'en servir.\n\nCet homme était alors un enfant de huit ans qui vivait à Figeac, dans le Lot. Jean-François Champollion, né en 1790, montrait des dispositions extraordinaires pour les langues. Son frère aîné, Jacques-Joseph, qui s'occupa de son éducation, l'emmena à Grenoble où le jeune garçon dévora tout ce qui concernait l'Antiquité. À seize ans, il présentait déjà devant une société savante un mémoire sur la géographie de l'Égypte ancienne. Il apprenait l'hébreu, l'arabe, le syriaque, le persan et surtout le copte, la langue des chrétiens d'Égypte, dont il pressentait qu'elle descendait directement de celle des pharaons. Il écrivait en copte son journal intime, et racontait plus tard qu'il se parlait à lui-même dans cette langue pour ne pas la perdre.\n\nPendant des années, les savants européens butèrent sur une idée fausse. Ils pensaient que les hiéroglyphes étaient des symboles purement idéographiques : chaque dessin aurait représenté une idée, un concept, sans aucun rapport avec les sons de la langue. Un oiseau aurait signifié l'âme, un serpent la sagesse. Le savant anglais Thomas Young avait fait quelques progrès en montrant que les noms des rois, entourés d'un ovale appelé cartouche, s'écrivaient avec des signes notant des sons. Mais il pensait que cette méthode ne servait qu'aux noms étrangers, comme ceux des souverains grecs qui avaient régné sur l'Égypte après Alexandre le Grand. Entre les deux hommes s'engagea une rivalité discrète, mais tenace, qui opposait aussi, d'une certaine façon, la France et l'Angleterre. Chacun lisait les publications de l'autre et cherchait à le devancer.\n\nChampollion, lui, travaillait avec acharnement, au milieu de difficultés matérielles et politiques. Ses opinions lui valurent d'être suspendu de son poste de professeur et de vivre plusieurs années dans une situation précaire. Il ne renonça jamais. Il compara patiemment les cartouches de Ptolémée et de Cléopâtre, repérant les signes communs aux deux noms. Puis, le 14 septembre 1822, il reçut la copie d'inscriptions provenant d'un temple. Il y lut un cartouche qu'il déchiffra grâce à sa connaissance du copte : Ramsès, un nom purement égyptien. La preuve était faite que les Égyptiens eux-mêmes utilisaient des signes phonétiques pour écrire leur propre langue.\n\nLa légende raconte qu'il courut aussitôt chez son frère, à l'Institut, s'écria « Je tiens l'affaire ! » et s'évanouit, épuisé par l'émotion. Quelques jours plus tard, il exposait sa découverte dans un texte resté célèbre, la Lettre à M. Dacier. Il y démontrait que l'écriture égyptienne était un système complexe, à la fois figuratif, symbolique et phonétique, où certains signes notaient des sons, d'autres des idées, et d'autres encore précisaient le sens des mots.\n\nLa reconnaissance vint, mais tardivement. En 1826, il fut nommé conservateur des collections égyptiennes du musée du Louvre. En 1828, il réalisa enfin le rêve de sa vie : un long voyage en Égypte, où il put lire directement sur les murs des temples les textes qu'il n'avait jusque-là étudiés que sur des copies parfois fautives. Il remonta le Nil, recopia des centaines d'inscriptions et confirma, sur le terrain, la justesse de sa méthode. Il écrivit à son frère qu'il pouvait désormais lire les temples comme on lit un livre.\n\nÉpuisé par ses travaux et par le climat, il mourut à Paris en 1832, à seulement quarante et un ans. Sa grammaire et son dictionnaire de l'égyptien ancien furent publiés après sa mort par son frère, fidèle jusqu'au bout. Ces ouvrages devinrent la base de toute une science nouvelle, l'égyptologie, dont Champollion est aujourd'hui considéré comme le fondateur. Des générations de chercheurs ont depuis complété, corrigé et approfondi son travail, sans jamais en remettre en cause le principe.\n\nGrâce à Champollion, trois mille ans d'histoire sortirent du silence. Les pharaons cessèrent d'être des figures muettes pour devenir des souverains dont on connaît les noms, les guerres, les prières et les lois. Son parcours rappelle que les grandes découvertes ne naissent pas d'un éclair de génie isolé. Elles exigent des années de patience, une solide culture et le courage de remettre en question les certitudes de son époque.",
+    "qcm": [
+      {
+        "question": "Pourquoi la pierre de Rosette était-elle si précieuse pour les savants ?",
+        "options": ["Elle était faite d'un granit très rare", "Elle portait le même texte en trois écritures, dont le grec ancien que l'on savait lire", "Elle indiquait l'emplacement du tombeau de Ramsès", "Elle avait été gravée par Bonaparte lui-même"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi Champollion étudiait-il le copte avec tant d'ardeur ?",
+        "options": ["Parce qu'il pensait que cette langue descendait de celle des pharaons", "Parce que c'était la langue de sa famille", "Pour pouvoir voyager en Égypte", "Pour enseigner au musée du Louvre"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quelle idée fausse bloquait les savants européens ?",
+        "options": ["Ils pensaient que les Égyptiens ne savaient pas écrire", "Ils croyaient que les hiéroglyphes étaient écrits en grec", "Ils pensaient que la pierre de Rosette était un faux", "Ils croyaient que les hiéroglyphes ne représentaient que des idées, sans lien avec les sons"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi le déchiffrement du nom de Ramsès est-il décisif ?",
+        "options": ["Parce que Ramsès était le pharaon le plus célèbre", "Parce que c'était le premier cartouche jamais découvert", "Parce qu'il prouvait que les Égyptiens notaient les sons même pour leurs propres noms", "Parce qu'il était écrit en démotique"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Dans le texte, que signifie l'expression « dans une situation précaire » ?",
+        "options": ["Dans une situation confortable", "Dans une situation fragile et incertaine", "Dans une situation secrète", "Dans une situation dangereuse pour sa santé"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle leçon l'auteur tire-t-il du parcours de Champollion ?",
+        "options": ["Les grandes découvertes demandent patience, culture et audace face aux certitudes", "Le génie suffit pour réussir sans effort", "Il faut toujours voyager pour comprendre l'histoire", "Les savants anglais étaient moins doués que les français"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr3-09",
+    "title": "Les Bâtisseurs de cathédrales",
+    "genre": "Récit historique",
+    "level": 3,
+    "text": "En l'an 1194, un incendie ravagea la ville de Chartres et détruisit presque entièrement sa cathédrale. Seules la façade ouest et la crypte échappèrent aux flammes. Les habitants crurent d'abord que la relique la plus précieuse de l'édifice, un voile attribué à la Vierge Marie, avait disparu dans le brasier. Trois jours plus tard, des clercs sortirent pourtant de la crypte, où ils s'étaient réfugiés avec le précieux tissu. La population vit dans cet événement un signe : il fallait reconstruire, et reconstruire plus grand. Commença alors l'un des chantiers les plus extraordinaires du Moyen Âge.\n\nConstruire une cathédrale gothique représentait un défi technique, financier et humain gigantesque. Il fallait d'abord réunir l'argent. L'évêque et les chanoines consacrèrent une part de leurs revenus pendant plusieurs années, les nobles firent des dons, les marchands et les corporations de la ville offrirent des vitraux, sur lesquels on voit encore aujourd'hui les boulangers, les cordonniers ou les tonneliers représentés au travail. Une cathédrale était l'œuvre de toute une société.\n\nAu cœur du chantier se trouvait le maître d'œuvre, que l'on appellerait aujourd'hui l'architecte. Il concevait les plans, dessinait les gabarits, surveillait chaque étape et devait résoudre des problèmes que personne n'avait jamais rencontrés. Car l'ambition de l'art gothique était audacieuse : élever des voûtes toujours plus hautes et percer les murs de fenêtres toujours plus larges, pour inonder l'intérieur de lumière. Or plus un mur est haut et ajouré, plus il risque de céder sous la poussée des voûtes. La solution fut l'arc-boutant, une sorte de béquille de pierre placée à l'extérieur, qui reçoit cette poussée et la transmet jusqu'au sol. Grâce à lui, les murs pouvaient devenir de véritables parois de verre.\n\nAutour du maître d'œuvre s'affairaient des centaines d'ouvriers. Les carriers extrayaient la pierre, souvent à plusieurs kilomètres, et le transport des blocs coûtait parfois plus cher que la pierre elle-même. Les tailleurs de pierre façonnaient chaque bloc selon les gabarits et y gravaient leur marque personnelle, un petit signe qui permettait de calculer leur salaire. On retrouve encore ces marques sur les murs. Les maçons assemblaient les pierres, les charpentiers construisaient les échafaudages et les cintres, ces charpentes provisoires en bois qui soutenaient les arcs le temps que le mortier sèche. Les forgerons fabriquaient et réparaient sans cesse les outils. Des manœuvres actionnaient de grandes roues en bois, à l'intérieur desquelles ils marchaient comme des hamsters, pour hisser les charges jusqu'au sommet.\n\nLes maîtres verriers, eux, travaillaient dans des ateliers installés au pied de l'édifice. Ils fabriquaient un verre coloré dans la masse en ajoutant au sable fondu des oxydes métalliques, puis découpaient les morceaux selon un dessin tracé à la craie sur une table blanchie. Ils peignaient ensuite les visages, les plis des vêtements et les détails à l'aide d'une grisaille, une peinture sombre que l'on fixait au verre par une nouvelle cuisson. Enfin, les morceaux étaient sertis dans des baguettes de plomb, comme les pièces d'un immense puzzle lumineux. Pour la plupart des fidèles, qui ne savaient pas lire, ces vitraux racontaient en images les épisodes de la Bible et la vie des saints.\n\nLe travail suivait le rythme des saisons. L'hiver, le gel menaçait le mortier frais ; on couvrait alors les murs inachevés de paille et de fumier pour les protéger, et les tailleurs continuaient à préparer des blocs à l'abri dans leurs loges. Au printemps, la construction reprenait. Les accidents étaient fréquents, et les chroniques rapportent des chutes d'échafaudages et des effondrements de voûtes trop audacieuses. À Beauvais, quelques décennies plus tard, le chœur de la cathédrale, le plus haut jamais construit, s'écroula partiellement en 1284 : les bâtisseurs avaient franchi la limite de ce que la pierre pouvait supporter.\n\nLa reconstruction de Chartres fut remarquablement rapide pour l'époque. L'essentiel de l'édifice fut achevé en une trentaine d'années environ, alors que bien d'autres cathédrales demandèrent plus d'un siècle de travaux. Beaucoup d'ouvriers ne virent jamais l'achèvement de l'église à laquelle ils avaient consacré leur vie. Ils savaient, en posant leur pierre, qu'ils travaillaient pour leurs petits-enfants.\n\nCette rapidité explique l'unité exceptionnelle du bâtiment. Ses quelque cent soixante-dix vitraux, dont une grande partie date du treizième siècle, forment l'un des ensembles les mieux conservés au monde. Leur bleu profond, que l'on appelle le bleu de Chartres, intrigue encore les spécialistes, tant il semble difficile à reproduire.\n\nAujourd'hui, lorsque les visiteurs lèvent les yeux vers ces voûtes vertigineuses, ils admirent souvent l'œuvre d'un génie unique. La réalité est plus belle encore : une cathédrale est le fruit du savoir-faire patient de milliers de mains anonymes, unies par un même projet qui les dépassait.",
+    "qcm": [
+      {
+        "question": "Quel événement pousse les habitants de Chartres à reconstruire leur cathédrale ?",
+        "options": ["Une guerre contre un royaume voisin", "Un tremblement de terre", "Un ordre du roi de France", "Un incendie suivi de la découverte que la relique avait été sauvée"],
+        "correctIndex": 3
+      },
+      {
+        "question": "À quoi sert l'arc-boutant ?",
+        "options": ["À décorer la façade de la cathédrale", "À hisser les blocs de pierre jusqu'au sommet", "À recevoir la poussée des voûtes et la transmettre jusqu'au sol", "À protéger les vitraux de la pluie"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi les tailleurs de pierre gravaient-ils une marque sur leurs blocs ?",
+        "options": ["Pour signer leur œuvre comme des artistes", "Pour permettre de calculer leur salaire", "Pour indiquer le sens de pose", "Pour éloigner le mauvais sort"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que révèle l'effondrement partiel du chœur de Beauvais ?",
+        "options": ["Que les bâtisseurs avaient voulu aller au-delà de ce que la pierre pouvait supporter", "Que les ouvriers de Beauvais étaient mal payés", "Que l'arc-boutant n'avait pas encore été inventé", "Que la cathédrale avait été construite trop lentement"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans le texte, que désigne le mot « cintres » ?",
+        "options": ["Des vitraux en forme d'arc", "Des roues pour soulever les charges", "Des ceintures portées par les ouvriers", "Des charpentes provisoires en bois qui soutenaient les arcs"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que veut montrer l'auteur dans la dernière phrase du texte ?",
+        "options": ["Qu'un seul architecte de génie a conçu la cathédrale", "Que les visiteurs ne comprennent rien à l'art gothique", "Qu'une cathédrale est surtout l'œuvre collective de nombreux travailleurs anonymes", "Que les cathédrales sont aujourd'hui en mauvais état"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr3-10",
+    "title": "Les Devoirs à la maison en question",
+    "genre": "Débat d'idées",
+    "level": 3,
+    "text": "Chaque soir, dans des millions de foyers, la même scène se répète. Un cartable s'ouvre sur la table de la cuisine, un cahier apparaît, et commence un moment que certains élèves vivent comme une routine paisible et d'autres comme une épreuve quotidienne. Les devoirs à la maison font partie du paysage scolaire depuis si longtemps qu'on oublie qu'ils sont l'objet d'un débat ancien et passionné. Faut-il les maintenir, les transformer ou les supprimer ? Examinons les arguments des uns et des autres avant de proposer une réponse nuancée.\n\nLes défenseurs des devoirs avancent d'abord un argument pédagogique. Apprendre, disent-ils, exige de la répétition. Une notion comprise en classe s'efface rapidement si elle n'est pas réactivée dans les heures qui suivent. Les psychologues de la mémoire leur donnent en partie raison : réviser une leçon le soir même, puis quelques jours plus tard, aide à l'ancrer durablement. Les devoirs permettraient donc de consolider ce qui a été vu en cours.\n\nIls insistent ensuite sur l'autonomie. Face à son exercice, l'élève est seul. Il doit organiser son temps, relire une consigne, chercher dans son cahier, persévérer devant la difficulté. Ce sont des compétences précieuses, que l'on retrouve plus tard au lycée, dans les études supérieures et dans la vie professionnelle. Enfin, les devoirs créent un lien entre l'école et la famille : ils permettent aux parents de savoir ce que leur enfant apprend et de suivre ses progrès.\n\nLes adversaires des devoirs ne contestent pas l'utilité de la répétition ni celle de l'autonomie. Leur critique principale porte sur l'injustice. Tous les élèves ne rentrent pas chez eux dans les mêmes conditions. Certains disposent d'une chambre calme, d'un bureau, d'un ordinateur et de parents disponibles, capables d'expliquer une règle de grammaire ou une équation. D'autres partagent une petite pièce avec leurs frères et sœurs, ont des parents qui travaillent tard ou qui ne maîtrisent pas bien la langue de l'école. Pour ces élèves, le devoir ne consolide pas les apprentissages : il met en évidence les inégalités et les aggrave. Ce qui se joue à la maison échappe au regard de l'enseignant, et l'élève en difficulté se retrouve souvent seul face à ce qu'il n'a pas compris.\n\nIls ajoutent un argument lié au temps et à la fatigue. Après une journée de cours qui commence parfois tôt, un adolescent a besoin de se détendre, de pratiquer un sport, de lire pour le plaisir, de voir ses amis ou simplement de rêver. Des devoirs trop lourds empiètent sur ce temps indispensable à l'équilibre et peuvent transformer la soirée familiale en champ de bataille. Certaines études suggèrent d'ailleurs qu'au-delà d'une certaine durée, le temps passé sur les devoirs n'améliore plus les résultats.\n\nQue penser de ces positions opposées ? Il nous semble que les deux camps ont raison sur un point essentiel, et que la question est mal posée lorsqu'on se demande simplement s'il faut des devoirs ou non. La vraie question est plutôt : quels devoirs, combien, et dans quelles conditions ?\n\nUn devoir utile est court, clairement expliqué et réalisable seul. Relire une leçon, refaire un exercice déjà corrigé en classe, lire un chapitre de roman : voilà des tâches qui renforcent les apprentissages sans exiger l'aide d'un adulte. À l'inverse, un exercice nouveau, compliqué, que l'élève ne sait pas commencer, ne fait que creuser l'écart entre ceux qui sont aidés et ceux qui ne le sont pas.\n\nPar ailleurs, l'école peut prendre en charge une partie de ce travail. De nombreux établissements proposent des temps d'étude encadrés, pendant lesquels les élèves font leurs exercices avec l'aide d'un adulte. Certains enseignants préfèrent aussi consacrer quelques minutes en fin de cours à commencer le travail demandé : chacun peut ainsi poser ses questions avant de rentrer chez lui, et personne ne part avec une consigne incomprise. Ces dispositifs conservent les avantages de la répétition et de l'autonomie tout en limitant l'injustice liée aux conditions familiales.\n\nEn définitive, les devoirs ne sont ni un bienfait absolu ni un mal à abolir. Ils sont un outil, et comme tout outil, leur valeur dépend de la manière dont on s'en sert. Bien pensés, ils aident l'élève à progresser. Mal conçus, ils deviennent une source de découragement. Le débat mérite donc mieux que des slogans : il appelle à réfléchir, au cas par cas, à ce qui aide réellement chaque élève à apprendre.",
+    "qcm": [
+      {
+        "question": "Quel est le principal argument pédagogique des défenseurs des devoirs ?",
+        "options": ["Les devoirs occupent les élèves le soir", "La répétition aide à ancrer durablement ce qui a été appris", "Les devoirs permettent de noter les élèves plus souvent", "Les parents aiment aider leurs enfants"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle est la critique principale des adversaires des devoirs ?",
+        "options": ["Les devoirs aggravent les inégalités entre élèves selon leurs conditions de vie", "Les devoirs sont trop faciles", "Les enseignants ne corrigent jamais les devoirs", "Les devoirs empêchent de dormir"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Selon l'auteur, quel type de devoir est utile ?",
+        "options": ["Un exercice nouveau et difficile pour stimuler l'élève", "Un long travail de recherche sur Internet", "Un exposé préparé avec les parents", "Une tâche courte, claire et réalisable seul"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie le verbe « empiètent » dans la phrase « Des devoirs trop lourds empiètent sur ce temps » ?",
+        "options": ["Ils protègent ce temps", "Ils rendent ce temps plus agréable", "Ils prennent une partie de ce temps qui devrait servir à autre chose", "Ils raccourcissent la journée de cours"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle est la position finale de l'auteur ?",
+        "options": ["Il faut supprimer tous les devoirs", "Les devoirs sont un outil dont la valeur dépend de la manière de les concevoir", "Il faut doubler la quantité de devoirs", "Le débat sur les devoirs n'a aucun intérêt"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment ce texte est-il organisé ?",
+        "options": ["Il présente les arguments pour, puis les arguments contre, avant de proposer une position nuancée", "Il raconte une histoire avec un héros", "Il décrit une seule opinion sans la discuter", "Il donne une liste de règles à suivre sans les justifier"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr3-11",
+    "title": "Une nuit au ventre de Paris",
+    "genre": "Reportage",
+    "level": 3,
+    "text": "Il est une heure du matin. Paris dort, ou presque. Mais à une dizaine de kilomètres au sud de la capitale, sur un immense territoire traversé d'entrepôts, de quais de chargement et de parkings illuminés, l'activité bat déjà son plein. Bienvenue au marché international de Rungis, le plus grand marché de produits frais au monde. Pour comprendre comment les fruits, les légumes, les poissons et les fleurs arrivent chaque matin dans les commerces et les restaurants de la région, nous avons passé une nuit entière parmi ceux qui le font vivre.\n\nLe marché a ouvert ses portes en 1969. Il remplaçait les anciennes Halles, situées en plein centre de Paris, que l'écrivain Émile Zola avait surnommées le ventre de Paris. Devenues trop étroites, encombrées par des milliers de camions qui paralysaient le quartier, elles furent transférées hors de la ville. Aujourd'hui, Rungis s'étend sur plus de deux cents hectares, soit la superficie d'une petite ville, et des milliers de personnes y travaillent chaque nuit.\n\nNotre visite commence par le pavillon de la marée, celui des produits de la mer. Il faut enfiler une blouse blanche et des chaussures adaptées, car le sol est glissant et la température ne dépasse guère quelques degrés. Sous une lumière crue, des étals couverts de glace pilée présentent des bars, des soles, des homards encore vivants et des huîtres arrivées quelques heures plus tôt des côtes bretonnes ou normandes. Karim, mareyeur depuis vingt ans, inspecte un turbot d'un œil expert. « Regardez l'œil et les ouïes, nous explique-t-il. L'œil doit être bombé et brillant, les ouïes bien rouges. Un client qui achète du poisson ici veut la perfection. Si je le déçois une fois, il ne revient pas. »\n\nLes acheteurs sont des poissonniers, des restaurateurs, des responsables de cantines. Ils circulent entre les étals, comparent, négocient à voix basse. Ici, la confiance est une monnaie aussi importante que l'argent : beaucoup de transactions se concluent d'une simple poignée de main entre des partenaires qui se connaissent depuis des années.\n\nVers trois heures, nous rejoignons le pavillon des fruits et légumes. Le décor change. Des montagnes de cagettes s'empilent jusqu'au plafond : tomates de Provence, pommes du Limousin, mais aussi mangues d'Afrique de l'Ouest et avocats d'Amérique du Sud. Des chariots élévateurs filent dans les allées avec une précision étonnante. Sophie, grossiste, consulte sans cesse son téléphone. « Les prix bougent toute la nuit, selon les arrivages et la météo, raconte-t-elle. S'il fait beau demain, les gens voudront des salades et des fraises. S'il pleut, ce sera plutôt des légumes pour la soupe. Mon métier, c'est d'anticiper. »\n\nElle nous confie aussi l'envers du décor. Les horaires sont épuisants : elle se lève à minuit, travaille jusqu'à neuf heures et dort l'après-midi pendant que sa famille vit au rythme du jour. « On ne voit pas beaucoup le soleil, reconnaît-elle en riant. Mais il y a une ambiance que je ne trouverais nulle part ailleurs. »\n\nLe marché s'efforce également de réduire le gaspillage. Les produits encore consommables mais impossibles à vendre, parce qu'ils sont légèrement abîmés ou trop mûrs, sont récupérés par des associations d'aide alimentaire. Une partie des déchets organiques est transformée pour produire de l'énergie. Ces efforts restent insuffisants aux yeux de certains observateurs, mais ils témoignent d'une prise de conscience réelle.\n\nÀ cinq heures, nous découvrons le pavillon des fleurs, peut-être le plus spectaculaire. Après l'odeur iodée de la marée et celle, terreuse, des légumes, voici un parfum de roses, de lys et de feuillages humides. Des fleuristes remplissent leurs camionnettes de bouquets qui orneront, quelques heures plus tard, les vitrines de leurs boutiques. L'un d'eux nous fait remarquer qu'une rose achetée à Rungis a souvent voyagé plus que la plupart des gens : cultivée au Kenya ou en Équateur, elle transite par les Pays-Bas avant d'arriver ici.\n\nQuand le jour se lève, le marché se vide peu à peu. Les camions repartent vers les marchés, les restaurants et les épiceries. Les équipes de nettoyage entrent en action. Dans quelques heures, les Parisiens achèteront une baguette, une barquette de fraises ou un filet de poisson sans se douter du ballet nocturne qui a rendu ce geste possible. C'est peut-être cela, la vraie magie de Rungis : un monde immense et invisible, qui travaille pendant que la ville dort pour qu'elle trouve, à son réveil, tout ce dont elle a besoin.",
+    "qcm": [
+      {
+        "question": "Pourquoi les anciennes Halles ont-elles été transférées hors de Paris ?",
+        "options": ["Parce qu'elles avaient brûlé", "Parce qu'Émile Zola en avait demandé la fermeture", "Parce que les commerçants voulaient travailler la journée", "Parce qu'elles étaient devenues trop étroites et que les camions paralysaient le quartier"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Selon Karim, à quoi reconnaît-on un poisson frais ?",
+        "options": ["À son poids et à sa taille", "À son odeur très forte", "À son œil bombé et brillant et à ses ouïes bien rouges", "À la couleur de ses écailles"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que signifie la phrase « Ici, la confiance est une monnaie aussi importante que l'argent » ?",
+        "options": ["Les commerçants paient avec des pièces spéciales", "Les relations de confiance entre partenaires comptent autant que le paiement", "Les commerçants ne se font pas confiance", "Il est interdit de payer en espèces au marché"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi Sophie dit-elle que son métier consiste à « anticiper » ?",
+        "options": ["Parce qu'elle doit prévoir ce que les clients voudront acheter selon la météo et les arrivages", "Parce qu'elle arrive toujours en avance", "Parce qu'elle prépare les commandes un mois à l'avance", "Parce qu'elle travaille uniquement avec l'étranger"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que fait le marché des produits abîmés mais encore consommables ?",
+        "options": ["Il les jette à la fin de la nuit", "Il les vend plus cher", "Il les renvoie aux producteurs", "Il les donne à des associations d'aide alimentaire"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quelle est l'intention de l'auteur dans la conclusion du reportage ?",
+        "options": ["Critiquer les horaires de nuit imposés aux travailleurs", "Conseiller aux lecteurs de faire leurs courses à Rungis", "Faire prendre conscience au lecteur du travail invisible qui permet ses achats quotidiens", "Comparer Rungis aux marchés étrangers"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr3-12",
+    "title": "Le Miroir de la brocante",
+    "genre": "Nouvelle fantastique",
+    "level": 3,
+    "text": "Le dimanche où tout commença, Léo n'avait aucune envie d'accompagner sa tante à la brocante du village. Il faisait chaud, les allées sentaient la poussière et le vieux cuir, et les vendeurs proposaient surtout des assiettes ébréchées et des disques que personne n'écoutait plus. Pourtant, au fond d'un stand tenu par une vieille femme silencieuse, son regard fut attiré par un petit miroir ovale, encadré de bois sombre sculpté de feuilles de lierre. La vendeuse le lui céda pour deux euros, sans même le regarder, comme si elle avait hâte de s'en débarrasser.\n\nLe soir même, Léo accrocha le miroir au-dessus de son bureau. Il se brossait les dents en pensant à autre chose lorsqu'il remarqua un détail étrange. Dans le reflet, la pendule murale indiquait vingt et une heures dix. Il se retourna : la vraie pendule affichait vingt et une heures. Il haussa les épaules. Un reflet ne pouvait pas avancer de dix minutes, il avait sûrement mal lu. Il se coucha sans y penser davantage.\n\nLe lendemain matin, il observa le miroir avec plus d'attention. Cette fois, il en eut le cœur net : le reflet avait bien dix minutes d'avance. Il s'en amusa d'abord, puis eut une idée. Il plaça un verre d'eau au bord de son bureau et attendit devant le miroir. Au bout de quelques instants, il vit, dans le reflet, son propre coude heurter le verre et l'eau se répandre sur ses cahiers. Dans la réalité, le verre était toujours intact. Léo recula le verre au centre du bureau, le cœur battant. Dix minutes plus tard, en attrapant un crayon, son coude frôla l'endroit exact où le verre se serait trouvé.\n\nPendant plusieurs jours, Léo vécut dans une excitation fébrile. Le miroir lui montrait l'avenir proche, et il apprit à s'en servir. Il évita une dispute avec sa sœur en devinant à l'avance qu'elle chercherait son chargeur. Il sut que sa mère allait l'appeler pour mettre la table et se leva avant même qu'elle ouvre la bouche, ce qui la laissa stupéfaite. Il se sentait puissant, presque invincible. Le jeudi, il emporta le miroir au collège, caché dans son sac. Dans le couloir, juste avant le cours, il y vit passer son professeur de mathématiques avec un paquet de copies sous le bras : une interrogation surprise. Il eut juste le temps de relire sa leçon et obtint la meilleure note de sa vie. Il n'en parla à personne. Ce secret, qu'il gardait jalousement, le rendait à la fois fier et étrangement seul.\n\nMais peu à peu, le miroir changea sa vie d'une manière qu'il n'avait pas prévue. Il passait des heures devant lui, à guetter le moindre événement. Il n'osait plus sortir de sa chambre sans avoir consulté le reflet. Les surprises, même agréables, disparaissaient de son existence : lorsqu'un ami lui envoya une blague, il l'avait déjà lue dix minutes plus tôt dans le reflet de son écran, et elle ne le fit pas rire. Il dormait mal. Il rêvait de reflets qui couraient devant lui sans qu'il parvienne jamais à les rattraper.\n\nUn soir, en se regardant, il vit dans le miroir son reflet assis à son bureau, la tête entre les mains, l'air profondément triste. Il ne comprenait pas. Rien de triste n'était censé se produire. Il attendit. Dix minutes passèrent. Il se retrouva exactement dans cette position, la tête entre les mains, sans raison particulière, simplement las d'une vie où plus rien ne pouvait l'étonner. Il comprit alors que le miroir ne lui montrait pas seulement ce qui allait arriver. Il lui montrait ce qu'il était en train de devenir.\n\nLe dimanche suivant, il retourna à la brocante. La vieille femme était là, au même endroit, derrière le même stand. Quand il posa le miroir devant elle, elle hocha la tête sans étonnement, comme si elle l'attendait.\n\n« Ils reviennent tous, dit-elle doucement. Certains au bout d'une semaine, d'autres au bout d'un an. Les plus malheureux ne reviennent jamais. »\n\nElle lui rendit ses deux euros. Léo voulut lui demander d'où venait ce miroir et pourquoi elle continuait à le vendre, mais elle s'était déjà tournée vers un autre client. Il rentra chez lui à pied, en prenant le chemin le plus long.\n\nSur la route, une averse soudaine le trempa jusqu'aux os. Il ne l'avait pas vue venir. Il éclata de rire, seul au milieu du chemin, la pluie ruisselant sur son visage. Pour la première fois depuis des semaines, quelque chose l'avait surpris, et il trouva cela merveilleux.",
+    "qcm": [
+      {
+        "question": "Quelle particularité Léo découvre-t-il dans le miroir ?",
+        "options": ["Le reflet montre le passé", "Le reflet a dix minutes d'avance sur la réalité", "Le reflet montre une autre personne", "Le reflet disparaît la nuit"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Comment Léo vérifie-t-il son hypothèse ?",
+        "options": ["Il pose un verre d'eau et observe ce que montre le reflet", "Il demande à sa tante", "Il compare le miroir avec un autre miroir", "Il filme le miroir avec son téléphone"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que révèle l'attitude de la vendeuse au moment de la vente ?",
+        "options": ["Qu'elle ne connaît pas la valeur des objets", "Qu'elle trouve Léo sympathique", "Qu'elle veut se moquer de lui", "Qu'elle semble connaître le pouvoir du miroir et vouloir s'en séparer"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie l'adjectif « fébrile » dans l'expression « une excitation fébrile » ?",
+        "options": ["Calme et réfléchie", "Triste et inquiète", "Agitée et nerveuse, comme sous l'effet de la fièvre", "Joyeuse et partagée"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que comprend Léo lorsqu'il voit son reflet triste ?",
+        "options": ["Qu'il va tomber malade", "Que le miroir lui montre ce qu'il est en train de devenir", "Que sa famille va recevoir une mauvaise nouvelle", "Que le miroir est cassé"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel est le sens de la scène finale sous la pluie ?",
+        "options": ["Léo retrouve le plaisir d'être surpris par la vie", "Léo regrette d'avoir rendu le miroir", "Léo a peur de tomber malade", "Léo comprend qu'il a perdu deux euros"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr3-13",
+    "title": "Le Langage secret des abeilles",
+    "genre": "Article scientifique",
+    "level": 3,
+    "text": "Imaginez que vous deviez indiquer à vos amis l'emplacement exact d'une boulangerie située à trois kilomètres, sans parler, sans carte et sans téléphone, dans l'obscurité d'une pièce bondée. La tâche paraît impossible. Pourtant, les abeilles domestiques la réalisent chaque jour, des milliers de fois, au cœur de leur ruche. Leur secret ? Une danse. Cette découverte, l'une des plus fascinantes de la biologie du vingtième siècle, a valu à son auteur, le zoologiste autrichien Karl von Frisch, le prix Nobel de médecine en 1973.\n\nPour comprendre l'enjeu, il faut savoir qu'une colonie d'abeilles dépend entièrement des fleurs qui l'entourent. Elle y récolte le nectar, qu'elle transforme en miel, et le pollen, riche en protéines, qui nourrit les larves. Or les fleurs sont dispersées, parfois très loin, et leur floraison ne dure que quelques jours. Une colonie qui saurait orienter rapidement ses ouvrières vers les meilleures sources de nourriture aurait donc un avantage considérable. C'est précisément le rôle de la danse.\n\nLorsqu'une butineuse découvre un champ de fleurs abondant, elle revient à la ruche et se met à danser sur les rayons de cire, entourée de ses sœurs. Si la source est proche, à moins d'une cinquantaine de mètres environ, elle exécute une danse en rond : elle tourne sur elle-même, dans un sens puis dans l'autre. Ce message signifie simplement que de la nourriture se trouve à proximité. Les autres abeilles, en touchant la danseuse avec leurs antennes, perçoivent aussi l'odeur des fleurs qu'elle a visitées, ce qui les aide à les retrouver.\n\nSi la source est plus éloignée, la danseuse adopte une figure beaucoup plus élaborée, la danse frétillante. Elle parcourt une ligne droite en faisant vibrer son abdomen, puis revient à son point de départ en décrivant un demi-cercle, d'abord d'un côté, puis de l'autre. Le dessin obtenu ressemble à un huit. C'est dans cette ligne droite que réside toute l'information.\n\nLa durée de la partie frétillante indique la distance : plus la source est lointaine, plus la danseuse frétille longtemps. Quant à la direction, elle est codée de façon étonnante. À l'intérieur de la ruche, il fait sombre et les rayons sont verticaux. L'abeille utilise donc la verticale comme repère pour représenter la position du soleil. Si elle danse en ligne droite vers le haut, cela signifie : volez dans la direction du soleil. Si sa ligne fait un angle de quarante degrés vers la droite par rapport à la verticale, cela signifie : volez en gardant un angle de quarante degrés à droite du soleil. L'abeille traduit ainsi une direction dans l'espace en un angle sur une surface verticale, une opération qui exige une forme remarquable de représentation.\n\nIl y a plus surprenant encore. Le soleil se déplace dans le ciel au fil de la journée. Les abeilles en tiennent compte : une butineuse qui danse longtemps modifie peu à peu l'angle de sa danse pour suivre la course du soleil, même sans le voir. Elles possèdent donc une sorte d'horloge interne qui leur permet de corriger leurs indications.\n\nLes travaux de von Frisch ont d'abord suscité le scepticisme. Comment croire qu'un insecte au cerveau minuscule puisse utiliser un véritable langage symbolique ? Certains chercheurs pensaient que les abeilles se guidaient uniquement grâce aux odeurs. Il a fallu de nombreuses expériences, puis, bien plus tard, l'utilisation de petits émetteurs collés sur le dos des abeilles et même de robots danseurs placés dans les ruches, pour confirmer que la danse transmet bien une information de distance et de direction.\n\nCette découverte a changé notre regard sur les insectes. Elle montre que la communication complexe n'est pas réservée aux animaux dotés d'un grand cerveau. Elle rappelle aussi la fragilité de ces petites travailleuses. Aujourd'hui, les populations d'abeilles déclinent dans de nombreuses régions du monde, sous l'effet de certains pesticides, de la disparition des fleurs sauvages, de parasites et du changement climatique. Or les abeilles, en transportant le pollen d'une fleur à l'autre, assurent la pollinisation d'une grande partie des plantes que nous cultivons pour nous nourrir.\n\nProtéger les abeilles, ce n'est donc pas seulement sauver une espèce fascinante. C'est préserver un équilibre dont dépend, très concrètement, le contenu de nos assiettes. La prochaine fois que vous verrez une abeille butiner, souvenez-vous qu'elle prépare peut-être, sans le savoir, la danse qui guidera ses sœurs.",
+    "qcm": [
+      {
+        "question": "Quel scientifique a découvert le langage dansé des abeilles ?",
+        "options": ["Charles Darwin", "Jean-Henri Fabre", "Louis Pasteur", "Karl von Frisch"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que signifie une danse en rond ?",
+        "options": ["Que la ruche est en danger", "Qu'une reine vient de naître", "Que de la nourriture se trouve à proximité", "Que la source est très éloignée"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Dans la danse frétillante, comment l'abeille indique-t-elle la distance ?",
+        "options": ["Par la couleur de ses ailes", "Par la durée de la partie frétillante", "Par le nombre d'abeilles qui l'accompagnent", "Par la hauteur à laquelle elle danse"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Si une abeille danse en ligne droite vers le haut du rayon, que doivent faire ses sœurs ?",
+        "options": ["Voler dans la direction du soleil", "Voler dans la direction opposée au soleil", "Voler vers le sol", "Rester dans la ruche"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans le texte, que signifie le mot « scepticisme » ?",
+        "options": ["Un grand enthousiasme", "Une indifférence totale", "Une colère violente", "Une attitude de doute et de méfiance"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi l'auteur évoque-t-il le déclin des abeilles à la fin du texte ?",
+        "options": ["Pour montrer que la découverte de von Frisch était fausse", "Pour conseiller de devenir apiculteur", "Pour faire comprendre que leur disparition menacerait aussi notre alimentation", "Pour expliquer pourquoi les abeilles dansent"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr3-14",
+    "title": "L'Odyssée de l'Endurance",
+    "genre": "Récit historique",
+    "level": 3,
+    "text": "En août 1914, quelques jours après le début de la Première Guerre mondiale, un trois-mâts robuste quitta l'Angleterre en direction de l'Antarctique. Il s'appelait l'Endurance, et il emportait vingt-huit hommes commandés par l'explorateur irlandais Ernest Shackleton. Leur objectif était audacieux : réaliser la première traversée à pied du continent antarctique, d'un océan à l'autre, sur près de trois mille kilomètres de glace. Aucun de ces hommes ne posa jamais le pied sur le continent. Pourtant, leur expédition est restée l'une des plus célèbres de l'histoire de l'exploration.\n\nEn janvier 1915, alors que l'Endurance s'approchait des côtes, dans la mer de Weddell, la banquise se referma brusquement autour de lui. Les hommes tentèrent de libérer le navire à coups de pioches et de scies, en vain. Le bateau se retrouva prisonnier de la glace, qui dérivait lentement au gré des courants. Shackleton comprit qu'il faudrait passer l'hiver polaire à bord, dans l'obscurité presque totale, par des températures qui descendaient souvent sous les moins trente degrés.\n\nPour préserver le moral de l'équipage, le chef imposa une discipline de vie rigoureuse mais humaine. Chacun avait ses tâches, les repas étaient pris en commun, et l'on organisait des concerts, des lectures et même des courses de traîneaux à chiens sur la glace. Shackleton veillait à répartir équitablement les corvées et n'hésitait pas à servir lui-même les autres. Il savait qu'un groupe découragé est un groupe en danger. Le photographe de l'expédition, l'Australien Frank Hurley, continuait pendant ce temps à prendre des clichés, souvent dans des conditions extrêmes. Grâce à ses plaques photographiques, dont il sauva une partie au moment du naufrage, nous possédons aujourd'hui des images saisissantes du navire prisonnier des glaces.\n\nAu printemps austral, la pression de la banquise devint terrible. Les blocs de glace écrasaient la coque, qui gémissait comme un animal blessé. Le 27 octobre 1915, Shackleton donna l'ordre d'abandonner le navire. Les hommes installèrent un camp sur la glace avec trois canots de sauvetage, des vivres et quelques chiens. Le 21 novembre, ils virent l'Endurance s'enfoncer définitivement sous la glace. Ils étaient désormais seuls, sur une plaque de banquise dérivant au milieu de l'océan, à des centaines de kilomètres de toute terre habitée.\n\nPendant des mois, ils vécurent sur la glace en attendant qu'elle se disloque. En avril 1916, lorsque la banquise commença à se fendre, ils mirent les trois canots à la mer. Après une navigation épuisante de plusieurs jours, trempés, gelés, presque privés d'eau potable, ils atteignirent l'île de l'Éléphant, un rocher désolé battu par les vents. C'était la première fois depuis près d'un an et demi qu'ils touchaient la terre ferme. Mais personne ne viendrait les chercher dans ce lieu perdu.\n\nShackleton prit alors une décision d'une audace inouïe. Avec cinq compagnons, il embarqua sur le plus solide des canots, le James Caird, long d'à peine sept mètres, pour rejoindre la Géorgie du Sud, où se trouvaient des stations baleinières. Il fallait parcourir environ mille trois cents kilomètres dans l'un des océans les plus dangereux du monde. Pendant seize jours, les six hommes affrontèrent des vagues gigantesques, cassant à la hache la glace qui recouvrait l'embarcation et menaçait de la faire chavirer. Le navigateur, Frank Worsley, ne put faire le point que quelques fois, en profitant de rares éclaircies pour viser le soleil. Une erreur de quelques degrés, et ils auraient manqué l'île.\n\nIls l'atteignirent pourtant, mais sur la côte opposée aux stations baleinières. Shackleton et deux de ses hommes durent alors traverser à pied les montagnes enneigées de l'intérieur de l'île, que personne n'avait jamais franchies, sans carte et presque sans équipement. Après trente-six heures de marche, ils arrivèrent à la station de Stromness. Les baleiniers eurent du mal à reconnaître ces silhouettes hirsutes et noircies.\n\nIl fallut encore plusieurs tentatives, contrariées par la glace, pour aller chercher les hommes restés sur l'île de l'Éléphant. Le 30 août 1916, un petit navire chilien parvint enfin à les atteindre. Shackleton, debout à la proue, compta les silhouettes sur le rivage. Tous les vingt-deux hommes étaient vivants.\n\nL'expédition avait échoué dans son objectif. Mais aucun membre de l'équipage de l'Endurance n'avait péri. C'est cette réussite humaine, bien plus qu'un exploit géographique, qui a fait de Shackleton une légende. En 2022, des chercheurs ont retrouvé l'épave de l'Endurance, remarquablement conservée, à plus de trois mille mètres de profondeur.",
+    "qcm": [
+      {
+        "question": "Quel était l'objectif initial de l'expédition de Shackleton ?",
+        "options": ["Atteindre le pôle Nord", "Réaliser la première traversée à pied du continent antarctique", "Chasser la baleine en Géorgie du Sud", "Cartographier l'île de l'Éléphant"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi l'Endurance a-t-il dû être abandonné ?",
+        "options": ["La pression de la banquise écrasait sa coque", "Il avait pris feu", "Il avait heurté un rocher", "L'équipage s'était mutiné"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi Shackleton organisait-il des concerts et des courses de traîneaux pendant l'hiver ?",
+        "options": ["Pour entraîner les chiens à une course officielle", "Pour se réchauffer uniquement", "Pour impressionner les baleiniers", "Pour maintenir le moral de l'équipage"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi le travail du navigateur Frank Worsley était-il si décisif ?",
+        "options": ["Parce qu'il était le seul à savoir nager", "Parce qu'il devait réparer le moteur du canot", "Parce qu'une petite erreur de direction leur aurait fait manquer l'île", "Parce qu'il connaissait les baleiniers"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Dans le texte, que signifie l'adjectif « hirsutes » dans l'expression « silhouettes hirsutes » ?",
+        "options": ["Très maigres", "Aux cheveux et à la barbe en désordre", "Très souriantes", "Couvertes de neige"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Selon l'auteur, pourquoi Shackleton est-il devenu une légende ?",
+        "options": ["Parce qu'il a ramené vivants tous les membres de son équipage malgré l'échec", "Parce qu'il a découvert l'épave de son navire", "Parce qu'il a traversé l'Antarctique", "Parce qu'il a combattu pendant la Première Guerre mondiale"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr3-15",
+    "title": "Éloge de l'ennui",
+    "genre": "Essai jeunesse",
+    "level": 3,
+    "text": "« Je m'ennuie. » Combien de fois avons-nous prononcé cette phrase, enfants, en traînant les pieds dans un couloir un mercredi après-midi pluvieux ? Et combien de fois nos parents se sont-ils empressés de nous proposer une activité, un jeu, une sortie, comme s'il s'agissait d'éteindre un incendie ? L'ennui a mauvaise réputation. On le considère comme un vide, une perte de temps, voire un malaise qu'il faudrait fuir à tout prix. Notre époque, d'ailleurs, nous offre tous les moyens de ne jamais le ressentir. Un téléphone dans la poche suffit à remplir la moindre seconde d'attente. Pourtant, et si l'ennui était une expérience précieuse, que nous serions en train de perdre ?\n\nCommençons par observer ce qui se passe lorsque nous nous ennuyons vraiment. Rien ne retient notre attention, les minutes semblent s'étirer, une forme d'agacement monte en nous. Cette sensation est désagréable, c'est indéniable. Mais elle n'est pas inutile. Elle agit comme un signal : elle nous indique que notre esprit manque de stimulation et nous pousse à chercher quelque chose qui ait du sens pour nous. L'ennui, en somme, est un moteur. Il nous oblige à nous mettre en mouvement.\n\nC'est précisément dans ces moments vides que naît souvent la créativité. Faute de distraction extérieure, l'esprit se tourne vers l'intérieur. Il vagabonde, rêvasse, associe des idées qui n'avaient apparemment rien à voir entre elles. Les chercheurs en psychologie appellent ce fonctionnement le mode par défaut du cerveau : un état de repos apparent pendant lequel certaines zones cérébrales restent très actives et favorisent l'imagination, la réflexion sur soi et la projection dans l'avenir. Plusieurs expériences ont montré que des personnes ayant accompli une tâche ennuyeuse, comme recopier des numéros de téléphone, proposaient ensuite des idées plus originales que les autres dans un exercice d'invention.\n\nL'histoire des arts et des sciences regorge d'exemples qui vont dans ce sens. Bien des écrivains racontent que leurs premières histoires sont nées de longs étés désœuvrés, dans des maisons de campagne où il n'y avait rien à faire. Des inventeurs disent avoir trouvé la solution d'un problème non pas devant leur bureau, mais en marchant, en regardant par la fenêtre d'un train ou sous la douche, c'est-à-dire précisément dans ces moments où l'esprit n'est occupé à rien de précis.\n\nOr, aujourd'hui, nous ne laissons presque plus à l'ennui l'occasion de s'installer. Dans une file d'attente, dans les transports, et même parfois au milieu d'une conversation, nous saisissons notre téléphone dès que surgit le moindre temps mort. Les applications sont d'ailleurs conçues pour nous retenir le plus longtemps possible, grâce à un flux de contenus qui ne s'arrête jamais. Le résultat est paradoxal : nous ne nous ennuyons plus, mais nous ne sommes pas pour autant plus épanouis. Beaucoup de gens disent au contraire se sentir dispersés, fatigués, incapables de se concentrer longtemps sur une seule tâche.\n\nIl ne s'agit pas pour autant de faire l'éloge de l'ennui sans nuance. Un élève qui s'ennuie chaque jour en classe parce que les cours sont trop faciles, ou au contraire trop difficiles pour lui, ne vit pas une expérience créative : il souffre, et il faut l'aider. De même, un ennui profond et durable, qui s'accompagne d'une perte de goût pour toute chose, peut être le signe d'un mal-être qu'il ne faut pas négliger. L'ennui dont nous parlons ici est un ennui passager, celui des moments sans programme, qui laisse à l'esprit un espace de liberté.\n\nQue faire, alors ? Peut-être simplement accepter, de temps en temps, de ne rien faire. Laisser son téléphone dans une autre pièce pendant une heure. Regarder par la fenêtre pendant un trajet en bus. Supporter quelques minutes de vide sans chercher aussitôt à le combler. Au début, la sensation est inconfortable. Puis, souvent, une idée surgit, une envie apparaît : dessiner, écrire, construire quelque chose, appeler un ami, sortir marcher.\n\nL'ennui ressemble à une terre en jachère, ce champ que les paysans laissaient autrefois au repos pendant une saison pour qu'il redevienne fertile. Rien ne semble y pousser, et pourtant le sol s'y régénère. Apprendre à s'ennuyer, c'est peut-être apprendre à laisser pousser en soi ce que personne d'autre ne pourra jamais planter à notre place.",
+    "qcm": [
+      {
+        "question": "Selon l'auteur, à quoi sert la sensation désagréable de l'ennui ?",
+        "options": ["À nous faire dormir", "À nous empêcher de travailler", "À nous rendre tristes", "À nous signaler un manque de stimulation et à nous pousser à agir"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que montrent les expériences citées dans le texte ?",
+        "options": ["Que les tâches ennuyeuses rendent moins intelligent", "Que recopier des numéros améliore la mémoire", "Qu'après une tâche ennuyeuse, on propose des idées plus originales", "Que l'ennui n'a aucun effet sur le cerveau"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi l'auteur juge-t-il la situation actuelle « paradoxale » ?",
+        "options": ["Parce que les téléphones coûtent de plus en plus cher", "Parce que nous ne nous ennuyons plus mais ne sommes pas plus épanouis pour autant", "Parce que les jeunes s'ennuient plus que les adultes", "Parce que les applications sont ennuyeuses"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle nuance l'auteur apporte-t-il à son éloge de l'ennui ?",
+        "options": ["Un ennui permanent, en classe ou lié à un mal-être, n'est pas une expérience positive", "L'ennui n'est utile qu'aux adultes", "L'ennui est toujours dangereux", "Il ne faut jamais s'ennuyer pendant les vacances"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans le texte, que désigne une « terre en jachère » ?",
+        "options": ["Un champ abandonné pour toujours", "Un champ inondé", "Un champ très productif", "Un champ laissé au repos pour qu'il redevienne fertile"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel est le but principal de ce texte ?",
+        "options": ["Interdire les téléphones portables", "Raconter la vie d'un écrivain célèbre", "Convaincre le lecteur que l'ennui passager peut être utile et créatif", "Expliquer le fonctionnement complet du cerveau"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr3-16",
+    "title": "L'Affaire du carnet bleu",
+    "genre": "Nouvelle policière",
+    "level": 3,
+    "text": "Le mardi matin, au collège Victor-Hugo, une rumeur se répandit plus vite qu'une alarme incendie : le carnet bleu de Mme Delorme avait disparu. Tout le monde connaissait ce carnet. La professeure de français y notait les sujets des rédactions, les remarques sur chaque élève et, surtout, le texte de la dictée prévue pour l'évaluation du vendredi. Le carnet se trouvait sur son bureau, dans la salle 12, à la fin du cours de la veille. Le lendemain, il n'y était plus.\n\nMme Delorme ne voulait pas accuser sans preuve. Elle demanda donc à Inès, déléguée de la classe de quatrième B, de l'aider à comprendre ce qui s'était passé. Inès adorait les romans policiers et prit la mission très au sérieux. Elle sortit un petit cahier et nota, comme les détectives de ses livres, tout ce qu'elle savait.\n\nLe lundi, le dernier cours de la journée, dans la salle 12, s'était terminé à dix-sept heures. Mme Delorme était partie la dernière et avait fermé la porte à clé, elle en était certaine. Le mardi, à sept heures cinquante, elle avait ouvert la salle et constaté la disparition. La porte n'avait pas été forcée. Trois personnes possédaient une clé de la salle : Mme Delorme elle-même, M. Ferrand, le professeur d'histoire qui partageait la salle, et M. Bakary, l'agent d'entretien, qui passait chaque soir faire le ménage.\n\nInès commença par interroger M. Ferrand. Celui-ci expliqua qu'il était venu dans la salle vers dix-huit heures pour récupérer une carte de géographie, qu'il était resté deux minutes et qu'il n'avait rien remarqué de particulier sur le bureau. Il avait l'air sincèrement surpris par l'affaire.\n\nElle alla ensuite voir M. Bakary. Celui-ci se souvenait très bien de son passage, vers dix-neuf heures. Il avait trouvé entrouverte la fenêtre située près du bureau, ce qui l'avait étonné, car il faisait froid. Il l'avait refermée. En revanche, il n'avait pas regardé le bureau, puisqu'il ne déplace jamais les affaires des professeurs.\n\nLa fenêtre entrouverte intrigua Inès. La salle 12 se trouvait au rez-de-chaussée et donnait sur la cour. Elle alla examiner l'extérieur. Sous la fenêtre, dans la terre du parterre de fleurs, elle découvrit l'empreinte nette d'une semelle de basket, avec un motif en forme d'étoile. Elle la photographia avec soin.\n\nPendant la récréation, Inès observa discrètement les chaussures de ses camarades. Ce motif en étoile était assez rare. Elle finit par le repérer sous les baskets de Tom, un élève de sa classe, connu pour ses mauvaises notes en dictée et pour sa langue bien pendue. Le suspect idéal, pensèrent aussitôt ceux à qui elle en parla. Mais Inès n'aimait pas les conclusions trop faciles.\n\nElle alla trouver Tom, qui reconnut sans difficulté être passé sous la fenêtre la veille au soir. Il avait oublié son ballon dans la cour après l'entraînement de football et était revenu le chercher vers dix-sept heures trente. En le cherchant, il avait marché dans le parterre. Il jurait ne pas être entré dans la salle. Inès remarqua un détail : la fenêtre se situait à près de deux mètres du sol, et le rebord ne portait aucune trace de terre. Si Tom était entré par là avec ses chaussures boueuses, il aurait forcément laissé des traces.\n\nInès retourna alors dans la salle 12 et réfléchit. Pourquoi la fenêtre était-elle ouverte ? Elle s'approcha et remarqua que la poignée était dure et qu'elle ne se fermait bien qu'en forçant. Elle se tourna vers le radiateur, placé juste en dessous. Coincé entre le radiateur et le mur, recouvert de poussière, elle aperçut un coin de couverture bleue.\n\nLe carnet était là. Inès reconstitua la scène. Le lundi, en fin de cours, un courant d'air avait fait claquer la fenêtre mal fermée, et une rafale avait balayé les papiers du bureau, situé tout près. Le carnet avait glissé derrière le radiateur. Personne ne l'avait volé.\n\nMme Delorme poussa un soupir de soulagement et félicita chaleureusement son élève. Elle avoua qu'elle avait elle-même commencé à soupçonner Tom, sur la seule base de ses notes en dictée, et elle s'en excusa auprès de lui. Tom, beau joueur, déclara qu'il n'en voulait à personne. Quant à Inès, elle écrivit dans son cahier la leçon qu'elle retenait de sa première enquête : un indice ne prouve rien tant qu'on ne l'a pas vérifié, et le coupable le plus évident n'est pas toujours celui qu'on croit. Parfois même, il n'y a pas de coupable du tout.\n\nLa dictée du vendredi eut bien lieu. Tom obtint un quatorze sur vingt, sa meilleure note de l'année, ce qui fit beaucoup rire toute la classe, et lui le premier.",
+    "qcm": [
+      {
+        "question": "Pourquoi le carnet bleu de Mme Delorme est-il si important ?",
+        "options": ["Il contient ses souvenirs de vacances", "Il contient notamment le texte de la dictée du vendredi", "Il contient les clés de la salle 12", "Il appartient au principal du collège"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Combien de personnes possèdent une clé de la salle 12 ?",
+        "options": ["Une", "Deux", "Trois", "Quatre"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel indice prouve que Tom n'est pas entré par la fenêtre ?",
+        "options": ["Le rebord de la fenêtre ne porte aucune trace de terre", "Il a un alibi confirmé par son entraîneur", "Ses baskets n'ont pas de motif en étoile", "La fenêtre était fermée à clé"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi certains élèves pensent-ils immédiatement que Tom est coupable ?",
+        "options": ["Parce qu'on l'a vu entrer dans la salle", "Parce qu'il a avoué", "Parce qu'il possède une clé", "Parce qu'il a de mauvaises notes en dictée et qu'il a laissé une empreinte"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie l'expression « Tom, beau joueur » ?",
+        "options": ["Tom est très doué au football", "Tom aime les jeux de société", "Tom accepte la situation avec élégance, sans rancune", "Tom se moque de son professeur"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle est la leçon principale que l'auteur veut transmettre ?",
+        "options": ["Il faut toujours fermer les fenêtres", "Il ne faut pas tirer de conclusions sans vérifier les indices", "Les élèves ne doivent pas jouer au football", "Les professeurs perdent souvent leurs affaires"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr3-17",
+    "title": "Pourquoi le ciel est-il bleu ?",
+    "genre": "Article scientifique",
+    "level": 3,
+    "text": "C'est l'une des premières questions que posent les jeunes enfants, et l'une de celles qui embarrassent le plus les adultes. Pourquoi le ciel est-il bleu ? On répond parfois qu'il reflète la couleur de la mer. C'est faux : le ciel est tout aussi bleu au-dessus du désert ou des montagnes. La véritable explication est plus surprenante, et elle a demandé plusieurs siècles de recherches scientifiques pour être établie.\n\nPour la comprendre, il faut d'abord s'intéresser à la nature de la lumière du soleil. Elle nous semble blanche, mais elle est en réalité composée de toutes les couleurs de l'arc-en-ciel. Le savant anglais Isaac Newton l'a démontré au dix-septième siècle en faisant passer un rayon de soleil à travers un prisme de verre : à la sortie, la lumière se décomposait en un éventail de couleurs allant du rouge au violet. L'arc-en-ciel lui-même résulte de ce phénomène, les gouttes de pluie jouant le rôle de milliers de petits prismes.\n\nChaque couleur correspond à une onde lumineuse d'une longueur différente. Le rouge possède la longueur d'onde la plus grande, le violet et le bleu les plus petites. Cette différence, invisible à nos yeux, va jouer un rôle essentiel.\n\nLorsque la lumière du soleil pénètre dans l'atmosphère terrestre, elle rencontre une multitude de molécules de gaz, principalement de l'azote et de l'oxygène. Ces molécules sont minuscules, bien plus petites que la longueur d'onde de la lumière. Quand un rayon les heurte, une partie de la lumière est déviée dans toutes les directions : on dit qu'elle est diffusée. Or, comme l'a montré le physicien britannique Lord Rayleigh à la fin du dix-neuvième siècle, ces petites molécules diffusent beaucoup plus fortement les couleurs de courte longueur d'onde. La lumière bleue est ainsi diffusée environ six fois plus que la lumière rouge.\n\nRésultat : la lumière bleue, éparpillée dans toutes les directions par les molécules de l'air, nous parvient de tous les points du ciel. Où que nous regardions, en dehors du soleil lui-même, nos yeux reçoivent cette lumière bleue diffusée. Le ciel nous apparaît donc bleu. Les autres couleurs, moins diffusées, poursuivent leur trajet presque en ligne droite.\n\nUn lecteur attentif pourrait objecter que le violet, dont la longueur d'onde est encore plus courte, devrait être diffusé davantage que le bleu. Pourquoi le ciel n'est-il pas violet ? Plusieurs raisons l'expliquent. La lumière du soleil contient moins de violet que de bleu, une partie du violet est absorbée dans la haute atmosphère, et surtout nos yeux sont beaucoup plus sensibles au bleu qu'au violet. Notre perception joue donc elle aussi un rôle dans la couleur du ciel.\n\nLa même théorie explique la splendeur des couchers de soleil. Le soir, le soleil est bas sur l'horizon. Ses rayons doivent alors traverser une épaisseur d'atmosphère bien plus grande avant de nous atteindre. Pendant ce long trajet, la plus grande partie de la lumière bleue est diffusée vers les côtés et se perd. Il ne reste plus, dans la lumière qui arrive directement à nos yeux, que les couleurs de grande longueur d'onde : le jaune, l'orange et le rouge. Les poussières et les fines gouttelettes présentes dans l'air renforcent encore ces teintes flamboyantes.\n\nEt les nuages, pourquoi sont-ils blancs ? Parce qu'ils sont constitués de gouttelettes d'eau beaucoup plus grosses que les molécules de gaz. Ces gouttelettes diffusent toutes les couleurs de manière à peu près égale, et le mélange de toutes les couleurs nous apparaît blanc. Lorsque les nuages deviennent très épais, ils laissent passer moins de lumière et prennent une teinte grise, annonciatrice de pluie.\n\nEnfin, la couleur du ciel dépend de l'atmosphère de chaque planète. Sur la Lune, qui n'a pratiquement pas d'atmosphère, il n'y a rien pour diffuser la lumière : le ciel y est noir, même en plein jour, comme l'ont constaté les astronautes. Sur Mars, l'atmosphère très fine est chargée de fines poussières qui donnent au ciel diurne une teinte ocre, tandis que les couchers de soleil, à l'inverse des nôtres, y prennent une couleur bleutée.\n\nAinsi, une question d'enfant ouvre sur des notions de physique parmi les plus fondamentales. Le bleu du ciel n'est pas une couleur posée là par hasard : il est la trace visible d'une rencontre permanente entre la lumière du soleil et l'air que nous respirons.",
+    "qcm": [
+      {
+        "question": "Selon le texte, pourquoi l'explication « le ciel reflète la mer » est-elle fausse ?",
+        "options": ["Parce que le ciel est aussi bleu au-dessus des déserts et des montagnes", "Parce que la mer est verte", "Parce que la mer reflète le ciel et non l'inverse", "Parce que Newton l'a démontré"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Qu'a montré Isaac Newton avec son prisme ?",
+        "options": ["Que la Lune n'a pas d'atmosphère", "Que le ciel est bleu à cause de l'azote", "Que les nuages sont faits d'eau", "Que la lumière du soleil est composée de toutes les couleurs"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie le verbe « diffuser » appliqué à la lumière ?",
+        "options": ["L'absorber complètement", "La transformer en chaleur", "La dévier et l'éparpiller dans toutes les directions", "La concentrer en un seul point"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi les couchers de soleil sont-ils orangés ou rouges ?",
+        "options": ["Parce que le soleil refroidit le soir", "Parce que la lumière traverse plus d'atmosphère et perd l'essentiel de son bleu", "Parce que les nuages deviennent rouges", "Parce que les molécules d'oxygène sont rouges"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que peut-on déduire de la couleur noire du ciel lunaire ?",
+        "options": ["Que sans atmosphère, la lumière n'est pas diffusée dans le ciel", "Que le soleil n'éclaire pas la Lune", "Que la Lune est toujours plongée dans la nuit", "Que les astronautes portaient des lunettes noires"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quelle est l'intention principale de l'auteur ?",
+        "options": ["Critiquer les adultes qui ne savent pas répondre aux enfants", "Raconter la vie de Lord Rayleigh", "Convaincre de voyager sur Mars", "Expliquer de manière accessible un phénomène physique quotidien"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr3-18",
+    "title": "Jules Verne, le voyageur immobile",
+    "genre": "Biographie",
+    "level": 3,
+    "text": "Il a emmené ses lecteurs au centre de la Terre, au fond des océans, autour de la Lune et à travers les déserts d'Afrique. Pourtant, Jules Verne a passé l'essentiel de sa vie assis à son bureau, entouré de livres, de cartes et de revues scientifiques. Ce paradoxe résume l'existence de l'un des écrivains français les plus lus et les plus traduits au monde, celui que l'on surnomme parfois le père de la science-fiction.\n\nJules Verne naît à Nantes le 8 février 1828, dans une famille aisée. Son père, avocat, souhaite qu'il prenne un jour sa succession. Mais le jeune garçon a d'autres rêves. Nantes est alors un grand port, et il passe des heures à regarder les navires partir vers des terres lointaines. Une légende familiale raconte qu'à onze ans, il aurait tenté de s'embarquer en cachette comme mousse sur un trois-mâts en partance pour les Indes, avant d'être rattrapé de justesse par son père. Vraie ou fausse, l'anecdote dit l'essentiel : l'appel du voyage l'habite depuis l'enfance.\n\nPour obéir à son père, il part étudier le droit à Paris. Mais la capitale lui ouvre surtout les portes des théâtres et des salons littéraires. Il y rencontre Alexandre Dumas, l'auteur des Trois Mousquetaires, qui l'encourage à écrire. Pendant des années, Verne compose des pièces de théâtre et des livrets d'opérette qui n'obtiennent qu'un succès modeste. Il gagne difficilement sa vie, occupe un emploi de secrétaire dans un théâtre, puis travaille à la Bourse. Ses proches commencent à douter de son avenir.\n\nPendant ce temps, il nourrit une passion dévorante pour les sciences. Il fréquente assidûment la Bibliothèque nationale, où il remplit des milliers de fiches sur la géographie, la physique, l'astronomie ou les inventions récentes. Son siècle est celui des chemins de fer, du télégraphe, des premiers ballons dirigeables et des grandes explorations. Verne a l'intuition qu'il existe un public pour des romans qui mêleraient l'aventure et la connaissance scientifique.\n\nLa rencontre décisive a lieu avec l'éditeur Pierre-Jules Hetzel. En 1863, celui-ci publie Cinq semaines en ballon, qui connaît un succès immédiat. Hetzel propose alors à Verne un contrat inédit : écrire deux ou trois romans par an pour une collection qui portera le nom de Voyages extraordinaires. L'objectif est ambitieux : faire découvrir aux jeunes lecteurs l'ensemble des connaissances géographiques et scientifiques de leur temps, à travers des récits palpitants. Verne s'y consacrera pendant plus de quarante ans.\n\nLes chefs-d'œuvre se succèdent : Voyage au centre de la Terre, De la Terre à la Lune, Vingt mille lieues sous les mers, Le Tour du monde en quatre-vingts jours, Michel Strogoff. Le capitaine Nemo et son sous-marin, le Nautilus, Phileas Fogg et son pari insensé deviennent des figures connues dans le monde entier. Le secret de Verne tient à un dosage habile : des personnages attachants, un suspense constant et une précision scientifique qui rend vraisemblables les aventures les plus folles.\n\nOn présente souvent Jules Verne comme un prophète qui aurait prédit les sous-marins, les voyages vers la Lune ou les appareils volants. Il faut nuancer cette image. Verne n'invente pas à partir de rien : il prolonge, avec une imagination remarquable, des recherches qui existaient déjà à son époque. Son talent consiste à rendre le progrès visible et désirable, tout en montrant parfois ses dangers. Le capitaine Nemo, génie solitaire et tourmenté, rappelle que la science peut aussi servir la colère des hommes.\n\nEn 1872, Verne s'installe à Amiens, la ville de son épouse. Il y mène une vie réglée et studieuse, se lève à l'aube pour écrire et participe même à la vie publique comme conseiller municipal. Il possède un bateau, le Saint-Michel, à bord duquel il navigue le long des côtes européennes, mais il ne réalise jamais les grands voyages qu'il fait vivre à ses héros.\n\nIl meurt à Amiens le 24 mars 1905, laissant une œuvre immense d'une soixantaine de romans. Plus d'un siècle plus tard, des astronautes, des océanographes et des explorateurs affirment encore que la lecture de Jules Verne a fait naître leur vocation. Le voyageur immobile a ainsi accompli le plus beau des voyages : celui qui conduit de l'imagination d'un écrivain à la réalité de ceux qu'il a inspirés.",
+    "qcm": [
+      {
+        "question": "Quel paradoxe résume la vie de Jules Verne selon l'auteur ?",
+        "options": ["Il détestait les sciences mais écrivait sur elles", "Il était avocat mais n'a jamais plaidé", "Il a fait voyager ses lecteurs partout tout en restant surtout à son bureau", "Il était riche mais vivait pauvrement"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que suggère l'anecdote de la fuite comme mousse à onze ans ?",
+        "options": ["Que Verne était un enfant désobéissant et malheureux", "Que le désir de voyager habitait Verne depuis l'enfance", "Que Verne voulait devenir avocat", "Que son père était marin"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel rôle joue l'éditeur Pierre-Jules Hetzel dans la carrière de Verne ?",
+        "options": ["Il publie ses romans et lui propose d'écrire les Voyages extraordinaires", "Il lui apprend le droit", "Il l'emmène en voyage en Afrique", "Il écrit les pièces de théâtre de Verne"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans le texte, que signifie l'adverbe « assidûment » dans « Il fréquente assidûment la Bibliothèque nationale » ?",
+        "options": ["Avec ennui", "De temps en temps", "En cachette", "De façon régulière et appliquée"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi l'auteur dit-il qu'il faut « nuancer » l'image de Verne prophète ?",
+        "options": ["Parce que Verne n'a jamais parlé de sous-marins", "Parce que ses romans étaient copiés sur Dumas", "Parce que Verne prolongeait des recherches qui existaient déjà à son époque", "Parce que ses prédictions se sont toutes révélées fausses"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que veut montrer l'auteur dans la dernière phrase ?",
+        "options": ["Que Verne a fini par voyager autour du monde", "Que l'œuvre de Verne a inspiré de vraies vocations d'explorateurs et de scientifiques", "Que les romans de Verne ne sont plus lus", "Que Verne regrettait de ne pas avoir voyagé"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr3-19",
+    "title": "Des cours d'école pour rafraîchir la ville",
+    "genre": "Reportage",
+    "level": 3,
+    "text": "Il est quatorze heures, un jour de fin juin, et le thermomètre affiche trente-quatre degrés à l'ombre. Dans la cour de cette école élémentaire d'un quartier dense de la ville, pourtant, les enfants jouent sans se plaindre de la chaleur. Il y a deux ans encore, la scène aurait été impossible. La cour était alors recouverte d'un bitume noir qui, en plein soleil, pouvait dépasser les cinquante degrés en surface. Les enseignants devaient garder les élèves à l'intérieur pendant les récréations des journées les plus chaudes. Aujourd'hui, la cour ressemble à un petit jardin. Elle fait partie d'un programme qui transforme progressivement les cours d'école en îlots de fraîcheur.\n\nPour comprendre l'enjeu, il faut d'abord expliquer un phénomène que les spécialistes appellent l'îlot de chaleur urbain. En été, les villes sont nettement plus chaudes que les campagnes voisines. L'écart peut atteindre plusieurs degrés, et même davantage la nuit lors des canicules. Plusieurs causes se cumulent. Les surfaces sombres, comme le bitume et certains toits, absorbent la chaleur du soleil pendant la journée et la restituent pendant la nuit, empêchant l'air de se rafraîchir. Les immeubles serrés forment des sortes de couloirs où l'air circule mal. Les voitures, les climatiseurs et les activités humaines produisent eux aussi de la chaleur. Enfin, les villes manquent souvent de végétation.\n\nOr les arbres et les plantes sont de formidables climatiseurs naturels. Leur feuillage fait de l'ombre, bien sûr, mais ce n'est pas tout. Les plantes puisent l'eau du sol par leurs racines et en rejettent une partie sous forme de vapeur par leurs feuilles. Ce phénomène, appelé évapotranspiration, consomme de l'énergie et rafraîchit l'air environnant, un peu comme la transpiration rafraîchit notre peau. Sous un grand arbre, en plein été, la température ressentie peut être bien inférieure à celle d'une place bétonnée.\n\nC'est en s'appuyant sur ces connaissances que la cour de l'école a été repensée. Mathilde, la directrice, nous fait faire le tour du propriétaire avec une fierté visible. « Nous avons retiré une grande partie du bitume, explique-t-elle. À la place, il y a maintenant de la terre, des copeaux de bois, un revêtement clair et perméable qui laisse l'eau de pluie s'infiltrer dans le sol. Nous avons planté une vingtaine d'arbres, créé un potager, installé une fontaine et des jeux en bois. »\n\nLes élèves ont été associés au projet dès le départ. Pendant plusieurs mois, ils ont dessiné leur cour idéale, voté pour certains aménagements, rencontré les architectes. Lina, élève de CM2, nous montre fièrement le carré de fraisiers dont sa classe s'occupe. « Avant, on se brûlait les mains sur le toboggan en métal, raconte-t-elle. Maintenant, on peut jouer partout, même quand il fait très chaud. Et on voit des papillons et des oiseaux. »\n\nL'enseignant de sa classe, Julien, souligne d'autres effets inattendus. « Les récréations sont plus calmes, observe-t-il. Avant, le grand terrain de football occupait tout l'espace central, et ceux qui ne jouaient pas au ballon restaient sur les côtés. Désormais, il y a des coins pour courir, d'autres pour discuter, lire ou jardiner. Chacun trouve sa place. » Le potager est devenu un support pour les leçons de sciences, et les enfants observent la vie des insectes à quelques pas de leur salle de classe.\n\nL'idée dépasse d'ailleurs le temps scolaire. Dans plusieurs villes, ces cours rénovées sont ouvertes le week-end ou pendant les vacances aux habitants du quartier, notamment aux personnes âgées, particulièrement vulnérables lors des fortes chaleurs. La cour devient ainsi un refuge pour tous.\n\nBien sûr, ces transformations ont un coût, et elles demandent un entretien régulier : il faut arroser, tailler, ramasser les feuilles. Certains parents s'inquiétaient au départ de voir leurs enfants rentrer avec des vêtements tachés de terre. Mais la plupart se disent aujourd'hui convaincus. Les scientifiques, de leur côté, rappellent que les canicules deviendront plus fréquentes et plus intenses avec le réchauffement climatique. Adapter les villes n'est plus une option.\n\nEn quittant l'école, nous croisons un groupe d'enfants qui arrosent les tomates du potager en riant. Au-dessus d'eux, les jeunes arbres commencent à étendre leur ombre. Dans quelques années, ils formeront un véritable toit de feuillage. Et ces enfants se souviendront peut-être qu'ils ont aidé, à leur échelle, à rendre leur ville plus vivable.",
+    "qcm": [
+      {
+        "question": "Pourquoi les élèves restaient-ils parfois à l'intérieur pendant les récréations avant les travaux ?",
+        "options": ["Parce que le bitume de la cour devenait brûlant les jours de forte chaleur", "Parce que la cour était trop petite", "Parce qu'il pleuvait trop souvent", "Parce que les jeux étaient cassés"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Parmi ces causes, laquelle n'est pas citée pour expliquer l'îlot de chaleur urbain ?",
+        "options": ["Les surfaces sombres qui absorbent la chaleur", "Le manque de végétation", "La chaleur produite par les voitures et les climatiseurs", "La pollution de l'eau des rivières"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que désigne le mot « évapotranspiration » ?",
+        "options": ["La transpiration des enfants qui jouent", "L'évaporation de l'eau des fontaines", "Le rejet de vapeur d'eau par les plantes, qui rafraîchit l'air", "L'arrosage automatique des arbres"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Selon l'enseignant Julien, pourquoi les récréations sont-elles plus calmes ?",
+        "options": ["Parce que le football a été interdit", "Parce que l'espace est mieux partagé et que chacun trouve sa place", "Parce que les élèves sont fatigués par la chaleur", "Parce que les récréations sont plus courtes"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que peut-on déduire du fait que les élèves ont été associés au projet ?",
+        "options": ["Que l'école souhaitait que les enfants s'approprient leur nouvelle cour", "Que les architectes manquaient d'idées", "Que le projet a été entièrement réalisé par les élèves", "Que les parents s'opposaient au projet"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quelle phrase résume le mieux l'intention de ce reportage ?",
+        "options": ["Dénoncer le comportement des élèves pendant les récréations", "Critiquer le coût des travaux dans les écoles", "Expliquer comment cultiver des tomates", "Montrer qu'une cour végétalisée aide à lutter contre la chaleur et améliore la vie de l'école"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr3-20",
+    "title": "L'Atelier de mon grand-père",
+    "genre": "Récit épistolaire",
+    "level": 3,
+    "text": "Cher grand-père,\n\nCela fait maintenant trois mois que tu es parti vivre chez tante Hélène, à Lyon, et je me rends compte que je ne t'ai jamais écrit une vraie lettre. Je t'envoie des messages, je t'appelle le dimanche, mais ce n'est pas la même chose. Toi, tu m'as toujours dit qu'une lettre, on la garde, alors qu'un message, on l'oublie. Alors voilà, j'essaie.\n\nIl faut d'abord que je t'avoue quelque chose. Quand maman a dit que nous allions vider ta maison pour la vendre, j'ai été en colère. Je ne comprenais pas pourquoi tu acceptais de partir, ni pourquoi personne ne me demandait mon avis. J'ai passé des étés entiers dans cette maison. J'avais l'impression qu'on allait effacer une partie de mon enfance. Je crois que je t'en ai voulu, un peu, même si je savais que tes jambes ne te permettaient plus de vivre seul avec tous ces escaliers.\n\nSamedi dernier, nous sommes allés là-bas avec papa et maman pour trier les dernières affaires. On m'a confié l'atelier, au fond du jardin. Tu te souviens que tu ne me laissais jamais y entrer seul quand j'étais petit ? Tu disais que les outils, ce n'était pas des jouets. J'ai poussé la porte, qui grince toujours autant, et l'odeur m'a sauté au visage : la sciure, l'huile de lin, le vieux bois. J'ai eu l'impression que tu allais apparaître derrière l'établi avec ton crayon coincé derrière l'oreille.\n\nJ'ai commencé à ranger les outils dans des caisses. Il y en avait des dizaines, chacun suspendu à sa place, avec sa silhouette dessinée au feutre sur le panneau de bois pour qu'on sache où le remettre. Je ne connaissais même pas le nom de la moitié d'entre eux. Papa m'a appris les mots : le trusquin, la varlope, le bouvet. Il m'a dit que c'est toi qui les lui avais appris, quand il avait mon âge. J'ai trouvé ça étrange et un peu émouvant, cette chaîne de mots qui passe de toi à papa, puis de papa à moi.\n\nEt puis, au fond d'un tiroir, j'ai trouvé un carnet à spirale, tout taché. À l'intérieur, il y avait des croquis, des mesures, des listes de bois, et des dates qui remontaient jusqu'aux années soixante-dix. J'ai reconnu certains dessins. Il y avait la petite chaise rouge qui est encore dans ma chambre, le coffre à jouets de ma sœur, la boîte à bijoux de maman. À côté de chaque dessin, tu avais écrit un prénom et une date. À côté de la chaise rouge, il y avait mon prénom et l'année de ma naissance. Je ne savais pas que tu l'avais fabriquée pour moi avant même que je sache marcher.\n\nJe suis resté longtemps assis sur ton tabouret, à feuilleter ce carnet. J'ai compris que tu avais passé ta vie à fabriquer des objets pour les gens que tu aimes, sans jamais en parler. Tu n'es pas quelqu'un qui dit beaucoup de choses, grand-père. Mais je crois que tes objets parlaient pour toi.\n\nAlors j'ai pris une décision. J'ai demandé à papa si nous pouvions garder quelques outils, et il a accepté. Ils sont maintenant dans le garage, accrochés sur un panneau que nous avons fixé ensemble. J'ai redessiné leurs silhouettes au feutre, comme toi. Et j'ai commencé un projet : un nichoir pour les mésanges, d'après un croquis que j'ai trouvé dans ton carnet. Papa m'aide pour les coupes difficiles. Pour l'instant, mes assemblages ne sont pas très droits, et je me suis tapé deux fois sur les doigts avec le marteau. Mais j'avance.\n\nJe ne suis plus en colère. Je crois que j'avais peur que la maison emporte mes souvenirs en partant. En fait, ils ne sont pas dans les murs. Ils sont dans cette chaise rouge, dans ces outils, dans ces mots que papa m'a transmis, et maintenant dans ce nichoir un peu bancal que je suis en train de construire.\n\nQuand nous viendrons te voir à Lyon, pendant les vacances, je t'apporterai le carnet. J'aimerais que tu m'expliques les dessins que je n'ai pas compris. Et si tu es d'accord, j'aimerais que tu m'apprennes à réaliser des queues d'aronde. Papa dit que personne ne les faisait aussi bien que toi.\n\nJe t'embrasse très fort.\n\nTon petit-fils, Samuel\n\nP.-S. Le nichoir sera installé dans le cerisier du jardin. Je t'enverrai une photo dès que la première mésange s'y installera.",
+    "qcm": [
+      {
+        "question": "Pourquoi Samuel a-t-il été en colère au début ?",
+        "options": ["Parce que son grand-père ne lui écrivait jamais", "Parce qu'on lui avait interdit d'entrer dans l'atelier", "Parce qu'il ne voulait pas que la maison de son grand-père soit vidée et vendue", "Parce qu'il devait passer ses vacances à Lyon"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi les silhouettes des outils étaient-elles dessinées sur le panneau ?",
+        "options": ["Pour décorer l'atelier", "Pour savoir où remettre chaque outil", "Pour apprendre à dessiner", "Pour cacher des messages secrets"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que découvre Samuel en lisant le carnet à spirale ?",
+        "options": ["Que la chaise rouge avait été fabriquée pour lui dès sa naissance", "Que son grand-père vendait ses meubles", "Que son grand-père avait été professeur", "Que l'atelier allait être détruit"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que signifie la phrase « je crois que tes objets parlaient pour toi » ?",
+        "options": ["Que les objets du grand-père faisaient du bruit", "Que le grand-père écrivait des messages sur ses meubles", "Que le grand-père parlait à ses outils", "Que le grand-père exprimait son affection à travers ce qu'il fabriquait"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie l'adjectif « bancal » dans l'expression « ce nichoir un peu bancal » ?",
+        "options": ["Très solide", "Peint en couleurs vives", "Mal équilibré, un peu de travers", "Trop grand"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle évolution des sentiments de Samuel la lettre montre-t-elle ?",
+        "options": ["Il passe de la joie à la tristesse", "Il passe de la colère à l'apaisement, en comprenant que les souvenirs se transmettent", "Il reste en colère du début à la fin", "Il passe de l'indifférence à la jalousie"],
+        "correctIndex": 1
+      }
+    ]
   }
 ]
