@@ -56,6 +56,6 @@ export const CONSIGNES: Record<JeuParcours, string[]> = {
   'coupe-mots': [
     'Les mots de la phrase sont collés.',
     'Clique entre les lettres pour séparer les mots.',
-    'Valide quand la phrase est bien découpée.',
+    "Après une apostrophe, coupe juste après elle : l' | école. Puis valide.",
   ],
 }
