@@ -28,6 +28,7 @@ const ALL_EXERCISES: {
   { type: 'forgeron', emoji: '🔨', title: "Le Forgeron de mots", to: '/exercices/forgeron' },
   { type: 'labyrinthe', emoji: '🧭', title: "Le Labyrinthe", to: '/exercices/labyrinthe' },
   { type: 'coupe-mots', emoji: '✂️', title: "Coupe-Mots", to: '/exercices/coupe-mots' },
+  { type: 'racines', emoji: '🌳', title: "Les Racines", to: '/exercices/racines' },
 ]
 
 function getRelativeDate(dateStr: string): string {

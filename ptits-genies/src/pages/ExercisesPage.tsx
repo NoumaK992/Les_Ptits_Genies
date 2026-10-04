@@ -80,6 +80,13 @@ const exercises = [
     desc: "Sépare les mots collés",
     tag: 'Décodage',
   },
+  {
+    to: '/exercices/racines',
+    emoji: '🌳',
+    title: "Les Racines",
+    desc: "Retrouve les familles de mots",
+    tag: 'Vocabulaire',
+  },
 ]
 
 const container = {

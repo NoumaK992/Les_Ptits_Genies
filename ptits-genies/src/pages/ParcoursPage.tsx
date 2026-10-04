@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuthStore } from '@/store/authStore'
 import { useParcoursStore } from '@/store/parcoursStore'
 import {
-  NB_NIVEAUX, NOMS_JEUX, PARTIES_PAR_JEU, dateDuJour, estTermine, estVerrouille, jeuDeLEtape, jeuDuNiveau,
+  BONUS_BOSS, NB_NIVEAUX, NOMS_JEUX, PARTIES_PAR_JEU, dateDuJour, estTermine, estVerrouille, jeuDeLEtape, jeuDuNiveau,
   lienPartie, seuilBoss, tourDuNiveau, type EtatParcours, type EvenementParcours,
 } from '@/parcours/regles'
 import { CONSIGNES } from '@/parcours/consignes'
@@ -21,8 +21,8 @@ function banniere(evenement: EvenementParcours | null, etat: EtatParcours): stri
     case 'partie-terminee': return `Partie ${etat.partiesFaites} / ${total} terminée ! Continue 💪`
     case 'jeu-termine': return 'Entraînement terminé ! Place au boss 👾'
     case 'boss-battu': return etat.etape === 'lecture'
-      ? 'Boss vaincu ! +100 points 🎉 Dernière étape : la lecture.'
-      : 'Boss vaincu ! +100 points 🎉 Place au 2e jeu de la séance.'
+      ? `Boss vaincu ! +${BONUS_BOSS} points 🎉 Dernière étape : la lecture.`
+      : `Boss vaincu ! +${BONUS_BOSS} points 🎉 Place au 2e jeu de la séance.`
     case 'boss-rate': return 'Le boss a résisté ! Il sera plus faible au prochain essai.'
     case 'niveau-termine': return `Niveau ${etat.niveau - 1} validé ! 🎉`
     default: return null

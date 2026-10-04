@@ -17,7 +17,7 @@ export interface AuthUser {
 }
 
 // ─── Sessions & Progress ────────────────────────────────────────────
-export type ExerciseType = 'word-search' | 'intrus' | 'lecture-rapide' | 'coup-doeil' | 'phrases-brouillees' | 'collection' | 'ami-ennemi' | 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots'
+export type ExerciseType = 'word-search' | 'intrus' | 'lecture-rapide' | 'coup-doeil' | 'phrases-brouillees' | 'collection' | 'ami-ennemi' | 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots' | 'racines'
 
 export interface Session {
   id: string
@@ -287,7 +287,7 @@ export interface AmiEnnemiSessionDetails {
 
 /** Détails communs aux jeux issus de la recherche sur la fluence (Vrai ou Absurde, Forgeron, Labyrinthe, Coupe-Mots). */
 export interface NouveauJeuSessionDetails {
-  type: 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots'
+  type: 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots' | 'racines'
   niveau: number
   bonnes: number
   total: number

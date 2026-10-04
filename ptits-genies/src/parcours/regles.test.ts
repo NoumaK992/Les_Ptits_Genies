@@ -14,7 +14,7 @@ const etat = (e: Partial<EtatParcours> = {}): EtatParcours => ({
 
 test('Lecture rapide ne fait plus partie de la rotation', () => {
   assert.ok(!JEUX_ROTATION.includes('lecture-rapide'))
-  assert.equal(JEUX_ROTATION.length, 10)
+  assert.equal(JEUX_ROTATION.length, 11)
 })
 
 test('chaque élève fait chaque jeu une fois avant d en refaire un (2 jeux par séance)', () => {

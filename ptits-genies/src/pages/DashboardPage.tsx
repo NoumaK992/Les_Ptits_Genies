@@ -24,9 +24,10 @@ const EXERCISE_LABELS: Record<string, string> = {
   'collection': '🗂️ Collection',
   'ami-ennemi': '🎯 Ami & Ennemi',
   'vrai-absurde': '⚖️ Vrai/Absurde',
-  'forgeron': '🔨 mots',
+  'forgeron': '🔨 Forgeron',
   'labyrinthe': '🧭 Labyrinthe',
   'coupe-mots': '✂️ Coupe-Mots',
+  'racines': '🌳 Racines',
 }
 
 // Emoji d'un exercice : premier mot de son libellé (une seule source de vérité).
@@ -50,6 +51,7 @@ const EXERCISE_TEINTES: Record<string, Teinte> = {
   'forgeron': 'bleu',
   'labyrinthe': 'juste',
   'coupe-mots': 'rose-pale',
+  'racines': 'juste',
 }
 
 const TEINTE_PAR_DEFAUT: Teinte = 'bleu'

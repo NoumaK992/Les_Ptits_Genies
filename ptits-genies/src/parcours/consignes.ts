@@ -58,4 +58,9 @@ export const CONSIGNES: Record<JeuParcours, string[]> = {
     'Clique entre les lettres pour séparer les mots.',
     "Après une apostrophe, coupe juste après elle : l' | école. Puis valide.",
   ],
+  racines: [
+    'Des mots de la même famille partagent une racine : terre, terrain, enterrer.',
+    'Clique sur tous les mots de la famille, mais pas sur les faux amis qui se ressemblent.',
+    'Ensuite, coupe des mots en morceaux et trouve le sens de chaque morceau.',
+  ],
 }

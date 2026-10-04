@@ -38,9 +38,9 @@ export const BADGES: BadgeWithCategory[] = [
     id: 'allExercises',
     label: 'Globe-trotteur',
     emoji: '🌍',
-    description: 'Essaie les 11 exercices',
+    description: 'Essaie les 12 exercices',
     category: 'decouverte',
-    condition: (ctx) => ctx.progress.length >= 11,
+    condition: (ctx) => ctx.progress.length >= 12,
   },
 
   // ─── Points ───────────────────────────────────────────────────────
@@ -210,6 +210,46 @@ export const BADGES: BadgeWithCategory[] = [
     description: "10 sessions d'Ami et Ennemi",
     category: 'specialisation',
     condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'ami-ennemi')?.totalSessions ?? 0) >= 10,
+  },
+  {
+    id: 'spec-vrai-absurde',
+    label: "Juge de paix",
+    emoji: '⚖️',
+    description: "10 parties de Vrai ou Absurde ?",
+    category: 'specialisation',
+    condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'vrai-absurde')?.totalSessions ?? 0) >= 10,
+  },
+  {
+    id: 'spec-forgeron',
+    label: "Maître forgeron",
+    emoji: '🔨',
+    description: "10 parties du Forgeron de mots",
+    category: 'specialisation',
+    condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'forgeron')?.totalSessions ?? 0) >= 10,
+  },
+  {
+    id: 'spec-labyrinthe',
+    label: "Explorateur du labyrinthe",
+    emoji: '🧭',
+    description: "10 parties du Labyrinthe",
+    category: 'specialisation',
+    condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'labyrinthe')?.totalSessions ?? 0) >= 10,
+  },
+  {
+    id: 'spec-coupe-mots',
+    label: "As des ciseaux",
+    emoji: '✂️',
+    description: "10 parties de Coupe-Mots",
+    category: 'specialisation',
+    condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'coupe-mots')?.totalSessions ?? 0) >= 10,
+  },
+  {
+    id: 'spec-racines',
+    label: "Jardinier des mots",
+    emoji: '🌳',
+    description: "10 parties des Racines",
+    category: 'specialisation',
+    condition: (ctx) => (ctx.progress.find((p) => p.exerciseType === 'racines')?.totalSessions ?? 0) >= 10,
   },
 
   // ─── Parcours ─────────────────────────────────────────────────────
