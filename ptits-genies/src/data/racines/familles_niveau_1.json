@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "rf1-001",
+    "racine": "terre",
+    "sens": "le sol",
+    "membres": [
+      "terrain",
+      "enterrer",
+      "terrestre",
+      "souterrain",
+      "atterrir",
+      "terrier"
+    ],
+    "intrus": [
+      "terreur",
+      "terrible",
+      "terrifier"
+    ],
+    "explications": {
+      "terreur": "La terreur, c'est une très grande peur.",
+      "terrible": "Terrible veut dire « qui fait très peur » : famille de terreur.",
+      "terrifier": "Terrifier, c'est faire très peur : famille de terreur."
+    }
+  },
+  {
+    "id": "rf1-002",
+    "racine": "dent",
+    "membres": [
+      "dentiste",
+      "dentier",
+      "dentaire",
+      "dentifrice",
+      "édenté"
+    ],
+    "intrus": [
+      "accident",
+      "évident",
+      "prudent"
+    ],
+    "explications": {
+      "accident": "Un accident est un événement imprévu ; le mot vient du latin « tomber ».",
+      "évident": "Évident veut dire « qu'on voit tout de suite ».",
+      "prudent": "Prudent veut dire « qui fait attention »."
+    }
+  },
+  {
+    "id": "rf1-003",
+    "racine": "lait",
+    "membres": [
+      "laitier",
+      "laitage",
+      "allaiter",
+      "laiterie"
+    ],
+    "intrus": [
+      "laid",
+      "laideur",
+      "laisse",
+      "laiton"
+    ],
+    "explications": {
+      "laid": "Laid veut dire « pas beau ». Il se prononce comme lait, sans aucun lien.",
+      "laideur": "La laideur vient de « laid ».",
+      "laisse": "La laisse du chien vient du verbe « laisser ».",
+      "laiton": "Le laiton est un métal jaune ; le mot vient de l'arabe."
+    }
+  },
+  {
+    "id": "rf1-004",
+    "racine": "chant",
+    "sens": "chanter",
+    "membres": [
+      "chanter",
+      "chanteur",
+      "chanteuse",
+      "chanson",
+      "chantonner"
+    ],
+    "intrus": [
+      "chantier",
+      "méchant",
+      "penchant"
+    ],
+    "explications": {
+      "chantier": "Un chantier est un lieu de travaux.",
+      "méchant": "Méchant vient d'un vieux mot qui voulait dire « malchanceux ».",
+      "penchant": "Penchant vient du verbe « pencher »."
+    }
+  },
+  {
+    "id": "rf1-005",
+    "racine": "jour",
+    "membres": [
+      "journée",
+      "journal",
+      "journalier",
+      "ajourner",
+      "bonjour"
+    ],
+    "intrus": [
+      "jouet",
+      "jouer",
+      "joue"
+    ],
+    "explications": {
+      "jouet": "Un jouet sert à jouer : famille de « jeu ».",
+      "jouer": "Jouer est de la famille de « jeu ».",
+      "joue": "La joue est une partie du visage."
+    }
+  },
+  {
+    "id": "rf1-006",
+    "racine": "jeu",
+    "membres": [
+      "jouer",
+      "joueur",
+      "jouet",
+      "enjeu",
+      "déjouer"
+    ],
+    "intrus": [
+      "journal",
+      "journée",
+      "joue"
+    ],
+    "explications": {
+      "journal": "Le journal paraît chaque jour : famille de « jour ».",
+      "journée": "La journée est de la famille de « jour ».",
+      "joue": "La joue est une partie du visage."
+    }
+  },
+  {
+    "id": "rf1-007",
+    "racine": "mont",
+    "sens": "la montagne",
+    "membres": [
+      "montagne",
+      "montagnard",
+      "monter",
+      "montée",
+      "remonter"
+    ],
+    "intrus": [
+      "montrer",
+      "montre",
+      "monstre"
+    ],
+    "explications": {
+      "montrer": "Montrer veut dire « faire voir ».",
+      "montre": "La montre sert à voir l'heure ; le mot vient de « montrer ».",
+      "monstre": "Monstre vient d'un mot latin qui veut dire « avertir »."
+    }
+  },
+  {
+    "id": "rf1-008",
+    "racine": "porter",
+    "membres": [
+      "porteur",
+      "apporter",
+      "transporter",
+      "portable",
+      "remporter"
+    ],
+    "intrus": [
+      "porc",
+      "portion",
+      "portrait"
+    ],
+    "explications": {
+      "porc": "Le porc est un animal : le cochon.",
+      "portion": "Une portion est une part, par exemple de nourriture.",
+      "portrait": "Portrait vient d'un vieux verbe qui voulait dire « dessiner »."
+    }
+  },
+  {
+    "id": "rf1-009",
+    "racine": "mur",
+    "membres": [
+      "muraille",
+      "muret",
+      "murer",
+      "emmurer",
+      "mural"
+    ],
+    "intrus": [
+      "mûr",
+      "mûrir",
+      "mûre",
+      "murmure"
+    ],
+    "explications": {
+      "mûr": "Mûr se dit d'un fruit prêt à être mangé.",
+      "mûrir": "Mûrir, c'est devenir mûr.",
+      "mûre": "La mûre est un petit fruit noir.",
+      "murmure": "Un murmure est un bruit très léger."
+    }
+  },
+  {
+    "id": "rf1-010",
+    "racine": "vent",
+    "membres": [
+      "venteux",
+      "éventail",
+      "paravent",
+      "ventiler",
+      "ventilateur"
+    ],
+    "intrus": [
+      "vente",
+      "ventre",
+      "aventure",
+      "inventer"
+    ],
+    "explications": {
+      "vente": "La vente vient du verbe « vendre ».",
+      "ventre": "Le ventre est une partie du corps.",
+      "aventure": "Aventure vient d'un mot latin qui veut dire « ce qui va arriver ».",
+      "inventer": "Inventer vient d'un mot latin qui veut dire « trouver »."
+    }
+  },
+  {
+    "id": "rf1-011",
+    "racine": "nom",
+    "membres": [
+      "nommer",
+      "renommée",
+      "surnom",
+      "prénom",
+      "dénommer"
+    ],
+    "intrus": [
+      "nombre",
+      "nombreux",
+      "nombril"
+    ],
+    "explications": {
+      "nombre": "Un nombre sert à compter.",
+      "nombreux": "Nombreux veut dire « en grand nombre ».",
+      "nombril": "Le nombril est au milieu du ventre."
+    }
+  },
+  {
+    "id": "rf1-012",
+    "racine": "fil",
+    "sens": "le fil à coudre",
+    "membres": [
+      "filet",
+      "filer",
+      "enfiler",
+      "effiler",
+      "filament"
+    ],
+    "intrus": [
+      "fille",
+      "fillette",
+      "filleul"
+    ],
+    "explications": {
+      "fille": "Fille est de la famille de « fils ».",
+      "fillette": "Une fillette est une petite fille.",
+      "filleul": "Le filleul est l'enfant dont on est le parrain ou la marraine : famille de « fils »."
+    }
+  },
+  {
+    "id": "rf1-013",
+    "racine": "rang",
+    "sens": "une ligne",
+    "membres": [
+      "ranger",
+      "rangement",
+      "déranger",
+      "arranger",
+      "rangée"
+    ],
+    "intrus": [
+      "orange",
+      "étrange",
+      "frange",
+      "grange"
+    ],
+    "explications": {
+      "orange": "Orange vient d'un mot arabe.",
+      "étrange": "Étrange veut dire « bizarre ».",
+      "frange": "La frange, ce sont les cheveux coupés sur le front.",
+      "grange": "Une grange est un bâtiment où l'on range la paille et le grain."
+    }
+  },
+  {
+    "id": "rf1-014",
+    "racine": "colle",
+    "membres": [
+      "coller",
+      "décoller",
+      "recoller",
+      "collage",
+      "autocollant"
+    ],
+    "intrus": [
+      "collier",
+      "colline",
+      "collège",
+      "colère"
+    ],
+    "explications": {
+      "collier": "Un collier se porte autour du cou.",
+      "colline": "Une colline est une petite montagne.",
+      "collège": "Collège vient d'un mot latin qui veut dire « groupe de personnes ».",
+      "colère": "La colère est un sentiment très fort."
+    }
+  },
+  {
+    "id": "rf1-015",
+    "racine": "sec",
+    "membres": [
+      "sécher",
+      "sécheresse",
+      "séchoir",
+      "dessécher",
+      "sèche-linge"
+    ],
+    "intrus": [
+      "secret",
+      "seconde",
+      "secours"
+    ],
+    "explications": {
+      "secret": "Un secret est une chose qu'on cache.",
+      "seconde": "Seconde veut dire « deuxième » ; c'est aussi une unité de temps.",
+      "secours": "Secours vient d'un mot latin qui veut dire « courir pour aider »."
+    }
+  },
+  {
+    "id": "rf1-016",
+    "racine": "doux",
+    "membres": [
+      "douceur",
+      "adoucir",
+      "doucement",
+      "radoucir"
+    ],
+    "intrus": [
+      "douche",
+      "doute",
+      "douze",
+      "douane"
+    ],
+    "explications": {
+      "douche": "Douche vient d'un mot italien qui désignait un tuyau d'eau.",
+      "doute": "Le doute, c'est quand on n'est pas sûr.",
+      "douze": "Douze est un nombre.",
+      "douane": "La douane contrôle les marchandises aux frontières ; le mot vient de l'arabe."
+    }
+  },
+  {
+    "id": "rf1-017",
+    "racine": "fort",
+    "membres": [
+      "forteresse",
+      "renforcer",
+      "fortifier",
+      "fortement",
+      "effort"
+    ],
+    "intrus": [
+      "fortune",
+      "forêt",
+      "forestier"
+    ],
+    "explications": {
+      "fortune": "La fortune, c'est la chance ou la richesse.",
+      "forêt": "Une forêt est un grand bois.",
+      "forestier": "Forestier est de la famille de « forêt »."
+    }
+  },
+  {
+    "id": "rf1-018",
+    "racine": "chaud",
+    "membres": [
+      "chaudière",
+      "chauffage",
+      "réchauffer",
+      "chaudement",
+      "échauffement"
+    ],
+    "intrus": [
+      "chaussure",
+      "chaussette",
+      "chauve"
+    ],
+    "explications": {
+      "chaussure": "La chaussure vient du verbe « chausser ».",
+      "chaussette": "La chaussette vient du verbe « chausser ».",
+      "chauve": "Chauve veut dire « qui n'a plus de cheveux »."
+    }
+  },
+  {
+    "id": "rf1-019",
+    "racine": "lent",
+    "membres": [
+      "lenteur",
+      "ralentir",
+      "lentement",
+      "ralentisseur"
+    ],
+    "intrus": [
+      "lentille",
+      "talent",
+      "violent",
+      "excellent"
+    ],
+    "explications": {
+      "lentille": "La lentille est une petite graine qu'on mange.",
+      "talent": "Un talent est un don pour faire quelque chose.",
+      "violent": "Violent veut dire « brutal ».",
+      "excellent": "Excellent veut dire « très bon »."
+    }
+  },
+  {
+    "id": "rf1-020",
+    "racine": "rond",
+    "membres": [
+      "arrondir",
+      "rondelle",
+      "rondeur",
+      "rond-point",
+      "rondin"
+    ],
+    "intrus": [
+      "ronger",
+      "ronce",
+      "ronfler"
+    ],
+    "explications": {
+      "ronger": "Ronger, c'est mordiller longtemps.",
+      "ronce": "La ronce est une plante à épines.",
+      "ronfler": "Ronfler, c'est faire du bruit en dormant."
+    }
+  },
+  {
+    "id": "rf1-021",
+    "racine": "dur",
+    "membres": [
+      "durcir",
+      "dureté",
+      "endurcir",
+      "durement",
+      "durcissement"
+    ],
+    "intrus": [
+      "ordure",
+      "verdure",
+      "bordure"
+    ],
+    "explications": {
+      "ordure": "Une ordure est un déchet.",
+      "verdure": "La verdure est de la famille de « vert ».",
+      "bordure": "La bordure est de la famille de « bord »."
+    }
+  },
+  {
+    "id": "rf1-022",
+    "racine": "roue",
+    "membres": [
+      "rouage",
+      "rouet",
+      "rouler",
+      "roulette",
+      "enrouler"
+    ],
+    "intrus": [
+      "rouge",
+      "rouille",
+      "roucouler"
+    ],
+    "explications": {
+      "rouge": "Rouge est une couleur.",
+      "rouille": "La rouille abîme le fer.",
+      "roucouler": "Roucouler imite le chant du pigeon."
+    }
+  },
+  {
+    "id": "rf1-023",
+    "racine": "couper",
+    "membres": [
+      "coupant",
+      "coupure",
+      "découper",
+      "découpage",
+      "recouper"
+    ],
+    "intrus": [
+      "coupable",
+      "couple",
+      "couplet"
+    ],
+    "explications": {
+      "coupable": "Coupable veut dire « qui a commis une faute ».",
+      "couple": "Un couple, ce sont deux personnes ou deux choses ensemble.",
+      "couplet": "Un couplet est une partie d'une chanson."
+    }
+  },
+  {
+    "id": "rf1-024",
+    "racine": "table",
+    "membres": [
+      "tablette",
+      "attablé",
+      "tableau",
+      "tablée"
+    ],
+    "intrus": [
+      "stable",
+      "potable",
+      "tabac",
+      "étable"
+    ],
+    "explications": {
+      "stable": "Stable veut dire « qui ne bouge pas ».",
+      "potable": "Potable veut dire « qu'on peut boire ».",
+      "tabac": "Le tabac est une plante venue d'Amérique.",
+      "étable": "L'étable est le bâtiment où dorment les vaches."
+    }
+  },
+  {
+    "id": "rf1-025",
+    "racine": "tête",
+    "membres": [
+      "têtu",
+      "entêté",
+      "entêtement",
+      "en-tête",
+      "casse-tête"
+    ],
+    "intrus": [
+      "téter",
+      "tétine",
+      "tétanos"
+    ],
+    "explications": {
+      "téter": "Téter, c'est boire le lait de sa mère.",
+      "tétine": "La tétine vient du verbe « téter ».",
+      "tétanos": "Le tétanos est une maladie ; le mot vient du grec."
+    }
+  },
+  {
+    "id": "rf1-026",
+    "racine": "grand",
+    "membres": [
+      "grandir",
+      "grandeur",
+      "agrandir",
+      "grandiose",
+      "agrandissement"
+    ],
+    "intrus": [
+      "grange",
+      "granit",
+      "gland"
+    ],
+    "explications": {
+      "grange": "Une grange est un bâtiment où l'on range la paille et le grain.",
+      "granit": "Le granit est une roche très dure.",
+      "gland": "Le gland est le fruit du chêne."
+    }
+  },
+  {
+    "id": "rf1-027",
+    "racine": "plume",
+    "membres": [
+      "plumage",
+      "plumer",
+      "déplumer",
+      "plumier",
+      "plumeau"
+    ],
+    "intrus": [
+      "plomb",
+      "plombier",
+      "plomber"
+    ],
+    "explications": {
+      "plomb": "Le plomb est un métal lourd.",
+      "plombier": "Le plombier travaillait autrefois avec des tuyaux en plomb.",
+      "plomber": "Plomber vient de « plomb »."
+    }
+  },
+  {
+    "id": "rf1-028",
+    "racine": "froid",
+    "membres": [
+      "froideur",
+      "refroidir",
+      "froidement",
+      "refroidissement",
+      "froidure"
+    ],
+    "intrus": [
+      "froisser",
+      "froissement",
+      "frotter"
+    ],
+    "explications": {
+      "froisser": "Froisser, c'est chiffonner.",
+      "froissement": "Le froissement vient de « froisser ».",
+      "frotter": "Frotter, c'est passer quelque chose en appuyant."
+    }
+  },
+  {
+    "id": "rf1-029",
+    "racine": "cri",
+    "membres": [
+      "crier",
+      "criard",
+      "crieur",
+      "décrier"
+    ],
+    "intrus": [
+      "crise",
+      "cristal",
+      "crinière",
+      "critique"
+    ],
+    "explications": {
+      "crise": "Une crise est un moment difficile.",
+      "cristal": "Le cristal est une sorte de verre très pur.",
+      "crinière": "La crinière, ce sont les longs poils du cou du cheval.",
+      "critique": "Critique vient d'un mot grec qui veut dire « juger »."
+    }
+  },
+  {
+    "id": "rf1-030",
+    "racine": "glace",
+    "membres": [
+      "glacier",
+      "glacial",
+      "glaçon",
+      "glacer",
+      "verglas"
+    ],
+    "intrus": [
+      "glaive",
+      "glaner",
+      "glaïeul"
+    ],
+    "explications": {
+      "glaive": "Un glaive est une épée courte.",
+      "glaner": "Glaner, c'est ramasser ce qui reste après la récolte.",
+      "glaïeul": "Le glaïeul est une fleur."
+    }
+  },
+  {
+    "id": "rf1-031",
+    "racine": "sable",
+    "membres": [
+      "sableux",
+      "ensabler",
+      "sablier",
+      "sablière",
+      "désensabler"
+    ],
+    "intrus": [
+      "sabre",
+      "sabot",
+      "saboter"
+    ],
+    "explications": {
+      "sabre": "Un sabre est une épée courbe.",
+      "sabot": "Un sabot est une chaussure en bois, ou le pied du cheval.",
+      "saboter": "Saboter vient de « sabot »."
+    }
+  },
+  {
+    "id": "rf1-032",
+    "racine": "bras",
+    "membres": [
+      "brassard",
+      "embrasser",
+      "brassée",
+      "avant-bras",
+      "brassière"
+    ],
+    "intrus": [
+      "brasserie",
+      "brasier",
+      "braise"
+    ],
+    "explications": {
+      "brasserie": "La brasserie vient du verbe « brasser » (fabriquer de la bière).",
+      "brasier": "Un brasier est un grand feu : famille de « braise ».",
+      "braise": "La braise, c'est le bois qui rougeoie après le feu."
+    }
+  },
+  {
+    "id": "rf1-033",
+    "racine": "fer",
+    "sens": "le métal",
+    "membres": [
+      "ferraille",
+      "ferrer",
+      "ferronnier",
+      "ferroviaire"
+    ],
+    "intrus": [
+      "fermer",
+      "fermier",
+      "fertile",
+      "férié"
+    ],
+    "explications": {
+      "fermer": "Fermer vient d'un mot latin qui veut dire « rendre solide ».",
+      "fermier": "Le fermier travaille dans une ferme.",
+      "fertile": "Fertile veut dire « où les plantes poussent bien ».",
+      "férié": "Un jour férié est un jour de fête où l'on ne travaille pas."
+    }
+  },
+  {
+    "id": "rf1-034",
+    "racine": "marcher",
+    "sens": "avancer à pied",
+    "membres": [
+      "marcheur",
+      "marcheuse",
+      "démarche",
+      "marchepied"
+    ],
+    "intrus": [
+      "marché",
+      "marchand",
+      "marchandise",
+      "marchander"
+    ],
+    "explications": {
+      "marché": "Le marché est le lieu où l'on achète et vend.",
+      "marchand": "Le marchand vend : famille de « marché ».",
+      "marchandise": "La marchandise est ce qu'on vend : famille de « marché ».",
+      "marchander": "Marchander, c'est discuter le prix : famille de « marché »."
+    }
+  },
+  {
+    "id": "rf1-035",
+    "racine": "sucre",
+    "membres": [
+      "sucrer",
+      "sucrier",
+      "sucrerie",
+      "sucré"
+    ],
+    "intrus": [
+      "sucette",
+      "sucer",
+      "succès",
+      "succulent"
+    ],
+    "explications": {
+      "sucette": "La sucette vient du verbe « sucer ».",
+      "sucer": "Sucer, c'est garder dans la bouche en aspirant.",
+      "succès": "Le succès, c'est la réussite.",
+      "succulent": "Succulent veut dire « délicieux »."
+    }
+  },
+  {
+    "id": "rf1-036",
+    "racine": "forme",
+    "membres": [
+      "former",
+      "déformer",
+      "transformer",
+      "uniforme",
+      "formation"
+    ],
+    "intrus": [
+      "formidable",
+      "fourmi",
+      "fourmilière"
+    ],
+    "explications": {
+      "formidable": "Formidable veut dire « extraordinaire ».",
+      "fourmi": "La fourmi est un petit insecte.",
+      "fourmilière": "La fourmilière est la maison des fourmis."
+    }
+  },
+  {
+    "id": "rf1-037",
+    "racine": "cuire",
+    "membres": [
+      "cuisson",
+      "cuisine",
+      "cuisinier",
+      "recuire",
+      "cuit"
+    ],
+    "intrus": [
+      "cuir",
+      "cuivre",
+      "cuillère",
+      "cuisse"
+    ],
+    "explications": {
+      "cuir": "Le cuir est une peau d'animal travaillée.",
+      "cuivre": "Le cuivre est un métal orangé.",
+      "cuillère": "La cuillère sert à manger la soupe.",
+      "cuisse": "La cuisse est le haut de la jambe."
+    }
+  },
+  {
+    "id": "rf1-038",
+    "racine": "savon",
+    "membres": [
+      "savonner",
+      "savonnette",
+      "savonneux",
+      "savonnerie"
+    ],
+    "intrus": [
+      "savoir",
+      "savant",
+      "saveur",
+      "savoureux"
+    ],
+    "explications": {
+      "savoir": "Savoir veut dire « connaître ».",
+      "savant": "Un savant sait beaucoup de choses : famille de « savoir ».",
+      "saveur": "La saveur, c'est le goût.",
+      "savoureux": "Savoureux veut dire « qui a bon goût »."
+    }
+  },
+  {
+    "id": "rf1-039",
+    "racine": "boule",
+    "membres": [
+      "boulet",
+      "boulette",
+      "bouliste",
+      "boulier",
+      "boulon"
+    ],
+    "intrus": [
+      "bouleau",
+      "boulevard",
+      "bouledogue"
+    ],
+    "explications": {
+      "bouleau": "Le bouleau est un arbre à l'écorce blanche.",
+      "boulevard": "Boulevard vient d'un mot néerlandais qui désignait un rempart.",
+      "bouledogue": "Bouledogue vient de l'anglais « bulldog »."
+    }
+  },
+  {
+    "id": "rf1-040",
+    "racine": "rêve",
+    "membres": [
+      "rêver",
+      "rêveur",
+      "rêverie",
+      "rêvasser"
+    ],
+    "intrus": [
+      "réveil",
+      "réveiller",
+      "révéler",
+      "réviser"
+    ],
+    "explications": {
+      "réveil": "Le réveil vient du verbe « éveiller ».",
+      "réveiller": "Réveiller vient du verbe « éveiller ».",
+      "révéler": "Révéler veut dire « faire connaître un secret ».",
+      "réviser": "Réviser, c'est revoir ses leçons."
+    }
+  },
+  {
+    "id": "rf1-041",
+    "racine": "signe",
+    "membres": [
+      "signer",
+      "signal",
+      "signature",
+      "signaler",
+      "soussigné"
+    ],
+    "intrus": [
+      "cygne",
+      "saigner",
+      "saignement"
+    ],
+    "explications": {
+      "cygne": "Le cygne est un oiseau blanc.",
+      "saigner": "Saigner vient de « sang ».",
+      "saignement": "Le saignement vient de « sang »."
+    }
+  },
+  {
+    "id": "rf1-042",
+    "racine": "nœud",
+    "membres": [
+      "nouer",
+      "dénouer",
+      "noueux",
+      "renouer"
+    ],
+    "intrus": [
+      "nouveau",
+      "nouvelle",
+      "nourrir",
+      "nouille"
+    ],
+    "explications": {
+      "nouveau": "Nouveau veut dire « neuf, récent ».",
+      "nouvelle": "Une nouvelle est une information récente : famille de « nouveau ».",
+      "nourrir": "Nourrir, c'est donner à manger.",
+      "nouille": "Nouille vient d'un mot allemand."
+    }
+  },
+  {
+    "id": "rf1-043",
+    "racine": "courir",
+    "membres": [
+      "coureur",
+      "course",
+      "parcourir",
+      "accourir",
+      "concours"
+    ],
+    "intrus": [
+      "courbe",
+      "courge",
+      "courtois"
+    ],
+    "explications": {
+      "courbe": "Courbe veut dire « qui n'est pas droit ».",
+      "courge": "La courge est un gros légume.",
+      "courtois": "Courtois veut dire « poli » ; le mot vient de « cour » (la cour du roi)."
+    }
+  },
+  {
+    "id": "rf1-044",
+    "racine": "feuille",
+    "membres": [
+      "feuillage",
+      "feuillet",
+      "effeuiller",
+      "feuilleter",
+      "portefeuille"
+    ],
+    "intrus": [
+      "fouille",
+      "fouiller",
+      "fenouil"
+    ],
+    "explications": {
+      "fouille": "Une fouille, c'est quand on creuse ou qu'on cherche partout.",
+      "fouiller": "Fouiller, c'est chercher partout.",
+      "fenouil": "Le fenouil est un légume."
+    }
+  },
+  {
+    "id": "rf1-045",
+    "racine": "ombre",
+    "membres": [
+      "ombrage",
+      "ombrelle",
+      "pénombre",
+      "ombragé"
+    ],
+    "intrus": [
+      "nombre",
+      "concombre",
+      "décombres",
+      "encombrer"
+    ],
+    "explications": {
+      "nombre": "Un nombre sert à compter.",
+      "concombre": "Le concombre est un légume vert.",
+      "décombres": "Les décombres sont les restes d'un bâtiment écroulé.",
+      "encombrer": "Encombrer, c'est gêner le passage."
+    }
+  },
+  {
+    "id": "rf1-046",
+    "racine": "goût",
+    "membres": [
+      "goûter",
+      "dégoût",
+      "dégoûter",
+      "arrière-goût"
+    ],
+    "intrus": [
+      "goutte",
+      "égoutter",
+      "gouttière",
+      "égout"
+    ],
+    "explications": {
+      "goutte": "Une goutte est une toute petite quantité de liquide.",
+      "égoutter": "Égoutter, c'est laisser couler l'eau goutte à goutte.",
+      "gouttière": "La gouttière recueille les gouttes de pluie.",
+      "égout": "L'égout emporte les eaux sales : famille de « goutte »."
+    }
+  },
+  {
+    "id": "rf1-047",
+    "racine": "os",
+    "membres": [
+      "osseux",
+      "ossements",
+      "ossature",
+      "désosser"
+    ],
+    "intrus": [
+      "oser",
+      "osé",
+      "osier",
+      "oseille"
+    ],
+    "explications": {
+      "oser": "Oser, c'est avoir le courage de faire quelque chose.",
+      "osé": "Osé vient du verbe « oser ».",
+      "osier": "L'osier est une plante qui sert à faire des paniers.",
+      "oseille": "L'oseille est une plante qu'on mange."
+    }
+  },
+  {
+    "id": "rf1-048",
+    "racine": "vide",
+    "membres": [
+      "vider",
+      "dévider",
+      "évider",
+      "vidange",
+      "vide-grenier"
+    ],
+    "intrus": [
+      "vidéo",
+      "évident",
+      "évidence"
+    ],
+    "explications": {
+      "vidéo": "Vidéo vient d'un mot latin qui veut dire « je vois ».",
+      "évident": "Évident veut dire « qu'on voit tout de suite ».",
+      "évidence": "L'évidence, c'est ce qu'on voit tout de suite."
+    }
+  },
+  {
+    "id": "rf1-049",
+    "racine": "sauter",
+    "membres": [
+      "saut",
+      "sauterelle",
+      "sursauter",
+      "sautiller",
+      "sauteur"
+    ],
+    "intrus": [
+      "sauver",
+      "saule",
+      "sauce"
+    ],
+    "explications": {
+      "sauver": "Sauver, c'est tirer d'un danger.",
+      "saule": "Le saule est un arbre.",
+      "sauce": "Une sauce accompagne les plats ; le mot vient de « sel »."
+    }
+  },
+  {
+    "id": "rf1-050",
+    "racine": "danser",
+    "membres": [
+      "danse",
+      "danseur",
+      "danseuse",
+      "dansant"
+    ],
+    "intrus": [
+      "danger",
+      "dangereux",
+      "dense",
+      "condenser"
+    ],
+    "explications": {
+      "danger": "Le danger, c'est un risque.",
+      "dangereux": "Dangereux vient de « danger ».",
+      "dense": "Dense veut dire « serré, épais ».",
+      "condenser": "Condenser, c'est rendre plus serré : famille de « dense »."
+    }
+  },
+  {
+    "id": "rf1-051",
+    "racine": "ouvrir",
+    "membres": [
+      "ouverture",
+      "ouvert",
+      "rouvrir",
+      "entrouvrir",
+      "ouvre-boîte"
+    ],
+    "intrus": [
+      "ouvrier",
+      "ouvrage",
+      "œuvre"
+    ],
+    "explications": {
+      "ouvrier": "L'ouvrier fait un ouvrage, un travail : famille de « œuvre ».",
+      "ouvrage": "Un ouvrage est un travail ou un livre : famille de « œuvre ».",
+      "œuvre": "Une œuvre est ce que l'on fabrique ou crée."
+    }
+  },
+  {
+    "id": "rf1-052",
+    "racine": "fermer",
+    "membres": [
+      "fermeture",
+      "refermer",
+      "enfermer",
+      "fermoir"
+    ],
+    "intrus": [
+      "fermenter",
+      "fertile",
+      "féroce",
+      "fer"
+    ],
+    "explications": {
+      "fermenter": "Fermenter, c'est se transformer, comme le raisin qui devient du vin.",
+      "fertile": "Fertile veut dire « où les plantes poussent bien ».",
+      "féroce": "Féroce veut dire « sauvage et cruel ».",
+      "fer": "Le fer est un métal."
+    }
+  },
+  {
+    "id": "rf1-053",
+    "racine": "vendre",
+    "membres": [
+      "vendeur",
+      "vente",
+      "revendre",
+      "invendu",
+      "revendeur"
+    ],
+    "intrus": [
+      "vendredi",
+      "vendange",
+      "vendangeur"
+    ],
+    "explications": {
+      "vendredi": "Vendredi vient du latin « jour de Vénus ».",
+      "vendange": "La vendange est la récolte du raisin.",
+      "vendangeur": "Le vendangeur récolte le raisin."
+    }
+  }
+]

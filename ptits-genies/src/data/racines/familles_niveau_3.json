@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "rf3-001",
+    "racine": "aqua",
+    "sens": "l'eau",
+    "membres": [
+      "aquatique",
+      "aquarium",
+      "aqueduc",
+      "aquarelle",
+      "aquaculture"
+    ],
+    "intrus": [
+      "acquérir",
+      "acquitter",
+      "acquiescer"
+    ],
+    "explications": {
+      "acquérir": "Acquérir vient d'un mot latin qui veut dire « chercher ».",
+      "acquitter": "Acquitter vient de « quitte ».",
+      "acquiescer": "Acquiescer veut dire « dire oui » ; le mot vient du latin « repos »."
+    }
+  },
+  {
+    "id": "rf3-002",
+    "racine": "pied",
+    "sens": "le pied (latin ped-)",
+    "membres": [
+      "piéton",
+      "pédestre",
+      "pédale",
+      "bipède",
+      "piédestal"
+    ],
+    "intrus": [
+      "pédagogue",
+      "pédiatre",
+      "piété"
+    ],
+    "explications": {
+      "pédagogue": "Pédagogue vient du grec « enfant ».",
+      "pédiatre": "Le pédiatre soigne les enfants ; le mot vient du grec « enfant ».",
+      "piété": "La piété, c'est l'amour de Dieu."
+    }
+  },
+  {
+    "id": "rf3-003",
+    "racine": "péd",
+    "sens": "l'enfant (en grec)",
+    "membres": [
+      "pédiatre",
+      "pédagogue",
+      "pédagogie",
+      "encyclopédie"
+    ],
+    "intrus": [
+      "pédale",
+      "pédestre",
+      "pédalo",
+      "piéton"
+    ],
+    "explications": {
+      "pédale": "La pédale se pousse avec le pied.",
+      "pédestre": "Pédestre veut dire « à pied ».",
+      "pédalo": "Le pédalo avance avec des pédales.",
+      "piéton": "Le piéton marche à pied."
+    }
+  },
+  {
+    "id": "rf3-004",
+    "racine": "œil",
+    "sens": "l'œil (latin ocul-)",
+    "membres": [
+      "oculaire",
+      "oculiste",
+      "œillade",
+      "œillère",
+      "binoculaire"
+    ],
+    "intrus": [
+      "occulte",
+      "occuper",
+      "occasion"
+    ],
+    "explications": {
+      "occulte": "Occulte veut dire « caché, secret ».",
+      "occuper": "Occuper, c'est remplir un espace ou un temps.",
+      "occasion": "Une occasion est un moment favorable."
+    }
+  },
+  {
+    "id": "rf3-005",
+    "racine": "corps",
+    "sens": "le corps (latin corp-)",
+    "membres": [
+      "corporel",
+      "corpulent",
+      "incorporer",
+      "corset",
+      "corporation"
+    ],
+    "intrus": [
+      "corbeau",
+      "corbeille",
+      "corde",
+      "correct"
+    ],
+    "explications": {
+      "corbeau": "Le corbeau est un oiseau noir.",
+      "corbeille": "Une corbeille est un panier.",
+      "corde": "Une corde sert à attacher.",
+      "correct": "Correct veut dire « sans faute »."
+    }
+  },
+  {
+    "id": "rf3-006",
+    "racine": "chef",
+    "sens": "la tête (latin cap-)",
+    "membres": [
+      "capitaine",
+      "capitale",
+      "couvre-chef",
+      "achever"
+    ],
+    "intrus": [
+      "capable",
+      "capturer",
+      "capacité",
+      "captif"
+    ],
+    "explications": {
+      "capable": "Capable vient d'un mot latin qui veut dire « prendre ».",
+      "capturer": "Capturer, c'est attraper.",
+      "capacité": "La capacité vient de « capable ».",
+      "captif": "Un captif est un prisonnier."
+    }
+  },
+  {
+    "id": "rf3-007",
+    "racine": "doigt",
+    "sens": "le doigt (latin digit-)",
+    "membres": [
+      "doigté",
+      "digital",
+      "digitale",
+      "doigtier"
+    ],
+    "intrus": [
+      "digne",
+      "dignité",
+      "digérer",
+      "digestion"
+    ],
+    "explications": {
+      "digne": "Digne veut dire « qui mérite le respect ».",
+      "dignité": "La dignité vient de « digne ».",
+      "digérer": "Digérer, c'est transformer les aliments dans le ventre.",
+      "digestion": "La digestion vient de « digérer »."
+    }
+  },
+  {
+    "id": "rf3-008",
+    "racine": "poisson",
+    "sens": "le poisson (latin pisc-)",
+    "membres": [
+      "poissonnier",
+      "poissonnerie",
+      "piscine",
+      "pisciculture"
+    ],
+    "intrus": [
+      "poison",
+      "empoisonner",
+      "poisseux",
+      "poisse"
+    ],
+    "explications": {
+      "poison": "Un poison est une substance dangereuse.",
+      "empoisonner": "Empoisonner vient de « poison ».",
+      "poisseux": "Poisseux veut dire « collant comme de la poix ».",
+      "poisse": "La poisse, c'est la malchance."
+    }
+  },
+  {
+    "id": "rf3-009",
+    "racine": "oiseau",
+    "sens": "l'oiseau (latin av-)",
+    "membres": [
+      "oisillon",
+      "aviation",
+      "aviateur",
+      "avion",
+      "aviculture"
+    ],
+    "intrus": [
+      "avide",
+      "avidité",
+      "avis"
+    ],
+    "explications": {
+      "avide": "Avide veut dire « qui veut tout avoir ».",
+      "avidité": "L'avidité vient de « avide ».",
+      "avis": "Un avis est une opinion."
+    }
+  },
+  {
+    "id": "rf3-010",
+    "racine": "pierre",
+    "sens": "la pierre (grec pétr-)",
+    "membres": [
+      "pétrifier",
+      "pétrole",
+      "pierreux",
+      "empierrer",
+      "perron"
+    ],
+    "intrus": [
+      "pétale",
+      "pétition",
+      "pétanque"
+    ],
+    "explications": {
+      "pétale": "Le pétale est une partie de la fleur.",
+      "pétition": "Une pétition est une demande signée par beaucoup de gens.",
+      "pétanque": "Pétanque vient d'un mot provençal qui veut dire « pieds fixés »."
+    }
+  },
+  {
+    "id": "rf3-011",
+    "racine": "chien",
+    "sens": "le chien (latin can-)",
+    "membres": [
+      "chienne",
+      "canin",
+      "chenil",
+      "canidé"
+    ],
+    "intrus": [
+      "canif",
+      "canal",
+      "canard",
+      "canapé"
+    ],
+    "explications": {
+      "canif": "Un canif est un petit couteau.",
+      "canal": "Un canal est une rivière creusée par l'homme.",
+      "canard": "Le canard est un oiseau qui nage.",
+      "canapé": "Le canapé est un siège pour plusieurs personnes."
+    }
+  },
+  {
+    "id": "rf3-012",
+    "racine": "graph",
+    "sens": "écrire",
+    "membres": [
+      "orthographe",
+      "photographie",
+      "autographe",
+      "calligraphie",
+      "paragraphe"
+    ],
+    "intrus": [
+      "agrafe",
+      "agrafeuse",
+      "girafe"
+    ],
+    "explications": {
+      "agrafe": "Une agrafe sert à attacher des feuilles.",
+      "agrafeuse": "L'agrafeuse pose des agrafes.",
+      "girafe": "Girafe vient d'un mot arabe."
+    }
+  },
+  {
+    "id": "rf3-013",
+    "racine": "phone",
+    "sens": "le son, la voix",
+    "membres": [
+      "téléphone",
+      "microphone",
+      "phonétique",
+      "francophone",
+      "xylophone"
+    ],
+    "intrus": [
+      "phoque",
+      "phosphore",
+      "photo"
+    ],
+    "explications": {
+      "phoque": "Le phoque est un animal marin.",
+      "phosphore": "Le phosphore brille dans le noir ; le mot vient du grec « lumière ».",
+      "photo": "Photo vient du grec « lumière »."
+    }
+  },
+  {
+    "id": "rf3-014",
+    "racine": "logie",
+    "sens": "la science de",
+    "membres": [
+      "biologie",
+      "géologie",
+      "zoologie",
+      "technologie",
+      "archéologie"
+    ],
+    "intrus": [
+      "loge",
+      "logement",
+      "logis"
+    ],
+    "explications": {
+      "loge": "Une loge est une petite pièce, comme celle du gardien.",
+      "logement": "Le logement, c'est l'endroit où l'on habite : famille de « loger ».",
+      "logis": "Le logis, c'est la maison : famille de « loger »."
+    }
+  },
+  {
+    "id": "rf3-015",
+    "racine": "astre",
+    "sens": "l'étoile",
+    "membres": [
+      "astronaute",
+      "astronomie",
+      "astral",
+      "astérisque",
+      "désastre"
+    ],
+    "intrus": [
+      "astuce",
+      "astucieux",
+      "asthme"
+    ],
+    "explications": {
+      "astuce": "Une astuce est une idée maligne.",
+      "astucieux": "Astucieux vient de « astuce ».",
+      "asthme": "L'asthme est une maladie qui gêne la respiration."
+    }
+  },
+  {
+    "id": "rf3-016",
+    "racine": "géo",
+    "sens": "la terre",
+    "membres": [
+      "géographie",
+      "géologie",
+      "géomètre",
+      "géométrie",
+      "géothermie"
+    ],
+    "intrus": [
+      "geôle",
+      "geôlier",
+      "géranium"
+    ],
+    "explications": {
+      "geôle": "Une geôle est une prison.",
+      "geôlier": "Le geôlier garde la prison.",
+      "géranium": "Le géranium est une fleur."
+    }
+  },
+  {
+    "id": "rf3-017",
+    "racine": "chrono",
+    "sens": "le temps",
+    "membres": [
+      "chronomètre",
+      "chronologie",
+      "chronique",
+      "synchroniser",
+      "anachronisme"
+    ],
+    "intrus": [
+      "chrome",
+      "chromosome",
+      "chrysanthème"
+    ],
+    "explications": {
+      "chrome": "Le chrome est un métal brillant.",
+      "chromosome": "Le chromosome porte les gènes ; le mot vient du grec « couleur ».",
+      "chrysanthème": "Le chrysanthème est une fleur."
+    }
+  },
+  {
+    "id": "rf3-018",
+    "racine": "cycle",
+    "sens": "le cercle, la roue",
+    "membres": [
+      "bicyclette",
+      "cycliste",
+      "recycler",
+      "tricycle",
+      "motocyclette"
+    ],
+    "intrus": [
+      "cygne",
+      "cymbale",
+      "cyprès"
+    ],
+    "explications": {
+      "cygne": "Le cygne est un oiseau blanc.",
+      "cymbale": "La cymbale est un instrument de musique.",
+      "cyprès": "Le cyprès est un arbre."
+    }
+  },
+  {
+    "id": "rf3-019",
+    "racine": "tri",
+    "sens": "trois",
+    "membres": [
+      "triangle",
+      "tricycle",
+      "trio",
+      "trimestre",
+      "tripler"
+    ],
+    "intrus": [
+      "triste",
+      "triomphe",
+      "tricher"
+    ],
+    "explications": {
+      "triste": "Triste veut dire « malheureux ».",
+      "triomphe": "Un triomphe est une très grande victoire.",
+      "tricher": "Tricher, c'est ne pas respecter les règles."
+    }
+  },
+  {
+    "id": "rf3-020",
+    "racine": "thermo",
+    "sens": "la chaleur",
+    "membres": [
+      "thermomètre",
+      "thermos",
+      "thermique",
+      "géothermie",
+      "isotherme"
+    ],
+    "intrus": [
+      "termite",
+      "terminer",
+      "terminus"
+    ],
+    "explications": {
+      "termite": "Le termite est un insecte qui mange le bois.",
+      "terminer": "Terminer, c'est finir.",
+      "terminus": "Le terminus est le dernier arrêt."
+    }
+  },
+  {
+    "id": "rf3-021",
+    "racine": "auto",
+    "sens": "soi-même",
+    "membres": [
+      "automobile",
+      "autographe",
+      "autonome",
+      "autoportrait",
+      "automatique"
+    ],
+    "intrus": [
+      "automne",
+      "autel",
+      "autruche",
+      "auteur"
+    ],
+    "explications": {
+      "automne": "L'automne est une saison.",
+      "autel": "Un autel est une table pour les cérémonies religieuses.",
+      "autruche": "L'autruche est un grand oiseau qui ne vole pas.",
+      "auteur": "L'auteur est celui qui écrit un livre."
+    }
+  },
+  {
+    "id": "rf3-022",
+    "racine": "poly",
+    "sens": "plusieurs",
+    "membres": [
+      "polygone",
+      "polyvalent",
+      "polyglotte",
+      "polycopié",
+      "polychrome"
+    ],
+    "intrus": [
+      "polir",
+      "police",
+      "pollen"
+    ],
+    "explications": {
+      "polir": "Polir, c'est rendre lisse et brillant.",
+      "police": "La police fait respecter la loi.",
+      "pollen": "Le pollen est la poudre jaune des fleurs."
+    }
+  },
+  {
+    "id": "rf3-023",
+    "racine": "mono",
+    "sens": "un seul",
+    "membres": [
+      "monologue",
+      "monotone",
+      "monocycle",
+      "monopole",
+      "monosyllabe"
+    ],
+    "intrus": [
+      "monnaie",
+      "monument",
+      "monter"
+    ],
+    "explications": {
+      "monnaie": "La monnaie, ce sont les pièces et les billets.",
+      "monument": "Un monument est un grand bâtiment à visiter.",
+      "monter": "Monter vient de « mont » : aller vers le haut."
+    }
+  },
+  {
+    "id": "rf3-024",
+    "racine": "path",
+    "sens": "ce qu'on ressent",
+    "membres": [
+      "sympathie",
+      "antipathie",
+      "télépathie",
+      "empathie",
+      "pathétique"
+    ],
+    "intrus": [
+      "patte",
+      "pâte",
+      "patin"
+    ],
+    "explications": {
+      "patte": "La patte est le pied d'un animal.",
+      "pâte": "La pâte sert à faire le pain ou les gâteaux.",
+      "patin": "Un patin sert à glisser : famille de « patte »."
+    }
+  },
+  {
+    "id": "rf3-025",
+    "racine": "hippo",
+    "sens": "le cheval",
+    "membres": [
+      "hippodrome",
+      "hippopotame",
+      "hippique",
+      "hippocampe"
+    ],
+    "intrus": [
+      "hippie",
+      "hypothèse",
+      "hypnose",
+      "hypocrite"
+    ],
+    "explications": {
+      "hippie": "Hippie est un mot anglais.",
+      "hypothèse": "Une hypothèse est une supposition.",
+      "hypnose": "L'hypnose est une sorte de sommeil provoqué.",
+      "hypocrite": "Un hypocrite fait semblant d'être gentil."
+    }
+  },
+  {
+    "id": "rf3-026",
+    "racine": "vis",
+    "sens": "voir",
+    "membres": [
+      "vision",
+      "visible",
+      "invisible",
+      "visuel",
+      "télévision"
+    ],
+    "intrus": [
+      "visser",
+      "dévisser",
+      "tournevis"
+    ],
+    "explications": {
+      "visser": "Visser, c'est tourner une vis.",
+      "dévisser": "Dévisser, c'est enlever une vis.",
+      "tournevis": "Le tournevis sert à tourner les vis."
+    }
+  },
+  {
+    "id": "rf3-027",
+    "racine": "hydr",
+    "sens": "l'eau",
+    "membres": [
+      "hydravion",
+      "hydrater",
+      "déshydraté",
+      "hydraulique",
+      "hydrogène"
+    ],
+    "intrus": [
+      "hyène",
+      "hymne",
+      "hypnose"
+    ],
+    "explications": {
+      "hyène": "La hyène est un animal sauvage d'Afrique.",
+      "hymne": "Un hymne est un chant solennel.",
+      "hypnose": "L'hypnose est une sorte de sommeil provoqué."
+    }
+  },
+  {
+    "id": "rf3-028",
+    "racine": "ortho",
+    "sens": "droit, correct",
+    "membres": [
+      "orthographe",
+      "orthographier",
+      "orthophoniste",
+      "orthodontiste",
+      "orthopédiste"
+    ],
+    "intrus": [
+      "ortie",
+      "orteil",
+      "horticulture"
+    ],
+    "explications": {
+      "ortie": "L'ortie est une plante qui pique.",
+      "orteil": "L'orteil est un doigt de pied.",
+      "horticulture": "L'horticulture, c'est l'art de cultiver les jardins."
+    }
+  },
+  {
+    "id": "rf3-029",
+    "racine": "nav",
+    "sens": "le navire",
+    "membres": [
+      "navire",
+      "naviguer",
+      "navigateur",
+      "naval",
+      "naufrage"
+    ],
+    "intrus": [
+      "navet",
+      "naïf",
+      "natif"
+    ],
+    "explications": {
+      "navet": "Le navet est un légume.",
+      "naïf": "Naïf veut dire « qui croit tout ».",
+      "natif": "Natif veut dire « né à cet endroit »."
+    }
+  },
+  {
+    "id": "rf3-030",
+    "racine": "agri",
+    "sens": "le champ",
+    "membres": [
+      "agriculteur",
+      "agricultrice",
+      "agricole",
+      "agriculture",
+      "agronome"
+    ],
+    "intrus": [
+      "agrume",
+      "agrafe",
+      "agréable"
+    ],
+    "explications": {
+      "agrume": "Agrume vient d'un mot italien qui veut dire « aigre ».",
+      "agrafe": "Une agrafe sert à attacher des feuilles.",
+      "agréable": "Agréable vient de « gré », ce qui plaît."
+    }
+  },
+  {
+    "id": "rf3-031",
+    "racine": "arbre",
+    "sens": "l'arbre (latin arbor-)",
+    "membres": [
+      "arbuste",
+      "arboriculteur",
+      "arborescent",
+      "arboricole"
+    ],
+    "intrus": [
+      "arbitre",
+      "arbitrage",
+      "arbitraire",
+      "arbalète"
+    ],
+    "explications": {
+      "arbitre": "L'arbitre fait respecter les règles du jeu.",
+      "arbitrage": "L'arbitrage vient de « arbitre ».",
+      "arbitraire": "Arbitraire veut dire « décidé sans raison » : famille de « arbitre ».",
+      "arbalète": "L'arbalète est une arme qui lance des flèches."
+    }
+  },
+  {
+    "id": "rf3-032",
+    "racine": "fleur",
+    "sens": "la fleur (latin flor-)",
+    "membres": [
+      "floral",
+      "flore",
+      "floraison",
+      "fleuriste",
+      "fleurir"
+    ],
+    "intrus": [
+      "fleuve",
+      "flotte",
+      "flûte"
+    ],
+    "explications": {
+      "fleuve": "Le fleuve est une grande rivière.",
+      "flotte": "Une flotte est un groupe de navires.",
+      "flûte": "La flûte est un instrument de musique."
+    }
+  },
+  {
+    "id": "rf3-033",
+    "racine": "jur",
+    "sens": "le droit, le serment",
+    "membres": [
+      "jurer",
+      "juré",
+      "juriste",
+      "jury",
+      "parjure"
+    ],
+    "intrus": [
+      "jupe",
+      "jument",
+      "jumeau"
+    ],
+    "explications": {
+      "jupe": "La jupe est un vêtement.",
+      "jument": "La jument est la femelle du cheval.",
+      "jumeau": "Un jumeau est né le même jour que son frère ou sa sœur."
+    }
+  },
+  {
+    "id": "rf3-034",
+    "racine": "polis",
+    "sens": "la ville (en grec)",
+    "membres": [
+      "métropole",
+      "politique",
+      "acropole",
+      "mégapole",
+      "cosmopolite"
+    ],
+    "intrus": [
+      "pôle",
+      "polaire",
+      "polir"
+    ],
+    "explications": {
+      "pôle": "Le pôle Nord et le pôle Sud sont les extrémités de la Terre.",
+      "polaire": "Polaire veut dire « du pôle ».",
+      "polir": "Polir, c'est rendre lisse et brillant."
+    }
+  },
+  {
+    "id": "rf3-035",
+    "racine": "démo",
+    "sens": "le peuple",
+    "membres": [
+      "démocratie",
+      "démographie",
+      "épidémie",
+      "démocrate"
+    ],
+    "intrus": [
+      "démolir",
+      "démêler",
+      "déménager",
+      "démarrer"
+    ],
+    "explications": {
+      "démolir": "Démolir, c'est détruire un bâtiment.",
+      "démêler": "Démêler, c'est défaire les nœuds.",
+      "déménager": "Déménager, c'est changer de maison.",
+      "démarrer": "Démarrer, c'est commencer à rouler."
+    }
+  },
+  {
+    "id": "rf3-036",
+    "racine": "vol",
+    "sens": "vouloir",
+    "membres": [
+      "volonté",
+      "volontaire",
+      "bénévole",
+      "involontaire",
+      "volontiers"
+    ],
+    "intrus": [
+      "volaille",
+      "volcan",
+      "volet"
+    ],
+    "explications": {
+      "volaille": "La volaille, ce sont les oiseaux de la ferme : famille de « voler ».",
+      "volcan": "Volcan vient du nom du dieu romain du feu, Vulcain.",
+      "volet": "Le volet ferme la fenêtre."
+    }
+  },
+  {
+    "id": "rf3-037",
+    "racine": "fid",
+    "sens": "la confiance, la foi",
+    "membres": [
+      "fidèle",
+      "fidélité",
+      "confiance",
+      "méfiance",
+      "infidèle"
+    ],
+    "intrus": [
+      "fièvre",
+      "fiévreux",
+      "fiole"
+    ],
+    "explications": {
+      "fièvre": "La fièvre, c'est quand le corps est trop chaud.",
+      "fiévreux": "Fiévreux vient de « fièvre ».",
+      "fiole": "Une fiole est une petite bouteille."
+    }
+  },
+  {
+    "id": "rf3-038",
+    "racine": "grat",
+    "sens": "le gré, le merci",
+    "membres": [
+      "gratuit",
+      "gratitude",
+      "ingrat",
+      "agréable",
+      "grâce"
+    ],
+    "intrus": [
+      "gratter",
+      "gratin",
+      "grattoir"
+    ],
+    "explications": {
+      "gratter": "Gratter, c'est frotter avec les ongles.",
+      "gratin": "Le gratin vient de « gratter ».",
+      "grattoir": "Le grattoir sert à gratter."
+    }
+  },
+  {
+    "id": "rf3-039",
+    "racine": "mal",
+    "sens": "mal, mauvais",
+    "membres": [
+      "malheur",
+      "maladroit",
+      "malhonnête",
+      "malveillant",
+      "malchance"
+    ],
+    "intrus": [
+      "malle",
+      "mallette",
+      "malaxer"
+    ],
+    "explications": {
+      "malle": "Une malle est un grand coffre.",
+      "mallette": "Une mallette est une petite malle.",
+      "malaxer": "Malaxer, c'est pétrir pour ramollir."
+    }
+  },
+  {
+    "id": "rf3-040",
+    "racine": "liber",
+    "sens": "libre",
+    "membres": [
+      "liberté",
+      "libérer",
+      "libération",
+      "libéral",
+      "délivrer"
+    ],
+    "intrus": [
+      "libraire",
+      "librairie",
+      "libellule"
+    ],
+    "explications": {
+      "libraire": "Le libraire vend des livres.",
+      "librairie": "La librairie est le magasin du libraire.",
+      "libellule": "La libellule est un insecte."
+    }
+  },
+  {
+    "id": "rf3-041",
+    "racine": "mens",
+    "sens": "le mois",
+    "membres": [
+      "mensuel",
+      "mensualité",
+      "bimensuel",
+      "semestre",
+      "trimestre"
+    ],
+    "intrus": [
+      "mensonge",
+      "mensonger",
+      "menton"
+    ],
+    "explications": {
+      "mensonge": "Un mensonge est une chose fausse dite exprès.",
+      "mensonger": "Mensonger vient de « mensonge ».",
+      "menton": "Le menton est le bas du visage."
+    }
+  },
+  {
+    "id": "rf3-042",
+    "racine": "vér",
+    "sens": "vrai",
+    "membres": [
+      "vérité",
+      "véritable",
+      "vérifier",
+      "véridique",
+      "vraiment"
+    ],
+    "intrus": [
+      "verre",
+      "véranda",
+      "vernis"
+    ],
+    "explications": {
+      "verre": "Le verre est une matière transparente.",
+      "véranda": "Une véranda est une pièce vitrée ; le mot vient d'une langue de l'Inde.",
+      "vernis": "Le vernis rend une surface brillante."
+    }
+  },
+  {
+    "id": "rf3-043",
+    "racine": "nov",
+    "sens": "nouveau",
+    "membres": [
+      "nouveauté",
+      "rénover",
+      "innovation",
+      "novateur",
+      "renouveler"
+    ],
+    "intrus": [
+      "nouer",
+      "nourrir",
+      "noyer"
+    ],
+    "explications": {
+      "nouer": "Nouer, c'est faire un nœud.",
+      "nourrir": "Nourrir, c'est donner à manger.",
+      "noyer": "Le noyer est l'arbre qui donne les noix."
+    }
+  },
+  {
+    "id": "rf3-044",
+    "racine": "alt",
+    "sens": "haut",
+    "membres": [
+      "altitude",
+      "altimètre",
+      "hauteur",
+      "hausser",
+      "rehausser"
+    ],
+    "intrus": [
+      "altruiste",
+      "alterner",
+      "altercation"
+    ],
+    "explications": {
+      "altruiste": "Altruiste veut dire « qui pense aux autres ».",
+      "alterner": "Alterner, c'est faire une chose puis une autre, chacune son tour.",
+      "altercation": "Une altercation est une dispute."
+    }
+  },
+  {
+    "id": "rf3-045",
+    "racine": "prim",
+    "sens": "premier",
+    "membres": [
+      "premier",
+      "primaire",
+      "primitif",
+      "primevère",
+      "primordial"
+    ],
+    "intrus": [
+      "imprimer",
+      "imprimante",
+      "comprimé"
+    ],
+    "explications": {
+      "imprimer": "Imprimer vient d'un mot latin qui veut dire « presser ».",
+      "imprimante": "L'imprimante sert à imprimer.",
+      "comprimé": "Un comprimé est un médicament pressé en pastille."
+    }
+  },
+  {
+    "id": "rf3-046",
+    "racine": "loqu",
+    "sens": "parler",
+    "membres": [
+      "éloquent",
+      "éloquence",
+      "locuteur",
+      "interlocuteur",
+      "ventriloque"
+    ],
+    "intrus": [
+      "locataire",
+      "locomotive",
+      "local"
+    ],
+    "explications": {
+      "locataire": "Le locataire loue un logement.",
+      "locomotive": "La locomotive tire les wagons.",
+      "local": "Local veut dire « d'un endroit précis »."
+    }
+  },
+  {
+    "id": "rf3-047",
+    "racine": "télé",
+    "sens": "loin",
+    "membres": [
+      "téléphone",
+      "télévision",
+      "télescope",
+      "télécommande",
+      "téléphérique"
+    ],
+    "intrus": [
+      "tellement",
+      "atteler",
+      "attelage"
+    ],
+    "explications": {
+      "tellement": "Tellement veut dire « si, tant ».",
+      "atteler": "Atteler, c'est attacher un animal à une charrette.",
+      "attelage": "L'attelage vient de « atteler »."
+    }
+  },
+  {
+    "id": "rf3-048",
+    "racine": "équi",
+    "sens": "égal (latin aequ-)",
+    "membres": [
+      "égalité",
+      "équilibre",
+      "équateur",
+      "équivalent",
+      "équitable"
+    ],
+    "intrus": [
+      "équipe",
+      "équitation",
+      "équerre",
+      "équipement"
+    ],
+    "explications": {
+      "équipe": "Une équipe est un groupe qui joue ou travaille ensemble.",
+      "équitation": "L'équitation, c'est monter à cheval.",
+      "équerre": "L'équerre sert à tracer des angles droits.",
+      "équipement": "L'équipement vient de « équiper »."
+    }
+  },
+  {
+    "id": "rf3-049",
+    "racine": "équ",
+    "sens": "le cheval (latin equ-)",
+    "membres": [
+      "équitation",
+      "équestre",
+      "équidé",
+      "équin"
+    ],
+    "intrus": [
+      "équipe",
+      "équilibre",
+      "équateur",
+      "équerre"
+    ],
+    "explications": {
+      "équipe": "Une équipe est un groupe qui joue ou travaille ensemble.",
+      "équilibre": "Équilibre vient du latin « égal ».",
+      "équateur": "L'équateur partage la Terre en deux parties égales.",
+      "équerre": "L'équerre sert à tracer des angles droits."
+    }
+  },
+  {
+    "id": "rf3-050",
+    "racine": "mètre",
+    "sens": "la mesure",
+    "membres": [
+      "kilomètre",
+      "centimètre",
+      "thermomètre",
+      "chronomètre",
+      "métrique"
+    ],
+    "intrus": [
+      "métal",
+      "météo",
+      "métier"
+    ],
+    "explications": {
+      "métal": "Le métal est une matière comme le fer.",
+      "météo": "La météo annonce le temps qu'il va faire.",
+      "métier": "Le métier, c'est le travail qu'on fait."
+    }
+  }
+]

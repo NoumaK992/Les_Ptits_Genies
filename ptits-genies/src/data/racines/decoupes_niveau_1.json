@@ -1,0 +1,994 @@
+[
+  {
+    "id": "rd1-001",
+    "mot": "relire",
+    "morceaux": [
+      "re",
+      "lire"
+    ],
+    "sens": [
+      "de nouveau",
+      "lire"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd1-002",
+    "mot": "refaire",
+    "morceaux": [
+      "re",
+      "faire"
+    ],
+    "sens": [
+      "de nouveau",
+      "faire"
+    ],
+    "leurres": [
+      "avant",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-003",
+    "mot": "revoir",
+    "morceaux": [
+      "re",
+      "voir"
+    ],
+    "sens": [
+      "de nouveau",
+      "voir"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd1-004",
+    "mot": "repartir",
+    "morceaux": [
+      "re",
+      "partir"
+    ],
+    "sens": [
+      "de nouveau",
+      "partir"
+    ],
+    "leurres": [
+      "l'action de",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd1-005",
+    "mot": "redire",
+    "morceaux": [
+      "re",
+      "dire"
+    ],
+    "sens": [
+      "de nouveau",
+      "dire"
+    ],
+    "leurres": [
+      "contre",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd1-006",
+    "mot": "recoller",
+    "morceaux": [
+      "re",
+      "coller"
+    ],
+    "sens": [
+      "de nouveau",
+      "coller"
+    ],
+    "leurres": [
+      "avant",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-007",
+    "mot": "rejouer",
+    "morceaux": [
+      "re",
+      "jouer"
+    ],
+    "sens": [
+      "de nouveau",
+      "jouer"
+    ],
+    "leurres": [
+      "avant",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-008",
+    "mot": "recommencer",
+    "morceaux": [
+      "re",
+      "commencer"
+    ],
+    "sens": [
+      "de nouveau",
+      "commencer"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd1-009",
+    "mot": "réécrire",
+    "morceaux": [
+      "ré",
+      "écrire"
+    ],
+    "sens": [
+      "de nouveau",
+      "écrire"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd1-010",
+    "mot": "remonter",
+    "morceaux": [
+      "re",
+      "monter"
+    ],
+    "sens": [
+      "de nouveau",
+      "monter"
+    ],
+    "leurres": [
+      "avant",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd1-011",
+    "mot": "défaire",
+    "morceaux": [
+      "dé",
+      "faire"
+    ],
+    "sens": [
+      "le contraire de",
+      "faire"
+    ],
+    "leurres": [
+      "plein de",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd1-012",
+    "mot": "démonter",
+    "morceaux": [
+      "dé",
+      "monter"
+    ],
+    "sens": [
+      "le contraire de",
+      "monter"
+    ],
+    "leurres": [
+      "de nouveau",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd1-013",
+    "mot": "décoller",
+    "morceaux": [
+      "dé",
+      "coller"
+    ],
+    "sens": [
+      "le contraire de",
+      "coller"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-014",
+    "mot": "déplier",
+    "morceaux": [
+      "dé",
+      "plier"
+    ],
+    "sens": [
+      "le contraire de",
+      "plier"
+    ],
+    "leurres": [
+      "contre",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-015",
+    "mot": "dévisser",
+    "morceaux": [
+      "dé",
+      "visser"
+    ],
+    "sens": [
+      "le contraire de",
+      "visser"
+    ],
+    "leurres": [
+      "avant",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd1-016",
+    "mot": "débrancher",
+    "morceaux": [
+      "dé",
+      "brancher"
+    ],
+    "sens": [
+      "le contraire de",
+      "brancher"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd1-017",
+    "mot": "décoiffer",
+    "morceaux": [
+      "dé",
+      "coiffer"
+    ],
+    "sens": [
+      "le contraire de",
+      "coiffer"
+    ],
+    "leurres": [
+      "plein de",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd1-018",
+    "mot": "dégonfler",
+    "morceaux": [
+      "dé",
+      "gonfler"
+    ],
+    "sens": [
+      "le contraire de",
+      "gonfler"
+    ],
+    "leurres": [
+      "de façon",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-019",
+    "mot": "désobéir",
+    "morceaux": [
+      "dés",
+      "obéir"
+    ],
+    "sens": [
+      "le contraire de",
+      "obéir"
+    ],
+    "leurres": [
+      "avant",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-020",
+    "mot": "déshabiller",
+    "morceaux": [
+      "dés",
+      "habiller"
+    ],
+    "sens": [
+      "le contraire de",
+      "habiller"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd1-021",
+    "mot": "désordre",
+    "morceaux": [
+      "dés",
+      "ordre"
+    ],
+    "sens": [
+      "le contraire de",
+      "ordre"
+    ],
+    "leurres": [
+      "petit",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-022",
+    "mot": "inconnu",
+    "morceaux": [
+      "in",
+      "connu"
+    ],
+    "sens": [
+      "ne… pas",
+      "connu"
+    ],
+    "leurres": [
+      "de façon",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd1-023",
+    "mot": "injuste",
+    "morceaux": [
+      "in",
+      "juste"
+    ],
+    "sens": [
+      "ne… pas",
+      "juste"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd1-024",
+    "mot": "inutile",
+    "morceaux": [
+      "in",
+      "utile"
+    ],
+    "sens": [
+      "ne… pas",
+      "utile"
+    ],
+    "leurres": [
+      "plein de",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-025",
+    "mot": "impoli",
+    "morceaux": [
+      "im",
+      "poli"
+    ],
+    "sens": [
+      "ne… pas",
+      "poli"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-026",
+    "mot": "impossible",
+    "morceaux": [
+      "im",
+      "possible"
+    ],
+    "sens": [
+      "ne… pas",
+      "possible"
+    ],
+    "leurres": [
+      "l'action de",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd1-027",
+    "mot": "impatient",
+    "morceaux": [
+      "im",
+      "patient"
+    ],
+    "sens": [
+      "ne… pas",
+      "patient"
+    ],
+    "leurres": [
+      "de nouveau",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-028",
+    "mot": "incapable",
+    "morceaux": [
+      "in",
+      "capable"
+    ],
+    "sens": [
+      "ne… pas",
+      "capable"
+    ],
+    "leurres": [
+      "trop",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd1-029",
+    "mot": "inexact",
+    "morceaux": [
+      "in",
+      "exact"
+    ],
+    "sens": [
+      "ne… pas",
+      "exact"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd1-030",
+    "mot": "imprudent",
+    "morceaux": [
+      "im",
+      "prudent"
+    ],
+    "sens": [
+      "ne… pas",
+      "prudent"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-031",
+    "mot": "chanteur",
+    "morceaux": [
+      "chant",
+      "eur"
+    ],
+    "sens": [
+      "chanter",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "trop",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-032",
+    "mot": "danseur",
+    "morceaux": [
+      "dans",
+      "eur"
+    ],
+    "sens": [
+      "danser",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "de façon",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd1-033",
+    "mot": "nageur",
+    "morceaux": [
+      "nag",
+      "eur"
+    ],
+    "sens": [
+      "nager",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "trop",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd1-034",
+    "mot": "joueur",
+    "morceaux": [
+      "jou",
+      "eur"
+    ],
+    "sens": [
+      "jouer",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "contre",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-035",
+    "mot": "vendeur",
+    "morceaux": [
+      "vend",
+      "eur"
+    ],
+    "sens": [
+      "vendre",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "avant",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd1-036",
+    "mot": "voleur",
+    "morceaux": [
+      "vol",
+      "eur"
+    ],
+    "sens": [
+      "voler",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd1-037",
+    "mot": "pêcheur",
+    "morceaux": [
+      "pêch",
+      "eur"
+    ],
+    "sens": [
+      "pêcher",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "l'action de",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd1-038",
+    "mot": "lavable",
+    "morceaux": [
+      "lav",
+      "able"
+    ],
+    "sens": [
+      "laver",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "contre",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd1-039",
+    "mot": "jetable",
+    "morceaux": [
+      "jet",
+      "able"
+    ],
+    "sens": [
+      "jeter",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "contre",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-040",
+    "mot": "pliable",
+    "morceaux": [
+      "pli",
+      "able"
+    ],
+    "sens": [
+      "plier",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "avant",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd1-041",
+    "mot": "réparable",
+    "morceaux": [
+      "répar",
+      "able"
+    ],
+    "sens": [
+      "réparer",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "de nouveau",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-042",
+    "mot": "lavage",
+    "morceaux": [
+      "lav",
+      "age"
+    ],
+    "sens": [
+      "laver",
+      "l'action de"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd1-043",
+    "mot": "nettoyage",
+    "morceaux": [
+      "nettoy",
+      "age"
+    ],
+    "sens": [
+      "nettoyer",
+      "l'action de"
+    ],
+    "leurres": [
+      "contre",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-044",
+    "mot": "arrosage",
+    "morceaux": [
+      "arros",
+      "age"
+    ],
+    "sens": [
+      "arroser",
+      "l'action de"
+    ],
+    "leurres": [
+      "trop",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-045",
+    "mot": "ramassage",
+    "morceaux": [
+      "ramass",
+      "age"
+    ],
+    "sens": [
+      "ramasser",
+      "l'action de"
+    ],
+    "leurres": [
+      "contre",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-046",
+    "mot": "fillette",
+    "morceaux": [
+      "fill",
+      "ette"
+    ],
+    "sens": [
+      "fille",
+      "petit"
+    ],
+    "leurres": [
+      "l'action de",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd1-047",
+    "mot": "tablette",
+    "morceaux": [
+      "tabl",
+      "ette"
+    ],
+    "sens": [
+      "table",
+      "petit"
+    ],
+    "leurres": [
+      "contre",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd1-048",
+    "mot": "chaton",
+    "morceaux": [
+      "chat",
+      "on"
+    ],
+    "sens": [
+      "chat",
+      "petit"
+    ],
+    "leurres": [
+      "l'action de",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-049",
+    "mot": "ourson",
+    "morceaux": [
+      "ours",
+      "on"
+    ],
+    "sens": [
+      "ours",
+      "petit"
+    ],
+    "leurres": [
+      "de façon",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd1-050",
+    "mot": "aiglon",
+    "morceaux": [
+      "aigl",
+      "on"
+    ],
+    "sens": [
+      "aigle",
+      "petit"
+    ],
+    "leurres": [
+      "plein de",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd1-051",
+    "mot": "pommier",
+    "morceaux": [
+      "pomm",
+      "ier"
+    ],
+    "sens": [
+      "pomme",
+      "arbre"
+    ],
+    "leurres": [
+      "petit",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd1-052",
+    "mot": "poirier",
+    "morceaux": [
+      "poir",
+      "ier"
+    ],
+    "sens": [
+      "poire",
+      "arbre"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd1-053",
+    "mot": "cerisier",
+    "morceaux": [
+      "ceris",
+      "ier"
+    ],
+    "sens": [
+      "cerise",
+      "arbre"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd1-054",
+    "mot": "fleuriste",
+    "morceaux": [
+      "fleur",
+      "iste"
+    ],
+    "sens": [
+      "fleur",
+      "personne qui s'occupe de"
+    ],
+    "leurres": [
+      "avant",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-055",
+    "mot": "dentiste",
+    "morceaux": [
+      "dent",
+      "iste"
+    ],
+    "sens": [
+      "dent",
+      "personne qui s'occupe de"
+    ],
+    "leurres": [
+      "trop",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd1-056",
+    "mot": "laiterie",
+    "morceaux": [
+      "lait",
+      "erie"
+    ],
+    "sens": [
+      "lait",
+      "lieu où l'on fait ou vend"
+    ],
+    "leurres": [
+      "avant",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd1-057",
+    "mot": "parfumerie",
+    "morceaux": [
+      "parfum",
+      "erie"
+    ],
+    "sens": [
+      "parfum",
+      "lieu où l'on fait ou vend"
+    ],
+    "leurres": [
+      "plein de",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-058",
+    "mot": "arrosoir",
+    "morceaux": [
+      "arros",
+      "oir"
+    ],
+    "sens": [
+      "arroser",
+      "objet qui sert à"
+    ],
+    "leurres": [
+      "avant",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd1-059",
+    "mot": "séchoir",
+    "morceaux": [
+      "séch",
+      "oir"
+    ],
+    "sens": [
+      "sécher",
+      "objet qui sert à"
+    ],
+    "leurres": [
+      "avant",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd1-060",
+    "mot": "rasoir",
+    "morceaux": [
+      "ras",
+      "oir"
+    ],
+    "sens": [
+      "raser",
+      "objet qui sert à"
+    ],
+    "leurres": [
+      "contre",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd1-061",
+    "mot": "peureux",
+    "morceaux": [
+      "peur",
+      "eux"
+    ],
+    "sens": [
+      "peur",
+      "plein de"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd1-062",
+    "mot": "neigeux",
+    "morceaux": [
+      "neig",
+      "eux"
+    ],
+    "sens": [
+      "neige",
+      "plein de"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "contre"
+    ]
+  }
+]

@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "rf2-001",
+    "racine": "mer",
+    "membres": [
+      "marin",
+      "maritime",
+      "amerrir",
+      "marée",
+      "sous-marin"
+    ],
+    "intrus": [
+      "mère",
+      "maire",
+      "amer",
+      "merle"
+    ],
+    "explications": {
+      "mère": "La mère est la maman.",
+      "maire": "Le maire dirige la commune.",
+      "amer": "Amer veut dire « au goût désagréable ».",
+      "merle": "Le merle est un oiseau noir."
+    }
+  },
+  {
+    "id": "rf2-002",
+    "racine": "sel",
+    "membres": [
+      "saler",
+      "salière",
+      "salé",
+      "dessaler",
+      "salin"
+    ],
+    "intrus": [
+      "sale",
+      "salir",
+      "saleté",
+      "salon"
+    ],
+    "explications": {
+      "sale": "Sale veut dire « pas propre ».",
+      "salir": "Salir, c'est rendre sale.",
+      "saleté": "La saleté vient de « sale ».",
+      "salon": "Le salon est une pièce de la maison : famille de « salle »."
+    }
+  },
+  {
+    "id": "rf2-003",
+    "racine": "an",
+    "sens": "une année",
+    "membres": [
+      "année",
+      "annuel",
+      "anniversaire",
+      "annuaire"
+    ],
+    "intrus": [
+      "anneau",
+      "annuler",
+      "âne",
+      "annoncer"
+    ],
+    "explications": {
+      "anneau": "Un anneau est un petit cercle.",
+      "annuler": "Annuler veut dire « supprimer, rendre nul ».",
+      "âne": "L'âne est un animal.",
+      "annoncer": "Annoncer, c'est faire savoir."
+    }
+  },
+  {
+    "id": "rf2-004",
+    "racine": "nuit",
+    "membres": [
+      "nuitée",
+      "minuit",
+      "nocturne",
+      "noctambule"
+    ],
+    "intrus": [
+      "nuire",
+      "nuisible",
+      "nuisance",
+      "nuage"
+    ],
+    "explications": {
+      "nuire": "Nuire, c'est faire du mal.",
+      "nuisible": "Nuisible veut dire « qui fait du mal » : famille de « nuire ».",
+      "nuisance": "Une nuisance est une gêne : famille de « nuire ».",
+      "nuage": "Le nuage flotte dans le ciel."
+    }
+  },
+  {
+    "id": "rf2-005",
+    "racine": "vin",
+    "membres": [
+      "vigne",
+      "vigneron",
+      "vignoble",
+      "vinaigre",
+      "vinicole"
+    ],
+    "intrus": [
+      "vingt",
+      "vilain",
+      "vigilant"
+    ],
+    "explications": {
+      "vingt": "Vingt est un nombre.",
+      "vilain": "Vilain veut dire « pas gentil » ou « laid ».",
+      "vigilant": "Vigilant veut dire « qui fait très attention »."
+    }
+  },
+  {
+    "id": "rf2-006",
+    "racine": "or",
+    "sens": "le métal précieux",
+    "membres": [
+      "doré",
+      "dorer",
+      "dorure",
+      "orfèvre",
+      "redorer"
+    ],
+    "intrus": [
+      "dormir",
+      "dortoir",
+      "adorer"
+    ],
+    "explications": {
+      "dormir": "Dormir, c'est se reposer en sommeil.",
+      "dortoir": "Le dortoir est la salle où l'on dort : famille de « dormir ».",
+      "adorer": "Adorer veut dire « aimer très fort »."
+    }
+  },
+  {
+    "id": "rf2-007",
+    "racine": "vert",
+    "membres": [
+      "verdure",
+      "verdir",
+      "verdâtre",
+      "verdoyant",
+      "reverdir"
+    ],
+    "intrus": [
+      "vertige",
+      "vertu",
+      "vertical"
+    ],
+    "explications": {
+      "vertige": "Le vertige, c'est l'impression que tout tourne.",
+      "vertu": "La vertu, c'est une qualité morale.",
+      "vertical": "Vertical veut dire « droit, de haut en bas »."
+    }
+  },
+  {
+    "id": "rf2-008",
+    "racine": "pluie",
+    "membres": [
+      "pluvieux",
+      "pleuvoir",
+      "parapluie",
+      "pluviomètre"
+    ],
+    "intrus": [
+      "plutôt",
+      "pluriel",
+      "plume",
+      "plumer"
+    ],
+    "explications": {
+      "plutôt": "Plutôt veut dire « de préférence ».",
+      "pluriel": "Le pluriel indique qu'il y en a plusieurs.",
+      "plume": "La plume couvre le corps des oiseaux.",
+      "plumer": "Plumer, c'est enlever les plumes."
+    }
+  },
+  {
+    "id": "rf2-009",
+    "racine": "sang",
+    "membres": [
+      "sanglant",
+      "sanguin",
+      "saigner",
+      "saignement",
+      "ensanglanter"
+    ],
+    "intrus": [
+      "sanglier",
+      "sangle",
+      "sanglot"
+    ],
+    "explications": {
+      "sanglier": "Le sanglier est un animal sauvage de la forêt.",
+      "sangle": "Une sangle est une bande qui sert à attacher.",
+      "sanglot": "Un sanglot est un hoquet quand on pleure."
+    }
+  },
+  {
+    "id": "rf2-010",
+    "racine": "livre",
+    "sens": "un ouvrage à lire",
+    "membres": [
+      "livret",
+      "livresque",
+      "libraire",
+      "librairie"
+    ],
+    "intrus": [
+      "livreur",
+      "livraison",
+      "délivrer",
+      "libre"
+    ],
+    "explications": {
+      "livreur": "Le livreur apporte les colis : famille de « livrer ».",
+      "livraison": "La livraison vient du verbe « livrer ».",
+      "délivrer": "Délivrer veut dire « libérer ».",
+      "libre": "Libre veut dire « qui n'est pas prisonnier »."
+    }
+  },
+  {
+    "id": "rf2-011",
+    "racine": "ami",
+    "membres": [
+      "amical",
+      "amitié",
+      "amicalement",
+      "ennemi",
+      "inimitié"
+    ],
+    "intrus": [
+      "amiral",
+      "amidon",
+      "amiante"
+    ],
+    "explications": {
+      "amiral": "Un amiral commande des navires ; le mot vient de l'arabe.",
+      "amidon": "L'amidon est une poudre tirée des céréales.",
+      "amiante": "L'amiante est une matière minérale."
+    }
+  },
+  {
+    "id": "rf2-012",
+    "racine": "cœur",
+    "membres": [
+      "courage",
+      "courageux",
+      "cordial",
+      "écœurer",
+      "cordialement"
+    ],
+    "intrus": [
+      "chœur",
+      "corde",
+      "coureur",
+      "cordon"
+    ],
+    "explications": {
+      "chœur": "Un chœur est un groupe de chanteurs.",
+      "corde": "Une corde sert à attacher.",
+      "coureur": "Un coureur est quelqu'un qui court.",
+      "cordon": "Un cordon est une petite corde."
+    }
+  },
+  {
+    "id": "rf2-013",
+    "racine": "pêche",
+    "sens": "attraper des poissons",
+    "membres": [
+      "pêcheur",
+      "pêcher",
+      "repêcher",
+      "pêcheuse"
+    ],
+    "intrus": [
+      "péché",
+      "pécheur",
+      "dépêcher",
+      "empêcher"
+    ],
+    "explications": {
+      "péché": "Un péché est une faute contre la religion.",
+      "pécheur": "Un pécheur est quelqu'un qui commet un péché.",
+      "dépêcher": "Se dépêcher, c'est aller vite.",
+      "empêcher": "Empêcher, c'est ne pas laisser faire."
+    }
+  },
+  {
+    "id": "rf2-014",
+    "racine": "soleil",
+    "membres": [
+      "solaire",
+      "parasol",
+      "tournesol",
+      "ensoleillé",
+      "solarium"
+    ],
+    "intrus": [
+      "soldat",
+      "solide",
+      "solitude"
+    ],
+    "explications": {
+      "soldat": "Un soldat est un militaire.",
+      "solide": "Solide veut dire « dur, résistant ».",
+      "solitude": "La solitude, c'est le fait d'être seul."
+    }
+  },
+  {
+    "id": "rf2-015",
+    "racine": "cheval",
+    "membres": [
+      "chevalier",
+      "chevalet",
+      "chevaucher",
+      "chevalin",
+      "chevalerie"
+    ],
+    "intrus": [
+      "cheveu",
+      "chevelure",
+      "chèvre",
+      "chevreuil"
+    ],
+    "explications": {
+      "cheveu": "Le cheveu pousse sur la tête.",
+      "chevelure": "La chevelure, ce sont tous les cheveux.",
+      "chèvre": "La chèvre est un animal.",
+      "chevreuil": "Le chevreuil est un animal de la forêt : famille de « chèvre »."
+    }
+  },
+  {
+    "id": "rf2-016",
+    "racine": "cheveu",
+    "membres": [
+      "chevelure",
+      "chevelu",
+      "échevelé",
+      "capillaire"
+    ],
+    "intrus": [
+      "cheval",
+      "chevalier",
+      "chevreuil",
+      "chevalet"
+    ],
+    "explications": {
+      "cheval": "Le cheval est un animal.",
+      "chevalier": "Le chevalier allait à cheval : famille de « cheval ».",
+      "chevreuil": "Le chevreuil est un animal de la forêt : famille de « chèvre ».",
+      "chevalet": "Le chevalet est de la famille de « cheval »."
+    }
+  },
+  {
+    "id": "rf2-017",
+    "racine": "main",
+    "membres": [
+      "manuel",
+      "manier",
+      "manette",
+      "manuscrit",
+      "menotte"
+    ],
+    "intrus": [
+      "manger",
+      "manteau",
+      "manie",
+      "mangue"
+    ],
+    "explications": {
+      "manger": "Manger, c'est se nourrir.",
+      "manteau": "Un manteau est un vêtement chaud.",
+      "manie": "Une manie est une habitude bizarre.",
+      "mangue": "La mangue est un fruit."
+    }
+  },
+  {
+    "id": "rf2-018",
+    "racine": "voix",
+    "membres": [
+      "vocal",
+      "voyelle",
+      "porte-voix",
+      "vocalise"
+    ],
+    "intrus": [
+      "voisin",
+      "voiture",
+      "voile",
+      "voie"
+    ],
+    "explications": {
+      "voisin": "Un voisin habite à côté.",
+      "voiture": "Une voiture sert à transporter.",
+      "voile": "Une voile fait avancer le bateau avec le vent.",
+      "voie": "Une voie est un chemin."
+    }
+  },
+  {
+    "id": "rf2-019",
+    "racine": "pain",
+    "membres": [
+      "paner",
+      "panure",
+      "panier",
+      "copain"
+    ],
+    "intrus": [
+      "panneau",
+      "panique",
+      "panorama",
+      "panne"
+    ],
+    "explications": {
+      "panneau": "Un panneau est une plaque qui donne une information.",
+      "panique": "La panique est une peur soudaine ; le mot vient du dieu grec Pan.",
+      "panorama": "Un panorama est une vue très large.",
+      "panne": "Une panne, c'est quand une machine ne marche plus."
+    }
+  },
+  {
+    "id": "rf2-020",
+    "racine": "école",
+    "membres": [
+      "écolier",
+      "scolaire",
+      "scolarité",
+      "préscolaire"
+    ],
+    "intrus": [
+      "écologie",
+      "écologiste",
+      "écorce",
+      "écorcher"
+    ],
+    "explications": {
+      "écologie": "L'écologie étudie la nature ; le mot vient du grec « maison ».",
+      "écologiste": "Un écologiste protège la nature : famille de « écologie ».",
+      "écorce": "L'écorce recouvre le tronc des arbres.",
+      "écorcher": "Écorcher, c'est arracher la peau : famille de « écorce »."
+    }
+  },
+  {
+    "id": "rf2-021",
+    "racine": "mère",
+    "sens": "la maman",
+    "membres": [
+      "maternel",
+      "maternité",
+      "materner",
+      "maternelle"
+    ],
+    "intrus": [
+      "matin",
+      "matinal",
+      "matelas",
+      "matelot"
+    ],
+    "explications": {
+      "matin": "Le matin est le début de la journée.",
+      "matinal": "Matinal veut dire « qui se lève tôt ».",
+      "matelas": "Le matelas est posé sur le lit ; le mot vient de l'arabe.",
+      "matelot": "Un matelot travaille sur un bateau."
+    }
+  },
+  {
+    "id": "rf2-022",
+    "racine": "père",
+    "sens": "le papa",
+    "membres": [
+      "paternel",
+      "paternité",
+      "parrain",
+      "patrie",
+      "patrimoine"
+    ],
+    "intrus": [
+      "patience",
+      "pâtissier",
+      "patin"
+    ],
+    "explications": {
+      "patience": "La patience, c'est savoir attendre.",
+      "pâtissier": "Le pâtissier fait des gâteaux : famille de « pâte ».",
+      "patin": "Un patin sert à glisser : famille de « patte »."
+    }
+  },
+  {
+    "id": "rf2-023",
+    "racine": "frère",
+    "membres": [
+      "fraternel",
+      "fraternité",
+      "confrère",
+      "fraterniser"
+    ],
+    "intrus": [
+      "fracture",
+      "fragile",
+      "fraise",
+      "fraction"
+    ],
+    "explications": {
+      "fracture": "Une fracture, c'est un os cassé.",
+      "fragile": "Fragile veut dire « qui se casse facilement ».",
+      "fraise": "La fraise est un fruit rouge.",
+      "fraction": "Une fraction est une partie d'un tout."
+    }
+  },
+  {
+    "id": "rf2-024",
+    "racine": "fille",
+    "sens": "l'enfant",
+    "membres": [
+      "fillette",
+      "filleul",
+      "fiston",
+      "filial",
+      "filiation"
+    ],
+    "intrus": [
+      "fil",
+      "filet",
+      "file",
+      "filature"
+    ],
+    "explications": {
+      "fil": "Le fil sert à coudre.",
+      "filet": "Un filet est fait de fils : famille de « fil ».",
+      "file": "Une file, ce sont des personnes l'une derrière l'autre : famille de « fil ».",
+      "filature": "Une filature est une usine où l'on fabrique du fil."
+    }
+  },
+  {
+    "id": "rf2-025",
+    "racine": "écrire",
+    "membres": [
+      "écriture",
+      "écrivain",
+      "inscrire",
+      "manuscrit",
+      "décrire"
+    ],
+    "intrus": [
+      "écrémer",
+      "écran",
+      "écrevisse",
+      "écrou"
+    ],
+    "explications": {
+      "écrémer": "Écrémer, c'est enlever la crème du lait.",
+      "écran": "L'écran sert à afficher des images.",
+      "écrevisse": "L'écrevisse vit dans les rivières.",
+      "écrou": "Un écrou se visse sur une vis."
+    }
+  },
+  {
+    "id": "rf2-026",
+    "racine": "dire",
+    "membres": [
+      "dictée",
+      "diction",
+      "prédire",
+      "contredire",
+      "dictionnaire"
+    ],
+    "intrus": [
+      "diriger",
+      "dîner",
+      "direct"
+    ],
+    "explications": {
+      "diriger": "Diriger, c'est conduire, commander.",
+      "dîner": "Le dîner est le repas du soir.",
+      "direct": "Direct veut dire « sans détour »."
+    }
+  },
+  {
+    "id": "rf2-027",
+    "racine": "mort",
+    "membres": [
+      "mortel",
+      "mortalité",
+      "immortel",
+      "mortellement",
+      "mourir"
+    ],
+    "intrus": [
+      "morsure",
+      "mordre",
+      "morceau"
+    ],
+    "explications": {
+      "morsure": "La morsure vient de « mordre ».",
+      "mordre": "Mordre, c'est serrer avec les dents.",
+      "morceau": "Un morceau est un petit bout : famille de « mordre »."
+    }
+  },
+  {
+    "id": "rf2-028",
+    "racine": "vie",
+    "membres": [
+      "vital",
+      "vivant",
+      "survivre",
+      "revivre",
+      "vivre"
+    ],
+    "intrus": [
+      "vitre",
+      "vitrine",
+      "vitrail"
+    ],
+    "explications": {
+      "vitre": "La vitre est le verre de la fenêtre.",
+      "vitrine": "La vitrine est la vitre d'un magasin.",
+      "vitrail": "Un vitrail est une fenêtre en verre de couleur."
+    }
+  },
+  {
+    "id": "rf2-029",
+    "racine": "cent",
+    "sens": "100",
+    "membres": [
+      "centaine",
+      "centime",
+      "centimètre",
+      "centenaire",
+      "pourcentage"
+    ],
+    "intrus": [
+      "centre",
+      "central",
+      "concentrer"
+    ],
+    "explications": {
+      "centre": "Le centre est le milieu.",
+      "central": "Central veut dire « au centre ».",
+      "concentrer": "Concentrer, c'est réunir au centre."
+    }
+  },
+  {
+    "id": "rf2-030",
+    "racine": "peuple",
+    "membres": [
+      "peupler",
+      "dépeupler",
+      "populaire",
+      "population",
+      "surpeuplé"
+    ],
+    "intrus": [
+      "peuplier",
+      "pupitre",
+      "poupée"
+    ],
+    "explications": {
+      "peuplier": "Le peuplier est un arbre : en latin, son nom ressemble à celui du peuple, mais c'est un autre mot.",
+      "pupitre": "Le pupitre est une petite table pour écrire ou lire.",
+      "poupée": "La poupée est un jouet."
+    }
+  },
+  {
+    "id": "rf2-031",
+    "racine": "loi",
+    "membres": [
+      "légal",
+      "illégal",
+      "légalité",
+      "loyal",
+      "loyauté"
+    ],
+    "intrus": [
+      "léger",
+      "légèreté",
+      "alléger"
+    ],
+    "explications": {
+      "léger": "Léger veut dire « qui ne pèse pas lourd ».",
+      "légèreté": "La légèreté vient de « léger ».",
+      "alléger": "Alléger, c'est rendre plus léger."
+    }
+  },
+  {
+    "id": "rf2-032",
+    "racine": "heure",
+    "membres": [
+      "horaire",
+      "horloge",
+      "horloger",
+      "horlogerie"
+    ],
+    "intrus": [
+      "heureux",
+      "bonheur",
+      "malheur",
+      "heurter"
+    ],
+    "explications": {
+      "heureux": "Heureux vient d'un vieux mot, « heur », qui voulait dire « chance ».",
+      "bonheur": "Bonheur vient de « bon » et de « heur », la chance.",
+      "malheur": "Malheur vient de « mal » et de « heur », la chance.",
+      "heurter": "Heurter, c'est cogner."
+    }
+  },
+  {
+    "id": "rf2-033",
+    "racine": "grain",
+    "membres": [
+      "graine",
+      "grenier",
+      "égrener",
+      "granulé",
+      "engrenage"
+    ],
+    "intrus": [
+      "grenouille",
+      "graisse",
+      "gratter"
+    ],
+    "explications": {
+      "grenouille": "La grenouille vit près de l'eau.",
+      "graisse": "La graisse est une matière grasse.",
+      "gratter": "Gratter, c'est frotter avec les ongles."
+    }
+  },
+  {
+    "id": "rf2-034",
+    "racine": "forêt",
+    "membres": [
+      "forestier",
+      "déforestation",
+      "reforestation",
+      "forestière"
+    ],
+    "intrus": [
+      "forer",
+      "forage",
+      "foret",
+      "forteresse"
+    ],
+    "explications": {
+      "forer": "Forer, c'est percer un trou.",
+      "forage": "Le forage vient de « forer ».",
+      "foret": "Un foret est l'outil qui sert à percer.",
+      "forteresse": "Une forteresse est un château fort : famille de « fort »."
+    }
+  },
+  {
+    "id": "rf2-035",
+    "racine": "dormir",
+    "membres": [
+      "dortoir",
+      "endormir",
+      "dormeur",
+      "endormi",
+      "rendormir"
+    ],
+    "intrus": [
+      "dorure",
+      "dorer",
+      "doré"
+    ],
+    "explications": {
+      "dorure": "La dorure vient de « or ».",
+      "dorer": "Dorer, c'est couvrir d'or.",
+      "doré": "Doré veut dire « de la couleur de l'or »."
+    }
+  },
+  {
+    "id": "rf2-036",
+    "racine": "boire",
+    "membres": [
+      "boisson",
+      "buveur",
+      "buvette",
+      "imbuvable",
+      "buvard"
+    ],
+    "intrus": [
+      "bois",
+      "boisé",
+      "boiser"
+    ],
+    "explications": {
+      "bois": "Le bois vient des arbres.",
+      "boisé": "Boisé veut dire « couvert d'arbres ».",
+      "boiser": "Boiser, c'est planter des arbres."
+    }
+  },
+  {
+    "id": "rf2-037",
+    "racine": "croire",
+    "membres": [
+      "croyant",
+      "croyance",
+      "incroyable",
+      "crédible",
+      "crédule"
+    ],
+    "intrus": [
+      "croissant",
+      "croix",
+      "croître"
+    ],
+    "explications": {
+      "croissant": "Le croissant vient de « croître », grandir.",
+      "croix": "Une croix est faite de deux traits croisés.",
+      "croître": "Croître veut dire « grandir »."
+    }
+  },
+  {
+    "id": "rf2-038",
+    "racine": "aimer",
+    "membres": [
+      "aimable",
+      "amour",
+      "amoureux",
+      "amateur"
+    ],
+    "intrus": [
+      "amer",
+      "amertume",
+      "amorce",
+      "amortir"
+    ],
+    "explications": {
+      "amer": "Amer veut dire « au goût désagréable ».",
+      "amertume": "L'amertume vient de « amer ».",
+      "amorce": "L'amorce est le début de quelque chose : famille de « mordre ».",
+      "amortir": "Amortir vient de « mort » : rendre moins fort."
+    }
+  },
+  {
+    "id": "rf2-039",
+    "racine": "servir",
+    "membres": [
+      "serviteur",
+      "service",
+      "serveur",
+      "desservir",
+      "serviable"
+    ],
+    "intrus": [
+      "cerveau",
+      "cervelle",
+      "serpent",
+      "sermon"
+    ],
+    "explications": {
+      "cerveau": "Le cerveau est dans la tête.",
+      "cervelle": "La cervelle, c'est le cerveau.",
+      "serpent": "Le serpent est un reptile.",
+      "sermon": "Un sermon est un discours pour faire la morale."
+    }
+  },
+  {
+    "id": "rf2-040",
+    "racine": "compter",
+    "membres": [
+      "comptable",
+      "compteur",
+      "décompte",
+      "comptabilité",
+      "acompte"
+    ],
+    "intrus": [
+      "comte",
+      "comtesse",
+      "compote"
+    ],
+    "explications": {
+      "comte": "Un comte est un noble.",
+      "comtesse": "Une comtesse est la femme d'un comte.",
+      "compote": "La compote est faite de fruits cuits."
+    }
+  },
+  {
+    "id": "rf2-041",
+    "racine": "coudre",
+    "membres": [
+      "couture",
+      "couturier",
+      "couturière",
+      "recoudre",
+      "décousu"
+    ],
+    "intrus": [
+      "coude",
+      "accoudoir",
+      "accoudé"
+    ],
+    "explications": {
+      "coude": "Le coude est au milieu du bras.",
+      "accoudoir": "L'accoudoir sert à poser le coude.",
+      "accoudé": "Accoudé veut dire « appuyé sur les coudes »."
+    }
+  },
+  {
+    "id": "rf2-042",
+    "racine": "peindre",
+    "membres": [
+      "peintre",
+      "peinture",
+      "dépeindre",
+      "repeindre"
+    ],
+    "intrus": [
+      "peigne",
+      "peigner",
+      "peignoir",
+      "peine"
+    ],
+    "explications": {
+      "peigne": "Le peigne sert à coiffer.",
+      "peigner": "Peigner, c'est coiffer avec un peigne.",
+      "peignoir": "Le peignoir vient de « peigner ».",
+      "peine": "La peine, c'est la tristesse, ou une punition."
+    }
+  },
+  {
+    "id": "rf2-043",
+    "racine": "plein",
+    "membres": [
+      "remplir",
+      "emplir",
+      "trop-plein",
+      "pleinement",
+      "plénitude"
+    ],
+    "intrus": [
+      "pleurer",
+      "pleurnicher",
+      "pleuvoir"
+    ],
+    "explications": {
+      "pleurer": "Pleurer, c'est verser des larmes.",
+      "pleurnicher": "Pleurnicher, c'est pleurer pour rien : famille de « pleurer ».",
+      "pleuvoir": "Pleuvoir vient de « pluie »."
+    }
+  },
+  {
+    "id": "rf2-044",
+    "racine": "vieux",
+    "membres": [
+      "vieillir",
+      "vieillesse",
+      "vieillard",
+      "vieillot"
+    ],
+    "intrus": [
+      "veille",
+      "veiller",
+      "veilleuse",
+      "réveil"
+    ],
+    "explications": {
+      "veille": "La veille, c'est le jour d'avant, ou le fait de ne pas dormir.",
+      "veiller": "Veiller, c'est rester éveillé.",
+      "veilleuse": "La veilleuse est une petite lumière pour la nuit.",
+      "réveil": "Le réveil vient du verbe « éveiller »."
+    }
+  },
+  {
+    "id": "rf2-045",
+    "racine": "jeune",
+    "membres": [
+      "jeunesse",
+      "rajeunir",
+      "jeunot",
+      "rajeunissement"
+    ],
+    "intrus": [
+      "jeûne",
+      "jeûner",
+      "jeûneur",
+      "déjeuner"
+    ],
+    "explications": {
+      "jeûne": "Le jeûne, c'est le fait de ne pas manger.",
+      "jeûner": "Jeûner, c'est ne pas manger.",
+      "jeûneur": "Un jeûneur est quelqu'un qui ne mange pas : famille de « jeûne ».",
+      "déjeuner": "Déjeuner, c'est arrêter le jeûne : famille de « jeûne »."
+    }
+  },
+  {
+    "id": "rf2-046",
+    "racine": "place",
+    "membres": [
+      "placer",
+      "déplacer",
+      "remplacer",
+      "emplacement",
+      "placement"
+    ],
+    "intrus": [
+      "placide",
+      "plaque",
+      "implacable"
+    ],
+    "explications": {
+      "placide": "Placide veut dire « calme ».",
+      "plaque": "Une plaque est une feuille plate et rigide.",
+      "implacable": "Implacable veut dire « qu'on ne peut pas calmer »."
+    }
+  },
+  {
+    "id": "rf2-047",
+    "racine": "lit",
+    "sens": "le meuble",
+    "membres": [
+      "literie",
+      "alité",
+      "couvre-lit",
+      "wagon-lit"
+    ],
+    "intrus": [
+      "litre",
+      "littérature",
+      "délit",
+      "litige"
+    ],
+    "explications": {
+      "litre": "Le litre sert à mesurer les liquides.",
+      "littérature": "La littérature, ce sont les livres et les textes : famille de « lettre ».",
+      "délit": "Un délit est une faute punie par la loi.",
+      "litige": "Un litige est un désaccord, une dispute."
+    }
+  },
+  {
+    "id": "rf2-048",
+    "racine": "chair",
+    "sens": "la viande, la peau",
+    "membres": [
+      "charnu",
+      "charnel",
+      "charcutier",
+      "décharné"
+    ],
+    "intrus": [
+      "charme",
+      "charbon",
+      "chariot",
+      "charrue"
+    ],
+    "explications": {
+      "charme": "Le charme, c'est ce qui plaît beaucoup.",
+      "charbon": "Le charbon est une roche noire qui brûle.",
+      "chariot": "Le chariot vient de « char ».",
+      "charrue": "La charrue sert à labourer les champs."
+    }
+  },
+  {
+    "id": "rf2-049",
+    "racine": "naître",
+    "membres": [
+      "naissance",
+      "natal",
+      "renaître",
+      "natalité"
+    ],
+    "intrus": [
+      "natte",
+      "nappe",
+      "nasse",
+      "nacre"
+    ],
+    "explications": {
+      "natte": "Une natte, ce sont des cheveux tressés.",
+      "nappe": "La nappe recouvre la table.",
+      "nasse": "Une nasse est un piège à poissons.",
+      "nacre": "La nacre est la matière brillante à l'intérieur des coquillages."
+    }
+  },
+  {
+    "id": "rf2-050",
+    "racine": "papier",
+    "membres": [
+      "papeterie",
+      "papetier",
+      "paperasse",
+      "papyrus"
+    ],
+    "intrus": [
+      "papillon",
+      "papoter",
+      "papille",
+      "pape"
+    ],
+    "explications": {
+      "papillon": "Le papillon est un insecte.",
+      "papoter": "Papoter, c'est bavarder.",
+      "papille": "Les papilles, sur la langue, servent à sentir le goût.",
+      "pape": "Le pape est le chef de l'Église catholique."
+    }
+  }
+]

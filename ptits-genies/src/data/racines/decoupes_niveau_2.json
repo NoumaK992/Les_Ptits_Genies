@@ -1,0 +1,1426 @@
+[
+  {
+    "id": "rd2-001",
+    "mot": "lentement",
+    "morceaux": [
+      "lente",
+      "ment"
+    ],
+    "sens": [
+      "lent",
+      "de façon"
+    ],
+    "leurres": [
+      "de nouveau",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-002",
+    "mot": "doucement",
+    "morceaux": [
+      "douce",
+      "ment"
+    ],
+    "sens": [
+      "doux",
+      "de façon"
+    ],
+    "leurres": [
+      "contre",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd2-003",
+    "mot": "heureusement",
+    "morceaux": [
+      "heureuse",
+      "ment"
+    ],
+    "sens": [
+      "heureux",
+      "de façon"
+    ],
+    "leurres": [
+      "contre",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd2-004",
+    "mot": "rapidement",
+    "morceaux": [
+      "rapide",
+      "ment"
+    ],
+    "sens": [
+      "rapide",
+      "de façon"
+    ],
+    "leurres": [
+      "plein de",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-005",
+    "mot": "joyeusement",
+    "morceaux": [
+      "joyeuse",
+      "ment"
+    ],
+    "sens": [
+      "joyeux",
+      "de façon"
+    ],
+    "leurres": [
+      "trop",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-006",
+    "mot": "jaunâtre",
+    "morceaux": [
+      "jaun",
+      "âtre"
+    ],
+    "sens": [
+      "jaune",
+      "presque, un peu"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-007",
+    "mot": "verdâtre",
+    "morceaux": [
+      "verd",
+      "âtre"
+    ],
+    "sens": [
+      "vert",
+      "presque, un peu"
+    ],
+    "leurres": [
+      "de façon",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-008",
+    "mot": "rougeâtre",
+    "morceaux": [
+      "rouge",
+      "âtre"
+    ],
+    "sens": [
+      "rouge",
+      "presque, un peu"
+    ],
+    "leurres": [
+      "contre",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-009",
+    "mot": "bleuâtre",
+    "morceaux": [
+      "bleu",
+      "âtre"
+    ],
+    "sens": [
+      "bleu",
+      "presque, un peu"
+    ],
+    "leurres": [
+      "avant",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-010",
+    "mot": "tristesse",
+    "morceaux": [
+      "trist",
+      "esse"
+    ],
+    "sens": [
+      "triste",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "contre",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd2-011",
+    "mot": "jeunesse",
+    "morceaux": [
+      "jeun",
+      "esse"
+    ],
+    "sens": [
+      "jeune",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "contre",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd2-012",
+    "mot": "sagesse",
+    "morceaux": [
+      "sag",
+      "esse"
+    ],
+    "sens": [
+      "sage",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "petit",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-013",
+    "mot": "faiblesse",
+    "morceaux": [
+      "faibl",
+      "esse"
+    ],
+    "sens": [
+      "faible",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd2-014",
+    "mot": "richesse",
+    "morceaux": [
+      "rich",
+      "esse"
+    ],
+    "sens": [
+      "riche",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "trop",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-015",
+    "mot": "bêtise",
+    "morceaux": [
+      "bêt",
+      "ise"
+    ],
+    "sens": [
+      "bête",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd2-016",
+    "mot": "gourmandise",
+    "morceaux": [
+      "gourmand",
+      "ise"
+    ],
+    "sens": [
+      "gourmand",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "trop",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-017",
+    "mot": "beauté",
+    "morceaux": [
+      "beau",
+      "té"
+    ],
+    "sens": [
+      "beau",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "trop",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-018",
+    "mot": "bonté",
+    "morceaux": [
+      "bon",
+      "té"
+    ],
+    "sens": [
+      "bon",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "de façon",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-019",
+    "mot": "fierté",
+    "morceaux": [
+      "fier",
+      "té"
+    ],
+    "sens": [
+      "fier",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "avant",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-020",
+    "mot": "clarté",
+    "morceaux": [
+      "clar",
+      "té"
+    ],
+    "sens": [
+      "clair",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd2-021",
+    "mot": "propreté",
+    "morceaux": [
+      "propre",
+      "té"
+    ],
+    "sens": [
+      "propre",
+      "le fait d'être"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd2-022",
+    "mot": "cuillerée",
+    "morceaux": [
+      "cuiller",
+      "ée"
+    ],
+    "sens": [
+      "cuiller",
+      "contenu de"
+    ],
+    "leurres": [
+      "de nouveau",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd2-023",
+    "mot": "assiettée",
+    "morceaux": [
+      "assiett",
+      "ée"
+    ],
+    "sens": [
+      "assiette",
+      "contenu de"
+    ],
+    "leurres": [
+      "avant",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd2-024",
+    "mot": "bouchée",
+    "morceaux": [
+      "bouch",
+      "ée"
+    ],
+    "sens": [
+      "bouche",
+      "contenu de"
+    ],
+    "leurres": [
+      "l'action de",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-025",
+    "mot": "journée",
+    "morceaux": [
+      "journ",
+      "ée"
+    ],
+    "sens": [
+      "jour",
+      "durée de"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-026",
+    "mot": "matinée",
+    "morceaux": [
+      "matin",
+      "ée"
+    ],
+    "sens": [
+      "matin",
+      "durée de"
+    ],
+    "leurres": [
+      "de façon",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-027",
+    "mot": "soirée",
+    "morceaux": [
+      "soir",
+      "ée"
+    ],
+    "sens": [
+      "soir",
+      "durée de"
+    ],
+    "leurres": [
+      "de façon",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-028",
+    "mot": "année",
+    "morceaux": [
+      "ann",
+      "ée"
+    ],
+    "sens": [
+      "an",
+      "durée de"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-029",
+    "mot": "coiffure",
+    "morceaux": [
+      "coiff",
+      "ure"
+    ],
+    "sens": [
+      "coiffer",
+      "action ou résultat"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-030",
+    "mot": "peinture",
+    "morceaux": [
+      "peint",
+      "ure"
+    ],
+    "sens": [
+      "peindre",
+      "action ou résultat"
+    ],
+    "leurres": [
+      "trop",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd2-031",
+    "mot": "blessure",
+    "morceaux": [
+      "bless",
+      "ure"
+    ],
+    "sens": [
+      "blesser",
+      "action ou résultat"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-032",
+    "mot": "brûlure",
+    "morceaux": [
+      "brûl",
+      "ure"
+    ],
+    "sens": [
+      "brûler",
+      "action ou résultat"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd2-033",
+    "mot": "écriture",
+    "morceaux": [
+      "écrit",
+      "ure"
+    ],
+    "sens": [
+      "écrire",
+      "action ou résultat"
+    ],
+    "leurres": [
+      "avant",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd2-034",
+    "mot": "lecture",
+    "morceaux": [
+      "lect",
+      "ure"
+    ],
+    "sens": [
+      "lire",
+      "action ou résultat"
+    ],
+    "leurres": [
+      "de façon",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-035",
+    "mot": "lisible",
+    "morceaux": [
+      "lis",
+      "ible"
+    ],
+    "sens": [
+      "lire",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "trop",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd2-036",
+    "mot": "buvable",
+    "morceaux": [
+      "buv",
+      "able"
+    ],
+    "sens": [
+      "boire",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "avant",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-037",
+    "mot": "faisable",
+    "morceaux": [
+      "fais",
+      "able"
+    ],
+    "sens": [
+      "faire",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-038",
+    "mot": "croyable",
+    "morceaux": [
+      "croy",
+      "able"
+    ],
+    "sens": [
+      "croire",
+      "qu'on peut"
+    ],
+    "leurres": [
+      "avant",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-039",
+    "mot": "buveur",
+    "morceaux": [
+      "buv",
+      "eur"
+    ],
+    "sens": [
+      "boire",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "plein de",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-040",
+    "mot": "menteur",
+    "morceaux": [
+      "ment",
+      "eur"
+    ],
+    "sens": [
+      "mentir",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "de nouveau",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-041",
+    "mot": "lecteur",
+    "morceaux": [
+      "lect",
+      "eur"
+    ],
+    "sens": [
+      "lire",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "de façon",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-042",
+    "mot": "serveur",
+    "morceaux": [
+      "serv",
+      "eur"
+    ],
+    "sens": [
+      "servir",
+      "celui ou celle qui"
+    ],
+    "leurres": [
+      "contre",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd2-043",
+    "mot": "irréel",
+    "morceaux": [
+      "ir",
+      "réel"
+    ],
+    "sens": [
+      "ne… pas",
+      "réel"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd2-044",
+    "mot": "illégal",
+    "morceaux": [
+      "il",
+      "légal"
+    ],
+    "sens": [
+      "ne… pas",
+      "légal"
+    ],
+    "leurres": [
+      "de nouveau",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-045",
+    "mot": "immobile",
+    "morceaux": [
+      "im",
+      "mobile"
+    ],
+    "sens": [
+      "ne… pas",
+      "mobile"
+    ],
+    "leurres": [
+      "plein de",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-046",
+    "mot": "irrespirable",
+    "morceaux": [
+      "ir",
+      "respirable"
+    ],
+    "sens": [
+      "ne… pas",
+      "respirable"
+    ],
+    "leurres": [
+      "de nouveau",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-047",
+    "mot": "désagréable",
+    "morceaux": [
+      "dés",
+      "agréable"
+    ],
+    "sens": [
+      "le contraire de",
+      "agréable"
+    ],
+    "leurres": [
+      "petit",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-048",
+    "mot": "désaccord",
+    "morceaux": [
+      "dés",
+      "accord"
+    ],
+    "sens": [
+      "le contraire de",
+      "accord"
+    ],
+    "leurres": [
+      "petit",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-049",
+    "mot": "désespoir",
+    "morceaux": [
+      "dés",
+      "espoir"
+    ],
+    "sens": [
+      "le contraire de",
+      "espoir"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-050",
+    "mot": "préhistoire",
+    "morceaux": [
+      "pré",
+      "histoire"
+    ],
+    "sens": [
+      "avant",
+      "histoire"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd2-051",
+    "mot": "prévoir",
+    "morceaux": [
+      "pré",
+      "voir"
+    ],
+    "sens": [
+      "avant",
+      "voir"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-052",
+    "mot": "préchauffer",
+    "morceaux": [
+      "pré",
+      "chauffer"
+    ],
+    "sens": [
+      "avant",
+      "chauffer"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd2-053",
+    "mot": "maladroit",
+    "morceaux": [
+      "mal",
+      "adroit"
+    ],
+    "sens": [
+      "mal",
+      "adroit"
+    ],
+    "leurres": [
+      "plein de",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-054",
+    "mot": "malhonnête",
+    "morceaux": [
+      "mal",
+      "honnête"
+    ],
+    "sens": [
+      "mal",
+      "honnête"
+    ],
+    "leurres": [
+      "de nouveau",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd2-055",
+    "mot": "malchance",
+    "morceaux": [
+      "mal",
+      "chance"
+    ],
+    "sens": [
+      "mal",
+      "chance"
+    ],
+    "leurres": [
+      "trop",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-056",
+    "mot": "surcharger",
+    "morceaux": [
+      "sur",
+      "charger"
+    ],
+    "sens": [
+      "trop",
+      "charger"
+    ],
+    "leurres": [
+      "l'action de",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-057",
+    "mot": "surpeuplé",
+    "morceaux": [
+      "sur",
+      "peuplé"
+    ],
+    "sens": [
+      "trop",
+      "peuplé"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-058",
+    "mot": "survoler",
+    "morceaux": [
+      "sur",
+      "voler"
+    ],
+    "sens": [
+      "au-dessus de",
+      "voler"
+    ],
+    "leurres": [
+      "de façon",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd2-059",
+    "mot": "mécontent",
+    "morceaux": [
+      "mé",
+      "content"
+    ],
+    "sens": [
+      "mal, pas",
+      "content"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-060",
+    "mot": "méconnu",
+    "morceaux": [
+      "mé",
+      "connu"
+    ],
+    "sens": [
+      "mal, pas",
+      "connu"
+    ],
+    "leurres": [
+      "contre",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-061",
+    "mot": "mésaventure",
+    "morceaux": [
+      "més",
+      "aventure"
+    ],
+    "sens": [
+      "mal, pas",
+      "aventure"
+    ],
+    "leurres": [
+      "l'action de",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-062",
+    "mot": "antivol",
+    "morceaux": [
+      "anti",
+      "vol"
+    ],
+    "sens": [
+      "contre",
+      "vol"
+    ],
+    "leurres": [
+      "plein de",
+      "de façon"
+    ]
+  },
+  {
+    "id": "rd2-063",
+    "mot": "antigel",
+    "morceaux": [
+      "anti",
+      "gel"
+    ],
+    "sens": [
+      "contre",
+      "gel"
+    ],
+    "leurres": [
+      "de nouveau",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd2-064",
+    "mot": "antivirus",
+    "morceaux": [
+      "anti",
+      "virus"
+    ],
+    "sens": [
+      "contre",
+      "virus"
+    ],
+    "leurres": [
+      "avant",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-065",
+    "mot": "parapluie",
+    "morceaux": [
+      "para",
+      "pluie"
+    ],
+    "sens": [
+      "qui protège de",
+      "pluie"
+    ],
+    "leurres": [
+      "l'action de",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-066",
+    "mot": "parasol",
+    "morceaux": [
+      "para",
+      "sol"
+    ],
+    "sens": [
+      "qui protège de",
+      "soleil"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-067",
+    "mot": "parachute",
+    "morceaux": [
+      "para",
+      "chute"
+    ],
+    "sens": [
+      "qui protège de",
+      "chute"
+    ],
+    "leurres": [
+      "avant",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-068",
+    "mot": "paravent",
+    "morceaux": [
+      "para",
+      "vent"
+    ],
+    "sens": [
+      "qui protège de",
+      "vent"
+    ],
+    "leurres": [
+      "l'action de",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-069",
+    "mot": "invention",
+    "morceaux": [
+      "invent",
+      "ion"
+    ],
+    "sens": [
+      "inventer",
+      "l'action de"
+    ],
+    "leurres": [
+      "contre",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-070",
+    "mot": "création",
+    "morceaux": [
+      "cré",
+      "ation"
+    ],
+    "sens": [
+      "créer",
+      "l'action de"
+    ],
+    "leurres": [
+      "avant",
+      "plein de"
+    ]
+  },
+  {
+    "id": "rd2-071",
+    "mot": "plantation",
+    "morceaux": [
+      "plant",
+      "ation"
+    ],
+    "sens": [
+      "planter",
+      "l'action de"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-072",
+    "mot": "décoration",
+    "morceaux": [
+      "décor",
+      "ation"
+    ],
+    "sens": [
+      "décorer",
+      "l'action de"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "trop"
+    ]
+  },
+  {
+    "id": "rd2-073",
+    "mot": "respiration",
+    "morceaux": [
+      "respir",
+      "ation"
+    ],
+    "sens": [
+      "respirer",
+      "l'action de"
+    ],
+    "leurres": [
+      "de nouveau",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd2-074",
+    "mot": "changement",
+    "morceaux": [
+      "change",
+      "ment"
+    ],
+    "sens": [
+      "changer",
+      "l'action de"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-075",
+    "mot": "rangement",
+    "morceaux": [
+      "range",
+      "ment"
+    ],
+    "sens": [
+      "ranger",
+      "l'action de"
+    ],
+    "leurres": [
+      "au-dessus de",
+      "celui ou celle qui"
+    ]
+  },
+  {
+    "id": "rd2-076",
+    "mot": "chargement",
+    "morceaux": [
+      "charge",
+      "ment"
+    ],
+    "sens": [
+      "charger",
+      "l'action de"
+    ],
+    "leurres": [
+      "trop",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-077",
+    "mot": "lancement",
+    "morceaux": [
+      "lance",
+      "ment"
+    ],
+    "sens": [
+      "lancer",
+      "l'action de"
+    ],
+    "leurres": [
+      "plein de",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd2-078",
+    "mot": "musicien",
+    "morceaux": [
+      "music",
+      "ien"
+    ],
+    "sens": [
+      "musique",
+      "personne qui pratique"
+    ],
+    "leurres": [
+      "petit",
+      "avant"
+    ]
+  },
+  {
+    "id": "rd2-079",
+    "mot": "magicien",
+    "morceaux": [
+      "magic",
+      "ien"
+    ],
+    "sens": [
+      "magie",
+      "personne qui pratique"
+    ],
+    "leurres": [
+      "avant",
+      "petit"
+    ]
+  },
+  {
+    "id": "rd2-080",
+    "mot": "électricien",
+    "morceaux": [
+      "électric",
+      "ien"
+    ],
+    "sens": [
+      "électricité",
+      "personne qui pratique"
+    ],
+    "leurres": [
+      "avant",
+      "de nouveau"
+    ]
+  },
+  {
+    "id": "rd2-081",
+    "mot": "pharmacien",
+    "morceaux": [
+      "pharmac",
+      "ien"
+    ],
+    "sens": [
+      "pharmacie",
+      "personne qui pratique"
+    ],
+    "leurres": [
+      "qu'on peut",
+      "l'action de"
+    ]
+  },
+  {
+    "id": "rd2-082",
+    "mot": "jardinier",
+    "morceaux": [
+      "jardin",
+      "ier"
+    ],
+    "sens": [
+      "jardin",
+      "métier lié à"
+    ],
+    "leurres": [
+      "de façon",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-083",
+    "mot": "cuisinier",
+    "morceaux": [
+      "cuisin",
+      "ier"
+    ],
+    "sens": [
+      "cuisine",
+      "métier lié à"
+    ],
+    "leurres": [
+      "plein de",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-084",
+    "mot": "fermier",
+    "morceaux": [
+      "ferm",
+      "ier"
+    ],
+    "sens": [
+      "ferme",
+      "métier lié à"
+    ],
+    "leurres": [
+      "de nouveau",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-085",
+    "mot": "pompier",
+    "morceaux": [
+      "pomp",
+      "ier"
+    ],
+    "sens": [
+      "pompe",
+      "métier lié à"
+    ],
+    "leurres": [
+      "contre",
+      "au-dessus de"
+    ]
+  },
+  {
+    "id": "rd2-086",
+    "mot": "porcelet",
+    "morceaux": [
+      "porc",
+      "elet"
+    ],
+    "sens": [
+      "porc",
+      "petit"
+    ],
+    "leurres": [
+      "celui ou celle qui",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-087",
+    "mot": "éléphanteau",
+    "morceaux": [
+      "éléphant",
+      "eau"
+    ],
+    "sens": [
+      "éléphant",
+      "petit"
+    ],
+    "leurres": [
+      "plein de",
+      "qu'on peut"
+    ]
+  },
+  {
+    "id": "rd2-088",
+    "mot": "lionceau",
+    "morceaux": [
+      "lion",
+      "ceau"
+    ],
+    "sens": [
+      "lion",
+      "petit"
+    ],
+    "leurres": [
+      "plein de",
+      "contre"
+    ]
+  },
+  {
+    "id": "rd2-089",
+    "mot": "chevreau",
+    "morceaux": [
+      "chevr",
+      "eau"
+    ],
+    "sens": [
+      "chèvre",
+      "petit"
+    ],
+    "leurres": [
+      "contre",
+      "trop"
+    ]
+  }
+]
