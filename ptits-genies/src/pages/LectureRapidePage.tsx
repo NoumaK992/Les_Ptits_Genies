@@ -203,7 +203,7 @@ export default function LectureRapidePage() {
   // ── Reading ─────────────────────────────────────────────────────────────
   if (phase === 'reading' && currentText) {
     return (
-      <div className="max-w-2xl mx-auto pb-28">
+      <div className="max-w-2xl mx-auto">
         <Carte className="p-4 mb-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-xl border-2 border-encre bg-jaune flex items-center justify-center text-xl shrink-0">
@@ -229,18 +229,14 @@ export default function LectureRapidePage() {
           />
         </Carte>
 
-        <p className="text-center text-base text-encre-doux font-semibold animate-pulse">
-          📖 Lis avant que les mots disparaissent…
-        </p>
-
-        <div className="fixed bottom-4 inset-x-4 z-30 flex justify-center pointer-events-none">
+        <div className="mb-4 flex justify-center">
           <motion.button
             initial={{ y: 24, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, type: 'spring', bounce: 0.4 }}
             whileTap={{ scale: 0.96 }}
             onClick={goToQCM}
-            className={`${classesBouton('principal', 'grand')} pointer-events-auto gap-3 max-w-md w-full sm:w-auto`}
+            className={`${classesBouton('principal', 'grand')} gap-3 max-w-md w-full sm:w-auto`}
           >
             <span>J'ai fini ! ✋</span>
             {livePotentialBonus > 0 && (
@@ -250,6 +246,10 @@ export default function LectureRapidePage() {
             )}
           </motion.button>
         </div>
+        <p className="text-center text-base text-encre-doux font-semibold animate-pulse">
+          📖 Lis avant que les mots disparaissent…
+        </p>
+
       </div>
     )
   }

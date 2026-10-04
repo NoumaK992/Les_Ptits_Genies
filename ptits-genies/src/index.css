@@ -1,4 +1,21 @@
-/* Polices chargées dans index.html (Lexend, Archivo Black) */
+/* Polices hébergées avec l'app (fichiers dans public/fonts, licence OFL).
+   Les servir nous-mêmes évite qu'une police arrivant en retard depuis Google
+   recompose le texte en pleine Lecture rapide (mots qui changent de ligne). */
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('/fonts/lexend-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/archivo-black-latin.woff2') format('woff2');
+}
 
 @tailwind base;
 @tailwind components;
