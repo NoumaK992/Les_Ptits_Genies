@@ -1,0 +1,828 @@
+[
+  {
+    "id": "va1-001",
+    "phrase": "Le chat dort sur le canapé.",
+    "sens": true
+  },
+  {
+    "id": "va1-002",
+    "phrase": "Maman coupe le pain avec un couteau.",
+    "sens": true
+  },
+  {
+    "id": "va1-003",
+    "phrase": "Les oiseaux construisent un nid au printemps.",
+    "sens": true
+  },
+  {
+    "id": "va1-004",
+    "phrase": "Léo met ses bottes pour sortir sous la pluie.",
+    "sens": true
+  },
+  {
+    "id": "va1-005",
+    "phrase": "Le boulanger fait cuire le pain.",
+    "sens": true
+  },
+  {
+    "id": "va1-006",
+    "phrase": "Nous mangeons la soupe avec une cuillère.",
+    "sens": true
+  },
+  {
+    "id": "va1-007",
+    "phrase": "La lune brille dans le ciel la nuit.",
+    "sens": true
+  },
+  {
+    "id": "va1-008",
+    "phrase": "Le facteur apporte une lettre.",
+    "sens": true
+  },
+  {
+    "id": "va1-009",
+    "phrase": "Sami se brosse les dents le soir.",
+    "sens": true
+  },
+  {
+    "id": "va1-010",
+    "phrase": "Les poissons nagent dans la rivière.",
+    "sens": true
+  },
+  {
+    "id": "va1-011",
+    "phrase": "Il fait froid en hiver.",
+    "sens": true
+  },
+  {
+    "id": "va1-012",
+    "phrase": "Le pompier éteint le feu.",
+    "sens": true
+  },
+  {
+    "id": "va1-013",
+    "phrase": "Lina range ses livres sur l'étagère.",
+    "sens": true
+  },
+  {
+    "id": "va1-014",
+    "phrase": "La vache donne du lait.",
+    "sens": true
+  },
+  {
+    "id": "va1-015",
+    "phrase": "J'ouvre la porte avec une clé.",
+    "sens": true
+  },
+  {
+    "id": "va1-016",
+    "phrase": "Le train entre en gare.",
+    "sens": true
+  },
+  {
+    "id": "va1-017",
+    "phrase": "Les feuilles tombent en automne.",
+    "sens": true
+  },
+  {
+    "id": "va1-018",
+    "phrase": "Papa lave la voiture.",
+    "sens": true
+  },
+  {
+    "id": "va1-019",
+    "phrase": "Le bébé boit son biberon.",
+    "sens": true
+  },
+  {
+    "id": "va1-020",
+    "phrase": "Nous allons à la plage en été.",
+    "sens": true
+  },
+  {
+    "id": "va1-021",
+    "phrase": "Le médecin soigne les malades.",
+    "sens": true
+  },
+  {
+    "id": "va1-022",
+    "phrase": "La neige recouvre le jardin.",
+    "sens": true
+  },
+  {
+    "id": "va1-023",
+    "phrase": "Inès écrit avec un stylo bleu.",
+    "sens": true
+  },
+  {
+    "id": "va1-024",
+    "phrase": "Le cheval galope dans le pré.",
+    "sens": true
+  },
+  {
+    "id": "va1-025",
+    "phrase": "Le soleil se lève le matin.",
+    "sens": true
+  },
+  {
+    "id": "va1-026",
+    "phrase": "Tom joue au football avec ses amis.",
+    "sens": true
+  },
+  {
+    "id": "va1-027",
+    "phrase": "Le professeur corrige les copies.",
+    "sens": true
+  },
+  {
+    "id": "va1-028",
+    "phrase": "Les abeilles fabriquent du miel.",
+    "sens": true
+  },
+  {
+    "id": "va1-029",
+    "phrase": "Je mets du sucre dans mon chocolat.",
+    "sens": true
+  },
+  {
+    "id": "va1-030",
+    "phrase": "Le jardinier arrose les fleurs.",
+    "sens": true
+  },
+  {
+    "id": "va1-031",
+    "phrase": "Le chien aboie quand on sonne.",
+    "sens": true
+  },
+  {
+    "id": "va1-032",
+    "phrase": "Hugo lit une bande dessinée.",
+    "sens": true
+  },
+  {
+    "id": "va1-033",
+    "phrase": "Le lapin mange une carotte.",
+    "sens": true
+  },
+  {
+    "id": "va1-034",
+    "phrase": "Nous prenons le bus pour aller au collège.",
+    "sens": true
+  },
+  {
+    "id": "va1-035",
+    "phrase": "La grand-mère tricote une écharpe.",
+    "sens": true
+  },
+  {
+    "id": "va1-036",
+    "phrase": "Le pêcheur attrape un poisson.",
+    "sens": true
+  },
+  {
+    "id": "va1-037",
+    "phrase": "Il pleut, alors je prends mon parapluie.",
+    "sens": true
+  },
+  {
+    "id": "va1-038",
+    "phrase": "Le coiffeur coupe les cheveux.",
+    "sens": true
+  },
+  {
+    "id": "va1-039",
+    "phrase": "Les enfants font un bonhomme de neige.",
+    "sens": true
+  },
+  {
+    "id": "va1-040",
+    "phrase": "Le pilote fait décoller l'avion.",
+    "sens": true
+  },
+  {
+    "id": "va1-041",
+    "phrase": "Je dors dans mon lit.",
+    "sens": true
+  },
+  {
+    "id": "va1-042",
+    "phrase": "Le coq chante le matin.",
+    "sens": true
+  },
+  {
+    "id": "va1-043",
+    "phrase": "Emma porte un bonnet de laine.",
+    "sens": true
+  },
+  {
+    "id": "va1-044",
+    "phrase": "Le cuisinier prépare le repas.",
+    "sens": true
+  },
+  {
+    "id": "va1-045",
+    "phrase": "Le chat attrape une souris.",
+    "sens": true
+  },
+  {
+    "id": "va1-046",
+    "phrase": "Les élèves écoutent le professeur.",
+    "sens": true
+  },
+  {
+    "id": "va1-047",
+    "phrase": "Mon frère répare son vélo.",
+    "sens": true
+  },
+  {
+    "id": "va1-048",
+    "phrase": "La glace fond au soleil.",
+    "sens": true
+  },
+  {
+    "id": "va1-049",
+    "phrase": "Le mouton a une laine épaisse.",
+    "sens": true
+  },
+  {
+    "id": "va1-050",
+    "phrase": "Nina allume la lumière.",
+    "sens": true
+  },
+  {
+    "id": "va1-051",
+    "phrase": "Le serpent rampe dans l'herbe.",
+    "sens": true
+  },
+  {
+    "id": "va1-052",
+    "phrase": "Nous fêtons mon anniversaire samedi.",
+    "sens": true
+  },
+  {
+    "id": "va1-053",
+    "phrase": "La tortue avance lentement.",
+    "sens": true
+  },
+  {
+    "id": "va1-054",
+    "phrase": "Le vent fait voler les feuilles.",
+    "sens": true
+  },
+  {
+    "id": "va1-055",
+    "phrase": "Le gardien ferme le portail.",
+    "sens": true
+  },
+  {
+    "id": "va1-056",
+    "phrase": "Je mange une pomme rouge.",
+    "sens": true
+  },
+  {
+    "id": "va1-057",
+    "phrase": "Les grenouilles sautent dans la mare.",
+    "sens": true
+  },
+  {
+    "id": "va1-058",
+    "phrase": "Le boucher vend de la viande.",
+    "sens": true
+  },
+  {
+    "id": "va1-059",
+    "phrase": "Yanis enfile son manteau.",
+    "sens": true
+  },
+  {
+    "id": "va1-060",
+    "phrase": "L'eau de la mer est salée.",
+    "sens": true
+  },
+  {
+    "id": "va1-061",
+    "phrase": "Le chien remue la queue.",
+    "sens": true
+  },
+  {
+    "id": "va1-062",
+    "phrase": "On boit de l'eau quand on a soif.",
+    "sens": true
+  },
+  {
+    "id": "va1-063",
+    "phrase": "La fermière nourrit les poules.",
+    "sens": true
+  },
+  {
+    "id": "va1-064",
+    "phrase": "Le bateau navigue sur la mer.",
+    "sens": true
+  },
+  {
+    "id": "va1-065",
+    "phrase": "Ma sœur peint un tableau.",
+    "sens": true
+  },
+  {
+    "id": "va1-066",
+    "phrase": "Les étoiles brillent la nuit.",
+    "sens": true
+  },
+  {
+    "id": "va1-067",
+    "phrase": "Le vendeur rend la monnaie.",
+    "sens": true
+  },
+  {
+    "id": "va1-068",
+    "phrase": "Le marin hisse la voile.",
+    "sens": true
+  },
+  {
+    "id": "va1-069",
+    "phrase": "Adam se lave les mains avant de manger.",
+    "sens": true
+  },
+  {
+    "id": "va1-070",
+    "phrase": "Le hibou chasse la nuit.",
+    "sens": true
+  },
+  {
+    "id": "va1-071",
+    "phrase": "Le chien ronge un ours dans le jardin.",
+    "sens": false,
+    "motPiege": "ours",
+    "correction": "Le chien ronge un os dans le jardin."
+  },
+  {
+    "id": "va1-072",
+    "phrase": "Je bois un grand verre de lit.",
+    "sens": false,
+    "motPiege": "lit",
+    "correction": "Je bois un grand verre de lait."
+  },
+  {
+    "id": "va1-073",
+    "phrase": "La poule pond un bœuf dans le nid.",
+    "sens": false,
+    "motPiege": "bœuf",
+    "correction": "La poule pond un œuf dans le nid."
+  },
+  {
+    "id": "va1-074",
+    "phrase": "Le boulanger met le pain dans le fou.",
+    "sens": false,
+    "motPiege": "fou",
+    "correction": "Le boulanger met le pain dans le four."
+  },
+  {
+    "id": "va1-075",
+    "phrase": "Lucas se brosse les dindes.",
+    "sens": false,
+    "motPiege": "dindes",
+    "correction": "Lucas se brosse les dents."
+  },
+  {
+    "id": "va1-076",
+    "phrase": "La hache mange de l'herbe dans le pré.",
+    "sens": false,
+    "motPiege": "hache",
+    "correction": "La vache mange de l'herbe dans le pré."
+  },
+  {
+    "id": "va1-077",
+    "phrase": "Le soleil brille dans le miel.",
+    "sens": false,
+    "motPiege": "miel",
+    "correction": "Le soleil brille dans le ciel."
+  },
+  {
+    "id": "va1-078",
+    "phrase": "Le bébé boit son lac chaud.",
+    "sens": false,
+    "motPiege": "lac",
+    "correction": "Le bébé boit son lait chaud."
+  },
+  {
+    "id": "va1-079",
+    "phrase": "Le singe mange une cabane.",
+    "sens": false,
+    "motPiege": "cabane",
+    "correction": "Le singe mange une banane."
+  },
+  {
+    "id": "va1-080",
+    "phrase": "Je coupe la viande avec un château.",
+    "sens": false,
+    "motPiege": "château",
+    "correction": "Je coupe la viande avec un couteau."
+  },
+  {
+    "id": "va1-081",
+    "phrase": "Les ciseaux volent dans le ciel.",
+    "sens": false,
+    "motPiege": "ciseaux",
+    "correction": "Les oiseaux volent dans le ciel."
+  },
+  {
+    "id": "va1-082",
+    "phrase": "La souris mange du garage.",
+    "sens": false,
+    "motPiege": "garage",
+    "correction": "La souris mange du fromage."
+  },
+  {
+    "id": "va1-083",
+    "phrase": "Le marin monte sur son gâteau.",
+    "sens": false,
+    "motPiege": "gâteau",
+    "correction": "Le marin monte sur son bateau."
+  },
+  {
+    "id": "va1-084",
+    "phrase": "Je lis un lièvre dans mon lit.",
+    "sens": false,
+    "motPiege": "lièvre",
+    "correction": "Je lis un livre dans mon lit."
+  },
+  {
+    "id": "va1-085",
+    "phrase": "Papa conduit la confiture.",
+    "sens": false,
+    "motPiege": "confiture",
+    "correction": "Papa conduit la voiture."
+  },
+  {
+    "id": "va1-086",
+    "phrase": "Le jardinier plante des fleuves.",
+    "sens": false,
+    "motPiege": "fleuves",
+    "correction": "Le jardinier plante des fleurs."
+  },
+  {
+    "id": "va1-087",
+    "phrase": "Le sapin court dans le champ.",
+    "sens": false,
+    "motPiege": "sapin",
+    "correction": "Le lapin court dans le champ."
+  },
+  {
+    "id": "va1-088",
+    "phrase": "Il boit son jus d'orage.",
+    "sens": false,
+    "motPiege": "orage",
+    "correction": "Il boit son jus d'orange."
+  },
+  {
+    "id": "va1-089",
+    "phrase": "Il fait froid, Léo met son marteau.",
+    "sens": false,
+    "motPiege": "marteau",
+    "correction": "Il fait froid, Léo met son manteau."
+  },
+  {
+    "id": "va1-090",
+    "phrase": "Le professeur écrit au taureau.",
+    "sens": false,
+    "motPiege": "taureau",
+    "correction": "Le professeur écrit au tableau."
+  },
+  {
+    "id": "va1-091",
+    "phrase": "Les poissons nagent dans la mère.",
+    "sens": false,
+    "motPiege": "mère",
+    "correction": "Les poissons nagent dans la mer."
+  },
+  {
+    "id": "va1-092",
+    "phrase": "Elle dort dans son lion.",
+    "sens": false,
+    "motPiege": "lion",
+    "correction": "Elle dort dans son lit."
+  },
+  {
+    "id": "va1-093",
+    "phrase": "Le chien porte un collège.",
+    "sens": false,
+    "motPiege": "collège",
+    "correction": "Le chien porte un collier."
+  },
+  {
+    "id": "va1-094",
+    "phrase": "Mon grand-père a mal au dé.",
+    "sens": false,
+    "motPiege": "dé",
+    "correction": "Mon grand-père a mal au dos."
+  },
+  {
+    "id": "va1-095",
+    "phrase": "La fermière donne à manger aux pelles.",
+    "sens": false,
+    "motPiege": "pelles",
+    "correction": "La fermière donne à manger aux poules."
+  },
+  {
+    "id": "va1-096",
+    "phrase": "Je me lave avec du salon.",
+    "sens": false,
+    "motPiege": "salon",
+    "correction": "Je me lave avec du savon."
+  },
+  {
+    "id": "va1-097",
+    "phrase": "Il mange une loupe chaude.",
+    "sens": false,
+    "motPiege": "loupe",
+    "correction": "Il mange une soupe chaude."
+  },
+  {
+    "id": "va1-098",
+    "phrase": "Le roi porte une colonne.",
+    "sens": false,
+    "motPiege": "colonne",
+    "correction": "Le roi porte une couronne."
+  },
+  {
+    "id": "va1-099",
+    "phrase": "Le skieur descend la moutarde.",
+    "sens": false,
+    "motPiege": "moutarde",
+    "correction": "Le skieur descend la montagne."
+  },
+  {
+    "id": "va1-100",
+    "phrase": "Les vagues broutent dans le pré.",
+    "sens": false,
+    "motPiege": "vagues",
+    "correction": "Les vaches broutent dans le pré."
+  },
+  {
+    "id": "va1-101",
+    "phrase": "L'oignon vole au-dessus des nuages.",
+    "sens": false,
+    "motPiege": "oignon",
+    "correction": "L'avion vole au-dessus des nuages."
+  },
+  {
+    "id": "va1-102",
+    "phrase": "Je mets mes géants pour avoir chaud.",
+    "sens": false,
+    "motPiege": "géants",
+    "correction": "Je mets mes gants pour avoir chaud."
+  },
+  {
+    "id": "va1-103",
+    "phrase": "Sarah mange des chemises.",
+    "sens": false,
+    "motPiege": "chemises",
+    "correction": "Sarah mange des cerises."
+  },
+  {
+    "id": "va1-104",
+    "phrase": "Le banc souffle très fort.",
+    "sens": false,
+    "motPiege": "banc",
+    "correction": "Le vent souffle très fort."
+  },
+  {
+    "id": "va1-105",
+    "phrase": "Ma mère arrose les planètes.",
+    "sens": false,
+    "motPiege": "planètes",
+    "correction": "Ma mère arrose les plantes."
+  },
+  {
+    "id": "va1-106",
+    "phrase": "Chaque matin, le sac chante.",
+    "sens": false,
+    "motPiege": "sac",
+    "correction": "Chaque matin, le coq chante."
+  },
+  {
+    "id": "va1-107",
+    "phrase": "Le footballeur tape dans le balcon.",
+    "sens": false,
+    "motPiege": "balcon",
+    "correction": "Le footballeur tape dans le ballon."
+  },
+  {
+    "id": "va1-108",
+    "phrase": "La plume mouille mes cheveux.",
+    "sens": false,
+    "motPiege": "plume",
+    "correction": "La pluie mouille mes cheveux."
+  },
+  {
+    "id": "va1-109",
+    "phrase": "J'éteins la lame pour dormir.",
+    "sens": false,
+    "motPiege": "lame",
+    "correction": "J'éteins la lampe pour dormir."
+  },
+  {
+    "id": "va1-110",
+    "phrase": "Le buffet pleure dans son lit.",
+    "sens": false,
+    "motPiege": "buffet",
+    "correction": "Le bébé pleure dans son lit."
+  },
+  {
+    "id": "va1-111",
+    "phrase": "Je prends une bouche chaude.",
+    "sens": false,
+    "motPiege": "bouche",
+    "correction": "Je prends une douche chaude."
+  },
+  {
+    "id": "va1-112",
+    "phrase": "Le musicien joue du pneu.",
+    "sens": false,
+    "motPiege": "pneu",
+    "correction": "Le musicien joue du piano."
+  },
+  {
+    "id": "va1-113",
+    "phrase": "Les élèves écrivent dans leur caillou.",
+    "sens": false,
+    "motPiege": "caillou",
+    "correction": "Les élèves écrivent dans leur cahier."
+  },
+  {
+    "id": "va1-114",
+    "phrase": "Le chien dort dans sa mèche.",
+    "sens": false,
+    "motPiege": "mèche",
+    "correction": "Le chien dort dans sa niche."
+  },
+  {
+    "id": "va1-115",
+    "phrase": "Je mets la lettre dans l'antilope.",
+    "sens": false,
+    "motPiege": "antilope",
+    "correction": "Je mets la lettre dans l'enveloppe."
+  },
+  {
+    "id": "va1-116",
+    "phrase": "Le chat a quarante pattes.",
+    "sens": false,
+    "motPiege": "quarante",
+    "correction": "Le chat a quatre pattes."
+  },
+  {
+    "id": "va1-117",
+    "phrase": "La voiture roule sur la soupe.",
+    "sens": false,
+    "motPiege": "soupe",
+    "correction": "La voiture roule sur la route."
+  },
+  {
+    "id": "va1-118",
+    "phrase": "Le lit hurle dans la forêt.",
+    "sens": false,
+    "motPiege": "lit",
+    "correction": "Le loup hurle dans la forêt."
+  },
+  {
+    "id": "va1-119",
+    "phrase": "Léa fait du vélo dans le porc.",
+    "sens": false,
+    "motPiege": "porc",
+    "correction": "Léa fait du vélo dans le parc."
+  },
+  {
+    "id": "va1-120",
+    "phrase": "Le pharmacien vend des monuments.",
+    "sens": false,
+    "motPiege": "monuments",
+    "correction": "Le pharmacien vend des médicaments."
+  },
+  {
+    "id": "va1-121",
+    "phrase": "La crêpe sonne à midi.",
+    "sens": false,
+    "motPiege": "crêpe",
+    "correction": "La cloche sonne à midi."
+  },
+  {
+    "id": "va1-122",
+    "phrase": "Elle coupe du papier avec des oiseaux.",
+    "sens": false,
+    "motPiege": "oiseaux",
+    "correction": "Elle coupe du papier avec des ciseaux."
+  },
+  {
+    "id": "va1-123",
+    "phrase": "Le fermier conduit son tableau.",
+    "sens": false,
+    "motPiege": "tableau",
+    "correction": "Le fermier conduit son tracteur."
+  },
+  {
+    "id": "va1-124",
+    "phrase": "Les poules picorent des grues.",
+    "sens": false,
+    "motPiege": "grues",
+    "correction": "Les poules picorent des graines."
+  },
+  {
+    "id": "va1-125",
+    "phrase": "Je mets un poulet car j'ai froid.",
+    "sens": false,
+    "motPiege": "poulet",
+    "correction": "Je mets un pull car j'ai froid."
+  },
+  {
+    "id": "va1-126",
+    "phrase": "La balance nage dans l'océan.",
+    "sens": false,
+    "motPiege": "balance",
+    "correction": "La baleine nage dans l'océan."
+  },
+  {
+    "id": "va1-127",
+    "phrase": "Le chevalier monte sur son cheveu.",
+    "sens": false,
+    "motPiege": "cheveu",
+    "correction": "Le chevalier monte sur son cheval."
+  },
+  {
+    "id": "va1-128",
+    "phrase": "Je me mouche avec un moucheron.",
+    "sens": false,
+    "motPiege": "moucheron",
+    "correction": "Je me mouche avec un mouchoir."
+  },
+  {
+    "id": "va1-129",
+    "phrase": "Mon oncle pêche dans la cuisinière.",
+    "sens": false,
+    "motPiege": "cuisinière",
+    "correction": "Mon oncle pêche dans la rivière."
+  },
+  {
+    "id": "va1-130",
+    "phrase": "Le bouton broute l'herbe.",
+    "sens": false,
+    "motPiege": "bouton",
+    "correction": "Le mouton broute l'herbe."
+  },
+  {
+    "id": "va1-131",
+    "phrase": "Elle met ses chaussettes pour lire.",
+    "sens": false,
+    "motPiege": "chaussettes",
+    "correction": "Elle met ses lunettes pour lire."
+  },
+  {
+    "id": "va1-132",
+    "phrase": "Le château boit son lait.",
+    "sens": false,
+    "motPiege": "château",
+    "correction": "Le chaton boit son lait."
+  },
+  {
+    "id": "va1-133",
+    "phrase": "Nous jouons aux carottes.",
+    "sens": false,
+    "motPiege": "carottes",
+    "correction": "Nous jouons aux cartes."
+  },
+  {
+    "id": "va1-134",
+    "phrase": "L'oiseau fait son nez dans l'arbre.",
+    "sens": false,
+    "motPiege": "nez",
+    "correction": "L'oiseau fait son nid dans l'arbre."
+  },
+  {
+    "id": "va1-135",
+    "phrase": "Mon père boit un canapé chaud.",
+    "sens": false,
+    "motPiege": "canapé",
+    "correction": "Mon père boit un café chaud."
+  },
+  {
+    "id": "va1-136",
+    "phrase": "La tortue rentre sa tarte.",
+    "sens": false,
+    "motPiege": "tarte",
+    "correction": "La tortue rentre sa tête."
+  },
+  {
+    "id": "va1-137",
+    "phrase": "Je mange ma soupe avec une chaussure.",
+    "sens": false,
+    "motPiege": "chaussure",
+    "correction": "Je mange ma soupe avec une cuillère."
+  },
+  {
+    "id": "va1-138",
+    "phrase": "Le chien garde la saison.",
+    "sens": false,
+    "motPiege": "saison",
+    "correction": "Le chien garde la maison."
+  }
+]

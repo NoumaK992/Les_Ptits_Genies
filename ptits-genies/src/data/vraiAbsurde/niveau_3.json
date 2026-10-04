@@ -1,0 +1,825 @@
+[
+  {
+    "id": "va3-001",
+    "phrase": "Comme le magasin était fermé le dimanche, nous avons attendu le lundi matin pour acheter la peinture.",
+    "sens": true
+  },
+  {
+    "id": "va3-002",
+    "phrase": "Malik a révisé sa leçon toute la soirée, donc il a pu répondre facilement aux questions du contrôle.",
+    "sens": true
+  },
+  {
+    "id": "va3-003",
+    "phrase": "Bien qu'il ait plu toute la matinée, le match de football a pu commencer à l'heure prévue.",
+    "sens": true
+  },
+  {
+    "id": "va3-004",
+    "phrase": "Après avoir mangé une glace au chocolat, Lina s'est lavé les mains parce qu'elles étaient collantes.",
+    "sens": true
+  },
+  {
+    "id": "va3-005",
+    "phrase": "Le chat s'est réfugié sous l'armoire, car les enfants faisaient beaucoup de bruit dans la chambre.",
+    "sens": true
+  },
+  {
+    "id": "va3-006",
+    "phrase": "Comme la batterie de son téléphone était vide, Yanis a emprunté celui de sa sœur pour appeler sa mère.",
+    "sens": true
+  },
+  {
+    "id": "va3-007",
+    "phrase": "Pendant que les pompiers éteignaient l'incendie, les voisins attendaient dans la rue, loin des flammes.",
+    "sens": true
+  },
+  {
+    "id": "va3-008",
+    "phrase": "Nous avons pris nos parapluies ce matin, pourtant il n'a pas plu de toute la journée.",
+    "sens": true
+  },
+  {
+    "id": "va3-009",
+    "phrase": "Le boulanger se lève à quatre heures du matin afin que le pain soit prêt quand les clients arrivent.",
+    "sens": true
+  },
+  {
+    "id": "va3-010",
+    "phrase": "Inès avait oublié sa trousse à la maison, alors sa voisine de table lui a prêté un stylo.",
+    "sens": true
+  },
+  {
+    "id": "va3-011",
+    "phrase": "Avant de partir en vacances, la famille a fermé les volets et confié les clés à la gardienne.",
+    "sens": true
+  },
+  {
+    "id": "va3-012",
+    "phrase": "Le bébé s'est réveillé en pleurant parce que l'orage grondait très fort au-dessus de la maison.",
+    "sens": true
+  },
+  {
+    "id": "va3-013",
+    "phrase": "Puisque la rivière avait débordé, la route était fermée et les voitures devaient faire un détour.",
+    "sens": true
+  },
+  {
+    "id": "va3-014",
+    "phrase": "Hugo s'est entraîné tous les jours pendant un mois, et il a fini par gagner la course du collège.",
+    "sens": true
+  },
+  {
+    "id": "va3-015",
+    "phrase": "Bien que la soupe soit très chaude, Sami l'a mangée rapidement car il avait très faim.",
+    "sens": true
+  },
+  {
+    "id": "va3-016",
+    "phrase": "Quand la neige a commencé à fondre, les premières fleurs sont apparues dans le jardin de mes grands-parents.",
+    "sens": true
+  },
+  {
+    "id": "va3-017",
+    "phrase": "Comme il n'y avait plus de lait dans le frigo, Nora a pris son petit déjeuner avec un jus d'orange.",
+    "sens": true
+  },
+  {
+    "id": "va3-018",
+    "phrase": "Léo avait mis son réveil à sept heures, mais il s'est réveillé quelques minutes avant qu'il sonne.",
+    "sens": true
+  },
+  {
+    "id": "va3-019",
+    "phrase": "Les oiseaux migrateurs partent vers l'Afrique à l'automne et reviennent en Europe au printemps.",
+    "sens": true
+  },
+  {
+    "id": "va3-020",
+    "phrase": "Comme Emma est plus âgée que son frère Tom, c'est elle qui est née la première.",
+    "sens": true
+  },
+  {
+    "id": "va3-021",
+    "phrase": "Le gardien a fermé les portes du musée à dix-huit heures, après le départ des derniers visiteurs.",
+    "sens": true
+  },
+  {
+    "id": "va3-022",
+    "phrase": "Parce que la route était verglacée, le chauffeur du car a roulé très lentement jusqu'au collège.",
+    "sens": true
+  },
+  {
+    "id": "va3-023",
+    "phrase": "Adam a perdu son ballon dans le jardin des voisins, alors il a sonné chez eux pour le récupérer.",
+    "sens": true
+  },
+  {
+    "id": "va3-024",
+    "phrase": "La glace a fondu dans la voiture, car nous l'avions laissée au soleil pendant tout l'après-midi.",
+    "sens": true
+  },
+  {
+    "id": "va3-025",
+    "phrase": "Après la tempête, les habitants du village ont ramassé les branches qui étaient tombées sur la route.",
+    "sens": true
+  },
+  {
+    "id": "va3-026",
+    "phrase": "Le train avait vingt minutes de retard, si bien que Sofia a raté le début du film au cinéma.",
+    "sens": true
+  },
+  {
+    "id": "va3-027",
+    "phrase": "Même s'il n'aime pas les épinards, Lucas en a goûté un peu pour faire plaisir à sa grand-mère.",
+    "sens": true
+  },
+  {
+    "id": "va3-028",
+    "phrase": "Le chien attendait derrière la porte depuis une heure, et il a sauté de joie quand sa maîtresse est rentrée.",
+    "sens": true
+  },
+  {
+    "id": "va3-029",
+    "phrase": "Comme la nuit était tombée, les enfants ont allumé une lampe de poche pour retrouver le chemin.",
+    "sens": true
+  },
+  {
+    "id": "va3-030",
+    "phrase": "Le cuisinier a goûté la sauce, puis il a ajouté un peu de sel parce qu'elle manquait de goût.",
+    "sens": true
+  },
+  {
+    "id": "va3-031",
+    "phrase": "Nina, qui a peur des araignées, a appelé son père dès qu'elle en a vu une dans la baignoire.",
+    "sens": true
+  },
+  {
+    "id": "va3-032",
+    "phrase": "Les élèves ont planté des graines en mars, et les premières pousses sont sorties de terre quelques semaines plus tard.",
+    "sens": true
+  },
+  {
+    "id": "va3-033",
+    "phrase": "Le plombier est venu réparer la fuite, car l'eau coulait sous l'évier depuis la veille.",
+    "sens": true
+  },
+  {
+    "id": "va3-034",
+    "phrase": "Rayan s'est couché très tard hier soir, c'est pourquoi il bâille sans arrêt pendant le cours.",
+    "sens": true
+  },
+  {
+    "id": "va3-035",
+    "phrase": "La piscine était fermée pour travaux, donc nous sommes allés courir au parc à la place.",
+    "sens": true
+  },
+  {
+    "id": "va3-036",
+    "phrase": "Mamie a fêté ses quatre-vingts ans, et tous ses petits-enfants sont venus lui souhaiter son anniversaire.",
+    "sens": true
+  },
+  {
+    "id": "va3-037",
+    "phrase": "Puisque le dictionnaire était trop lourd à porter, Zoé l'a laissé dans son casier jusqu'au lendemain.",
+    "sens": true
+  },
+  {
+    "id": "va3-038",
+    "phrase": "Le facteur n'a pas pu livrer le colis, car personne n'était à la maison pour le recevoir.",
+    "sens": true
+  },
+  {
+    "id": "va3-039",
+    "phrase": "Après avoir couru le marathon, l'athlète était épuisé et il s'est assis pour boire de l'eau.",
+    "sens": true
+  },
+  {
+    "id": "va3-040",
+    "phrase": "Comme il faisait très chaud, les enfants se sont baignés dans le lac pour se rafraîchir.",
+    "sens": true
+  },
+  {
+    "id": "va3-041",
+    "phrase": "Le vase est tombé de la table et s'est cassé, alors papa a ramassé les morceaux avec précaution.",
+    "sens": true
+  },
+  {
+    "id": "va3-042",
+    "phrase": "Bien que Lou soit la plus petite de la classe, elle est la meilleure au saut en hauteur.",
+    "sens": true
+  },
+  {
+    "id": "va3-043",
+    "phrase": "Le spectacle devait commencer à vingt heures, mais il a débuté avec un quart d'heure de retard.",
+    "sens": true
+  },
+  {
+    "id": "va3-044",
+    "phrase": "Samir a économisé son argent de poche pendant des mois afin de s'acheter un nouveau vélo.",
+    "sens": true
+  },
+  {
+    "id": "va3-045",
+    "phrase": "Le directeur a annulé la sortie scolaire, parce que la météo annonçait une forte tempête pour la journée.",
+    "sens": true
+  },
+  {
+    "id": "va3-046",
+    "phrase": "Pendant l'hiver, l'ours dort dans sa tanière et ne se réveille qu'au retour du printemps.",
+    "sens": true
+  },
+  {
+    "id": "va3-047",
+    "phrase": "Le magasin offrait de grosses réductions, si bien que de nombreux clients faisaient la queue devant l'entrée.",
+    "sens": true
+  },
+  {
+    "id": "va3-048",
+    "phrase": "Quand Yasmine est arrivée à la gare, le train était déjà parti, alors elle a attendu le suivant.",
+    "sens": true
+  },
+  {
+    "id": "va3-049",
+    "phrase": "Mon frère a deux ans de plus que moi, donc il entrera au lycée avant moi.",
+    "sens": true
+  },
+  {
+    "id": "va3-050",
+    "phrase": "Le jardinier a cueilli les tomates qui étaient bien mûres, puis il les a rangées dans un panier.",
+    "sens": true
+  },
+  {
+    "id": "va3-051",
+    "phrase": "Comme Théo avait la grippe, le médecin lui a conseillé de rester au lit pendant plusieurs jours.",
+    "sens": true
+  },
+  {
+    "id": "va3-052",
+    "phrase": "Les supporters ont applaudi les joueurs à la fin du match, même si leur équipe avait perdu.",
+    "sens": true
+  },
+  {
+    "id": "va3-053",
+    "phrase": "Clara a éteint la télévision et elle est allée se coucher, car elle se levait tôt le lendemain.",
+    "sens": true
+  },
+  {
+    "id": "va3-054",
+    "phrase": "La boulangerie était déjà fermée quand nous sommes arrivés, alors nous avons acheté du pain au supermarché.",
+    "sens": true
+  },
+  {
+    "id": "va3-055",
+    "phrase": "Pour ne pas réveiller le bébé qui dormait, Malik a marché sur la pointe des pieds dans le couloir.",
+    "sens": true
+  },
+  {
+    "id": "va3-056",
+    "phrase": "Le lac avait gelé pendant la nuit, si bien que les canards marchaient sur la glace le matin.",
+    "sens": true
+  },
+  {
+    "id": "va3-057",
+    "phrase": "Avant de mettre le gâteau au four, la pâtissière a mélangé la farine, les œufs et le sucre.",
+    "sens": true
+  },
+  {
+    "id": "va3-058",
+    "phrase": "Comme le bus était plein, Hugo a dû rester debout pendant tout le trajet jusqu'au collège.",
+    "sens": true
+  },
+  {
+    "id": "va3-059",
+    "phrase": "Les touristes ont pris un taxi pour aller à l'aéroport, car leur avion décollait une heure plus tard.",
+    "sens": true
+  },
+  {
+    "id": "va3-060",
+    "phrase": "Bien qu'elle ait étudié l'anglais pendant trois ans, Léa avait du mal à comprendre le film sans sous-titres.",
+    "sens": true
+  },
+  {
+    "id": "va3-061",
+    "phrase": "Le vétérinaire a soigné la patte du chien, qui boitait depuis qu'il avait sauté du muret.",
+    "sens": true
+  },
+  {
+    "id": "va3-062",
+    "phrase": "Lorsque la cloche a sonné la fin du cours, les élèves ont rangé leurs affaires et sont sortis.",
+    "sens": true
+  },
+  {
+    "id": "va3-063",
+    "phrase": "Paul a laissé ses lunettes chez lui, donc il a eu du mal à lire ce qui était écrit au tableau.",
+    "sens": true
+  },
+  {
+    "id": "va3-064",
+    "phrase": "Les feuilles des arbres jaunissent en automne, puis elles tombent quand le vent souffle fort.",
+    "sens": true
+  },
+  {
+    "id": "va3-065",
+    "phrase": "Comme ma tante habite à l'étranger, nous lui envoyons des photos par message chaque semaine.",
+    "sens": true
+  },
+  {
+    "id": "va3-066",
+    "phrase": "La randonnée était longue et difficile, mais la vue depuis le sommet a récompensé tous nos efforts.",
+    "sens": true
+  },
+  {
+    "id": "va3-067",
+    "phrase": "Après avoir lu la recette, Inès a vérifié qu'elle avait tous les ingrédients avant de commencer.",
+    "sens": true
+  },
+  {
+    "id": "va3-068",
+    "phrase": "Puisque le stade était plein, les derniers supporters ont regardé le match sur un écran installé dehors.",
+    "sens": true
+  },
+  {
+    "id": "va3-069",
+    "phrase": "Comme il faisait très chaud, Sami a mis son gros manteau et son bonnet pour sortir.",
+    "sens": false,
+    "motPiege": "chaud",
+    "correction": "Comme il faisait très froid, Sami a mis son gros manteau et son bonnet pour sortir."
+  },
+  {
+    "id": "va3-070",
+    "phrase": "Mon grand-père est né après mon père, et il fête cette année ses soixante-dix ans.",
+    "sens": false,
+    "motPiege": "après",
+    "correction": "Mon grand-père est né avant mon père, et il fête cette année ses soixante-dix ans."
+  },
+  {
+    "id": "va3-071",
+    "phrase": "Parce que la piscine était vide, les nageurs ont plongé dans l'eau pour commencer la compétition.",
+    "sens": false,
+    "motPiege": "vide",
+    "correction": "Parce que la piscine était pleine, les nageurs ont plongé dans l'eau pour commencer la compétition."
+  },
+  {
+    "id": "va3-072",
+    "phrase": "Le match a commencé à quinze heures et s'est terminé à quatorze heures, après deux prolongations.",
+    "sens": false,
+    "motPiege": "quatorze",
+    "correction": "Le match a commencé à quinze heures et s'est terminé à dix-sept heures, après deux prolongations."
+  },
+  {
+    "id": "va3-073",
+    "phrase": "Yanis a perdu ses clés, donc il a ouvert la porte de chez lui avec ses clés.",
+    "sens": false,
+    "motPiege": "perdu",
+    "correction": "Yanis a retrouvé ses clés, donc il a ouvert la porte de chez lui avec ses clés."
+  },
+  {
+    "id": "va3-074",
+    "phrase": "Hier, nous étions mardi, donc aujourd'hui nous sommes lundi et j'ai cours le matin.",
+    "sens": false,
+    "motPiege": "lundi",
+    "correction": "Hier, nous étions mardi, donc aujourd'hui nous sommes mercredi et j'ai cours le matin."
+  },
+  {
+    "id": "va3-075",
+    "phrase": "Comme la bougie était éteinte, toute la pièce était éclairée par sa petite flamme.",
+    "sens": false,
+    "motPiege": "éteinte",
+    "correction": "Comme la bougie était allumée, toute la pièce était éclairée par sa petite flamme."
+  },
+  {
+    "id": "va3-076",
+    "phrase": "Léo est arrivé premier de la course, car il a couru plus lentement que tous les autres.",
+    "sens": false,
+    "motPiege": "lentement",
+    "correction": "Léo est arrivé premier de la course, car il a couru plus vite que tous les autres."
+  },
+  {
+    "id": "va3-077",
+    "phrase": "Inès est née en 2012 et sa sœur en 2015, donc sa sœur est plus âgée qu'Inès.",
+    "sens": false,
+    "motPiege": "âgée",
+    "correction": "Inès est née en 2012 et sa sœur en 2015, donc sa sœur est plus jeune qu'Inès."
+  },
+  {
+    "id": "va3-078",
+    "phrase": "Le pompier a éteint l'incendie avec de l'essence pour que les flammes disparaissent plus vite.",
+    "sens": false,
+    "motPiege": "essence",
+    "correction": "Le pompier a éteint l'incendie avec de l'eau pour que les flammes disparaissent plus vite."
+  },
+  {
+    "id": "va3-079",
+    "phrase": "Puisque le magasin était fermé, nous y avons acheté des fruits et des légumes pour le dîner.",
+    "sens": false,
+    "motPiege": "fermé",
+    "correction": "Puisque le magasin était ouvert, nous y avons acheté des fruits et des légumes pour le dîner."
+  },
+  {
+    "id": "va3-080",
+    "phrase": "Le soleil s'est couché à l'est, et la nuit est tombée peu de temps après.",
+    "sens": false,
+    "motPiege": "est",
+    "correction": "Le soleil s'est couché à l'ouest, et la nuit est tombée peu de temps après."
+  },
+  {
+    "id": "va3-081",
+    "phrase": "Lucas a lu ce livre de trois cents pages en une minute, puis il en a fait un résumé détaillé.",
+    "sens": false,
+    "motPiege": "minute",
+    "correction": "Lucas a lu ce livre de trois cents pages en une semaine, puis il en a fait un résumé détaillé."
+  },
+  {
+    "id": "va3-082",
+    "phrase": "Comme la route était bloquée par la neige, le car scolaire est arrivé en avance au collège.",
+    "sens": false,
+    "motPiege": "avance",
+    "correction": "Comme la route était bloquée par la neige, le car scolaire est arrivé en retard au collège."
+  },
+  {
+    "id": "va3-083",
+    "phrase": "Le lait était resté sur le feu trop longtemps, alors il a débordé de la casserole et il était glacé.",
+    "sens": false,
+    "motPiege": "glacé",
+    "correction": "Le lait était resté sur le feu trop longtemps, alors il a débordé de la casserole et il était brûlant."
+  },
+  {
+    "id": "va3-084",
+    "phrase": "Comme Adam avait perdu la voix, il a chanté une chanson devant toute la classe pendant la fête.",
+    "sens": false,
+    "motPiege": "perdu",
+    "correction": "Comme Adam avait retrouvé la voix, il a chanté une chanson devant toute la classe pendant la fête."
+  },
+  {
+    "id": "va3-085",
+    "phrase": "Nous sommes samedi aujourd'hui, donc demain ce sera vendredi et je n'aurai pas cours.",
+    "sens": false,
+    "motPiege": "vendredi",
+    "correction": "Nous sommes samedi aujourd'hui, donc demain ce sera dimanche et je n'aurai pas cours."
+  },
+  {
+    "id": "va3-086",
+    "phrase": "Comme Mila était très en avance, elle a couru jusqu'à l'arrêt pour ne pas rater son bus.",
+    "sens": false,
+    "motPiege": "avance",
+    "correction": "Comme Mila était très en retard, elle a couru jusqu'à l'arrêt pour ne pas rater son bus."
+  },
+  {
+    "id": "va3-087",
+    "phrase": "Après avoir pris sa douche, Hugo était tout sec, alors il s'est essuyé avec une serviette.",
+    "sens": false,
+    "motPiege": "sec",
+    "correction": "Après avoir pris sa douche, Hugo était tout mouillé, alors il s'est essuyé avec une serviette."
+  },
+  {
+    "id": "va3-088",
+    "phrase": "Le gâteau était sorti du four depuis une seconde, et il était déjà complètement froid.",
+    "sens": false,
+    "motPiege": "seconde",
+    "correction": "Le gâteau était sorti du four depuis une heure, et il était déjà complètement froid."
+  },
+  {
+    "id": "va3-089",
+    "phrase": "Pour ne pas avoir froid pendant la randonnée en montagne, Lou a enlevé son manteau et son écharpe.",
+    "sens": false,
+    "motPiege": "enlevé",
+    "correction": "Pour ne pas avoir froid pendant la randonnée en montagne, Lou a mis son manteau et son écharpe."
+  },
+  {
+    "id": "va3-090",
+    "phrase": "Dans ma famille, mon grand frère a quinze ans et ma petite sœur en a vingt, ce qui fait d'elle la plus jeune.",
+    "sens": false,
+    "motPiege": "vingt",
+    "correction": "Dans ma famille, mon grand frère a quinze ans et ma petite sœur en a dix, ce qui fait d'elle la plus jeune."
+  },
+  {
+    "id": "va3-091",
+    "phrase": "Comme ses chaussures étaient trop petites, Léo les a rapportées au magasin pour en prendre une pointure plus petite.",
+    "sens": false,
+    "motPiege": "petite",
+    "correction": "Comme ses chaussures étaient trop petites, Léo les a rapportées au magasin pour en prendre une pointure plus grande."
+  },
+  {
+    "id": "va3-092",
+    "phrase": "Comme la télévision était débranchée, nous avons regardé notre émission préférée toute la soirée.",
+    "sens": false,
+    "motPiege": "débranchée",
+    "correction": "Comme la télévision était réparée, nous avons regardé notre émission préférée toute la soirée."
+  },
+  {
+    "id": "va3-093",
+    "phrase": "Comme il avait cassé ses lunettes, Paul a lu le petit texte écrit au tableau beaucoup plus facilement.",
+    "sens": false,
+    "motPiege": "facilement",
+    "correction": "Comme il avait cassé ses lunettes, Paul a lu le petit texte écrit au tableau beaucoup plus difficilement."
+  },
+  {
+    "id": "va3-094",
+    "phrase": "Lina s'est brossé les dents avant de se réveiller, puis elle a pris son petit déjeuner dans la cuisine.",
+    "sens": false,
+    "motPiege": "réveiller",
+    "correction": "Lina s'est réveillée, puis elle s'est brossé les dents et elle a pris son petit déjeuner dans la cuisine."
+  },
+  {
+    "id": "va3-095",
+    "phrase": "Le boulanger a fait cuire le pain dans le four, puis il a mélangé la farine et l'eau pour préparer la pâte.",
+    "sens": false,
+    "motPiege": "puis",
+    "correction": "Le boulanger a mélangé la farine et l'eau pour préparer la pâte, puis il a fait cuire le pain dans le four."
+  },
+  {
+    "id": "va3-096",
+    "phrase": "Le chat de Nina est bien plus grand qu'elle, alors elle le porte facilement dans ses bras.",
+    "sens": false,
+    "motPiege": "grand",
+    "correction": "Le chat de Nina est tout petit, alors elle le porte facilement dans ses bras."
+  },
+  {
+    "id": "va3-097",
+    "phrase": "L'avion a atterri à Paris, puis il a décollé de Marseille pour commencer son voyage vers Paris.",
+    "sens": false,
+    "motPiege": "atterri",
+    "correction": "L'avion a décollé de Marseille, puis il a atterri à Paris à la fin de son voyage."
+  },
+  {
+    "id": "va3-098",
+    "phrase": "Les feuilles des arbres poussent en automne et tombent au printemps, quand il commence à faire chaud.",
+    "sens": false,
+    "motPiege": "automne",
+    "correction": "Les feuilles des arbres poussent au printemps et tombent en automne, quand il commence à faire froid."
+  },
+  {
+    "id": "va3-099",
+    "phrase": "Après avoir mangé tout son gâteau, Nora a soufflé les bougies qui étaient plantées dessus.",
+    "sens": false,
+    "motPiege": "Après",
+    "correction": "Avant de manger son gâteau, Nora a soufflé les bougies qui étaient plantées dessus."
+  },
+  {
+    "id": "va3-100",
+    "phrase": "Comme il n'avait pas de monnaie, Hugo a payé sa baguette avec les pièces qu'il avait dans sa poche.",
+    "sens": false,
+    "motPiege": "pas",
+    "correction": "Comme il avait de la monnaie, Hugo a payé sa baguette avec les pièces qu'il avait dans sa poche."
+  },
+  {
+    "id": "va3-101",
+    "phrase": "Le bébé dormait profondément, donc il pleurait très fort dans son berceau depuis une heure.",
+    "sens": false,
+    "motPiege": "dormait",
+    "correction": "Le bébé avait faim, donc il pleurait très fort dans son berceau depuis une heure."
+  },
+  {
+    "id": "va3-102",
+    "phrase": "Le réveil a sonné à sept heures, alors Rayan s'est levé à six heures pour éteindre la sonnerie.",
+    "sens": false,
+    "motPiege": "six",
+    "correction": "Le réveil a sonné à sept heures, alors Rayan s'est levé tout de suite pour éteindre la sonnerie."
+  },
+  {
+    "id": "va3-103",
+    "phrase": "Comme le frigo était en panne, le beurre est resté bien dur pendant toute la journée de canicule.",
+    "sens": false,
+    "motPiege": "dur",
+    "correction": "Comme le frigo était en panne, le beurre est devenu tout mou pendant toute la journée de canicule."
+  },
+  {
+    "id": "va3-104",
+    "phrase": "Pendant que le bébé dormait, toute la famille a crié et chanté pour ne pas le réveiller.",
+    "sens": false,
+    "motPiege": "crié",
+    "correction": "Pendant que le bébé dormait, toute la famille a parlé tout bas pour ne pas le réveiller."
+  },
+  {
+    "id": "va3-105",
+    "phrase": "Le gardien a fermé le musée à clé, puis les visiteurs sont entrés pour admirer les tableaux.",
+    "sens": false,
+    "motPiege": "fermé",
+    "correction": "Le gardien a ouvert les portes du musée, puis les visiteurs sont entrés pour admirer les tableaux."
+  },
+  {
+    "id": "va3-106",
+    "phrase": "Mon cousin habite au rez-de-chaussée, donc il prend l'ascenseur pour monter jusqu'au dixième étage chez lui.",
+    "sens": false,
+    "motPiege": "rez-de-chaussée",
+    "correction": "Mon cousin habite au dixième étage, donc il prend l'ascenseur pour monter jusque chez lui."
+  },
+  {
+    "id": "va3-107",
+    "phrase": "Le verre est tombé par terre et s'est cassé en mille morceaux, alors maman l'a rempli d'eau pour boire.",
+    "sens": false,
+    "motPiege": "rempli",
+    "correction": "Le verre est tombé par terre et s'est cassé en mille morceaux, alors maman a ramassé les morceaux avec un balai."
+  },
+  {
+    "id": "va3-108",
+    "phrase": "Le chocolat a fondu parce que nous l'avions rangé dans le congélateur pendant tout l'été.",
+    "sens": false,
+    "motPiege": "congélateur",
+    "correction": "Le chocolat a fondu parce que nous l'avions laissé au soleil pendant tout l'après-midi."
+  },
+  {
+    "id": "va3-109",
+    "phrase": "Les spectateurs sont arrivés au cinéma une heure après la fin du film, juste à temps pour voir le début.",
+    "sens": false,
+    "motPiege": "fin",
+    "correction": "Les spectateurs sont arrivés au cinéma dix minutes avant le film, juste à temps pour voir le début."
+  },
+  {
+    "id": "va3-110",
+    "phrase": "Pour éclairer la pièce sombre, Paul a éteint toutes les lampes et il a fermé les rideaux.",
+    "sens": false,
+    "motPiege": "éteint",
+    "correction": "Pour éclairer la pièce sombre, Paul a allumé toutes les lampes et il a ouvert les rideaux."
+  },
+  {
+    "id": "va3-111",
+    "phrase": "La maison de mes grands-parents est très ancienne, car elle a été construite l'année dernière.",
+    "sens": false,
+    "motPiege": "dernière",
+    "correction": "La maison de mes grands-parents est très ancienne, car elle a été construite il y a deux cents ans."
+  },
+  {
+    "id": "va3-112",
+    "phrase": "Le coureur a franchi la ligne d'arrivée avant même que le départ de la course soit donné.",
+    "sens": false,
+    "motPiege": "avant",
+    "correction": "Le coureur a franchi la ligne d'arrivée une heure après le départ de la course."
+  },
+  {
+    "id": "va3-113",
+    "phrase": "Puisqu'il pleuvait à verse, nous avons étendu le linge dehors pour qu'il sèche plus vite.",
+    "sens": false,
+    "motPiege": "pleuvait",
+    "correction": "Puisqu'il faisait beau et chaud, nous avons étendu le linge dehors pour qu'il sèche plus vite."
+  },
+  {
+    "id": "va3-114",
+    "phrase": "Le petit frère de Noé a cinq ans, alors il conduit lui-même la voiture pour aller à l'école.",
+    "sens": false,
+    "motPiege": "conduit",
+    "correction": "Le petit frère de Noé a cinq ans, alors ses parents l'emmènent en voiture à l'école."
+  },
+  {
+    "id": "va3-115",
+    "phrase": "La lampe ne marchait plus parce que l'ampoule était grillée, donc la pièce était bien éclairée.",
+    "sens": false,
+    "motPiege": "éclairée",
+    "correction": "La lampe ne marchait plus parce que l'ampoule était grillée, donc la pièce était plongée dans le noir."
+  },
+  {
+    "id": "va3-116",
+    "phrase": "Le magasin de jouets était plein de monde, si bien qu'il n'y avait personne dans les rayons.",
+    "sens": false,
+    "motPiege": "personne",
+    "correction": "Le magasin de jouets était plein de monde, si bien qu'on avait du mal à circuler dans les rayons."
+  },
+  {
+    "id": "va3-117",
+    "phrase": "Le soleil brillait si fort que les enfants ont allumé une lampe de poche pour voir où ils marchaient.",
+    "sens": false,
+    "motPiege": "soleil",
+    "correction": "Il faisait si noir que les enfants ont allumé une lampe de poche pour voir où ils marchaient."
+  },
+  {
+    "id": "va3-118",
+    "phrase": "Quand Léa a ouvert le cadeau, elle a découvert un vélo qui tenait dans une petite boîte d'allumettes.",
+    "sens": false,
+    "motPiege": "vélo",
+    "correction": "Quand Léa a ouvert le cadeau, elle a découvert une bague qui tenait dans une petite boîte d'allumettes."
+  },
+  {
+    "id": "va3-119",
+    "phrase": "Comme son téléphone était chargé à cent pour cent, Sami a dû le brancher tout de suite pour pouvoir appeler.",
+    "sens": false,
+    "motPiege": "chargé",
+    "correction": "Comme la batterie de son téléphone était presque vide, Sami a dû le brancher tout de suite pour pouvoir appeler."
+  },
+  {
+    "id": "va3-120",
+    "phrase": "Pendant la nuit, les étoiles brillaient dans le ciel, et le soleil était au plus haut au-dessus de nos têtes.",
+    "sens": false,
+    "motPiege": "soleil",
+    "correction": "Pendant la nuit, les étoiles brillaient dans le ciel, et la lune était au plus haut au-dessus de nos têtes."
+  },
+  {
+    "id": "va3-121",
+    "phrase": "Les élèves ont rendu leur copie avant que le professeur ait distribué le sujet du contrôle.",
+    "sens": false,
+    "motPiege": "avant",
+    "correction": "Les élèves ont rendu leur copie une heure après que le professeur a distribué le sujet du contrôle."
+  },
+  {
+    "id": "va3-122",
+    "phrase": "La rivière est complètement à sec cet été, alors les enfants y font du bateau tous les jours.",
+    "sens": false,
+    "motPiege": "sec",
+    "correction": "La rivière est remplie d'eau cet été, alors les enfants y font du bateau tous les jours."
+  },
+  {
+    "id": "va3-123",
+    "phrase": "Comme Inès habite juste en face du collège, elle doit prendre deux bus et un train chaque matin.",
+    "sens": false,
+    "motPiege": "face",
+    "correction": "Comme Inès habite loin du collège, elle doit prendre deux bus et un train chaque matin."
+  },
+  {
+    "id": "va3-124",
+    "phrase": "La neige a fondu au soleil, si bien que les enfants ont pu faire un énorme bonhomme de neige.",
+    "sens": false,
+    "motPiege": "fondu",
+    "correction": "Il a neigé toute la nuit, si bien que les enfants ont pu faire un énorme bonhomme de neige."
+  },
+  {
+    "id": "va3-125",
+    "phrase": "Le chat avait tellement peur de l'eau qu'il a plongé dans la piscine pour aller jouer avec les enfants.",
+    "sens": false,
+    "motPiege": "peur",
+    "correction": "Le chien adorait tellement l'eau qu'il a plongé dans la piscine pour aller jouer avec les enfants."
+  },
+  {
+    "id": "va3-126",
+    "phrase": "Le pilote a fait atterrir l'avion au milieu de l'océan, sur la piste de l'aéroport de Lyon.",
+    "sens": false,
+    "motPiege": "océan",
+    "correction": "Le pilote a fait atterrir l'avion à l'heure prévue, sur la piste de l'aéroport de Lyon."
+  },
+  {
+    "id": "va3-127",
+    "phrase": "Comme elle avait beaucoup de devoirs, Lina a fini tout son travail en cinq secondes avant d'aller jouer.",
+    "sens": false,
+    "motPiege": "secondes",
+    "correction": "Comme elle avait beaucoup de devoirs, Lina a fini tout son travail en deux heures avant d'aller jouer."
+  },
+  {
+    "id": "va3-128",
+    "phrase": "Le marchand de glaces vend beaucoup plus de cornets en hiver qu'en été, parce qu'il fait froid.",
+    "sens": false,
+    "motPiege": "hiver",
+    "correction": "Le marchand de glaces vend beaucoup plus de cornets en été qu'en hiver, parce qu'il fait chaud."
+  },
+  {
+    "id": "va3-129",
+    "phrase": "Adam a planté une graine de tomate le matin, et le soir même il a récolté des tomates bien mûres.",
+    "sens": false,
+    "motPiege": "soir",
+    "correction": "Adam a planté une graine de tomate au printemps, et trois mois plus tard il a récolté des tomates bien mûres."
+  },
+  {
+    "id": "va3-130",
+    "phrase": "Après avoir écrit la lettre, Mamie l'a mise dans l'enveloppe, puis elle a acheté du papier pour l'écrire.",
+    "sens": false,
+    "motPiege": "acheté",
+    "correction": "Mamie a acheté du papier, puis elle a écrit la lettre et elle l'a mise dans l'enveloppe."
+  },
+  {
+    "id": "va3-131",
+    "phrase": "Comme Samir est allergique aux poils de chat, il a adopté trois chatons pour aller mieux.",
+    "sens": false,
+    "motPiege": "adopté",
+    "correction": "Comme Samir est allergique aux poils de chat, il évite d'aller chez les gens qui ont des chats."
+  },
+  {
+    "id": "va3-132",
+    "phrase": "Le thermomètre indiquait moins dix degrés, alors nous sommes sortis en short et en tee-shirt.",
+    "sens": false,
+    "motPiege": "moins",
+    "correction": "Le thermomètre indiquait trente degrés, alors nous sommes sortis en short et en tee-shirt."
+  },
+  {
+    "id": "va3-133",
+    "phrase": "La boulangerie ouvre à sept heures, donc Paul est venu à six heures pour acheter son pain tout de suite.",
+    "sens": false,
+    "motPiege": "six",
+    "correction": "La boulangerie ouvre à sept heures, donc Paul est venu à sept heures et quart pour acheter son pain."
+  },
+  {
+    "id": "va3-134",
+    "phrase": "Le dernier jour des vacances, nous sommes partis en voyage, et le premier jour nous sommes rentrés à la maison.",
+    "sens": false,
+    "motPiege": "dernier",
+    "correction": "Le premier jour des vacances, nous sommes partis en voyage, et le dernier jour nous sommes rentrés à la maison."
+  },
+  {
+    "id": "va3-135",
+    "phrase": "Les élèves de sixième sont plus âgés que les élèves de troisième, car ils sont arrivés au collège avant eux.",
+    "sens": false,
+    "motPiege": "sixième",
+    "correction": "Les élèves de troisième sont plus âgés que les élèves de sixième, car ils sont arrivés au collège avant eux."
+  },
+  {
+    "id": "va3-136",
+    "phrase": "Nous avons mangé la pizza encore toute chaude, deux heures après l'avoir mise au congélateur.",
+    "sens": false,
+    "motPiege": "congélateur",
+    "correction": "Nous avons mangé la pizza encore toute chaude, deux minutes après l'avoir sortie du four."
+  },
+  {
+    "id": "va3-137",
+    "phrase": "Devant une salle pleine, le chanteur a chanté pendant tout le concert sans jamais ouvrir la bouche.",
+    "sens": false,
+    "motPiege": "bouche",
+    "correction": "Devant une salle pleine, le chanteur a chanté pendant tout le concert sans jamais s'arrêter."
+  }
+]

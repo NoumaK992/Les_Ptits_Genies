@@ -1,0 +1,816 @@
+[
+  {
+    "id": "va2-001",
+    "phrase": "Quand la nuit tombe, Inès allume la lampe de sa chambre pour lire.",
+    "sens": true
+  },
+  {
+    "id": "va2-002",
+    "phrase": "Le chat se cache sous le lit dès qu'il entend l'aspirateur.",
+    "sens": true
+  },
+  {
+    "id": "va2-003",
+    "phrase": "Comme il pleuvait, nous avons joué aux cartes dans le salon.",
+    "sens": true
+  },
+  {
+    "id": "va2-004",
+    "phrase": "Lorsque le réveil sonne, Malik se lève et ouvre les volets.",
+    "sens": true
+  },
+  {
+    "id": "va2-005",
+    "phrase": "Le boulanger qui habite au coin de la rue ouvre à sept heures.",
+    "sens": true
+  },
+  {
+    "id": "va2-006",
+    "phrase": "Si tu as soif, tu peux prendre une bouteille d'eau dans le frigo.",
+    "sens": true
+  },
+  {
+    "id": "va2-007",
+    "phrase": "Les hirondelles partent vers le sud quand l'automne arrive.",
+    "sens": true
+  },
+  {
+    "id": "va2-008",
+    "phrase": "Pendant que maman prépare le dîner, je mets la table.",
+    "sens": true
+  },
+  {
+    "id": "va2-009",
+    "phrase": "Le garçon qui a perdu son chien colle des affiches dans le quartier.",
+    "sens": true
+  },
+  {
+    "id": "va2-010",
+    "phrase": "Nous avons mis nos bottes parce que le chemin était boueux.",
+    "sens": true
+  },
+  {
+    "id": "va2-011",
+    "phrase": "Quand l'eau bout, on peut y plonger les pâtes.",
+    "sens": true
+  },
+  {
+    "id": "va2-012",
+    "phrase": "La voisine arrose ses tomates le soir pour qu'elles ne sèchent pas.",
+    "sens": true
+  },
+  {
+    "id": "va2-013",
+    "phrase": "Le gardien ferme les grilles du parc lorsque la nuit tombe.",
+    "sens": true
+  },
+  {
+    "id": "va2-014",
+    "phrase": "Comme il avait faim, Lucas a mangé deux tartines de confiture.",
+    "sens": true
+  },
+  {
+    "id": "va2-015",
+    "phrase": "Le livre que tu m'as prêté parle d'un dragon et d'un chevalier.",
+    "sens": true
+  },
+  {
+    "id": "va2-016",
+    "phrase": "Avant de traverser la rue, il faut regarder à gauche et à droite.",
+    "sens": true
+  },
+  {
+    "id": "va2-017",
+    "phrase": "Les élèves sortent en récréation dès que la sonnerie retentit.",
+    "sens": true
+  },
+  {
+    "id": "va2-018",
+    "phrase": "Ma grand-mère porte des lunettes pour lire le journal.",
+    "sens": true
+  },
+  {
+    "id": "va2-019",
+    "phrase": "Quand il neige, les enfants font des glissades dans la cour.",
+    "sens": true
+  },
+  {
+    "id": "va2-020",
+    "phrase": "Le chien attend devant la porte jusqu'à ce que son maître rentre.",
+    "sens": true
+  },
+  {
+    "id": "va2-021",
+    "phrase": "Le vétérinaire soigne le chat qui s'est blessé à la patte.",
+    "sens": true
+  },
+  {
+    "id": "va2-022",
+    "phrase": "Puisque le bus était en retard, nous sommes arrivés après la sonnerie.",
+    "sens": true
+  },
+  {
+    "id": "va2-023",
+    "phrase": "Le cuisinier goûte la sauce avant de la servir aux clients.",
+    "sens": true
+  },
+  {
+    "id": "va2-024",
+    "phrase": "Elle a mis un pansement sur son genou parce qu'elle était tombée.",
+    "sens": true
+  },
+  {
+    "id": "va2-025",
+    "phrase": "Les touristes prennent des photos du château qui domine la ville.",
+    "sens": true
+  },
+  {
+    "id": "va2-026",
+    "phrase": "Si le ciel reste clair, nous verrons les étoiles cette nuit.",
+    "sens": true
+  },
+  {
+    "id": "va2-027",
+    "phrase": "Le facteur glisse les lettres dans la boîte que nous avons repeinte.",
+    "sens": true
+  },
+  {
+    "id": "va2-028",
+    "phrase": "Quand les feuilles tombent, le jardinier les ramasse avec un râteau.",
+    "sens": true
+  },
+  {
+    "id": "va2-029",
+    "phrase": "Mon frère range son vélo dans le garage après chaque balade.",
+    "sens": true
+  },
+  {
+    "id": "va2-030",
+    "phrase": "Lorsque le match commence, les supporters chantent dans les tribunes.",
+    "sens": true
+  },
+  {
+    "id": "va2-031",
+    "phrase": "Le pompier grimpe à l'échelle pour sauver le chat coincé sur le toit.",
+    "sens": true
+  },
+  {
+    "id": "va2-032",
+    "phrase": "Nous avons acheté des fraises au marché qui a lieu le samedi.",
+    "sens": true
+  },
+  {
+    "id": "va2-033",
+    "phrase": "Comme la pièce était sombre, Sofia a ouvert les rideaux.",
+    "sens": true
+  },
+  {
+    "id": "va2-034",
+    "phrase": "Les abeilles butinent les fleurs que mon père a plantées.",
+    "sens": true
+  },
+  {
+    "id": "va2-035",
+    "phrase": "Il porte un casque quand il fait du vélo sur la route.",
+    "sens": true
+  },
+  {
+    "id": "va2-036",
+    "phrase": "La boulangère emballe le gâteau que nous avons commandé.",
+    "sens": true
+  },
+  {
+    "id": "va2-037",
+    "phrase": "Quand la batterie est vide, il faut recharger le téléphone.",
+    "sens": true
+  },
+  {
+    "id": "va2-038",
+    "phrase": "Le petit frère de Yanis pleure parce qu'il a perdu son doudou.",
+    "sens": true
+  },
+  {
+    "id": "va2-039",
+    "phrase": "Les pêcheurs rentrent au port quand la mer devient trop agitée.",
+    "sens": true
+  },
+  {
+    "id": "va2-040",
+    "phrase": "J'ai mis un bonnet car le vent soufflait très fort ce matin.",
+    "sens": true
+  },
+  {
+    "id": "va2-041",
+    "phrase": "La bibliothécaire range les livres que les élèves ont rendus.",
+    "sens": true
+  },
+  {
+    "id": "va2-042",
+    "phrase": "Le train ralentit avant d'entrer dans la gare de la ville.",
+    "sens": true
+  },
+  {
+    "id": "va2-043",
+    "phrase": "Après avoir couru, Hugo boit un grand verre d'eau.",
+    "sens": true
+  },
+  {
+    "id": "va2-044",
+    "phrase": "Le chat ronronne quand on le caresse derrière les oreilles.",
+    "sens": true
+  },
+  {
+    "id": "va2-045",
+    "phrase": "La glace que j'ai achetée fond vite à cause de la chaleur.",
+    "sens": true
+  },
+  {
+    "id": "va2-046",
+    "phrase": "Le professeur explique la leçon pendant que les élèves prennent des notes.",
+    "sens": true
+  },
+  {
+    "id": "va2-047",
+    "phrase": "Les vaches rentrent à l'étable quand le soir arrive.",
+    "sens": true
+  },
+  {
+    "id": "va2-048",
+    "phrase": "Comme elle avait oublié sa clé, Léa a sonné chez la voisine.",
+    "sens": true
+  },
+  {
+    "id": "va2-049",
+    "phrase": "Le pilote annonce que l'avion va bientôt atterrir.",
+    "sens": true
+  },
+  {
+    "id": "va2-050",
+    "phrase": "On utilise un parapluie pour se protéger quand il pleut.",
+    "sens": true
+  },
+  {
+    "id": "va2-051",
+    "phrase": "L'écureuil cache des noisettes qu'il mangera pendant l'hiver.",
+    "sens": true
+  },
+  {
+    "id": "va2-052",
+    "phrase": "Le magasin ferme tôt le dimanche parce que les employés se reposent.",
+    "sens": true
+  },
+  {
+    "id": "va2-053",
+    "phrase": "Je me suis lavé les mains avant de passer à table.",
+    "sens": true
+  },
+  {
+    "id": "va2-054",
+    "phrase": "Quand le feu passe au rouge, les voitures s'arrêtent.",
+    "sens": true
+  },
+  {
+    "id": "va2-055",
+    "phrase": "La fermière ramasse les œufs que les poules ont pondus.",
+    "sens": true
+  },
+  {
+    "id": "va2-056",
+    "phrase": "Mon cousin, qui vit à la montagne, fait du ski chaque hiver.",
+    "sens": true
+  },
+  {
+    "id": "va2-057",
+    "phrase": "Les plantes ont besoin d'eau et de lumière pour pousser.",
+    "sens": true
+  },
+  {
+    "id": "va2-058",
+    "phrase": "Le serveur apporte les assiettes que le cuisinier a préparées.",
+    "sens": true
+  },
+  {
+    "id": "va2-059",
+    "phrase": "Comme il était fatigué, Adam s'est couché tôt.",
+    "sens": true
+  },
+  {
+    "id": "va2-060",
+    "phrase": "Les enfants construisent un château de sable pendant que la mer monte.",
+    "sens": true
+  },
+  {
+    "id": "va2-061",
+    "phrase": "Le dentiste a dit à Nina de se brosser les dents après chaque repas.",
+    "sens": true
+  },
+  {
+    "id": "va2-062",
+    "phrase": "Quand le soleil se couche, le ciel devient orange.",
+    "sens": true
+  },
+  {
+    "id": "va2-063",
+    "phrase": "Le maçon construit le mur de la maison avec des briques.",
+    "sens": true
+  },
+  {
+    "id": "va2-064",
+    "phrase": "Je prends mon maillot de bain parce que nous allons à la piscine.",
+    "sens": true
+  },
+  {
+    "id": "va2-065",
+    "phrase": "La chouette sort de son nid quand il fait nuit.",
+    "sens": true
+  },
+  {
+    "id": "va2-066",
+    "phrase": "Le marchand pèse les pommes avant de les mettre dans un sac.",
+    "sens": true
+  },
+  {
+    "id": "va2-067",
+    "phrase": "Les spectateurs applaudissent lorsque le rideau tombe.",
+    "sens": true
+  },
+  {
+    "id": "va2-068",
+    "phrase": "Elle a rangé ses chaussures dans le placard qui est près de l'entrée.",
+    "sens": true
+  },
+  {
+    "id": "va2-069",
+    "phrase": "Le chauffeur du bus attend que tous les élèves soient assis.",
+    "sens": true
+  },
+  {
+    "id": "va2-070",
+    "phrase": "Quand il fait froid, Malik met une écharpe autour de son coup.",
+    "sens": false,
+    "motPiege": "coup",
+    "correction": "Quand il fait froid, Malik met une écharpe autour de son cou."
+  },
+  {
+    "id": "va2-071",
+    "phrase": "Les élèves lèvent le droit quand ils veulent répondre à une question.",
+    "sens": false,
+    "motPiege": "droit",
+    "correction": "Les élèves lèvent le doigt quand ils veulent répondre à une question."
+  },
+  {
+    "id": "va2-072",
+    "phrase": "Quand la sonnerie retentit, les élèves rangent leurs affaires dans leur cartouche.",
+    "sens": false,
+    "motPiege": "cartouche",
+    "correction": "Quand la sonnerie retentit, les élèves rangent leurs affaires dans leur cartable."
+  },
+  {
+    "id": "va2-073",
+    "phrase": "Le jardinier arrose les soldats qui poussent dans le potager.",
+    "sens": false,
+    "motPiege": "soldats",
+    "correction": "Le jardinier arrose les salades qui poussent dans le potager."
+  },
+  {
+    "id": "va2-074",
+    "phrase": "Lorsque la nuit tombe, les chauves-souris sortent de la carotte.",
+    "sens": false,
+    "motPiege": "carotte",
+    "correction": "Lorsque la nuit tombe, les chauves-souris sortent de la grotte."
+  },
+  {
+    "id": "va2-075",
+    "phrase": "Le médecin examine la forge de Lina qui tousse depuis hier.",
+    "sens": false,
+    "motPiege": "forge",
+    "correction": "Le médecin examine la gorge de Lina qui tousse depuis hier."
+  },
+  {
+    "id": "va2-076",
+    "phrase": "Comme il avait soif, Yanis a bu un grand verre de jupe.",
+    "sens": false,
+    "motPiege": "jupe",
+    "correction": "Comme il avait soif, Yanis a bu un grand verre de jus."
+  },
+  {
+    "id": "va2-077",
+    "phrase": "Nous avons pris le train qui part de la mare à huit heures.",
+    "sens": false,
+    "motPiege": "mare",
+    "correction": "Nous avons pris le train qui part de la gare à huit heures."
+  },
+  {
+    "id": "va2-078",
+    "phrase": "Le boulanger pétrit la pâte pour fabriquer le pin.",
+    "sens": false,
+    "motPiege": "pin",
+    "correction": "Le boulanger pétrit la pâte pour fabriquer le pain."
+  },
+  {
+    "id": "va2-079",
+    "phrase": "L'enfant qui s'est coupé au doigt met un paquebot.",
+    "sens": false,
+    "motPiege": "paquebot",
+    "correction": "L'enfant qui s'est coupé au doigt met un pansement."
+  },
+  {
+    "id": "va2-080",
+    "phrase": "Les touristes visitent le museau qui se trouve près de la cathédrale.",
+    "sens": false,
+    "motPiege": "museau",
+    "correction": "Les touristes visitent le musée qui se trouve près de la cathédrale."
+  },
+  {
+    "id": "va2-081",
+    "phrase": "Après le repas, papa fait la vaisselle avec une épingle.",
+    "sens": false,
+    "motPiege": "épingle",
+    "correction": "Après le repas, papa fait la vaisselle avec une éponge."
+  },
+  {
+    "id": "va2-082",
+    "phrase": "Comme il fait chaud, nous mangeons une place à la vanille.",
+    "sens": false,
+    "motPiege": "place",
+    "correction": "Comme il fait chaud, nous mangeons une glace à la vanille."
+  },
+  {
+    "id": "va2-083",
+    "phrase": "Le garçon range ses jouets dans le chiffre qui est sous son lit.",
+    "sens": false,
+    "motPiege": "chiffre",
+    "correction": "Le garçon range ses jouets dans le coffre qui est sous son lit."
+  },
+  {
+    "id": "va2-084",
+    "phrase": "Quand elle a froid, Inès met ses gants et son bouchon.",
+    "sens": false,
+    "motPiege": "bouchon",
+    "correction": "Quand elle a froid, Inès met ses gants et son bonnet."
+  },
+  {
+    "id": "va2-085",
+    "phrase": "L'oiseau construit son nid avec des brioches qu'il trouve par terre.",
+    "sens": false,
+    "motPiege": "brioches",
+    "correction": "L'oiseau construit son nid avec des brindilles qu'il trouve par terre."
+  },
+  {
+    "id": "va2-086",
+    "phrase": "Le menuisier fabrique une table avec du bois de chaîne.",
+    "sens": false,
+    "motPiege": "chaîne",
+    "correction": "Le menuisier fabrique une table avec du bois de chêne."
+  },
+  {
+    "id": "va2-087",
+    "phrase": "Lorsque le bébé a faim, il pleure pour réclamer son bûcheron.",
+    "sens": false,
+    "motPiege": "bûcheron",
+    "correction": "Lorsque le bébé a faim, il pleure pour réclamer son biberon."
+  },
+  {
+    "id": "va2-088",
+    "phrase": "Nous avons planté des tuiles qui fleuriront au printemps.",
+    "sens": false,
+    "motPiege": "tuiles",
+    "correction": "Nous avons planté des tulipes qui fleuriront au printemps."
+  },
+  {
+    "id": "va2-089",
+    "phrase": "Le vendeur emballe le cadeau dans un joli pompier.",
+    "sens": false,
+    "motPiege": "pompier",
+    "correction": "Le vendeur emballe le cadeau dans un joli papier."
+  },
+  {
+    "id": "va2-090",
+    "phrase": "Le gardien plonge pour arrêter le ballet que l'attaquant a tiré.",
+    "sens": false,
+    "motPiege": "ballet",
+    "correction": "Le gardien plonge pour arrêter le ballon que l'attaquant a tiré."
+  },
+  {
+    "id": "va2-091",
+    "phrase": "Ma mère coupe les légumes avec un coteau bien aiguisé.",
+    "sens": false,
+    "motPiege": "coteau",
+    "correction": "Ma mère coupe les légumes avec un couteau bien aiguisé."
+  },
+  {
+    "id": "va2-092",
+    "phrase": "Le poison rouge tourne dans son bocal toute la journée.",
+    "sens": false,
+    "motPiege": "poison",
+    "correction": "Le poisson rouge tourne dans son bocal toute la journée."
+  },
+  {
+    "id": "va2-093",
+    "phrase": "La cigogne se pose sur le doigt de l'église pour faire son nid.",
+    "sens": false,
+    "motPiege": "doigt",
+    "correction": "La cigogne se pose sur le toit de l'église pour faire son nid."
+  },
+  {
+    "id": "va2-094",
+    "phrase": "Le berger rentre les boutons dans la bergerie quand le loup approche.",
+    "sens": false,
+    "motPiege": "boutons",
+    "correction": "Le berger rentre les moutons dans la bergerie quand le loup approche."
+  },
+  {
+    "id": "va2-095",
+    "phrase": "Le lion dort à l'ongle pendant que les lionnes chassent.",
+    "sens": false,
+    "motPiege": "ongle",
+    "correction": "Le lion dort à l'ombre pendant que les lionnes chassent."
+  },
+  {
+    "id": "va2-096",
+    "phrase": "Quand le râteau est cuit, la pâtissière le sort du four.",
+    "sens": false,
+    "motPiege": "râteau",
+    "correction": "Quand le gâteau est cuit, la pâtissière le sort du four."
+  },
+  {
+    "id": "va2-097",
+    "phrase": "Le chat noir dort sur le gladiateur parce qu'il a froid.",
+    "sens": false,
+    "motPiege": "gladiateur",
+    "correction": "Le chat noir dort sur le radiateur parce qu'il a froid."
+  },
+  {
+    "id": "va2-098",
+    "phrase": "Les randonneurs boivent l'eau fraîche qui coule de la souris.",
+    "sens": false,
+    "motPiege": "souris",
+    "correction": "Les randonneurs boivent l'eau fraîche qui coule de la source."
+  },
+  {
+    "id": "va2-099",
+    "phrase": "J'ai rangé mes chaussettes dans le trottoir de la commode.",
+    "sens": false,
+    "motPiege": "trottoir",
+    "correction": "J'ai rangé mes chaussettes dans le tiroir de la commode."
+  },
+  {
+    "id": "va2-100",
+    "phrase": "Lorsqu'il fait beau, Mamie étend le singe dans le jardin.",
+    "sens": false,
+    "motPiege": "singe",
+    "correction": "Lorsqu'il fait beau, Mamie étend le linge dans le jardin."
+  },
+  {
+    "id": "va2-101",
+    "phrase": "La caissière rend la montagne au client qui a payé ses courses.",
+    "sens": false,
+    "motPiege": "montagne",
+    "correction": "La caissière rend la monnaie au client qui a payé ses courses."
+  },
+  {
+    "id": "va2-102",
+    "phrase": "Les fourmis transportent des mouettes jusqu'à leur fourmilière.",
+    "sens": false,
+    "motPiege": "mouettes",
+    "correction": "Les fourmis transportent des miettes jusqu'à leur fourmilière."
+  },
+  {
+    "id": "va2-103",
+    "phrase": "Le chien a enterré son os au fond du jambon.",
+    "sens": false,
+    "motPiege": "jambon",
+    "correction": "Le chien a enterré son os au fond du jardin."
+  },
+  {
+    "id": "va2-104",
+    "phrase": "Le voisin tond la ventouse pendant que son fils ramasse l'herbe.",
+    "sens": false,
+    "motPiege": "ventouse",
+    "correction": "Le voisin tond la pelouse pendant que son fils ramasse l'herbe."
+  },
+  {
+    "id": "va2-105",
+    "phrase": "Il a pris son maillot de bain parce qu'il va nager à la cuisine.",
+    "sens": false,
+    "motPiege": "cuisine",
+    "correction": "Il a pris son maillot de bain parce qu'il va nager à la piscine."
+  },
+  {
+    "id": "va2-106",
+    "phrase": "Le capitaine du bateau regarde la mer avec ses nouilles.",
+    "sens": false,
+    "motPiege": "nouilles",
+    "correction": "Le capitaine du bateau regarde la mer avec ses jumelles."
+  },
+  {
+    "id": "va2-107",
+    "phrase": "Le cuisinier verse de l'huile dans la poche avant de cuire les œufs.",
+    "sens": false,
+    "motPiege": "poche",
+    "correction": "Le cuisinier verse de l'huile dans la poêle avant de cuire les œufs."
+  },
+  {
+    "id": "va2-108",
+    "phrase": "Les enfants font de la louche sur la colline couverte de neige.",
+    "sens": false,
+    "motPiege": "louche",
+    "correction": "Les enfants font de la luge sur la colline couverte de neige."
+  },
+  {
+    "id": "va2-109",
+    "phrase": "Nous avons pique-niqué au bord du lac où nagent des cadenas.",
+    "sens": false,
+    "motPiege": "cadenas",
+    "correction": "Nous avons pique-niqué au bord du lac où nagent des canards."
+  },
+  {
+    "id": "va2-110",
+    "phrase": "Le chat a griffé le café que nous venons d'acheter.",
+    "sens": false,
+    "motPiege": "café",
+    "correction": "Le chat a griffé le canapé que nous venons d'acheter."
+  },
+  {
+    "id": "va2-111",
+    "phrase": "Elle boit son thé avec une tranche de camion.",
+    "sens": false,
+    "motPiege": "camion",
+    "correction": "Elle boit son thé avec une tranche de citron."
+  },
+  {
+    "id": "va2-112",
+    "phrase": "Le soir, papa lit une armoire à ma petite sœur avant qu'elle s'endorme.",
+    "sens": false,
+    "motPiege": "armoire",
+    "correction": "Le soir, papa lit une histoire à ma petite sœur avant qu'elle s'endorme."
+  },
+  {
+    "id": "va2-113",
+    "phrase": "Le gardien du zoo donne à manger aux carafes qui ont faim.",
+    "sens": false,
+    "motPiege": "carafes",
+    "correction": "Le gardien du zoo donne à manger aux girafes qui ont faim."
+  },
+  {
+    "id": "va2-114",
+    "phrase": "Quand Lou a perdu sa dinde, elle l'a mise sous son oreiller.",
+    "sens": false,
+    "motPiege": "dinde",
+    "correction": "Quand Lou a perdu sa dent, elle l'a mise sous son oreiller."
+  },
+  {
+    "id": "va2-115",
+    "phrase": "Le marin attache le bateau au quai avec une grosse crêpe.",
+    "sens": false,
+    "motPiege": "crêpe",
+    "correction": "Le marin attache le bateau au quai avec une grosse corde."
+  },
+  {
+    "id": "va2-116",
+    "phrase": "J'ai mis mes lèvres dans mon sac avant de partir au collège.",
+    "sens": false,
+    "motPiege": "lèvres",
+    "correction": "J'ai mis mes livres dans mon sac avant de partir au collège."
+  },
+  {
+    "id": "va2-117",
+    "phrase": "La prune éclaire le chemin pendant que nous rentrons à la maison.",
+    "sens": false,
+    "motPiege": "prune",
+    "correction": "La lune éclaire le chemin pendant que nous rentrons à la maison."
+  },
+  {
+    "id": "va2-118",
+    "phrase": "Le pâtissier décore le gâteau avec des falaises et de la crème.",
+    "sens": false,
+    "motPiege": "falaises",
+    "correction": "Le pâtissier décore le gâteau avec des fraises et de la crème."
+  },
+  {
+    "id": "va2-119",
+    "phrase": "Avant de dormir, Zoé éteint la rivière de sa chambre.",
+    "sens": false,
+    "motPiege": "rivière",
+    "correction": "Avant de dormir, Zoé éteint la lumière de sa chambre."
+  },
+  {
+    "id": "va2-120",
+    "phrase": "Le chêne du voisin aboie chaque fois qu'un camion passe.",
+    "sens": false,
+    "motPiege": "chêne",
+    "correction": "Le chien du voisin aboie chaque fois qu'un camion passe."
+  },
+  {
+    "id": "va2-121",
+    "phrase": "Je trempe ma bottine dans mon chocolat chaud.",
+    "sens": false,
+    "motPiege": "bottine",
+    "correction": "Je trempe ma tartine dans mon chocolat chaud."
+  },
+  {
+    "id": "va2-122",
+    "phrase": "La couturière coud un mouton sur la veste de mon père.",
+    "sens": false,
+    "motPiege": "mouton",
+    "correction": "La couturière coud un bouton sur la veste de mon père."
+  },
+  {
+    "id": "va2-123",
+    "phrase": "Quand le soleil sonne, Rayan se lève pour aller au collège.",
+    "sens": false,
+    "motPiege": "soleil",
+    "correction": "Quand le réveil sonne, Rayan se lève pour aller au collège."
+  },
+  {
+    "id": "va2-124",
+    "phrase": "La boulangère coupe le pain en branches avec un long couteau.",
+    "sens": false,
+    "motPiege": "branches",
+    "correction": "La boulangère coupe le pain en tranches avec un long couteau."
+  },
+  {
+    "id": "va2-125",
+    "phrase": "Le footballeur met ses chaussures à crayons avant le match.",
+    "sens": false,
+    "motPiege": "crayons",
+    "correction": "Le footballeur met ses chaussures à crampons avant le match."
+  },
+  {
+    "id": "va2-126",
+    "phrase": "Le hérisson se roule en poule quand il a peur.",
+    "sens": false,
+    "motPiege": "poule",
+    "correction": "Le hérisson se roule en boule quand il a peur."
+  },
+  {
+    "id": "va2-127",
+    "phrase": "Les nageurs plongent dans le bouquin quand l'arbitre siffle.",
+    "sens": false,
+    "motPiege": "bouquin",
+    "correction": "Les nageurs plongent dans le bassin quand l'arbitre siffle."
+  },
+  {
+    "id": "va2-128",
+    "phrase": "Quand il fait nuit, on allume les phoques de la voiture.",
+    "sens": false,
+    "motPiege": "phoques",
+    "correction": "Quand il fait nuit, on allume les phares de la voiture."
+  },
+  {
+    "id": "va2-129",
+    "phrase": "Sam met du ciel sur ses frites parce qu'elles manquent de goût.",
+    "sens": false,
+    "motPiege": "ciel",
+    "correction": "Sam met du sel sur ses frites parce qu'elles manquent de goût."
+  },
+  {
+    "id": "va2-130",
+    "phrase": "Le randonneur s'arrête pour boire à sa corde.",
+    "sens": false,
+    "motPiege": "corde",
+    "correction": "Le randonneur s'arrête pour boire à sa gourde."
+  },
+  {
+    "id": "va2-131",
+    "phrase": "Quand j'ai froid aux mains, je les mets dans mes pêches.",
+    "sens": false,
+    "motPiege": "pêches",
+    "correction": "Quand j'ai froid aux mains, je les mets dans mes poches."
+  },
+  {
+    "id": "va2-132",
+    "phrase": "Lucie a rangé sa brousse dans son cartable avant la récréation.",
+    "sens": false,
+    "motPiege": "brousse",
+    "correction": "Lucie a rangé sa trousse dans son cartable avant la récréation."
+  },
+  {
+    "id": "va2-133",
+    "phrase": "Le serveur pose le café sur la fable du client qui attend.",
+    "sens": false,
+    "motPiege": "fable",
+    "correction": "Le serveur pose le café sur la table du client qui attend."
+  },
+  {
+    "id": "va2-134",
+    "phrase": "Le petit garçon souffle les bougies de son râteau d'anniversaire.",
+    "sens": false,
+    "motPiege": "râteau",
+    "correction": "Le petit garçon souffle les bougies de son gâteau d'anniversaire."
+  },
+  {
+    "id": "va2-135",
+    "phrase": "Il a mis de la confiture dans le réservoir de sa moto pour pouvoir rouler.",
+    "sens": false,
+    "motPiege": "confiture",
+    "correction": "Il a mis de l'essence dans le réservoir de sa moto pour pouvoir rouler."
+  },
+  {
+    "id": "va2-136",
+    "phrase": "Le professeur ramasse les copies quand le beurre est fini.",
+    "sens": false,
+    "motPiege": "beurre",
+    "correction": "Le professeur ramasse les copies quand l'heure est finie."
+  }
+]
