@@ -49,7 +49,7 @@ export default function AppShell() {
                 {currentUser.totalPoints} ⭐
               </span>
             )}
-            <Bouton variante="discret" onClick={logout} aria-label="Se déconnecter" className="hidden px-2 text-sm md:inline-flex">
+            <Bouton variante="discret" onClick={logout} aria-label="Se déconnecter" className="px-2 text-sm">
               <span aria-hidden="true">🚪</span>
               <span className="hidden whitespace-nowrap lg:inline">Se déconnecter</span>
             </Bouton>
@@ -58,7 +58,7 @@ export default function AppShell() {
       </header>
 
       {/* ── Contenu ── */}
-      <main className="relative z-10 mx-auto w-full max-w-5xl flex-1 p-4 pb-24 md:p-8 md:pb-8">
+      <main className="relative mx-auto w-full max-w-5xl flex-1 p-4 pb-24 md:p-8 md:pb-8">
         <motion.div
           key={location.pathname}
           initial={{ opacity: 0, y: 12 }}
@@ -93,14 +93,6 @@ export default function AppShell() {
               )}
             </NavLink>
           ))}
-          <button
-            type="button"
-            onClick={logout}
-            className="flex flex-1 flex-col items-center gap-0.5 py-2 text-encre-doux"
-          >
-            <span className="text-xl">🚪</span>
-            <span className="text-xs font-bold">Sortir</span>
-          </button>
         </div>
       </nav>
     </div>

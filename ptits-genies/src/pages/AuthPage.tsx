@@ -5,6 +5,7 @@ import { useAuthStore } from '@/store/authStore'
 import { Bouton } from '@/components/ui/Bouton'
 import { Carte } from '@/components/ui/Carte'
 import { Decor } from '@/components/ui/Decor'
+import { cn } from '@/lib/cn'
 
 const CLASSES_CHAMP =
   'w-full min-h-12 rounded-xl border-2 border-encre bg-papier px-4 text-base font-semibold text-encre ' +
@@ -165,7 +166,7 @@ export default function AuthPage() {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     placeholder="••••••••"
                     required
-                    className={`${CLASSES_CHAMP} ${motsDePasseDifferents ? 'bg-faux/20' : ''}`}
+                    className={cn(CLASSES_CHAMP, motsDePasseDifferents && 'bg-faux/20')}
                   />
                   {motsDePasseDifferents && (
                     <p className="mt-1 text-base font-semibold text-faux-fonce">✗ Les mots de passe ne correspondent pas.</p>

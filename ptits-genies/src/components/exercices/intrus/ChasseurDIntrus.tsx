@@ -7,6 +7,7 @@ import { Carte, classesCarte } from '@/components/ui/Carte';
 import { Bouton } from '@/components/ui/Bouton';
 import { BoutonMot } from '@/components/ui/BoutonMot';
 import { couleurs } from '@/theme/couleurs';
+import { cn } from '@/lib/cn';
 
 // ── Exercise identity ──────────────────────────────────────────────────────
 const EX = {
@@ -221,7 +222,7 @@ export const ChasseurDIntrus: React.FC = () => {
         droite={
           <>
             <span className={PASTILLE}>Score : {score}</span>
-            <span className={`${PASTILLE} tabular-nums ${timeLeft < 5 ? 'bg-faux' : ''}`}>⏱ {timeLeft}s</span>
+            <span className={cn(PASTILLE, 'tabular-nums', timeLeft < 5 && 'bg-faux')}>⏱ {timeLeft}s</span>
           </>
         }
       />

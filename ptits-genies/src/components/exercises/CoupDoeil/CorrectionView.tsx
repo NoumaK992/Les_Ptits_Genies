@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { cn } from '@/lib/cn'
 import type { CoupDoeilSeries, CoupDoeilThemeKey } from '@/types'
 import { Bouton } from '@/components/ui/Bouton'
 import { Carte, classesCarte } from '@/components/ui/Carte'
@@ -29,23 +30,23 @@ export function CorrectionView({ series, assignments, seriesScore, stats, onCont
     >
       {/* Stats bar */}
       <div className="flex gap-3 flex-wrap">
-        <div className={`${PASTILLE} bg-juste`}>
+        <div className={cn(PASTILLE, 'bg-juste')}>
           <span className="text-lg">✅</span>
           <span className="font-black">{stats.correct}</span>
           <span className="text-base font-semibold">correct{stats.correct > 1 ? 's' : ''}</span>
         </div>
-        <div className={`${PASTILLE} bg-rose-pale`}>
+        <div className={cn(PASTILLE, 'bg-rose-pale')}>
           <span className="text-lg">⚠️</span>
           <span className="font-black">{stats.missed}</span>
           <span className="text-base font-semibold">manqué{stats.missed > 1 ? 's' : ''}</span>
         </div>
-        <div className={`${PASTILLE} bg-faux`}>
+        <div className={cn(PASTILLE, 'bg-faux')}>
           <span className="text-lg">❌</span>
           <span className="font-black">{stats.wrong + stats.falseAlarms}</span>
           <span className="text-base font-semibold">erreur{stats.wrong + stats.falseAlarms > 1 ? 's' : ''}</span>
         </div>
         {stats.perfect && (
-          <div className={`${PASTILLE} bg-jaune`}>
+          <div className={cn(PASTILLE, 'bg-jaune')}>
             <span className="text-lg">⭐</span>
             <span className="font-black">Parfait ! +60</span>
           </div>

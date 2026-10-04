@@ -19,7 +19,7 @@ export function WordItem({ word, assignment, onAssign, mode }: Props) {
     const assigned = assignment
 
     return (
-      <div className="relative flex flex-col items-center z-10">
+      <div className={`relative flex flex-col items-center ${open ? 'z-40' : 'z-10'}`}>
         <motion.button
           whileTap={{ scale: 0.95 }}
           onClick={() => {

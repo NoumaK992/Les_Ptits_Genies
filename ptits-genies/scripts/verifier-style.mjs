@@ -14,6 +14,10 @@ const REGLES = [
   ['ancienne ombre', /\bshadow-(?:card|card-hover|glow|glow-sm|glow-orange|glow-success|sm|md|lg|xl|2xl)\b/],
   ['ancienne police', /\bfont-(?:fredoka|nunito)\b/],
   ['classe CSS supprimée', /\b(?:glass|gradient-text-primary)\b/],
+  // Une constante de classes suivie d'une classe du même type sans cn() : l'ordre du CSS
+  // compilé décide, et la classe ajoutée peut être ignorée (ex. `${PASTILLE} bg-faux`).
+  ['classes concaténées sans cn()',
+    /(?:\$\{[A-Z_]{3,}\}|classes(?:Bouton|Carte)\([^)]*\)\s*\+\s*')[^`\n]*\b(?:bg|px|py|text|border|rounded)-/],
 ]
 
 function lister(chemin) {
