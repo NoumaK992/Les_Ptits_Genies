@@ -1,9 +1,12 @@
+import { couleurs } from './src/theme/couleurs.js'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
+        ...couleurs,
         primary: '#7C6FF7',
         secondary: '#FF7B54',
         accent: '#FFD166',
@@ -15,6 +18,8 @@ export default {
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
         fredoka: ['Fredoka', 'sans-serif'],
+        texte: ['Lexend', 'sans-serif'],
+        titre: ['"Archivo Black"', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '1rem',
@@ -23,6 +28,9 @@ export default {
         '5xl': '2.5rem',
       },
       boxShadow: {
+        'dur-sm': `2px 2px 0 0 ${couleurs.encre}`,
+        dur: `4px 4px 0 0 ${couleurs.encre}`,
+        'dur-lg': `6px 6px 0 0 ${couleurs.encre}`,
         'card': '0 4px 20px rgba(45, 45, 58, 0.08)',
         'card-hover': '0 8px 40px rgba(45, 45, 58, 0.16)',
         'glow': '0 4px 24px rgba(124, 111, 247, 0.40)',
@@ -31,6 +39,13 @@ export default {
         'glow-success': '0 4px 24px rgba(6, 214, 160, 0.40)',
       },
       keyframes: {
+        secousse: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '20%': { transform: 'translateX(-6px)' },
+          '40%': { transform: 'translateX(6px)' },
+          '60%': { transform: 'translateX(-4px)' },
+          '80%': { transform: 'translateX(4px)' },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-8px)' },
@@ -53,6 +68,7 @@ export default {
         },
       },
       animation: {
+        secousse: 'secousse 0.4s ease-in-out',
         float: 'float 4s ease-in-out infinite',
         'pop-in': 'pop-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
         wiggle: 'wiggle 0.5s ease-in-out 2',

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,12 +9,10 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  background-color: #F8F7FF;
-  color: #2D2D3A;
+  font-family: 'Lexend', sans-serif;
+  background-color: theme('colors.sable');
+  color: theme('colors.encre');
   min-height: 100vh;
-  background-image: radial-gradient(circle, rgba(124, 111, 247, 0.09) 1px, transparent 1px);
-  background-size: 24px 24px;
 }
 
 :root {
@@ -32,17 +30,17 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #F8F7FF;
+  background: theme('colors.sable');
 }
 ::-webkit-scrollbar-thumb {
-  background: #7C6FF7;
+  background: theme('colors.encre');
   border-radius: 3px;
 }
 
 /* Selection color */
 ::selection {
-  background-color: #7C6FF7;
-  color: white;
+  background-color: theme('colors.jaune');
+  color: theme('colors.encre');
 }
 
 /* Glass card utility */
@@ -85,4 +83,10 @@ body {
   background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 50%, transparent 100%);
   transform: translateX(-100%);
   animation: shimmer 1.5s infinite;
+}
+
+/* Étoile d'écran de fin : jaune cerclée d'encre */
+.etoile {
+  -webkit-text-stroke: 2px theme('colors.encre');
+  paint-order: stroke fill;
 }
