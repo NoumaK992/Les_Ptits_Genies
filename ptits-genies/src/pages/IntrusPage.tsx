@@ -186,7 +186,7 @@ export default function IntrusPage() {
               onClick={() => startSession(l.level)}
               className={`${classesCarte} flex min-h-12 w-full items-center gap-4 p-4 text-left transition-[transform,box-shadow,background-color] hover:-translate-x-px hover:-translate-y-px hover:bg-jaune/40 hover:shadow-dur-lg focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-bleu`}
             >
-              <span className="shrink-0 text-xl">{l.emoji}</span>
+              <span aria-hidden="true" className="w-16 shrink-0 break-all text-center text-base leading-snug sm:w-32 sm:text-xl">{l.emoji}</span>
               <div className="min-w-0">
                 <p className="font-titre text-lg text-encre">{l.label}</p>
                 <p className="text-base font-semibold text-encre-doux">{l.desc}</p>
