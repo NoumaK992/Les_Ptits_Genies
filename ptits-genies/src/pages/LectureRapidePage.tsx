@@ -109,7 +109,7 @@ export default function LectureRapidePage() {
         speedMultiplier: selectedSpeed.multiplier, qcmScore: correctCount, textId: currentText.id,
       },
     })
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correctCount, 3))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(correctCount, 3))
     await refreshPoints()
     setPhase('result')
   }

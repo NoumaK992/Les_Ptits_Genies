@@ -149,7 +149,7 @@ export default function CollectionPage() {
     const details: CollectionSessionDetails = { type: 'collection', level: selectedLevel, totalItems, correctAnswers: correct, wrongAnswers: wrong, accuracyScore: scoreData.accuracyScore, timeBonus: scoreData.timeBonus, levelMultiplierBonus: scoreData.levelMultiplierBonus, stars, totalElapsedSeconds: stopwatch.seconds }
     await saveSession({ id: `${Date.now()}-col`, userId: currentUser.id, exerciseType: 'collection', score: scoreData.totalScore, duration: stopwatch.seconds, playedAt: new Date().toISOString(), details })
     await refreshPoints()
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correct, totalItems))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(correct, totalItems))
     setPhase('result')
   }
 

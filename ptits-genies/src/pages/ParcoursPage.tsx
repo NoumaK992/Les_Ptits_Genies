@@ -21,7 +21,7 @@ const CASE = 'flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rou
 
 export default function ParcoursPage() {
   const { currentUser } = useAuthStore()
-  const { userId, etat, charge, erreur, dernierEvenement, charger, rejoindre, oublierEvenement } = useParcoursStore()
+  const { userId, etat, charge, echecChargement, erreur, dernierEvenement, charger, rejoindre, oublierEvenement } = useParcoursStore()
   const navigate = useNavigate()
   const [code, setCode] = useState('')
   const [envoi, setEnvoi] = useState(false)
@@ -29,13 +29,24 @@ export default function ParcoursPage() {
   // Ne recharge pas un état déjà en mémoire : cela effacerait le message d'erreur
   // d'un enregistrement raté juste avant (retour depuis un jeu).
   useEffect(() => {
-    if (currentUser && (!charge || userId !== currentUser.id)) charger(currentUser.id)
+    if (currentUser && (!charge || echecChargement || userId !== currentUser.id)) charger(currentUser.id)
   }, [currentUser?.id])
 
   if (!currentUser) return null
 
   if (!charge || userId !== currentUser.id) {
     return <p className="py-20 text-center text-3xl" aria-label="Chargement">⏳</p>
+  }
+
+  // ── Chargement raté (wifi coupé…) : surtout ne pas redemander le code à un élève déjà inscrit ──
+  if (echecChargement && !etat) {
+    return (
+      <Carte className="mx-auto max-w-xl p-6 text-center md:p-8">
+        <p className="text-lg font-semibold text-encre">⚠️ {erreur}</p>
+        <p className="mt-2 text-encre-doux">Ta progression n'est pas perdue.</p>
+        <Bouton className="mt-5" taille="grand" onClick={() => charger(currentUser.id)}>Réessayer</Bouton>
+      </Carte>
+    )
   }
 
   // ── Première visite : saisie du code de groupe ──

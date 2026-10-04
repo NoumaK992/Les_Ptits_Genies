@@ -104,7 +104,7 @@ export default function CoupDOeilPage() {
       details: { type: 'coup-doeil', seriesId, correctCategorizations: correct, wrongCategorizations: wrong, missedTargets: missed, falseAlarms, totalElapsedSeconds: stopwatch.seconds },
     })
     await refreshPoints()
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correct, totalTargets))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(correct, totalTargets))
     setPhase('correction')
   }
 

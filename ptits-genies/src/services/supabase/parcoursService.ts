@@ -27,11 +27,20 @@ export const parcoursService = {
     return versEtat(data as LigneParcours)
   },
 
-  async enregistrer(userId: string, etat: EtatParcours): Promise<void> {
-    const { error } = await supabase
+  /**
+   * Écriture conditionnelle : n'avance que si la base est encore dans l'état `ancien`.
+   * Renvoie false si la ligne a changé entre-temps (autre onglet, réponse réseau perdue).
+   */
+  async enregistrer(userId: string, ancien: EtatParcours, nouveau: EtatParcours): Promise<boolean> {
+    const { data, error } = await supabase
       .from('parcours')
-      .update({ niveau: etat.niveau, etape: etat.etape, echecs_boss: etat.echecsBoss, updated_at: new Date().toISOString() })
+      .update({ niveau: nouveau.niveau, etape: nouveau.etape, echecs_boss: nouveau.echecsBoss, updated_at: new Date().toISOString() })
       .eq('user_id', userId)
+      .eq('niveau', ancien.niveau)
+      .eq('etape', ancien.etape)
+      .eq('echecs_boss', ancien.echecsBoss)
+      .select('user_id')
     if (error) throw error
+    return (data?.length ?? 0) > 0
   },
 }

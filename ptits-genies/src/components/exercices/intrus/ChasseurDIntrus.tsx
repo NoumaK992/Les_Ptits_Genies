@@ -148,7 +148,7 @@ export const ChasseurDIntrus: React.FC = () => {
           // Échec réseau : le bilan s'affiche quand même.
         }
         if (modeParcours) {
-          await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(manchesReussies, series.length));
+          await terminerPartie(currentUser.id, modeParcours, tauxReussite(manchesReussies, series.length));
         }
       }
       setPhase('bilan');

@@ -99,9 +99,26 @@ export function tauxReussite(bons: number, total: number): number {
   return Math.max(0, Math.min(1, bons / total))
 }
 
+// Le niveau voyage dans l'adresse : une page de jeu retrouvée avec « Précédent »
+// ou l'historique ne doit pas pouvoir valider l'étape d'un autre niveau.
 export function lienPartie(etat: EtatParcours): string {
   const jeu = jeuDuNiveau(etat.place, etat.niveau)
-  return `${ROUTES_JEUX[jeu]}?parcours=${etat.etape}&d=${difficulte(jeu, etat.niveau, etat.etape)}`
+  return `${ROUTES_JEUX[jeu]}?parcours=${etat.etape}&d=${difficulte(jeu, etat.niveau, etat.etape)}&n=${etat.niveau}`
+}
+
+/** Partie lancée depuis le parcours, telle que décrite par son adresse. */
+export interface PartieParcours {
+  etape: EtapeParcours
+  niveau: number
+  jeu: JeuParcours
+}
+
+// Une partie ne fait avancer le parcours que si elle correspond exactement à l'étape en cours.
+export function partieValide(etat: EtatParcours, partie: PartieParcours): boolean {
+  return !estTermine(etat)
+    && etat.etape === partie.etape
+    && etat.niveau === partie.niveau
+    && jeuDuNiveau(etat.place, etat.niveau) === partie.jeu
 }
 
 // Lecture rapide : difficulté → longueur du texte et index de vitesse (SpeedPicker : 45, 70, 100, 140, 200 mpm).

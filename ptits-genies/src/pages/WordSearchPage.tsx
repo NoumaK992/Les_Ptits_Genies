@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAuthStore } from '@/store/authStore'
 import { useProgressStore } from '@/store/progressStore'
@@ -77,9 +77,13 @@ export default function WordSearchPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Empêche un double clic sur le dernier « Continuer » d'enregistrer deux fois la partie.
+  const finiRef = useRef(false)
+
   function handleThemeSelect(id: string) {
     const theme = getThemeById(id)
     if (!theme) return
+    finiRef.current = false
     setThemeId(id)
     const sessionGrids = generateSession(theme)
     setGrids(sessionGrids)
@@ -147,7 +151,8 @@ export default function WordSearchPage() {
   }
 
   async function finishSession() {
-    if (!currentUser) return
+    if (!currentUser || finiRef.current) return
+    finiRef.current = true
     const timeBonus = calcWordSearchTimeBonus(stopwatch.seconds)
     const finalScore = totalScore + timeBonus
     const totalCorrect = results.reduce((s, r) => s + r.correctSelections, 0)
@@ -163,7 +168,7 @@ export default function WordSearchPage() {
       },
     })
     if (modeParcours) {
-      await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(totalCorrect, totalCorrect + totalMissed + totalWrong))
+      await terminerPartie(currentUser.id, modeParcours, tauxReussite(totalCorrect, totalCorrect + totalMissed + totalWrong))
     }
     await refreshPoints()
     setTotalScore((prev) => prev + timeBonus)

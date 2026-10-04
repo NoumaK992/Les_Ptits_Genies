@@ -2,7 +2,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import {
   JEUX_ROTATION, jeuDuNiveau, tourDuNiveau, difficulte, seuilBoss, lireCode,
-  appliquerResultat, tauxReussite, lienPartie, parametresLecture, niveauAmiEnnemi,
+  appliquerResultat, tauxReussite, lienPartie, parametresLecture, niveauAmiEnnemi, partieValide,
   type EtatParcours,
 } from './regles.ts'
 
@@ -97,8 +97,8 @@ test('taux de réussite borné, 1 si rien à trouver', () => {
 })
 
 test('lien de partie', () => {
-  assert.equal(lienPartie(etat({ place: 2 })), '/exercices/intrus?parcours=jeu&d=1')
-  assert.equal(lienPartie(etat({ place: 2, etape: 'boss' })), '/exercices/intrus?parcours=boss&d=2')
+  assert.equal(lienPartie(etat({ place: 2 })), '/exercices/intrus?parcours=jeu&d=1&n=1')
+  assert.equal(lienPartie(etat({ place: 2, etape: 'boss' })), '/exercices/intrus?parcours=boss&d=2&n=1')
 })
 
 test('paramètres Lecture rapide et Ami/Ennemi', () => {
@@ -106,4 +106,18 @@ test('paramètres Lecture rapide et Ami/Ennemi', () => {
   assert.deepEqual(parametresLecture(4), { niveau: 2, vitesse: 3 })
   assert.equal(niveauAmiEnnemi(1), 'debutant')
   assert.equal(niveauAmiEnnemi(3), 'professionnel')
+})
+
+test("le lien de partie porte le niveau", () => {
+  assert.equal(lienPartie(etat({ place: 2, niveau: 3 })), "/exercices/recherche-mots?parcours=jeu&d=1&n=3")
+})
+
+test("une partie ne compte que si étape, niveau et jeu correspondent à l état en base", () => {
+  const e = etat({ place: 2, niveau: 3, etape: "boss" })
+  const jeu = jeuDuNiveau(2, 3)
+  assert.equal(partieValide(e, { etape: "boss", niveau: 3, jeu }), true)
+  assert.equal(partieValide(e, { etape: "jeu", niveau: 3, jeu }), false)
+  assert.equal(partieValide(e, { etape: "boss", niveau: 2, jeu }), false)
+  assert.equal(partieValide(e, { etape: "boss", niveau: 3, jeu: jeuDuNiveau(2, 2) }), false)
+  assert.equal(partieValide(etat({ niveau: 21 }), { etape: "jeu", niveau: 21, jeu }), false)
 })

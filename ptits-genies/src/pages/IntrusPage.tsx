@@ -190,7 +190,7 @@ export default function IntrusPage() {
       },
     })
     await refreshPoints()
-    if (modeParcours) await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(finalCorrect, LISTS_PER_SESSION))
+    if (modeParcours) await terminerPartie(currentUser.id, modeParcours, tauxReussite(finalCorrect, LISTS_PER_SESSION))
     setPhase('session-result')
   }
 

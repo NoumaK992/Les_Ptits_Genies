@@ -206,7 +206,7 @@ export default function PhrasesBrouilleesPage() {
       },
     })
     if (modeParcours) {
-      await terminerPartie(currentUser.id, modeParcours.etape, tauxReussite(correctAnswers, exercise.gaps.length))
+      await terminerPartie(currentUser.id, modeParcours, tauxReussite(correctAnswers, exercise.gaps.length))
     }
     setPlayedByLevel((prev) => {
       const existing = prev[selectedLevel]
