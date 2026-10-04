@@ -1,0 +1,2975 @@
+[
+  {
+    "id": "fo3-001",
+    "mot": "catastrophe",
+    "syllabes": [
+      "ca",
+      "tas",
+      "tro",
+      "phe"
+    ],
+    "leurres": [
+      "ac",
+      "co",
+      "fro",
+      "tes"
+    ]
+  },
+  {
+    "id": "fo3-002",
+    "mot": "architecte",
+    "syllabes": [
+      "ar",
+      "chi",
+      "tec",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "fec",
+      "or",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo3-003",
+    "mot": "médicament",
+    "syllabes": [
+      "mé",
+      "di",
+      "ca",
+      "ment"
+    ],
+    "leurres": [
+      "ac",
+      "nent",
+      "ce",
+      "me"
+    ]
+  },
+  {
+    "id": "fo3-004",
+    "mot": "ordinateur",
+    "syllabes": [
+      "or",
+      "di",
+      "na",
+      "teur"
+    ],
+    "leurres": [
+      "an",
+      "ur",
+      "ma",
+      "id"
+    ]
+  },
+  {
+    "id": "fo3-005",
+    "mot": "calculatrice",
+    "syllabes": [
+      "cal",
+      "cu",
+      "la",
+      "tri",
+      "ce"
+    ],
+    "leurres": [
+      "al",
+      "lo",
+      "uc",
+      "fri"
+    ]
+  },
+  {
+    "id": "fo3-006",
+    "mot": "réfrigérateur",
+    "syllabes": [
+      "ré",
+      "fri",
+      "gé",
+      "ra",
+      "teur"
+    ],
+    "leurres": [
+      "fir",
+      "rè",
+      "tri",
+      "ge"
+    ]
+  },
+  {
+    "id": "fo3-007",
+    "mot": "hélicoptère",
+    "syllabes": [
+      "hé",
+      "li",
+      "cop",
+      "tè",
+      "re"
+    ],
+    "leurres": [
+      "il",
+      "lu",
+      "cup",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo3-008",
+    "mot": "animateur",
+    "syllabes": [
+      "a",
+      "ni",
+      "ma",
+      "teur"
+    ],
+    "leurres": [
+      "in",
+      "mi",
+      "o",
+      "tour"
+    ]
+  },
+  {
+    "id": "fo3-009",
+    "mot": "crocodile",
+    "syllabes": [
+      "cro",
+      "co",
+      "di",
+      "le"
+    ],
+    "leurres": [
+      "oc",
+      "ca",
+      "cra",
+      "de"
+    ]
+  },
+  {
+    "id": "fo3-010",
+    "mot": "hippopotame",
+    "syllabes": [
+      "hip",
+      "po",
+      "po",
+      "ta",
+      "me"
+    ],
+    "leurres": [
+      "em",
+      "ma",
+      "hep",
+      "at"
+    ]
+  },
+  {
+    "id": "fo3-011",
+    "mot": "rhinocéros",
+    "syllabes": [
+      "rhi",
+      "no",
+      "cé",
+      "ros"
+    ],
+    "leurres": [
+      "on",
+      "nu",
+      "ras",
+      "cè"
+    ]
+  },
+  {
+    "id": "fo3-012",
+    "mot": "dromadaire",
+    "syllabes": [
+      "dro",
+      "ma",
+      "dai",
+      "re"
+    ],
+    "leurres": [
+      "dor",
+      "dru",
+      "dei",
+      "ra"
+    ]
+  },
+  {
+    "id": "fo3-013",
+    "mot": "parachute",
+    "syllabes": [
+      "pa",
+      "ra",
+      "chu",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "cho",
+      "to",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo3-014",
+    "mot": "mathématique",
+    "syllabes": [
+      "ma",
+      "thé",
+      "ma",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "the",
+      "te",
+      "qua"
+    ]
+  },
+  {
+    "id": "fo3-015",
+    "mot": "vocabulaire",
+    "syllabes": [
+      "vo",
+      "ca",
+      "bu",
+      "lai",
+      "re"
+    ],
+    "leurres": [
+      "ub",
+      "bo",
+      "ac",
+      "tai"
+    ]
+  },
+  {
+    "id": "fo3-016",
+    "mot": "conjugaison",
+    "syllabes": [
+      "con",
+      "ju",
+      "gai",
+      "son"
+    ],
+    "leurres": [
+      "jo",
+      "can",
+      "san",
+      "gei"
+    ]
+  },
+  {
+    "id": "fo3-017",
+    "mot": "orthographe",
+    "syllabes": [
+      "or",
+      "tho",
+      "gra",
+      "phe"
+    ],
+    "leurres": [
+      "gar",
+      "gro",
+      "pho",
+      "ur"
+    ]
+  },
+  {
+    "id": "fo3-018",
+    "mot": "photographe",
+    "syllabes": [
+      "pho",
+      "to",
+      "gra",
+      "phe"
+    ],
+    "leurres": [
+      "gar",
+      "gre",
+      "pha",
+      "ta"
+    ]
+  },
+  {
+    "id": "fo3-019",
+    "mot": "anniversaire",
+    "syllabes": [
+      "an",
+      "ni",
+      "ver",
+      "sai",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "sei",
+      "ro",
+      "mi"
+    ]
+  },
+  {
+    "id": "fo3-020",
+    "mot": "marécage",
+    "syllabes": [
+      "ma",
+      "ré",
+      "ca",
+      "ge"
+    ],
+    "leurres": [
+      "am",
+      "mo",
+      "re",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo3-021",
+    "mot": "carambolage",
+    "syllabes": [
+      "ca",
+      "ram",
+      "bo",
+      "la",
+      "ge"
+    ],
+    "leurres": [
+      "ob",
+      "ba",
+      "co",
+      "ran"
+    ]
+  },
+  {
+    "id": "fo3-022",
+    "mot": "mélimélo",
+    "syllabes": [
+      "mé",
+      "li",
+      "mé",
+      "lo"
+    ],
+    "leurres": [
+      "il",
+      "mè",
+      "le",
+      "né"
+    ]
+  },
+  {
+    "id": "fo3-023",
+    "mot": "parallèle",
+    "syllabes": [
+      "pa",
+      "ral",
+      "lè",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "lo",
+      "rol",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo3-024",
+    "mot": "polygone",
+    "syllabes": [
+      "po",
+      "ly",
+      "go",
+      "ne"
+    ],
+    "leurres": [
+      "op",
+      "pa",
+      "ty",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-025",
+    "mot": "numérateur",
+    "syllabes": [
+      "nu",
+      "mé",
+      "ra",
+      "teur"
+    ],
+    "leurres": [
+      "un",
+      "ni",
+      "me",
+      "feur"
+    ]
+  },
+  {
+    "id": "fo3-026",
+    "mot": "dénominateur",
+    "syllabes": [
+      "dé",
+      "no",
+      "mi",
+      "na",
+      "teur"
+    ],
+    "leurres": [
+      "on",
+      "nu",
+      "an",
+      "me"
+    ]
+  },
+  {
+    "id": "fo3-027",
+    "mot": "télescope",
+    "syllabes": [
+      "té",
+      "les",
+      "co",
+      "pe"
+    ],
+    "leurres": [
+      "oc",
+      "tè",
+      "los",
+      "ca"
+    ]
+  },
+  {
+    "id": "fo3-028",
+    "mot": "microscope",
+    "syllabes": [
+      "mi",
+      "cros",
+      "co",
+      "pe"
+    ],
+    "leurres": [
+      "im",
+      "crus",
+      "me",
+      "ca"
+    ]
+  },
+  {
+    "id": "fo3-029",
+    "mot": "thermomètre",
+    "syllabes": [
+      "ther",
+      "mo",
+      "mè",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "tra",
+      "thor",
+      "mé"
+    ]
+  },
+  {
+    "id": "fo3-030",
+    "mot": "kilomètre",
+    "syllabes": [
+      "ki",
+      "lo",
+      "mè",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "tro",
+      "me",
+      "ol"
+    ]
+  },
+  {
+    "id": "fo3-031",
+    "mot": "centimètre",
+    "syllabes": [
+      "cen",
+      "ti",
+      "mè",
+      "tre"
+    ],
+    "leurres": [
+      "it",
+      "can",
+      "mé",
+      "fi"
+    ]
+  },
+  {
+    "id": "fo3-032",
+    "mot": "millimètre",
+    "syllabes": [
+      "mil",
+      "li",
+      "mè",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "me",
+      "tro",
+      "mul"
+    ]
+  },
+  {
+    "id": "fo3-033",
+    "mot": "baromètre",
+    "syllabes": [
+      "ba",
+      "ro",
+      "mè",
+      "tre"
+    ],
+    "leurres": [
+      "or",
+      "ru",
+      "ab",
+      "nè"
+    ]
+  },
+  {
+    "id": "fo3-034",
+    "mot": "aquarelle",
+    "syllabes": [
+      "a",
+      "qua",
+      "rel",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "quo",
+      "o",
+      "lo"
+    ]
+  },
+  {
+    "id": "fo3-035",
+    "mot": "découverte",
+    "syllabes": [
+      "dé",
+      "cou",
+      "ver",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "dè",
+      "coi",
+      "ta"
+    ]
+  },
+  {
+    "id": "fo3-036",
+    "mot": "aventure",
+    "syllabes": [
+      "a",
+      "ven",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "van",
+      "ro",
+      "ut"
+    ]
+  },
+  {
+    "id": "fo3-037",
+    "mot": "électricité",
+    "syllabes": [
+      "é",
+      "lec",
+      "tri",
+      "ci",
+      "té"
+    ],
+    "leurres": [
+      "ic",
+      "tec",
+      "ce",
+      "te"
+    ]
+  },
+  {
+    "id": "fo3-038",
+    "mot": "académie",
+    "syllabes": [
+      "a",
+      "ca",
+      "dé",
+      "mie"
+    ],
+    "leurres": [
+      "o",
+      "de",
+      "ce",
+      "mei"
+    ]
+  },
+  {
+    "id": "fo3-039",
+    "mot": "économie",
+    "syllabes": [
+      "é",
+      "co",
+      "no",
+      "mie"
+    ],
+    "leurres": [
+      "on",
+      "na",
+      "nie",
+      "oc"
+    ]
+  },
+  {
+    "id": "fo3-040",
+    "mot": "astronomie",
+    "syllabes": [
+      "as",
+      "tro",
+      "no",
+      "mie"
+    ],
+    "leurres": [
+      "tor",
+      "tra",
+      "on",
+      "es"
+    ]
+  },
+  {
+    "id": "fo3-041",
+    "mot": "astronaute",
+    "syllabes": [
+      "as",
+      "tro",
+      "nau",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "fe",
+      "nou",
+      "os"
+    ]
+  },
+  {
+    "id": "fo3-042",
+    "mot": "cosmonaute",
+    "syllabes": [
+      "cos",
+      "mo",
+      "nau",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "nou",
+      "cus",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo3-043",
+    "mot": "atterrissage",
+    "syllabes": [
+      "at",
+      "ter",
+      "ris",
+      "sa",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "ga",
+      "so",
+      "rus"
+    ]
+  },
+  {
+    "id": "fo3-044",
+    "mot": "décollage",
+    "syllabes": [
+      "dé",
+      "col",
+      "la",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "ga",
+      "cal",
+      "al"
+    ]
+  },
+  {
+    "id": "fo3-045",
+    "mot": "déménagement",
+    "syllabes": [
+      "dé",
+      "mé",
+      "na",
+      "ge",
+      "ment"
+    ],
+    "leurres": [
+      "eg",
+      "mant",
+      "ga",
+      "mè"
+    ]
+  },
+  {
+    "id": "fo3-046",
+    "mot": "renseignement",
+    "syllabes": [
+      "ren",
+      "sei",
+      "gne",
+      "ment"
+    ],
+    "leurres": [
+      "gno",
+      "ran",
+      "sie",
+      "mant"
+    ]
+  },
+  {
+    "id": "fo3-047",
+    "mot": "étonnement",
+    "syllabes": [
+      "é",
+      "ton",
+      "ne",
+      "ment"
+    ],
+    "leurres": [
+      "en",
+      "fon",
+      "nent",
+      "no"
+    ]
+  },
+  {
+    "id": "fo3-048",
+    "mot": "apprentissage",
+    "syllabes": [
+      "ap",
+      "pren",
+      "tis",
+      "sa",
+      "ge"
+    ],
+    "leurres": [
+      "as",
+      "ep",
+      "tus",
+      "se"
+    ]
+  },
+  {
+    "id": "fo3-049",
+    "mot": "entraînement",
+    "syllabes": [
+      "en",
+      "traî",
+      "ne",
+      "ment"
+    ],
+    "leurres": [
+      "trai",
+      "mant",
+      "an",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-050",
+    "mot": "générosité",
+    "syllabes": [
+      "gé",
+      "né",
+      "ro",
+      "si",
+      "té"
+    ],
+    "leurres": [
+      "or",
+      "ne",
+      "ru",
+      "su"
+    ]
+  },
+  {
+    "id": "fo3-051",
+    "mot": "capacité",
+    "syllabes": [
+      "ca",
+      "pa",
+      "ci",
+      "té"
+    ],
+    "leurres": [
+      "ic",
+      "ce",
+      "ac",
+      "ap"
+    ]
+  },
+  {
+    "id": "fo3-052",
+    "mot": "vélocité",
+    "syllabes": [
+      "vé",
+      "lo",
+      "ci",
+      "té"
+    ],
+    "leurres": [
+      "ic",
+      "ce",
+      "fé",
+      "te"
+    ]
+  },
+  {
+    "id": "fo3-053",
+    "mot": "célébrité",
+    "syllabes": [
+      "cé",
+      "lé",
+      "bri",
+      "té"
+    ],
+    "leurres": [
+      "bir",
+      "cè",
+      "bre",
+      "te"
+    ]
+  },
+  {
+    "id": "fo3-054",
+    "mot": "fraternité",
+    "syllabes": [
+      "fra",
+      "ter",
+      "ni",
+      "té"
+    ],
+    "leurres": [
+      "tre",
+      "te",
+      "fer",
+      "far"
+    ]
+  },
+  {
+    "id": "fo3-055",
+    "mot": "égalité",
+    "syllabes": [
+      "é",
+      "ga",
+      "li",
+      "té"
+    ],
+    "leurres": [
+      "il",
+      "le",
+      "te",
+      "go"
+    ]
+  },
+  {
+    "id": "fo3-056",
+    "mot": "humanité",
+    "syllabes": [
+      "hu",
+      "ma",
+      "ni",
+      "té"
+    ],
+    "leurres": [
+      "in",
+      "tè",
+      "mi",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo3-057",
+    "mot": "université",
+    "syllabes": [
+      "u",
+      "ni",
+      "ver",
+      "si",
+      "té"
+    ],
+    "leurres": [
+      "vre",
+      "i",
+      "fer",
+      "ne"
+    ]
+  },
+  {
+    "id": "fo3-058",
+    "mot": "activité",
+    "syllabes": [
+      "ac",
+      "ti",
+      "vi",
+      "té"
+    ],
+    "leurres": [
+      "it",
+      "ec",
+      "ve",
+      "tè"
+    ]
+  },
+  {
+    "id": "fo3-059",
+    "mot": "caravane",
+    "syllabes": [
+      "ca",
+      "ra",
+      "va",
+      "ne"
+    ],
+    "leurres": [
+      "ar",
+      "re",
+      "vo",
+      "ce"
+    ]
+  },
+  {
+    "id": "fo3-060",
+    "mot": "locomotive",
+    "syllabes": [
+      "lo",
+      "co",
+      "mo",
+      "ti",
+      "ve"
+    ],
+    "leurres": [
+      "ol",
+      "lu",
+      "va",
+      "ca"
+    ]
+  },
+  {
+    "id": "fo3-061",
+    "mot": "motocyclette",
+    "syllabes": [
+      "mo",
+      "to",
+      "cy",
+      "clet",
+      "te"
+    ],
+    "leurres": [
+      "om",
+      "ci",
+      "mu",
+      "fo"
+    ]
+  },
+  {
+    "id": "fo3-062",
+    "mot": "automobile",
+    "syllabes": [
+      "au",
+      "to",
+      "mo",
+      "bi",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "te",
+      "no",
+      "ot"
+    ]
+  },
+  {
+    "id": "fo3-063",
+    "mot": "démocratie",
+    "syllabes": [
+      "dé",
+      "mo",
+      "cra",
+      "tie"
+    ],
+    "leurres": [
+      "om",
+      "ma",
+      "cre",
+      "fie"
+    ]
+  },
+  {
+    "id": "fo3-064",
+    "mot": "république",
+    "syllabes": [
+      "ré",
+      "pu",
+      "bli",
+      "que"
+    ],
+    "leurres": [
+      "bil",
+      "qua",
+      "re",
+      "blu"
+    ]
+  },
+  {
+    "id": "fo3-065",
+    "mot": "gouvernement",
+    "syllabes": [
+      "gou",
+      "ver",
+      "ne",
+      "ment"
+    ],
+    "leurres": [
+      "vre",
+      "var",
+      "en",
+      "gon"
+    ]
+  },
+  {
+    "id": "fo3-066",
+    "mot": "municipal",
+    "syllabes": [
+      "mu",
+      "ni",
+      "ci",
+      "pal"
+    ],
+    "leurres": [
+      "in",
+      "mi",
+      "ce",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo3-067",
+    "mot": "patrimoine",
+    "syllabes": [
+      "pa",
+      "tri",
+      "moi",
+      "ne"
+    ],
+    "leurres": [
+      "tir",
+      "noi",
+      "tru",
+      "en"
+    ]
+  },
+  {
+    "id": "fo3-068",
+    "mot": "cathédrale",
+    "syllabes": [
+      "ca",
+      "thé",
+      "dra",
+      "le"
+    ],
+    "leurres": [
+      "dar",
+      "the",
+      "dro",
+      "ce"
+    ]
+  },
+  {
+    "id": "fo3-069",
+    "mot": "spectaculaire",
+    "syllabes": [
+      "spec",
+      "ta",
+      "cu",
+      "lai",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ra",
+      "tai",
+      "te"
+    ]
+  },
+  {
+    "id": "fo3-070",
+    "mot": "formidable",
+    "syllabes": [
+      "for",
+      "mi",
+      "da",
+      "ble"
+    ],
+    "leurres": [
+      "ad",
+      "de",
+      "me",
+      "bla"
+    ]
+  },
+  {
+    "id": "fo3-071",
+    "mot": "magnifique",
+    "syllabes": [
+      "ma",
+      "gni",
+      "fi",
+      "que"
+    ],
+    "leurres": [
+      "am",
+      "mo",
+      "if",
+      "qua"
+    ]
+  },
+  {
+    "id": "fo3-072",
+    "mot": "épouvantable",
+    "syllabes": [
+      "é",
+      "pou",
+      "van",
+      "ta",
+      "ble"
+    ],
+    "leurres": [
+      "bel",
+      "poi",
+      "fan",
+      "bla"
+    ]
+  },
+  {
+    "id": "fo3-073",
+    "mot": "adorable",
+    "syllabes": [
+      "a",
+      "do",
+      "ra",
+      "ble"
+    ],
+    "leurres": [
+      "ar",
+      "ro",
+      "blo",
+      "o"
+    ]
+  },
+  {
+    "id": "fo3-074",
+    "mot": "admirable",
+    "syllabes": [
+      "ad",
+      "mi",
+      "ra",
+      "ble"
+    ],
+    "leurres": [
+      "ar",
+      "re",
+      "ed",
+      "me"
+    ]
+  },
+  {
+    "id": "fo3-075",
+    "mot": "invisible",
+    "syllabes": [
+      "in",
+      "vi",
+      "si",
+      "ble"
+    ],
+    "leurres": [
+      "is",
+      "se",
+      "ain",
+      "ve"
+    ]
+  },
+  {
+    "id": "fo3-076",
+    "mot": "ridicule",
+    "syllabes": [
+      "ri",
+      "di",
+      "cu",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "te",
+      "uc",
+      "de"
+    ]
+  },
+  {
+    "id": "fo3-077",
+    "mot": "difficulté",
+    "syllabes": [
+      "dif",
+      "fi",
+      "cul",
+      "té"
+    ],
+    "leurres": [
+      "if",
+      "duf",
+      "fu",
+      "tè"
+    ]
+  },
+  {
+    "id": "fo3-078",
+    "mot": "original",
+    "syllabes": [
+      "o",
+      "ri",
+      "gi",
+      "nal"
+    ],
+    "leurres": [
+      "ig",
+      "a",
+      "mal",
+      "ge"
+    ]
+  },
+  {
+    "id": "fo3-079",
+    "mot": "antiquité",
+    "syllabes": [
+      "an",
+      "ti",
+      "qui",
+      "té"
+    ],
+    "leurres": [
+      "it",
+      "fé",
+      "tu",
+      "que"
+    ]
+  },
+  {
+    "id": "fo3-080",
+    "mot": "préhistoire",
+    "syllabes": [
+      "pré",
+      "his",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "hus",
+      "pre",
+      "tou"
+    ]
+  },
+  {
+    "id": "fo3-081",
+    "mot": "chevalerie",
+    "syllabes": [
+      "che",
+      "va",
+      "le",
+      "rie"
+    ],
+    "leurres": [
+      "el",
+      "lo",
+      "cho",
+      "ve"
+    ]
+  },
+  {
+    "id": "fo3-082",
+    "mot": "camaraderie",
+    "syllabes": [
+      "ca",
+      "ma",
+      "ra",
+      "de",
+      "rie"
+    ],
+    "leurres": [
+      "ed",
+      "do",
+      "mo",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo3-083",
+    "mot": "boulangerie",
+    "syllabes": [
+      "bou",
+      "lan",
+      "ge",
+      "rie"
+    ],
+    "leurres": [
+      "eg",
+      "rei",
+      "tan",
+      "bon"
+    ]
+  },
+  {
+    "id": "fo3-084",
+    "mot": "pâtisserie",
+    "syllabes": [
+      "pâ",
+      "tis",
+      "se",
+      "rie"
+    ],
+    "leurres": [
+      "es",
+      "rei",
+      "sa",
+      "tes"
+    ]
+  },
+  {
+    "id": "fo3-085",
+    "mot": "papeterie",
+    "syllabes": [
+      "pa",
+      "pe",
+      "te",
+      "rie"
+    ],
+    "leurres": [
+      "et",
+      "to",
+      "rei",
+      "ap"
+    ]
+  },
+  {
+    "id": "fo3-086",
+    "mot": "bijouterie",
+    "syllabes": [
+      "bi",
+      "jou",
+      "te",
+      "rie"
+    ],
+    "leurres": [
+      "ib",
+      "bu",
+      "rei",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo3-087",
+    "mot": "vétérinaire",
+    "syllabes": [
+      "vé",
+      "té",
+      "ri",
+      "nai",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ra",
+      "nei",
+      "te"
+    ]
+  },
+  {
+    "id": "fo3-088",
+    "mot": "opérateur",
+    "syllabes": [
+      "o",
+      "pé",
+      "ra",
+      "teur"
+    ],
+    "leurres": [
+      "ar",
+      "tour",
+      "re",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo3-089",
+    "mot": "agriculteur",
+    "syllabes": [
+      "a",
+      "gri",
+      "cul",
+      "teur"
+    ],
+    "leurres": [
+      "gir",
+      "feur",
+      "o",
+      "gre"
+    ]
+  },
+  {
+    "id": "fo3-090",
+    "mot": "littérature",
+    "syllabes": [
+      "lit",
+      "té",
+      "ra",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ro",
+      "ar",
+      "te"
+    ]
+  },
+  {
+    "id": "fo3-091",
+    "mot": "température",
+    "syllabes": [
+      "tem",
+      "pé",
+      "ra",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "fem",
+      "pè",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo3-092",
+    "mot": "caricature",
+    "syllabes": [
+      "ca",
+      "ri",
+      "ca",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "ir",
+      "ru",
+      "ro",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo3-093",
+    "mot": "préfecture",
+    "syllabes": [
+      "pré",
+      "fec",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "prè",
+      "ro",
+      "ti"
+    ]
+  },
+  {
+    "id": "fo3-094",
+    "mot": "couverture",
+    "syllabes": [
+      "cou",
+      "ver",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "vre",
+      "fer",
+      "fu",
+      "er"
+    ]
+  },
+  {
+    "id": "fo3-095",
+    "mot": "ouverture",
+    "syllabes": [
+      "ou",
+      "ver",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ra",
+      "fu",
+      "oi"
+    ]
+  },
+  {
+    "id": "fo3-096",
+    "mot": "fermeture",
+    "syllabes": [
+      "fer",
+      "me",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ra",
+      "fre",
+      "fu"
+    ]
+  },
+  {
+    "id": "fo3-097",
+    "mot": "confiture",
+    "syllabes": [
+      "con",
+      "fi",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "ut",
+      "ti",
+      "if",
+      "er"
+    ]
+  },
+  {
+    "id": "fo3-098",
+    "mot": "macaroni",
+    "syllabes": [
+      "ma",
+      "ca",
+      "ro",
+      "ni"
+    ],
+    "leurres": [
+      "ac",
+      "ce",
+      "in",
+      "am"
+    ]
+  },
+  {
+    "id": "fo3-099",
+    "mot": "accompagner",
+    "syllabes": [
+      "ac",
+      "com",
+      "pa",
+      "gner"
+    ],
+    "leurres": [
+      "ap",
+      "po",
+      "ec",
+      "gnor"
+    ]
+  },
+  {
+    "id": "fo3-100",
+    "mot": "organiser",
+    "syllabes": [
+      "or",
+      "ga",
+      "ni",
+      "ser"
+    ],
+    "leurres": [
+      "ag",
+      "go",
+      "ar",
+      "sar"
+    ]
+  },
+  {
+    "id": "fo3-101",
+    "mot": "écologique",
+    "syllabes": [
+      "é",
+      "co",
+      "lo",
+      "gi",
+      "que"
+    ],
+    "leurres": [
+      "ol",
+      "lu",
+      "gu",
+      "oc"
+    ]
+  },
+  {
+    "id": "fo3-102",
+    "mot": "technologie",
+    "syllabes": [
+      "tech",
+      "no",
+      "lo",
+      "gie"
+    ],
+    "leurres": [
+      "on",
+      "gei",
+      "toch",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-103",
+    "mot": "mécanique",
+    "syllabes": [
+      "mé",
+      "ca",
+      "ni",
+      "que"
+    ],
+    "leurres": [
+      "in",
+      "nu",
+      "né",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo3-104",
+    "mot": "dynamique",
+    "syllabes": [
+      "dy",
+      "na",
+      "mi",
+      "que"
+    ],
+    "leurres": [
+      "im",
+      "me",
+      "quo",
+      "di"
+    ]
+  },
+  {
+    "id": "fo3-105",
+    "mot": "fantastique",
+    "syllabes": [
+      "fan",
+      "tas",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "fas",
+      "quo",
+      "fi"
+    ]
+  },
+  {
+    "id": "fo3-106",
+    "mot": "sympathique",
+    "syllabes": [
+      "sym",
+      "pa",
+      "thi",
+      "que"
+    ],
+    "leurres": [
+      "ap",
+      "po",
+      "the",
+      "sin"
+    ]
+  },
+  {
+    "id": "fo3-107",
+    "mot": "gymnastique",
+    "syllabes": [
+      "gym",
+      "nas",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "te",
+      "gin",
+      "quo"
+    ]
+  },
+  {
+    "id": "fo3-108",
+    "mot": "informatique",
+    "syllabes": [
+      "in",
+      "for",
+      "ma",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "fro",
+      "fur",
+      "ain",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-109",
+    "mot": "automatique",
+    "syllabes": [
+      "au",
+      "to",
+      "ma",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "ot",
+      "fo",
+      "tu",
+      "am"
+    ]
+  },
+  {
+    "id": "fo3-110",
+    "mot": "américain",
+    "syllabes": [
+      "a",
+      "mé",
+      "ri",
+      "cain"
+    ],
+    "leurres": [
+      "ir",
+      "mè",
+      "ru",
+      "o"
+    ]
+  },
+  {
+    "id": "fo3-111",
+    "mot": "occidental",
+    "syllabes": [
+      "oc",
+      "ci",
+      "den",
+      "tal"
+    ],
+    "leurres": [
+      "ic",
+      "ac",
+      "fal",
+      "dan"
+    ]
+  },
+  {
+    "id": "fo3-112",
+    "mot": "pacifique",
+    "syllabes": [
+      "pa",
+      "ci",
+      "fi",
+      "que"
+    ],
+    "leurres": [
+      "ic",
+      "qua",
+      "ce",
+      "if"
+    ]
+  },
+  {
+    "id": "fo3-113",
+    "mot": "atlantique",
+    "syllabes": [
+      "at",
+      "lan",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "len",
+      "tu",
+      "qua"
+    ]
+  },
+  {
+    "id": "fo3-114",
+    "mot": "aquatique",
+    "syllabes": [
+      "a",
+      "qua",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "quo",
+      "tu",
+      "o"
+    ]
+  },
+  {
+    "id": "fo3-115",
+    "mot": "tyrannosaure",
+    "syllabes": [
+      "ty",
+      "ran",
+      "no",
+      "sau",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ron",
+      "ro",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-116",
+    "mot": "dinosaure",
+    "syllabes": [
+      "di",
+      "no",
+      "sau",
+      "re"
+    ],
+    "leurres": [
+      "id",
+      "du",
+      "sou",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo3-117",
+    "mot": "madeleine",
+    "syllabes": [
+      "ma",
+      "de",
+      "lei",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "tei",
+      "me",
+      "ed"
+    ]
+  },
+  {
+    "id": "fo3-118",
+    "mot": "avantage",
+    "syllabes": [
+      "a",
+      "van",
+      "ta",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "go",
+      "ven",
+      "fa"
+    ]
+  },
+  {
+    "id": "fo3-119",
+    "mot": "développement",
+    "syllabes": [
+      "dé",
+      "ve",
+      "lop",
+      "pe",
+      "ment"
+    ],
+    "leurres": [
+      "ep",
+      "po",
+      "lup",
+      "de"
+    ]
+  },
+  {
+    "id": "fo3-120",
+    "mot": "catapulte",
+    "syllabes": [
+      "ca",
+      "ta",
+      "pul",
+      "te"
+    ],
+    "leurres": [
+      "at",
+      "fa",
+      "ce",
+      "et"
+    ]
+  },
+  {
+    "id": "fo3-121",
+    "mot": "parapente",
+    "syllabes": [
+      "pa",
+      "ra",
+      "pen",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "pan",
+      "to",
+      "ap"
+    ]
+  },
+  {
+    "id": "fo3-122",
+    "mot": "patinoire",
+    "syllabes": [
+      "pa",
+      "ti",
+      "noi",
+      "re"
+    ],
+    "leurres": [
+      "ap",
+      "pe",
+      "er",
+      "moi"
+    ]
+  },
+  {
+    "id": "fo3-123",
+    "mot": "mécanisme",
+    "syllabes": [
+      "mé",
+      "ca",
+      "nis",
+      "me"
+    ],
+    "leurres": [
+      "em",
+      "ne",
+      "nes",
+      "ce"
+    ]
+  },
+  {
+    "id": "fo3-124",
+    "mot": "organisme",
+    "syllabes": [
+      "or",
+      "ga",
+      "nis",
+      "me"
+    ],
+    "leurres": [
+      "ag",
+      "mis",
+      "go",
+      "ne"
+    ]
+  },
+  {
+    "id": "fo3-125",
+    "mot": "journaliste",
+    "syllabes": [
+      "jour",
+      "na",
+      "lis",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "joir",
+      "fe",
+      "no"
+    ]
+  },
+  {
+    "id": "fo3-126",
+    "mot": "capitale",
+    "syllabes": [
+      "ca",
+      "pi",
+      "ta",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "lo",
+      "at",
+      "co"
+    ]
+  },
+  {
+    "id": "fo3-127",
+    "mot": "capitaine",
+    "syllabes": [
+      "ca",
+      "pi",
+      "tai",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "fai",
+      "no",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo3-128",
+    "mot": "impératrice",
+    "syllabes": [
+      "im",
+      "pé",
+      "ra",
+      "tri",
+      "ce"
+    ],
+    "leurres": [
+      "tir",
+      "pè",
+      "tru",
+      "ar"
+    ]
+  },
+  {
+    "id": "fo3-129",
+    "mot": "pyramide",
+    "syllabes": [
+      "py",
+      "ra",
+      "mi",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "do",
+      "re",
+      "ni"
+    ]
+  },
+  {
+    "id": "fo3-130",
+    "mot": "encyclopédie",
+    "syllabes": [
+      "en",
+      "cy",
+      "clo",
+      "pé",
+      "die"
+    ],
+    "leurres": [
+      "col",
+      "dei",
+      "ne",
+      "pè"
+    ]
+  },
+  {
+    "id": "fo3-131",
+    "mot": "interrogatoire",
+    "syllabes": [
+      "in",
+      "ter",
+      "ro",
+      "ga",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "tre",
+      "ain",
+      "tar",
+      "tou"
+    ]
+  },
+  {
+    "id": "fo3-132",
+    "mot": "laboratoire",
+    "syllabes": [
+      "la",
+      "bo",
+      "ra",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "foi",
+      "ro",
+      "ba"
+    ]
+  },
+  {
+    "id": "fo3-133",
+    "mot": "observatoire",
+    "syllabes": [
+      "ob",
+      "ser",
+      "va",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "tou",
+      "ro",
+      "sor"
+    ]
+  },
+  {
+    "id": "fo3-134",
+    "mot": "réfectoire",
+    "syllabes": [
+      "ré",
+      "fec",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "rè",
+      "tec",
+      "tou"
+    ]
+  },
+  {
+    "id": "fo3-135",
+    "mot": "conservatoire",
+    "syllabes": [
+      "con",
+      "ser",
+      "va",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "can",
+      "sor",
+      "ve"
+    ]
+  },
+  {
+    "id": "fo3-136",
+    "mot": "territoire",
+    "syllabes": [
+      "ter",
+      "ri",
+      "toi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "foi",
+      "ra",
+      "ru"
+    ]
+  },
+  {
+    "id": "fo3-137",
+    "mot": "accessoire",
+    "syllabes": [
+      "ac",
+      "ces",
+      "soi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "oc",
+      "sou",
+      "cos"
+    ]
+  },
+  {
+    "id": "fo3-138",
+    "mot": "intelligence",
+    "syllabes": [
+      "in",
+      "tel",
+      "li",
+      "gen",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "gne",
+      "ain",
+      "co"
+    ]
+  },
+  {
+    "id": "fo3-139",
+    "mot": "conférence",
+    "syllabes": [
+      "con",
+      "fé",
+      "ren",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "ran",
+      "fe",
+      "co"
+    ]
+  },
+  {
+    "id": "fo3-140",
+    "mot": "référence",
+    "syllabes": [
+      "ré",
+      "fé",
+      "ren",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "té",
+      "ca",
+      "ran"
+    ]
+  },
+  {
+    "id": "fo3-141",
+    "mot": "différence",
+    "syllabes": [
+      "dif",
+      "fé",
+      "ren",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "duf",
+      "fè",
+      "ca"
+    ]
+  },
+  {
+    "id": "fo3-142",
+    "mot": "indépendance",
+    "syllabes": [
+      "in",
+      "dé",
+      "pen",
+      "dan",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "dè",
+      "ca",
+      "pan"
+    ]
+  },
+  {
+    "id": "fo3-143",
+    "mot": "résistance",
+    "syllabes": [
+      "ré",
+      "sis",
+      "tan",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "sus",
+      "re",
+      "ton"
+    ]
+  },
+  {
+    "id": "fo3-144",
+    "mot": "persévérance",
+    "syllabes": [
+      "per",
+      "sé",
+      "vé",
+      "ran",
+      "ce"
+    ],
+    "leurres": [
+      "pre",
+      "por",
+      "ec",
+      "ron"
+    ]
+  },
+  {
+    "id": "fo3-145",
+    "mot": "reconnaissance",
+    "syllabes": [
+      "re",
+      "con",
+      "nais",
+      "san",
+      "ce"
+    ],
+    "leurres": [
+      "er",
+      "ra",
+      "ec",
+      "cou"
+    ]
+  },
+  {
+    "id": "fo3-146",
+    "mot": "connaissance",
+    "syllabes": [
+      "con",
+      "nais",
+      "san",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "son",
+      "co",
+      "cou"
+    ]
+  },
+  {
+    "id": "fo3-147",
+    "mot": "imprimante",
+    "syllabes": [
+      "im",
+      "pri",
+      "man",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "mon",
+      "to",
+      "pre"
+    ]
+  },
+  {
+    "id": "fo3-148",
+    "mot": "télécommande",
+    "syllabes": [
+      "té",
+      "lé",
+      "com",
+      "man",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "do",
+      "tè",
+      "le"
+    ]
+  },
+  {
+    "id": "fo3-149",
+    "mot": "magnétophone",
+    "syllabes": [
+      "ma",
+      "gné",
+      "to",
+      "pho",
+      "ne"
+    ],
+    "leurres": [
+      "ot",
+      "gnè",
+      "ta",
+      "phu"
+    ]
+  },
+  {
+    "id": "fo3-150",
+    "mot": "patinage",
+    "syllabes": [
+      "pa",
+      "ti",
+      "na",
+      "ge"
+    ],
+    "leurres": [
+      "ap",
+      "pe",
+      "it",
+      "eg"
+    ]
+  },
+  {
+    "id": "fo3-151",
+    "mot": "acrobate",
+    "syllabes": [
+      "a",
+      "cro",
+      "ba",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "to",
+      "ab",
+      "cru"
+    ]
+  },
+  {
+    "id": "fo3-152",
+    "mot": "harmonica",
+    "syllabes": [
+      "har",
+      "mo",
+      "ni",
+      "ca"
+    ],
+    "leurres": [
+      "om",
+      "no",
+      "nu",
+      "her"
+    ]
+  },
+  {
+    "id": "fo3-153",
+    "mot": "clarinette",
+    "syllabes": [
+      "cla",
+      "ri",
+      "net",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "ta",
+      "cal",
+      "ru"
+    ]
+  },
+  {
+    "id": "fo3-154",
+    "mot": "contrebasse",
+    "syllabes": [
+      "con",
+      "tre",
+      "bas",
+      "se"
+    ],
+    "leurres": [
+      "ter",
+      "fre",
+      "cou",
+      "so"
+    ]
+  },
+  {
+    "id": "fo3-155",
+    "mot": "xylophone",
+    "syllabes": [
+      "xy",
+      "lo",
+      "pho",
+      "ne"
+    ],
+    "leurres": [
+      "ol",
+      "xi",
+      "pha",
+      "to"
+    ]
+  },
+  {
+    "id": "fo3-156",
+    "mot": "compositeur",
+    "syllabes": [
+      "com",
+      "po",
+      "si",
+      "teur"
+    ],
+    "leurres": [
+      "is",
+      "se",
+      "tour",
+      "op"
+    ]
+  },
+  {
+    "id": "fo3-157",
+    "mot": "paragraphe",
+    "syllabes": [
+      "pa",
+      "ra",
+      "gra",
+      "phe"
+    ],
+    "leurres": [
+      "ar",
+      "ro",
+      "po",
+      "pho"
+    ]
+  },
+  {
+    "id": "fo3-158",
+    "mot": "homonyme",
+    "syllabes": [
+      "ho",
+      "mo",
+      "ny",
+      "me"
+    ],
+    "leurres": [
+      "om",
+      "no",
+      "my",
+      "hu"
+    ]
+  },
+  {
+    "id": "fo3-159",
+    "mot": "synonyme",
+    "syllabes": [
+      "sy",
+      "no",
+      "ny",
+      "me"
+    ],
+    "leurres": [
+      "em",
+      "si",
+      "mo",
+      "my"
+    ]
+  },
+  {
+    "id": "fo3-160",
+    "mot": "antonyme",
+    "syllabes": [
+      "an",
+      "to",
+      "ny",
+      "me"
+    ],
+    "leurres": [
+      "ot",
+      "ta",
+      "ma",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-161",
+    "mot": "métaphore",
+    "syllabes": [
+      "mé",
+      "ta",
+      "pho",
+      "re"
+    ],
+    "leurres": [
+      "at",
+      "pha",
+      "mè",
+      "to"
+    ]
+  },
+  {
+    "id": "fo3-162",
+    "mot": "personnage",
+    "syllabes": [
+      "per",
+      "son",
+      "na",
+      "ge"
+    ],
+    "leurres": [
+      "an",
+      "ne",
+      "eg",
+      "pre"
+    ]
+  },
+  {
+    "id": "fo3-163",
+    "mot": "protagoniste",
+    "syllabes": [
+      "pro",
+      "ta",
+      "go",
+      "nis",
+      "te"
+    ],
+    "leurres": [
+      "at",
+      "fa",
+      "por",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo3-164",
+    "mot": "romantique",
+    "syllabes": [
+      "ro",
+      "man",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "tu",
+      "or",
+      "nan"
+    ]
+  },
+  {
+    "id": "fo3-165",
+    "mot": "déguisement",
+    "syllabes": [
+      "dé",
+      "gui",
+      "se",
+      "ment"
+    ],
+    "leurres": [
+      "es",
+      "de",
+      "so",
+      "nent"
+    ]
+  },
+  {
+    "id": "fo3-166",
+    "mot": "cérémonie",
+    "syllabes": [
+      "cé",
+      "ré",
+      "mo",
+      "nie"
+    ],
+    "leurres": [
+      "om",
+      "ce",
+      "rè",
+      "mie"
+    ]
+  },
+  {
+    "id": "fo3-167",
+    "mot": "volcanologue",
+    "syllabes": [
+      "vol",
+      "ca",
+      "no",
+      "lo",
+      "gue"
+    ],
+    "leurres": [
+      "ac",
+      "vul",
+      "co",
+      "na"
+    ]
+  },
+  {
+    "id": "fo3-168",
+    "mot": "canicule",
+    "syllabes": [
+      "ca",
+      "ni",
+      "cu",
+      "le"
+    ],
+    "leurres": [
+      "in",
+      "nu",
+      "ac",
+      "co"
+    ]
+  },
+  {
+    "id": "fo3-169",
+    "mot": "avalanche",
+    "syllabes": [
+      "a",
+      "va",
+      "lan",
+      "che"
+    ],
+    "leurres": [
+      "tan",
+      "o",
+      "ve",
+      "cha"
+    ]
+  },
+  {
+    "id": "fo3-170",
+    "mot": "panorama",
+    "syllabes": [
+      "pa",
+      "no",
+      "ra",
+      "ma"
+    ],
+    "leurres": [
+      "am",
+      "mo",
+      "ro",
+      "nu"
+    ]
+  },
+  {
+    "id": "fo3-171",
+    "mot": "labyrinthe",
+    "syllabes": [
+      "la",
+      "by",
+      "rin",
+      "the"
+    ],
+    "leurres": [
+      "al",
+      "lo",
+      "tho",
+      "bi"
+    ]
+  },
+  {
+    "id": "fo3-172",
+    "mot": "catacombe",
+    "syllabes": [
+      "ca",
+      "ta",
+      "com",
+      "be"
+    ],
+    "leurres": [
+      "ac",
+      "co",
+      "bo",
+      "at"
+    ]
+  },
+  {
+    "id": "fo3-173",
+    "mot": "crépuscule",
+    "syllabes": [
+      "cré",
+      "pus",
+      "cu",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "crè",
+      "te",
+      "pis"
+    ]
+  },
+  {
+    "id": "fo3-174",
+    "mot": "péninsule",
+    "syllabes": [
+      "pé",
+      "nin",
+      "su",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "lo",
+      "pè",
+      "nain"
+    ]
+  },
+  {
+    "id": "fo3-175",
+    "mot": "carapace",
+    "syllabes": [
+      "ca",
+      "ra",
+      "pa",
+      "ce"
+    ],
+    "leurres": [
+      "ac",
+      "co",
+      "pe",
+      "re"
+    ]
+  },
+  {
+    "id": "fo3-176",
+    "mot": "coccinelle",
+    "syllabes": [
+      "coc",
+      "ci",
+      "nel",
+      "le"
+    ],
+    "leurres": [
+      "ic",
+      "ce",
+      "nal",
+      "cuc"
+    ]
+  },
+  {
+    "id": "fo3-177",
+    "mot": "libellule",
+    "syllabes": [
+      "li",
+      "bel",
+      "lu",
+      "le"
+    ],
+    "leurres": [
+      "il",
+      "ti",
+      "ul",
+      "la"
+    ]
+  },
+  {
+    "id": "fo3-178",
+    "mot": "sauterelle",
+    "syllabes": [
+      "sau",
+      "te",
+      "rel",
+      "le"
+    ],
+    "leurres": [
+      "et",
+      "ral",
+      "to",
+      "sou"
+    ]
+  },
+  {
+    "id": "fo3-179",
+    "mot": "antilope",
+    "syllabes": [
+      "an",
+      "ti",
+      "lo",
+      "pe"
+    ],
+    "leurres": [
+      "ep",
+      "pa",
+      "on",
+      "ol"
+    ]
+  },
+  {
+    "id": "fo3-180",
+    "mot": "alligator",
+    "syllabes": [
+      "al",
+      "li",
+      "ga",
+      "tor"
+    ],
+    "leurres": [
+      "tro",
+      "ol",
+      "tar",
+      "ag"
+    ]
+  },
+  {
+    "id": "fo3-181",
+    "mot": "héritage",
+    "syllabes": [
+      "hé",
+      "ri",
+      "ta",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "he",
+      "ga",
+      "ir"
+    ]
+  },
+  {
+    "id": "fo3-182",
+    "mot": "olympique",
+    "syllabes": [
+      "o",
+      "lym",
+      "pi",
+      "que"
+    ],
+    "leurres": [
+      "ip",
+      "quo",
+      "tym",
+      "a"
+    ]
+  },
+  {
+    "id": "fo3-183",
+    "mot": "récompense",
+    "syllabes": [
+      "ré",
+      "com",
+      "pen",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "sa",
+      "pan",
+      "rè"
+    ]
+  }
+]

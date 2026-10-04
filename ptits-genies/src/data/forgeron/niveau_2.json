@@ -1,0 +1,3192 @@
+[
+  {
+    "id": "fo2-001",
+    "mot": "tableau",
+    "syllabes": [
+      "ta",
+      "bleau"
+    ],
+    "leurres": [
+      "at",
+      "fa",
+      "bleu"
+    ]
+  },
+  {
+    "id": "fo2-002",
+    "mot": "carton",
+    "syllabes": [
+      "car",
+      "ton"
+    ],
+    "leurres": [
+      "cra",
+      "tan",
+      "cer"
+    ]
+  },
+  {
+    "id": "fo2-003",
+    "mot": "montagne",
+    "syllabes": [
+      "mon",
+      "ta",
+      "gne"
+    ],
+    "leurres": [
+      "at",
+      "gno",
+      "fa"
+    ]
+  },
+  {
+    "id": "fo2-004",
+    "mot": "château",
+    "syllabes": [
+      "châ",
+      "teau"
+    ],
+    "leurres": [
+      "cha",
+      "feau",
+      "tau"
+    ]
+  },
+  {
+    "id": "fo2-005",
+    "mot": "bateau",
+    "syllabes": [
+      "ba",
+      "teau"
+    ],
+    "leurres": [
+      "ab",
+      "teu",
+      "be"
+    ]
+  },
+  {
+    "id": "fo2-006",
+    "mot": "gâteau",
+    "syllabes": [
+      "gâ",
+      "teau"
+    ],
+    "leurres": [
+      "tau",
+      "ga",
+      "teu"
+    ]
+  },
+  {
+    "id": "fo2-007",
+    "mot": "chapeau",
+    "syllabes": [
+      "cha",
+      "peau"
+    ],
+    "leurres": [
+      "che",
+      "pau",
+      "cho"
+    ]
+  },
+  {
+    "id": "fo2-008",
+    "mot": "cadeau",
+    "syllabes": [
+      "ca",
+      "deau"
+    ],
+    "leurres": [
+      "ac",
+      "dau",
+      "co"
+    ]
+  },
+  {
+    "id": "fo2-009",
+    "mot": "couteau",
+    "syllabes": [
+      "cou",
+      "teau"
+    ],
+    "leurres": [
+      "tau",
+      "coi",
+      "teu"
+    ]
+  },
+  {
+    "id": "fo2-010",
+    "mot": "corbeau",
+    "syllabes": [
+      "cor",
+      "beau"
+    ],
+    "leurres": [
+      "cro",
+      "beu",
+      "cur"
+    ]
+  },
+  {
+    "id": "fo2-011",
+    "mot": "oiseau",
+    "syllabes": [
+      "oi",
+      "seau"
+    ],
+    "leurres": [
+      "sau",
+      "ou",
+      "seu"
+    ]
+  },
+  {
+    "id": "fo2-012",
+    "mot": "mouton",
+    "syllabes": [
+      "mou",
+      "ton"
+    ],
+    "leurres": [
+      "nou",
+      "fon",
+      "moi"
+    ]
+  },
+  {
+    "id": "fo2-013",
+    "mot": "chanson",
+    "syllabes": [
+      "chan",
+      "son"
+    ],
+    "leurres": [
+      "chen",
+      "san",
+      "chon"
+    ]
+  },
+  {
+    "id": "fo2-014",
+    "mot": "maison",
+    "syllabes": [
+      "mai",
+      "son"
+    ],
+    "leurres": [
+      "sou",
+      "nai",
+      "san"
+    ]
+  },
+  {
+    "id": "fo2-015",
+    "mot": "saison",
+    "syllabes": [
+      "sai",
+      "son"
+    ],
+    "leurres": [
+      "sei",
+      "sou",
+      "san"
+    ]
+  },
+  {
+    "id": "fo2-016",
+    "mot": "poison",
+    "syllabes": [
+      "poi",
+      "son"
+    ],
+    "leurres": [
+      "pou",
+      "sou",
+      "san"
+    ]
+  },
+  {
+    "id": "fo2-017",
+    "mot": "poisson",
+    "syllabes": [
+      "pois",
+      "son"
+    ],
+    "leurres": [
+      "pous",
+      "sou",
+      "san"
+    ]
+  },
+  {
+    "id": "fo2-018",
+    "mot": "poulet",
+    "syllabes": [
+      "pou",
+      "let"
+    ],
+    "leurres": [
+      "tet",
+      "pon",
+      "lat"
+    ]
+  },
+  {
+    "id": "fo2-019",
+    "mot": "rouleau",
+    "syllabes": [
+      "rou",
+      "leau"
+    ],
+    "leurres": [
+      "lau",
+      "roi",
+      "leu"
+    ]
+  },
+  {
+    "id": "fo2-020",
+    "mot": "mouchoir",
+    "syllabes": [
+      "mou",
+      "choir"
+    ],
+    "leurres": [
+      "chour",
+      "mon",
+      "nou"
+    ]
+  },
+  {
+    "id": "fo2-021",
+    "mot": "tiroir",
+    "syllabes": [
+      "ti",
+      "roir"
+    ],
+    "leurres": [
+      "it",
+      "fi",
+      "rour"
+    ]
+  },
+  {
+    "id": "fo2-022",
+    "mot": "miroir",
+    "syllabes": [
+      "mi",
+      "roir"
+    ],
+    "leurres": [
+      "im",
+      "rour",
+      "ni"
+    ]
+  },
+  {
+    "id": "fo2-023",
+    "mot": "armoire",
+    "syllabes": [
+      "ar",
+      "moi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "or",
+      "ra"
+    ]
+  },
+  {
+    "id": "fo2-024",
+    "mot": "baignoire",
+    "syllabes": [
+      "bai",
+      "gnoi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "gnou",
+      "ra"
+    ]
+  },
+  {
+    "id": "fo2-025",
+    "mot": "peinture",
+    "syllabes": [
+      "pein",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "ut",
+      "to",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo2-026",
+    "mot": "ceinture",
+    "syllabes": [
+      "cein",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "cain",
+      "ra"
+    ]
+  },
+  {
+    "id": "fo2-027",
+    "mot": "plongeur",
+    "syllabes": [
+      "plon",
+      "geur"
+    ],
+    "leurres": [
+      "guer",
+      "plan",
+      "gour"
+    ]
+  },
+  {
+    "id": "fo2-028",
+    "mot": "fontaine",
+    "syllabes": [
+      "fon",
+      "tai",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "fai",
+      "na"
+    ]
+  },
+  {
+    "id": "fo2-029",
+    "mot": "campagne",
+    "syllabes": [
+      "cam",
+      "pa",
+      "gne"
+    ],
+    "leurres": [
+      "ap",
+      "gna",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo2-030",
+    "mot": "ligne",
+    "syllabes": [
+      "li",
+      "gne"
+    ],
+    "leurres": [
+      "il",
+      "gna",
+      "ti"
+    ]
+  },
+  {
+    "id": "fo2-031",
+    "mot": "cygne",
+    "syllabes": [
+      "cy",
+      "gne"
+    ],
+    "leurres": [
+      "gno",
+      "ci",
+      "gna"
+    ]
+  },
+  {
+    "id": "fo2-032",
+    "mot": "copain",
+    "syllabes": [
+      "co",
+      "pain"
+    ],
+    "leurres": [
+      "oc",
+      "ca",
+      "pin"
+    ]
+  },
+  {
+    "id": "fo2-033",
+    "mot": "demain",
+    "syllabes": [
+      "de",
+      "main"
+    ],
+    "leurres": [
+      "ed",
+      "do",
+      "nain"
+    ]
+  },
+  {
+    "id": "fo2-034",
+    "mot": "requin",
+    "syllabes": [
+      "re",
+      "quin"
+    ],
+    "leurres": [
+      "er",
+      "ra",
+      "quain"
+    ]
+  },
+  {
+    "id": "fo2-035",
+    "mot": "raisin",
+    "syllabes": [
+      "rai",
+      "sin"
+    ],
+    "leurres": [
+      "sain",
+      "rei",
+      "sun"
+    ]
+  },
+  {
+    "id": "fo2-036",
+    "mot": "loutre",
+    "syllabes": [
+      "lou",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "lon",
+      "fre"
+    ]
+  },
+  {
+    "id": "fo2-037",
+    "mot": "poudre",
+    "syllabes": [
+      "pou",
+      "dre"
+    ],
+    "leurres": [
+      "der",
+      "poi",
+      "dro"
+    ]
+  },
+  {
+    "id": "fo2-038",
+    "mot": "affaire",
+    "syllabes": [
+      "af",
+      "fai",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ro",
+      "ef"
+    ]
+  },
+  {
+    "id": "fo2-039",
+    "mot": "cousin",
+    "syllabes": [
+      "cou",
+      "sin"
+    ],
+    "leurres": [
+      "sun",
+      "coi",
+      "sain"
+    ]
+  },
+  {
+    "id": "fo2-040",
+    "mot": "voisin",
+    "syllabes": [
+      "voi",
+      "sin"
+    ],
+    "leurres": [
+      "sun",
+      "vou",
+      "sain"
+    ]
+  },
+  {
+    "id": "fo2-041",
+    "mot": "moulin",
+    "syllabes": [
+      "mou",
+      "lin"
+    ],
+    "leurres": [
+      "mon",
+      "lain",
+      "nou"
+    ]
+  },
+  {
+    "id": "fo2-042",
+    "mot": "jardin",
+    "syllabes": [
+      "jar",
+      "din"
+    ],
+    "leurres": [
+      "jer",
+      "dain",
+      "jor"
+    ]
+  },
+  {
+    "id": "fo2-043",
+    "mot": "lapin",
+    "syllabes": [
+      "la",
+      "pin"
+    ],
+    "leurres": [
+      "al",
+      "ta",
+      "pain"
+    ]
+  },
+  {
+    "id": "fo2-044",
+    "mot": "sapin",
+    "syllabes": [
+      "sa",
+      "pin"
+    ],
+    "leurres": [
+      "as",
+      "pain",
+      "se"
+    ]
+  },
+  {
+    "id": "fo2-045",
+    "mot": "pingouin",
+    "syllabes": [
+      "pin",
+      "gouin"
+    ],
+    "leurres": [
+      "pain",
+      "goin",
+      "pun"
+    ]
+  },
+  {
+    "id": "fo2-046",
+    "mot": "dauphin",
+    "syllabes": [
+      "dau",
+      "phin"
+    ],
+    "leurres": [
+      "phain",
+      "dou",
+      "phun"
+    ]
+  },
+  {
+    "id": "fo2-047",
+    "mot": "autobus",
+    "syllabes": [
+      "au",
+      "to",
+      "bus"
+    ],
+    "leurres": [
+      "ot",
+      "ou",
+      "bis"
+    ]
+  },
+  {
+    "id": "fo2-048",
+    "mot": "auteur",
+    "syllabes": [
+      "au",
+      "teur"
+    ],
+    "leurres": [
+      "tour",
+      "ou",
+      "feur"
+    ]
+  },
+  {
+    "id": "fo2-049",
+    "mot": "chauffeur",
+    "syllabes": [
+      "chauf",
+      "feur"
+    ],
+    "leurres": [
+      "teur",
+      "chouf",
+      "four"
+    ]
+  },
+  {
+    "id": "fo2-050",
+    "mot": "ange",
+    "syllabes": [
+      "an",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "ga",
+      "na"
+    ]
+  },
+  {
+    "id": "fo2-051",
+    "mot": "jambon",
+    "syllabes": [
+      "jam",
+      "bon"
+    ],
+    "leurres": [
+      "bou",
+      "jan",
+      "ban"
+    ]
+  },
+  {
+    "id": "fo2-052",
+    "mot": "bonbon",
+    "syllabes": [
+      "bon",
+      "bon"
+    ],
+    "leurres": [
+      "ban",
+      "bou"
+    ]
+  },
+  {
+    "id": "fo2-053",
+    "mot": "gourmand",
+    "syllabes": [
+      "gour",
+      "mand"
+    ],
+    "leurres": [
+      "goir",
+      "mend",
+      "nand"
+    ]
+  },
+  {
+    "id": "fo2-054",
+    "mot": "éléphant",
+    "syllabes": [
+      "é",
+      "lé",
+      "phant"
+    ],
+    "leurres": [
+      "lè",
+      "phent",
+      "té"
+    ]
+  },
+  {
+    "id": "fo2-055",
+    "mot": "enfant",
+    "syllabes": [
+      "en",
+      "fant"
+    ],
+    "leurres": [
+      "font",
+      "ne",
+      "tant"
+    ]
+  },
+  {
+    "id": "fo2-056",
+    "mot": "tambour",
+    "syllabes": [
+      "tam",
+      "bour"
+    ],
+    "leurres": [
+      "fam",
+      "boir",
+      "tan"
+    ]
+  },
+  {
+    "id": "fo2-057",
+    "mot": "trompette",
+    "syllabes": [
+      "trom",
+      "pet",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "tron",
+      "to"
+    ]
+  },
+  {
+    "id": "fo2-058",
+    "mot": "clairon",
+    "syllabes": [
+      "clai",
+      "ron"
+    ],
+    "leurres": [
+      "clei",
+      "ran",
+      "rou"
+    ]
+  },
+  {
+    "id": "fo2-059",
+    "mot": "dragon",
+    "syllabes": [
+      "dra",
+      "gon"
+    ],
+    "leurres": [
+      "dar",
+      "gno",
+      "dro"
+    ]
+  },
+  {
+    "id": "fo2-060",
+    "mot": "prison",
+    "syllabes": [
+      "pri",
+      "son"
+    ],
+    "leurres": [
+      "pir",
+      "sou",
+      "pru"
+    ]
+  },
+  {
+    "id": "fo2-061",
+    "mot": "table",
+    "syllabes": [
+      "ta",
+      "ble"
+    ],
+    "leurres": [
+      "at",
+      "fa",
+      "bla"
+    ]
+  },
+  {
+    "id": "fo2-062",
+    "mot": "chapitre",
+    "syllabes": [
+      "cha",
+      "pi",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "che",
+      "fre"
+    ]
+  },
+  {
+    "id": "fo2-063",
+    "mot": "titre",
+    "syllabes": [
+      "ti",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "tra",
+      "it"
+    ]
+  },
+  {
+    "id": "fo2-064",
+    "mot": "livre",
+    "syllabes": [
+      "li",
+      "vre"
+    ],
+    "leurres": [
+      "il",
+      "ti",
+      "fre"
+    ]
+  },
+  {
+    "id": "fo2-065",
+    "mot": "chèvre",
+    "syllabes": [
+      "chè",
+      "vre"
+    ],
+    "leurres": [
+      "ver",
+      "che",
+      "vro"
+    ]
+  },
+  {
+    "id": "fo2-066",
+    "mot": "zèbre",
+    "syllabes": [
+      "zè",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "ze",
+      "bro"
+    ]
+  },
+  {
+    "id": "fo2-067",
+    "mot": "tigre",
+    "syllabes": [
+      "ti",
+      "gre"
+    ],
+    "leurres": [
+      "it",
+      "fi",
+      "gro"
+    ]
+  },
+  {
+    "id": "fo2-068",
+    "mot": "ogre",
+    "syllabes": [
+      "o",
+      "gre"
+    ],
+    "leurres": [
+      "ger",
+      "u",
+      "gro"
+    ]
+  },
+  {
+    "id": "fo2-069",
+    "mot": "crabe",
+    "syllabes": [
+      "cra",
+      "be"
+    ],
+    "leurres": [
+      "car",
+      "cro",
+      "bo"
+    ]
+  },
+  {
+    "id": "fo2-070",
+    "mot": "promenade",
+    "syllabes": [
+      "pro",
+      "me",
+      "na",
+      "de"
+    ],
+    "leurres": [
+      "por",
+      "pru",
+      "do"
+    ]
+  },
+  {
+    "id": "fo2-071",
+    "mot": "groupe",
+    "syllabes": [
+      "grou",
+      "pe"
+    ],
+    "leurres": [
+      "ep",
+      "groi",
+      "po"
+    ]
+  },
+  {
+    "id": "fo2-072",
+    "mot": "troupeau",
+    "syllabes": [
+      "trou",
+      "peau"
+    ],
+    "leurres": [
+      "tron",
+      "peu",
+      "troi"
+    ]
+  },
+  {
+    "id": "fo2-073",
+    "mot": "croûton",
+    "syllabes": [
+      "croû",
+      "ton"
+    ],
+    "leurres": [
+      "tou",
+      "cron",
+      "tan"
+    ]
+  },
+  {
+    "id": "fo2-074",
+    "mot": "blouson",
+    "syllabes": [
+      "blou",
+      "son"
+    ],
+    "leurres": [
+      "blon",
+      "sou",
+      "bloi"
+    ]
+  },
+  {
+    "id": "fo2-075",
+    "mot": "flocon",
+    "syllabes": [
+      "flo",
+      "con"
+    ],
+    "leurres": [
+      "fol",
+      "cou",
+      "fla"
+    ]
+  },
+  {
+    "id": "fo2-076",
+    "mot": "flamme",
+    "syllabes": [
+      "flam",
+      "me"
+    ],
+    "leurres": [
+      "em",
+      "mo",
+      "flan"
+    ]
+  },
+  {
+    "id": "fo2-077",
+    "mot": "cloche",
+    "syllabes": [
+      "clo",
+      "che"
+    ],
+    "leurres": [
+      "col",
+      "cha",
+      "cla"
+    ]
+  },
+  {
+    "id": "fo2-078",
+    "mot": "classe",
+    "syllabes": [
+      "clas",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "clos",
+      "so"
+    ]
+  },
+  {
+    "id": "fo2-079",
+    "mot": "glissade",
+    "syllabes": [
+      "glis",
+      "sa",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "da",
+      "gles"
+    ]
+  },
+  {
+    "id": "fo2-080",
+    "mot": "glouton",
+    "syllabes": [
+      "glou",
+      "ton"
+    ],
+    "leurres": [
+      "tou",
+      "glon",
+      "fon"
+    ]
+  },
+  {
+    "id": "fo2-081",
+    "mot": "plume",
+    "syllabes": [
+      "plu",
+      "me"
+    ],
+    "leurres": [
+      "pul",
+      "plo",
+      "ne"
+    ]
+  },
+  {
+    "id": "fo2-082",
+    "mot": "plage",
+    "syllabes": [
+      "pla",
+      "ge"
+    ],
+    "leurres": [
+      "pal",
+      "ple",
+      "eg"
+    ]
+  },
+  {
+    "id": "fo2-083",
+    "mot": "planche",
+    "syllabes": [
+      "plan",
+      "che"
+    ],
+    "leurres": [
+      "cho",
+      "plen",
+      "cha"
+    ]
+  },
+  {
+    "id": "fo2-084",
+    "mot": "prune",
+    "syllabes": [
+      "pru",
+      "ne"
+    ],
+    "leurres": [
+      "pur",
+      "pri",
+      "en"
+    ]
+  },
+  {
+    "id": "fo2-085",
+    "mot": "boîte",
+    "syllabes": [
+      "boî",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "boi",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo2-086",
+    "mot": "poire",
+    "syllabes": [
+      "poi",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ro",
+      "pou"
+    ]
+  },
+  {
+    "id": "fo2-087",
+    "mot": "ardoise",
+    "syllabes": [
+      "ar",
+      "doi",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "sa",
+      "or"
+    ]
+  },
+  {
+    "id": "fo2-088",
+    "mot": "framboise",
+    "syllabes": [
+      "fram",
+      "boi",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "so",
+      "fran"
+    ]
+  },
+  {
+    "id": "fo2-089",
+    "mot": "poivre",
+    "syllabes": [
+      "poi",
+      "vre"
+    ],
+    "leurres": [
+      "ver",
+      "vra",
+      "pou"
+    ]
+  },
+  {
+    "id": "fo2-090",
+    "mot": "voiture",
+    "syllabes": [
+      "voi",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "ut",
+      "vou",
+      "fu"
+    ]
+  },
+  {
+    "id": "fo2-091",
+    "mot": "toiture",
+    "syllabes": [
+      "toi",
+      "tu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ro",
+      "ti"
+    ]
+  },
+  {
+    "id": "fo2-092",
+    "mot": "auberge",
+    "syllabes": [
+      "au",
+      "ber",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "go",
+      "ou"
+    ]
+  },
+  {
+    "id": "fo2-093",
+    "mot": "peine",
+    "syllabes": [
+      "pei",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "pie",
+      "na"
+    ]
+  },
+  {
+    "id": "fo2-094",
+    "mot": "baleine",
+    "syllabes": [
+      "ba",
+      "lei",
+      "ne"
+    ],
+    "leurres": [
+      "ab",
+      "tei",
+      "be"
+    ]
+  },
+  {
+    "id": "fo2-095",
+    "mot": "reine",
+    "syllabes": [
+      "rei",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "me",
+      "rie"
+    ]
+  },
+  {
+    "id": "fo2-096",
+    "mot": "seize",
+    "syllabes": [
+      "sei",
+      "ze"
+    ],
+    "leurres": [
+      "sie",
+      "zo",
+      "sai"
+    ]
+  },
+  {
+    "id": "fo2-097",
+    "mot": "neige",
+    "syllabes": [
+      "nei",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "nie",
+      "go"
+    ]
+  },
+  {
+    "id": "fo2-098",
+    "mot": "foulard",
+    "syllabes": [
+      "fou",
+      "lard"
+    ],
+    "leurres": [
+      "lord",
+      "foi",
+      "tard"
+    ]
+  },
+  {
+    "id": "fo2-099",
+    "mot": "couronne",
+    "syllabes": [
+      "cou",
+      "ron",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "rou",
+      "coi"
+    ]
+  },
+  {
+    "id": "fo2-100",
+    "mot": "couleur",
+    "syllabes": [
+      "cou",
+      "leur"
+    ],
+    "leurres": [
+      "teur",
+      "coi",
+      "lour"
+    ]
+  },
+  {
+    "id": "fo2-101",
+    "mot": "douleur",
+    "syllabes": [
+      "dou",
+      "leur"
+    ],
+    "leurres": [
+      "teur",
+      "doi",
+      "lour"
+    ]
+  },
+  {
+    "id": "fo2-102",
+    "mot": "champignon",
+    "syllabes": [
+      "cham",
+      "pi",
+      "gnon"
+    ],
+    "leurres": [
+      "ip",
+      "chan",
+      "pu"
+    ]
+  },
+  {
+    "id": "fo2-103",
+    "mot": "compagnon",
+    "syllabes": [
+      "com",
+      "pa",
+      "gnon"
+    ],
+    "leurres": [
+      "ap",
+      "gnou",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo2-104",
+    "mot": "mignon",
+    "syllabes": [
+      "mi",
+      "gnon"
+    ],
+    "leurres": [
+      "im",
+      "gnan",
+      "ni"
+    ]
+  },
+  {
+    "id": "fo2-105",
+    "mot": "crapaud",
+    "syllabes": [
+      "cra",
+      "paud"
+    ],
+    "leurres": [
+      "car",
+      "poud",
+      "cre"
+    ]
+  },
+  {
+    "id": "fo2-106",
+    "mot": "cravate",
+    "syllabes": [
+      "cra",
+      "va",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "ta",
+      "vo"
+    ]
+  },
+  {
+    "id": "fo2-107",
+    "mot": "crêpe",
+    "syllabes": [
+      "crê",
+      "pe"
+    ],
+    "leurres": [
+      "ep",
+      "cré",
+      "po"
+    ]
+  },
+  {
+    "id": "fo2-108",
+    "mot": "crème",
+    "syllabes": [
+      "crè",
+      "me"
+    ],
+    "leurres": [
+      "em",
+      "cre",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo2-109",
+    "mot": "crochet",
+    "syllabes": [
+      "cro",
+      "chet"
+    ],
+    "leurres": [
+      "cor",
+      "cru",
+      "chot"
+    ]
+  },
+  {
+    "id": "fo2-110",
+    "mot": "fromage",
+    "syllabes": [
+      "fro",
+      "ma",
+      "ge"
+    ],
+    "leurres": [
+      "am",
+      "mo",
+      "fru"
+    ]
+  },
+  {
+    "id": "fo2-111",
+    "mot": "frite",
+    "syllabes": [
+      "fri",
+      "te"
+    ],
+    "leurres": [
+      "fir",
+      "fre",
+      "ta"
+    ]
+  },
+  {
+    "id": "fo2-112",
+    "mot": "frère",
+    "syllabes": [
+      "frè",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "fre",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo2-113",
+    "mot": "trente",
+    "syllabes": [
+      "tren",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "tran",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo2-114",
+    "mot": "traîneau",
+    "syllabes": [
+      "traî",
+      "neau"
+    ],
+    "leurres": [
+      "trai",
+      "meau",
+      "fraî"
+    ]
+  },
+  {
+    "id": "fo2-115",
+    "mot": "trottinette",
+    "syllabes": [
+      "trot",
+      "ti",
+      "net",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "met",
+      "to"
+    ]
+  },
+  {
+    "id": "fo2-116",
+    "mot": "drapeau",
+    "syllabes": [
+      "dra",
+      "peau"
+    ],
+    "leurres": [
+      "dar",
+      "pau",
+      "dro"
+    ]
+  },
+  {
+    "id": "fo2-117",
+    "mot": "insecte",
+    "syllabes": [
+      "in",
+      "sec",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "ta",
+      "ain"
+    ]
+  },
+  {
+    "id": "fo2-118",
+    "mot": "pantoufle",
+    "syllabes": [
+      "pan",
+      "tou",
+      "fle"
+    ],
+    "leurres": [
+      "fel",
+      "ton",
+      "fla"
+    ]
+  },
+  {
+    "id": "fo2-119",
+    "mot": "pantalon",
+    "syllabes": [
+      "pan",
+      "ta",
+      "lon"
+    ],
+    "leurres": [
+      "at",
+      "fa",
+      "pen"
+    ]
+  },
+  {
+    "id": "fo2-120",
+    "mot": "manteau",
+    "syllabes": [
+      "man",
+      "teau"
+    ],
+    "leurres": [
+      "feau",
+      "mon",
+      "tau"
+    ]
+  },
+  {
+    "id": "fo2-121",
+    "mot": "chanteur",
+    "syllabes": [
+      "chan",
+      "teur"
+    ],
+    "leurres": [
+      "chen",
+      "feur",
+      "chon"
+    ]
+  },
+  {
+    "id": "fo2-122",
+    "mot": "banque",
+    "syllabes": [
+      "ban",
+      "que"
+    ],
+    "leurres": [
+      "ben",
+      "quo",
+      "bon"
+    ]
+  },
+  {
+    "id": "fo2-123",
+    "mot": "vendeur",
+    "syllabes": [
+      "ven",
+      "deur"
+    ],
+    "leurres": [
+      "dour",
+      "fen",
+      "van"
+    ]
+  },
+  {
+    "id": "fo2-124",
+    "mot": "compas",
+    "syllabes": [
+      "com",
+      "pas"
+    ],
+    "leurres": [
+      "pos",
+      "pes"
+    ]
+  },
+  {
+    "id": "fo2-125",
+    "mot": "orange",
+    "syllabes": [
+      "o",
+      "ran",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "go",
+      "u"
+    ]
+  },
+  {
+    "id": "fo2-126",
+    "mot": "balançoire",
+    "syllabes": [
+      "ba",
+      "lan",
+      "çoi",
+      "re"
+    ],
+    "leurres": [
+      "ab",
+      "bo",
+      "lon"
+    ]
+  },
+  {
+    "id": "fo2-127",
+    "mot": "chaton",
+    "syllabes": [
+      "cha",
+      "ton"
+    ],
+    "leurres": [
+      "tan",
+      "che",
+      "tou"
+    ]
+  },
+  {
+    "id": "fo2-128",
+    "mot": "loupe",
+    "syllabes": [
+      "lou",
+      "pe"
+    ],
+    "leurres": [
+      "ep",
+      "lon",
+      "pa"
+    ]
+  },
+  {
+    "id": "fo2-129",
+    "mot": "soupe",
+    "syllabes": [
+      "sou",
+      "pe"
+    ],
+    "leurres": [
+      "ep",
+      "pa",
+      "son"
+    ]
+  },
+  {
+    "id": "fo2-130",
+    "mot": "route",
+    "syllabes": [
+      "rou",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "roi",
+      "to"
+    ]
+  },
+  {
+    "id": "fo2-131",
+    "mot": "bouche",
+    "syllabes": [
+      "bou",
+      "che"
+    ],
+    "leurres": [
+      "boi",
+      "cha",
+      "bon"
+    ]
+  },
+  {
+    "id": "fo2-132",
+    "mot": "mouche",
+    "syllabes": [
+      "mou",
+      "che"
+    ],
+    "leurres": [
+      "moi",
+      "cho",
+      "nou"
+    ]
+  },
+  {
+    "id": "fo2-133",
+    "mot": "rideau",
+    "syllabes": [
+      "ri",
+      "deau"
+    ],
+    "leurres": [
+      "ir",
+      "re",
+      "deu"
+    ]
+  },
+  {
+    "id": "fo2-134",
+    "mot": "berceau",
+    "syllabes": [
+      "ber",
+      "ceau"
+    ],
+    "leurres": [
+      "bre",
+      "cau",
+      "bar"
+    ]
+  },
+  {
+    "id": "fo2-135",
+    "mot": "bureau",
+    "syllabes": [
+      "bu",
+      "reau"
+    ],
+    "leurres": [
+      "ub",
+      "reu",
+      "bi"
+    ]
+  },
+  {
+    "id": "fo2-136",
+    "mot": "pinceau",
+    "syllabes": [
+      "pin",
+      "ceau"
+    ],
+    "leurres": [
+      "cau",
+      "pain",
+      "ceu"
+    ]
+  },
+  {
+    "id": "fo2-137",
+    "mot": "morceau",
+    "syllabes": [
+      "mor",
+      "ceau"
+    ],
+    "leurres": [
+      "mar",
+      "ceu",
+      "mur"
+    ]
+  },
+  {
+    "id": "fo2-138",
+    "mot": "cerveau",
+    "syllabes": [
+      "cer",
+      "veau"
+    ],
+    "leurres": [
+      "cre",
+      "vau",
+      "car"
+    ]
+  },
+  {
+    "id": "fo2-139",
+    "mot": "chameau",
+    "syllabes": [
+      "cha",
+      "meau"
+    ],
+    "leurres": [
+      "neau",
+      "che",
+      "meu"
+    ]
+  },
+  {
+    "id": "fo2-140",
+    "mot": "jumeau",
+    "syllabes": [
+      "ju",
+      "meau"
+    ],
+    "leurres": [
+      "ji",
+      "mau",
+      "jo"
+    ]
+  },
+  {
+    "id": "fo2-141",
+    "mot": "marteau",
+    "syllabes": [
+      "mar",
+      "teau"
+    ],
+    "leurres": [
+      "teu",
+      "mer",
+      "tau"
+    ]
+  },
+  {
+    "id": "fo2-142",
+    "mot": "souris",
+    "syllabes": [
+      "sou",
+      "ris"
+    ],
+    "leurres": [
+      "res",
+      "soi",
+      "rus"
+    ]
+  },
+  {
+    "id": "fo2-143",
+    "mot": "goutte",
+    "syllabes": [
+      "gout",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "goit",
+      "to"
+    ]
+  },
+  {
+    "id": "fo2-144",
+    "mot": "raquette",
+    "syllabes": [
+      "ra",
+      "quet",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "ta",
+      "quat"
+    ]
+  },
+  {
+    "id": "fo2-145",
+    "mot": "phare",
+    "syllabes": [
+      "pha",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "pho",
+      "ra"
+    ]
+  },
+  {
+    "id": "fo2-146",
+    "mot": "phoque",
+    "syllabes": [
+      "pho",
+      "que"
+    ],
+    "leurres": [
+      "phu",
+      "qua",
+      "pha"
+    ]
+  },
+  {
+    "id": "fo2-147",
+    "mot": "téléphone",
+    "syllabes": [
+      "té",
+      "lé",
+      "pho",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "na",
+      "phu"
+    ]
+  },
+  {
+    "id": "fo2-148",
+    "mot": "photo",
+    "syllabes": [
+      "pho",
+      "to"
+    ],
+    "leurres": [
+      "ot",
+      "phu",
+      "tu"
+    ]
+  },
+  {
+    "id": "fo2-149",
+    "mot": "mouvement",
+    "syllabes": [
+      "mou",
+      "ve",
+      "ment"
+    ],
+    "leurres": [
+      "mant",
+      "fe",
+      "mon"
+    ]
+  },
+  {
+    "id": "fo2-150",
+    "mot": "façade",
+    "syllabes": [
+      "fa",
+      "ça",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "do",
+      "ta"
+    ]
+  },
+  {
+    "id": "fo2-151",
+    "mot": "garçon",
+    "syllabes": [
+      "gar",
+      "çon"
+    ],
+    "leurres": [
+      "gra",
+      "gor",
+      "çou"
+    ]
+  },
+  {
+    "id": "fo2-152",
+    "mot": "leçon",
+    "syllabes": [
+      "le",
+      "çon"
+    ],
+    "leurres": [
+      "el",
+      "çou",
+      "la"
+    ]
+  },
+  {
+    "id": "fo2-153",
+    "mot": "maçon",
+    "syllabes": [
+      "ma",
+      "çon"
+    ],
+    "leurres": [
+      "am",
+      "çou",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo2-154",
+    "mot": "glaçon",
+    "syllabes": [
+      "gla",
+      "çon"
+    ],
+    "leurres": [
+      "gal",
+      "çou",
+      "gle"
+    ]
+  },
+  {
+    "id": "fo2-155",
+    "mot": "casquette",
+    "syllabes": [
+      "cas",
+      "quet",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "quot",
+      "cos"
+    ]
+  },
+  {
+    "id": "fo2-156",
+    "mot": "moustique",
+    "syllabes": [
+      "mous",
+      "ti",
+      "que"
+    ],
+    "leurres": [
+      "it",
+      "nous",
+      "tu"
+    ]
+  },
+  {
+    "id": "fo2-157",
+    "mot": "muscle",
+    "syllabes": [
+      "mus",
+      "cle"
+    ],
+    "leurres": [
+      "cel",
+      "cla",
+      "mis"
+    ]
+  },
+  {
+    "id": "fo2-158",
+    "mot": "raison",
+    "syllabes": [
+      "rai",
+      "son"
+    ],
+    "leurres": [
+      "rei",
+      "san",
+      "sou"
+    ]
+  },
+  {
+    "id": "fo2-159",
+    "mot": "outil",
+    "syllabes": [
+      "ou",
+      "til"
+    ],
+    "leurres": [
+      "on",
+      "tel",
+      "oi"
+    ]
+  },
+  {
+    "id": "fo2-160",
+    "mot": "autruche",
+    "syllabes": [
+      "au",
+      "tru",
+      "che"
+    ],
+    "leurres": [
+      "tur",
+      "cha",
+      "tro"
+    ]
+  },
+  {
+    "id": "fo2-161",
+    "mot": "agneau",
+    "syllabes": [
+      "a",
+      "gneau"
+    ],
+    "leurres": [
+      "o",
+      "gneu",
+      "gnau"
+    ]
+  },
+  {
+    "id": "fo2-162",
+    "mot": "gourde",
+    "syllabes": [
+      "gour",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "goir",
+      "da"
+    ]
+  },
+  {
+    "id": "fo2-163",
+    "mot": "foudre",
+    "syllabes": [
+      "fou",
+      "dre"
+    ],
+    "leurres": [
+      "der",
+      "dro",
+      "tou"
+    ]
+  },
+  {
+    "id": "fo2-164",
+    "mot": "poumon",
+    "syllabes": [
+      "pou",
+      "mon"
+    ],
+    "leurres": [
+      "man",
+      "pon",
+      "non"
+    ]
+  },
+  {
+    "id": "fo2-165",
+    "mot": "goudron",
+    "syllabes": [
+      "gou",
+      "dron"
+    ],
+    "leurres": [
+      "drou",
+      "goi",
+      "dran"
+    ]
+  },
+  {
+    "id": "fo2-166",
+    "mot": "chaudron",
+    "syllabes": [
+      "chau",
+      "dron"
+    ],
+    "leurres": [
+      "dran",
+      "chou",
+      "drou"
+    ]
+  },
+  {
+    "id": "fo2-167",
+    "mot": "marron",
+    "syllabes": [
+      "mar",
+      "ron"
+    ],
+    "leurres": [
+      "ran",
+      "nar",
+      "rou"
+    ]
+  },
+  {
+    "id": "fo2-168",
+    "mot": "fenêtre",
+    "syllabes": [
+      "fe",
+      "nê",
+      "tre"
+    ],
+    "leurres": [
+      "ef",
+      "fa",
+      "nè"
+    ]
+  },
+  {
+    "id": "fo2-169",
+    "mot": "lanterne",
+    "syllabes": [
+      "lan",
+      "ter",
+      "ne"
+    ],
+    "leurres": [
+      "tre",
+      "lon",
+      "tor"
+    ]
+  },
+  {
+    "id": "fo2-170",
+    "mot": "journal",
+    "syllabes": [
+      "jour",
+      "nal"
+    ],
+    "leurres": [
+      "joir",
+      "mal",
+      "nel"
+    ]
+  },
+  {
+    "id": "fo2-171",
+    "mot": "toujours",
+    "syllabes": [
+      "tou",
+      "jours"
+    ],
+    "leurres": [
+      "ton",
+      "joirs",
+      "fou"
+    ]
+  },
+  {
+    "id": "fo2-172",
+    "mot": "bonjour",
+    "syllabes": [
+      "bon",
+      "jour"
+    ],
+    "leurres": [
+      "bou",
+      "joir",
+      "ban"
+    ]
+  },
+  {
+    "id": "fo2-173",
+    "mot": "souvenir",
+    "syllabes": [
+      "sou",
+      "ve",
+      "nir"
+    ],
+    "leurres": [
+      "mir",
+      "vo",
+      "son"
+    ]
+  },
+  {
+    "id": "fo2-174",
+    "mot": "chaussette",
+    "syllabes": [
+      "chaus",
+      "set",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "fe",
+      "sot"
+    ]
+  },
+  {
+    "id": "fo2-175",
+    "mot": "chaussure",
+    "syllabes": [
+      "chaus",
+      "su",
+      "re"
+    ],
+    "leurres": [
+      "us",
+      "chous",
+      "si"
+    ]
+  },
+  {
+    "id": "fo2-176",
+    "mot": "poubelle",
+    "syllabes": [
+      "pou",
+      "bel",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "poi",
+      "lo"
+    ]
+  },
+  {
+    "id": "fo2-177",
+    "mot": "praline",
+    "syllabes": [
+      "pra",
+      "li",
+      "ne"
+    ],
+    "leurres": [
+      "il",
+      "le",
+      "no"
+    ]
+  },
+  {
+    "id": "fo2-178",
+    "mot": "prénom",
+    "syllabes": [
+      "pré",
+      "nom"
+    ],
+    "leurres": [
+      "pre",
+      "non",
+      "prè"
+    ]
+  },
+  {
+    "id": "fo2-179",
+    "mot": "pronom",
+    "syllabes": [
+      "pro",
+      "nom"
+    ],
+    "leurres": [
+      "por",
+      "mom",
+      "pru"
+    ]
+  },
+  {
+    "id": "fo2-180",
+    "mot": "glace",
+    "syllabes": [
+      "gla",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "co",
+      "gal"
+    ]
+  },
+  {
+    "id": "fo2-181",
+    "mot": "globe",
+    "syllabes": [
+      "glo",
+      "be"
+    ],
+    "leurres": [
+      "gol",
+      "glu",
+      "ba"
+    ]
+  },
+  {
+    "id": "fo2-182",
+    "mot": "flûte",
+    "syllabes": [
+      "flû",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "to",
+      "flu"
+    ]
+  },
+  {
+    "id": "fo2-183",
+    "mot": "fleuve",
+    "syllabes": [
+      "fleu",
+      "ve"
+    ],
+    "leurres": [
+      "fe",
+      "flue",
+      "va"
+    ]
+  },
+  {
+    "id": "fo2-184",
+    "mot": "meuble",
+    "syllabes": [
+      "meu",
+      "ble"
+    ],
+    "leurres": [
+      "bel",
+      "blo",
+      "mue"
+    ]
+  },
+  {
+    "id": "fo2-185",
+    "mot": "peuple",
+    "syllabes": [
+      "peu",
+      "ple"
+    ],
+    "leurres": [
+      "pel",
+      "pla",
+      "pou"
+    ]
+  },
+  {
+    "id": "fo2-186",
+    "mot": "heure",
+    "syllabes": [
+      "heu",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ro",
+      "hou"
+    ]
+  },
+  {
+    "id": "fo2-187",
+    "mot": "beurre",
+    "syllabes": [
+      "beur",
+      "re"
+    ],
+    "leurres": [
+      "er",
+      "ro",
+      "bour"
+    ]
+  },
+  {
+    "id": "fo2-188",
+    "mot": "facteur",
+    "syllabes": [
+      "fac",
+      "teur"
+    ],
+    "leurres": [
+      "tac",
+      "feur",
+      "foc"
+    ]
+  },
+  {
+    "id": "fo2-189",
+    "mot": "danseur",
+    "syllabes": [
+      "dan",
+      "seur"
+    ],
+    "leurres": [
+      "sour",
+      "den",
+      "don"
+    ]
+  },
+  {
+    "id": "fo2-190",
+    "mot": "nageur",
+    "syllabes": [
+      "na",
+      "geur"
+    ],
+    "leurres": [
+      "an",
+      "ma",
+      "guer"
+    ]
+  },
+  {
+    "id": "fo2-191",
+    "mot": "coureur",
+    "syllabes": [
+      "cou",
+      "reur"
+    ],
+    "leurres": [
+      "rour",
+      "coi"
+    ]
+  },
+  {
+    "id": "fo2-192",
+    "mot": "voleur",
+    "syllabes": [
+      "vo",
+      "leur"
+    ],
+    "leurres": [
+      "va",
+      "lour",
+      "fo"
+    ]
+  },
+  {
+    "id": "fo2-193",
+    "mot": "marin",
+    "syllabes": [
+      "ma",
+      "rin"
+    ],
+    "leurres": [
+      "am",
+      "mo",
+      "run"
+    ]
+  },
+  {
+    "id": "fo2-194",
+    "mot": "trampoline",
+    "syllabes": [
+      "tram",
+      "po",
+      "li",
+      "ne"
+    ],
+    "leurres": [
+      "il",
+      "le",
+      "fram"
+    ]
+  },
+  {
+    "id": "fo2-195",
+    "mot": "canon",
+    "syllabes": [
+      "ca",
+      "non"
+    ],
+    "leurres": [
+      "ac",
+      "ce",
+      "nan"
+    ]
+  },
+  {
+    "id": "fo2-196",
+    "mot": "ballon",
+    "syllabes": [
+      "bal",
+      "lon"
+    ],
+    "leurres": [
+      "bla",
+      "ton",
+      "bel"
+    ]
+  },
+  {
+    "id": "fo2-197",
+    "mot": "salon",
+    "syllabes": [
+      "sa",
+      "lon"
+    ],
+    "leurres": [
+      "as",
+      "ton",
+      "se"
+    ]
+  },
+  {
+    "id": "fo2-198",
+    "mot": "savon",
+    "syllabes": [
+      "sa",
+      "von"
+    ],
+    "leurres": [
+      "as",
+      "se",
+      "van"
+    ]
+  },
+  {
+    "id": "fo2-199",
+    "mot": "hameçon",
+    "syllabes": [
+      "ha",
+      "me",
+      "çon"
+    ],
+    "leurres": [
+      "em",
+      "ma",
+      "çan"
+    ]
+  },
+  {
+    "id": "fo2-200",
+    "mot": "citron",
+    "syllabes": [
+      "ci",
+      "tron"
+    ],
+    "leurres": [
+      "ic",
+      "ce",
+      "tran"
+    ]
+  },
+  {
+    "id": "fo2-201",
+    "mot": "patron",
+    "syllabes": [
+      "pa",
+      "tron"
+    ],
+    "leurres": [
+      "ap",
+      "po",
+      "fron"
+    ]
+  },
+  {
+    "id": "fo2-202",
+    "mot": "désordre",
+    "syllabes": [
+      "dé",
+      "sor",
+      "dre"
+    ],
+    "leurres": [
+      "der",
+      "de",
+      "dro"
+    ]
+  },
+  {
+    "id": "fo2-203",
+    "mot": "ordre",
+    "syllabes": [
+      "or",
+      "dre"
+    ],
+    "leurres": [
+      "der",
+      "ur",
+      "dra"
+    ]
+  },
+  {
+    "id": "fo2-204",
+    "mot": "cadre",
+    "syllabes": [
+      "ca",
+      "dre"
+    ],
+    "leurres": [
+      "ac",
+      "co",
+      "dra"
+    ]
+  },
+  {
+    "id": "fo2-205",
+    "mot": "peintre",
+    "syllabes": [
+      "pein",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "pain",
+      "tra"
+    ]
+  },
+  {
+    "id": "fo2-206",
+    "mot": "centre",
+    "syllabes": [
+      "cen",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "can",
+      "fre"
+    ]
+  },
+  {
+    "id": "fo2-207",
+    "mot": "ventre",
+    "syllabes": [
+      "ven",
+      "tre"
+    ],
+    "leurres": [
+      "ter",
+      "tro",
+      "van"
+    ]
+  },
+  {
+    "id": "fo2-208",
+    "mot": "tendre",
+    "syllabes": [
+      "ten",
+      "dre"
+    ],
+    "leurres": [
+      "der",
+      "dro",
+      "tan"
+    ]
+  },
+  {
+    "id": "fo2-209",
+    "mot": "chambre",
+    "syllabes": [
+      "cham",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "bro",
+      "chan"
+    ]
+  },
+  {
+    "id": "fo2-210",
+    "mot": "nombre",
+    "syllabes": [
+      "nom",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "bra",
+      "non"
+    ]
+  },
+  {
+    "id": "fo2-211",
+    "mot": "ombre",
+    "syllabes": [
+      "om",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "bro",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo2-212",
+    "mot": "sombre",
+    "syllabes": [
+      "som",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "bra",
+      "son"
+    ]
+  },
+  {
+    "id": "fo2-213",
+    "mot": "novembre",
+    "syllabes": [
+      "no",
+      "vem",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "ven",
+      "bra"
+    ]
+  },
+  {
+    "id": "fo2-214",
+    "mot": "décembre",
+    "syllabes": [
+      "dé",
+      "cem",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "de",
+      "cen"
+    ]
+  },
+  {
+    "id": "fo2-215",
+    "mot": "avril",
+    "syllabes": [
+      "a",
+      "vril"
+    ],
+    "leurres": [
+      "o",
+      "vrul",
+      "vrel"
+    ]
+  },
+  {
+    "id": "fo2-216",
+    "mot": "octobre",
+    "syllabes": [
+      "oc",
+      "to",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "bra",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo2-217",
+    "mot": "dimanche",
+    "syllabes": [
+      "di",
+      "man",
+      "che"
+    ],
+    "leurres": [
+      "id",
+      "du",
+      "mon"
+    ]
+  },
+  {
+    "id": "fo2-218",
+    "mot": "lundi",
+    "syllabes": [
+      "lun",
+      "di"
+    ],
+    "leurres": [
+      "id",
+      "de",
+      "tun"
+    ]
+  },
+  {
+    "id": "fo2-219",
+    "mot": "jeudi",
+    "syllabes": [
+      "jeu",
+      "di"
+    ],
+    "leurres": [
+      "id",
+      "jou",
+      "de"
+    ]
+  },
+  {
+    "id": "fo2-220",
+    "mot": "vendredi",
+    "syllabes": [
+      "ven",
+      "dre",
+      "di"
+    ],
+    "leurres": [
+      "der",
+      "dra",
+      "du"
+    ]
+  },
+  {
+    "id": "fo2-221",
+    "mot": "printemps",
+    "syllabes": [
+      "prin",
+      "temps"
+    ],
+    "leurres": [
+      "femps",
+      "prun",
+      "prain"
+    ]
+  },
+  {
+    "id": "fo2-222",
+    "mot": "brocoli",
+    "syllabes": [
+      "bro",
+      "co",
+      "li"
+    ],
+    "leurres": [
+      "il",
+      "le",
+      "oc"
+    ]
+  },
+  {
+    "id": "fo2-223",
+    "mot": "potiron",
+    "syllabes": [
+      "po",
+      "ti",
+      "ron"
+    ],
+    "leurres": [
+      "op",
+      "ran",
+      "pa"
+    ]
+  },
+  {
+    "id": "fo2-224",
+    "mot": "pamplemousse",
+    "syllabes": [
+      "pam",
+      "ple",
+      "mous",
+      "se"
+    ],
+    "leurres": [
+      "pel",
+      "pan",
+      "pla"
+    ]
+  },
+  {
+    "id": "fo2-225",
+    "mot": "abricot",
+    "syllabes": [
+      "a",
+      "bri",
+      "cot"
+    ],
+    "leurres": [
+      "bir",
+      "bru",
+      "o"
+    ]
+  },
+  {
+    "id": "fo2-226",
+    "mot": "courgette",
+    "syllabes": [
+      "cour",
+      "get",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "coir",
+      "gat"
+    ]
+  },
+  {
+    "id": "fo2-227",
+    "mot": "aubergine",
+    "syllabes": [
+      "au",
+      "ber",
+      "gi",
+      "ne"
+    ],
+    "leurres": [
+      "ig",
+      "ou",
+      "gu"
+    ]
+  },
+  {
+    "id": "fo2-228",
+    "mot": "concombre",
+    "syllabes": [
+      "con",
+      "com",
+      "bre"
+    ],
+    "leurres": [
+      "ber",
+      "bro",
+      "can"
+    ]
+  },
+  {
+    "id": "fo2-229",
+    "mot": "saucisse",
+    "syllabes": [
+      "sau",
+      "cis",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "so",
+      "ces"
+    ]
+  },
+  {
+    "id": "fo2-230",
+    "mot": "croissant",
+    "syllabes": [
+      "crois",
+      "sant"
+    ],
+    "leurres": [
+      "sent",
+      "crous",
+      "sont"
+    ]
+  },
+  {
+    "id": "fo2-231",
+    "mot": "déjeuner",
+    "syllabes": [
+      "dé",
+      "jeu",
+      "ner"
+    ],
+    "leurres": [
+      "nar",
+      "jue",
+      "de"
+    ]
+  },
+  {
+    "id": "fo2-232",
+    "mot": "goûter",
+    "syllabes": [
+      "goû",
+      "ter"
+    ],
+    "leurres": [
+      "tre",
+      "tar",
+      "gon"
+    ]
+  },
+  {
+    "id": "fo2-233",
+    "mot": "poireau",
+    "syllabes": [
+      "poi",
+      "reau"
+    ],
+    "leurres": [
+      "pou",
+      "reu",
+      "rau"
+    ]
+  },
+  {
+    "id": "fo2-234",
+    "mot": "moineau",
+    "syllabes": [
+      "moi",
+      "neau"
+    ],
+    "leurres": [
+      "mou",
+      "nau",
+      "noi"
+    ]
+  },
+  {
+    "id": "fo2-235",
+    "mot": "autoroute",
+    "syllabes": [
+      "au",
+      "to",
+      "rou",
+      "te"
+    ],
+    "leurres": [
+      "ot",
+      "fo",
+      "roi"
+    ]
+  },
+  {
+    "id": "fo2-236",
+    "mot": "cantine",
+    "syllabes": [
+      "can",
+      "ti",
+      "ne"
+    ],
+    "leurres": [
+      "en",
+      "no",
+      "tu"
+    ]
+  },
+  {
+    "id": "fo2-237",
+    "mot": "couloir",
+    "syllabes": [
+      "cou",
+      "loir"
+    ],
+    "leurres": [
+      "coi",
+      "lour",
+      "toir"
+    ]
+  },
+  {
+    "id": "fo2-238",
+    "mot": "dortoir",
+    "syllabes": [
+      "dor",
+      "toir"
+    ],
+    "leurres": [
+      "dro",
+      "foir",
+      "dar"
+    ]
+  },
+  {
+    "id": "fo2-239",
+    "mot": "pupitre",
+    "syllabes": [
+      "pu",
+      "pi",
+      "tre"
+    ],
+    "leurres": [
+      "up",
+      "po",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo2-240",
+    "mot": "classeur",
+    "syllabes": [
+      "clas",
+      "seur"
+    ],
+    "leurres": [
+      "cles",
+      "sour",
+      "clos"
+    ]
+  }
+]

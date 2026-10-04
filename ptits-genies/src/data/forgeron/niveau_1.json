@@ -1,0 +1,1884 @@
+[
+  {
+    "id": "fo1-001",
+    "mot": "pirate",
+    "syllabes": [
+      "pi",
+      "ra",
+      "te"
+    ],
+    "leurres": [
+      "ar",
+      "pu"
+    ]
+  },
+  {
+    "id": "fo1-002",
+    "mot": "tomate",
+    "syllabes": [
+      "to",
+      "ma",
+      "te"
+    ],
+    "leurres": [
+      "am",
+      "et"
+    ]
+  },
+  {
+    "id": "fo1-003",
+    "mot": "cheval",
+    "syllabes": [
+      "che",
+      "val"
+    ],
+    "leurres": [
+      "cha",
+      "fal"
+    ]
+  },
+  {
+    "id": "fo1-004",
+    "mot": "salade",
+    "syllabes": [
+      "sa",
+      "la",
+      "de"
+    ],
+    "leurres": [
+      "le",
+      "do"
+    ]
+  },
+  {
+    "id": "fo1-005",
+    "mot": "domino",
+    "syllabes": [
+      "do",
+      "mi",
+      "no"
+    ],
+    "leurres": [
+      "im",
+      "du"
+    ]
+  },
+  {
+    "id": "fo1-006",
+    "mot": "banane",
+    "syllabes": [
+      "ba",
+      "na",
+      "ne"
+    ],
+    "leurres": [
+      "no",
+      "me"
+    ]
+  },
+  {
+    "id": "fo1-007",
+    "mot": "cabane",
+    "syllabes": [
+      "ca",
+      "ba",
+      "ne"
+    ],
+    "leurres": [
+      "ce",
+      "no"
+    ]
+  },
+  {
+    "id": "fo1-008",
+    "mot": "canapé",
+    "syllabes": [
+      "ca",
+      "na",
+      "pé"
+    ],
+    "leurres": [
+      "pe",
+      "co"
+    ]
+  },
+  {
+    "id": "fo1-009",
+    "mot": "café",
+    "syllabes": [
+      "ca",
+      "fé"
+    ],
+    "leurres": [
+      "co",
+      "té"
+    ]
+  },
+  {
+    "id": "fo1-010",
+    "mot": "vélo",
+    "syllabes": [
+      "vé",
+      "lo"
+    ],
+    "leurres": [
+      "la",
+      "fé"
+    ]
+  },
+  {
+    "id": "fo1-011",
+    "mot": "robot",
+    "syllabes": [
+      "ro",
+      "bot"
+    ],
+    "leurres": [
+      "or",
+      "but"
+    ]
+  },
+  {
+    "id": "fo1-012",
+    "mot": "caramel",
+    "syllabes": [
+      "ca",
+      "ra",
+      "mel"
+    ],
+    "leurres": [
+      "ro",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo1-013",
+    "mot": "canard",
+    "syllabes": [
+      "ca",
+      "nard"
+    ],
+    "leurres": [
+      "nord",
+      "co"
+    ]
+  },
+  {
+    "id": "fo1-014",
+    "mot": "malade",
+    "syllabes": [
+      "ma",
+      "la",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "me"
+    ]
+  },
+  {
+    "id": "fo1-015",
+    "mot": "lune",
+    "syllabes": [
+      "lu",
+      "ne"
+    ],
+    "leurres": [
+      "tu",
+      "me"
+    ]
+  },
+  {
+    "id": "fo1-016",
+    "mot": "marine",
+    "syllabes": [
+      "ma",
+      "ri",
+      "ne"
+    ],
+    "leurres": [
+      "ru",
+      "no"
+    ]
+  },
+  {
+    "id": "fo1-017",
+    "mot": "tapis",
+    "syllabes": [
+      "ta",
+      "pis"
+    ],
+    "leurres": [
+      "pes",
+      "at"
+    ]
+  },
+  {
+    "id": "fo1-018",
+    "mot": "radis",
+    "syllabes": [
+      "ra",
+      "dis"
+    ],
+    "leurres": [
+      "des",
+      "ar"
+    ]
+  },
+  {
+    "id": "fo1-019",
+    "mot": "sofa",
+    "syllabes": [
+      "so",
+      "fa"
+    ],
+    "leurres": [
+      "sa",
+      "ta"
+    ]
+  },
+  {
+    "id": "fo1-020",
+    "mot": "moto",
+    "syllabes": [
+      "mo",
+      "to"
+    ],
+    "leurres": [
+      "ot",
+      "mu"
+    ]
+  },
+  {
+    "id": "fo1-021",
+    "mot": "légume",
+    "syllabes": [
+      "lé",
+      "gu",
+      "me"
+    ],
+    "leurres": [
+      "ug",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo1-022",
+    "mot": "jupe",
+    "syllabes": [
+      "ju",
+      "pe"
+    ],
+    "leurres": [
+      "po",
+      "jo"
+    ]
+  },
+  {
+    "id": "fo1-023",
+    "mot": "robe",
+    "syllabes": [
+      "ro",
+      "be"
+    ],
+    "leurres": [
+      "bo",
+      "ru"
+    ]
+  },
+  {
+    "id": "fo1-024",
+    "mot": "bocal",
+    "syllabes": [
+      "bo",
+      "cal"
+    ],
+    "leurres": [
+      "ba",
+      "col"
+    ]
+  },
+  {
+    "id": "fo1-025",
+    "mot": "girafe",
+    "syllabes": [
+      "gi",
+      "ra",
+      "fe"
+    ],
+    "leurres": [
+      "ef",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo1-026",
+    "mot": "limace",
+    "syllabes": [
+      "li",
+      "ma",
+      "ce"
+    ],
+    "leurres": [
+      "co",
+      "ti"
+    ]
+  },
+  {
+    "id": "fo1-027",
+    "mot": "cachalot",
+    "syllabes": [
+      "ca",
+      "cha",
+      "lot"
+    ],
+    "leurres": [
+      "che",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo1-028",
+    "mot": "puma",
+    "syllabes": [
+      "pu",
+      "ma"
+    ],
+    "leurres": [
+      "me",
+      "pi"
+    ]
+  },
+  {
+    "id": "fo1-029",
+    "mot": "lézard",
+    "syllabes": [
+      "lé",
+      "zard"
+    ],
+    "leurres": [
+      "lè",
+      "zerd"
+    ]
+  },
+  {
+    "id": "fo1-030",
+    "mot": "mule",
+    "syllabes": [
+      "mu",
+      "le"
+    ],
+    "leurres": [
+      "el",
+      "nu"
+    ]
+  },
+  {
+    "id": "fo1-031",
+    "mot": "cerise",
+    "syllabes": [
+      "ce",
+      "ri",
+      "se"
+    ],
+    "leurres": [
+      "ec",
+      "ir"
+    ]
+  },
+  {
+    "id": "fo1-032",
+    "mot": "carotte",
+    "syllabes": [
+      "ca",
+      "rot",
+      "te"
+    ],
+    "leurres": [
+      "rat",
+      "co"
+    ]
+  },
+  {
+    "id": "fo1-033",
+    "mot": "olive",
+    "syllabes": [
+      "o",
+      "li",
+      "ve"
+    ],
+    "leurres": [
+      "fe",
+      "il"
+    ]
+  },
+  {
+    "id": "fo1-034",
+    "mot": "salami",
+    "syllabes": [
+      "sa",
+      "la",
+      "mi"
+    ],
+    "leurres": [
+      "so",
+      "ni"
+    ]
+  },
+  {
+    "id": "fo1-035",
+    "mot": "pizza",
+    "syllabes": [
+      "piz",
+      "za"
+    ],
+    "leurres": [
+      "puz",
+      "ze"
+    ]
+  },
+  {
+    "id": "fo1-036",
+    "mot": "sésame",
+    "syllabes": [
+      "sé",
+      "sa",
+      "me"
+    ],
+    "leurres": [
+      "as",
+      "ma"
+    ]
+  },
+  {
+    "id": "fo1-037",
+    "mot": "valise",
+    "syllabes": [
+      "va",
+      "li",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "fa"
+    ]
+  },
+  {
+    "id": "fo1-038",
+    "mot": "sacoche",
+    "syllabes": [
+      "sa",
+      "co",
+      "che"
+    ],
+    "leurres": [
+      "cho",
+      "se"
+    ]
+  },
+  {
+    "id": "fo1-039",
+    "mot": "capuche",
+    "syllabes": [
+      "ca",
+      "pu",
+      "che"
+    ],
+    "leurres": [
+      "up",
+      "cha"
+    ]
+  },
+  {
+    "id": "fo1-040",
+    "mot": "peluche",
+    "syllabes": [
+      "pe",
+      "lu",
+      "che"
+    ],
+    "leurres": [
+      "cho",
+      "tu"
+    ]
+  },
+  {
+    "id": "fo1-041",
+    "mot": "carafe",
+    "syllabes": [
+      "ca",
+      "ra",
+      "fe"
+    ],
+    "leurres": [
+      "ce",
+      "ef"
+    ]
+  },
+  {
+    "id": "fo1-042",
+    "mot": "carte",
+    "syllabes": [
+      "car",
+      "te"
+    ],
+    "leurres": [
+      "to",
+      "cer"
+    ]
+  },
+  {
+    "id": "fo1-043",
+    "mot": "tulipe",
+    "syllabes": [
+      "tu",
+      "li",
+      "pe"
+    ],
+    "leurres": [
+      "ut",
+      "ti"
+    ]
+  },
+  {
+    "id": "fo1-044",
+    "mot": "rose",
+    "syllabes": [
+      "ro",
+      "se"
+    ],
+    "leurres": [
+      "es",
+      "ru"
+    ]
+  },
+  {
+    "id": "fo1-045",
+    "mot": "caméra",
+    "syllabes": [
+      "ca",
+      "mé",
+      "ra"
+    ],
+    "leurres": [
+      "ar",
+      "mè"
+    ]
+  },
+  {
+    "id": "fo1-046",
+    "mot": "parasol",
+    "syllabes": [
+      "pa",
+      "ra",
+      "sol"
+    ],
+    "leurres": [
+      "sal",
+      "ap"
+    ]
+  },
+  {
+    "id": "fo1-047",
+    "mot": "parade",
+    "syllabes": [
+      "pa",
+      "ra",
+      "de"
+    ],
+    "leurres": [
+      "do",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo1-048",
+    "mot": "capital",
+    "syllabes": [
+      "ca",
+      "pi",
+      "tal"
+    ],
+    "leurres": [
+      "ce",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo1-049",
+    "mot": "colle",
+    "syllabes": [
+      "col",
+      "le"
+    ],
+    "leurres": [
+      "cal",
+      "el"
+    ]
+  },
+  {
+    "id": "fo1-050",
+    "mot": "balle",
+    "syllabes": [
+      "bal",
+      "le"
+    ],
+    "leurres": [
+      "lo",
+      "bol"
+    ]
+  },
+  {
+    "id": "fo1-051",
+    "mot": "pomme",
+    "syllabes": [
+      "pom",
+      "me"
+    ],
+    "leurres": [
+      "mo",
+      "pon"
+    ]
+  },
+  {
+    "id": "fo1-052",
+    "mot": "canne",
+    "syllabes": [
+      "can",
+      "ne"
+    ],
+    "leurres": [
+      "cen",
+      "na"
+    ]
+  },
+  {
+    "id": "fo1-053",
+    "mot": "pelle",
+    "syllabes": [
+      "pel",
+      "le"
+    ],
+    "leurres": [
+      "lo",
+      "pal"
+    ]
+  },
+  {
+    "id": "fo1-054",
+    "mot": "botte",
+    "syllabes": [
+      "bot",
+      "te"
+    ],
+    "leurres": [
+      "to",
+      "but"
+    ]
+  },
+  {
+    "id": "fo1-055",
+    "mot": "minute",
+    "syllabes": [
+      "mi",
+      "nu",
+      "te"
+    ],
+    "leurres": [
+      "ta",
+      "ni"
+    ]
+  },
+  {
+    "id": "fo1-056",
+    "mot": "samedi",
+    "syllabes": [
+      "sa",
+      "me",
+      "di"
+    ],
+    "leurres": [
+      "ma",
+      "id"
+    ]
+  },
+  {
+    "id": "fo1-057",
+    "mot": "pilote",
+    "syllabes": [
+      "pi",
+      "lo",
+      "te"
+    ],
+    "leurres": [
+      "ip",
+      "to"
+    ]
+  },
+  {
+    "id": "fo1-058",
+    "mot": "comète",
+    "syllabes": [
+      "co",
+      "mè",
+      "te"
+    ],
+    "leurres": [
+      "to",
+      "oc"
+    ]
+  },
+  {
+    "id": "fo1-059",
+    "mot": "métal",
+    "syllabes": [
+      "mé",
+      "tal"
+    ],
+    "leurres": [
+      "tol",
+      "né"
+    ]
+  },
+  {
+    "id": "fo1-060",
+    "mot": "canal",
+    "syllabes": [
+      "ca",
+      "nal"
+    ],
+    "leurres": [
+      "mal",
+      "co"
+    ]
+  },
+  {
+    "id": "fo1-061",
+    "mot": "ami",
+    "syllabes": [
+      "a",
+      "mi"
+    ],
+    "leurres": [
+      "o",
+      "mu"
+    ]
+  },
+  {
+    "id": "fo1-062",
+    "mot": "été",
+    "syllabes": [
+      "é",
+      "té"
+    ],
+    "leurres": [
+      "te",
+      "fé"
+    ]
+  },
+  {
+    "id": "fo1-063",
+    "mot": "école",
+    "syllabes": [
+      "é",
+      "co",
+      "le"
+    ],
+    "leurres": [
+      "oc",
+      "lo"
+    ]
+  },
+  {
+    "id": "fo1-064",
+    "mot": "élève",
+    "syllabes": [
+      "é",
+      "lè",
+      "ve"
+    ],
+    "leurres": [
+      "lé",
+      "vo"
+    ]
+  },
+  {
+    "id": "fo1-065",
+    "mot": "épice",
+    "syllabes": [
+      "é",
+      "pi",
+      "ce"
+    ],
+    "leurres": [
+      "co",
+      "pu"
+    ]
+  },
+  {
+    "id": "fo1-066",
+    "mot": "étape",
+    "syllabes": [
+      "é",
+      "ta",
+      "pe"
+    ],
+    "leurres": [
+      "ep",
+      "to"
+    ]
+  },
+  {
+    "id": "fo1-067",
+    "mot": "écume",
+    "syllabes": [
+      "é",
+      "cu",
+      "me"
+    ],
+    "leurres": [
+      "em",
+      "ci"
+    ]
+  },
+  {
+    "id": "fo1-068",
+    "mot": "rapide",
+    "syllabes": [
+      "ra",
+      "pi",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "ar"
+    ]
+  },
+  {
+    "id": "fo1-069",
+    "mot": "solide",
+    "syllabes": [
+      "so",
+      "li",
+      "de"
+    ],
+    "leurres": [
+      "os",
+      "da"
+    ]
+  },
+  {
+    "id": "fo1-070",
+    "mot": "timide",
+    "syllabes": [
+      "ti",
+      "mi",
+      "de"
+    ],
+    "leurres": [
+      "mu",
+      "te"
+    ]
+  },
+  {
+    "id": "fo1-071",
+    "mot": "facile",
+    "syllabes": [
+      "fa",
+      "ci",
+      "le"
+    ],
+    "leurres": [
+      "lo",
+      "fo"
+    ]
+  },
+  {
+    "id": "fo1-072",
+    "mot": "utile",
+    "syllabes": [
+      "u",
+      "ti",
+      "le"
+    ],
+    "leurres": [
+      "o",
+      "el"
+    ]
+  },
+  {
+    "id": "fo1-073",
+    "mot": "agile",
+    "syllabes": [
+      "a",
+      "gi",
+      "le"
+    ],
+    "leurres": [
+      "lo",
+      "o"
+    ]
+  },
+  {
+    "id": "fo1-074",
+    "mot": "rame",
+    "syllabes": [
+      "ra",
+      "me"
+    ],
+    "leurres": [
+      "ar",
+      "ne"
+    ]
+  },
+  {
+    "id": "fo1-075",
+    "mot": "cave",
+    "syllabes": [
+      "ca",
+      "ve"
+    ],
+    "leurres": [
+      "fe",
+      "co"
+    ]
+  },
+  {
+    "id": "fo1-076",
+    "mot": "lave",
+    "syllabes": [
+      "la",
+      "ve"
+    ],
+    "leurres": [
+      "al",
+      "vo"
+    ]
+  },
+  {
+    "id": "fo1-077",
+    "mot": "colis",
+    "syllabes": [
+      "co",
+      "lis"
+    ],
+    "leurres": [
+      "ca",
+      "lus"
+    ]
+  },
+  {
+    "id": "fo1-078",
+    "mot": "rabot",
+    "syllabes": [
+      "ra",
+      "bot"
+    ],
+    "leurres": [
+      "bat",
+      "ar"
+    ]
+  },
+  {
+    "id": "fo1-079",
+    "mot": "céleri",
+    "syllabes": [
+      "cé",
+      "le",
+      "ri"
+    ],
+    "leurres": [
+      "ce",
+      "la"
+    ]
+  },
+  {
+    "id": "fo1-080",
+    "mot": "pétale",
+    "syllabes": [
+      "pé",
+      "ta",
+      "le"
+    ],
+    "leurres": [
+      "pè",
+      "te"
+    ]
+  },
+  {
+    "id": "fo1-081",
+    "mot": "loto",
+    "syllabes": [
+      "lo",
+      "to"
+    ],
+    "leurres": [
+      "lu",
+      "fo"
+    ]
+  },
+  {
+    "id": "fo1-082",
+    "mot": "judo",
+    "syllabes": [
+      "ju",
+      "do"
+    ],
+    "leurres": [
+      "du",
+      "ji"
+    ]
+  },
+  {
+    "id": "fo1-083",
+    "mot": "karaté",
+    "syllabes": [
+      "ka",
+      "ra",
+      "té"
+    ],
+    "leurres": [
+      "ko",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo1-084",
+    "mot": "tipi",
+    "syllabes": [
+      "ti",
+      "pi"
+    ],
+    "leurres": [
+      "te",
+      "pe"
+    ]
+  },
+  {
+    "id": "fo1-085",
+    "mot": "kimono",
+    "syllabes": [
+      "ki",
+      "mo",
+      "no"
+    ],
+    "leurres": [
+      "om",
+      "ke"
+    ]
+  },
+  {
+    "id": "fo1-086",
+    "mot": "kiwi",
+    "syllabes": [
+      "ki",
+      "wi"
+    ],
+    "leurres": [
+      "ke",
+      "we"
+    ]
+  },
+  {
+    "id": "fo1-087",
+    "mot": "safari",
+    "syllabes": [
+      "sa",
+      "fa",
+      "ri"
+    ],
+    "leurres": [
+      "ir",
+      "af"
+    ]
+  },
+  {
+    "id": "fo1-088",
+    "mot": "animal",
+    "syllabes": [
+      "a",
+      "ni",
+      "mal"
+    ],
+    "leurres": [
+      "o",
+      "nal"
+    ]
+  },
+  {
+    "id": "fo1-089",
+    "mot": "caniche",
+    "syllabes": [
+      "ca",
+      "ni",
+      "che"
+    ],
+    "leurres": [
+      "cha",
+      "ne"
+    ]
+  },
+  {
+    "id": "fo1-090",
+    "mot": "page",
+    "syllabes": [
+      "pa",
+      "ge"
+    ],
+    "leurres": [
+      "ap",
+      "ga"
+    ]
+  },
+  {
+    "id": "fo1-091",
+    "mot": "image",
+    "syllabes": [
+      "i",
+      "ma",
+      "ge"
+    ],
+    "leurres": [
+      "u",
+      "go"
+    ]
+  },
+  {
+    "id": "fo1-092",
+    "mot": "cage",
+    "syllabes": [
+      "ca",
+      "ge"
+    ],
+    "leurres": [
+      "ce",
+      "ga"
+    ]
+  },
+  {
+    "id": "fo1-093",
+    "mot": "sage",
+    "syllabes": [
+      "sa",
+      "ge"
+    ],
+    "leurres": [
+      "so",
+      "go"
+    ]
+  },
+  {
+    "id": "fo1-094",
+    "mot": "loge",
+    "syllabes": [
+      "lo",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "to"
+    ]
+  },
+  {
+    "id": "fo1-095",
+    "mot": "cachette",
+    "syllabes": [
+      "ca",
+      "chet",
+      "te"
+    ],
+    "leurres": [
+      "chot",
+      "co"
+    ]
+  },
+  {
+    "id": "fo1-096",
+    "mot": "chocolat",
+    "syllabes": [
+      "cho",
+      "co",
+      "lat"
+    ],
+    "leurres": [
+      "cha",
+      "oc"
+    ]
+  },
+  {
+    "id": "fo1-097",
+    "mot": "désert",
+    "syllabes": [
+      "dé",
+      "sert"
+    ],
+    "leurres": [
+      "sort",
+      "de"
+    ]
+  },
+  {
+    "id": "fo1-098",
+    "mot": "méduse",
+    "syllabes": [
+      "mé",
+      "du",
+      "se"
+    ],
+    "leurres": [
+      "di",
+      "so"
+    ]
+  },
+  {
+    "id": "fo1-099",
+    "mot": "cascade",
+    "syllabes": [
+      "cas",
+      "ca",
+      "de"
+    ],
+    "leurres": [
+      "ed",
+      "ac"
+    ]
+  },
+  {
+    "id": "fo1-100",
+    "mot": "mascotte",
+    "syllabes": [
+      "mas",
+      "cot",
+      "te"
+    ],
+    "leurres": [
+      "mes",
+      "cut"
+    ]
+  },
+  {
+    "id": "fo1-101",
+    "mot": "piste",
+    "syllabes": [
+      "pis",
+      "te"
+    ],
+    "leurres": [
+      "ta",
+      "pus"
+    ]
+  },
+  {
+    "id": "fo1-102",
+    "mot": "tortue",
+    "syllabes": [
+      "tor",
+      "tue"
+    ],
+    "leurres": [
+      "fue",
+      "tur"
+    ]
+  },
+  {
+    "id": "fo1-103",
+    "mot": "marmotte",
+    "syllabes": [
+      "mar",
+      "mot",
+      "te"
+    ],
+    "leurres": [
+      "ta",
+      "not"
+    ]
+  },
+  {
+    "id": "fo1-104",
+    "mot": "selle",
+    "syllabes": [
+      "sel",
+      "le"
+    ],
+    "leurres": [
+      "la",
+      "sol"
+    ]
+  },
+  {
+    "id": "fo1-105",
+    "mot": "fusil",
+    "syllabes": [
+      "fu",
+      "sil"
+    ],
+    "leurres": [
+      "sel",
+      "fo"
+    ]
+  },
+  {
+    "id": "fo1-106",
+    "mot": "baril",
+    "syllabes": [
+      "ba",
+      "ril"
+    ],
+    "leurres": [
+      "be",
+      "rel"
+    ]
+  },
+  {
+    "id": "fo1-107",
+    "mot": "castor",
+    "syllabes": [
+      "cas",
+      "tor"
+    ],
+    "leurres": [
+      "cos",
+      "tar"
+    ]
+  },
+  {
+    "id": "fo1-108",
+    "mot": "cinéma",
+    "syllabes": [
+      "ci",
+      "né",
+      "ma"
+    ],
+    "leurres": [
+      "na",
+      "mé"
+    ]
+  },
+  {
+    "id": "fo1-109",
+    "mot": "corne",
+    "syllabes": [
+      "cor",
+      "ne"
+    ],
+    "leurres": [
+      "cro",
+      "no"
+    ]
+  },
+  {
+    "id": "fo1-110",
+    "mot": "mimosa",
+    "syllabes": [
+      "mi",
+      "mo",
+      "sa"
+    ],
+    "leurres": [
+      "im",
+      "mu"
+    ]
+  },
+  {
+    "id": "fo1-111",
+    "mot": "momie",
+    "syllabes": [
+      "mo",
+      "mie"
+    ],
+    "leurres": [
+      "ma",
+      "mei"
+    ]
+  },
+  {
+    "id": "fo1-112",
+    "mot": "calme",
+    "syllabes": [
+      "cal",
+      "me"
+    ],
+    "leurres": [
+      "cel",
+      "mo"
+    ]
+  },
+  {
+    "id": "fo1-113",
+    "mot": "salle",
+    "syllabes": [
+      "sal",
+      "le"
+    ],
+    "leurres": [
+      "la",
+      "sel"
+    ]
+  },
+  {
+    "id": "fo1-114",
+    "mot": "farine",
+    "syllabes": [
+      "fa",
+      "ri",
+      "ne"
+    ],
+    "leurres": [
+      "me",
+      "fe"
+    ]
+  },
+  {
+    "id": "fo1-115",
+    "mot": "ficelle",
+    "syllabes": [
+      "fi",
+      "cel",
+      "le"
+    ],
+    "leurres": [
+      "ti",
+      "lo"
+    ]
+  },
+  {
+    "id": "fo1-116",
+    "mot": "marmite",
+    "syllabes": [
+      "mar",
+      "mi",
+      "te"
+    ],
+    "leurres": [
+      "et",
+      "nar"
+    ]
+  },
+  {
+    "id": "fo1-117",
+    "mot": "sardine",
+    "syllabes": [
+      "sar",
+      "di",
+      "ne"
+    ],
+    "leurres": [
+      "id",
+      "en"
+    ]
+  },
+  {
+    "id": "fo1-118",
+    "mot": "piscine",
+    "syllabes": [
+      "pis",
+      "ci",
+      "ne"
+    ],
+    "leurres": [
+      "ce",
+      "en"
+    ]
+  },
+  {
+    "id": "fo1-119",
+    "mot": "colère",
+    "syllabes": [
+      "co",
+      "lè",
+      "re"
+    ],
+    "leurres": [
+      "le",
+      "oc"
+    ]
+  },
+  {
+    "id": "fo1-120",
+    "mot": "midi",
+    "syllabes": [
+      "mi",
+      "di"
+    ],
+    "leurres": [
+      "ni",
+      "de"
+    ]
+  },
+  {
+    "id": "fo1-121",
+    "mot": "mardi",
+    "syllabes": [
+      "mar",
+      "di"
+    ],
+    "leurres": [
+      "de",
+      "nar"
+    ]
+  },
+  {
+    "id": "fo1-122",
+    "mot": "numéro",
+    "syllabes": [
+      "nu",
+      "mé",
+      "ro"
+    ],
+    "leurres": [
+      "ra",
+      "mè"
+    ]
+  },
+  {
+    "id": "fo1-123",
+    "mot": "gomme",
+    "syllabes": [
+      "gom",
+      "me"
+    ],
+    "leurres": [
+      "gon",
+      "ne"
+    ]
+  },
+  {
+    "id": "fo1-124",
+    "mot": "verre",
+    "syllabes": [
+      "ver",
+      "re"
+    ],
+    "leurres": [
+      "vre",
+      "er"
+    ]
+  },
+  {
+    "id": "fo1-125",
+    "mot": "terre",
+    "syllabes": [
+      "ter",
+      "re"
+    ],
+    "leurres": [
+      "tar",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo1-126",
+    "mot": "racine",
+    "syllabes": [
+      "ra",
+      "ci",
+      "ne"
+    ],
+    "leurres": [
+      "na",
+      "re"
+    ]
+  },
+  {
+    "id": "fo1-127",
+    "mot": "pépite",
+    "syllabes": [
+      "pé",
+      "pi",
+      "te"
+    ],
+    "leurres": [
+      "pu",
+      "pè"
+    ]
+  },
+  {
+    "id": "fo1-128",
+    "mot": "solo",
+    "syllabes": [
+      "so",
+      "lo"
+    ],
+    "leurres": [
+      "to",
+      "sa"
+    ]
+  },
+  {
+    "id": "fo1-129",
+    "mot": "luge",
+    "syllabes": [
+      "lu",
+      "ge"
+    ],
+    "leurres": [
+      "go",
+      "ul"
+    ]
+  },
+  {
+    "id": "fo1-130",
+    "mot": "vipère",
+    "syllabes": [
+      "vi",
+      "pè",
+      "re"
+    ],
+    "leurres": [
+      "vu",
+      "ro"
+    ]
+  },
+  {
+    "id": "fo1-131",
+    "mot": "féroce",
+    "syllabes": [
+      "fé",
+      "ro",
+      "ce"
+    ],
+    "leurres": [
+      "ru",
+      "ec"
+    ]
+  },
+  {
+    "id": "fo1-132",
+    "mot": "tisane",
+    "syllabes": [
+      "ti",
+      "sa",
+      "ne"
+    ],
+    "leurres": [
+      "as",
+      "fi"
+    ]
+  },
+  {
+    "id": "fo1-133",
+    "mot": "figure",
+    "syllabes": [
+      "fi",
+      "gu",
+      "re"
+    ],
+    "leurres": [
+      "go",
+      "if"
+    ]
+  },
+  {
+    "id": "fo1-134",
+    "mot": "mérite",
+    "syllabes": [
+      "mé",
+      "ri",
+      "te"
+    ],
+    "leurres": [
+      "fe",
+      "ru"
+    ]
+  },
+  {
+    "id": "fo1-135",
+    "mot": "puce",
+    "syllabes": [
+      "pu",
+      "ce"
+    ],
+    "leurres": [
+      "ec",
+      "po"
+    ]
+  },
+  {
+    "id": "fo1-136",
+    "mot": "petite",
+    "syllabes": [
+      "pe",
+      "ti",
+      "te"
+    ],
+    "leurres": [
+      "pa",
+      "to"
+    ]
+  },
+  {
+    "id": "fo1-137",
+    "mot": "bébé",
+    "syllabes": [
+      "bé",
+      "bé"
+    ],
+    "leurres": [
+      "bè",
+      "be"
+    ]
+  },
+  {
+    "id": "fo1-138",
+    "mot": "morse",
+    "syllabes": [
+      "mor",
+      "se"
+    ],
+    "leurres": [
+      "mur",
+      "so"
+    ]
+  },
+  {
+    "id": "fo1-139",
+    "mot": "défi",
+    "syllabes": [
+      "dé",
+      "fi"
+    ],
+    "leurres": [
+      "ti",
+      "dè"
+    ]
+  },
+  {
+    "id": "fo1-140",
+    "mot": "matinal",
+    "syllabes": [
+      "ma",
+      "ti",
+      "nal"
+    ],
+    "leurres": [
+      "nel",
+      "tu"
+    ]
+  },
+  {
+    "id": "fo1-141",
+    "mot": "épave",
+    "syllabes": [
+      "é",
+      "pa",
+      "ve"
+    ],
+    "leurres": [
+      "fe",
+      "ap"
+    ]
+  },
+  {
+    "id": "fo1-142",
+    "mot": "mode",
+    "syllabes": [
+      "mo",
+      "de"
+    ],
+    "leurres": [
+      "om",
+      "do"
+    ]
+  },
+  {
+    "id": "fo1-143",
+    "mot": "régal",
+    "syllabes": [
+      "ré",
+      "gal"
+    ],
+    "leurres": [
+      "re",
+      "gol"
+    ]
+  },
+  {
+    "id": "fo1-144",
+    "mot": "salut",
+    "syllabes": [
+      "sa",
+      "lut"
+    ],
+    "leurres": [
+      "lot",
+      "so"
+    ]
+  },
+  {
+    "id": "fo1-145",
+    "mot": "lilas",
+    "syllabes": [
+      "li",
+      "las"
+    ],
+    "leurres": [
+      "les",
+      "lu"
+    ]
+  },
+  {
+    "id": "fo1-146",
+    "mot": "calamar",
+    "syllabes": [
+      "ca",
+      "la",
+      "mar"
+    ],
+    "leurres": [
+      "al",
+      "nar"
+    ]
+  },
+  {
+    "id": "fo1-147",
+    "mot": "colline",
+    "syllabes": [
+      "col",
+      "li",
+      "ne"
+    ],
+    "leurres": [
+      "clo",
+      "il"
+    ]
+  },
+  {
+    "id": "fo1-148",
+    "mot": "rivage",
+    "syllabes": [
+      "ri",
+      "va",
+      "ge"
+    ],
+    "leurres": [
+      "eg",
+      "vo"
+    ]
+  },
+  {
+    "id": "fo1-149",
+    "mot": "vérité",
+    "syllabes": [
+      "vé",
+      "ri",
+      "té"
+    ],
+    "leurres": [
+      "fé",
+      "te"
+    ]
+  },
+  {
+    "id": "fo1-150",
+    "mot": "récital",
+    "syllabes": [
+      "ré",
+      "ci",
+      "tal"
+    ],
+    "leurres": [
+      "rè",
+      "ic"
+    ]
+  }
+]
