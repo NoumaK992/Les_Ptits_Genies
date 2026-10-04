@@ -24,6 +24,10 @@ const ALL_EXERCISES: {
   { type: 'phrases-brouillees', emoji: '🧩', title: 'Phrases brouillées', to: '/exercices/phrases-brouillees' },
   { type: 'collection', emoji: '🗂️', title: 'Collection de mots', to: '/exercices/collection-mots' },
   { type: 'ami-ennemi', emoji: '🎯', title: 'Ami et Ennemi', to: '/exercices/ami-et-ennemi' },
+  { type: 'vrai-absurde', emoji: '⚖️', title: "Vrai ou Absurde ?", to: '/exercices/vrai-ou-absurde' },
+  { type: 'forgeron', emoji: '🔨', title: "Le Forgeron de mots", to: '/exercices/forgeron' },
+  { type: 'labyrinthe', emoji: '🧭', title: "Le Labyrinthe", to: '/exercices/labyrinthe' },
+  { type: 'coupe-mots', emoji: '✂️', title: "Coupe-Mots", to: '/exercices/coupe-mots' },
 ]
 
 function getRelativeDate(dateStr: string): string {

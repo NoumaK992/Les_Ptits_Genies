@@ -38,9 +38,9 @@ export const BADGES: BadgeWithCategory[] = [
     id: 'allExercises',
     label: 'Globe-trotteur',
     emoji: '🌍',
-    description: 'Essaie les 7 exercices',
+    description: 'Essaie les 11 exercices',
     category: 'decouverte',
-    condition: (ctx) => ctx.progress.length >= 7,
+    condition: (ctx) => ctx.progress.length >= 11,
   },
 
   // ─── Points ───────────────────────────────────────────────────────

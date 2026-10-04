@@ -21,6 +21,10 @@ const PhrasesBrouilleesPage = React.lazy(() => import('@/pages/PhrasesBrouillees
 const CollectionPage = React.lazy(() => import('@/pages/CollectionPage'))
 const AmiEnnemiPage = React.lazy(() => import('@/pages/AmiEnnemiPage'))
 const ParcoursPage = React.lazy(() => import('@/pages/ParcoursPage'))
+const VraiOuAbsurdePage = React.lazy(() => import('@/pages/VraiOuAbsurdePage'))
+const ForgeronPage = React.lazy(() => import('@/pages/ForgeronPage'))
+const LabyrinthePage = React.lazy(() => import('@/pages/LabyrinthePage'))
+const CoupeMotsPage = React.lazy(() => import('@/pages/CoupeMotsPage'))
 
 export default function App() {
   const { hydrate } = useAuthStore()
@@ -52,6 +56,10 @@ export default function App() {
             <Route path="/exercices/ami-et-ennemi" element={<AmiEnnemiPage />} />
             <Route path="/tableau-de-bord" element={<DashboardPage />} />
             <Route path="/parcours" element={<ParcoursPage />} />
+            <Route path="/exercices/vrai-ou-absurde" element={<VraiOuAbsurdePage />} />
+            <Route path="/exercices/forgeron" element={<ForgeronPage />} />
+            <Route path="/exercices/labyrinthe" element={<LabyrinthePage />} />
+            <Route path="/exercices/coupe-mots" element={<CoupeMotsPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

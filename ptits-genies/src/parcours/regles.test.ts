@@ -14,7 +14,7 @@ const etat = (e: Partial<EtatParcours> = {}): EtatParcours => ({
 
 test('Lecture rapide ne fait plus partie de la rotation', () => {
   assert.ok(!JEUX_ROTATION.includes('lecture-rapide'))
-  assert.equal(JEUX_ROTATION.length, 6)
+  assert.equal(JEUX_ROTATION.length, 10)
 })
 
 test('chaque élève fait chaque jeu une fois avant d en refaire un (2 jeux par séance)', () => {
@@ -84,17 +84,17 @@ test('lecture des codes', () => {
 })
 
 test('entraînement : une partie terminée compte, sans passer au boss avant la dernière', () => {
-  const e = etat({ place: 4 }) // place 4, niveau 1, manche 0 → Phrases brouillées (3 parties)
-  assert.equal(jeuDuNiveau(4, 1), 'phrases-brouillees')
+  const e = etat({ place: 7 }) // place 7, niveau 1, manche 0 → Phrases brouillées (3 parties)
+  assert.equal(jeuDuNiveau(7, 1), 'phrases-brouillees')
   const r = appliquerResultat(e, 0, AUJ)
   assert.equal(r.evenement, 'partie-terminee')
-  assert.deepEqual(r.etat, etat({ place: 4, partiesFaites: 1 }))
+  assert.deepEqual(r.etat, etat({ place: 7, partiesFaites: 1 }))
 })
 
 test('entraînement : la dernière partie ouvre le boss, quel que soit le score', () => {
-  const r = appliquerResultat(etat({ place: 4, partiesFaites: 2 }), 0, AUJ)
+  const r = appliquerResultat(etat({ place: 7, partiesFaites: 2 }), 0, AUJ)
   assert.equal(r.evenement, 'jeu-termine')
-  assert.deepEqual(r.etat, etat({ place: 4, etape: 'boss', partiesFaites: 0 }))
+  assert.deepEqual(r.etat, etat({ place: 7, etape: 'boss', partiesFaites: 0 }))
 })
 
 test('boss de la 1re manche battu → entraînement du 2e jeu de la séance', () => {
@@ -162,7 +162,7 @@ test('lien de partie : jeu, boss et lecture portent le niveau', () => {
   assert.equal(lienPartie(etat({ place: 1 })), '/exercices/intrus?parcours=jeu&d=1&n=1')
   assert.equal(lienPartie(etat({ place: 1, etape: 'boss' })), '/exercices/intrus?parcours=boss&d=2&n=1')
   assert.equal(lienPartie(etat({ place: 1, etape: 'lecture', niveau: 9 })), '/exercices/lecture-rapide?parcours=lecture&d=2&n=9')
-  assert.equal(lienPartie(etat({ place: 1, manche: 1 })), '/exercices/coup-doeil?parcours=jeu&d=1&n=1')
+  assert.equal(lienPartie(etat({ place: 1, manche: 1 })), '/exercices/vrai-ou-absurde?parcours=jeu&d=1&n=1')
 })
 
 test('une partie ne compte que si étape, niveau et jeu correspondent à l état en base', () => {

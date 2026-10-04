@@ -17,7 +17,7 @@ export interface AuthUser {
 }
 
 // ─── Sessions & Progress ────────────────────────────────────────────
-export type ExerciseType = 'word-search' | 'intrus' | 'lecture-rapide' | 'coup-doeil' | 'phrases-brouillees' | 'collection' | 'ami-ennemi'
+export type ExerciseType = 'word-search' | 'intrus' | 'lecture-rapide' | 'coup-doeil' | 'phrases-brouillees' | 'collection' | 'ami-ennemi' | 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots'
 
 export interface Session {
   id: string
@@ -37,6 +37,7 @@ export type SessionDetails = (
   | PhrasesBrouilleesSessionDetails
   | CollectionSessionDetails
   | AmiEnnemiSessionDetails
+  | NouveauJeuSessionDetails
 ) & {
   /** Taux de bonnes réponses de la partie, entre 0 et 1 (succès « Sans faute ! »). Absent des parties anciennes. */
   reussite?: number
@@ -216,6 +217,8 @@ export interface CoupDoeilWord {
 
 export interface CoupDoeilSeries {
   id: number
+  /** Niveau de difficulté de la série (1 = mots courts … 4 = locutions longues). */
+  difficulte: 1 | 2 | 3 | 4
   label: string
   themes: Record<CoupDoeilThemeKey, string>
   columns: [CoupDoeilWord[], CoupDoeilWord[], CoupDoeilWord[]]
@@ -280,4 +283,16 @@ export interface AmiEnnemiSessionDetails {
   /** Manches menées au bout sans échec (intrus puis point commun). */
   manchesReussies: number
   erreurs: number
+}
+
+/** Détails communs aux jeux issus de la recherche sur la fluence (Vrai ou Absurde, Forgeron, Labyrinthe, Coupe-Mots). */
+export interface NouveauJeuSessionDetails {
+  type: 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots'
+  niveau: number
+  bonnes: number
+  total: number
+  /** Identifiants des éléments joués (anti-répétition, suivi). */
+  items: string[]
+  /** Détails propres au jeu (erreurs par type de piège, etc.). */
+  extra?: Record<string, unknown>
 }

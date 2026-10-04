@@ -52,6 +52,34 @@ const exercises = [
     desc: "Trouve le point commun et chasse l'intrus",
     tag: 'Analyse',
   },
+  {
+    to: '/exercices/vrai-ou-absurde',
+    emoji: '⚖️',
+    title: "Vrai ou Absurde ?",
+    desc: "Dis si la phrase a du sens",
+    tag: 'Compréhension',
+  },
+  {
+    to: '/exercices/forgeron',
+    emoji: '🔨',
+    title: "Le Forgeron de mots",
+    desc: "Coupe et reconstruis les mots en syllabes",
+    tag: 'Décodage',
+  },
+  {
+    to: '/exercices/labyrinthe',
+    emoji: '🧭',
+    title: "Le Labyrinthe",
+    desc: "Choisis le bon mot à chaque carrefour",
+    tag: 'Lecture suivie',
+  },
+  {
+    to: '/exercices/coupe-mots',
+    emoji: '✂️',
+    title: "Coupe-Mots",
+    desc: "Sépare les mots collés",
+    tag: 'Décodage',
+  },
 ]
 
 const container = {

@@ -38,4 +38,24 @@ export const CONSIGNES: Record<JeuParcours, string[]> = {
     'Trouve ensuite le point commun des autres mots.',
     'Il y a 5 manches.',
   ],
+  'vrai-absurde': [
+    'Lis la phrase en entier.',
+    "Si elle a du sens, clique sur « Ça tient debout ». Sinon, clique sur « C'est absurde ».",
+    'Attention aux mots qui se ressemblent !',
+  ],
+  forgeron: [
+    'Coupe le mot en syllabes : clique entre les lettres.',
+    'Le mot disparaît : reconstruis-le avec les bonnes syllabes.',
+    'Attention aux syllabes pièges qui se ressemblent.',
+  ],
+  labyrinthe: [
+    'Lis le texte du début à la fin.',
+    'À chaque carrefour, clique sur le mot qui va dans la phrase.',
+    'À la fin, réponds à une question sur le texte.',
+  ],
+  'coupe-mots': [
+    'Les mots de la phrase sont collés.',
+    'Clique entre les lettres pour séparer les mots.',
+    'Valide quand la phrase est bien découpée.',
+  ],
 }

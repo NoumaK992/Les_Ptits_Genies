@@ -5,6 +5,7 @@
 export type JeuParcours =
   | 'lecture-rapide' | 'intrus' | 'coup-doeil' | 'word-search'
   | 'phrases-brouillees' | 'collection' | 'ami-ennemi'
+  | 'vrai-absurde' | 'forgeron' | 'labyrinthe' | 'coupe-mots'
 /** jeu = entraînement (plusieurs parties), boss, lecture = Lecture rapide de fin de niveau. */
 export type EtapeParcours = 'jeu' | 'boss' | 'lecture'
 export type EvenementParcours =
@@ -31,9 +32,11 @@ export const NIVEAU_TERMINE = NB_NIVEAUX + 1
 export const BONUS_BOSS = 100
 
 // Jeux d'entraînement en rotation. Lecture rapide n'y est plus : elle clôt chaque niveau.
-// Le sous-projet C ajoutera 2 jeux pour revenir à 8 (un jeu différent par élève du groupe).
+// 10 jeux : à chaque étape, les 8 élèves d'un groupe jouent 8 jeux différents.
+// Les nouveaux jeux (issus de la recherche sur la fluence) sont intercalés pour varier les compétences.
 export const JEUX_ROTATION: readonly JeuParcours[] = [
-  'intrus', 'coup-doeil', 'word-search', 'phrases-brouillees', 'collection', 'ami-ennemi',
+  'intrus', 'vrai-absurde', 'coup-doeil', 'forgeron', 'word-search',
+  'labyrinthe', 'phrases-brouillees', 'coupe-mots', 'collection', 'ami-ennemi',
 ]
 
 // Nombre de parties de l'entraînement, calibré pour environ 5 minutes (deux jeux par séance).
@@ -45,11 +48,16 @@ export const PARTIES_PAR_JEU: Record<JeuParcours, number> = {
   collection: 2,
   'ami-ennemi': 2,
   'lecture-rapide': 1,
+  'vrai-absurde': 1,
+  forgeron: 1,
+  labyrinthe: 1,
+  'coupe-mots': 1,
 }
 
 export const DIFFICULTE_MAX: Record<JeuParcours, number> = {
   'lecture-rapide': 4, intrus: 4, 'coup-doeil': 4, 'word-search': 1,
   'phrases-brouillees': 3, collection: 3, 'ami-ennemi': 3,
+  'vrai-absurde': 3, forgeron: 3, labyrinthe: 3, 'coupe-mots': 3,
 }
 
 export const ROUTES_JEUX: Record<JeuParcours, string> = {
@@ -60,6 +68,10 @@ export const ROUTES_JEUX: Record<JeuParcours, string> = {
   'phrases-brouillees': '/exercices/phrases-brouillees',
   collection: '/exercices/collection-mots',
   'ami-ennemi': '/exercices/ami-et-ennemi',
+  'vrai-absurde': '/exercices/vrai-ou-absurde',
+  'forgeron': '/exercices/forgeron',
+  'labyrinthe': '/exercices/labyrinthe',
+  'coupe-mots': '/exercices/coupe-mots',
 }
 
 export const NOMS_JEUX: Record<JeuParcours, string> = {
@@ -70,6 +82,10 @@ export const NOMS_JEUX: Record<JeuParcours, string> = {
   'phrases-brouillees': '🧩 Phrases brouillées',
   collection: '🗂️ Collection',
   'ami-ennemi': '🎯 Ami et Ennemi',
+  'vrai-absurde': '⚖️ Vrai ou Absurde ?',
+  'forgeron': '🔨 Le Forgeron de mots',
+  'labyrinthe': '🧭 Le Labyrinthe',
+  'coupe-mots': '✂️ Coupe-Mots',
 }
 
 // Étape globale k = (niveau − 1) × 2 + manche : chaque élève parcourt tous les jeux avant d'en refaire un,
