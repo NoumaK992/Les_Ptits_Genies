@@ -174,7 +174,7 @@
       },
       {
         "question": "Lequel de ces métiers N'est PAS mentionné dans le texte ?",
-        "options": ["Développeur web", "Data analyst", "Architecte", "Créateur de contenu"],
+        "options": ["Développeur web", "Data analyst", "Pilote de ligne", "Créateur de contenu"],
         "correctIndex": 2
       },
       {
@@ -191,6 +191,666 @@
         "question": "Laquelle de ces trois questions soulevées par la révolution numérique N'est PAS mentionnée dans le texte ?",
         "options": ["La protection des données personnelles", "La dépendance aux écrans chez les adolescents", "Les fausses informations", "Les inégalités numériques"],
         "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-06",
+    "title": "Tempête sur le lac",
+    "genre": "Récit d'aventure",
+    "level": 2,
+    "text": "Ce matin-là, le lac d'Annecy ressemblait à un miroir. Inès et son cousin Malo avaient loué un canoë pour la journée, avec la permission de leurs parents, à condition de rentrer avant dix-sept heures. Le moniteur de la base nautique, un grand homme à la barbe grise, leur avait remis deux gilets de sauvetage et une pochette étanche contenant un sifflet. « Le lac est calme, mais la montagne change vite d'humeur, avait-il prévenu. Si le vent se lève, rapprochez-vous de la rive. »\n\nLes deux adolescents pagayèrent pendant plus d'une heure en direction d'une petite crique que Malo avait repérée sur la carte. L'eau était si claire qu'ils voyaient les galets au fond et quelques poissons argentés qui filaient sous la coque. Arrivés dans la crique, ils tirèrent le canoë sur la plage et pique-niquèrent à l'ombre d'un noyer. Inès sortit son carnet de croquis et dessina les sommets qui entouraient le lac. Malo, lui, s'endormit sur sa serviette, bercé par le clapotis des vagues.\n\nCe fut un grondement lointain qui le réveilla. Au-dessus des montagnes, de gros nuages noirs s'étaient accumulés sans que les deux cousins s'en aperçoivent. Le vent soufflait maintenant par rafales, et la surface du lac, si paisible le matin, se couvrait de crêtes blanches. Inès regarda sa montre : il était à peine quinze heures, mais le ciel s'assombrissait comme en fin de soirée.\n\n« On rentre tout de suite ? » demanda Malo, inquiet. Inès réfléchit. La base nautique se trouvait de l'autre côté du lac, à quarante minutes de pagaie par beau temps. Traverser maintenant, au milieu des vagues, serait imprudent. Elle se souvint alors du conseil du moniteur. « On longe la rive, décida-t-elle. C'est plus long, mais si on chavire, on pourra rejoindre la terre à la nage. »\n\nIls remirent le canoë à l'eau et avancèrent lentement, à quelques mètres seulement du bord. Les premières gouttes de pluie, lourdes et froides, claquaient sur leurs épaules. Un éclair zébra le ciel, suivi presque aussitôt d'un coup de tonnerre qui fit sursauter Malo. Inès compta à voix haute les secondes entre l'éclair et le bruit, comme son professeur de physique le lui avait appris : l'écart diminuait, l'orage se rapprochait. Elle repéra alors un ponton abandonné, abrité par une rangée de saules. Ils y attachèrent le canoë et se réfugièrent sous un vieil abri de pêcheur en bois.\n\nPendant une demi-heure, la pluie tomba à verse. Malo sortit le sifflet de la pochette étanche et le garda serré dans sa main, au cas où. Puis, aussi brusquement qu'il était arrivé, l'orage s'éloigna vers le nord. Un rayon de soleil perça les nuages et un arc-en-ciel se dessina au-dessus de l'eau.\n\nQuand ils atteignirent enfin la base nautique, trempés jusqu'aux os, le moniteur les attendait sur le quai, une couverture sur chaque bras. Il avait suivi leur progression à la jumelle. « Vous avez fait exactement ce qu'il fallait », dit-il simplement. Malo jeta un regard admiratif à sa cousine. Ce soir-là, au dîner, il raconta l'aventure trois fois de suite, en ajoutant chaque fois un peu plus d'éclairs.",
+    "qcm": [
+      {
+        "question": "Quel objet le moniteur avait-il placé dans la pochette étanche ?",
+        "options": ["Un téléphone", "Une lampe de poche", "Un sifflet", "Une carte du lac"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Que faisait Malo pendant qu'Inès dessinait les montagnes ?",
+        "options": ["Il pêchait depuis le canoë", "Il se baignait dans la crique", "Il dormait sur sa serviette", "Il étudiait la carte du lac"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi Inès décide-t-elle de longer la rive au lieu de traverser le lac ?",
+        "options": ["Parce que Malo ne sait pas nager", "Parce que ce chemin est plus court", "Pour pouvoir rejoindre la terre à la nage s'ils chavirent", "Pour retrouver le ponton qu'elle connaissait déjà"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi Inès compte-t-elle les secondes entre l'éclair et le tonnerre ?",
+        "options": ["Pour savoir si l'orage se rapproche", "Pour mesurer la vitesse du vent", "Pour rassurer Malo en jouant avec lui", "Pour savoir combien de temps il reste avant dix-sept heures"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans le texte, que signifie l'expression « la pluie tomba à verse » ?",
+        "options": ["La pluie tomba en grande quantité", "La pluie tomba doucement", "La pluie tomba par moments seulement", "La pluie tomba de travers"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Comment le moniteur savait-il où se trouvaient les deux cousins ?",
+        "options": ["Il les avait entendus siffler", "Un pêcheur l'avait prévenu", "Il avait suivi leur progression à la jumelle", "Ils l'avaient appelé au téléphone"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Dans quel ordre les événements se déroulent-ils ?",
+        "options": ["L'orage, le pique-nique, l'arc-en-ciel, l'abri près du ponton", "L'abri près du ponton, le pique-nique, l'orage, l'arc-en-ciel", "Le pique-nique, l'orage, l'abri près du ponton, l'arc-en-ciel", "Le pique-nique, l'abri près du ponton, l'orage, l'arc-en-ciel"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr2-07",
+    "title": "Marie Curie, deux fois Nobel",
+    "genre": "Biographie",
+    "level": 2,
+    "text": "Maria Sklodowska naît le 7 novembre 1867 à Varsovie, en Pologne, dans une famille d'enseignants. Dernière de cinq enfants, elle se montre très tôt une élève brillante, dotée d'une mémoire étonnante. Mais à cette époque, la Pologne est dominée par l'Empire russe, et les universités du pays sont interdites aux femmes. Pour poursuivre ses études, Maria doit donc partir à l'étranger. Comme sa famille manque d'argent, elle conclut un pacte avec sa sœur aînée, Bronia : Maria travaillera comme gouvernante pour financer les études de médecine de Bronia à Paris, puis Bronia l'aidera à son tour.\n\nEn 1891, à vingt-quatre ans, Maria arrive enfin à Paris et s'inscrit à la Sorbonne. Elle se fait désormais appeler Marie. La vie est rude : elle loge dans une petite chambre glaciale sous les toits, se nourrit parfois de pain et de thé, et étudie jusque tard dans la nuit. Ses efforts sont récompensés, puisqu'elle obtient une licence de physique, puis une licence de mathématiques.\n\nEn 1894, elle rencontre Pierre Curie, un physicien français timide et passionné. Ils se marient l'année suivante et forment un couple uni par l'amour de la science. Marie choisit comme sujet de thèse un phénomène découvert peu avant par le savant Henri Becquerel : certains minerais, comme ceux qui contiennent de l'uranium, émettent des rayons invisibles. Marie donne à ce phénomène le nom de « radioactivité ».\n\nDans un hangar mal chauffé, où la pluie s'infiltre par le toit, le couple traite des tonnes de minerai pour en extraire de minuscules quantités de matière. Ce travail épuisant aboutit en 1898 à la découverte de deux nouveaux éléments chimiques. Marie nomme le premier « polonium », en hommage à sa patrie, et le second « radium », du mot latin qui signifie « rayon ».\n\nEn 1903, Marie, Pierre et Henri Becquerel reçoivent ensemble le prix Nobel de physique. Marie devient la première femme récompensée par cette distinction. Mais en 1906, le drame frappe : Pierre meurt, renversé par une voiture à cheval dans une rue de Paris. Malgré son chagrin, Marie poursuit leurs recherches. Elle reprend le poste de professeur de son mari et devient la première femme à enseigner à la Sorbonne. En 1911, elle reçoit un second prix Nobel, cette fois en chimie. Elle reste aujourd'hui encore la seule personne à avoir été récompensée dans deux sciences différentes.\n\nPendant la Première Guerre mondiale, Marie met son savoir au service des soldats blessés. Elle équipe des voitures d'appareils de radiographie, qui permettent aux chirurgiens de localiser les éclats d'obus dans le corps des blessés. Ces véhicules sont surnommés les « petites Curies ». Marie apprend elle-même à conduire pour se rendre près du front, accompagnée de sa fille Irène.\n\nMarie Curie meurt en 1934, à soixante-six ans, d'une maladie probablement causée par les rayonnements qu'elle a manipulés toute sa vie sans protection. À l'époque, on ignorait encore leurs dangers. En 1995, ses cendres sont transférées au Panthéon, à Paris. Elle est la première femme à y entrer pour ses propres mérites.",
+    "qcm": [
+      {
+        "question": "Pourquoi Maria doit-elle quitter la Pologne pour faire des études ?",
+        "options": ["Parce que sa famille déménage en France", "Parce que Pierre Curie l'invite à Paris", "Parce qu'elle a gagné une bourse d'études", "Parce que les universités polonaises sont interdites aux femmes"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel pacte Maria conclut-elle avec sa sœur Bronia ?",
+        "options": ["Bronia devient gouvernante pour payer les études de Maria", "Les deux sœurs ouvrent un laboratoire ensemble", "Les deux sœurs partent ensemble à Paris", "Maria finance d'abord les études de Bronia, qui l'aidera ensuite"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi Marie a-t-elle appelé un des nouveaux éléments « polonium » ?",
+        "options": ["Parce que ce mot signifie « rayon » en latin", "Parce qu'il a été trouvé en Pologne", "En hommage à la Pologne, sa patrie", "En hommage à sa sœur Bronia"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Dans quelle discipline Marie Curie a-t-elle reçu son second prix Nobel, en 1911 ?",
+        "options": ["En mathématiques", "En physique", "En médecine", "En chimie"],
+        "correctIndex": 3
+      },
+      {
+        "question": "À quoi servaient les « petites Curies » pendant la Première Guerre mondiale ?",
+        "options": ["À transporter les blessés jusqu'à Paris", "À former des infirmières sur le front", "À localiser les éclats d'obus grâce à la radiographie", "À livrer du radium aux hôpitaux"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Dans le texte, que veut dire « entrer au Panthéon pour ses propres mérites » ?",
+        "options": ["Y entrer grâce à ce qu'elle a accompli elle-même", "Y entrer grâce à la célébrité de son mari", "Y entrer parce qu'elle était née à l'étranger", "Y entrer parce qu'elle avait enseigné à la Sorbonne"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans quel ordre ces événements se sont-ils produits ?",
+        "options": ["Le premier prix Nobel, le mariage avec Pierre, la découverte du radium, la mort de Pierre", "Le mariage avec Pierre, la découverte du radium, le premier prix Nobel, la mort de Pierre", "La découverte du radium, le mariage avec Pierre, la mort de Pierre, le premier prix Nobel", "Le mariage avec Pierre, le premier prix Nobel, la mort de Pierre, la découverte du radium"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-08",
+    "title": "Le cécifoot, football dans le noir",
+    "genre": "Article de presse jeunesse",
+    "level": 2,
+    "text": "Imaginez un match de football où personne ne voit le ballon. C'est pourtant le quotidien des joueurs de cécifoot, une discipline pratiquée par des sportifs aveugles ou malvoyants. Ce sport, né en Amérique du Sud, fait partie du programme des Jeux paralympiques depuis 2004, à Athènes. Nous avons assisté à l'entraînement d'un club de la région lyonnaise pour comprendre comment il fonctionne.\n\nSur le terrain, plus petit qu'un terrain classique, chaque équipe compte cinq joueurs : quatre joueurs de champ et un gardien. Les joueurs de champ portent un bandeau opaque sur les yeux, par-dessus des pansements collés sur les paupières. Ainsi, tous jouent dans le noir complet, qu'ils soient totalement aveugles ou qu'ils aient conservé une petite partie de leur vision. « C'est une question d'équité, explique Karim, l'entraîneur. Personne ne doit avoir d'avantage. » Le gardien, lui, est voyant, mais il ne peut pas sortir de sa petite surface.\n\nComment les joueurs savent-ils où se trouve le ballon ? La réponse est simple : ils l'entendent. Le ballon contient en effet des grelots qui tintent à chaque rebond. Pendant les matchs, le public doit donc rester silencieux, et il n'applaudit qu'au moment des buts. De longues barrières sont installées le long des lignes de touche : le ballon y rebondit, ce qui garde le jeu en mouvement et évite aux joueurs de sortir du terrain.\n\nPour éviter les collisions, une règle est essentielle. Le joueur qui se dirige vers le porteur du ballon doit crier « voy », un mot espagnol qui signifie « j'arrive ». S'il oublie de le faire, l'arbitre siffle une faute. Les joueurs s'orientent aussi grâce aux voix de trois guides : le gardien, l'entraîneur placé au bord du terrain et un guide installé derrière le but adverse. Ce dernier frappe parfois les poteaux avec un bâton pour indiquer aux attaquants la position de la cage.\n\nPendant l'entraînement, nous sommes impressionnés par la précision des joueurs. Thomas, vingt-deux ans, aveugle depuis la naissance, dribble deux adversaires avant de tirer en pleine lucarne. « Au début, j'avais peur de me cogner, raconte-t-il en souriant. Maintenant, je me déplace en écoutant tout : le ballon, les appels, le bruit des pas. Le terrain devient comme une carte dans ma tête. » Autour de lui, ses coéquipiers parlent sans arrêt, se donnent des indications et se félicitent.\n\nPour Karim, le cécifoot apporte bien plus qu'une activité physique. « Beaucoup de nos joueurs ont repris confiance en eux grâce au sport. Ils se déplacent plus facilement dans la vie de tous les jours. » Le club accueille aussi des joueurs voyants qui veulent découvrir l'expérience, les yeux bandés. La plupart ressortent du terrain désorientés et pleins d'admiration pour leurs partenaires.\n\nProchaine étape pour l'équipe : un tournoi national au printemps. Les joueurs s'entraînent deux fois par semaine, et ils espèrent bien ramener une médaille. En attendant, si vous assistez un jour à un match, souvenez-vous de la règle d'or : silence dans les tribunes !",
+    "qcm": [
+      {
+        "question": "Combien de joueurs chaque équipe de cécifoot compte-t-elle sur le terrain ?",
+        "options": ["Cinq", "Six", "Onze", "Quatre"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi tous les joueurs de champ portent-ils un bandeau, même ceux qui voient un peu ?",
+        "options": ["Pour se protéger de la lumière du soleil", "Pour que l'on reconnaisse les deux équipes", "Pour protéger leurs yeux des coups de ballon", "Pour que personne n'ait d'avantage"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que signifie le mot espagnol « voy » crié par les joueurs ?",
+        "options": ["« J'arrive »", "« Attention »", "« Passe-moi le ballon »", "« But ! »"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi le public doit-il rester silencieux pendant les matchs ?",
+        "options": ["Pour ne pas déranger l'arbitre", "Pour que les joueurs entendent le ballon et les guides", "Pour que le gardien puisse se concentrer", "Pour respecter une tradition sud-américaine"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quel est le rôle du guide installé derrière le but adverse ?",
+        "options": ["Siffler les fautes des joueurs", "Ramasser les ballons qui sortent du terrain", "Encourager le public à applaudir", "Indiquer aux attaquants la position de la cage"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que veut dire le mot « désorientés » ?",
+        "options": ["Qui se sont blessés", "Qui sont très fatigués", "Qui sont en colère", "Qui ne savent plus où ils se trouvent"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Selon Karim, qu'apporte le cécifoot aux joueurs en dehors du terrain ?",
+        "options": ["Ils deviennent tous entraîneurs", "Ils reprennent confiance et se déplacent plus facilement", "Ils gagnent de l'argent grâce aux tournois", "Ils retrouvent une partie de leur vue"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-09",
+    "title": "Les volcans, fenêtres sur la Terre",
+    "genre": "Documentaire scientifique",
+    "level": 2,
+    "text": "Sous nos pieds, à plusieurs dizaines de kilomètres de profondeur, la température est si élevée que certaines roches fondent. Elles forment alors le magma, une matière brûlante et pâteuse, qui peut dépasser 1 000 degrés. Plus léger que les roches qui l'entourent, le magma a tendance à remonter vers la surface, un peu comme une bulle d'air dans l'eau. Il s'accumule dans de vastes poches appelées chambres magmatiques. Lorsque la pression devient trop forte, il s'échappe par des fissures : c'est l'éruption volcanique. Une fois sorti à l'air libre, le magma prend le nom de lave.\n\nPourquoi les volcans se trouvent-ils à certains endroits plutôt qu'à d'autres ? La surface de la Terre est découpée en immenses morceaux, les plaques tectoniques, qui se déplacent de quelques centimètres par an, à peu près à la vitesse de pousse de nos ongles. La plupart des volcans se situent aux frontières de ces plaques, là où elles s'écartent ou s'enfoncent l'une sous l'autre. Autour de l'océan Pacifique, par exemple, une longue chaîne de volcans forme ce qu'on appelle la « ceinture de feu ».\n\nTous les volcans ne se ressemblent pas. Les volcanologues distinguent deux grandes familles. Les volcans effusifs, que l'on surnomme parfois « volcans rouges », produisent une lave très fluide qui s'écoule en longues coulées. Ces éruptions sont spectaculaires mais rarement meurtrières, car la lave avance assez lentement pour que les habitants aient le temps de s'éloigner. Le Piton de la Fournaise, sur l'île de La Réunion, en est un bel exemple : il entre en éruption presque chaque année. Les volcans explosifs, ou « volcans gris », sont bien plus dangereux. Leur lave, épaisse et collante, bouche la cheminée du volcan. Les gaz restent alors prisonniers, la pression monte, et le volcan finit par exploser en projetant des cendres et des blocs de roche à des kilomètres.\n\nEn France métropolitaine, aucun volcan n'est actuellement en éruption. Pourtant, la chaîne des Puys, en Auvergne, compte environ quatre-vingts volcans endormis. Le dernier s'est réveillé il y a environ 7 000 ans. Les scientifiques estiment qu'une nouvelle éruption reste possible, même si personne ne peut dire quand.\n\nPour protéger les populations, les volcanologues surveillent les volcans actifs jour et nuit. Ils installent des capteurs qui mesurent les secousses du sol, la composition des gaz ou encore le gonflement de la montagne. En effet, avant une éruption, le magma qui remonte provoque souvent de petits tremblements de terre et soulève légèrement le sol. Grâce à ces signaux, les autorités peuvent parfois évacuer les habitants à temps.\n\nLes volcans ne représentent pas seulement une menace. Les sols volcaniques, riches en minéraux, sont très fertiles, ce qui explique que de nombreux agriculteurs s'installent sur leurs pentes. La chaleur souterraine peut aussi servir à produire de l'électricité, comme en Islande. Enfin, les volcans ont joué un rôle essentiel dans l'histoire de notre planète : les gaz qu'ils ont rejetés il y a des milliards d'années ont contribué à former l'atmosphère et les océans.",
+    "qcm": [
+      {
+        "question": "Comment appelle-t-on le magma une fois qu'il est sorti à l'air libre ?",
+        "options": ["La cendre", "La chambre magmatique", "La lave", "La cheminée"],
+        "correctIndex": 2
+      },
+      {
+        "question": "À quelle vitesse les plaques tectoniques se déplacent-elles ?",
+        "options": ["De quelques kilomètres par an", "De quelques centimètres par an", "De quelques mètres par jour", "De quelques millimètres par siècle"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi les volcans « gris » sont-ils plus dangereux que les volcans « rouges » ?",
+        "options": ["Leur lave épaisse bloque les gaz, et le volcan finit par exploser", "Leur lave est beaucoup plus chaude", "Ils se trouvent toujours près des grandes villes", "Leur lave coule beaucoup plus vite"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Où se trouve le Piton de la Fournaise ?",
+        "options": ["Au bord de l'océan Pacifique", "En Islande", "Sur l'île de La Réunion", "En Auvergne"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel signe peut annoncer qu'une éruption se prépare ?",
+        "options": ["Une pluie abondante sur la montagne", "Une forte baisse de la température de l'air", "La disparition des plantes sur les pentes", "De petits tremblements de terre et un léger soulèvement du sol"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie « fertiles » à propos des sols volcaniques ?",
+        "options": ["Qui sont dangereux pour l'homme", "Qui sont très durs", "Qui restent toujours chauds", "Où les plantes poussent bien"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que peut-on dire des volcans de la chaîne des Puys ?",
+        "options": ["Ils font partie de la ceinture de feu", "Ils sont éteints pour toujours", "Ils entrent en éruption presque chaque année", "Ils sont endormis, mais une éruption reste possible"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr2-10",
+    "title": "Guédelon, un château du Moyen Âge",
+    "genre": "Reportage historique",
+    "level": 2,
+    "text": "Au cœur d'une forêt de Bourgogne, près du village de Treigny, un étrange chantier attire chaque année des centaines de milliers de visiteurs. Ici, pas de grue métallique, pas de bétonnière, pas de camion. Depuis 1997, une équipe d'ouvriers construit un château fort en utilisant uniquement les techniques et les outils du XIIIe siècle. Ce projet un peu fou s'appelle Guédelon.\n\nL'idée est née d'un passionné d'histoire, Michel Guyot, qui voulait comprendre comment les bâtisseurs du Moyen Âge avaient pu élever des forteresses aussi imposantes sans machines modernes. Avec des archéologues et des historiens, il a imaginé le plan d'un château typique de l'époque du roi Philippe Auguste : une enceinte carrée, des tours d'angle et une grosse tour principale. Le site a été choisi avec soin, car il réunit tous les matériaux nécessaires : une carrière de pierre, de la terre, du sable, de l'argile et du bois en abondance.\n\nSur le chantier, chaque métier a son importance. Les carriers extraient les blocs de grès de la carrière, à l'aide de coins et de masses. Les tailleurs de pierre leur donnent ensuite une forme régulière. Les forgerons fabriquent et réparent les outils, qui s'usent très vite au contact de la pierre. Les charpentiers préparent les poutres, tandis que les tuiliers façonnent et cuisent les tuiles. On croise aussi des cordiers, des vanniers et des charretiers, accompagnés de leurs chevaux de trait.\n\nComment soulever des pierres de plusieurs centaines de kilos sans moteur ? Les ouvriers utilisent une machine étonnante, la cage à écureuil. Il s'agit d'une immense roue en bois dans laquelle un homme marche, comme un hamster dans sa roue. En tournant, elle enroule une corde qui hisse les blocs jusqu'en haut des murs. Grâce à ce système ingénieux, une seule personne peut soulever une charge bien plus lourde qu'elle.\n\nLe chantier avance lentement, au rythme des saisons. En hiver, le gel pourrait abîmer le mortier encore frais, alors les maçons suspendent leur travail et protègent le haut des murs. C'est le moment de préparer les pierres et les pièces de bois pour l'année suivante. Il faut souvent plusieurs années pour élever une seule tour.\n\nGuédelon est aussi un véritable laboratoire d'archéologie expérimentale. En reproduisant les gestes anciens, les bâtisseurs vérifient des hypothèses que les livres ne permettent pas de confirmer. Combien de temps fallait-il pour tailler une pierre ? Quelle quantité de bois était nécessaire pour fabriquer de la chaux ? Les réponses aident les chercheurs à mieux comprendre la vie sur les chantiers médiévaux.\n\nPour les visiteurs, et notamment pour les élèves qui viennent en sortie scolaire, l'expérience est fascinante. On peut discuter avec les artisans, toucher les matériaux et parfois même s'essayer à la taille de pierre. On découvre aussi que les ouvriers du Moyen Âge possédaient des savoirs très précis, transmis de génération en génération. À Guédelon, l'histoire ne se lit pas seulement dans les manuels : elle se construit sous nos yeux, pierre après pierre.",
+    "qcm": [
+      {
+        "question": "Depuis quelle année construit-on le château de Guédelon ?",
+        "options": ["Depuis 1297", "Depuis 2007", "Depuis 1979", "Depuis 1997"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi le site de Guédelon a-t-il été choisi ?",
+        "options": ["Parce que le roi Philippe Auguste y avait vécu", "Parce qu'il y avait déjà les ruines d'un château", "Parce qu'il réunit tous les matériaux nécessaires", "Parce qu'il se trouve tout près de Paris"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel est le travail des carriers ?",
+        "options": ["Conduire les chevaux de trait", "Extraire les blocs de pierre de la carrière", "Fabriquer et réparer les outils", "Donner une forme régulière aux pierres"],
+        "correctIndex": 1
+      },
+      {
+        "question": "À quoi sert la cage à écureuil sur le chantier ?",
+        "options": ["À enfermer les animaux du chantier", "À fabriquer des cordes", "À cuire les tuiles", "À soulever des pierres très lourdes"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi les maçons arrêtent-ils de construire les murs en hiver ?",
+        "options": ["Parce que la carrière est inondée", "Parce que les chevaux ne peuvent plus travailler", "Parce qu'il n'y a plus de visiteurs", "Parce que le gel pourrait abîmer le mortier frais"],
+        "correctIndex": 3
+      },
+      {
+        "question": "D'après le texte, que fait-on en « archéologie expérimentale » ?",
+        "options": ["On reproduit les gestes anciens pour vérifier des hypothèses", "On étudie de vieux manuscrits dans les bibliothèques", "On reconstruit des châteaux avec des machines modernes", "On fouille le sol pour trouver des objets anciens"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Qui a eu l'idée du projet de Guédelon ?",
+        "options": ["Un groupe d'élèves en sortie scolaire", "Michel Guyot, un passionné d'histoire", "Le roi Philippe Auguste", "Les habitants du village de Treigny"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-11",
+    "title": "Le Potager du collège",
+    "genre": "Récit (environnement)",
+    "level": 2,
+    "text": "Tout a commencé par une remarque de Yanis, en cours de SVT. Le professeur, madame Lefèvre, expliquait que beaucoup de fruits et légumes vendus en supermarché parcouraient des centaines, parfois des milliers de kilomètres avant d'arriver dans nos assiettes. Yanis avait levé la main : « Et si on les faisait pousser nous-mêmes, ici, au collège ? » Quelques élèves avaient ricané. Madame Lefèvre, elle, avait pris la question très au sérieux.\n\nUne semaine plus tard, elle avait obtenu l'accord de la principale. Derrière le gymnase, une bande de terrain abandonné, couverte de ronces et de vieux papiers, pourrait accueillir le projet. Une douzaine d'élèves de cinquième se portèrent volontaires pour former le « club potager ». Ils se réuniraient chaque mardi, pendant la pause de midi.\n\nLes premières séances furent décourageantes. Il fallut arracher les ronces, ramasser les déchets et retourner une terre dure comme du béton. Plusieurs élèves eurent des ampoules aux mains et deux d'entre eux quittèrent le club. Yanis lui-même commençait à douter. C'est alors que monsieur Bonnet, l'agent d'entretien du collège, vint leur prêter main-forte. Fils d'agriculteur, il connaissait mille astuces. Il leur apprit à fabriquer du compost avec les épluchures de la cantine et à couvrir le sol de feuilles mortes pour qu'il garde son humidité.\n\nAu printemps, les élèves dessinèrent le plan du potager. Ils choisirent des plantes faciles à cultiver : radis, salades, tomates, courgettes et quelques herbes aromatiques. Lina, qui adorait le dessin, réalisa de jolies étiquettes peintes pour chaque rang. Le club construisit aussi un hôtel à insectes avec des briques, des bûches percées et des tiges de bambou. Madame Lefèvre expliqua que les coccinelles viendraient s'y installer et mangeraient les pucerons qui attaquent les plantes. Pas besoin de pesticides !\n\nLes premiers radis furent récoltés en mai, à peine un mois après les semis. Ils étaient petits, un peu tordus, mais personne n'avait jamais rien goûté d'aussi bon. Le problème arriva en juillet : qui arroserait le potager pendant les grandes vacances ? Les élèves organisèrent un planning. Chaque famille volontaire viendrait une fois par semaine, avec l'accord de la principale. Monsieur Bonnet installa également un récupérateur d'eau de pluie relié à la gouttière du gymnase.\n\nÀ la rentrée de septembre, les tomates débordaient de leurs tuteurs et les courgettes avaient atteint une taille impressionnante. Une partie de la récolte fut offerte à la cantine, qui prépara une ratatouille pour tout le collège. Ce jour-là, les élèves du club furent applaudis dans le réfectoire.\n\nAujourd'hui, le club potager compte plus de trente membres, parmi lesquels plusieurs élèves qui avaient ricané au début. Yanis, désormais en quatrième, en a tiré une leçon importante : les grands projets commencent souvent par une simple question posée à voix haute.",
+    "qcm": [
+      {
+        "question": "Quelle remarque de madame Lefèvre a donné une idée à Yanis ?",
+        "options": ["La cantine du collège jette trop de nourriture", "Un potager demande beaucoup trop d'eau", "Beaucoup de fruits et légumes parcourent de longues distances avant d'arriver dans nos assiettes", "Les élèves ne mangent pas assez de légumes"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Où le potager a-t-il été installé ?",
+        "options": ["Dans le jardin de la principale", "Au milieu de la cour", "Sur le toit du collège", "Derrière le gymnase"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Qui a aidé les élèves au moment où ils commençaient à se décourager ?",
+        "options": ["Un agriculteur du village", "Les parents d'élèves", "La principale du collège", "Monsieur Bonnet, l'agent d'entretien"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi le club a-t-il construit un hôtel à insectes ?",
+        "options": ["Pour éloigner les oiseaux du potager", "Pour élever des abeilles et faire du miel", "Pour décorer l'entrée du potager", "Pour attirer des coccinelles qui mangent les pucerons"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie l'expression « prêter main-forte » ?",
+        "options": ["Donner des ordres", "Prêter des outils", "Surveiller", "Aider"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel problème les élèves ont-ils dû résoudre en juillet ?",
+        "options": ["Le manque de graines", "L'arrosage du potager pendant les vacances", "Une invasion de pucerons", "Le vol des légumes"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans quel ordre les événements se sont-ils déroulés ?",
+        "options": ["Le défrichage du terrain, la récolte des radis, le planning d'arrosage, la ratatouille", "Le défrichage du terrain, la ratatouille, la récolte des radis, le planning d'arrosage", "La récolte des radis, le défrichage du terrain, la ratatouille, le planning d'arrosage", "Le planning d'arrosage, le défrichage du terrain, la récolte des radis, la ratatouille"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr2-12",
+    "title": "Comment fonctionne le GPS ?",
+    "genre": "Article technologie",
+    "level": 2,
+    "text": "Il suffit aujourd'hui de sortir un smartphone pour savoir exactement où l'on se trouve, à quelques mètres près. Cette prouesse nous paraît banale, mais elle repose sur une technologie remarquable : le positionnement par satellites. Le système le plus connu s'appelle GPS, pour Global Positioning System, ce qui signifie en anglais « système de positionnement mondial ».\n\nLe GPS a été conçu par l'armée des États-Unis dans les années 1970, pour guider ses navires, ses avions et ses troupes. D'abord réservé aux militaires, il a été ouvert progressivement au grand public. Depuis le début des années 2000, chacun peut l'utiliser avec une bonne précision, que ce soit en voiture, sur un bateau ou pendant une randonnée.\n\nLe système repose sur une trentaine de satellites qui tournent autour de la Terre à environ 20 000 kilomètres d'altitude. Ils sont répartis de façon que, depuis n'importe quel point du globe, plusieurs d'entre eux soient toujours visibles dans le ciel. Chaque satellite transporte une horloge atomique d'une précision extraordinaire et envoie en permanence un signal radio indiquant sa position et l'heure exacte de l'envoi.\n\nVotre téléphone, lui, se contente d'écouter. Il ne renvoie aucun message aux satellites. Lorsqu'il reçoit un signal, il compare l'heure d'envoi avec l'heure de réception. Comme les ondes radio voyagent à la vitesse de la lumière, soit environ 300 000 kilomètres par seconde, ce minuscule décalage lui permet de calculer la distance qui le sépare du satellite.\n\nMais une seule distance ne suffit pas. Imaginez que quelqu'un vous dise : « Tu es à dix kilomètres de Lyon. » Vous pourriez vous trouver n'importe où sur un grand cercle autour de la ville. Si l'on ajoute que vous êtes à vingt kilomètres d'une autre ville, les possibilités se réduisent à deux points. Une troisième information permet alors de trancher. Le GPS fonctionne de la même manière, mais dans l'espace : il a besoin des signaux d'au moins quatre satellites pour déterminer la position avec certitude, en tenant compte de l'altitude et des petites erreurs d'horloge du téléphone. Cette méthode de calcul s'appelle la trilatération.\n\nLe GPS n'est pas le seul système de ce type. L'Europe a développé son propre réseau, appelé Galileo, afin de ne pas dépendre des États-Unis. La Russie et la Chine possèdent également le leur. La plupart des smartphones récents captent les signaux de plusieurs systèmes à la fois, ce qui améliore encore la précision.\n\nLes usages du positionnement par satellites dépassent largement la navigation routière. Les agriculteurs s'en servent pour guider leurs tracteurs au centimètre près. Les secours localisent plus rapidement les personnes en difficulté. Les scientifiques suivent les déplacements des animaux équipés de balises. Il existe toutefois une limite : les signaux traversent mal les murs épais et le sol. Dans un tunnel, un parking souterrain ou au fond d'une grotte, le GPS devient aveugle.",
+    "qcm": [
+      {
+        "question": "Qui a conçu le GPS ?",
+        "options": ["L'armée des États-Unis", "Une entreprise de téléphones", "Des scientifiques chinois", "L'Union européenne"],
+        "correctIndex": 0
+      },
+      {
+        "question": "À quelle altitude tournent les satellites du GPS ?",
+        "options": ["À environ 300 000 kilomètres", "À environ 20 000 kilomètres", "À environ 2 000 kilomètres", "À environ 200 kilomètres"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Que fait le téléphone lorsqu'il utilise le GPS ?",
+        "options": ["Il écoute les signaux des satellites sans leur répondre", "Il envoie sa position aux satellites", "Il photographie les étoiles pour se repérer", "Il demande sa position à une antenne téléphonique"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Combien de satellites faut-il au minimum pour déterminer une position avec certitude ?",
+        "options": ["Deux", "Un seul", "Quatre", "Une trentaine"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi l'Europe a-t-elle créé le système Galileo ?",
+        "options": ["Parce que les satellites américains étaient en panne", "Pour guider uniquement les tracteurs", "Parce que le GPS ne fonctionne pas en Europe", "Pour ne pas dépendre des États-Unis"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans la phrase « Une troisième information permet alors de trancher », que signifie « trancher » ?",
+        "options": ["Recommencer le calcul depuis le début", "Couper en morceaux", "Rendre le calcul plus difficile", "Choisir entre les deux possibilités"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi le GPS ne fonctionne-t-il pas dans un parking souterrain ?",
+        "options": ["Parce que les satellites ne fonctionnent pas la nuit", "Parce qu'il n'y a pas de réseau téléphonique", "Parce que les signaux traversent mal le sol et les murs épais", "Parce que les voitures brouillent les signaux"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "lr2-13",
+    "title": "Lascaux, la grotte des quatre garçons",
+    "genre": "Art et histoire",
+    "level": 2,
+    "text": "Le 12 septembre 1940, dans la campagne de Dordogne, près du village de Montignac, un jeune homme de dix-sept ans, Marcel Ravidat, part en expédition avec trois camarades plus jeunes : Jacques Marsal, Georges Agnel et Simon Coencas. Quelques jours plus tôt, Marcel avait remarqué un trou dans le sol, au pied d'un arbre déraciné. Une vieille légende locale parlait d'un souterrain secret menant à un trésor. Les garçons décident d'aller voir.\n\nIls élargissent l'ouverture, puis se glissent un par un dans l'étroit passage. Au fond, éclairés par une petite lampe, ils découvrent une salle immense. Sur les parois, des dizaines d'animaux semblent galoper dans la lumière tremblante : des chevaux, des cerfs, des taureaux gigantesques. Les quatre amis restent bouche bée. Ils viennent de faire l'une des plus grandes découvertes archéologiques du XXe siècle.\n\nPrévenu par les garçons, leur ancien instituteur, Léon Laval, se rend sur place et comprend aussitôt l'importance de la découverte. Il alerte les spécialistes. Quelques jours plus tard, l'abbé Henri Breuil, l'un des meilleurs connaisseurs de l'art préhistorique, visite la grotte. Il la surnomme « la chapelle Sixtine de la préhistoire », en référence à la célèbre chapelle de Rome dont Michel-Ange a peint le plafond.\n\nLes peintures de Lascaux ont environ 18 000 ans. Elles ont été réalisées par des hommes et des femmes de la préhistoire, des Homo sapiens comme nous. Pour obtenir leurs couleurs, ces artistes utilisaient des pigments naturels : de l'ocre pour le rouge et le jaune, du charbon de bois ou un minerai sombre, le manganèse, pour le noir. Ils appliquaient la peinture avec les doigts, avec des tampons de fourrure, ou en la soufflant à travers un os creux. Certains animaux mesurent plus de cinq mètres de long ! Les artistes utilisaient même les bosses de la roche pour donner du relief à leurs dessins.\n\nPourquoi ces peintures ont-elles été réalisées ? Les chercheurs ne sont pas tous d'accord. Certains pensent qu'il s'agissait de rituels magiques pour favoriser la chasse. D'autres y voient des récits, des croyances religieuses ou une façon de transmettre des connaissances. Le mystère reste entier, et c'est peut-être ce qui rend Lascaux si fascinant.\n\nEn 1948, la grotte est ouverte au public. Le succès est énorme : plus de mille visiteurs par jour s'y pressent parfois. Mais leur respiration et la chaleur de leurs corps modifient l'air de la grotte. Des algues vertes, puis des taches blanches, apparaissent sur les parois. Pour sauver les peintures, le ministre de la Culture, André Malraux, décide de fermer la grotte en 1963.\n\nPour permettre au public d'admirer malgré tout ces chefs-d'œuvre, des copies fidèles ont été créées. Lascaux II ouvre en 1983, à quelques centaines de mètres de la grotte originale. En 2016, un nouveau centre, Lascaux IV, reproduit la quasi-totalité de la grotte grâce à des techniques modernes. Quant aux quatre découvreurs, ils sont restés liés toute leur vie à cette aventure. Jacques Marsal est même devenu guide de la grotte.",
+    "qcm": [
+      {
+        "question": "En quelle année la grotte de Lascaux a-t-elle été découverte ?",
+        "options": ["En 1963", "En 1983", "En 1940", "En 1948"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi les garçons voulaient-ils explorer le trou ?",
+        "options": ["Leur instituteur leur avait demandé de le fouiller", "Ils avaient perdu un ballon dans ce trou", "Ils cherchaient un abri contre la pluie", "Une légende parlait d'un souterrain menant à un trésor"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Que signifie l'expression « rester bouche bée » ?",
+        "options": ["Être très étonné", "Avoir faim", "Se taire par politesse", "Avoir très peur"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Avec quoi les artistes de Lascaux obtenaient-ils la couleur noire ?",
+        "options": ["Avec de l'argile mélangée à de l'eau", "Avec du charbon de bois ou du manganèse", "Avec de la fourrure brûlée", "Avec de l'ocre"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi la grotte a-t-elle été fermée au public en 1963 ?",
+        "options": ["Les visiteurs volaient des objets préhistoriques", "Elle avait été inondée par un orage", "Le plafond menaçait de s'effondrer", "La respiration et la chaleur des visiteurs abîmaient les peintures"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi l'abbé Breuil compare-t-il Lascaux à la chapelle Sixtine ?",
+        "options": ["Parce que les deux lieux sont ornés de chefs-d'œuvre peints", "Parce que la grotte servait d'église au Moyen Âge", "Parce que Michel-Ange avait visité la grotte", "Parce que les deux lieux ont été découverts la même année"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Qu'est-ce que Lascaux IV ?",
+        "options": ["Le nom de la plus grande salle de la grotte", "Une quatrième grotte découverte par les garçons", "Un musée de Rome consacré à la préhistoire", "Une reproduction presque complète de la grotte, ouverte en 2016"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr2-14",
+    "title": "Le Trophée disparu",
+    "genre": "Nouvelle policière",
+    "level": 2,
+    "text": "Le lundi matin, le collège Jules-Verne était en émoi. Le trophée du tournoi régional de basket, remporté la semaine précédente par l'équipe des minimes, avait disparu de sa vitrine, dans le hall d'entrée. La vitre n'était pas brisée et la serrure ne portait aucune trace d'effraction. Seuls le principal et le gardien possédaient une clé.\n\nChloé, élève de quatrième et rédactrice en chef du journal du collège, décida de mener l'enquête. Avec son ami Noah, photographe officiel du journal, elle commença par interroger les témoins. Le gardien, monsieur Moreau, affirma qu'il avait fermé le hall à dix-huit heures le vendredi et que le trophée était encore à sa place. Il l'avait remarqué parce qu'il brillait sous la lumière des néons. Le principal, lui, était parti en déplacement tout le week-end avec sa clé.\n\n« Donc le trophée a disparu entre vendredi soir et lundi matin, résuma Chloé. Et le collège était fermé. » Noah fronça les sourcils. « Pas tout à fait. Samedi matin, il y avait la répétition de la chorale dans le hall. » Chloé nota l'information dans son carnet. La chorale répétait chaque samedi avec madame Diallo, la professeure de musique, qui ouvrait elle-même la porte de service.\n\nLes deux enquêteurs se rendirent dans le hall. Chloé examina la vitrine de près. Sur le rebord intérieur, elle remarqua quelque chose d'étrange : une petite tache de peinture bleue, encore légèrement collante. Noah la photographia aussitôt. « Qui utilise de la peinture bleue dans ce collège ? » demanda-t-il. La réponse leur vint en même temps : l'atelier d'arts plastiques préparait le décor du spectacle de fin d'année, un grand ciel étoilé.\n\nAu foyer, ils trouvèrent Hugo et Sofiane, deux élèves de troisième, occupés à peindre de grandes toiles. Les deux garçons avaient les mains tachées de bleu. Interrogés, ils expliquèrent qu'ils étaient venus samedi matin, en même temps que la chorale, pour avancer le décor. Mais ils jurèrent n'avoir jamais touché à la vitrine.\n\nChloé réfléchit. Il fallait une clé pour ouvrir la vitrine, et les garçons n'en avaient pas. Soudain, elle se souvint d'un détail : monsieur Moreau rangeait son trousseau dans un tiroir de sa loge, qu'il ne fermait jamais. Elle retourna voir le gardien avec Noah. Dans le tiroir, ils découvrirent le trousseau, et une trace de doigt bleue sur la petite clé de la vitrine.\n\nFace à cette preuve, Hugo et Sofiane finirent par avouer. Ils n'avaient pas voulu voler le trophée, seulement l'emprunter. Ils voulaient le peindre en bleu et le placer au centre du décor pour faire une surprise le soir du spectacle. Ils comptaient le remettre en place avant lundi, mais la peinture n'avait pas séché à temps. Le trophée, enveloppé dans un chiffon, attendait derrière les toiles.\n\nLe principal leur demanda de nettoyer le trophée et de présenter leurs excuses à l'équipe de basket. Quant à Chloé, elle publia le récit de l'enquête dans le journal du collège, illustré par les photos de Noah. Ce numéro fut le plus lu de l'année.",
+    "qcm": [
+      {
+        "question": "Pourquoi le mystère semblait-il difficile à résoudre au départ ?",
+        "options": ["Le trophée était trop lourd pour être porté", "Il n'y avait aucun témoin dans le collège", "La vitrine n'était ni brisée ni forcée", "Les caméras de surveillance étaient en panne"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel est le rôle de Noah au journal du collège ?",
+        "options": ["Il est correcteur", "Il est dessinateur", "Il est rédacteur en chef", "Il est photographe"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel indice Chloé découvre-t-elle sur le rebord de la vitrine ?",
+        "options": ["Un cheveu blond", "Une empreinte de chaussure", "Une tache de peinture bleue", "Un bouton de manteau"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment les coupables ont-ils pu ouvrir la vitrine ?",
+        "options": ["Avec la clé du trousseau rangé dans le tiroir de la loge", "Avec la clé que le principal avait oubliée", "En forçant la serrure avec un tournevis", "Grâce à madame Diallo, qui leur avait ouvert"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi Hugo et Sofiane ont-ils pris le trophée ?",
+        "options": ["Pour le faire réparer en secret", "Pour le placer, peint en bleu, au centre du décor du spectacle", "Pour le revendre", "Pour se venger de l'équipe de basket"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans la phrase « le collège était en émoi », que signifie « en émoi » ?",
+        "options": ["En vacances", "En fête", "Agité et inquiet", "Silencieux"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi le trophée n'avait-il pas retrouvé sa place le lundi matin ?",
+        "options": ["Parce que le gardien avait fermé sa loge", "Parce que le principal l'avait emporté", "Parce que les garçons l'avaient perdu", "Parce que la peinture n'avait pas séché à temps"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr2-15",
+    "title": "Le Robot de la médiathèque",
+    "genre": "Récit de science-fiction",
+    "level": 2,
+    "text": "En 2061, la médiathèque de Saint-Malo accueillit un nouvel employé : un robot bibliothécaire nommé Pagus. Haut d'un mètre cinquante, monté sur des roues silencieuses, il possédait deux longs bras articulés et un écran rond en guise de visage, sur lequel s'affichaient des yeux souriants. Il pouvait ranger mille livres à l'heure, retrouver n'importe quel ouvrage en quelques secondes et répondre aux questions dans trente langues.\n\nLes premiers jours, les usagers le regardèrent avec méfiance. Madame Robin, la bibliothécaire qui travaillait là depuis trente ans, ne cachait pas son inquiétude : allait-elle être remplacée par une machine ? Pagus, de son côté, accomplissait ses tâches avec une efficacité parfaite. Les rayonnages n'avaient jamais été aussi bien rangés. Pourtant, quelque chose clochait. Les enfants ne venaient plus à l'heure du conte, le mercredi après-midi. Pagus lisait les histoires d'une voix parfaitement claire, sans la moindre erreur, mais aussi sans la moindre émotion. Les petits s'ennuyaient et repartaient au bout de cinq minutes.\n\nUn soir, Élio, un garçon de douze ans qui venait faire ses devoirs à la médiathèque, s'approcha du robot. « Pourquoi tu lis toujours de la même façon ? demanda-t-il. Quand le loup arrive, il faut faire peur ! » Pagus inclina la tête, ce qui chez lui était le signe d'une intense réflexion. « Je ne comprends pas, répondit-il. Le texte ne contient aucune indication de volume sonore. »\n\nÉlio éclata de rire et proposa au robot de lui apprendre. Chaque soir, après ses devoirs, il lui lut des histoires en exagérant les voix : grave et menaçante pour l'ogre, aiguë et tremblante pour la souris, chuchotée pour les secrets. Pagus enregistrait tout, analysait, puis essayait à son tour. Ses premiers essais furent catastrophiques : sa voix d'ogre ressemblait à celle d'un grille-pain enrhumé. Élio riait tellement qu'il en tombait de sa chaise. Madame Robin, d'abord agacée par le bruit, finit par venir les écouter, puis par donner elle-même des conseils. Elle connaissait mieux que personne l'art de ménager le suspense, de faire une pause au bon moment, de regarder son public dans les yeux.\n\nAu bout de trois semaines, Pagus annonça qu'il se sentait prêt. Le mercredi suivant, une dizaine d'enfants s'installèrent sur les coussins, un peu sceptiques. Le robot commença à lire. Quand le loup frappa à la porte, sa voix devint si inquiétante que deux petits se cachèrent derrière leurs mains. À la fin de l'histoire, les enfants applaudirent et réclamèrent un autre conte.\n\nDepuis ce jour, l'heure du conte se déroule à deux voix : madame Robin et Pagus se partagent les personnages. Le robot continue de ranger les livres à toute vitesse, mais il a compris une chose qu'aucun programme ne lui avait apprise : pour captiver son public, il faut vivre l'histoire que l'on raconte. Madame Robin, elle, ne craint plus du tout d'être remplacée. Quant à Élio, il a décidé qu'il deviendrait ingénieur. Ou peut-être comédien. Il n'a pas encore choisi.",
+    "qcm": [
+      {
+        "question": "Pourquoi madame Robin était-elle inquiète à l'arrivée de Pagus ?",
+        "options": ["Elle craignait d'être remplacée par une machine", "Elle ne savait pas comment l'utiliser", "Elle avait peur que le robot abîme les livres", "Elle trouvait le robot trop bruyant"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Pourquoi les enfants ne venaient-ils plus à l'heure du conte ?",
+        "options": ["Pagus lisait sans émotion et ils s'ennuyaient", "L'heure du conte avait changé de jour", "Les livres pour enfants avaient été rangés ailleurs", "Pagus leur faisait peur avec sa voix d'ogre"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que signifie le geste de Pagus lorsqu'il incline la tête ?",
+        "options": ["Qu'il est fatigué", "Qu'il est en panne", "Qu'il réfléchit intensément", "Qu'il est d'accord"],
+        "correctIndex": 2
+      },
+      {
+        "question": "À quoi le texte compare-t-il la première voix d'ogre de Pagus ?",
+        "options": ["À celle d'une souris tremblante", "À celle d'un aspirateur cassé", "À celle d'un grille-pain enrhumé", "À celle d'un loup affamé"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quel savoir-faire madame Robin transmet-elle à Pagus ?",
+        "options": ["Choisir des histoires plus courtes", "Ranger les livres plus rapidement", "Parler dans trente langues différentes", "Ménager le suspense et faire des pauses au bon moment"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que veut dire le mot « sceptiques » ?",
+        "options": ["Qui doutent", "Qui sont impatients", "Qui sont fatigués", "Qui sont joyeux"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans quel ordre les événements se déroulent-ils ?",
+        "options": ["Élio interroge Pagus, les enfants applaudissent, Élio lui apprend à jouer les voix, madame Robin donne des conseils", "Madame Robin donne des conseils, Élio interroge Pagus, les enfants applaudissent, Élio lui apprend à jouer les voix", "Élio lui apprend à jouer les voix, Élio interroge Pagus, madame Robin donne des conseils, les enfants applaudissent", "Élio interroge Pagus, Élio lui apprend à jouer les voix, madame Robin donne des conseils, les enfants applaudissent"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr2-16",
+    "title": "Le Grand Voyage des cigognes",
+    "genre": "Documentaire animalier",
+    "level": 2,
+    "text": "Chaque année, à la fin de l'été, un spectacle impressionnant se déroule dans le ciel d'Europe. Des milliers de cigognes blanches quittent leurs nids pour entreprendre un voyage de plusieurs milliers de kilomètres vers l'Afrique. Elles reviendront au printemps suivant, souvent dans le même nid, parfois sur le même toit. Ce phénomène porte un nom : la migration.\n\nPourquoi partir si loin ? En hiver, la nourriture des cigognes devient rare en Europe. Ces grands oiseaux se nourrissent de grenouilles, de vers de terre, d'insectes, de petits poissons et de rongeurs. Quand le froid arrive, les grenouilles s'enfouissent dans la boue, les insectes disparaissent et les vers restent cachés sous le sol gelé. Les cigognes partent donc vers des régions plus chaudes, où elles trouveront de quoi se nourrir.\n\nMais un voyage aussi long demande beaucoup d'énergie. Avec leurs ailes de près de deux mètres d'envergure, les cigognes sont lourdes, et battre des ailes pendant des heures les épuiserait rapidement. Elles utilisent donc une technique très astucieuse : le vol plané. Elles repèrent les courants d'air chaud qui s'élèvent du sol lorsqu'il est chauffé par le soleil. On les appelle des « ascendances thermiques ». Les cigognes s'y laissent porter en tournant en cercles, jusqu'à atteindre parfois plus de mille mètres d'altitude. Puis elles glissent vers l'avant, en perdant peu à peu de la hauteur, jusqu'au courant suivant.\n\nCette technique explique leur itinéraire. Au-dessus de la mer, il n'y a presque pas d'ascendances thermiques. Les cigognes évitent donc de survoler de grandes étendues d'eau. Pour rejoindre l'Afrique, celles d'Europe de l'Ouest passent par le détroit de Gibraltar, entre l'Espagne et le Maroc, où seulement quatorze kilomètres séparent les deux continents. Celles d'Europe de l'Est, elles, contournent la Méditerranée en passant par la Turquie et le Proche-Orient.\n\nPour mieux connaître ces voyages, les scientifiques équipent certaines cigognes de petites balises GPS fixées sur leur dos, comme un minuscule sac à dos. Ces appareils très légers envoient régulièrement la position de l'oiseau. Grâce à eux, les chercheurs ont fait une découverte surprenante : de plus en plus de cigognes ne vont plus jusqu'en Afrique. Elles passent l'hiver en Espagne ou au Portugal, où elles se nourrissent dans de grandes décharges à ciel ouvert. Certaines, en Alsace, ne partent même plus du tout. Les hivers plus doux, liés au réchauffement climatique, expliquent en partie ce changement.\n\nLa cigogne blanche revient pourtant de loin. Dans les années 1970, elle avait presque disparu de France : il ne restait qu'une dizaine de couples en Alsace. Les lignes électriques, les pesticides et l'assèchement des zones humides avaient décimé sa population. Grâce à des programmes de protection et de réintroduction, elle est aujourd'hui de retour dans de nombreuses régions. On compte désormais plusieurs milliers de couples en France.\n\nSi vous apercevez un jour un grand nid de branches sur un clocher ou une cheminée, levez les yeux : vous assisterez peut-être au retour d'une voyageuse qui a parcouru des milliers de kilomètres pour retrouver sa maison.",
+    "qcm": [
+      {
+        "question": "Pourquoi les cigognes quittent-elles l'Europe à la fin de l'été ?",
+        "options": ["Parce que leur nourriture devient rare en hiver", "Parce qu'elles vont pondre leurs œufs en Afrique", "Parce que leurs nids sont détruits", "Parce qu'elles fuient les chasseurs"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Qu'est-ce qu'une « ascendance thermique » ?",
+        "options": ["Une montagne que les cigognes contournent", "Une tempête au-dessus de la mer", "Un courant d'air chaud qui monte depuis le sol", "Un vent froid qui souffle du nord"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi les cigognes évitent-elles de survoler la mer ?",
+        "options": ["Parce qu'elles ne trouvent pas de poissons en pleine mer", "Parce que le vent y est toujours trop fort", "Parce qu'elles ont peur de l'eau", "Parce qu'il n'y a presque pas d'ascendances thermiques au-dessus de l'eau"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Par où passent les cigognes d'Europe de l'Ouest pour rejoindre l'Afrique ?",
+        "options": ["Par l'Italie", "Par le détroit de Gibraltar", "Par le Proche-Orient", "Par la Turquie"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'ont permis de découvrir les balises GPS ?",
+        "options": ["Les cigognes volent surtout la nuit", "Les cigognes changent de nid chaque année", "Les cigognes traversent la Méditerranée en ligne droite", "De plus en plus de cigognes ne vont plus jusqu'en Afrique"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie le verbe « décimer » ?",
+        "options": ["Protéger des dangers", "Faire mourir un grand nombre d'individus", "Faire augmenter une population", "Déplacer vers une autre région"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Qu'est-ce qui a permis le retour de la cigogne blanche en France ?",
+        "options": ["L'assèchement des zones humides", "Des programmes de protection et de réintroduction", "La construction de nouvelles lignes électriques", "L'utilisation de pesticides"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-17",
+    "title": "L'Escalade, de la falaise aux JO",
+    "genre": "Article sport",
+    "level": 2,
+    "text": "Il y a encore quelques décennies, l'escalade était surtout pratiquée par une poignée de passionnés, sur les falaises et en montagne. Aujourd'hui, c'est l'un des sports qui se développent le plus rapidement. Des salles d'escalade ouvrent dans toutes les grandes villes, et de nombreux collèges possèdent leur propre mur. En 2021, lors des Jeux olympiques de Tokyo, l'escalade a fait son entrée dans la plus grande compétition sportive du monde.\n\nEn compétition, l'escalade se divise en trois disciplines. La première est le bloc. Les grimpeurs affrontent des passages courts, de quatre mètres de haut environ, sans corde. De gros matelas épais amortissent leurs chutes. Chaque bloc ressemble à une énigme : il faut trouver la bonne combinaison de mouvements en utilisant la force, l'équilibre et parfois même des sauts spectaculaires. Les grimpeurs disposent d'un temps limité et peuvent faire plusieurs essais.\n\nLa deuxième discipline est la difficulté. Cette fois, le mur mesure au moins quinze mètres de haut, et le grimpeur est assuré par une corde. Il doit monter le plus haut possible sur un itinéraire qu'il ne connaît pas à l'avance. Il n'a droit qu'à un seul essai : à la moindre chute, son ascension s'arrête. Avant l'épreuve, les athlètes disposent seulement de quelques minutes pour observer la voie depuis le sol et mémoriser les prises. L'endurance et la concentration sont essentielles.\n\nLa troisième discipline est la vitesse. Deux grimpeurs s'affrontent côte à côte sur un mur de quinze mètres, toujours identique partout dans le monde. Les athlètes connaissent donc chaque prise par cœur et répètent le même parcours des centaines de fois à l'entraînement. Le plus rapide gagne. Les meilleurs atteignent le sommet en moins de cinq secondes, une performance qui laisse les spectateurs sans voix.\n\nDans les coulisses, les ouvreurs jouent un rôle discret mais essentiel. Ce sont eux qui inventent les voies et les blocs, en vissant les prises sur le mur. Ces prises, en résine, ont toutes les formes et toutes les tailles : certaines sont larges comme une assiette, d'autres à peine plus grosses qu'une pièce de monnaie. Un bon ouvreur doit imaginer un parcours difficile, mais toujours réalisable.\n\nPourquoi l'escalade attire-t-elle autant de jeunes ? D'abord parce qu'elle se pratique à tout âge et à tous les niveaux : chacun peut choisir une voie adaptée à ses capacités. Ensuite parce qu'elle développe à la fois la force, la souplesse et la réflexion. Enfin parce qu'elle crée une ambiance particulière. En salle, il est fréquent que des grimpeurs qui ne se connaissent pas s'encouragent ou se conseillent mutuellement devant un bloc difficile.\n\nBien sûr, la sécurité reste une priorité. Avant de grimper avec une corde, il faut apprendre à faire un nœud solide et à assurer son partenaire, c'est-à-dire à tenir la corde qui le retiendra s'il tombe. Ces gestes s'apprennent avec un moniteur et se vérifient avant chaque montée. En escalade, chacun confie sa sécurité à son partenaire : la confiance fait donc partie du sport.",
+    "qcm": [
+      {
+        "question": "Lors de quels Jeux olympiques l'escalade a-t-elle fait son entrée ?",
+        "options": ["Les Jeux de Londres", "Les Jeux de Tokyo", "Les Jeux de Rio", "Les Jeux de Paris"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Quelle discipline se pratique sans corde, au-dessus de gros matelas ?",
+        "options": ["La difficulté", "Le bloc", "La vitesse", "L'alpinisme"],
+        "correctIndex": 1
+      },
+      {
+        "question": "En difficulté, que se passe-t-il si le grimpeur tombe ?",
+        "options": ["Il peut recommencer depuis le bas", "Son ascension s'arrête", "Il perd des points mais continue", "Il peut choisir une autre voie"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi les grimpeurs de vitesse connaissent-ils leur parcours par cœur ?",
+        "options": ["Parce qu'ils l'observent pendant quelques minutes", "Parce que les ouvreurs le leur expliquent", "Parce qu'ils grimpent toujours à deux", "Parce que le mur est identique partout dans le monde"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Quel est le rôle des ouvreurs ?",
+        "options": ["Inventer les voies en vissant les prises sur le mur", "Chronométrer les épreuves de vitesse", "Tenir la corde des grimpeurs", "Ouvrir les salles d'escalade le matin"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Que signifie « assurer son partenaire » en escalade ?",
+        "options": ["Tenir la corde qui le retiendra s'il tombe", "Vérifier ses chaussures avant la montée", "Lui promettre qu'il va gagner", "Mesurer le temps de son ascension"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Dans l'expression « laisse les spectateurs sans voix », que ressentent les spectateurs ?",
+        "options": ["De l'ennui", "Un grand étonnement", "De la tristesse", "De la colère"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "lr2-18",
+    "title": "Les Lettres qui dansent",
+    "genre": "Récit de vie",
+    "level": 2,
+    "text": "Pendant longtemps, Léo a cru qu'il était nul. Au CP, alors que ses camarades déchiffraient leurs premières phrases, lui voyait les lettres se mélanger sur la page. Les « b » et les « d » échangeaient leur place, les mots se tordaient, les lignes semblaient glisser. Il lisait lentement, en butant sur chaque syllabe, et il entendait parfois des rires dans la classe. Le soir, les devoirs se terminaient souvent en larmes.\n\nEn CE2, une orthophoniste mit enfin un nom sur ses difficultés : Léo était dyslexique. Elle lui expliqua que la dyslexie est un trouble durable de l'apprentissage de la lecture, sans aucun rapport avec l'intelligence. Le cerveau des personnes dyslexiques traite simplement les sons et les lettres d'une manière différente. Pour Léo, ce fut un immense soulagement : ses difficultés avaient une explication, et il existait des solutions. Il avait seulement besoin d'apprendre autrement.\n\nChaque semaine, il se rendit chez l'orthophoniste. Ensemble, ils travaillaient avec des jeux de sons, des cartes colorées et des exercices de rythme. Les progrès furent lents, mais réguliers. À l'école, sa maîtresse accepta d'adapter certaines choses : elle lui donnait des textes écrits en plus gros caractères, avec davantage d'espace entre les lignes, et lui laissait un peu plus de temps pendant les évaluations.\n\nL'entrée en sixième fut pourtant une nouvelle épreuve. Au collège, il y avait plus de professeurs, plus de matières, plus de textes à lire. Léo se sentit à nouveau submergé. Sa mère demanda un rendez-vous avec le professeur principal, monsieur Garnier. Ensemble, ils mirent en place un plan d'accompagnement. Léo obtint le droit d'utiliser un ordinateur en classe, équipé d'un logiciel qui lisait les textes à voix haute et d'un correcteur d'orthographe. Certains professeurs lui fournirent aussi les cours à l'avance, pour qu'il puisse les préparer chez lui.\n\nUn jour, en cours de français, monsieur Garnier proposa un concours d'écriture sur un thème libre. Léo hésita longtemps. Écrire, pour lui, c'était le pire des exercices. Mais il avait une histoire dans la tête depuis des mois : celle d'un dragon qui ne savait pas cracher du feu et que tout le monde prenait pour un raté. Il la dicta d'abord à son ordinateur, puis la corrigea patiemment, phrase par phrase, pendant plusieurs soirées.\n\nTrois semaines plus tard, les résultats furent annoncés devant toute la classe. Le texte de Léo avait obtenu le premier prix. Monsieur Garnier lut le passage final à voix haute : le petit dragon découvre qu'il peut souffler de la glace et sauve son village d'un incendie. Toute la classe applaudit. Léo sentit ses joues brûler, mais pour une fois, c'était de fierté.\n\nAujourd'hui, Léo est en quatrième. Il lit toujours plus lentement que la plupart de ses camarades, et les « b » et les « d » lui jouent encore parfois des tours. Mais il a compris que chacun avance à son rythme, avec ses propres outils. Il a même commencé à écrire un roman. Le héros est un dragon, évidemment.",
+    "qcm": [
+      {
+        "question": "En quelle classe a-t-on découvert que Léo était dyslexique ?",
+        "options": ["En CE2", "En quatrième", "Au CP", "En sixième"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Selon l'orthophoniste, qu'est-ce que la dyslexie ?",
+        "options": ["Un trouble de l'apprentissage de la lecture, sans rapport avec l'intelligence", "Une difficulté qui disparaît toute seule en grandissant", "Un problème de vue qui se corrige avec des lunettes", "Un manque de travail à la maison"],
+        "correctIndex": 0
+      },
+      {
+        "question": "Quel outil Léo a-t-il obtenu au collège ?",
+        "options": ["Une tablette avec des jeux de lecture", "Un camarade chargé d'écrire à sa place", "Un ordinateur qui lit les textes à voix haute et corrige l'orthographe", "Un dictionnaire illustré spécial"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Comment Léo a-t-il écrit son texte pour le concours ?",
+        "options": ["Il l'a écrit à la main en une seule soirée", "Il l'a recopié dans un livre de contes", "Il l'a dicté à son ordinateur, puis l'a corrigé phrase par phrase", "Sa mère l'a écrit sous sa dictée"],
+        "correctIndex": 2
+      },
+      {
+        "question": "En quoi le dragon de l'histoire ressemble-t-il à Léo ?",
+        "options": ["Il adorait lire des livres", "Il vivait seul dans une montagne", "Il savait cracher du feu mieux que les autres", "On le prenait pour un raté alors qu'il avait un talent différent"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans la phrase « Léo se sentit à nouveau submergé », que signifie « submergé » ?",
+        "options": ["Content et soulagé", "Débordé par trop de choses à la fois", "Trempé par la pluie", "Très en colère"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi les joues de Léo brûlent-elles quand la classe applaudit ?",
+        "options": ["Parce qu'il a honte", "Parce qu'il a de la fièvre", "Parce qu'il est en colère", "Parce qu'il est fier"],
+        "correctIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "lr2-19",
+    "title": "Champollion et les hiéroglyphes",
+    "genre": "Récit historique",
+    "level": 2,
+    "text": "Pendant près de quinze siècles, personne au monde n'a su lire les hiéroglyphes, l'écriture sacrée de l'Égypte ancienne. Sur les temples, les tombeaux et les obélisques, des milliers d'inscriptions restaient muettes. On y voyait des oiseaux, des yeux, des serpents, des mains, mais personne ne savait ce qu'ils signifiaient. Certains savants pensaient même que chaque dessin représentait une idée mystérieuse, impossible à traduire.\n\nTout change en 1799. Cette année-là, pendant l'expédition de Bonaparte en Égypte, des soldats français effectuent des travaux près de la ville de Rosette, dans le delta du Nil. Ils découvrent une grande pierre sombre couverte d'inscriptions. Les savants qui accompagnent l'expédition comprennent tout de suite son importance : le même texte y est gravé trois fois, dans trois écritures différentes. En haut figurent des hiéroglyphes, au milieu une autre écriture égyptienne appelée démotique, et en bas du grec ancien. Or le grec ancien est connu des savants. La pierre de Rosette offre donc une sorte de traduction.\n\nPourtant, posséder la traduction ne suffit pas. Pendant plus de vingt ans, de nombreux chercheurs s'acharnent sur la pierre sans parvenir à percer le mystère. Parmi eux se trouve un jeune Français passionné, Jean-François Champollion. Né en 1790 à Figeac, il est exceptionnellement doué pour les langues. Adolescent, il étudie déjà le latin, le grec, l'hébreu, l'arabe et le copte, la langue des chrétiens d'Égypte, qu'il soupçonne d'être la descendante de l'ancien égyptien. On raconte qu'à onze ans, en voyant des papyrus égyptiens, il aurait déclaré qu'il serait celui qui les déchiffrerait.\n\nChampollion remarque un détail essentiel. Dans le texte hiéroglyphique, certains signes sont entourés d'un ovale, qu'on appelle un cartouche. Il suppose que ces cartouches contiennent les noms des rois et des reines. En comparant le cartouche de Ptolémée avec son nom écrit en grec, puis celui de Cléopâtre trouvé sur un autre monument, il identifie plusieurs signes qui correspondent à des sons. Il fait alors une découverte capitale : beaucoup de hiéroglyphes représentent des sons, comme les lettres de notre alphabet, tandis que d'autres représentent des idées.\n\nLe 14 septembre 1822, Champollion parvient enfin à lire le nom du pharaon Ramsès sur le dessin d'une inscription. Selon la légende, il court alors chez son frère en criant « Je tiens l'affaire ! », puis s'évanouit sous le coup de l'émotion. Quelques jours plus tard, il présente sa découverte aux savants de l'Académie, à Paris.\n\nGrâce à lui, les Égyptiens de l'Antiquité ont retrouvé la parole. Les inscriptions des temples racontent désormais les batailles, les prières, les lois et la vie quotidienne de cette civilisation. Champollion, épuisé par le travail, meurt en 1832, à seulement quarante et un ans. Quant à la pierre de Rosette, saisie par les Anglais en 1801, elle est aujourd'hui exposée au British Museum, à Londres, où des millions de visiteurs viennent l'admirer chaque année.",
+    "qcm": [
+      {
+        "question": "Où la pierre de Rosette a-t-elle été découverte ?",
+        "options": ["Au pied d'un obélisque à Paris", "À Figeac, la ville natale de Champollion", "Dans un temple de Londres", "Près de la ville de Rosette, dans le delta du Nil"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Pourquoi la pierre de Rosette était-elle si précieuse pour les savants ?",
+        "options": ["Elle indiquait le chemin vers un trésor caché", "Elle portait la signature de Bonaparte", "Le même texte y était gravé en trois écritures, dont le grec ancien qu'ils connaissaient", "Elle était recouverte d'or et de pierres précieuses"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Qu'est-ce qu'un cartouche, dans les inscriptions égyptiennes ?",
+        "options": ["Un outil pour graver la pierre", "Un signe qui indique la fin d'une phrase", "Un ovale qui entoure le nom d'un roi ou d'une reine", "Un rouleau de papyrus"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Quelle découverte capitale Champollion a-t-il faite ?",
+        "options": ["Les hiéroglyphes se lisent toujours de bas en haut", "Chaque hiéroglyphe représente une idée mystérieuse", "Beaucoup de hiéroglyphes représentent des sons", "Les hiéroglyphes sont une forme de grec ancien"],
+        "correctIndex": 2
+      },
+      {
+        "question": "Pourquoi Champollion a-t-il appris le copte ?",
+        "options": ["C'était une matière obligatoire à l'école", "Il voulait voyager en Grèce", "C'était la langue parlée dans sa famille", "Il pensait que c'était la descendante de l'ancien égyptien"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Dans le texte, que signifie l'expression « percer le mystère » ?",
+        "options": ["Garder le secret", "Trouver la solution", "Rendre le problème plus compliqué", "Abandonner les recherches"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Dans quel ordre ces événements se sont-ils produits ?",
+        "options": ["La découverte de la pierre, la lecture du nom de Ramsès, la mort de Champollion", "La mort de Champollion, la découverte de la pierre, la lecture du nom de Ramsès", "La découverte de la pierre, la mort de Champollion, la lecture du nom de Ramsès", "La lecture du nom de Ramsès, la découverte de la pierre, la mort de Champollion"],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "lr2-20",
+    "title": "Une journée dans la station spatiale",
+    "genre": "Documentaire (espace)",
+    "level": 2,
+    "text": "À environ 400 kilomètres au-dessus de nos têtes, un immense laboratoire tourne autour de la Terre : la Station spatiale internationale, souvent appelée ISS. Construite à partir de 1998 grâce à la collaboration de plusieurs pays, dont les États-Unis, la Russie, le Japon, le Canada et des pays européens, elle est presque aussi grande qu'un terrain de football. Depuis l'an 2000, elle est habitée en permanence par des équipages d'astronautes qui se relaient tous les six mois environ.\n\nL'ISS file à près de 28 000 kilomètres par heure. À cette vitesse, elle fait le tour de la Terre en une heure et demie seulement. Les astronautes voient donc le Soleil se lever et se coucher seize fois par jour ! Pour garder un rythme normal, ils vivent à l'heure de Londres et organisent leur journée comme sur Terre, avec des horaires précis pour travailler, manger et dormir.\n\nDans la station, tout flotte. Les astronautes ne ressentent pas leur poids, car la station tombe sans cesse autour de la planète, sans jamais s'en rapprocher. Cette situation, qu'on appelle l'impesanteur, rend les gestes les plus simples compliqués. Pour dormir, les astronautes se glissent dans un sac de couchage accroché à la paroi, sinon ils dériveraient pendant leur sommeil. Pour manger, ils utilisent des aliments spécialement préparés, souvent en sachets, et évitent le pain, dont les miettes pourraient s'envoler et se glisser dans les appareils électroniques. Ils lui préfèrent des galettes de blé, qui ne s'émiettent pas.\n\nL'eau est précieuse, car chaque litre doit être apporté depuis la Terre par des vaisseaux de ravitaillement. La station recycle donc presque toute son eau : la vapeur de la respiration, la sueur, et même l'urine des astronautes sont filtrées et transformées en eau potable. Pour se laver, pas de douche : les astronautes utilisent des serviettes humides et un shampoing qui ne se rince pas.\n\nLa journée est consacrée en grande partie aux expériences scientifiques. Les astronautes étudient la croissance des plantes, le comportement des flammes ou les effets de l'espace sur le corps humain. En impesanteur, les muscles et les os s'affaiblissent rapidement, car ils n'ont plus à supporter le poids du corps. Pour limiter ce problème, chaque astronaute doit faire environ deux heures de sport par jour, sur un tapis de course ou un vélo spécial, en restant attaché par des sangles.\n\nParfois, les astronautes sortent dans l'espace pour réparer ou installer du matériel à l'extérieur de la station. Ces sorties, très risquées, peuvent durer plus de six heures. Les astronautes portent alors un scaphandre qui les protège du vide, des températures extrêmes et des rayonnements.\n\nMalgré le travail, il reste quelques moments pour profiter de la vue. Par les hublots de la coupole, les astronautes observent les océans, les déserts, les orages et les lumières des villes la nuit. Beaucoup racontent que ce spectacle a changé leur regard sur la Terre : vue d'en haut, elle paraît magnifique, mais aussi fragile, protégée seulement par la fine couche bleue de son atmosphère.",
+    "qcm": [
+      {
+        "question": "À quelle altitude l'ISS tourne-t-elle autour de la Terre ?",
+        "options": ["À environ 28 000 kilomètres", "À environ 40 kilomètres", "À environ 4 000 kilomètres", "À environ 400 kilomètres"],
+        "correctIndex": 3
+      },
+      {
+        "question": "Combien de fois par jour les astronautes voient-ils le Soleil se lever ?",
+        "options": ["Six fois", "Seize fois", "Vingt-huit fois", "Une fois"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi les astronautes évitent-ils de manger du pain ?",
+        "options": ["Parce que le pain est trop lourd à transporter", "Parce que les médecins le leur interdisent", "Parce que les miettes pourraient flotter et se glisser dans les appareils", "Parce que le pain moisit trop vite dans l'espace"],
+        "correctIndex": 2
+      },
+      {
+        "question": "D'où vient la plus grande partie de l'eau utilisée dans la station ?",
+        "options": ["D'un vaisseau de ravitaillement qui arrive chaque jour", "Du recyclage de la vapeur, de la sueur et de l'urine", "De la glace récupérée dans l'espace", "De réservoirs remplis une seule fois en 1998"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi les astronautes font-ils environ deux heures de sport par jour ?",
+        "options": ["Pour se réchauffer dans la station froide", "Pour éviter que leurs muscles et leurs os s'affaiblissent", "Pour se préparer aux compétitions sur Terre", "Pour produire de l'électricité pour la station"],
+        "correctIndex": 1
+      },
+      {
+        "question": "D'après le texte, qu'est-ce que l'impesanteur ?",
+        "options": ["L'absence d'air dans l'espace", "Une situation où l'on ne ressent pas son poids", "Le froid extrême à l'extérieur de la station", "La très grande vitesse de la station"],
+        "correctIndex": 1
+      },
+      {
+        "question": "Pourquoi les astronautes dorment-ils dans un sac de couchage accroché à la paroi ?",
+        "options": ["Pour ne pas entendre le bruit des machines", "Pour se protéger des rayonnements", "Pour avoir plus chaud", "Sinon, ils dériveraient pendant leur sommeil"],
+        "correctIndex": 3
       }
     ]
   }
