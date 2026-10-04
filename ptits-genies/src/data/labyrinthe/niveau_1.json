@@ -1,0 +1,4748 @@
+[
+  {
+    "id": "la1-001",
+    "titre": "Le voleur de la cantine",
+    "genre": "Récit",
+    "segments": [
+      "Mardi midi, la cantine du collège était pleine de bruit. Soudain, un petit ",
+      {
+        "bonne": "chien",
+        "leurres": [
+          "chienne",
+          "piano"
+        ]
+      },
+      " blanc est entré par la cour. Personne ne l'a vu, sauf Inès. Le chien a ",
+      {
+        "bonne": "reniflé",
+        "leurres": [
+          "renifler",
+          "chanté"
+        ]
+      },
+      " l'air, puis il a trotté vers les tables. Léo venait de poser son ",
+      {
+        "bonne": "sandwich",
+        "leurres": [
+          "sandwichs",
+          "parapluie"
+        ]
+      },
+      " à côté de son plateau. En une seconde, le chien l'a ",
+      {
+        "bonne": "attrapé",
+        "leurres": [
+          "attraper",
+          "repassé"
+        ]
+      },
+      " dans sa gueule. Léo a crié, et toute la cantine s'est ",
+      {
+        "bonne": "retournée",
+        "leurres": [
+          "retourner",
+          "envolée"
+        ]
+      },
+      ". Les surveillants ont essayé de le ",
+      {
+        "bonne": "rattraper",
+        "leurres": [
+          "rattrapé",
+          "repeindre"
+        ]
+      },
+      ", mais il était trop rapide. Inès a eu une ",
+      {
+        "bonne": "idée",
+        "leurres": [
+          "idéal",
+          "oreille"
+        ]
+      },
+      ". Elle a sifflé très fort, comme pour appeler un chien. Le petit chien s'est ",
+      {
+        "bonne": "arrêté",
+        "leurres": [
+          "arrêter",
+          "lavé"
+        ]
+      },
+      " net. Il est revenu vers elle en remuant la ",
+      {
+        "bonne": "queue",
+        "leurres": [
+          "queues",
+          "fenêtre"
+        ]
+      },
+      ". Inès a récupéré le sandwich, un peu ",
+      {
+        "bonne": "mouillé",
+        "leurres": [
+          "mouiller",
+          "bavard"
+        ]
+      },
+      ". Léo l'a donné au chien, qui avait l'air très ",
+      {
+        "bonne": "content",
+        "leurres": [
+          "contenter",
+          "pointu"
+        ]
+      },
+      ". Après le repas, le ",
+      {
+        "bonne": "gardien",
+        "leurres": [
+          "garder",
+          "frigo"
+        ]
+      },
+      " a ramené le chien chez son maître."
+    ],
+    "question": {
+      "enonce": "Comment Inès a-t-elle arrêté le chien ?",
+      "choix": [
+        "En sifflant très fort",
+        "En fermant la porte de la cour",
+        "En lui lançant son propre repas"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-002",
+    "titre": "Le hérisson",
+    "genre": "Documentaire",
+    "segments": [
+      "Le hérisson est un petit mammifère que l'on trouve dans nos jardins. Son dos est couvert de ",
+      {
+        "bonne": "piquants",
+        "leurres": [
+          "piquer",
+          "rideaux"
+        ]
+      },
+      ". Il en possède environ six mille. Quand il a peur, il se ",
+      {
+        "bonne": "roule",
+        "leurres": [
+          "rouleau",
+          "lave"
+        ]
+      },
+      " en boule. Ainsi, ses ennemis se ",
+      {
+        "bonne": "piquent",
+        "leurres": [
+          "piqûre",
+          "lavent"
+        ]
+      },
+      " le museau. Le hérisson vit surtout la ",
+      {
+        "bonne": "nuit",
+        "leurres": [
+          "nuits",
+          "soupe"
+        ]
+      },
+      ". Il cherche alors sa ",
+      {
+        "bonne": "nourriture",
+        "leurres": [
+          "nourrir",
+          "voiture"
+        ]
+      },
+      " dans l'herbe et sous les feuilles. Il mange des insectes, des vers et des ",
+      {
+        "bonne": "escargots",
+        "leurres": [
+          "escalader",
+          "cartables"
+        ]
+      },
+      ". Les jardiniers l'aiment beaucoup, car il ",
+      {
+        "bonne": "protège",
+        "leurres": [
+          "protection",
+          "repasse"
+        ]
+      },
+      " leurs salades. En hiver, il fait froid et les insectes sont rares. Le hérisson ",
+      {
+        "bonne": "dort",
+        "leurres": [
+          "dormir",
+          "chante"
+        ]
+      },
+      " alors pendant plusieurs mois : il hiberne. Il s'installe dans un tas de ",
+      {
+        "bonne": "feuilles",
+        "leurres": [
+          "feuillu",
+          "bonbons"
+        ]
+      },
+      " bien à l'abri. Attention : le ",
+      {
+        "bonne": "lait",
+        "leurres": [
+          "lacté",
+          "vent"
+        ]
+      },
+      " de vache est mauvais pour lui. Il le digère très mal et peut tomber ",
+      {
+        "bonne": "malade",
+        "leurres": [
+          "maladie",
+          "bleu"
+        ]
+      },
+      ". Aujourd'hui, le hérisson est une espèce ",
+      {
+        "bonne": "protégée",
+        "leurres": [
+          "protéger",
+          "sucrée"
+        ]
+      },
+      " en France."
+    ],
+    "question": {
+      "enonce": "Pourquoi les jardiniers aiment-ils le hérisson ?",
+      "choix": [
+        "Parce qu'il dort tout l'hiver dans le jardin",
+        "Parce qu'il boit le lait qu'on lui donne",
+        "Parce qu'il mange les animaux qui abîment les salades"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-003",
+    "titre": "La finale sous la pluie",
+    "genre": "Récit",
+    "segments": [
+      "Samedi, l'équipe de Nadia jouait la finale du tournoi. Depuis le matin, la pluie ",
+      {
+        "bonne": "tombait",
+        "leurres": [
+          "tombeau",
+          "mangeait"
+        ]
+      },
+      " sans arrêt. Le terrain ressemblait à une grande ",
+      {
+        "bonne": "flaque",
+        "leurres": [
+          "flaques",
+          "guitare"
+        ]
+      },
+      " de boue. Dès le début du match, les joueuses ont ",
+      {
+        "bonne": "glissé",
+        "leurres": [
+          "glisser",
+          "dormi"
+        ]
+      },
+      " dans tous les sens. Les parents ",
+      {
+        "bonne": "criaient",
+        "leurres": [
+          "cris",
+          "cuisaient"
+        ]
+      },
+      " sous leurs parapluies. Le ballon s'arrêtait dans l'eau au lieu de ",
+      {
+        "bonne": "rouler",
+        "leurres": [
+          "roulé",
+          "parler"
+        ]
+      },
+      ". À la mi-temps, le score était toujours de zéro à zéro. Nadia avait les chaussettes ",
+      {
+        "bonne": "trempées",
+        "leurres": [
+          "tremper",
+          "fâchées"
+        ]
+      },
+      " et les cheveux collés sur le front. Son entraîneur lui a dit de ",
+      {
+        "bonne": "tirer",
+        "leurres": [
+          "tireur",
+          "nager"
+        ]
+      },
+      " de loin. Selon lui, le ballon glisse mieux sur l'herbe ",
+      {
+        "bonne": "mouillée",
+        "leurres": [
+          "mouiller",
+          "joyeuse"
+        ]
+      },
+      ". À la dernière minute, Nadia a reçu la ",
+      {
+        "bonne": "balle",
+        "leurres": [
+          "bal",
+          "lune"
+        ]
+      },
+      " au milieu du terrain. Elle a frappé de toutes ses ",
+      {
+        "bonne": "forces",
+        "leurres": [
+          "forcer",
+          "poches"
+        ]
+      },
+      ". Le ballon a fusé sur l'herbe et il est ",
+      {
+        "bonne": "entré",
+        "leurres": [
+          "entrer",
+          "né"
+        ]
+      },
+      " dans le but. Toute l'équipe a sauté dans la boue pour la ",
+      {
+        "bonne": "féliciter",
+        "leurres": [
+          "félicité",
+          "repasser"
+        ]
+      },
+      ". Ce jour-là, personne n'a regretté d'être sale."
+    ],
+    "question": {
+      "enonce": "Qu'est-ce qui a permis à l'équipe de Nadia de gagner ?",
+      "choix": [
+        "Un penalty sifflé à la dernière minute",
+        "Un tir de loin sur l'herbe mouillée",
+        "Une erreur de la gardienne à cause du vent"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-004",
+    "titre": "Le gorille farceur",
+    "genre": "Récit",
+    "segments": [
+      "Jeudi, la classe de cinquième de Malik est partie au zoo. Dans le car, tout le monde ",
+      {
+        "bonne": "chantait",
+        "leurres": [
+          "chanson",
+          "nageait"
+        ]
+      },
+      ". La première visite était pour les ",
+      {
+        "bonne": "girafes",
+        "leurres": [
+          "girafe",
+          "cuillères"
+        ]
+      },
+      ". Elles mangeaient des feuilles tout en haut des ",
+      {
+        "bonne": "arbres",
+        "leurres": [
+          "arbre",
+          "nuages"
+        ]
+      },
+      ". Ensuite, les élèves ont observé un ",
+      {
+        "bonne": "gorille",
+        "leurres": [
+          "gorilles",
+          "biscuit"
+        ]
+      },
+      " assis sur un rocher. Il regardait les enfants d'un air très ",
+      {
+        "bonne": "sérieux",
+        "leurres": [
+          "sérieuse",
+          "liquide"
+        ]
+      },
+      ". Soudain, il s'est levé et il a ",
+      {
+        "bonne": "imité",
+        "leurres": [
+          "imiter",
+          "avalé"
+        ]
+      },
+      " Malik qui se grattait la tête. Toute la classe a ",
+      {
+        "bonne": "éclaté",
+        "leurres": [
+          "éclater",
+          "cuisiné"
+        ]
+      },
+      " de rire. Malik était un peu vexé, mais il a fini par ",
+      {
+        "bonne": "rire",
+        "leurres": [
+          "ri",
+          "nager"
+        ]
+      },
+      " aussi. À midi, ils ont pique-niqué près du bassin des ",
+      {
+        "bonne": "otaries",
+        "leurres": [
+          "otarie",
+          "valises"
+        ]
+      },
+      ". Une otarie a sauté dans l'eau et a ",
+      {
+        "bonne": "éclaboussé",
+        "leurres": [
+          "éclaboussure",
+          "dessiné"
+        ]
+      },
+      " tout le monde. Les sandwichs étaient ",
+      {
+        "bonne": "mouillés",
+        "leurres": [
+          "mouiller",
+          "polis"
+        ]
+      },
+      ", mais personne ne s'est plaint. Dans le car du retour, Malik a dit que le gorille était son nouveau ",
+      {
+        "bonne": "copain",
+        "leurres": [
+          "copine",
+          "trottoir"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Quel moment de la sortie a le plus fait rire la classe ?",
+      "choix": [
+        "Le repas des girafes dans les arbres",
+        "Le pique-nique près du bassin",
+        "Le gorille qui imite Malik"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-005",
+    "titre": "Un gâteau très spécial",
+    "genre": "Humour",
+    "segments": [
+      "Pour l'anniversaire de sa mère, Hugo a décidé de faire un gâteau au ",
+      {
+        "bonne": "chocolat",
+        "leurres": [
+          "chocolatée",
+          "parking"
+        ]
+      },
+      ". Il a sorti la farine, les œufs et le ",
+      {
+        "bonne": "beurre",
+        "leurres": [
+          "beurrer",
+          "marteau"
+        ]
+      },
+      ". Malheureusement, le jeune cuisinier a ",
+      {
+        "bonne": "lu",
+        "leurres": [
+          "lire",
+          "bu"
+        ]
+      },
+      " la recette trop vite. Au lieu de mettre cent grammes de sucre, il a versé cent grammes de ",
+      {
+        "bonne": "sel",
+        "leurres": [
+          "salé",
+          "vélo"
+        ]
+      },
+      ". Ensuite, il a oublié le gâteau dans le ",
+      {
+        "bonne": "four",
+        "leurres": [
+          "fourrer",
+          "bain"
+        ]
+      },
+      ". Quand il l'a sorti, le dessus était tout ",
+      {
+        "bonne": "noir",
+        "leurres": [
+          "noircir",
+          "poli"
+        ]
+      },
+      ". Hugo a eu une idée : il a ",
+      {
+        "bonne": "caché",
+        "leurres": [
+          "cacher",
+          "peigné"
+        ]
+      },
+      " le dessus brûlé sous une montagne de crème. Puis il a planté des bougies et une petite ",
+      {
+        "bonne": "fraise",
+        "leurres": [
+          "fraiser",
+          "fenêtre"
+        ]
+      },
+      " au milieu. Sa mère a pris une grosse ",
+      {
+        "bonne": "part",
+        "leurres": [
+          "partir",
+          "porte"
+        ]
+      },
+      " avec un grand sourire. Elle a fait une drôle de ",
+      {
+        "bonne": "grimace",
+        "leurres": [
+          "grimacer",
+          "fusée"
+        ]
+      },
+      ", puis elle a éclaté de rire. \"Ce gâteau est le plus ",
+      {
+        "bonne": "drôle",
+        "leurres": [
+          "drôlerie",
+          "carré"
+        ]
+      },
+      " de ma vie !\", a-t-elle dit. Depuis, Hugo vérifie toujours le ",
+      {
+        "bonne": "sucre",
+        "leurres": [
+          "sucrer",
+          "soleil"
+        ]
+      },
+      " avant de cuisiner."
+    ],
+    "question": {
+      "enonce": "Pourquoi le gâteau d'Hugo est-il raté ?",
+      "choix": [
+        "Il a oublié de mettre des œufs et du beurre",
+        "Il a mis du sel à la place du sucre et l'a fait brûler",
+        "Il a fait tomber le gâteau en le sortant du four"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-006",
+    "titre": "Les abeilles",
+    "genre": "Documentaire",
+    "segments": [
+      "Les abeilles sont des insectes qui vivent en groupe dans une ",
+      {
+        "bonne": "ruche",
+        "leurres": [
+          "rucher",
+          "poche"
+        ]
+      },
+      ". Chaque colonie possède une seule ",
+      {
+        "bonne": "reine",
+        "leurres": [
+          "régner",
+          "banane"
+        ]
+      },
+      ". Son rôle est de ",
+      {
+        "bonne": "pondre",
+        "leurres": [
+          "ponte",
+          "sourire"
+        ]
+      },
+      " les œufs. Au printemps, elle peut en pondre plus de mille par jour. Les autres femelles sont les ",
+      {
+        "bonne": "ouvrières",
+        "leurres": [
+          "ouvrir",
+          "pirates"
+        ]
+      },
+      ". Elles nettoient la ruche, nourrissent les larves et vont ",
+      {
+        "bonne": "chercher",
+        "leurres": [
+          "chercheur",
+          "chanter"
+        ]
+      },
+      " le nectar des fleurs. Avec ce nectar, elles ",
+      {
+        "bonne": "fabriquent",
+        "leurres": [
+          "fabrication",
+          "repassent"
+        ]
+      },
+      " le miel. Quand une abeille trouve un champ de fleurs, elle rentre et ",
+      {
+        "bonne": "danse",
+        "leurres": [
+          "danseuse",
+          "tousse"
+        ]
+      },
+      " devant les autres. Cette danse leur ",
+      {
+        "bonne": "indique",
+        "leurres": [
+          "indication",
+          "cuisine"
+        ]
+      },
+      " le chemin. En allant de fleur en fleur, les abeilles transportent du ",
+      {
+        "bonne": "pollen",
+        "leurres": [
+          "polluer",
+          "ciment"
+        ]
+      },
+      ". Grâce à elles, beaucoup de fruits et de légumes peuvent ",
+      {
+        "bonne": "pousser",
+        "leurres": [
+          "poussette",
+          "parler"
+        ]
+      },
+      ". Sans les abeilles, nos assiettes seraient bien plus ",
+      {
+        "bonne": "vides",
+        "leurres": [
+          "vider",
+          "bavardes"
+        ]
+      },
+      ". C'est pour cela qu'il faut les ",
+      {
+        "bonne": "protéger",
+        "leurres": [
+          "protection",
+          "décorer"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Pourquoi faut-il protéger les abeilles ?",
+      "choix": [
+        "Parce qu'elles sont très dangereuses",
+        "Parce qu'elles ne savent pas fabriquer de miel",
+        "Parce qu'elles aident les fruits et les légumes à pousser"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-007",
+    "titre": "Le roi sans sommeil",
+    "genre": "Conte",
+    "segments": [
+      "Il était une fois un roi qui détestait ",
+      {
+        "bonne": "dormir",
+        "leurres": [
+          "dortoir",
+          "fondre"
+        ]
+      },
+      ". Il disait que le sommeil était une ",
+      {
+        "bonne": "perte",
+        "leurres": [
+          "perdre",
+          "chèvre"
+        ]
+      },
+      " de temps. Chaque soir, il restait assis sur son ",
+      {
+        "bonne": "trône",
+        "leurres": [
+          "trôner",
+          "nuage"
+        ]
+      },
+      " et il comptait ses pièces d'or. Ses serviteurs étaient très ",
+      {
+        "bonne": "fatigués",
+        "leurres": [
+          "fatiguer",
+          "carrés"
+        ]
+      },
+      ", car ils devaient rester ",
+      {
+        "bonne": "éveillés",
+        "leurres": [
+          "éveiller",
+          "sucrés"
+        ]
+      },
+      " avec lui. Au bout d'une semaine, le roi est devenu très ",
+      {
+        "bonne": "grognon",
+        "leurres": [
+          "grogner",
+          "liquide"
+        ]
+      },
+      ". Il criait sur tout le monde et il ",
+      {
+        "bonne": "oubliait",
+        "leurres": [
+          "oubli",
+          "nageait"
+        ]
+      },
+      " le nom de ses ministres. Un jour, une petite fille est venue au château avec une ",
+      {
+        "bonne": "boîte",
+        "leurres": [
+          "boiter",
+          "baleine"
+        ]
+      },
+      " à musique. Elle a tourné la manivelle et une douce ",
+      {
+        "bonne": "mélodie",
+        "leurres": [
+          "mélodieux",
+          "chaussure"
+        ]
+      },
+      " s'est élevée. Le roi a ",
+      {
+        "bonne": "bâillé",
+        "leurres": [
+          "bâiller",
+          "aboyé"
+        ]
+      },
+      " une fois, puis deux fois. Ses paupières sont devenues lourdes et il s'est ",
+      {
+        "bonne": "endormi",
+        "leurres": [
+          "endormir",
+          "envolé"
+        ]
+      },
+      " sur son trône. Le lendemain, il s'est réveillé de très bonne ",
+      {
+        "bonne": "humeur",
+        "leurres": [
+          "humer",
+          "cuillère"
+        ]
+      },
+      ". Depuis ce jour, tout le royaume dort tranquillement chaque nuit."
+    ],
+    "question": {
+      "enonce": "Qu'est-ce qui a fait changer le roi ?",
+      "choix": [
+        "Une petite fille l'a endormi avec une boîte à musique",
+        "Ses ministres l'ont obligé à aller se coucher",
+        "Il a perdu toutes ses pièces d'or pendant la nuit"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-008",
+    "titre": "Le soir de l'orage",
+    "genre": "Récit",
+    "segments": [
+      "Vendredi soir, un gros orage a éclaté au-dessus de la maison de Chloé. Les éclairs ",
+      {
+        "bonne": "illuminaient",
+        "leurres": [
+          "illumination",
+          "mangeaient"
+        ]
+      },
+      " le ciel et le tonnerre faisait trembler les ",
+      {
+        "bonne": "vitres",
+        "leurres": [
+          "vitrier",
+          "carottes"
+        ]
+      },
+      ". Soudain, toutes les lumières se sont ",
+      {
+        "bonne": "éteintes",
+        "leurres": [
+          "éteindre",
+          "habillées"
+        ]
+      },
+      ". La télévision s'est arrêtée au milieu du film. Chloé a ",
+      {
+        "bonne": "sursauté",
+        "leurres": [
+          "sursaut",
+          "repassé"
+        ]
+      },
+      " dans le noir. Son père a cherché une lampe de poche dans le ",
+      {
+        "bonne": "tiroir",
+        "leurres": [
+          "tirer",
+          "plafond"
+        ]
+      },
+      " de la cuisine. Mais la lampe ne marchait plus : les ",
+      {
+        "bonne": "piles",
+        "leurres": [
+          "piler",
+          "poules"
+        ]
+      },
+      " étaient vides. Alors, sa mère a allumé des ",
+      {
+        "bonne": "bougies",
+        "leurres": [
+          "bouger",
+          "tortues"
+        ]
+      },
+      " sur la table. La pièce est devenue toute douce. Toute la famille s'est installée sur le ",
+      {
+        "bonne": "tapis",
+        "leurres": [
+          "tapisser",
+          "nuage"
+        ]
+      },
+      ". Le père a raconté des histoires de son ",
+      {
+        "bonne": "enfance",
+        "leurres": [
+          "enfantin",
+          "frigo"
+        ]
+      },
+      ". Blottie contre sa mère, Chloé a ",
+      {
+        "bonne": "écouté",
+        "leurres": [
+          "écouter",
+          "aboyé"
+        ]
+      },
+      " sans dire un mot. Une heure plus tard, la lumière est ",
+      {
+        "bonne": "revenue",
+        "leurres": [
+          "revenir",
+          "cuite"
+        ]
+      },
+      ". Pourtant, à ce moment-là, Chloé était presque ",
+      {
+        "bonne": "déçue",
+        "leurres": [
+          "déçu",
+          "carrée"
+        ]
+      },
+      ". Elle a demandé une autre histoire, à la lueur des bougies."
+    ],
+    "question": {
+      "enonce": "Comment Chloé se sent-elle quand la lumière revient ?",
+      "choix": [
+        "Soulagée, car elle avait très peur du noir",
+        "Fâchée, car elle a raté la fin de son film",
+        "Un peu déçue, car elle aimait ce moment en famille"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-009",
+    "titre": "Le premier jour",
+    "genre": "Récit",
+    "segments": [
+      "Ce matin, Yanis entre en sixième dans un grand collège. Il a ",
+      {
+        "bonne": "préparé",
+        "leurres": [
+          "préparer",
+          "repeint"
+        ]
+      },
+      " son sac la veille, mais son ventre est tout ",
+      {
+        "bonne": "noué",
+        "leurres": [
+          "nouer",
+          "bleu"
+        ]
+      },
+      ". Dans la cour, il ",
+      {
+        "bonne": "cherche",
+        "leurres": [
+          "chercheur",
+          "avale"
+        ]
+      },
+      " un visage connu. Les grands de troisième lui semblent ",
+      {
+        "bonne": "immenses",
+        "leurres": [
+          "immensité",
+          "sucrés"
+        ]
+      },
+      ". La sonnerie retentit et tous les élèves se ",
+      {
+        "bonne": "rangent",
+        "leurres": [
+          "rangement",
+          "baignent"
+        ]
+      },
+      " devant le bâtiment. Le professeur principal fait l'appel et distribue les ",
+      {
+        "bonne": "emplois",
+        "leurres": [
+          "employer",
+          "chaussures"
+        ]
+      },
+      " du temps. Yanis découvre qu'il doit changer de ",
+      {
+        "bonne": "salle",
+        "leurres": [
+          "saler",
+          "lune"
+        ]
+      },
+      " à chaque heure. Le collège est grand comme un ",
+      {
+        "bonne": "labyrinthe",
+        "leurres": [
+          "labyrinthique",
+          "biscuit"
+        ]
+      },
+      ". Heureusement, une fille de sa classe lui ",
+      {
+        "bonne": "montre",
+        "leurres": [
+          "montrer",
+          "vend"
+        ]
+      },
+      " le chemin. Elle s'appelle Rose et elle aussi se sent un peu ",
+      {
+        "bonne": "perdue",
+        "leurres": [
+          "perdre",
+          "pointue"
+        ]
+      },
+      ". À la cantine, ils mangent ensemble et ",
+      {
+        "bonne": "parlent",
+        "leurres": [
+          "parole",
+          "nagent"
+        ]
+      },
+      " de leurs anciennes écoles. Le soir, Yanis raconte sa journée à sa mère. Il est ",
+      {
+        "bonne": "fatigué",
+        "leurres": [
+          "fatiguer",
+          "pliable"
+        ]
+      },
+      " mais content : demain, il retrouvera sa nouvelle amie."
+    ],
+    "question": {
+      "enonce": "Qu'est-ce qui a rendu la journée de Yanis plus facile ?",
+      "choix": [
+        "Les grands de troisième l'ont aidé",
+        "Il s'est fait une nouvelle amie",
+        "Il est resté toute la journée dans la même salle"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-010",
+    "titre": "Coco le bavard",
+    "genre": "Humour",
+    "segments": [
+      "Mamie Josette a un perroquet vert qui s'appelle Coco. Il est très ",
+      {
+        "bonne": "bavard",
+        "leurres": [
+          "bavarder",
+          "liquide"
+        ]
+      },
+      ". Il répète tout ce qu'il ",
+      {
+        "bonne": "entend",
+        "leurres": [
+          "entente",
+          "mange"
+        ]
+      },
+      " dans la maison. Un dimanche, toute la famille est venue ",
+      {
+        "bonne": "déjeuner",
+        "leurres": [
+          "déjeuné",
+          "fondre"
+        ]
+      },
+      " chez Mamie. Pendant le repas, l'oncle Paul a goûté la ",
+      {
+        "bonne": "soupe",
+        "leurres": [
+          "souper",
+          "valise"
+        ]
+      },
+      " et il a chuchoté : \"Elle est trop ",
+      {
+        "bonne": "salée",
+        "leurres": [
+          "saler",
+          "polie"
+        ]
+      },
+      ".\" Aussitôt, du haut de son perchoir, Coco a ",
+      {
+        "bonne": "crié",
+        "leurres": [
+          "crier",
+          "tricoté"
+        ]
+      },
+      " très fort : \"Trop salée ! Trop salée !\" Mamie Josette a ",
+      {
+        "bonne": "regardé",
+        "leurres": [
+          "regarder",
+          "avalé"
+        ]
+      },
+      " l'oncle Paul d'un air sévère. Le pauvre oncle est devenu tout ",
+      {
+        "bonne": "rouge",
+        "leurres": [
+          "rougir",
+          "pointu"
+        ]
+      },
+      ". Ensuite, la cousine Léa a renversé son ",
+      {
+        "bonne": "verre",
+        "leurres": [
+          "verser",
+          "chapeau"
+        ]
+      },
+      " d'eau sur la nappe. Coco a tout de suite ",
+      {
+        "bonne": "imité",
+        "leurres": [
+          "imiter",
+          "peigné"
+        ]
+      },
+      " le bruit de l'eau. Les enfants riaient tellement qu'ils en ",
+      {
+        "bonne": "pleuraient",
+        "leurres": [
+          "pleurs",
+          "nageaient"
+        ]
+      },
+      ". À la fin du repas, Mamie a posé une couverture sur la ",
+      {
+        "bonne": "cage",
+        "leurres": [
+          "cages",
+          "lune"
+        ]
+      },
+      ". Coco s'est enfin tu... jusqu'au dessert."
+    ],
+    "question": {
+      "enonce": "Pourquoi l'oncle Paul est-il gêné pendant le repas ?",
+      "choix": [
+        "Le perroquet a répété ce qu'il avait dit en secret",
+        "Il a renversé son verre d'eau sur la nappe",
+        "Il n'aime pas du tout les perroquets"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-011",
+    "titre": "Les tortues de mer",
+    "genre": "Documentaire",
+    "segments": [
+      "Les tortues de mer existaient déjà à l'époque des dinosaures. Aujourd'hui, elles ",
+      {
+        "bonne": "nagent",
+        "leurres": [
+          "nageoires",
+          "tricotent"
+        ]
+      },
+      " dans presque tous les océans du monde. Leurs pattes plates ressemblent à des ",
+      {
+        "bonne": "rames",
+        "leurres": [
+          "ramer",
+          "gâteaux"
+        ]
+      },
+      ", et leur carapace les ",
+      {
+        "bonne": "protège",
+        "leurres": [
+          "protection",
+          "chatouille"
+        ]
+      },
+      ". Les tortues respirent de l'air, comme nous. Elles doivent donc ",
+      {
+        "bonne": "remonter",
+        "leurres": [
+          "remontée",
+          "cuisiner"
+        ]
+      },
+      " à la surface pour respirer. Pour pondre, la femelle revient sur la ",
+      {
+        "bonne": "plage",
+        "leurres": [
+          "plages",
+          "lune"
+        ]
+      },
+      " où elle est née. La nuit, elle ",
+      {
+        "bonne": "creuse",
+        "leurres": [
+          "creux",
+          "chante"
+        ]
+      },
+      " un trou dans le sable. Elle y dépose environ cent ",
+      {
+        "bonne": "œufs",
+        "leurres": [
+          "œuf",
+          "vélos"
+        ]
+      },
+      ". Deux mois plus tard, les bébés tortues sortent du sable et ",
+      {
+        "bonne": "courent",
+        "leurres": [
+          "course",
+          "lisent"
+        ]
+      },
+      " vers la mer. Ils se guident grâce à la ",
+      {
+        "bonne": "lumière",
+        "leurres": [
+          "lumineux",
+          "cuisine"
+        ]
+      },
+      " du ciel au-dessus de l'eau. Malheureusement, les tortues de mer sont en ",
+      {
+        "bonne": "danger",
+        "leurres": [
+          "dangereux",
+          "pyjama"
+        ]
+      },
+      ". Elles confondent parfois les sacs en plastique avec des ",
+      {
+        "bonne": "méduses",
+        "leurres": [
+          "médusé",
+          "chaises"
+        ]
+      },
+      ", qu'elles adorent manger. Pour les protéger, il faut garder les plages ",
+      {
+        "bonne": "propres",
+        "leurres": [
+          "proprement",
+          "pointues"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Pourquoi les sacs en plastique sont-ils un danger pour les tortues ?",
+      "choix": [
+        "Ils cachent la lumière du ciel",
+        "Ils empêchent les femelles de creuser",
+        "Elles les prennent pour des méduses"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-012",
+    "titre": "La cabane secrète",
+    "genre": "Aventure",
+    "segments": [
+      "Pendant les vacances, Lucas et sa sœur Maya se promènent dans la ",
+      {
+        "bonne": "forêt",
+        "leurres": [
+          "forer",
+          "piscine"
+        ]
+      },
+      " derrière la maison de leurs grands-parents. Au bout d'un petit chemin, ils ",
+      {
+        "bonne": "découvrent",
+        "leurres": [
+          "découverte",
+          "repassent"
+        ]
+      },
+      " une vieille cabane en bois. La porte est fermée par une simple ",
+      {
+        "bonne": "ficelle",
+        "leurres": [
+          "ficeler",
+          "tartine"
+        ]
+      },
+      ". À l'intérieur, il y a une table, deux chaises et un vieux ",
+      {
+        "bonne": "coffre",
+        "leurres": [
+          "coffrer",
+          "nuage"
+        ]
+      },
+      ". Avec beaucoup de précaution, Maya ",
+      {
+        "bonne": "soulève",
+        "leurres": [
+          "soulever",
+          "avale"
+        ]
+      },
+      " le couvercle. Dedans, ils trouvent une carte dessinée à la ",
+      {
+        "bonne": "main",
+        "leurres": [
+          "manuel",
+          "soupe"
+        ]
+      },
+      ". Une croix rouge est tracée près d'un grand ",
+      {
+        "bonne": "chêne",
+        "leurres": [
+          "chaîne",
+          "bonbon"
+        ]
+      },
+      ". Aussitôt, les deux enfants ",
+      {
+        "bonne": "suivent",
+        "leurres": [
+          "suite",
+          "mangent"
+        ]
+      },
+      " la carte jusqu'à l'arbre. Au pied du chêne, ils ",
+      {
+        "bonne": "creusent",
+        "leurres": [
+          "creux",
+          "chantent"
+        ]
+      },
+      " avec leurs mains. Ils trouvent une boîte en métal toute ",
+      {
+        "bonne": "rouillée",
+        "leurres": [
+          "rouiller",
+          "joyeuse"
+        ]
+      },
+      ". Dedans, il y a des billes et une lettre. C'est leur grand-père qui l'a ",
+      {
+        "bonne": "écrite",
+        "leurres": [
+          "écrire",
+          "mangée"
+        ]
+      },
+      " quand il était petit. Cette cabane était son ",
+      {
+        "bonne": "refuge",
+        "leurres": [
+          "réfugier",
+          "frigo"
+        ]
+      },
+      " secret. Le soir, les enfants lui rapportent la boîte. Il sourit, très ému."
+    ],
+    "question": {
+      "enonce": "À qui appartenait le trésor trouvé par les enfants ?",
+      "choix": [
+        "À un pirate qui vivait dans la forêt",
+        "À leur grand-père quand il était enfant",
+        "À un voisin qui avait perdu sa boîte"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-013",
+    "titre": "La course de Sofia",
+    "genre": "Récit",
+    "segments": [
+      "Dimanche, Sofia doit participer à la grande course de vélo du ",
+      {
+        "bonne": "village",
+        "leurres": [
+          "villageois",
+          "frigo"
+        ]
+      },
+      ". Elle s'entraîne depuis des ",
+      {
+        "bonne": "semaines",
+        "leurres": [
+          "semer",
+          "tartines"
+        ]
+      },
+      ". Le matin de la course, elle sort son vélo du ",
+      {
+        "bonne": "garage",
+        "leurres": [
+          "garer",
+          "lavabo"
+        ]
+      },
+      ". Catastrophe : le pneu avant est complètement ",
+      {
+        "bonne": "dégonflé",
+        "leurres": [
+          "dégonfler",
+          "joyeux"
+        ]
+      },
+      ". Il reste seulement vingt minutes avant le ",
+      {
+        "bonne": "départ",
+        "leurres": [
+          "partir",
+          "dessert"
+        ]
+      },
+      ". Sofia a envie de ",
+      {
+        "bonne": "pleurer",
+        "leurres": [
+          "pleurs",
+          "tondre"
+        ]
+      },
+      ". Mais son voisin, monsieur Diallo, a tout vu depuis son ",
+      {
+        "bonne": "jardin",
+        "leurres": [
+          "jardiner",
+          "assiette"
+        ]
+      },
+      ". Il arrive avec une boîte à outils et une ",
+      {
+        "bonne": "pompe",
+        "leurres": [
+          "pomper",
+          "girafe"
+        ]
+      },
+      ". En quelques minutes, il ",
+      {
+        "bonne": "répare",
+        "leurres": [
+          "réparer",
+          "caresse"
+        ]
+      },
+      " la chambre à air. Sofia le ",
+      {
+        "bonne": "remercie",
+        "leurres": [
+          "remercier",
+          "repasse"
+        ]
+      },
+      " et pédale à toute ",
+      {
+        "bonne": "vitesse",
+        "leurres": [
+          "vite",
+          "cuisine"
+        ]
+      },
+      " vers la ligne de départ. Elle arrive juste à temps. Elle ne gagne pas la course, mais elle termine ",
+      {
+        "bonne": "troisième",
+        "leurres": [
+          "troisièmement",
+          "carrée"
+        ]
+      },
+      ". Sur le podium, elle fait un grand signe à monsieur Diallo."
+    ],
+    "question": {
+      "enonce": "Grâce à qui Sofia a-t-elle pu faire la course ?",
+      "choix": [
+        "Grâce à son père, qui lui a prêté son vélo",
+        "Grâce à une amie, qui l'a emmenée en voiture",
+        "Grâce à son voisin, qui a réparé son pneu"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-014",
+    "titre": "Les maths dans la neige",
+    "genre": "Récit",
+    "segments": [
+      "Ce matin, quand Emma ouvre ses volets, tout est ",
+      {
+        "bonne": "blanc",
+        "leurres": [
+          "blanchir",
+          "rond"
+        ]
+      },
+      ". Il a neigé toute la nuit. Sur le chemin du collège, la neige ",
+      {
+        "bonne": "craque",
+        "leurres": [
+          "craquer",
+          "mange"
+        ]
+      },
+      " sous ses bottes. Dans la cour, les élèves sont tous très ",
+      {
+        "bonne": "excités",
+        "leurres": [
+          "exciter",
+          "carrés"
+        ]
+      },
+      ". Tout de suite, ils ",
+      {
+        "bonne": "lancent",
+        "leurres": [
+          "lancer",
+          "lavent"
+        ]
+      },
+      " des boules de neige et construisent un bonhomme. Mais la cloche ",
+      {
+        "bonne": "sonne",
+        "leurres": [
+          "sonnette",
+          "nage"
+        ]
+      },
+      " déjà, et tout le monde doit ",
+      {
+        "bonne": "rentrer",
+        "leurres": [
+          "rentrée",
+          "dormir"
+        ]
+      },
+      " en classe. En cours de maths, toute la classe est ",
+      {
+        "bonne": "distraite",
+        "leurres": [
+          "distraire",
+          "pointue"
+        ]
+      },
+      ". Tout le monde regarde les flocons qui ",
+      {
+        "bonne": "tombent",
+        "leurres": [
+          "tombeau",
+          "parlent"
+        ]
+      },
+      " derrière la fenêtre. Le professeur, monsieur Petit, finit par ",
+      {
+        "bonne": "sourire",
+        "leurres": [
+          "souris",
+          "cuisiner"
+        ]
+      },
+      ". Il propose de faire l'exercice dehors : il faut mesurer la ",
+      {
+        "bonne": "hauteur",
+        "leurres": [
+          "hautain",
+          "politesse"
+        ]
+      },
+      " du bonhomme de neige. Les élèves sortent leurs ",
+      {
+        "bonne": "règles",
+        "leurres": [
+          "régler",
+          "tartes"
+        ]
+      },
+      " en riant. Pour une fois, les maths sont vraiment ",
+      {
+        "bonne": "amusantes",
+        "leurres": [
+          "amuser",
+          "liquides"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Qu'a décidé le professeur de maths ?",
+      "choix": [
+        "D'annuler le cours à cause de la neige",
+        "De faire l'exercice dehors avec le bonhomme de neige",
+        "De punir les élèves qui regardaient par la fenêtre"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-015",
+    "titre": "Le dragon et la chouette",
+    "genre": "Conte",
+    "segments": [
+      "Dans une haute montagne vivait un dragon nommé Brasier. Il était grand et fort, et ses ",
+      {
+        "bonne": "flammes",
+        "leurres": [
+          "flamber",
+          "carottes"
+        ]
+      },
+      " faisaient fuir tous les chevaliers. Pourtant, Brasier cachait un terrible secret : il avait ",
+      {
+        "bonne": "peur",
+        "leurres": [
+          "peureux",
+          "soif"
+        ]
+      },
+      " du noir. Chaque soir, quand le soleil se ",
+      {
+        "bonne": "couchait",
+        "leurres": [
+          "couchette",
+          "lavait"
+        ]
+      },
+      ", il tremblait au fond de sa ",
+      {
+        "bonne": "grotte",
+        "leurres": [
+          "grottes",
+          "tasse"
+        ]
+      },
+      ". Il allumait de petites flammes pour ",
+      {
+        "bonne": "éclairer",
+        "leurres": [
+          "éclair",
+          "peigner"
+        ]
+      },
+      " les murs. Une nuit, une petite chouette est entrée dans la grotte. Elle a ",
+      {
+        "bonne": "vu",
+        "leurres": [
+          "voir",
+          "bu"
+        ]
+      },
+      " le dragon trembler. \"Pourquoi as-tu peur ? a-t-elle demandé. Moi, j'adore la ",
+      {
+        "bonne": "nuit",
+        "leurres": [
+          "nuire",
+          "chaise"
+        ]
+      },
+      " !\" Elle a emmené Brasier dehors pour lui ",
+      {
+        "bonne": "montrer",
+        "leurres": [
+          "montre",
+          "vendre"
+        ]
+      },
+      " le ciel. Des milliers de petites ",
+      {
+        "bonne": "lumières",
+        "leurres": [
+          "lumineuses",
+          "chaussettes"
+        ]
+      },
+      " brillaient au-dessus de la montagne. Brasier a trouvé ce spectacle très ",
+      {
+        "bonne": "beau",
+        "leurres": [
+          "beauté",
+          "carré"
+        ]
+      },
+      ". Depuis ce soir-là, il n'a plus peur. Chaque nuit, il ",
+      {
+        "bonne": "vole",
+        "leurres": [
+          "voler",
+          "fond"
+        ]
+      },
+      " avec son amie la chouette, et ils comptent les ",
+      {
+        "bonne": "étoiles",
+        "leurres": [
+          "étoilé",
+          "crêpes"
+        ]
+      },
+      " ensemble."
+    ],
+    "question": {
+      "enonce": "Qu'est-ce qui a aidé Brasier à ne plus avoir peur du noir ?",
+      "choix": [
+        "Un chevalier lui a offert une lanterne",
+        "Une chouette lui a montré la beauté du ciel",
+        "Il a appris à faire de plus grandes flammes"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-016",
+    "titre": "Les manchots",
+    "genre": "Documentaire",
+    "segments": [
+      "Les manchots sont des oiseaux qui vivent en grandes ",
+      {
+        "bonne": "colonies",
+        "leurres": [
+          "coloniser",
+          "cuillères"
+        ]
+      },
+      " dans l'hémisphère Sud. Ils ne volent pas, mais ce sont d'excellents ",
+      {
+        "bonne": "nageurs",
+        "leurres": [
+          "nager",
+          "cuisiniers"
+        ]
+      },
+      ". Leurs ailes ressemblent à des ",
+      {
+        "bonne": "nageoires",
+        "leurres": [
+          "nageoire",
+          "lunettes"
+        ]
+      },
+      ". Quand ils plongent sous l'eau, ils ",
+      {
+        "bonne": "attrapent",
+        "leurres": [
+          "attrape",
+          "repassent"
+        ]
+      },
+      " des poissons et de petites crevettes. Leurs plumes serrées et leur ",
+      {
+        "bonne": "graisse",
+        "leurres": [
+          "graisser",
+          "musique"
+        ]
+      },
+      " les protègent du froid. Le plus grand de tous est le manchot empereur. Il vit en Antarctique, où l'hiver est très ",
+      {
+        "bonne": "froid",
+        "leurres": [
+          "froideur",
+          "sucré"
+        ]
+      },
+      ". La femelle pond un seul ",
+      {
+        "bonne": "œuf",
+        "leurres": [
+          "œufs",
+          "piano"
+        ]
+      },
+      ". Ensuite, elle part en mer pour se ",
+      {
+        "bonne": "nourrir",
+        "leurres": [
+          "nourriture",
+          "peigner"
+        ]
+      },
+      ". Pendant ce temps, le mâle garde l'œuf sur ses ",
+      {
+        "bonne": "pattes",
+        "leurres": [
+          "patte",
+          "oreilles"
+        ]
+      },
+      ", bien au chaud sous un repli de peau. Il reste debout environ deux mois et vit sur ses ",
+      {
+        "bonne": "réserves",
+        "leurres": [
+          "réserver",
+          "vacances"
+        ]
+      },
+      " de graisse. Pour avoir moins froid, les mâles se ",
+      {
+        "bonne": "serrent",
+        "leurres": [
+          "serrure",
+          "maquillent"
+        ]
+      },
+      " les uns contre les autres. Quand le poussin naît, la mère revient enfin pour le ",
+      {
+        "bonne": "nourrir",
+        "leurres": [
+          "nourrice",
+          "repeindre"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Quel est le rôle du mâle chez les manchots empereurs ?",
+      "choix": [
+        "Il garde l'œuf au chaud pendant l'hiver",
+        "Il part chercher de la nourriture en mer",
+        "Il construit un nid avec des cailloux"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-017",
+    "titre": "Le renard de Tom",
+    "genre": "Récit",
+    "segments": [
+      "Le collège organise un grand concours de dessin. Le thème est simple : les animaux de la ",
+      {
+        "bonne": "forêt",
+        "leurres": [
+          "forer",
+          "valise"
+        ]
+      },
+      ". Tom adore dessiner, mais il trouve souvent ses dessins ",
+      {
+        "bonne": "ratés",
+        "leurres": [
+          "rater",
+          "sucrés"
+        ]
+      },
+      ". Pendant une semaine, il ",
+      {
+        "bonne": "travaille",
+        "leurres": [
+          "travail",
+          "nage"
+        ]
+      },
+      " chaque soir dans sa chambre. Il dessine un renard qui ",
+      {
+        "bonne": "dort",
+        "leurres": [
+          "dortoir",
+          "fond"
+        ]
+      },
+      " sous un arbre. Il recommence trois fois, car le museau est toujours ",
+      {
+        "bonne": "tordu",
+        "leurres": [
+          "tordre",
+          "bavard"
+        ]
+      },
+      ". Enfin, après tout ce travail, il est ",
+      {
+        "bonne": "fier",
+        "leurres": [
+          "fierté",
+          "liquide"
+        ]
+      },
+      " de lui. Le jour du concours, tous les dessins sont ",
+      {
+        "bonne": "accrochés",
+        "leurres": [
+          "accrocher",
+          "mangés"
+        ]
+      },
+      " dans le hall. Tom voit celui de sa camarade Jade : un hibou ",
+      {
+        "bonne": "magnifique",
+        "leurres": [
+          "magnifier",
+          "délicieux"
+        ]
+      },
+      ". Il pense que Jade va ",
+      {
+        "bonne": "gagner",
+        "leurres": [
+          "gagnant",
+          "fondre"
+        ]
+      },
+      ". Pourtant, à la fin, le directeur ",
+      {
+        "bonne": "annonce",
+        "leurres": [
+          "annonceur",
+          "avale"
+        ]
+      },
+      " son nom. Tom a gagné le premier ",
+      {
+        "bonne": "prix",
+        "leurres": [
+          "prier",
+          "bain"
+        ]
+      },
+      " ! Jade, elle, a gagné le deuxième. Les deux artistes se sont ",
+      {
+        "bonne": "serré",
+        "leurres": [
+          "serrer",
+          "mangé"
+        ]
+      },
+      " la main."
+    ],
+    "question": {
+      "enonce": "Comment se termine le concours pour Tom ?",
+      "choix": [
+        "Il gagne le premier prix",
+        "Il arrive deuxième, derrière Jade",
+        "Il n'a pas fini son dessin à temps"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-018",
+    "titre": "Pacha et Bulle",
+    "genre": "Humour",
+    "segments": [
+      "Chez Clara, il y a un chat nommé Pacha et un poisson rouge nommé Bulle. Depuis des mois, Pacha ",
+      {
+        "bonne": "observe",
+        "leurres": [
+          "observer",
+          "repasse"
+        ]
+      },
+      " Bulle avec des yeux gourmands. Chaque jour, il s'assoit devant le ",
+      {
+        "bonne": "bocal",
+        "leurres": [
+          "bocaux",
+          "nuage"
+        ]
+      },
+      " et il remue doucement sa ",
+      {
+        "bonne": "queue",
+        "leurres": [
+          "queues",
+          "cuillère"
+        ]
+      },
+      ". Un matin, Pacha saute sur l'étagère et plonge sa ",
+      {
+        "bonne": "patte",
+        "leurres": [
+          "pattes",
+          "tartine"
+        ]
+      },
+      " dans l'eau. Mais Bulle est très ",
+      {
+        "bonne": "rapide",
+        "leurres": [
+          "rapidité",
+          "bavard"
+        ]
+      },
+      ". D'un coup de nageoire, il ",
+      {
+        "bonne": "file",
+        "leurres": [
+          "filet",
+          "lit"
+        ]
+      },
+      " au fond du bocal. Pacha ",
+      {
+        "bonne": "attrape",
+        "leurres": [
+          "attraper",
+          "repasse"
+        ]
+      },
+      " seulement de l'eau froide. Le chat recule, tout ",
+      {
+        "bonne": "mouillé",
+        "leurres": [
+          "mouiller",
+          "pointu"
+        ]
+      },
+      ", et il secoue sa patte d'un air ",
+      {
+        "bonne": "vexé",
+        "leurres": [
+          "vexer",
+          "sucré"
+        ]
+      },
+      ". Bulle, lui, fait de petites bulles comme s'il ",
+      {
+        "bonne": "riait",
+        "leurres": [
+          "rire",
+          "cuisait"
+        ]
+      },
+      ". Depuis ce jour, Pacha ",
+      {
+        "bonne": "dort",
+        "leurres": [
+          "dortoir",
+          "vole"
+        ]
+      },
+      " sur le canapé, loin du bocal. Mais parfois, il jette encore un petit ",
+      {
+        "bonne": "regard",
+        "leurres": [
+          "regarder",
+          "piano"
+        ]
+      },
+      " vers Bulle."
+    ],
+    "question": {
+      "enonce": "Que se passe-t-il quand Pacha essaie d'attraper Bulle ?",
+      "choix": [
+        "Il se mouille et rate le poisson",
+        "Il fait tomber le bocal par terre",
+        "Il attrape Bulle mais le relâche"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-019",
+    "titre": "La fusée en carton",
+    "genre": "Récit",
+    "segments": [
+      "Pendant le week-end, Noé et sa petite sœur Lina décident de ",
+      {
+        "bonne": "construire",
+        "leurres": [
+          "construction",
+          "repasser"
+        ]
+      },
+      " une fusée. Ils récupèrent le grand ",
+      {
+        "bonne": "carton",
+        "leurres": [
+          "cartonné",
+          "nuage"
+        ]
+      },
+      " du nouveau frigo. Avec des ciseaux, Noé ",
+      {
+        "bonne": "découpe",
+        "leurres": [
+          "découpage",
+          "mange"
+        ]
+      },
+      " une porte et deux hublots. Lina ",
+      {
+        "bonne": "peint",
+        "leurres": [
+          "peindre",
+          "avale"
+        ]
+      },
+      " la fusée en rouge et colle des étoiles dorées partout. Pour finir, ils fabriquent un tableau de bord avec des ",
+      {
+        "bonne": "bouchons",
+        "leurres": [
+          "boucher",
+          "crêpes"
+        ]
+      },
+      " de bouteilles. Le soir, la fusée est enfin ",
+      {
+        "bonne": "prête",
+        "leurres": [
+          "prêter",
+          "bavarde"
+        ]
+      },
+      ". Les deux enfants s'installent dedans avec une lampe de ",
+      {
+        "bonne": "poche",
+        "leurres": [
+          "pocher",
+          "fromage"
+        ]
+      },
+      ". Noé fait le compte à rebours : \"Cinq, quatre, trois, deux, un, ",
+      {
+        "bonne": "décollage",
+        "leurres": [
+          "décoller",
+          "bonjour"
+        ]
+      },
+      " !\" Lina fait le bruit du ",
+      {
+        "bonne": "moteur",
+        "leurres": [
+          "motoriser",
+          "savon"
+        ]
+      },
+      " en tremblant. Ensemble, ils ",
+      {
+        "bonne": "imaginent",
+        "leurres": [
+          "imagination",
+          "repassent"
+        ]
+      },
+      " la Lune, les planètes et les étoiles. Soudain, la porte du garage s'ouvre. C'est leur mère qui les ",
+      {
+        "bonne": "appelle",
+        "leurres": [
+          "appel",
+          "plie"
+        ]
+      },
+      " pour le dîner. Les astronautes ",
+      {
+        "bonne": "atterrissent",
+        "leurres": [
+          "atterrissage",
+          "nagent"
+        ]
+      },
+      " tout de suite dans la cuisine."
+    ],
+    "question": {
+      "enonce": "À quoi jouent Noé et Lina ?",
+      "choix": [
+        "À construire une cabane dans le jardin",
+        "À partir dans l'espace dans une fusée en carton",
+        "À réparer le vieux frigo du garage"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-020",
+    "titre": "Le marché du samedi",
+    "genre": "Récit",
+    "segments": [
+      "Chaque samedi matin, Amir accompagne son grand-père au ",
+      {
+        "bonne": "marché",
+        "leurres": [
+          "marcher",
+          "plafond"
+        ]
+      },
+      ". Ils partent tôt avec un grand ",
+      {
+        "bonne": "panier",
+        "leurres": [
+          "paniquer",
+          "piano"
+        ]
+      },
+      " en osier. Sur la place, les marchands ",
+      {
+        "bonne": "crient",
+        "leurres": [
+          "cri",
+          "dorment"
+        ]
+      },
+      " pour attirer les clients. Ça sent le pain chaud, les fraises et le ",
+      {
+        "bonne": "fromage",
+        "leurres": [
+          "fromagerie",
+          "cartable"
+        ]
+      },
+      ". Ici, le grand-père d'Amir ",
+      {
+        "bonne": "connaît",
+        "leurres": [
+          "connu",
+          "mange"
+        ]
+      },
+      " tous les marchands. Il ",
+      {
+        "bonne": "discute",
+        "leurres": [
+          "discussion",
+          "nage"
+        ]
+      },
+      " longtemps avec la vendeuse de légumes. Elle lui donne toujours une ",
+      {
+        "bonne": "pomme",
+        "leurres": [
+          "pommier",
+          "vague"
+        ]
+      },
+      " pour Amir. Ensuite, ils achètent du poisson ",
+      {
+        "bonne": "frais",
+        "leurres": [
+          "fraîche",
+          "poli"
+        ]
+      },
+      " et un gros pain de ",
+      {
+        "bonne": "campagne",
+        "leurres": [
+          "camper",
+          "vacances"
+        ]
+      },
+      ". Amir porte le panier, qui devient de plus en plus ",
+      {
+        "bonne": "lourd",
+        "leurres": [
+          "lourdeur",
+          "joyeux"
+        ]
+      },
+      ". Avant de rentrer, le grand-père s'arrête toujours devant le ",
+      {
+        "bonne": "stand",
+        "leurres": [
+          "stands",
+          "nuage"
+        ]
+      },
+      " des crêpes. Il en ",
+      {
+        "bonne": "achète",
+        "leurres": [
+          "achat",
+          "lave"
+        ]
+      },
+      " deux, une pour lui et une pour Amir. C'est leur petit secret du samedi."
+    ],
+    "question": {
+      "enonce": "Que fait le grand-père à la fin de chaque marché ?",
+      "choix": [
+        "Il achète deux crêpes, une pour lui et une pour Amir",
+        "Il boit un café avec tous les marchands de la place",
+        "Il offre des fleurs à la vendeuse de légumes"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-021",
+    "titre": "Le lion et la souris",
+    "genre": "Fable",
+    "segments": [
+      "Un jour d'été, un grand lion ",
+      {
+        "bonne": "dormait",
+        "leurres": [
+          "dortoir",
+          "nageait"
+        ]
+      },
+      " à l'ombre d'un arbre. Une petite souris est passée sur son ",
+      {
+        "bonne": "museau",
+        "leurres": [
+          "museaux",
+          "cartable"
+        ]
+      },
+      ". Le lion s'est réveillé en ",
+      {
+        "bonne": "colère",
+        "leurres": [
+          "colérique",
+          "pyjama"
+        ]
+      },
+      " et l'a attrapée avec sa grosse ",
+      {
+        "bonne": "patte",
+        "leurres": [
+          "pattes",
+          "cuillère"
+        ]
+      },
+      ". \"Pitié ! a crié la souris. Si tu me laisses partir, je serai ton ",
+      {
+        "bonne": "amie",
+        "leurres": [
+          "amitié",
+          "avion"
+        ]
+      },
+      " pour toujours.\" Le lion a trouvé cela très ",
+      {
+        "bonne": "drôle",
+        "leurres": [
+          "drôlerie",
+          "liquide"
+        ]
+      },
+      ". Comment une si petite bête pourrait-elle l'aider ? Il a quand même ",
+      {
+        "bonne": "ouvert",
+        "leurres": [
+          "ouvrir",
+          "repassé"
+        ]
+      },
+      " sa patte. Quelques jours plus tard, le lion est tombé dans le ",
+      {
+        "bonne": "filet",
+        "leurres": [
+          "filer",
+          "bocal"
+        ]
+      },
+      " d'un chasseur. Pris au piège, il ",
+      {
+        "bonne": "rugissait",
+        "leurres": [
+          "rugissement",
+          "chantait"
+        ]
+      },
+      " de rage, mais il ne pouvait plus bouger. La souris a entendu ses ",
+      {
+        "bonne": "cris",
+        "leurres": [
+          "crier",
+          "dents"
+        ]
+      },
+      " et elle est accourue. Avec ses petites dents, elle a ",
+      {
+        "bonne": "rongé",
+        "leurres": [
+          "ronger",
+          "peigné"
+        ]
+      },
+      " les cordes une à une. Le lion était enfin ",
+      {
+        "bonne": "libre",
+        "leurres": [
+          "libérer",
+          "sucré"
+        ]
+      },
+      ". Ce jour-là, il a compris que les plus petits peuvent aider les plus grands."
+    ],
+    "question": {
+      "enonce": "Quelle leçon le lion apprend-il ?",
+      "choix": [
+        "Même un petit animal peut aider un plus fort que lui",
+        "Il ne faut jamais dormir sous un arbre",
+        "Les chasseurs sont plus forts que les lions"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-022",
+    "titre": "Le robot aspirateur devenu fou",
+    "genre": "Humour",
+    "segments": [
+      "Samedi matin, papa a allumé le nouveau robot aspirateur. Il l'a posé au milieu du ",
+      {
+        "bonne": "salon",
+        "leurres": [
+          "saler",
+          "nuage"
+        ]
+      },
+      ", puis il est parti boire son café. Au début, la machine avalait la ",
+      {
+        "bonne": "poussière",
+        "leurres": [
+          "poussiéreux",
+          "montagne"
+        ]
+      },
+      " sans faire d'histoires. Mais tout à coup, elle a poussé un drôle de ",
+      {
+        "bonne": "bruit",
+        "leurres": [
+          "bruyant",
+          "gâteau"
+        ]
+      },
+      ". Le robot a foncé vers la cuisine et il a ",
+      {
+        "bonne": "aspiré",
+        "leurres": [
+          "aspirer",
+          "chanté"
+        ]
+      },
+      " les croquettes du chat. Ensuite, il a attaqué les ",
+      {
+        "bonne": "chaussettes",
+        "leurres": [
+          "chausser",
+          "planètes"
+        ]
+      },
+      " de mon frère Hugo. Hugo a ",
+      {
+        "bonne": "crié",
+        "leurres": [
+          "cri",
+          "dormi"
+        ]
+      },
+      " et il a couru derrière lui. Le chat, terrifié, s'est caché sur le ",
+      {
+        "bonne": "buffet",
+        "leurres": [
+          "bouffer",
+          "plafond"
+        ]
+      },
+      ". Papa est arrivé en ",
+      {
+        "bonne": "courant",
+        "leurres": [
+          "courir",
+          "nageant"
+        ]
+      },
+      ", sa tasse à la main. Il a ",
+      {
+        "bonne": "appuyé",
+        "leurres": [
+          "appui",
+          "dansé"
+        ]
+      },
+      " sur le gros bouton rouge, mais rien ne s'est passé. Le robot tournait en rond en ",
+      {
+        "bonne": "clignotant",
+        "leurres": [
+          "clignoter",
+          "tricotant"
+        ]
+      },
+      ". Finalement, sa batterie s'est ",
+      {
+        "bonne": "vidée",
+        "leurres": [
+          "vide",
+          "mariée"
+        ]
+      },
+      ". Depuis, papa passe l'aspirateur lui-même, et le chat ",
+      {
+        "bonne": "surveille",
+        "leurres": [
+          "surveillance",
+          "chante"
+        ]
+      },
+      " toujours la machine de loin."
+    ],
+    "question": {
+      "enonce": "Pourquoi le robot s'est-il enfin arrêté ?",
+      "choix": [
+        "Papa a appuyé sur le bouton rouge",
+        "Sa batterie s'est vidée",
+        "Le chat a débranché la prise"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-023",
+    "titre": "Les dinosaures",
+    "genre": "Documentaire",
+    "segments": [
+      "Les dinosaures sont apparus sur la Terre il y a environ 230 millions d'années. Aucun humain n'a jamais ",
+      {
+        "bonne": "vu",
+        "leurres": [
+          "voir",
+          "bu"
+        ]
+      },
+      " un dinosaure vivant. Certains étaient ",
+      {
+        "bonne": "immenses",
+        "leurres": [
+          "immensité",
+          "liquides"
+        ]
+      },
+      ". Le diplodocus mesurait environ vingt-cinq mètres de long. Il avait un très long ",
+      {
+        "bonne": "cou",
+        "leurres": [
+          "couler",
+          "toit"
+        ]
+      },
+      ". Toute la journée, il ",
+      {
+        "bonne": "mangeait",
+        "leurres": [
+          "mangeoire",
+          "lisait"
+        ]
+      },
+      " des plantes. D'autres dinosaures étaient de redoutables ",
+      {
+        "bonne": "chasseurs",
+        "leurres": [
+          "chasser",
+          "boulangers"
+        ]
+      },
+      ". Le tyrannosaure avait de grandes dents très ",
+      {
+        "bonne": "pointues",
+        "leurres": [
+          "pointer",
+          "sucrées"
+        ]
+      },
+      ". Comment savons-nous tout cela ? Les savants étudient les ",
+      {
+        "bonne": "fossiles",
+        "leurres": [
+          "fossiliser",
+          "tartines"
+        ]
+      },
+      ". Ce sont des os transformés en ",
+      {
+        "bonne": "pierre",
+        "leurres": [
+          "pierreux",
+          "beurre"
+        ]
+      },
+      " au fil du temps. On les découvre dans la ",
+      {
+        "bonne": "roche",
+        "leurres": [
+          "rocheux",
+          "soupe"
+        ]
+      },
+      ", puis on les expose dans les ",
+      {
+        "bonne": "musées",
+        "leurres": [
+          "muser",
+          "piscines"
+        ]
+      },
+      ". Les dinosaures ont disparu il y a 66 millions d'années. Une énorme météorite a sans doute ",
+      {
+        "bonne": "frappé",
+        "leurres": [
+          "frappe",
+          "caressé"
+        ]
+      },
+      " la Terre. Pourtant, tous n'ont pas disparu : les oiseaux sont leurs ",
+      {
+        "bonne": "descendants",
+        "leurres": [
+          "descendre",
+          "parapluies"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Quel est le sujet principal de ce texte ?",
+      "choix": [
+        "La vie des dinosaures et leur disparition",
+        "La découverte d'un tyrannosaure en France",
+        "Les oiseaux qui vivent dans les musées"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-024",
+    "titre": "La grande rampe",
+    "genre": "Récit",
+    "segments": [
+      "Inès a reçu un skate pour ses douze ans. Chaque mercredi, elle va au skate-park avec son ",
+      {
+        "bonne": "cousin",
+        "leurres": [
+          "coudre",
+          "frigo"
+        ]
+      },
+      " Malik. Lui, il sait déjà faire des ",
+      {
+        "bonne": "figures",
+        "leurres": [
+          "figurer",
+          "nuages"
+        ]
+      },
+      " incroyables. Inès, elle, tombe toutes les cinq ",
+      {
+        "bonne": "minutes",
+        "leurres": [
+          "minuscule",
+          "planètes"
+        ]
+      },
+      ". Un jour, elle a voulu descendre la grande ",
+      {
+        "bonne": "rampe",
+        "leurres": [
+          "ramper",
+          "banane"
+        ]
+      },
+      ". En haut, ses jambes ",
+      {
+        "bonne": "tremblaient",
+        "leurres": [
+          "tremblement",
+          "chantaient"
+        ]
+      },
+      " très fort. Malik lui a donné une ",
+      {
+        "bonne": "astuce",
+        "leurres": [
+          "astucieux",
+          "baleine"
+        ]
+      },
+      " : plier les genoux et regarder devant. Inès a respiré un grand coup. Puis elle s'est lancée sur sa ",
+      {
+        "bonne": "planche",
+        "leurres": [
+          "planer",
+          "baignoire"
+        ]
+      },
+      ". Les yeux grands ouverts, elle a ",
+      {
+        "bonne": "descendu",
+        "leurres": [
+          "descente",
+          "avalé"
+        ]
+      },
+      " la rampe sans tomber ! En bas, Malik a ",
+      {
+        "bonne": "crié",
+        "leurres": [
+          "cri",
+          "cuit"
+        ]
+      },
+      " de joie. Les autres skateurs l'ont ",
+      {
+        "bonne": "applaudie",
+        "leurres": [
+          "applaudir",
+          "repassée"
+        ]
+      },
+      " aussi. Ce soir-là, Inès était très ",
+      {
+        "bonne": "fière",
+        "leurres": [
+          "fier",
+          "carrée"
+        ]
+      },
+      ". Elle a déjà choisi sa prochaine ",
+      {
+        "bonne": "figure",
+        "leurres": [
+          "figer",
+          "tempête"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Qu'a réussi Inès dans ce texte ?",
+      "choix": [
+        "Une figure plus difficile que Malik",
+        "Battre tous les skateurs du parc",
+        "Descendre la grande rampe sans tomber"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-025",
+    "titre": "La tempête",
+    "genre": "Aventure",
+    "segments": [
+      "Lou et son grand frère Sami pêchaient des crabes sur les rochers. Le ciel était bleu et la mer très ",
+      {
+        "bonne": "calme",
+        "leurres": [
+          "calmer",
+          "sucrée"
+        ]
+      },
+      ". Soudain, le vent s'est ",
+      {
+        "bonne": "levé",
+        "leurres": [
+          "lever",
+          "assis"
+        ]
+      },
+      ". De gros nuages noirs ont ",
+      {
+        "bonne": "caché",
+        "leurres": [
+          "cacher",
+          "peigné"
+        ]
+      },
+      " le soleil. Les vagues sont devenues ",
+      {
+        "bonne": "énormes",
+        "leurres": [
+          "énormément",
+          "polies"
+        ]
+      },
+      ". Sami a crié : \"Il faut ",
+      {
+        "bonne": "rentrer",
+        "leurres": [
+          "rentrée",
+          "bronzer"
+        ]
+      },
+      " tout de suite !\" Mais la marée montait vite et le ",
+      {
+        "bonne": "chemin",
+        "leurres": [
+          "cheminer",
+          "gâteau"
+        ]
+      },
+      " était déjà sous l'eau. Les deux enfants ont grimpé sur un gros ",
+      {
+        "bonne": "rocher",
+        "leurres": [
+          "rocheux",
+          "bonbon"
+        ]
+      },
+      ". Tous les deux étaient ",
+      {
+        "bonne": "trempés",
+        "leurres": [
+          "tremper",
+          "carrés"
+        ]
+      },
+      " et ils avaient froid. Alors Lou a eu une ",
+      {
+        "bonne": "idée",
+        "leurres": [
+          "idiot",
+          "chaise"
+        ]
+      },
+      ". De toutes ses forces, elle a ",
+      {
+        "bonne": "agité",
+        "leurres": [
+          "agiter",
+          "mangé"
+        ]
+      },
+      " son seau rouge vers la plage. Un sauveteur a vu le signal. Il est arrivé en ",
+      {
+        "bonne": "bateau",
+        "leurres": [
+          "batailler",
+          "fauteuil"
+        ]
+      },
+      " et il a ramené les enfants. Sur le sable, leurs parents les ont ",
+      {
+        "bonne": "serrés",
+        "leurres": [
+          "serrer",
+          "repassés"
+        ]
+      },
+      " très fort."
+    ],
+    "question": {
+      "enonce": "Comment Lou et Sami ont-ils été sauvés ?",
+      "choix": [
+        "Lou a fait signe à un sauveteur avec son seau",
+        "Sami a nagé jusqu'à la plage avec sa sœur",
+        "Leurs parents sont venus les chercher à pied"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-026",
+    "titre": "Le dernier niveau",
+    "genre": "Récit",
+    "segments": [
+      "Nathan joue à son jeu vidéo préféré depuis une heure. Il arrive enfin au dernier ",
+      {
+        "bonne": "niveau",
+        "leurres": [
+          "niveler",
+          "fromage"
+        ]
+      },
+      ". Le grand dragon est presque ",
+      {
+        "bonne": "vaincu",
+        "leurres": [
+          "vaincre",
+          "sucré"
+        ]
+      },
+      ". Soudain, sa petite sœur Zoé entre dans sa ",
+      {
+        "bonne": "chambre",
+        "leurres": [
+          "chambrer",
+          "casserole"
+        ]
+      },
+      " en courant. Elle veut absolument ",
+      {
+        "bonne": "jouer",
+        "leurres": [
+          "joueur",
+          "fondre"
+        ]
+      },
+      " avec lui. Nathan soupire, puis il lui donne la deuxième ",
+      {
+        "bonne": "manette",
+        "leurres": [
+          "manier",
+          "fenêtre"
+        ]
+      },
+      ". Zoé appuie sur tous les ",
+      {
+        "bonne": "boutons",
+        "leurres": [
+          "boutonner",
+          "nuages"
+        ]
+      },
+      " en même temps. Son personnage saute, tombe et se ",
+      {
+        "bonne": "relève",
+        "leurres": [
+          "relevé",
+          "maquille"
+        ]
+      },
+      " sans arrêt. Malgré lui, Nathan ",
+      {
+        "bonne": "rit",
+        "leurres": [
+          "rire",
+          "aboie"
+        ]
+      },
+      " aux éclats. Tout à coup, Zoé touche le dragon au bon ",
+      {
+        "bonne": "moment",
+        "leurres": [
+          "montrer",
+          "citron"
+        ]
+      },
+      ". Dans un grand bruit, le dragon ",
+      {
+        "bonne": "explose",
+        "leurres": [
+          "exploser",
+          "tricote"
+        ]
+      },
+      ". La musique de victoire retentit et Zoé saute de ",
+      {
+        "bonne": "joie",
+        "leurres": [
+          "joyeux",
+          "farine"
+        ]
+      },
+      ". Nathan a fini le jeu grâce à elle. Désormais, il lui prête sa manette tous les ",
+      {
+        "bonne": "samedis",
+        "leurres": [
+          "samedi",
+          "trottoirs"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Qu'est-ce qui a changé pour Nathan à la fin du texte ?",
+      "choix": [
+        "Il ne veut plus jamais jouer aux jeux vidéo",
+        "Il interdit à Zoé d'entrer dans sa chambre",
+        "Il accepte de jouer avec sa petite sœur"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-027",
+    "titre": "Les volcans",
+    "genre": "Documentaire",
+    "segments": [
+      "Un volcan est une montagne un peu ",
+      {
+        "bonne": "spéciale",
+        "leurres": [
+          "spécial",
+          "bavarde"
+        ]
+      },
+      ". Dans les profondeurs de la Terre, certaines roches sont si chaudes qu'elles ",
+      {
+        "bonne": "fondent",
+        "leurres": [
+          "fondu",
+          "chantent"
+        ]
+      },
+      ". Elles forment alors un liquide brûlant, le magma. Parfois, ce magma ",
+      {
+        "bonne": "remonte",
+        "leurres": [
+          "remontée",
+          "danse"
+        ]
+      },
+      " vers la surface. Il sort par le ",
+      {
+        "bonne": "cratère",
+        "leurres": [
+          "creuser",
+          "parapluie"
+        ]
+      },
+      ", en haut du volcan. On appelle cela une ",
+      {
+        "bonne": "éruption",
+        "leurres": [
+          "éruptif",
+          "tartine"
+        ]
+      },
+      ". Le magma qui coule dehors s'appelle la ",
+      {
+        "bonne": "lave",
+        "leurres": [
+          "laver",
+          "soupe"
+        ]
+      },
+      ". Sa température peut même ",
+      {
+        "bonne": "dépasser",
+        "leurres": [
+          "dépassement",
+          "manger"
+        ]
+      },
+      " mille degrés ! En refroidissant, elle devient une roche très ",
+      {
+        "bonne": "dure",
+        "leurres": [
+          "durer",
+          "sucrée"
+        ]
+      },
+      ". En France, certains volcans sont ",
+      {
+        "bonne": "endormis",
+        "leurres": [
+          "endormir",
+          "gourmands"
+        ]
+      },
+      " depuis des milliers d'années, comme ceux d'Auvergne. D'autres sont très actifs. Sur l'île de la Réunion, le Piton de la Fournaise ",
+      {
+        "bonne": "crache",
+        "leurres": [
+          "crachat",
+          "tricote"
+        ]
+      },
+      " souvent de la lave. Les savants qui étudient les volcans sont des ",
+      {
+        "bonne": "volcanologues",
+        "leurres": [
+          "volcanique",
+          "cornichons"
+        ]
+      },
+      ". Avec leurs appareils, ils ",
+      {
+        "bonne": "surveillent",
+        "leurres": [
+          "surveillance",
+          "mangent"
+        ]
+      },
+      " les volcans pour protéger les habitants."
+    ],
+    "question": {
+      "enonce": "Que nous apprend surtout ce texte ?",
+      "choix": [
+        "Comment on éteint un volcan en éruption",
+        "Ce qu'est un volcan et comment il fonctionne",
+        "Pourquoi les volcans d'Auvergne sont dangereux"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-028",
+    "titre": "Le chevalier maladroit",
+    "genre": "Conte",
+    "segments": [
+      "Il était une fois un chevalier nommé Gontran. Il était courageux, mais très ",
+      {
+        "bonne": "maladroit",
+        "leurres": [
+          "maladresse",
+          "liquide"
+        ]
+      },
+      ". Un jour, le roi lui a demandé de ",
+      {
+        "bonne": "sauver",
+        "leurres": [
+          "sauveur",
+          "repasser"
+        ]
+      },
+      " la princesse Mélie. Un terrible dragon la ",
+      {
+        "bonne": "gardait",
+        "leurres": [
+          "gardien",
+          "tricotait"
+        ]
+      },
+      " dans une tour, au sommet de la ",
+      {
+        "bonne": "montagne",
+        "leurres": [
+          "montagneuse",
+          "baignoire"
+        ]
+      },
+      ". Gontran est monté sur son ",
+      {
+        "bonne": "cheval",
+        "leurres": [
+          "chevaux",
+          "frigo"
+        ]
+      },
+      " et il est parti. En chemin, il est tombé dans la ",
+      {
+        "bonne": "boue",
+        "leurres": [
+          "boueux",
+          "lettre"
+        ]
+      },
+      ". Plus loin, son épée s'est ",
+      {
+        "bonne": "coincée",
+        "leurres": [
+          "coincer",
+          "endormie"
+        ]
+      },
+      " dans un arbre. Le soir, il est enfin arrivé devant le ",
+      {
+        "bonne": "dragon",
+        "leurres": [
+          "dragons",
+          "pupitre"
+        ]
+      },
+      ". Gontran a voulu crier, mais il a ",
+      {
+        "bonne": "éternué",
+        "leurres": [
+          "éternuer",
+          "cuisiné"
+        ]
+      },
+      " très fort. Le bruit était si terrible que le dragon s'est ",
+      {
+        "bonne": "enfui",
+        "leurres": [
+          "enfuir",
+          "marié"
+        ]
+      },
+      " ! Dans sa tour, la princesse a ",
+      {
+        "bonne": "ri",
+        "leurres": [
+          "rire",
+          "nagé"
+        ]
+      },
+      " aux larmes. Depuis ce jour, Gontran est le chevalier le plus ",
+      {
+        "bonne": "célèbre",
+        "leurres": [
+          "célébrer",
+          "carré"
+        ]
+      },
+      " du royaume."
+    ],
+    "question": {
+      "enonce": "Pourquoi Gontran est-il devenu célèbre ?",
+      "choix": [
+        "Il a fait fuir le dragon par accident",
+        "Il a gagné un grand tournoi au château",
+        "Il a battu le dragon avec son épée"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-029",
+    "titre": "Le chiot perdu",
+    "genre": "Récit",
+    "segments": [
+      "En rentrant du collège, Chloé a entendu un petit ",
+      {
+        "bonne": "cri",
+        "leurres": [
+          "crier",
+          "toit"
+        ]
+      },
+      " derrière une poubelle. Elle s'est approchée sans bruit. Un chiot tout ",
+      {
+        "bonne": "tremblant",
+        "leurres": [
+          "trembler",
+          "carré"
+        ]
+      },
+      " la regardait. Il portait un ",
+      {
+        "bonne": "collier",
+        "leurres": [
+          "coller",
+          "frigo"
+        ]
+      },
+      " rouge avec un nom : Pistache. Chloé l'a pris dans ses ",
+      {
+        "bonne": "bras",
+        "leurres": [
+          "brasser",
+          "pieds"
+        ]
+      },
+      " et elle l'a porté jusqu'à la ",
+      {
+        "bonne": "maison",
+        "leurres": [
+          "masser",
+          "piscine"
+        ]
+      },
+      ". Sa mère a eu une bonne idée. Elle a ",
+      {
+        "bonne": "publié",
+        "leurres": [
+          "publier",
+          "mangé"
+        ]
+      },
+      " une photo du chiot sur le site du quartier. Le soir même, un garçon a ",
+      {
+        "bonne": "téléphoné",
+        "leurres": [
+          "téléphone",
+          "fondu"
+        ]
+      },
+      ". Il s'appelait Tom et il ",
+      {
+        "bonne": "cherchait",
+        "leurres": [
+          "chercheur",
+          "repeignait"
+        ]
+      },
+      " son chien depuis deux jours. Quand Tom est arrivé, Pistache a ",
+      {
+        "bonne": "remué",
+        "leurres": [
+          "remuer",
+          "cousu"
+        ]
+      },
+      " la queue. Tom avait les yeux ",
+      {
+        "bonne": "mouillés",
+        "leurres": [
+          "mouiller",
+          "pointus"
+        ]
+      },
+      " de joie. Il a ",
+      {
+        "bonne": "remercié",
+        "leurres": [
+          "remerciement",
+          "arrosé"
+        ]
+      },
+      " Chloé mille fois. Depuis, Chloé va souvent ",
+      {
+        "bonne": "promener",
+        "leurres": [
+          "promenade",
+          "repasser"
+        ]
+      },
+      " Pistache avec lui."
+    ],
+    "question": {
+      "enonce": "Comment Chloé a-t-elle retrouvé le maître du chiot ?",
+      "choix": [
+        "Elle a lu son adresse sur le collier",
+        "Elle a demandé aux voisins de sa rue",
+        "Grâce à une photo publiée par sa mère"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-030",
+    "titre": "La classe de neige",
+    "genre": "Récit",
+    "segments": [
+      "En janvier, la classe de Léo est partie une semaine à la montagne. Le premier matin, tout le monde a ",
+      {
+        "bonne": "chaussé",
+        "leurres": [
+          "chaussure",
+          "mangé"
+        ]
+      },
+      " ses skis. Léo n'avait jamais skié de sa ",
+      {
+        "bonne": "vie",
+        "leurres": [
+          "vivre",
+          "poche"
+        ]
+      },
+      ". Au début, il tombait sans ",
+      {
+        "bonne": "arrêt",
+        "leurres": [
+          "arrêté",
+          "fromage"
+        ]
+      },
+      ". Heureusement, le moniteur était très ",
+      {
+        "bonne": "patient",
+        "leurres": [
+          "patience",
+          "pointu"
+        ]
+      },
+      ". Le troisième jour, Léo a descendu la piste verte sans ",
+      {
+        "bonne": "tomber",
+        "leurres": [
+          "tombe",
+          "fondre"
+        ]
+      },
+      ". Le soir, les élèves ont construit un grand ",
+      {
+        "bonne": "bonhomme",
+        "leurres": [
+          "bonhommes",
+          "téléphone"
+        ]
+      },
+      " de neige, avec une carotte pour le ",
+      {
+        "bonne": "nez",
+        "leurres": [
+          "nager",
+          "pied"
+        ]
+      },
+      ". Le dernier jour, Léo a passé son ",
+      {
+        "bonne": "examen",
+        "leurres": [
+          "examiner",
+          "parapluie"
+        ]
+      },
+      " de ski. Il a gagné une petite ",
+      {
+        "bonne": "médaille",
+        "leurres": [
+          "médaillé",
+          "baleine"
+        ]
+      },
+      " dorée. Dans le car du retour, Léo était ",
+      {
+        "bonne": "épuisé",
+        "leurres": [
+          "épuiser",
+          "carré"
+        ]
+      },
+      ". Il a dormi tout le long, avec un grand ",
+      {
+        "bonne": "sourire",
+        "leurres": [
+          "sourit",
+          "frigo"
+        ]
+      },
+      " aux lèvres. Il veut déjà ",
+      {
+        "bonne": "retourner",
+        "leurres": [
+          "retour",
+          "tricoter"
+        ]
+      },
+      " à la montagne."
+    ],
+    "question": {
+      "enonce": "Qu'est-ce qui a changé pour Léo pendant cette semaine ?",
+      "choix": [
+        "Il a eu peur et ne veut plus skier",
+        "Il a appris à skier et il a adoré ça",
+        "Il est devenu moniteur de ski"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-031",
+    "titre": "Les loups",
+    "genre": "Documentaire",
+    "segments": [
+      "Le loup est un animal sauvage qui ressemble à un grand ",
+      {
+        "bonne": "chien",
+        "leurres": [
+          "chienne",
+          "ballon"
+        ]
+      },
+      ". Il vit en famille, dans une ",
+      {
+        "bonne": "meute",
+        "leurres": [
+          "meutes",
+          "valise"
+        ]
+      },
+      ". Le couple de parents ",
+      {
+        "bonne": "dirige",
+        "leurres": [
+          "direction",
+          "repasse"
+        ]
+      },
+      " le groupe. Au printemps, la louve donne naissance à des ",
+      {
+        "bonne": "louveteaux",
+        "leurres": [
+          "louvoyer",
+          "parapluies"
+        ]
+      },
+      ". Pour communiquer, les loups ",
+      {
+        "bonne": "hurlent",
+        "leurres": [
+          "hurlement",
+          "tricotent"
+        ]
+      },
+      ". Leur cri s'entend à plusieurs kilomètres. Les loups sont aussi de grands ",
+      {
+        "bonne": "chasseurs",
+        "leurres": [
+          "chasser",
+          "pâtissiers"
+        ]
+      },
+      ". Ils mangent surtout des cerfs, des chevreuils et des ",
+      {
+        "bonne": "sangliers",
+        "leurres": [
+          "sanglier",
+          "nuages"
+        ]
+      },
+      ". Pour trouver leur nourriture, ils peuvent ",
+      {
+        "bonne": "parcourir",
+        "leurres": [
+          "parcours",
+          "peindre"
+        ]
+      },
+      " des dizaines de kilomètres en une nuit. Autrefois, les loups avaient disparu de France. Mais en 1992, des loups venus d'Italie sont ",
+      {
+        "bonne": "arrivés",
+        "leurres": [
+          "arrivée",
+          "mariés"
+        ]
+      },
+      " dans le Mercantour. Ils se sont installés dans les ",
+      {
+        "bonne": "montagnes",
+        "leurres": [
+          "monter",
+          "assiettes"
+        ]
+      },
+      ". Aujourd'hui, le loup est une espèce ",
+      {
+        "bonne": "protégée",
+        "leurres": [
+          "protéger",
+          "sucrée"
+        ]
+      },
+      ". Il a peur des humains et il les ",
+      {
+        "bonne": "évite",
+        "leurres": [
+          "évier",
+          "repeint"
+        ]
+      },
+      " le plus souvent possible."
+    ],
+    "question": {
+      "enonce": "Que raconte surtout ce texte ?",
+      "choix": [
+        "La vie du loup et son retour en France",
+        "Comment dresser un loup comme un chien",
+        "Pourquoi le loup attaque souvent les humains"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-032",
+    "titre": "La course en sac",
+    "genre": "Humour",
+    "segments": [
+      "Chaque année, à la fête de l'école, il y a une course en sac. Cette fois, Bilal veut ",
+      {
+        "bonne": "gagner",
+        "leurres": [
+          "gagnant",
+          "pondre"
+        ]
+      },
+      ". Il s'est entraîné tout le mois dans son ",
+      {
+        "bonne": "jardin",
+        "leurres": [
+          "jardiner",
+          "assiette"
+        ]
+      },
+      ". Le grand jour, il entre dans son sac et se place sur la ",
+      {
+        "bonne": "ligne",
+        "leurres": [
+          "lignes",
+          "soupe"
+        ]
+      },
+      " de départ. Au coup de ",
+      {
+        "bonne": "sifflet",
+        "leurres": [
+          "siffler",
+          "chaussette"
+        ]
+      },
+      ", tous les enfants partent en ",
+      {
+        "bonne": "sautant",
+        "leurres": [
+          "sauter",
+          "lisant"
+        ]
+      },
+      " comme des kangourous. Bilal prend vite la tête. Mais soudain, son vieux sac se ",
+      {
+        "bonne": "déchire",
+        "leurres": [
+          "déchirure",
+          "marie"
+        ]
+      },
+      ". Ses deux pieds sortent par le ",
+      {
+        "bonne": "fond",
+        "leurres": [
+          "fondre",
+          "toit"
+        ]
+      },
+      " ! Sans réfléchir, Bilal se met à ",
+      {
+        "bonne": "courir",
+        "leurres": [
+          "coureur",
+          "tricoter"
+        ]
+      },
+      " avec le sac autour de la taille. Il arrive le premier, mais le directeur ",
+      {
+        "bonne": "siffle",
+        "leurres": [
+          "siffleur",
+          "danse"
+        ]
+      },
+      " aussitôt. C'est une course en sac, pas une course à pied ! Bilal est ",
+      {
+        "bonne": "disqualifié",
+        "leurres": [
+          "disqualifier",
+          "repassé"
+        ]
+      },
+      ". Dans le public, tout le monde ",
+      {
+        "bonne": "rit",
+        "leurres": [
+          "rire",
+          "aboie"
+        ]
+      },
+      ", et Bilal aussi. L'année prochaine, il prendra un sac plus ",
+      {
+        "bonne": "solide",
+        "leurres": [
+          "solidité",
+          "bavard"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Pourquoi Bilal n'a-t-il pas gagné la course ?",
+      "choix": [
+        "Il est tombé juste avant l'arrivée",
+        "Un autre enfant a sauté plus vite que lui",
+        "Il a fini la course en courant"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-033",
+    "titre": "L'œuf mystérieux",
+    "genre": "Fantastique",
+    "segments": [
+      "En plantant des tomates dans le jardin, Maëlle a trouvé un œuf dans la ",
+      {
+        "bonne": "terre",
+        "leurres": [
+          "terrer",
+          "lettre"
+        ]
+      },
+      ". Sa coquille était toute ",
+      {
+        "bonne": "dorée",
+        "leurres": [
+          "dorer",
+          "bavarde"
+        ]
+      },
+      ". Quand elle l'a touché, l'œuf était ",
+      {
+        "bonne": "chaud",
+        "leurres": [
+          "chauffer",
+          "timide"
+        ]
+      },
+      ". Maëlle l'a caché dans sa ",
+      {
+        "bonne": "chambre",
+        "leurres": [
+          "chambrer",
+          "tartine"
+        ]
+      },
+      " et l'a posé sur un ",
+      {
+        "bonne": "coussin",
+        "leurres": [
+          "coudre",
+          "nuage"
+        ]
+      },
+      ". Pendant la nuit, l'œuf a ",
+      {
+        "bonne": "bougé",
+        "leurres": [
+          "bouger",
+          "lu"
+        ]
+      },
+      ". Puis sa coquille s'est ",
+      {
+        "bonne": "fendue",
+        "leurres": [
+          "fendre",
+          "mariée"
+        ]
+      },
+      ". Un petit dragon vert est ",
+      {
+        "bonne": "sorti",
+        "leurres": [
+          "sortir",
+          "garé"
+        ]
+      },
+      ". Maëlle n'en revenait pas. Le bébé a ouvert ses grands ",
+      {
+        "bonne": "yeux",
+        "leurres": [
+          "œil",
+          "pieds"
+        ]
+      },
+      " jaunes. Puis il a craché une petite ",
+      {
+        "bonne": "flamme",
+        "leurres": [
+          "flamber",
+          "valise"
+        ]
+      },
+      ". Le rideau de sa chambre a pris feu ! Maëlle a vite ",
+      {
+        "bonne": "éteint",
+        "leurres": [
+          "éteindre",
+          "peigné"
+        ]
+      },
+      " le feu avec un verre d'eau. Elle a appelé le dragon Braise. Désormais, personne ne doit ",
+      {
+        "bonne": "découvrir",
+        "leurres": [
+          "découverte",
+          "repasser"
+        ]
+      },
+      " son secret."
+    ],
+    "question": {
+      "enonce": "Que contenait l'œuf trouvé par Maëlle ?",
+      "choix": [
+        "Un petit oiseau doré",
+        "Un bébé dragon",
+        "Un poussin tout vert"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-034",
+    "titre": "La pizza maison",
+    "genre": "Récit",
+    "segments": [
+      "Ce samedi, Jules et son père ont décidé de faire une pizza maison. D'abord, ils ont préparé la ",
+      {
+        "bonne": "pâte",
+        "leurres": [
+          "pâtir",
+          "neige"
+        ]
+      },
+      " avec de la farine, de l'eau et un peu de ",
+      {
+        "bonne": "sel",
+        "leurres": [
+          "saler",
+          "sable"
+        ]
+      },
+      ". Avec ses deux mains, Jules a ",
+      {
+        "bonne": "pétri",
+        "leurres": [
+          "pétrir",
+          "chanté"
+        ]
+      },
+      " la pâte pendant dix minutes. Ses doigts étaient tout ",
+      {
+        "bonne": "collants",
+        "leurres": [
+          "coller",
+          "timides"
+        ]
+      },
+      ". Ensuite, sur la pâte, il a ",
+      {
+        "bonne": "étalé",
+        "leurres": [
+          "étaler",
+          "caressé"
+        ]
+      },
+      " la sauce tomate. Son père a coupé du jambon et des ",
+      {
+        "bonne": "champignons",
+        "leurres": [
+          "champion",
+          "chaussures"
+        ]
+      },
+      ". Pour finir, Jules a ",
+      {
+        "bonne": "ajouté",
+        "leurres": [
+          "ajouter",
+          "repeint"
+        ]
+      },
+      " beaucoup trop de fromage. Ils ont mis la pizza dans le ",
+      {
+        "bonne": "four",
+        "leurres": [
+          "fourrer",
+          "lit"
+        ]
+      },
+      " bien chaud. Vingt minutes plus tard, une bonne ",
+      {
+        "bonne": "odeur",
+        "leurres": [
+          "odorant",
+          "chaise"
+        ]
+      },
+      " remplissait la cuisine. Mais le fromage avait ",
+      {
+        "bonne": "coulé",
+        "leurres": [
+          "couler",
+          "lu"
+        ]
+      },
+      " au fond du four. La pizza était un peu ",
+      {
+        "bonne": "brûlée",
+        "leurres": [
+          "brûler",
+          "bavarde"
+        ]
+      },
+      " sur les bords. Pourtant, Jules a trouvé que c'était la pizza la plus ",
+      {
+        "bonne": "délicieuse",
+        "leurres": [
+          "délice",
+          "polie"
+        ]
+      },
+      " du monde."
+    ],
+    "question": {
+      "enonce": "Que pense Jules de sa pizza à la fin ?",
+      "choix": [
+        "Elle est délicieuse, même un peu brûlée",
+        "Elle est ratée, il n'en fera plus jamais",
+        "Elle est trop salée, il préfère la jeter"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-035",
+    "titre": "Le bruit dans le grenier",
+    "genre": "Frisson",
+    "segments": [
+      "Cette nuit-là, Yanis ne dormait pas. Au-dessus de sa chambre, il entendait des ",
+      {
+        "bonne": "grattements",
+        "leurres": [
+          "gratter",
+          "parapluies"
+        ]
+      },
+      ". Quelqu'un ou quelque chose ",
+      {
+        "bonne": "marchait",
+        "leurres": [
+          "marché",
+          "nageait"
+        ]
+      },
+      " dans le grenier ! Yanis a pris sa ",
+      {
+        "bonne": "lampe",
+        "leurres": [
+          "lampes",
+          "baleine"
+        ]
+      },
+      " de poche. Il a monté l'escalier sur la pointe des ",
+      {
+        "bonne": "pieds",
+        "leurres": [
+          "piétiner",
+          "oreilles"
+        ]
+      },
+      ". La porte du grenier a ",
+      {
+        "bonne": "grincé",
+        "leurres": [
+          "grincer",
+          "rougi"
+        ]
+      },
+      " doucement. Dans le noir, deux yeux verts ",
+      {
+        "bonne": "brillaient",
+        "leurres": [
+          "brillance",
+          "tricotaient"
+        ]
+      },
+      ". Le garçon a failli ",
+      {
+        "bonne": "crier",
+        "leurres": [
+          "cri",
+          "bronzer"
+        ]
+      },
+      " de peur. Puis il a entendu un petit ",
+      {
+        "bonne": "miaulement",
+        "leurres": [
+          "miauler",
+          "frigo"
+        ]
+      },
+      ". C'était Caramel, le chat de la ",
+      {
+        "bonne": "voisine",
+        "leurres": [
+          "voisin",
+          "planète"
+        ]
+      },
+      " ! Il était entré par la ",
+      {
+        "bonne": "fenêtre",
+        "leurres": [
+          "fenêtres",
+          "cuillère"
+        ]
+      },
+      " ouverte. Soulagé, Yanis l'a pris dans ses bras et il s'est recouché en ",
+      {
+        "bonne": "souriant",
+        "leurres": [
+          "sourire",
+          "aboyant"
+        ]
+      },
+      ". Le lendemain matin, il a ",
+      {
+        "bonne": "ramené",
+        "leurres": [
+          "ramener",
+          "repassé"
+        ]
+      },
+      " Caramel chez lui."
+    ],
+    "question": {
+      "enonce": "Qui faisait du bruit dans le grenier ?",
+      "choix": [
+        "Un voleur caché dans le noir",
+        "Un fantôme aux yeux verts",
+        "Le chat de la voisine"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-036",
+    "titre": "La Lune",
+    "genre": "Documentaire",
+    "segments": [
+      "La Lune est notre plus proche voisine dans l'espace. C'est le seul ",
+      {
+        "bonne": "satellite",
+        "leurres": [
+          "satellites",
+          "parapluie"
+        ]
+      },
+      " naturel de la Terre. Elle est beaucoup plus ",
+      {
+        "bonne": "petite",
+        "leurres": [
+          "petitesse",
+          "bavarde"
+        ]
+      },
+      " que notre planète. La Lune n'a pas de lumière à elle. Elle ",
+      {
+        "bonne": "renvoie",
+        "leurres": [
+          "renvoi",
+          "mange"
+        ]
+      },
+      " la lumière du Soleil. Selon les jours, on la voit ",
+      {
+        "bonne": "ronde",
+        "leurres": [
+          "rond",
+          "timide"
+        ]
+      },
+      " ou en forme de ",
+      {
+        "bonne": "croissant",
+        "leurres": [
+          "croître",
+          "chaussette"
+        ]
+      },
+      ". Sur la Lune, il n'y a ni air ni eau. Les astronautes doivent donc ",
+      {
+        "bonne": "porter",
+        "leurres": [
+          "portail",
+          "manger"
+        ]
+      },
+      " une combinaison spéciale. Le sol est couvert de ",
+      {
+        "bonne": "poussière",
+        "leurres": [
+          "poussiéreux",
+          "confiture"
+        ]
+      },
+      " grise. En 1969, l'Américain Neil Armstrong a ",
+      {
+        "bonne": "marché",
+        "leurres": [
+          "marcher",
+          "nagé"
+        ]
+      },
+      " sur la Lune. Il a été le premier homme à le faire. Là-bas, les astronautes font des ",
+      {
+        "bonne": "bonds",
+        "leurres": [
+          "bondir",
+          "lunettes"
+        ]
+      },
+      " immenses, car ils sont six fois plus légers que sur Terre. La Lune ",
+      {
+        "bonne": "tourne",
+        "leurres": [
+          "tournoi",
+          "tricote"
+        ]
+      },
+      " autour de la Terre en environ un mois. Elle ",
+      {
+        "bonne": "attire",
+        "leurres": [
+          "attirance",
+          "cuisine"
+        ]
+      },
+      " aussi l'eau des océans. C'est ce qui crée les ",
+      {
+        "bonne": "marées",
+        "leurres": [
+          "marée",
+          "tartines"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Que nous apprend surtout ce texte ?",
+      "choix": [
+        "Comment les astronautes préparent leur voyage",
+        "Ce qu'est la Lune et comment elle agit sur la Terre",
+        "Pourquoi la Lune est plus grande que la Terre"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-037",
+    "titre": "La finale",
+    "genre": "Récit",
+    "segments": [
+      "Samedi, l'équipe de basket du collège jouait la finale du ",
+      {
+        "bonne": "tournoi",
+        "leurres": [
+          "tourner",
+          "frigo"
+        ]
+      },
+      ". Amina était la plus petite ",
+      {
+        "bonne": "joueuse",
+        "leurres": [
+          "jouer",
+          "fourchette"
+        ]
+      },
+      " de l'équipe. Avant le match, elle avait le ",
+      {
+        "bonne": "trac",
+        "leurres": [
+          "traquer",
+          "gâteau"
+        ]
+      },
+      ". Le match a été très ",
+      {
+        "bonne": "serré",
+        "leurres": [
+          "serrer",
+          "sucré"
+        ]
+      },
+      ". À la fin, les deux équipes étaient à ",
+      {
+        "bonne": "égalité",
+        "leurres": [
+          "égaliser",
+          "bicyclette"
+        ]
+      },
+      ". Il restait seulement trois ",
+      {
+        "bonne": "secondes",
+        "leurres": [
+          "seconder",
+          "carottes"
+        ]
+      },
+      " ! Vite, une coéquipière a ",
+      {
+        "bonne": "passé",
+        "leurres": [
+          "passer",
+          "mangé"
+        ]
+      },
+      " le ballon à Amina. Elle a ",
+      {
+        "bonne": "tiré",
+        "leurres": [
+          "tirer",
+          "cousu"
+        ]
+      },
+      " de très loin, sans réfléchir. Le ballon a roulé sur le cercle du ",
+      {
+        "bonne": "panier",
+        "leurres": [
+          "panique",
+          "cornichon"
+        ]
+      },
+      ". Après une longue seconde, il est ",
+      {
+        "bonne": "tombé",
+        "leurres": [
+          "tomber",
+          "marié"
+        ]
+      },
+      " dedans ! Toute l'équipe a sauté de ",
+      {
+        "bonne": "joie",
+        "leurres": [
+          "joyeuse",
+          "neige"
+        ]
+      },
+      ". Amina a soulevé la ",
+      {
+        "bonne": "coupe",
+        "leurres": [
+          "couper",
+          "baleine"
+        ]
+      },
+      " avec fierté. Ce jour-là, elle a compris que la taille ne fait pas tout."
+    ],
+    "question": {
+      "enonce": "Qu'a compris Amina à la fin du match ?",
+      "choix": [
+        "On peut gagner même quand on est petite",
+        "Elle doit arrêter de jouer au basket",
+        "Son équipe est la plus forte du pays"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-038",
+    "titre": "La sorcière maladroite",
+    "genre": "Conte",
+    "segments": [
+      "Il était une fois une jeune sorcière qui s'appelait Pétronille. Elle était très ",
+      {
+        "bonne": "gentille",
+        "leurres": [
+          "gentiment",
+          "liquide"
+        ]
+      },
+      ", mais elle ratait toutes ses potions. Un jour, elle a voulu guérir le rhume de son ",
+      {
+        "bonne": "chat",
+        "leurres": [
+          "chats",
+          "frigo"
+        ]
+      },
+      ". Elle a fait bouillir une grosse ",
+      {
+        "bonne": "marmite",
+        "leurres": [
+          "marmonner",
+          "montagne"
+        ]
+      },
+      " pleine de plantes. Le chat a bu une ",
+      {
+        "bonne": "gorgée",
+        "leurres": [
+          "gorger",
+          "valise"
+        ]
+      },
+      " de la potion. Aussitôt, il est devenu tout bleu et il s'est mis à aboyer ! Pétronille a ",
+      {
+        "bonne": "pleuré",
+        "leurres": [
+          "pleurs",
+          "bronzé"
+        ]
+      },
+      " toute la nuit. Le lendemain, sa grand-mère est ",
+      {
+        "bonne": "venue",
+        "leurres": [
+          "venir",
+          "fondue"
+        ]
+      },
+      " la voir. Elle lui a donné un vieux ",
+      {
+        "bonne": "livre",
+        "leurres": [
+          "livrer",
+          "nuage"
+        ]
+      },
+      " de magie. Dedans, il y avait une ",
+      {
+        "bonne": "recette",
+        "leurres": [
+          "recettes",
+          "baignoire"
+        ]
+      },
+      " très simple. Le secret ? Ne jamais être ",
+      {
+        "bonne": "pressée",
+        "leurres": [
+          "presser",
+          "pointue"
+        ]
+      },
+      ". Cette fois, Pétronille a pris son ",
+      {
+        "bonne": "temps",
+        "leurres": [
+          "tenter",
+          "piano"
+        ]
+      },
+      ". Au bout d'une heure, le chat a ",
+      {
+        "bonne": "guéri",
+        "leurres": [
+          "guérir",
+          "pondu"
+        ]
+      },
+      " pour de bon. Depuis ce jour, Pétronille ",
+      {
+        "bonne": "réussit",
+        "leurres": [
+          "réussite",
+          "repasse"
+        ]
+      },
+      " toutes ses potions."
+    ],
+    "question": {
+      "enonce": "Quel était le secret pour réussir les potions ?",
+      "choix": [
+        "Mettre beaucoup plus de plantes",
+        "Réciter la formule plus fort",
+        "Prendre son temps, sans se presser"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-039",
+    "titre": "Les fourmis",
+    "genre": "Documentaire",
+    "segments": [
+      "La fourmi est un petit insecte qui possède six ",
+      {
+        "bonne": "pattes",
+        "leurres": [
+          "patte",
+          "valises"
+        ]
+      },
+      ". Les fourmis vivent en groupe dans une ",
+      {
+        "bonne": "fourmilière",
+        "leurres": [
+          "fourmiller",
+          "casserole"
+        ]
+      },
+      ". Au centre du nid vit la ",
+      {
+        "bonne": "reine",
+        "leurres": [
+          "régner",
+          "tartine"
+        ]
+      },
+      ". Elle passe toute sa vie à ",
+      {
+        "bonne": "pondre",
+        "leurres": [
+          "ponte",
+          "peindre"
+        ]
+      },
+      " des œufs. Les autres fourmis sont des ",
+      {
+        "bonne": "ouvrières",
+        "leurres": [
+          "ouvrir",
+          "pantoufles"
+        ]
+      },
+      ". Toute la journée, elles ",
+      {
+        "bonne": "cherchent",
+        "leurres": [
+          "chercheur",
+          "cousent"
+        ]
+      },
+      " la nourriture, soignent les larves et défendent le nid. Une fourmi est très ",
+      {
+        "bonne": "forte",
+        "leurres": [
+          "fort",
+          "bavarde"
+        ]
+      },
+      " pour sa taille. Elle peut porter plusieurs fois son ",
+      {
+        "bonne": "poids",
+        "leurres": [
+          "peser",
+          "chapeau"
+        ]
+      },
+      ". Pour communiquer, les fourmis utilisent des ",
+      {
+        "bonne": "odeurs",
+        "leurres": [
+          "odeur",
+          "tambours"
+        ]
+      },
+      ". Elles se touchent aussi avec leurs ",
+      {
+        "bonne": "antennes",
+        "leurres": [
+          "antenne",
+          "lunettes"
+        ]
+      },
+      ". Enfin, certaines espèces de fourmis ",
+      {
+        "bonne": "élèvent",
+        "leurres": [
+          "élevage",
+          "repassent"
+        ]
+      },
+      " même des pucerons. Elles boivent le liquide ",
+      {
+        "bonne": "sucré",
+        "leurres": [
+          "sucrer",
+          "carré"
+        ]
+      },
+      " que ces petits insectes fabriquent."
+    ],
+    "question": {
+      "enonce": "Que nous apprend surtout ce texte ?",
+      "choix": [
+        "Comment se débarrasser des fourmis",
+        "Comment les fourmis vivent et s'organisent",
+        "Pourquoi les fourmis piquent les humains"
+      ],
+      "bonne": 1
+    }
+  },
+  {
+    "id": "la1-040",
+    "titre": "Le déménagement",
+    "genre": "Récit",
+    "segments": [
+      "Toute la maison était remplie de ",
+      {
+        "bonne": "cartons",
+        "leurres": [
+          "cartonner",
+          "nuages"
+        ]
+      },
+      ". Demain, Emma allait quitter sa ",
+      {
+        "bonne": "ville",
+        "leurres": [
+          "villes",
+          "soupe"
+        ]
+      },
+      " pour aller vivre à Lyon. Elle était très ",
+      {
+        "bonne": "triste",
+        "leurres": [
+          "tristesse",
+          "pointue"
+        ]
+      },
+      ". Elle allait laisser Rose, sa meilleure amie. Avant de partir, Rose lui a offert un ",
+      {
+        "bonne": "bracelet",
+        "leurres": [
+          "bracelets",
+          "volcan"
+        ]
+      },
+      ". Le lendemain matin, un gros ",
+      {
+        "bonne": "camion",
+        "leurres": [
+          "camions",
+          "biscuit"
+        ]
+      },
+      " est arrivé devant la maison. Les déménageurs ont ",
+      {
+        "bonne": "chargé",
+        "leurres": [
+          "charger",
+          "mangé"
+        ]
+      },
+      " tous les meubles. Pendant le voyage, Emma a ",
+      {
+        "bonne": "regardé",
+        "leurres": [
+          "regard",
+          "cuisiné"
+        ]
+      },
+      " la route en silence. Lundi, elle a découvert son nouveau ",
+      {
+        "bonne": "collège",
+        "leurres": [
+          "coller",
+          "requin"
+        ]
+      },
+      ". À la récréation, une fille est venue lui ",
+      {
+        "bonne": "parler",
+        "leurres": [
+          "parloir",
+          "tricoter"
+        ]
+      },
+      ". Elle s'appelait Inaya et elle aimait aussi les ",
+      {
+        "bonne": "chevaux",
+        "leurres": [
+          "cheval",
+          "radiateurs"
+        ]
+      },
+      ". Le soir, Emma a ",
+      {
+        "bonne": "écrit",
+        "leurres": [
+          "écrire",
+          "cuit"
+        ]
+      },
+      " une longue lettre à Rose. Dedans, elle racontait qu'elle avait déjà une nouvelle ",
+      {
+        "bonne": "amie",
+        "leurres": [
+          "ami",
+          "baleine"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Comment Emma se sent-elle à la fin du texte ?",
+      "choix": [
+        "Rassurée, car elle s'est fait une amie",
+        "Triste, car elle est seule au collège",
+        "En colère, car elle ne voulait pas partir"
+      ],
+      "bonne": 0
+    }
+  },
+  {
+    "id": "la1-041",
+    "titre": "Le corbeau et le renard",
+    "genre": "Fable",
+    "segments": [
+      "Un corbeau était perché sur une ",
+      {
+        "bonne": "branche",
+        "leurres": [
+          "brancher",
+          "tartine"
+        ]
+      },
+      ". Dans son bec, il tenait un gros ",
+      {
+        "bonne": "fromage",
+        "leurres": [
+          "fromages",
+          "piano"
+        ]
+      },
+      ". Un renard affamé est ",
+      {
+        "bonne": "passé",
+        "leurres": [
+          "passer",
+          "fondu"
+        ]
+      },
+      " par là. Il a senti l'odeur du fromage et il a eu une ",
+      {
+        "bonne": "idée",
+        "leurres": [
+          "idiot",
+          "chaise"
+        ]
+      },
+      ". \"Bonjour, monsieur le Corbeau ! Vos plumes sont si ",
+      {
+        "bonne": "belles",
+        "leurres": [
+          "beauté",
+          "liquides"
+        ]
+      },
+      " ! Votre voix doit être ",
+      {
+        "bonne": "magnifique",
+        "leurres": [
+          "magnifier",
+          "carrée"
+        ]
+      },
+      ", elle aussi. Chantez donc pour moi !\" Le corbeau était très ",
+      {
+        "bonne": "fier",
+        "leurres": [
+          "fière",
+          "sucré"
+        ]
+      },
+      ". Il a ouvert son ",
+      {
+        "bonne": "bec",
+        "leurres": [
+          "becs",
+          "frigo"
+        ]
+      },
+      " pour chanter. Aussitôt, le fromage est ",
+      {
+        "bonne": "tombé",
+        "leurres": [
+          "tomber",
+          "marié"
+        ]
+      },
+      " par terre. Le renard l'a ",
+      {
+        "bonne": "attrapé",
+        "leurres": [
+          "attraper",
+          "repeint"
+        ]
+      },
+      " et il est parti en courant. Le corbeau, tout ",
+      {
+        "bonne": "honteux",
+        "leurres": [
+          "honte",
+          "pointu"
+        ]
+      },
+      ", a compris la leçon : il ne faut jamais croire ceux qui nous ",
+      {
+        "bonne": "flattent",
+        "leurres": [
+          "flatterie",
+          "repassent"
+        ]
+      },
+      "."
+    ],
+    "question": {
+      "enonce": "Quelle est la leçon de cette fable ?",
+      "choix": [
+        "Il faut toujours partager sa nourriture",
+        "Les renards sont plus forts que les oiseaux",
+        "Il ne faut pas croire ceux qui nous flattent"
+      ],
+      "bonne": 2
+    }
+  },
+  {
+    "id": "la1-042",
+    "titre": "Le hamster évadé",
+    "genre": "Humour",
+    "segments": [
+      "Ce matin, la cage de Nougat, le hamster de la classe, était ",
+      {
+        "bonne": "vide",
+        "leurres": [
+          "vider",
+          "bavarde"
+        ]
+      },
+      ". La porte était restée ",
+      {
+        "bonne": "ouverte",
+        "leurres": [
+          "ouvrir",
+          "sucrée"
+        ]
+      },
+      " ! Toute la classe a ",
+      {
+        "bonne": "cherché",
+        "leurres": [
+          "chercher",
+          "nagé"
+        ]
+      },
+      " partout. Malo a regardé sous les ",
+      {
+        "bonne": "tables",
+        "leurres": [
+          "table",
+          "nuages"
+        ]
+      },
+      ". Lina a vidé toutes les ",
+      {
+        "bonne": "poubelles",
+        "leurres": [
+          "poubelle",
+          "planètes"
+        ]
+      },
+      ". Même le professeur a ",
+      {
+        "bonne": "rampé",
+        "leurres": [
+          "ramper",
+          "pondu"
+        ]
+      },
+      " sous son bureau. Mais Nougat restait ",
+      {
+        "bonne": "introuvable",
+        "leurres": [
+          "trouver",
+          "liquide"
+        ]
+      },
+      ". À midi, on a entendu de petits ",
+      {
+        "bonne": "craquements",
+        "leurres": [
+          "craquer",
+          "dentifrices"
+        ]
+      },
+      ". Le bruit venait du ",
+      {
+        "bonne": "cartable",
+        "leurres": [
+          "cartables",
+          "soleil"
+        ]
+      },
+      " de Malo. Il l'a ouvert et Nougat était là, en train de ",
+      {
+        "bonne": "grignoter",
+        "leurres": [
+          "grignotage",
+          "conduire"
+        ]
+      },
+      " son goûter ! Il avait déjà mangé tous les ",
+      {
+        "bonne": "biscuits",
+        "leurres": [
+          "biscuit",
+          "radiateurs"
+        ]
+      },
+      " de Malo. Malo a fait une drôle de tête, mais toute la classe a ",
+      {
+        "bonne": "éclaté",
+        "leurres": [
+          "éclater",
+          "cousu"
+        ]
+      },
+      " de rire."
+    ],
+    "question": {
+      "enonce": "Où se cachait le hamster ?",
+      "choix": [
+        "Sous le bureau du professeur",
+        "Dans le cartable de Malo",
+        "Dans une poubelle de la classe"
+      ],
+      "bonne": 1
+    }
+  }
+]
