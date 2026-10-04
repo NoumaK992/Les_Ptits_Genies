@@ -210,7 +210,7 @@ export default function LectureRapidePage() {
               {EX.emoji}
             </div>
             <div className="min-w-0">
-              <p className="font-black text-encre text-base truncate max-w-40">{currentText.title}</p>
+              <p className="font-black text-encre text-base truncate max-w-40 md:max-w-md">{currentText.title}</p>
               <p className="text-base text-encre-doux font-semibold">{currentText.genre}</p>
             </div>
           </div>
