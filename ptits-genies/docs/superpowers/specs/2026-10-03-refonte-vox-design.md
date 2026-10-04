@@ -37,8 +37,13 @@ Les anciennes couleurs de `tailwind.config.js` sont remplacées par des noms d'u
 | `bleu` | `#8FA8F0` | formes décoratives, infos |
 | `juste` | `#2E9E6A` | bonne réponse |
 | `faux` | `#E5604A` | mauvaise réponse |
+| `encre-doux` | `#5C574E` | texte secondaire (remplace les gris), contraste 5,7 sur sable |
+| `juste-fonce` | `#1E6B47` | texte « bonne réponse » posé sur papier ou sable |
+| `faux-fonce` | `#B23A26` | texte « mauvaise réponse » posé sur papier ou sable |
 
 Règles :
+- Source unique des valeurs : `src/theme/couleurs.js`, importé par `tailwind.config.js` et par le code qui a besoin d'une valeur brute (graphiques Recharts du tableau de bord, styles inline). Un fichier `couleurs.d.ts` le type pour TypeScript.
+- `juste` et `faux` servent de fonds ; pour du texte coloré on utilise `juste-fonce` et `faux-fonce`.
 - Le jaune n'est jamais utilisé en grand aplat de fond de page (fatigue visuelle).
 - Le texte posé sur `jaune`, `juste`, `faux`, `rose-pale` ou `bleu` est en `encre`. Tout couple texte/fond doit atteindre un contraste WCAG AA (4,5:1).
 - Juste/faux ne reposent jamais sur la seule couleur : icône ✓ / ✗ systématique, plus une animation (petit rebond pour juste, secousse pour faux).
@@ -75,7 +80,8 @@ Un commit par étape, pour pouvoir annuler une page seule.
 ## Section 4 : vérification
 
 - `npm run build` sans erreur de type à chaque étape.
-- Les tests existants passent.
+- Le projet n'a pas de tests automatisés. Pas de nouveau framework de test (sobriété) : un script `scripts/verifier-style.mjs` liste, pour les fichiers donnés, les couleurs écrites en dur, dégradés, classes de couleurs Tailwind par défaut et anciens tokens. Il échoue sur une page avant sa reprise et doit passer après.
+- ESLint ne doit pas avoir plus d'erreurs qu'avant la refonte (26 problèmes au départ).
 - Test Playwright final (skill `playwright-skill`) sur trois largeurs : mobile (375px), tablette (768px), ordinateur (1280px), pour chaque page :
   - pas de défilement horizontal ni de débordement ;
   - formes décoratives jamais au-dessus ou derrière du texte ;
