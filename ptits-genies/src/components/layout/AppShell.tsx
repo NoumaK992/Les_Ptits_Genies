@@ -20,10 +20,10 @@ export default function AppShell() {
 
       {/* ── Barre du haut ── */}
       <header className="sticky top-0 z-20 border-b-2 border-encre bg-papier">
-        <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
-          <Link to="/accueil" className="flex items-center gap-2">
+        <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-3 lg:gap-4">
+          <Link to="/accueil" className="flex shrink-0 items-center gap-2" aria-label="Les P'tits Génies, accueil">
             <span className="text-2xl">🧠</span>
-            <span className="font-titre text-lg text-encre md:text-xl">Les P'tits Génies</span>
+            <span className="whitespace-nowrap font-titre text-lg text-encre md:hidden lg:inline lg:text-xl">Les P'tits Génies</span>
           </Link>
 
           <nav className="hidden gap-2 md:flex">
@@ -32,7 +32,7 @@ export default function AppShell() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `flex items-center gap-2 rounded-xl border-2 px-4 py-2 text-sm font-bold text-encre transition-colors ${
+                  `flex items-center gap-2 whitespace-nowrap rounded-xl border-2 px-3 py-2 lg:px-4 text-sm font-bold text-encre transition-colors ${
                     isActive ? 'border-encre bg-jaune shadow-dur-sm' : 'border-transparent hover:border-encre'
                   }`
                 }
@@ -45,12 +45,13 @@ export default function AppShell() {
 
           <div className="ml-auto flex items-center gap-2">
             {currentUser && (
-              <span className="rounded-full border-2 border-encre bg-jaune px-3 py-1 text-sm font-bold text-encre">
+              <span className="whitespace-nowrap rounded-full border-2 border-encre bg-jaune px-3 py-1 text-sm font-bold text-encre">
                 {currentUser.totalPoints} ⭐
               </span>
             )}
-            <Bouton variante="discret" onClick={logout} className="hidden text-sm md:inline-flex">
-              Se déconnecter
+            <Bouton variante="discret" onClick={logout} aria-label="Se déconnecter" className="hidden px-2 text-sm md:inline-flex">
+              <span aria-hidden="true">🚪</span>
+              <span className="hidden whitespace-nowrap lg:inline">Se déconnecter</span>
             </Bouton>
           </div>
         </div>
