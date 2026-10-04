@@ -40,11 +40,15 @@ function generateGrid(entry: DifficultyEntry, difficulty: number): GeneratedGrid
   const words: string[] = Array(targetCount).fill(entry.targetWord)
   const distractors = shuffle(entry.distractors)
   const fillers = shuffle(entry.fillerWords)
-  const pool = [...distractors, ...fillers]
+  // La cible ne doit apparaître qu'aux positions comptées dans targetCount :
+  // on l'exclut de tout le remplissage (distracteurs, fillers, répétitions).
+  const target = entry.targetWord.trim().toUpperCase()
+  const pool = [...distractors, ...fillers].filter((w) => w.trim().toUpperCase() !== target)
+  if (pool.length === 0) throw new Error(`Aucun mot de remplissage pour ${entry.targetWord}`)
 
   let i = 0
   while (words.length < TOTAL && i < pool.length) {
-    if (pool[i] !== entry.targetWord) words.push(pool[i])
+    words.push(pool[i])
     i++
   }
   // If still not enough, repeat distractors
