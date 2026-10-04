@@ -268,21 +268,20 @@ export default function ParcoursPage() {
 
       <Carte className="p-6 md:p-8">
         <Etiquette>Niveau {etat.niveau} · Tour {tour}</Etiquette>
-        <div className="mt-6 flex items-stretch gap-2 sm:gap-3">
+        <div className="mt-6 flex flex-col items-stretch gap-2 sm:flex-row sm:gap-3">
           <div className={cn(CASE, fondCase('jeu'))}>
-            <span className="text-3xl" aria-hidden="true">🎮</span>
             <span className="break-words font-titre text-base text-encre sm:text-lg">{NOMS_JEUX[jeu]}</span>
             <span className="text-sm font-semibold text-encre">
               {statutCase('jeu') === 'fait' ? '✓ Fait' : `Entraînement ${etat.partiesFaites} / ${total}`}
             </span>
           </div>
-          <span className="self-center font-titre text-xl text-encre" aria-hidden="true">→</span>
+          <span className="self-center font-titre text-xl text-encre" aria-hidden="true"><span className="sm:hidden">↓</span><span className="hidden sm:inline">→</span></span>
           <div className={cn(CASE, fondCase('boss'))}>
             <span className="text-3xl" aria-hidden="true">👾</span>
             <span className="font-titre text-base text-encre sm:text-lg">Boss</span>
             <span className="text-sm text-encre">{statutCase('boss') === 'fait' ? '✓ Vaincu' : 'en plus dur'}</span>
           </div>
-          <span className="self-center font-titre text-xl text-encre" aria-hidden="true">→</span>
+          <span className="self-center font-titre text-xl text-encre" aria-hidden="true"><span className="sm:hidden">↓</span><span className="hidden sm:inline">→</span></span>
           <div className={cn(CASE, fondCase('lecture'))}>
             <span className="text-3xl" aria-hidden="true">⚡</span>
             <span className="font-titre text-base text-encre sm:text-lg">Lecture</span>

@@ -2,7 +2,7 @@ import type { Badge, BadgeContext } from '@/types'
 import { NIVEAU_TERMINE } from '@/parcours/regles'
 
 export const BADGE_CATEGORIES = [
-  { id: 'decouverte', label: '🗺️ Découverte' },
+  { id: 'decouverte', label: '🧭 Découverte' },
   { id: 'points',     label: '⭐ Points' },
   { id: 'assiduite',  label: '🔥 Assiduité' },
   { id: 'volume',     label: '📚 Progression' },
